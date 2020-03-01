@@ -1,0 +1,167 @@
+Aptekarz/7/Rzemios³o (Aptekarstwo)/
+Arcydzie³o/10/brak
+Artylerzysta/6/brak
+Atak Wyprzedzaj¹cy/4/brak
+Atrakcyjny/9/Charyzma by wp³yn¹æ na tych którym siê podobasz
+Bardzo Silny/11/brak
+Bardzo Szybki/11/brak
+Berserkerska Szar¿a/2/Broñ Bia³a w Rundzie w której Szar¿owa³eœ
+Biczownik/3/Opieranie siê Niszczycielskim Potêgom
+Bitewna Furia/8/Broñ Bia³a pod wp³ywem Sza³u Bojowego
+Bitewny Refleks/4/brak
+B³êkitna Krew/11/Wszystkie Testy na które wp³ywa twój Status
+B³ogos³awieñstwo (Boska Tradycja)/11/brak
+B³yskawiczny Strza³/5/Broñ Zasiêgowa gdy wykorzystujesz Talent B³yskawiczny Strza³
+B³yskotliwoœæ/11/brak
+Celny Strza³/1/brak
+Charyzmatyczny/11/brak
+Chirurgia/7/Leczenie poza walk¹ czyli kiedy mo¿esz w³aœciwie zaj¹æ siê rannym
+Chodu!/5/Atletyka gdy Uciekasz
+Cieñ/5/Wszystkie zwi¹zane ze œledzeniem
+Cios Mierzony/4/brak
+Cios Poni¿ej Pasa/0/Broñ Bia³a (Bijatyka)
+Czarownica!/8/brak
+Cz³owiek Guma/5/Kuglarstwo lub Testy Zwinnoœci w sytuacji gdy przydaje siê gibkoœæ
+Czujny/11/brak
+Czysta Dusza/8/brak
+Czytanie z Ruchu Warg/4/Testy Percepcji zwi¹zane z wykorzystaniem tego Talentu.
+Czytanie-Pisanie/11/brak
+Defraudant/7/Inteligencja (Defraudacja)
+Dobrze Przygotowany/4/brak
+Doœwiadczony Wêdrowiec (Wybrany Teren)/5/Atletyki podczas podró¿y w terenie
+Dwie Bronie/5/Broñ Bia³a lub Zasiêgowa, kiedy atakujesz dwoma sztukami orê¿a
+Etykieta (Grupa Spo³eczna)/9/Charyzma lub Plotkowanie (Grupa Spo³eczna)
+Finta/0/Broñ Bia³a (Szermiercza) podczas Finty
+Gadanina/9/Charyzma by kogoœ zagadaæ
+Geniusz Arytmetyczny/7/Wycena, Hazard
+G³adkie S³ówka/9/Charyzma podczas k³amania
+GroŸny/2/Zastraszanie
+Hulaka/3/Charyzma i Plotkowanie podczas przyjêæ oraz Mocna G³owa
+Inspiruj¹cy/9/Dowodzenie podczas wojny
+Intrygant/7/Inteligencji dotycz¹ce tego Talentu
+Inwokacja (Boska Tradycja)/11/brak
+Krasomówstwo/9/brak
+Krzepki/3/brak
+£apówkarz/9/£apówkarstwo
+Mag Bitewny/11/brak
+Magia Chaosu (Tradycja)/10/Liczba dostêpnych czarów w wybranej tradycji magii Chaosu
+Magia Prosta/11/brak
+Magia Tajemna (Tradycja)/11/brak
+Majêtny/10/brak
+Ma³y/11/brak
+Mistrz Charakteryzacji/9/Wystêpy (Aktorstwo) gdy udajesz kogoœ innego
+Mistrz Rzemios³a (Rzemios³o)/6/Pasuj¹cy Wyd³u¿ony Test tego Rzemios³a
+Mistrz Walki/5/brak
+Mocne Plecy/2/Wios³owanie lub P³ywanie
+Morderczy Atak/4/brak
+Mól Ksi¹¿kowy/7/Badania Naukowe
+Mówca/9/brak
+Musztra/0/Broñ Bia³a kiedy jesteœ w pobli¿u sojuszniczej postaci z tym Talentem
+Na Cztery £apy /5/Atletyka podczas spadania
+Naci¹gacz/9/Charyzma (¯ebractwo)
+Naœladowca/4/Wystêpy (Aktorstwo) podczas których wa¿ny jest akcent
+Niegodny Uwagi/9/Skradanie kiedy jesteœ na widoku
+Nienawiœæ (Grupa)/8/Si³a Woli (Opieranie siê Grupie)
+Nieub³agany/3/brak
+Nieugiêty/2/brak
+Nieustêpliwy/5/brak
+Nieustraszony (typ wroga)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy
+Niewzruszony/8/Opanowanie przeciwko panice prochowej
+Niezwykle Odporny/11/brak
+Nos do K³opotów/4/Ka¿dy by wypatrzeæ potencjalne problemy
+Numizmatyka/4/Wycena podczas ustalania wartoœci monet
+Obie¿yœwiat/7/Dowolnej Wiedzy zwi¹zanej z okolic¹
+Oburêcznoœæ/12/brak
+Odporny na Magiê/11/brak
+Odpornoœæ Psychiczna/8/brak
+Odporny na (Zagro¿enie)/3/Wszystkie gdy opierasz siê powi¹zanemu zagro¿eniu
+Odwrócenie Szans/0/Broñ Bia³a w obronie
+Og³uszenie/0/Broñ Bia³a gdy Og³uszasz przeciwnika
+Oko £owcy/4/Dowolny wi¹¿¹cy siê z Tropieniem lub polowaniem na zwierzynê
+Percepcja Magiczna/4/Ka¿dy Test dotycz¹cy wykrywania Wiatrów Magii
+Pierwsza Pomoc/7/Leczenie podczas Rundy walki
+Pilot/4/Wios³owanie lub ¯eglowanie podczas wytyczania kursu przez nieznane wody
+Pilot Rzeczny/4/Ka¿dy Test Wiedzy dotycz¹cy rzeki
+Poliglota/7/Jêzyki (Wszystkie)
+Pomocny/9/Testy spo³eczne by wp³yn¹æ na stoj¹cych wy¿ej w hierarchii
+Porywaj¹ca Gorliwoœæ/9/Charyzmy kiedy mówisz o wa¿nej dla ciebie sprawie
+Pos³uch u Zwierz¹t/8/Oswajanie
+Precyzyjne Inkantowanie/4/Jêzyk (Magiczny) podczas rzucania czaru
+Prosto Miêdzy Oczy/11/brak
+Przekonuj¹cy/9/Charyzma gdy prowadzisz debatê lub siê z kimœ spierasz na argumenty
+Przestêpca/10/brak
+Przyrz¹dzanie Mikstur/7/Rzemios³o (Aptekarstwo)
+Riposta/5/Broñ Bia³a w obronie
+Rozbrojenie/4/Broñ Bia³a w sytuacjach zwi¹zanych z tym Talentem
+Rozpoznanie Artefaktu/4/Test Intuicji zwi¹zany z wykrywaniem magicznych artefaktów
+Rozproszenie Uwagi/5/brak
+Ruchliwe d³onie/6/Zwinne Palce Broñ Bia³a (Bijatyka) aby dotkn¹æ przeciwnika
+Rybak/4/Dowolne wi¹¿¹ce siê z rybo³ówstwem
+Sekretna To¿samoœæ/7/Wystêpy (Aktorstwo) by uwiarygodniæ swoj¹ sekretn¹ to¿samoœæ
+Silne Nogi/2/brak
+Silny Cios/2/brak
+Skrócenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia
+S³uch Absolutny/4/Wystêpy (Œpiewanie) Jêzyki (tonalne takie jak Eltharin Kitajski czy Magiczny)
+Snajper/13/Broñ Strzelecka (zasiêg daleki lub bardzo daleki)
+Sprê¿ynka/11/brak
+Straszny/2/brak
+Strza³ Przebijaj¹cy/4/brak
+Strza³ w Dziesi¹tkê/11/brak
+Strzelec Wyborowy/11/brak
+Sza³ Bojowy/11/brak
+Szczêœcie/9/brak
+Szczur Tunelowy/5/Skradanie pod ziemi¹
+Szósty Zmys³/4/Intuicji wykorzystuj¹ce twój Szósty Zmys³
+Szuler/7/Hazard i Zwinne Palce w grach karcianych
+Szuler Koœciany/7/Hazard lub Zwinne Palce podczas gier koœcianych
+Szybki Refleks/11/brak
+Szybkie Czytanie/7/gdy wa¿ne jest szybkie przyswajanie treœci
+Szybkie Prze³adowanie/6/brak
+Szybkobiegacz/2/Atletyka podczas Biegu
+Szycha/11/brak
+Œwietny P³ywak/2/P³ywanie
+Œwiêta Nienawiœæ/9/brak
+Œwiête Wizje/4/Testy Intuicji kiedy znajdujesz siê na œwiêtej ziemi
+Talent Artystyczny/6/Sztuka (Dowolna)
+Tarczownik/2/brak
+Towarzyski/9/Plotkowanie z wêdrowcami
+Tragarz/2/Si³y podczas podnoszenia
+Traper/4/Percepcja by zauwa¿yæ pu³apki lub Zastawianie Pu³apek
+Twardziel/3/brak
+Ulicznik/4/Skradanie (Miasto)
+Urodzony w Siodle/5/JeŸdziectwo (Konie) w walce
+Urodzony Wojownik/11/brak
+Urodzony ¯eglarz/3/Wszystkie wykonywane by oprzeæ siê chorobie morskiej
+Waleczne Serce/8/Opanowanie by prze³amaæ Stan Panika
+Walka w Ciasnocie/5/Unik w ciasnej przestrzeni
+Widzenie w Ciemnoœci/4/Percepcja przy s³abym œwietle
+Wie¿a Pamiêci/7/brak
+Wilk Morski/5/¯eglowanie (ka¿dy statek morski)
+W³adcza Postura/9/Dowodzenie
+W³óczykij/6/Skradania na wsi
+Wodniak/5/¯eglarstwo na jednostkach p³ywaj¹cych po rzece
+Wolty¿erka/5/Unik na koniu JeŸdziectwo (Konie)
+Wódz/9/Dowodzenie podczas wojny
+Wró¿ba Losu/11/brak
+WstrzemiêŸliwy/3/Odpornoœci by wytrzymaæ g³ód
+Wœciek³y Atak/5/Broñ Bia³a podczas wykonywania dodatkowych ataków
+Wtargniêcie z W³amaniem/2/Broñ Bia³a gdy próbujesz zniszczyæ lub przesun¹æ przedmioty
+Wyborny Wspinacz/2/Wspinaczka
+Wyczucie Kierunku/4/Nawigacja
+Wyczulony Zmys³/4/Percepcja (z wykorzystaniem tego zmys³u)
+Wykrywanie Magii/4/Intuicja by wykrywaæ czarodziejów
+Wytrwa³y/3/Odpornoœæ by wytrzymaæ trudnoœci
+Wytwórca (Dowolny)/6/Rzemios³o (Dowolne)
+Z Bata/6/Powo¿enie lub JeŸdziectwo podczas Ucieczki lub Biegu
+Zabójca/11/brak
+Zbicie Broni/0/Broñ Bia³a by zbiæ broñ
+Zejœcie z Linii/5/Unik gdy u¿ywasz tego Talentu
+Zimna krew/11/brak
+Z³ota R¹czka/6/Rzemios³o by naprawiæ uszkodzone przedmioty
+Zmys³ Bitewny/4/Percepcja w trakcie walki
+Zmys³ Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+Znawca (Wiedza)/7/Wiedza (wybrana dziedzina)
+Zrêczny/11/brak
+¯elazna Szczêka/3/Odpornoœæ wykonywana przeciw Oszo³omieniu
+¯elazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+¯y³ka Handlowa/9/Targowanie

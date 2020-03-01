@@ -1,0 +1,1795 @@
+APTEKARZ
+UczeÒ Aptekarza ñ Brπz 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Klasyczny)/7/zaawansowana,Leczenie/7/zaawansowana,Mocna G≥owa/3/podstawowa,Rzemios≥o (Aptekarstwo)/6/zaawansowana,Rzemios≥o (Truciciel)/6/zaawansowana,Wiedza (Chemia)/7/zaawansowana,Wiedza (Medycyna)/7/zaawansowana,Wiedza (Roúliny)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Przyrzπdzanie Mikstur/7/Rzemios≥o (Aptekarstwo),WytwÛrca (Aptekarz)/6/Rzemios≥o (Aptekarz)
+3,6,7
+1
+APTEKARZ
+Aptekarz ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,JÍzyk (Gildii)/7/zaawansowana,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Nauka)/7/zaawansowana
+Aptekarz/7/Rzemios≥o (Aptekarstwo),Etykieta (Cz≥onkowie Cechu)/9/Charyzma lub Plotkowanie (Cz≥onkowie Cechu),PrzestÍpca/10/brak,Øy≥ka Handlowa/9/Targowanie
+3,6,7,9
+2
+APTEKARZ
+Mistrz Aptekarski ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Sekretne Znaki (Cechu)/7/zaawansowana
+B≥yskotliwoúÊ/11/brak,Mistrz Rzemios≥a (Aptekarz)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,MÛl Ksiπøkowy/7/Badania Naukowe,Odporny na (Trucizny)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu
+3,4,6,7,9
+3
+APTEKARZ
+G≥Ûwny Aptekarz ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Jeüdziectwo (Konie)/5/podstawowa,Zastraszanie/2/podstawowa
+Mistrz Rzemios≥a (Truciciel)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,Wyczulony Zmys≥ (Smak)/4/Percepcja (z wykorzystaniem tego zmys≥u),Zimna krew/11/brak,Znawca (Aptekarstwo)/7/Wiedza (wybrana dziedzina)
+3,4,6,7,8,9
+4
+CZARODZIEJ
+UczeÒ Czarodzieja ñ Brπz 3
+Ludzie,Leúne elfy,Wysokie elfy
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,BroÒ Bia≥a (Drzewcowa)/0/podstawowa,Intuicja/4/podstawowa,JÍzyk (Magiczny)/7/zaawansowana,Percepcja/4/podstawowa,Splatanie Magii (Dowolny Kolor)/8/zaawansowana,Unik/5/podstawowa,Wiedza (Magia)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Magia Prosta (Dowolna)/11/brak,Percepcja Magiczna/4/Kaødy Test dotyczπcy wykrywania WiatrÛw Magii,Zmys≥ Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+0,7,8
+1
+CZARODZIEJ
+Czarodziej ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy
+Charyzma/9/podstawowa,JÍzyk (Bitewny)/7/zaawansowana,JÍzyk (Dowolny)/7/zaawansowana,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Zastraszanie/2/podstawowa
+Magia Tajemna (Dowolna Tradycja)/11/brak,Rozpoznanie Artefaktu/4/Test Intuicji zwiπzany z wykrywaniem magicznych artefaktÛw,Ruchliwe d≥onie/6/Zwinne Palce BroÒ Bia≥a (Bijatyka) aby dotknπÊ przeciwnika,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥
+0,6,7,8
+2
+CZARODZIEJ
+Mistrz Magii ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy
+Jeüdziectwo (Konie)/5/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Wiedza (Wojna)/7/zaawansowana,Wycena/7/zaawansowana
+Dwie Bronie/5/BroÒ Bia≥a lub ZasiÍgowa kiedy atakujesz dwoma sztukami orÍøa,Groüny/2/Zastraszanie,Precyzyjne Inkantowanie/4/JÍzyk (Magiczny) podczas rzucania czaru,Wykrywanie Magii/4/Intuicja by wykrywaÊ czarodziejÛw
+0,5,6,7,8
+3
+CZARODZIEJ
+Arcymag ñ Z≥oto 2
+Ludzie,Leúne elfy,Wysokie elfy
+JÍzyk (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Mag Bitewny/11/brak,Straszny/2/brak,Zmys≥ Bitewny/4/Percepcja w trakcie walki,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,5,6,7,8,9
+4
+INØYNIER
+Student Inøynierii ñ Brπz 4
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Prochowa)/1/zaawansowana,JÍzyk (Klasyczny)/7/zaawansowana,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Rzemios≥o (Inøynier)/6/zaawansowana,Wiedza (Inøynier)/7/zaawansowana
+Artylerzysta/6/brak,Czytanie-Pisanie/11/brak,Talent Artystyczny/6/Sztuka (Dowolna),Z≥ota Rπczka/6/Rzemios≥o  by naprawiÊ uszkodzone przedmioty
+1,6,7
+1
+INØYNIER
+Inøynier ñ Srebro 2
+Ludzie,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,BroÒ ZasiÍgowa (Eksperymentalna)/1/zaawansowana,JÍzyk (Gildii)/7/zaawansowana,Nawigacja/4/podstawowa,Powoøenie/5/podstawowa,Unik/5/podstawowa
+WytwÛrca/6/Rzemios≥o (Inøynier),Etykieta (Cz≥onkowie Gildii)/9/Charyzma lub Plotkowanie (Cz≥onkowie Gildii),Strzelec Wyborowy/11/brak,Wyczucie Kierunku/4/Nawigacja
+1,4,6,7
+2
+INØYNIER
+Mistrz Inøynierii ñ Srebro 4
+Ludzie,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,JÍzyk (Khazalid)/7/zaawansowana,Sekretne Znaki (Gildii)/7/zaawansowana
+Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Geniusz Arytmetyczny/7/Wycena lub Hazard,Mistrz Rzemios≥a (Inøynieria)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,Snajper/13/BroÒ Strzelecka (zasiÍg daleki lub bardzo daleki)
+1,3,4,6,7
+3
+INØYNIER
+Inøynier Dyplomowany ñ Z≥oto 2
+Ludzie,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Arcydzie≥o/10/brak,Niewzruszony/8/Opanowanie przeciwko panice prochowej,Szybkie Prze≥adowanie/6/brak,Znawca (Inøynieria)/7/Wiedza (Inøynieria)
+1,3,4,6,7,9
+4
+KAP£AN
+Kleryk ñ Brπz 2
+Ludzie
+Atletyka/5/podstawowa,Badania Naukowe/7/zaawansowana,Intuicja/4/podstawowa,Modlitwa/9/zaawansowana,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Wiedza (Teologia)/7/zaawansowana
+B≥ogos≥awieÒstwo (Dowolne BÛstwo)/11/brak,Charyzmatyczny/11/brak,Czytanie-Pisanie/11/brak,åwiÍte Wizje/4/Testy Intuicji kiedy znajdujesz siÍ na úwiÍtej ziemi
+3,5,8
+1
+KAP£AN
+Kap≥an ñ Srebro 1
+Ludzie
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Leczenie/7/zaawansowana,Plotkowanie/9/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa,Zastraszanie/2/podstawowa
+Etykieta (Kultyúci)/9/Charyzma lub Plotkowanie (Kultyúci),Gadanina/9/Charyzma by kogoú zagadaÊ,Inwokacja (Dowolne BÛstwo)/11/brak,MÛl Ksiπøkowy/7/Badania Naukowe
+3,5,8,9
+2
+KAP£AN
+Arcykap≥an ñ Z≥oto 1
+Ludzie
+Dowodzenie/9/podstawowa,Sztuka (Pisarstwo)/6/podstawowa,Wiedza (Heraldyka)/7/zaawansowana,WystÍpy (Przemowy)/9/podstawowa
+NienawiúÊ (Dowolna)/8/Si≥a Woli (Opieranie siÍ Grupie),OdpornoúÊ Psychiczna/8/brak,Porywajπca GorliwoúÊ/9/Charyzmy kiedy mÛwisz o waønej dla ciebie sprawie,Wyczulony Zmys≥ (Dowolny)/4/Percepcja (z wykorzystaniem tego zmys≥u)
+3,5,7,8,9
+3
+KAP£AN
+Lektor ñ Z≥oto 2
+Ludzie
+JÍzyk (Dowolny)/7/zaawansowana,Wiedza (Polityka)/7/zaawansowana
+Czysta Dusza/8/brak,Odporny na (Dowolne Zagroøenie)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,KrasomÛwstwo/9/brak,Znawca (Teologia)/7/Wiedza (wybrana dziedzina)
+3,4,5,7,8,9
+4
+LEKARZ
+UczeÒ Lekarza ñ Brπz 4
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Leczenie/7/zaawansowana,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Powoøenie/5/podstawowa,Przekupstwo/9/podstawowa,Zwinne Palce/6/zaawansowana
+Czytanie-Pisanie/11/brak,MÛl Ksiπøkowy/7/Badania Naukowe,Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Pierwsza Pomoc/7/Leczenie podczas Rundy walki
+6,7,8
+1
+LEKARZ
+Lekarz ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,JÍzyk (Gildii)/7/zaawansowana,Rzemios≥o (Cyrulik)/6/zaawansowana,Targowanie/9/podstawowa,Wiedza (Anatomia)/7/zaawansowana,Wiedza (Medycyna)/7/zaawansowana
+Chirurgia/7/Leczenie poza walkπ czyli kiedy moøesz w≥aúciwie zajπÊ siÍ rannym,Etykieta (Cz≥onkowie Cechu)/9/Charyzma lub Plotkowanie (Cz≥onkowie Cechu),PrzestÍpca/10/brak,Zimna krew/11/brak
+6,7,8,9
+2
+LEKARZ
+Doktor ñ Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Dowodzenie/9/podstawowa,Mocna G≥owa/3/podstawowa,Zastraszanie/2/podstawowa
+B≥yskotliwoúÊ/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Morderczy Atak/4/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu
+4,6,7,8,9
+3
+LEKARZ
+Nadworny Medyk ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Wiedza (Szlachta)/7/zaawansowana,WystÍpy (Taniec)/9/podstawowa 
+Etykieta (Szlachta)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),OdpornoúÊ Psychiczna/8/brak,Znawca (Medycyna)/7/Wiedza (wybrana dziedzina),ZrÍczny/11/brak
+4,5,6,7,8,9
+4
+MNISZKA
+Nowicjuszka ñ Brπz 1
+Ludzie
+Leczenie/7/zaawansowana,Modlitwa/9/zaawansowana,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Sztuka (Kaligrafia)/6/podstawowa,Wiedza (Teologia)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+B≥ogos≥awieÒstwo (Dowolne BÛstwo)/11/brak,Czytanie-Pisanie/11/brak,Naciπgacz/9/Charyzma (Øebractwo),WstrzemiÍüliwy/3/Odpornoúci by wytrzymaÊ g≥Ûd
+6,7,9
+1
+MNISZKA
+Mniszka ñ Brπz 4
+Ludzie
+Badania Naukowe/7/zaawansowana,BroÒ Bia≥a (Dowolna)/0/podstawowa,Charyzma/9/podstawowa,Rzemios≥o (Browarnik)/6/zaawansowana,Rzemios≥o (Winiarz)/6/zaawansowana,Rzemios≥o (Zielarz)/6/zaawansowana
+Etykieta (Kultyúci)/9/Charyzma lub Plotkowanie (Kultyúci),Inwokacja (Dowolne BÛstwo)/11/brak,Pierwsza Pomoc/7/Leczenie podczas Rundy walki,åwiÍte Wizje/4/Testy Intuicji kiedy znajdujesz siÍ na úwiÍtej ziemi
+6,7,8,9
+2
+MNISZKA
+Przeorysza ñ Srebro 2
+Ludzie
+Dowodzenie/9/podstawowa,Percepcja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Polityka)/7/zaawansowana
+Odporny na (Dowolne Zagroøenie)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,Krzepki/3/brak,Znawca (Teologia)/7/Wiedza (wybrana dziedzina),Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika
+4,6,7,8,9
+3
+MNISZKA
+Matka Prze≥oøona ñ Srebro 5
+Ludzie
+JÍzyk (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Czysta Dusza/8/brak,OdpornoúÊ Psychiczna/8/brak,W≥adcza Postura/9/Dowodzenie,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+4,6,7,8,9
+4
+PRAWNIK
+Student Prawa ñ Brπz 4
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,JÍzyk (Klasyczny)/7/zaawansowana,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Targowanie/9/podstawowa,Wiedza (Prawo)/7/zaawansowana,Wiedza (Teologia)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Gadanina/9/Charyzma by kogoú zagadaÊ,Szybkie Czytanie/7/gdy waøne jest szybkie przyswajanie treúci
+4,6,7
+1
+PRAWNIK
+Prawnik ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Przekupstwo/9/podstawowa,Charyzma/9/podstawowa,Plotkowanie/9/podstawowa,Intuicja/4/podstawowa,JÍzyk (Gildii)/7/zaawansowana,Sekretne Znaki (Gildii)/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Cz≥onkowie Gildii)/9/Charyzma lub Plotkowanie (Cz≥onkowie Gildii),Przekonujπcy/9/Charyzma gdy prowadzisz debatÍ lub siÍ z kimú spierasz na argumenty,PrzestÍpca/10/brak
+4,6,7,9
+2
+PRAWNIK
+Adwokat ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Sztuka (Pisarstwo)/6/podstawowa,Wiedza (Dowolna)/7/zaawansowana,WystÍpy (Przemowy)/9/podstawowa,Zastraszanie/2/podstawowa
+B≥yskotliwoúÊ/11/brak,G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,MÛl Ksiπøkowy/7/Badania Naukowe,Porywajπca GorliwoúÊ/9/Charyzmy kiedy mÛwisz o waønej dla ciebie sprawie
+4,6,7,8,9
+3
+PRAWNIK
+SÍdzia ñ Z≥oto 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Opanowanie/8/podstawowa,Wiedza (Polityka)/7/zaawansowana
+MajÍtny/10/brak,Szycha/11/brak,W≥adcza Postura/9/Dowodzenie,Znawca (Prawo)/7/Wiedza (wybrana dziedzina)
+3,4,6,7,8,9
+4
+UCZONY
+Student ñ Brπz 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Hazard/7/podstawowa,JÍzyk (Klasyczny)/7/zaawansowana,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa/9/podstawowa,Wiedza (Dowolna)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+B≥yskotliwoúÊ/11/brak,Czytanie-Pisanie/11/brak,Geniusz Arytmetyczny/7/Wycena lub Hazard,Hulaka/3/Charyzma i Plotkowanie podczas przyjÍÊ oraz Mocna G≥owa
+3,7,8
+1
+UCZONY
+Uczony ñ Srebro 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Intuicja/4/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Rzemios≥o (Dowolne)/6/zaawansowana,Sztuka (Pisarstwo)/6/podstawowa,Wiedza (Dowolna)/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),MÛl Ksiπøkowy/7/Badania Naukowe,Szybkie Czytanie/7/gdy waøne jest szybkie przyswajanie treúci
+3,4,7,8
+2
+UCZONY
+Wyk≥adowca ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana,WystÍpy (Wyk≥ady)/9/podstawowa,Zastraszanie/2/podstawowa
+MÛwca/9/brak,Poliglota/7/JÍzyki (Wszystkie),Wieøa PamiÍci/7/brak,Znawca (Dowolna Dziedzina)/7/Wiedza (wybrana dziedzina)
+3,4,7,8,9
+3
+UCZONY
+Profesor ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Wiedza (Dowolna)/7/zaawansowana,WystÍpy (Retoryka)/9/podstawowa
+Arcydzie≥o/10/brak,Czujny/11/brak,KrasomÛwstwo/9/brak,Znawca (Dowolna Dziedzina)/7/Wiedza (wybrana dziedzina)
+3,4,6,7,8,9
+4
+AGITATOR
+Pamflecista ñ Brπz 1
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Rzemios≥o (Drukarstwo)/6/zaawansowana,Sztuka (Pisarstwo)/6/podstawowa,Targowanie/9/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Gadanina/9/Charyzma by kogoú zagadaÊ,Naciπgacz/9/Charyzma (Øebractwo),Towarzyski/9/Plotkowanie z wÍdrowcami
+1,7,9
+1
+AGITATOR
+Agitator ñ Brπz 2
+Ludzie,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Hazard/7/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa
+MÛwca/9/brak,Porywajπca GorliwoúÊ/9/Charyzmy kiedy mÛwisz o waønej dla ciebie sprawie,Przekonujπcy/9/Charyzma gdy prowadzisz debatÍ lub siÍ z kimú spierasz na argumenty,Ulicznik/4/Skradanie (Miasto)
+1,5,7,9
+2
+AGITATOR
+Podøegacz ñ Brπz 3
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Bijatyka)/0/podstawowa,Percepcja/4/podstawowa,Zastraszanie/2/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,Zejúcie z Linii/5/Unik gdy uøywasz tego Talentu
+0,1,5,7,9
+3
+AGITATOR
+Demagog ñ Brπz 5
+Ludzie,Krasnoludy,Nizio≥ki
+Jeüdziectwo (Konie)/5/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Intrygant/7/Inteligencji dotyczπce tego Talentu,KrasomÛwstwo/9/brak
+0,1,4,5,7,9
+4
+KUPIEC
+Handlarz ñ Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Plotkowanie/9/podstawowa,Powoøenie/5/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa
+Charyzmatyczny/11/brak,Czytanie-Pisanie/11/brak,Gadanina/9/Charyzma by kogoú zagadaÊ,Øy≥ka Handlowa/9/Targowanie
+5,8,9
+1
+KUPIEC
+Kupiec ñ Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Intuicja/4/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,JÍzyk (Gildii)/7/zaawansowana,Percepcja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+B≥yskotliwoúÊ/11/brak,Defraudant/7/Inteligencja (Defraudacja),Etykieta (Cz≥onkowie Gildii)/9/Charyzma lub Plotkowanie (Cz≥onkowie Gildii),£apÛwkarz/9/£apÛwkarstwo
+5,7,8,9
+2
+KUPIEC
+Mistrz Kupiectwa ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Klasyczny)/7/zaawansowana,Opanowanie/8/podstawowa,Nawigacja/4/podstawowa,Sekretne Znaki (Gildii)/7/zaawansowana
+Czujny/11/brak,G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Numizmatyka/4/Wycena podczas ustalania wartoúci monet
+4,5,7,8,9
+3
+KUPIEC
+Patrycjusz ñ Z≥oto 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Wiedza (Dowolna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Intrygant/7/Inteligencji dotyczπce tego Talentu,MajÍtny/10/brak,SzczÍúcie/9/brak,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,4,5,7,8,9
+4
+MIESZCZKA
+Przekupka ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Powoøenie/5/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Ulicznik/4/Skradanie (Miasto)/5/podstawowa,Niegodny Uwagi/9/Skradanie kiedy jesteú na widoku,Etykieta (S≥udzy)/9/Charyzma lub Plotkowanie (S≥udzy),Krzepki/3/brak
+5,7,9
+1
+MIESZCZKA
+Mieszczka ñ Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Bijatyka)/0/podstawowa,Intuicja/4/podstawowa,Muzyka (Dowolna)/6/zaawansowana,Przekupstwo/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+Defraudant/7/Inteligencja (Defraudacja),Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Towarzyski/9/Plotkowanie z wÍdrowcami,Øy≥ka Handlowa/9/Targowanie
+4,5,7,9
+2
+MIESZCZKA
+Rajca Miejski ñ Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Czytanie-Pisanie/11/brak,£apÛwkarz/9/£apÛwkarstwo,MÛwca/9/brak,Pomocny/9/Testy spo≥eczne by wp≥ynπÊ na stojπcych wyøej w hierarchii
+4,5,6,7,9
+3
+MIESZCZKA
+Burmistrz ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Wiedza (Polityka)/7/zaawansowana,Zastraszanie/2/podstawowa 
+Charyzmatyczny/11/brak,Intrygant/7/Inteligencji dotyczπce tego Talentu,KrasomÛwstwo/9/brak,W≥adcza Postura/9/Dowodzenie
+4,5,6,7,8,9
+4
+RZEMIEåLNIK
+Czeladnik ñ Brπz 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Opanowanie/8/podstawowa,Mocna G≥owa/3/podstawowa,Unik/5/podstawowa/5/podstawowa,OdpornoúÊ/3/podstawowa,Wycena/7/zaawansowana,Skradanie (Miasto)/5/podstawowa,Rzemios≥o (Dowolne)/6/zaawansowana
+Bardzo Silny/11/brak,Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Talent Artystyczny/6/Sztuka (Dowolna),WytwÛrca (Dowolne Rzemios≥o)/6/Rzemios≥o 
+2,3,6
+1
+RZEMIEåLNIK
+Rzemieúlnik ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,JÍzyk (Cechu)/7/zaawansowana,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Etykieta (Cz≥onkowie Cechu)/9/Charyzma lub Plotkowanie (Cz≥onkowie Cechu),Tragarz/2/Si≥y podczas podnoszenia,ZrÍczny/11/brak,Øy≥ka Handlowa/9/Targowanie
+2,3,6,9
+2
+RZEMIEåLNIK
+Mistrz Rzemios≥a ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Sekretne Znaki (Cechu)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Mistrz Rzemios≥a (Dowolne)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,Wyczulony Zmys≥ (Smak albo Dotyk)/4/Percepcja (z wykorzystaniem tego zmys≥u),Z≥ota Rπczka/6/Rzemios≥o  by naprawiÊ uszkodzone przedmioty
+2,3,6,8,9
+3
+RZEMIEåLNIK
+Mistrz Cechu ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Arcydzie≥o/10/brak,Intrygant/7/Inteligencji dotyczπce tego Talentu,£apÛwkarz/9/£apÛwkarstwo,MÛwca/9/brak
+2,3,6,7,8,9
+4
+STRAØNIK
+Rekrut Straøy ñ Brπz 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Dowolna)/0/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Musztra/0/BroÒ Bia≥a kiedy jesteú w pobliøu sojuszniczej postaci z tym Talentem,Twardziel/3/brak,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,2,9
+1
+STRAØNIK
+Straønik ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Zastraszanie/2/podstawowa
+PrzestÍpca/10/brak,Szybkobiegacz/2/Atletyka podczas Biegu,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle,WtargniÍcie z W≥amaniem/2/BroÒ Bia≥a gdy prÛbujesz zniszczyÊ lub przesunπÊ przedmioty
+0,2,8,9
+2
+STRAØNIK
+Sierøant Straøy ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Prawo)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Etykieta (Øo≥nierze)/9/Charyzma lub Plotkowanie (Øo≥nierze),Nieustraszony (PrzestÍpcy)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Rozbrojenie/4/BroÒ Bia≥a w sytuacjach zwiπzanych z tym Talentem
+0,2,4,8,9
+3
+STRAØNIK
+Kapitan Straøy ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Wiedza (Polityka)/7/zaawansowana,Jeüdziectwo (Konie)/5/podstawowa
+Krzepki/3/brak,Intrygant/7/Inteligencji dotyczπce tego Talentu,MÛwca/9/brak,Szycha/11/brak
+0,2,4,7,8,9
+4
+SZCZURO£AP
+£owca SzczurÛw ñ Brπz 3
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Tresura (Psy)/7/zaawansowana,Oswajanie/8/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,BroÒ Bia≥a (Podstawowa)/0/podstawowa,BroÒ ZasiÍgowa (Proca)/1/zaawansowana,Skradanie (Miasto albo Podziemia)/5/podstawowa
+Odporny na (Choroby)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Silny Cios/2/brak,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle
+0,1,8
+1
+SZCZURO£AP
+Szczuro≥ap ó Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+Opieka nad ZwierzÍtami/7/zaawansowana Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Trucizny)/7/zaawansowana,Zastawianie Pu≥apek/6/zaawansowana
+Etykieta (Cz≥onkowie Cechu)/9/Charyzma lub Plotkowanie (Cz≥onkowie Cechu),Nieustraszony (Szczury)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Niezwykle Odporny/11/brak,Walka w Ciasnocie/5/Unik w ciasnej przestrzeni
+0,1,3,8
+2
+SZCZURO£AP
+Straønik Kana≥Ûw ñ Srebro 2
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Kusza Pistoletowa)/1/zaawansowana,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Silne Nogi/2/brak,Szczur Tunelowy/5/Skradanie pod ziemiπ,Twardziel/3/brak,Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika
+0,1,3,4,8
+3
+SZCZURO£AP
+TÍpiciel ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Tropienie/4/zaawansowana
+Groüny/2/Zastraszanie,Krzepki/3/brak,OdpornoúÊ Psychiczna/8/brak,Nieustraszony (Skaveny)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy
+0,1,2,3,4,8
+4
+åLEDCZY
+Szpicel ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Miasto)/5/podstawowa,Tropienie/4/zaawansowana,Wspinaczka/2/podstawowa
+Czytanie-Pisanie/11/brak,Czujny/11/brak,Niegodny Uwagi/9/Skradanie kiedy jesteú na widoku,Ulicznik/4/Skradanie (Miasto)
+4,5,7
+1
+åLEDCZY
+åledczy ñ Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Bijatyka)/0/podstawowa,Mocna G≥owa/3/podstawowa,Otwieranie ZamkÛw/6/zaawansowana,Unik/5/podstawowa,Wiedza (Prawo)/7/zaawansowana,Zwinne Palce/6/zaawansowana
+B≥yskotliwoúÊ/11/brak,CieÒ/5/Wszystkie zwiπzane ze úledzeniem,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+4,5,7,9
+2
+åLEDCZY
+Mistrz åledczy ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Przekupstwo/9/podstawowa,Wiedza (Dowolna)/7/zaawansowana,Wycena/7/zaawansowana
+Charyzmatyczny/11/brak,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥,MÛl Ksiπøkowy/7/Badania Naukowe,WtargniÍcie z W≥amaniem/2/BroÒ Bia≥a gdy prÛbujesz zniszczyÊ lub przesunπÊ przedmioty
+4,5,6,7,9
+3
+åLEDCZY
+Detektyw ñ Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Wiedza (Dowolna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Szybkie Czytanie/7/gdy waøne jest szybkie przyswajanie treúci,Wieøa PamiÍci/7/brak,Wyczulony Zmys≥ (Dowolny)/4/Percepcja (z wykorzystaniem tego zmys≥u),Znawca (Dowolna Dziedzina)/7/Wiedza (wybrana dziedzina)
+4,5,6,7,8,9
+4
+ØEBRAK
+Biedak ñ Brπz 0
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Skradanie (Miasto)/5/podstawowa,Unik/5/podstawowa
+Naciπgacz/9/Charyzma (Øebractwo),Niezwykle Odporny/11/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,WstrzemiÍüliwy/3/Odpornoúci by wytrzymaÊ g≥Ûd
+3,5,9
+1
+ØEBRAK
+Øebrak ñ Brπz 2
+Ludzie,Krasnoludy,Nizio≥ki
+Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,WystÍpy (Aktorstwo)/9/podstawowa,WystÍpy (Dowolne)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Etykieta (PrzestÍpcy)/9/Charyzma lub Plotkowanie (PrzestÍpcy),Niegodny Uwagi/9/Skradanie kiedy jesteú na widoku,PrzestÍpca/10/brak,Ulicznik/4/Skradanie (Miasto)/5/podstawowa
+3,5,8,9
+2
+ØEBRAK
+Mistrz ØebrakÛw ñ Brπz 4
+Ludzie,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Oswajanie/8/podstawowa,Sekretne Znaki (W≥ÛczykijÛw)/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Gadanina/9/Charyzma by kogoú zagadaÊ,Twardziel/3/brak,Zejúcie z Linii/5/Unik gdy uøywasz tego Talentu
+0,3,5,8,9
+3
+ØEBRAK
+KrÛl ØebrakÛw ñ Srebro 2
+Ludzie,Krasnoludy,Nizio≥ki
+Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Charyzmatyczny/11/brak,G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,Nieustraszony (Straønicy)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Szycha/11/brak
+0,3,4,5,8,9
+4
+ARTYSTKA
+Uczennica Artysty ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Miasto)/5/podstawowa,Sztuka (Dowolna)/6/podstawowa,Wycena/7/zaawansowana
+Czujny/11/brak,Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Talent Artystyczny/6/Sztuka (Dowolna),Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+2,4,6
+1
+ARTYSTKA
+Artystka ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Klasyczny)/7/zaawansowana,Hazard/7/podstawowa,Intuicja/4/podstawowa,Targowanie/9/podstawowa,Wspinaczka/2/podstawowa,Rzemios≥o (Przybory dla artystÛw)/6/zaawansowana
+Hulaka/3/Charyzma i Plotkowanie podczas przyjÍÊ oraz Mocna G≥owa,PrzestÍpca/10/brak,Towarzyski/9/Plotkowanie z wÍdrowcami,ZrÍczny/11/brak
+2,4,6,9
+2
+ARTYSTKA
+Mistrzyni Sztuki ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa,Wiedza (Sztuka)/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Wyczulony Zmys≥ (Dowolny)/4/Percepcja (z wykorzystaniem tego zmys≥u),Øy≥ka Handlowa/9/Targowanie
+2,4,6,8,9
+3
+ARTYSTKA
+Maestro ñ Z≥oto 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Jeüdziectwo (Konie)/5/podstawowa
+Arcydzie≥o/10/brak,Czytanie-Pisanie/11/brak,OburÍcznoúÊ/12/brak,Szycha/11/brak
+2,4,6,7,8,9
+4
+DORADCA
+Asystent ñ Srebro 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Klasyczny)/7/zaawansowana,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Niegodny Uwagi/9/Skradanie kiedy jesteú na widoku,Towarzyski/9/Plotkowanie z wÍdrowcami
+3,4,5
+1
+DORADCA
+Doradca ñ Srebro 4
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Hazard/7/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Charyzma/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+Gadanina/9/Charyzma by kogoú zagadaÊ,Intrygant/7/Inteligencji dotyczπce tego Talentu,Pomocny/9/Testy spo≥eczne by wp≥ynπÊ na stojπcych wyøej w hierarchii/9/Testy spo≥eczne by wp≥ynπÊ na stojπcych wyøej w hierarchii,PrzestÍpca/10/brak
+3,4,5,9
+2
+DORADCA
+Radca ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,Hulaka/3/Charyzma i Plotkowanie podczas przyjÍÊ oraz Mocna G≥owa,£apÛwkarz/9/£apÛwkarstwo,Przekonujπcy/9/Charyzma gdy prowadzisz debatÍ lub siÍ z kimú spierasz na argumenty
+3,4,5,7,9
+3
+DORADCA
+Kanclerz ñ Z≥oto 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Jeüdziectwo (Konie)/5/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+Charyzmatyczny/11/brak,Defraudant/7/Inteligencja (Defraudacja),Szycha/11/brak,W≥adcza Postura/9/Dowodzenie
+3,4,5,7,8,9
+4
+NAMIESTNIK
+Nadzorca ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,Mocna G≥owa/3/podstawowa,Opanowanie/8/podstawowa,OdpornoúÊ/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Czujny/11/brak,Groüny/2/Zastraszanie,Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle
+2,3,8
+1
+NAMIESTNIK
+Namiestnik ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,BroÒ ZasiÍgowa (£uk)/1/zaawansowana,Jeüdziectwo (Konie)/5/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,P≥ywanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa
+Pos≥uch u Zwierzπt/8/Oswajanie,Etykieta (S≥udzy)/9/Charyzma lub Plotkowanie (S≥udzy),Doúwiadczony WÍdrowiec (Dowolny Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie,W≥Ûczykij/6/Skradania na wsi
+0,2,3,8
+2
+NAMIESTNIK
+Seneszal ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Dowodzenie/9/podstawowa
+Czytanie-Pisanie/11/brak,Defraudant/7/Inteligencja (Defraudacja),Numizmatyka/4/Wycena podczas ustalania wartoúci monet,Pomocny/9/Testy spo≥eczne by wp≥ynπÊ na stojπcych wyøej w hierarchii
+0,2,3,8,9
+3
+NAMIESTNIK
+Gubernator ñ Z≥oto 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Wycena/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),W≥adcza Postura/9/Dowodzenie,Znawca (Wiedza Lokalna)/7/Wiedza (Wiedza Lokalna)
+0,2,3,7,8,9
+4
+POSE£
+Herold ñ Srebro 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,OdpornoúÊ/3/podstawowa,Powoøenie/5/podstawowa,Unik/5/podstawowa,Wioúlarstwo/2/podstawowa
+Charyzmatyczny/11/brak,Czytanie-Pisanie/11/brak,Etykieta (Szlachta)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Gadanina/9/Charyzma by kogoú zagadaÊ
+3,5,9
+1
+POSE£
+Pose≥ ñ Srebro 4
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Sztuka (Pisarstwo)/6/podstawowa,Targowanie/9/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie
+3,5,7,9
+2
+POSE£
+Dyplomata ñ Z≥oto 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,Nawigacja/4/podstawowa,Zastraszanie/2/podstawowa
+Hulaka/3/Charyzma i Plotkowanie podczas przyjÍÊ oraz Mocna G≥owa,Intrygant/7/Inteligencji dotyczπce tego Talentu,Towarzyski/9/Plotkowanie z wÍdrowcami,Øy≥ka Handlowa/9/Targowanie
+3,4,5,7,9
+3
+POSE£
+Ambasador ñ Z≥oto 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+B≥Íkitna Krew/11/Wszystkie Testy na ktÛre wp≥ywa twÛj Status,B≥yskotliwoúÊ/11/brak,£apÛwkarz/9/£apÛwkarstwo,W≥adcza Postura/9/Dowodzenie
+3,4,5,7,8,9
+4
+S£UØ•CY
+Pos≥ugacz ñ Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Powoøenie/5/podstawowa,Skradanie (Dowolne)/5/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Krzepki/3/brak,Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Niegodny Uwagi/9/Skradanie kiedy jesteú na widoku,OdpornoúÊ Psychiczna/8/brak
+2,3,5
+1
+S£UØ•CY
+S≥uøπcy ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wycena/7/zaawansowana
+CieÒ/5/Wszystkie zwiπzane ze úledzeniem Dobrze Przygotowany,Etykieta (S≥udzy)/9/Charyzma lub Plotkowanie (S≥udzy),Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+2,3,4,5
+2
+S£UØ•CY
+Lokaj ñ Srebro 5
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Charyzmatyczny/11/brak,Defraudant/7/Inteligencja (Defraudacja),Odporny na (Trucizny)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,Pomocny/9/Testy spo≥eczne by wp≥ynπÊ na stojπcych wyøej w hierarchii
+2,3,4,5,7
+3
+S£UØ•CY
+Ochmistrz ñ Z≥oto 1
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Dowodzenie/9/podstawowa
+B≥yskotliwoúÊ/11/brak,Czytanie-Pisanie/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Numizmatyka/4/Wycena podczas ustalania wartoúci monet
+2,3,4,5,7,9
+4
+SZLACHCIC
+Dziedzic ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy
+BroÒ Bia≥a (Szermiercza)/0/podstawowa,Hazard/7/podstawowa,Dowodzenie/9/podstawowa,Mocna G≥owa/3/podstawowa,Muzyka (Dowolna)/6/zaawansowana,Przekupstwo/9/podstawowa,Wiedza (Heraldyka)/7/zaawansowana,Zastraszanie/2/podstawowa
+B≥Íkitna Krew/11/Wszystkie Testy na ktÛre wp≥ywa twÛj Status,Czytanie-Pisanie/11/brak,Etykieta (Szlachta)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),SzczÍúcie/9/brak
+0,4,6
+1
+SZLACHCIC
+Szlachcic ñ Z≥oto 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy
+BroÒ Bia≥a (Parujπca)/0/podstawowa,Charyzma/9/podstawowa,JÍzyk (Klasyczny)/7/zaawansowana,Jeüdziectwo (Konie)/5/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,Charyzmatyczny/11/brak,Hulaka/3/Charyzma i Plotkowanie podczas przyjÍÊ oraz Mocna G≥owa,£apÛwkarz/9/£apÛwkarstwo
+0,4,6,9
+2
+SZLACHCIC
+Magnat ñ Z≥oto 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy
+Intuicja/4/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Intrygant/7/Inteligencji dotyczπce tego Talentu,MÛwca/9/brak,Zimna krew/11/brak,Øy≥ka Handlowa/9/Targowanie
+0,4,6,7,9
+3
+SZLACHCIC
+Lord ñ Z≥oto 7
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy
+Tropienie/4/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+MajÍtny/10/brak,W≥adcza Postura/9/Dowodzenie,WÛdz/9/Dowodzenie podczas wojny,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,4,6,7,8,9
+4
+SZPIEG
+Informator ñ Brπz 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Skradanie (Dowolne)/5/podstawowa,Targowanie/9/podstawowa
+CieÒ/5/Wszystkie zwiπzane ze úledzeniem,Gadanina/9/Charyzma by kogoú zagadaÊ,Hulaka/3/Charyzma i Plotkowanie podczas przyjÍÊ oraz Mocna G≥owa,Towarzyski/9/Plotkowanie z wÍdrowcami
+5,8,9
+1
+SZPIEG
+Szpieg ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Intuicja/4/podstawowa,Sekretne Znaki (Dowolne)/7/zaawansowana,Wspinaczka/2/podstawowa,WystÍpy (Aktorstwo)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Czytanie-Pisanie/11/brak,Czytanie z Ruchu Warg/4/Testy Percepcji zwiπzane z wykorzystaniem tego Talentu,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Sekretna ToøsamoúÊ/7/WystÍpy (Aktorstwo) by uwiarygodniÊ swojπ sekretnπ toøsamoúÊ
+0,5,8,9
+2
+SZPIEG
+Agent ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,Opieka nad ZwierzÍtami/7/zaawansowana Tresura (Go≥πb)
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,Mistrz Charakteryzacji/9/WystÍpy (Aktorstwo) gdy udajesz kogoú innego,Naúladowca/4/WystÍpy (Aktorstwo) podczas ktÛrych waøny jest akcent
+0,4,5,8,9
+3
+SZPIEG
+Mistrz SzpiegÛw ñ Z≥oto 4
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Charyzmatyczny/11/brak,Intrygant/7/Inteligencji dotyczπce tego Talentu,£apÛwkarz/9/£apÛwkarstwo,Wieøa PamiÍci/7/brak
+0,4,5,7,8,9
+4
+ZWADèCA
+Szermierz ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy
+Atletyka/5/podstawowa,BroÒ Bia≥a (Dowolna)/0/podstawowa,Intuicja/4/podstawowa,JÍzyk (Klasyczny)/7/zaawansowana,Leczenie/7/zaawansowana,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa
+Finta/0/BroÒ Bia≥a (Szermiercza) podczas Finty,Rozproszenie Uwagi/5/brak,Zbicie Broni/0/BroÒ Bia≥a by zbiÊ broÒ,Zejúcie z Linii/5/Unik gdy uøywasz tego Talentu
+0,4,5
+1
+ZWADèCA
+Zwadüca ñ Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy
+BroÒ Bia≥a (Parujπca)/0/podstawowa,BroÒ ZasiÍgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Hazard/7/podstawowa,Opanowanie/8/podstawowa,Rzemios≥o (Rusznikarz)/6/zaawansowana
+Bitewny Refleks/4/brak,B≥yskawiczny Strza≥/5/BroÒ ZasiÍgowa gdy wykorzystujesz Talent B≥yskawiczny Strza≥,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),OdwrÛcenie Szans/0/BroÒ Bia≥a w obronie
+0,1,4,5
+2
+ZWADèCA
+Mistrz PojedynkÛw ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Dowodzenie/9/podstawowa,WystÍpy (Akrobatyka)/9/podstawowa,Zastraszanie/2/podstawowa
+Dwie Bronie/5/BroÒ Bia≥a lub ZasiÍgowa kiedy atakujesz dwoma sztukami orÍøa,OburÍcznoúÊ/12/brak,Riposta/5/BroÒ Bia≥a w obronie,Rozbrojenie/4/BroÒ Bia≥a w sytuacjach zwiπzanych z tym Talentem
+0,1,2,4,5
+3
+ZWADèCA
+Szampierz Sπdowy ñ Z≥oto 3
+Ludzie,Wysokie elfy,Krasnoludy
+BroÒ Bia≥a (Dowolna)/0/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Atak Wyprzedzajπcy/4/brak,Groüny/2/Zastraszanie,Mistrz Walki/5/brak,Morderczy Atak/4/brak
+0,1,2,4,5,8
+4
+CH£OP
+Parobek ñ Brπz 2
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Bijatyka)/0/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Plotkowanie/9/podstawowa,Sztuka Przetrwania/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Mocne Plecy/2/Wios≥owanie lub P≥ywanie,OdpornoúÊ Psychiczna/8/brak,W≥Ûczykij/6/Skradania na wsi,WstrzemiÍüliwy/3/Odpornoúci by wytrzymaÊ g≥Ûd
+2,3,5
+1
+CH£OP
+Ch≥op ñ Brπz 3
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Powoøenie/5/podstawowa,Rzemios≥o (Dowolne)/6/zaawansowana,Targowanie/9/podstawowa,Unik/5/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Bardzo Silny/11/brak,Pos≥uch u Zwierzπt/8/Oswajanie,Twardziel/3/brak,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,2,3,5
+2
+CH£OP
+KmieÊ ñ Brπz 4
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa,Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Niezwykle Odporny/11/brak,Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika,WytwÛrca (Dowolny)/6/Rzemios≥o (wybrane),Øy≥ka Handlowa/9/Targowanie
+0,2,3,5,9
+3
+CH£OP
+Starszy Wioskowy ñ Srebro 2
+Ludzie,Krasnoludy,Nizio≥ki
+Intuicja/4/podstawowa,Wiedza (Historia)/7/zaawansowana
+Mistrz Rzemios≥a (Dowolne)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,MÛwca/9/brak,Znawca (Wiedza Lokalna)/7/Wiedza (Wiedza Lokalna),ZrÍczny/11/brak
+0,2,3,5,7,9
+4
+G”RNIK
+Poszukiwacz ñ Brπz 2
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (DwurÍczna)/0/podstawowa,Intuicja/4/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,P≥ywanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (Teren Skalisty),Tragarz/2/Si≥y podczas podnoszenia,W≥Ûczykij/6/Skradania na wsi,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+2,3,8
+1
+G”RNIK
+GÛrnik ñ Brπz 4
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Mocna G≥owa/3/podstawowa,Rzemios≥o (Materia≥y Wybuchowe)/6/zaawansowana,Sekretne Znaki (GÛrnikÛw)/7/zaawansowana,Wspinaczka/2/podstawowa,Wycena/7/zaawansowana
+Bardzo Silny/11/brak,Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Silny Cios/2/brak,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle
+0,2,3,8
+2
+G”RNIK
+Mistrz GÛrniczy ñ Brπz 5
+Ludzie,Krasnoludy,Nizio≥ki
+Plotkowanie/9/podstawowa,Rzemios≥o (Inøynieria)/6/zaawansowana,Skradanie (Podziemia)/5/podstawowa,Wiedza (Geologia)/7/zaawansowana
+Cios Mierzony/4/brak,Szczur Tunelowy/5/Skradanie pod ziemiπ,WytwÛrca (Materia≥y Wybuchowe)/6/Rzemios≥o (Materia≥y Wybuchowe),Z≥ota Rπczka/6/Rzemios≥o by naprawiÊ uszkodzone przedmioty
+0,2,3,4,8
+3
+G”RNIK
+Sztygar ñ Srebro 4
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa
+Czytanie-Pisanie/11/brak,Defraudant/7/Inteligencja (Defraudacja),OdpornoúÊ Psychiczna/8/brak,Przekonujπcy/9/Charyzma gdy prowadzisz debatÍ lub siÍ z kimú spierasz na argumenty
+0,2,3,4,8,9
+4
+GUåLARZ
+UczeÒ Guúlarza ñ Brπz 1
+Ludzie
+Intuicja/4/podstawowa,JÍzyk (Magiczny)/7/zaawansowana,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Splatanie Magii/8/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Ludowa)/7/zaawansowana,Wiedza (Zio≥a)/7/zaawansowana
+Magia Prosta/11/brak,Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (Lasy),Ruchliwe d≥onie/6/Zwinne Palce lub BroÒ Bia≥a (Bijatyka) aby dotknπÊ przeciwnika,W≥Ûczykij/6/Skradania na wsi
+3,4,6
+1
+GUåLARZ
+Guúlarz ñ Brπz 2
+Ludzie
+Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Leczenie/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana,Rzemios≥o (Amulety)/6/zaawansowana,Rzemios≥o (Zielarz)/6/zaawansowana
+Magia Tajemna (Guúlarstwo)/11/brak,Pos≥uch u Zwierzπt/8/Oswajanie,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥,Zmys≥ Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+3,4,6,7
+2
+GUåLARZ
+Starszy Guúlarzy ñ Brπz 3
+Ludzie
+Targowanie/9/podstawowa,Wiedza (Duchy)/7/zaawansowana,Wiedza (Genealogia)/7/zaawansowana,Wiedza (Magia)/7/zaawansowana
+Czysta Dusza/8/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,Wykrywanie Magii/4/Intuicja by wykrywaÊ czarodziejÛw,WytwÛrca (Zielarz)/6/Rzemios≥o (Zielarz)
+3,4,6,7,9
+3
+GUåLARZ
+Wiedzπcy ñ Brπz 5
+Ludzie
+Modlitwa/9/zaawansowana,Zastraszanie/2/podstawowa
+Mistrz Rzemios≥a (Zielarz)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,OdpornoúÊ Psychiczna/8/brak,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle,Wyczulony Zmys≥ (Dowolny)/4/Percepcja (z wykorzystaniem tego zmys≥u)
+3,4,6,7,8,9
+4
+£OWCA
+Traper ñ Brπz 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Proca)/1/zaawansowana,OdpornoúÊ/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Sztuka Przetrwania/7/podstawowa,Wiedza (ZwierzÍta)/7/zaawansowana,Wspinaczka/2/podstawowa,Zastawianie Pu≥apek/6/zaawansowana
+Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (wybranym Terenie),Traper/4/Percepcja by zauwaøyÊ pu≥apki lub Zastawianie Pu≥apek,Twardziel/3/brak,W≥Ûczykij/6/Skradania na wsi
+2,3,6
+1
+£OWCA
+£owca ñ Brπz 4
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,BroÒ ZasiÍgowa (£uk)/1/zaawansowana,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Sekretne Znaki (£owcÛw)/7/zaawansowana,Skradanie (Wieú)/5/podstawowa
+B≥yskawiczny Strza≥/5/BroÒ ZasiÍgowa gdy wykorzystujesz Talent B≥yskawiczny Strza≥,Celny Strza≥/1/brak,Oko £owcy/4/Dowolny wiπøπcy siÍ z Tropieniem lub polowaniem na zwierzynÍ,Strzelec Wyborowy/11/brak
+1,2,3,6
+2
+£OWCA
+Tropiciel ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Jeüdziectwo (Konie)/5/podstawowa,Nawigacja/4/podstawowa,P≥ywanie/2/zaawansowana,Tropienie/4/zaawansowana
+Nieustraszony (ZwierzÍta)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Prosto MiÍdzy Oczy/11/brak,Strza≥ w DziesiπtkÍ/11/brak,Wyczulony Zmys≥ (Dowolny)/4/Percepcja (z wykorzystaniem tego zmys≥u)
+1,2,3,4,6
+3
+£OWCA
+Mistrz £owÛw ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Opieka nad ZwierzÍtami/7/zaawansowana,Tresura (Dowolna)/7/zaawansowana
+Krzepki/3/brak,Nieustraszony (Potwory)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Snajper/13/BroÒ Strzelecka (zasiÍg daleki lub bardzo daleki),Strza≥ Przebijajπcy/4/brak
+1,2,3,4,6,7
+4
+MISTYK
+WrÛøbiarz ñ Brπz 1
+Ludzie,Leúne elfy
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,WystÍpy (WrÛøenie)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,Charyzmatyczny/11/brak,Percepcja Magiczna/4/Kaødy Test dotyczπcy wykrywania WiatrÛw Magii,SzczÍúcie/9/brak
+4,6,9
+1
+MISTYK
+Mistyk ñ Brπz 2
+Ludzie,Leúne elfy
+Opanowanie/8/podstawowa,Przekupstwo/9/podstawowa,Wiedza (Astrologia)/7/zaawansowana,Wycena/7/zaawansowana,WystÍpy (Proroctwa)/9/podstawowa,Zastraszanie/2/podstawowa
+Dobrze Przygotowany/4/brak,Rozpoznanie Artefaktu/4/Test Intuicji zwiπzany z wykrywaniem magicznych artefaktÛw,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥,åwiÍte Wizje/4/Testy Intuicji kiedy znajdujesz siÍ na úwiÍtej ziemi
+4,6,8,9
+2
+MISTYK
+MÍdrzec ñ Brπz 3
+Ludzie,Leúne elfy
+JÍzyk (Dowolny)/7/zaawansowana,Oswajanie/8/podstawowa,Sztuka (Pisarstwo)/6/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Czarownica!/8/brak,Czytanie-Pisanie/11/brak,Magia Prosta/11/brak,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy
+4,5,6,8,9
+3
+MISTYK
+Prorok ñ Brπz 4
+Ludzie,Leúne elfy
+Splatanie Magii (Azyr)/8/zaawansowana,Wiedza (Proroctwa)/7/zaawansowana
+Groüny/2/Zastraszanie,OdpornoúÊ Psychiczna/8/brak,Magia Tajemna (Niebios)/11/brak,Wykrywanie Magii/4/Intuicja by wykrywaÊ czarodziejÛw
+4,5,6,7,8,9
+4
+ZARZ•DCA
+Poborca PodatkÛw ñ Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+Defraudant/7/Inteligencja (Defraudacja),Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Numizmatyka/4/Wycena podczas ustalania wartoúci monet,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,4,8
+1
+ZARZ•DCA
+Zarzπdca ñ Srebro 5
+Ludzie,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Przekupstwo/9/podstawowa,Charyzma/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,MÛwca/9/brak,PrzestÍpca/10/brak,WtargniÍcie z W≥amaniem/2/BroÒ Bia≥a gdy prÛbujesz zniszczyÊ lub przesunπÊ przedmioty
+0,4,8,9
+2
+ZARZ•DCA
+W≥odarz ñ Z≥oto 1
+Ludzie,Krasnoludy,Nizio≥ki
+Jeüdziectwo (Konie)/5/podstawowa,Nawigacja/4/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Groüny/2/Zastraszanie,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Szycha/11/brak
+0,4,5,8,9
+3
+ZARZ•DCA
+Komornik ñ Z≥oto 3
+Ludzie,Krasnoludy,Nizio≥ki
+JÍzyk (Klasyczny)/7/zaawansowana,Wiedza (Prawo)/7/zaawansowana
+B≥yskotliwoúÊ/11/brak,Intrygant/7/Inteligencji dotyczπce tego Talentu,W≥adcza Postura/9/Dowodzenie,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,4,5,7,8,9
+4
+ZIELARKA
+Zbieraczka ZiÛ≥ ñ Brπz 2
+Ludzie,Leúne elfy,Wysokie elfy,Nizio≥ki
+OdpornoúÊ/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,P≥ywanie/2/zaawansowana,Rzemios≥o (Zielarz)/6/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Zio≥a)/7/zaawansowana,Wspinaczka/2/podstawowa
+Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (Dowolny Teren),W≥Ûczykij/6/Skradania na wsi,Wyczucie Kierunku/4/Nawigacja,Wyczulony Zmys≥ (Smak)/4/Percepcja (z wykorzystaniem tego zmys≥u)
+3,4,5
+1
+ZIELARKA
+Zielarka ñ Brπz 4
+Ludzie,Leúne elfy,Wysokie elfy,Nizio≥ki
+Leczenie/7/zaawansowana,Mocna G≥owa/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Czujny/11/brak,Tragarz/2/Si≥y podczas podnoszenia,ZrÍczny/11/brak,Øy≥ka Handlowa/9/Targowanie
+3,4,5,6
+2
+ZIELARKA
+Mistrzyni Zio≥olecznictwa ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Nizio≥ki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Rzemios≥o (Trucizny)/6/zaawansowana,Wiedza (Medycyna)/7/zaawansowana
+B≥yskotliwoúÊ/11/brak,Pierwsza Pomoc/7/Leczenie podczas Rundy walki,Twardziel/3/brak,WytwÛrca (Zielarz)/6/Rzemios≥o (Zielarz)
+3,4,5,6,9
+3
+ZIELARKA
+Arcyzielarka ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Nizio≥ki
+Powoøenie/5/podstawowa,Nawigacja/4/podstawowa
+Mistrz Rzemios≥a (Rzemios≥o)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,Odporny na (Trucizny)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,Przyrzπdzanie Mikstur/7/Rzemios≥o (Aptekarstwo),Znawca (Zio≥a)/7/Wiedza (wybrana dziedzina)
+3,4,5,6,7,9
+4
+ZWIADOWCA
+Przewodnik ñ Brπz 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,OdpornoúÊ/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Sztuka Przetrwania/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wspinaczka/2/podstawowa
+Czujny/11/brak,Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (Dowolny Teren),W≥Ûczykij/6/Skradania na wsi,Wyczucie Kierunku/4/Nawigacja
+3,4,5
+1
+ZWIADOWCA
+Zwiadowca ñ Brπz 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ ZasiÍgowa (£uk)/1/zaawansowana,Jeüdziectwo (Konie)/5/podstawowa,Nawigacja/4/podstawowa,Skradanie (Wieú)/5/podstawowa,Tropienie/4/zaawansowana
+Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle,Zmys≥ Bitewny/4/Percepcja w trakcie walki
+1,3,4,5
+2
+ZWIADOWCA
+Przepatrywacz ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Opieka nad ZwierzÍtami/7/zaawansowana,P≥ywanie/2/zaawansowana,Sekretne Znaki (£owcÛw)/7/zaawansowana,Targowanie/9/podstawowa
+Niezwykle Odporny/11/brak,Silne Nogi/2/brak,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥,Wyczulony Zmys≥ (Wzrok)/4/Percepcja (z wykorzystaniem tego zmys≥u)
+1,3,4,5,7
+3
+ZWIADOWCA
+Odkrywca ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Rzemios≥o (Kartograf)/6/zaawansowana
+Poliglota/7/JÍzyki (Wszystkie),Twardziel/3/brak,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci,Znawca (Wiedza Lokalna)/7/Wiedza (Wiedza Lokalna)
+1,3,4,5,6,7
+4
+BICZOWNIK
+Gorliwiec ñ Brπz 0
+Ludzie
+BroÒ Bia≥a (Korbacz)/0/podstawowa,Intuicja/4/podstawowa,Leczenie/7/zaawansowana,OdpornoúÊ/3/podstawowa,Sztuka Przetrwania/7/podstawowa,Unik/5/podstawowa,Wiedza (Sigmar)/7/zaawansowana,Zastraszanie/2/podstawowa
+Berserkerska Szarøa/2/BroÒ Bia≥a w Rundzie w ktÛrej Szarøowa≥eú,Czytanie-Pisanie/11/brak,Sza≥ Bojowy/11/brak,WstrzemiÍüliwy/3/Odpornoúci by wytrzymaÊ g≥Ûd
+0,2,3
+1
+BICZOWNIK
+Biczownik ñ Brπz 0
+Ludzie
+Atletyka/5/podstawowa,BroÒ ZasiÍgowa (Proca)/1/zaawansowana,JÍzyk (Klasyczny)/7/zaawansowana,Opanowanie/8/podstawowa,Sztuka (Ikony)/6/podstawowa,Wiedza (Imperium)/7/zaawansowana
+Biczownik/3/Opieranie siÍ Niszczycielskim PotÍgom,NienawiúÊ (Heretycy)/8/Si≥a Woli (Opieranie siÍ Grupie),Nieub≥agany/3/brak,Twardziel/3/brak
+0,2,3,8
+2
+BICZOWNIK
+Pokutnik ñ Brπz 0
+Ludzie
+Charyzma/9/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Wiedza (Teologia)/7/zaawansowana
+Groüny/2/Zastraszanie,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Pierwsza Pomoc/7/Leczenie podczas Rundy walki,Wúciek≥y Atak/5/BroÒ Bia≥a podczas wykonywania dodatkowych atakÛw
+0,2,3,4,8
+3
+BICZOWNIK
+Piewca Zag≥ady ñ Brπz 0
+Ludzie
+Dowodzenie/9/podstawowa,WystÍpy (Przemowy)/9/podstawowa
+Bitewna Furia/8/BroÒ Bia≥a pod wp≥ywem Sza≥u Bojowego,Nieustraszony (Heretycy)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Porywajπca GorliwoúÊ/9/Charyzmy kiedy mÛwisz o waønej dla ciebie sprawie,Straszny/2/brak
+0,2,3,4,8,9
+4
+DOMOKR•ØCA
+W≥Ûczykij ñ Brπz 1
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,OdpornoúÊ/3/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Miasto albo Wieú)/5/podstawowa,Sztuka Przetrwania/7/podstawowa,Targowanie/9/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem,W≥Ûczykij/6/Skradania na wsi,Z≥ota Rπczka/6/Rzemios≥o  by naprawiÊ uszkodzone przedmioty
+3,6,8
+1
+DOMOKR•ØCA
+Domokrπøca ñ Brπz 4
+Ludzie,Krasnoludy,Nizio≥ki
+Jeüdziectwo (Konie)/5/podstawowa,Mocna G≥owa/3/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Oswajanie/8/podstawowa,Rzemios≥o (Z≥ota Rπczka)/6/zaawansowana,Wycena/7/zaawansowana
+Mocne Plecy/2/Wios≥owanie lub P≥ywanie/2/zaawansowana,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Wyczucie Kierunku/4/Nawigacja,Øy≥ka Handlowa/9/Targowanie
+3,6,8,9
+2
+DOMOKR•ØCA
+Mistrz DomokrπøcÛw ñ Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Powoøenie/5/podstawowa,Zastraszanie/2/podstawowa
+Dobrze Przygotowany/4/brak,Niezwykle Odporny/11/brak,Numizmatyka/4/Wycena podczas ustalania wartoúci monet,Tragarz/2/Si≥y podczas podnoszenia
+3,4,6,8,9
+3
+DOMOKR•ØCA
+WÍdrowny Handlarz ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Wiedza (Geografia)/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana
+Charyzmatyczny/11/brak,G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,OdpornoúÊ Psychiczna/8/brak,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+3,4,6,7,8,9
+4
+KUGLARZ
+Grajek Uliczny ñ Brπz 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Charyzma/9/podstawowa,Kuglarstwo (Dowolne)/5/zaawansowana,Muzyka (Dowolna)/6/zaawansowana,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,WystÍpy (Dowolne)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,Charyzmatyczny/11/brak,Naúladowca/4/WystÍpy (Aktorstwo) podczas ktÛrych waøny jest akcent,MÛwca/9/brak
+5,6,9
+1
+KUGLARZ
+Kuglarz ñ Brπz 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,BroÒ ZasiÍgowa (Rzucana)/1/zaawansowana,Jeüdziectwo (Dowolne)/5/podstawowa,Kuglarstwo (Dowolne)/5/zaawansowana,Muzyka (Dowolna)/6/zaawansowana,WystÍpy (Dowolne)/9/podstawowa
+Cz≥owiek Guma/5/Kuglarstwo lub Testy Zwinnoúci w sytuacji gdy przydaje siÍ gibkoúÊ,SprÍøynka/11/brak,Strza≥ w DziesiπtkÍ/11/brak,Woltyøerka/5/Unik na koniu Jeüdziectwo (Konie)
+0,5,6,9
+2
+KUGLARZ
+Trubadur ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Opieka nad ZwierzÍtami/7/zaawansowana,Sztuka (Pisarstwo)/6/podstawowa,Tresura (Dowolne)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Gadanina/9/Charyzma by kogoú zagadaÊ,Mistrz Charakteryzacji/9/WystÍpy (Aktorstwo) gdy udajesz kogoú innego,S≥uch Absolutny/4/WystÍpy (åpiewanie) JÍzyki (tonalne takie jak Eltharin Kitajski czy Magiczny)
+0,1,5,6,9
+3
+KUGLARZ
+Kierownik Trupy ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Powoøenie/5/podstawowa
+Czujny/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Øy≥ka Handlowa/9/Targowanie
+0,1,3,5,6,9
+4
+£OWCA CZAROWNIC
+Oprawca ñ Srebro 1
+Ludzie
+BroÒ Bia≥a (Bijatyka)/0/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Leczenie/7/zaawansowana,Mocna G≥owa/3/podstawowa,Percepcja/4/podstawowa,Wiedza (Tortury)/7/zaawansowana,Zastraszanie/2/podstawowa
+Czytanie-Pisanie/11/brak,Groüny/2/Zastraszanie,NieugiÍty/2/brak,Zimna krew/11/brak
+0,3,8
+1
+£OWCA CZAROWNIC
+£owca Czarownic ñ Srebro 3
+Ludzie
+BroÒ Bia≥a (Dowolna)/0/podstawowa,BroÒ ZasiÍgowa (Dowolna)/1/zaawansowana,Jeüdziectwo (Konie)/5/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Czarownice)/7/zaawansowana
+CieÒ/5/Wszystkie zwiπzane ze úledzeniem,Dwie Bronie/5/BroÒ Bia≥a lub ZasiÍgowa kiedy atakujesz dwoma sztukami orÍøa,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Percepcja Magiczna/4/Kaødy Test dotyczπcy wykrywania WiatrÛw Magii,Strzelec Wyborowy/11/brak
+0,1,3,8
+2
+£OWCA CZAROWNIC
+Inkwizytor ñ Srebro 5
+Ludzie
+Dowodzenie/9/podstawowa,OdpornoúÊ/3/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Prawo)/7/zaawansowana
+OdpornoúÊ Psychiczna/8/brak,NieustÍpliwy/5/brak,Nieustraszony (Czarownice)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy
+0,1,3,8,9
+3
+£OWCA CZAROWNIC
+Genera≥ £owcÛw Czarownic ñ Z≥oto 1
+Ludzie
+Wiedza (Chaos)/7/zaawansowana,Wiedza (Polityka)/7/zaawansowana
+Czysta Dusza/8/brak,Straszny/2/brak,Wykrywanie Magii/4/Intuicja by wykrywaÊ czarodziejÛw,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,1,3,7,8,9
+4
+£OWCZYNI NAGR”D
+Pogromczyni Z≥odziei ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Sztuka Przetrwania/7/podstawowa,Targowanie/9/podstawowa
+Charyzmatyczny/11/brak,CieÒ/5/Wszystkie zwiπzane ze úledzeniem,Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,WtargniÍcie z W≥amaniem/2/BroÒ Bia≥a gdy prÛbujesz zniszczyÊ lub przesunπÊ przedmioty
+0,3,5
+1
+£OWCZYNI NAGR”D
+£owczyni NagrÛd ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ ZasiÍgowa (Kusza)/1/zaawansowana,BroÒ ZasiÍgowa (Unieruchamiajπca)/1/zaawansowana,OdpornoúÊ/3/podstawowa,Tropienie/4/zaawansowana,Zastraszanie/2/podstawowa
+Mocne Plecy/2/Wios≥owanie lub P≥ywanie,NieustÍpliwy/5/brak,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Strzelec Wyborowy/11/brak
+0,1,3,5
+2
+£OWCZYNI NAGR”D
+Mistrzyni £owcÛw NagrÛd ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Jeüdziectwo (Konie)/5/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana P≥ywanie/2/zaawansowana,Wspinaczka/2/podstawowa
+Celny Strza≥/1/brak,Cios Mierzony/4/brak,Dwie Bronie/5/BroÒ Bia≥a lub ZasiÍgowa kiedy atakujesz dwoma sztukami orÍøa,Szybkobiegacz/2/Atletyka podczas Biegu
+0,1,2,3,5
+3
+£OWCZYNI NAGR”D
+Legenda £owcÛw NagrÛd ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Powoøenie/5/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Prosto MiÍdzy Oczy/11/brak,Nieustraszony (Cele £owÛw)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Twardziel/3/brak/3/brak,Strza≥ Przebijajπcy/4/brak
+0,1,2,3,5,7
+4
+POS£ANIEC
+Goniec ñ Brπz 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Bijatyka)/0/podstawowa,Unik/5/podstawowa,Nawigacja/4/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Wspinaczka/2/podstawowa
+Bardzo Szybki/11/brak,Chodu!/5/Atletyka gdy Uciekasz,Szybkobiegacz/2/Atletyka podczas Biegu,Zejúcie z Linii/5/Unik gdy uøywasz tego Talentu
+3,4,5
+1
+POS£ANIEC
+Pos≥aniec ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,Opanowanie/8/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana
+Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,PrzestÍpca/10/brak,Wyczucie Kierunku/4/Nawigacja,Z Bata/6/Powoøenie lub Jeüdziectwo podczas Ucieczki lub Biegu
+0,3,4,5
+2
+POS£ANIEC
+Kurier ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Mocna G≥owa/3/podstawowa,Oswajanie/8/podstawowa,Przekupstwo/9/podstawowa,Sztuka Przetrwania/7/podstawowa
+NieustÍpliwy/5/brak,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Woltyøerka/5/Unik na koniu Jeüdziectwo (Konie),Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,3,4,5,8
+3
+POS£ANIEC
+Kapitan KurierÛw ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Zastraszanie/2/podstawowa
+NienawiúÊ (Banici)/8/Si≥a Woli (Opieranie siÍ Grupie),Niezwykle Odporny/11/brak,Szycha/11/brak,Øy≥ka Handlowa/9/Targowanie
+0,3,4,5,8,9
+4
+STRAØNIK DR”G
+Mytnik ñ Brπz 5
+Ludzie,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,BroÒ ZasiÍgowa (Kusza)/1/zaawansowana,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa
+Defraudant/7/Inteligencja (Defraudacja),Numizmatyka/4/Wycena podczas ustalania wartoúci monet,Strzelec Wyborowy/11/brak,Zimna krew/11/brak
+1,3,4
+1
+STRAØNIK DR”G
+Straønik DrÛg ñ Srebro 2
+Ludzie,Nizio≥ki
+Intuicja/4/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,OdpornoúÊ/3/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Sztuka Przetrwania/7/podstawowa,Zastraszanie/2/podstawowa
+Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,PrzestÍpca/10/brak,Urodzony w Siodle/5/Jeüdziectwo (Konie) w walce,Z Bata/6/Powoøenie lub Jeüdziectwo podczas Ucieczki lub Biegu
+0,1,3,4
+2
+STRAØNIK DR”G
+Sierøant StraønikÛw DrÛg ñ Srebro 4
+Ludzie,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ ZasiÍgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Dowodzenie/9/podstawowa
+Etykieta (Øo≥nierze)/9/Charyzma lub Plotkowanie (Øo≥nierze),NienawiúÊ (Dowolne)/8/Si≥a Woli (Opieranie siÍ Grupie),Nieustraszony (Banici)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy
+0,1,3,4,9
+3
+STRAØNIK DR”G
+Kapitan StraønikÛw DrÛg ñ Z≥oto 1
+Ludzie,Nizio≥ki
+Nawigacja/4/podstawowa,Wiedza (Imperium)/7/zaawansowana
+MÛwca/9/brak,Szycha/11/brak,W≥adcza Postura/9/Dowodzenie,Zmys≥ Bitewny/4/Percepcja w trakcie walki
+0,1,3,4,7,9
+4
+WOèNICA
+Foryú ñ Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Unieruchamiajπca)/1/zaawansowana,Jeüdziectwo (Konie)/5/podstawowa,OdpornoúÊ/3/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowanaOswajanie/8/podstawowa,Percepcja/4/podstawowa,Powoøenie/5/podstawowa,Wspinaczka/2/podstawowa
+Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Pos≥uch u Zwierzπt/8/Oswajanie,Woltyøerka/5/Unik na koniu Jeüdziectwo (Konie),Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+1,3,8
+1
+WOèNICA
+Woünica ñ Srebro 2
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Prochowa)/1/zaawansowana,Intuicja/4/podstawowa,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,Nawigacja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Artylerzysta/6/brak,OdpornoúÊ Psychiczna/8/brak,Z Bata/6/Powoøenie lub Jeüdziectwo podczas Ucieczki lub Biegu,Zimna krew/11/brak
+1,3,5,8
+2
+WOèNICA
+Mistrz WoünicÛw ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Tresura (Konie)/7/zaawansowana,Wiedza (Szlaki)/7/zaawansowana,Zastraszanie/2/podstawowa
+Celny Strza≥/1/brak,Nieustraszony (Banici)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Øy≥ka Handlowa/9/Targowanie
+0,1,3,5,8
+3
+WOèNICA
+Mistrz SzlakÛw ñ Srebro 5
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa
+Nieustraszony (Zwierzoludzie)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Strzelec Wyborowy/11/brak,Szybkie Prze≥adowanie/6/brak,Wyczucie Kierunku/4/Nawigacja
+0,1,3,4,5,8
+4
+DOKER
+Pomocnik Dokera ñ Brπz 3
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Podstawowa)/0/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Plotkowanie/9/podstawowa,P≥ywanie/2/zaawansowana,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Bardzo Silny/11/brak,Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Mocne Plecy/2/Wios≥owanie lub P≥ywanie/2/zaawansowana,Tragarz/2/Si≥y podczas podnoszenia
+0,3,4
+1
+DOKER
+Doker ñ Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+Hazard/7/podstawowa,Percepcja/4/podstawowa,Przekupstwo/9/podstawowa,Skradanie (Miasto)/5/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa,Zastraszanie/2/podstawowa
+Etykieta (Cz≥onkowie Cechu)/9/Charyzma lub Plotkowanie (Cz≥onkowie Cechu),PrzestÍpca/10/brak,Silne Nogi/2/brak,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,2,3,4
+2
+DOKER
+Brygadzista ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Wycena/7/zaawansowana
+Defraudant/7/Inteligencja (Defraudacja),Etykieta (PrzestÍpcy)/9/Charyzma lub Plotkowanie (PrzestÍpcy),MÛwca/9/brak,Øy≥ka Handlowa/9/Targowanie
+0,2,3,4,9
+3
+DOKER
+Mistrz DokerÛw ñ Srebro 5
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Wiedza (Podatki)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Groüny/2/Zastraszanie,Numizmatyka/4/Wycena podczas ustalania wartoúci monet,Szycha/11/brak
+0,2,3,4,7,9
+4
+FLISAK
+Rybak ñ Brπz 2
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Plotkowanie/9/podstawowa,P≥ywanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa,Unik/5/podstawowa,Wioúlarstwo/2/podstawowa
+Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (Bagna),Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem,åwietny P≥ywak/2/P≥ywanie,Towarzyski/9/Plotkowanie z wÍdrowcami
+3,5,6
+1
+FLISAK
+Flisak ñ Brπz 3
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Rzucana)/1/zaawansowana,BroÒ ZasiÍgowa (Unieruchamiajπca)/1/zaawansowana,Hazard/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Zastawianie Pu≥apek/6/zaawansowana
+Mocne Plecy/2/Wios≥owanie lub P≥ywanie,W≥Ûczykij/6/Skradania na wsi,Wodniak/5/Øeglarstwo na jednostkach p≥ywajπcych po rzece,WytwÛrca (Szkutnik)/6/Rzemios≥o (Szkutnik)
+0,3,5,6
+2
+FLISAK
+Znawca Rzeki ñ Brπz 5
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Drzewcowa)/0/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Charyzma/9/podstawowa
+Bardzo Silny/11/brak,Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci,Znawca (Szlaki Rzeczne)/7/Wiedza (wybrana dziedzina)
+0,3,4,5,6
+3
+FLISAK
+Starszy Rzeczny ñ Srebro 2
+Ludzie,Krasnoludy,Nizio≥ki
+Wiedza (Ludowa)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Czujny/11/brak,OdpornoúÊ Psychiczna/8/brak,Mistrz Rzemios≥a (Szkutnictwo)/6/Pasujπcy Wyd≥uøony Test tego Rzemios≥a,MÛwca/9/brak
+0,3,4,5,6,9
+4
+PILOT RZECZNY
+Przewodnik Rzeczny ñ Brπz 4
+Ludzie,Krasnoludy,Nizio≥ki
+Intuicja/4/podstawowa,Mocna G≥owa/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,P≥ywanie/2/zaawansowana,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Wioúlarstwo/2/podstawowa
+Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle,Wodniak/5/Øeglarstwo/5/zaawansowana na jednostkach p≥ywajπcych po rzece,Wyczucie Kierunku/4/Nawigacja
+0,3,4
+1
+PILOT RZECZNY
+Pilot Rzeczny ñ Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,Nawigacja/4/podstawowa,Opanowanie/8/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Etykieta (Cechy)/9/Charyzma lub Plotkowanie (Cechy),Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Pilot Rzeczny/4/Kaødy Test Wiedzy dotyczπcy rzeki,Øy≥ka Handlowa/9/Targowanie
+0,3,4,8
+2
+PILOT RZECZNY
+Starszy Pilot ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Wraki)/7/zaawansowana,Zastraszanie/2/podstawowa
+Bardzo Silny/11/brak,Pilot/4/Wios≥owanie lub Øeglowanie podczas wytyczania kursu przez nieznane wody,Urodzony Øeglarz/3/Wszystkie wykonywane by oprzeÊ siÍ chorobie morskiej,Wyczulony Zmys≥ (Wzrok)/4/Percepcja (z wykorzystaniem tego zmys≥u)
+0,3,4,7,8
+3
+PILOT RZECZNY
+Mistrz PilotÛw ñ Srebro 5
+Ludzie,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Øeglarstwo/5/zaawansowana
+Czujny/11/brak,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥,åwietny P≥ywak/2/P≥ywanie,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,3,4,7,8,9
+4
+PIRAT RZECZNY
+Szabrownik ñ Brπz 2
+Ludzie,Leúne elfy,Krasnoludy
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,P≥ywanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa,Unik/5/podstawowa,Wioúlarstwo/2/podstawowa,Wspinaczka/2/podstawowa
+Mocne Plecy/2/Wios≥owanie lub P≥ywanie,PrzestÍpca/10/brak,Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem,WtargniÍcie z W≥amaniem/2/BroÒ Bia≥a gdy prÛbujesz zniszczyÊ lub przesunπÊ przedmioty
+0,2,4
+1
+PIRAT RZECZNY
+Pirat Rzeczny ñ Brπz 3
+Ludzie,Leúne elfy,Krasnoludy
+Intuicja/4/podstawowa,Nawigacja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Przekupstwo/9/podstawowa,Zastawianie Pu≥apek/6/zaawansowana
+Chodu!/5/Atletyka gdy Uciekasz,åwietny P≥ywak/2/P≥ywanie,Traper/4/Percepcja by zauwaøyÊ pu≥apki lub Zastawianie Pu≥apek,W≥Ûczykij/6/Skradania na wsi
+0,2,4,8
+2
+PIRAT RZECZNY
+£upieøca ñ Brπz 5
+Ludzie,Leúne elfy,Krasnoludy
+BroÒ ZasiÍgowa (Kusza)/1/zaawansowana,Plotkowanie/9/podstawowa,Skradanie (Wieú)/5/podstawowa,Zastraszanie/2/podstawowa
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Etykieta (PrzestÍpcy)/9/Charyzma lub Plotkowanie (PrzestÍpcy),Groüny/2/Zastraszanie,Wodniak/5/Øeglarstwo na jednostkach p≥ywajπcych po rzece
+0,1,2,4,8
+3
+PIRAT RZECZNY
+Kapitan £upieøcÛw ñ Srebro 2
+Ludzie,Leúne elfy,Krasnoludy
+Dowodzenie/9/podstawowa,Wiedza (Szlaki Wodne)/7/zaawansowana
+Pilot/4/Wios≥owanie lub Øeglowanie podczas wytyczania kursu przez nieznane wody,SkrÛcenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia,Urodzony Wojownik/11/brak,Wúciek≥y Atak/5/BroÒ Bia≥a podczas wykonywania dodatkowych atakÛw
+0,1,2,4,8,9
+4
+PRZEMYTNICZKA
+Szmuglerka Rzeczna ñ Brπz 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Mocna G≥owa/3/podstawowa,Opanowanie/8/podstawowa,P≥ywanie/2/zaawansowana,Przekupstwo/9/podstawowa,Skradanie (Wieú albo Miasto)/5/podstawowa,Wioúlarstwo/2/podstawowa,Øeglarstwo/5/zaawansowana
+Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (Bagna),Mocne Plecy/2/Wios≥owanie lub P≥ywanie,PrzestÍpca/10/brak,Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem
+5,6,8
+1
+PRZEMYTNICZKA
+Przemytniczka ñ Brπz 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Sekretne Znaki (PrzemytnikÛw)/7/zaawansowana,Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Bardzo Silny/11/brak,Etykieta (PrzestÍpcy)/9/Charyzma lub Plotkowanie (PrzestÍpcy),Wodniak/5/Øeglarstwo na jednostkach p≥ywajπcych po rzece,Øy≥ka Handlowa/9/Targowanie
+4,5,6,8
+2
+PRZEMYTNICZKA
+Mistrzyni PrzemytnikÛw ñ Brπz 5
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Intuicja/4/podstawowa,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Wycena/7/zaawansowana,Zastraszanie/2/podstawowa
+£apÛwkarz/9/£apÛwkarstwo,Nieustraszony (Straønicy Rzeczni)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Pilot/4/Wios≥owanie lub Øeglowanie podczas wytyczania kursu przez nieznane wody,åwietny P≥ywak/2/P≥ywanie
+4,5,6,7,8
+3
+PRZEMYTNICZKA
+KrÛlowa PrzemytnikÛw ñ Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,JÍzyk (Dowolny)/7/zaawansowana
+B≥yskotliwoúÊ/11/brak,Doúwiadczony WÍdrowiec (Wybrzeøa)/5/Atletyki podczas podrÛøy w terenie (Wybrzeøa),Szycha/11/brak,Urodzony Øeglarz/3/Wszystkie wykonywane by oprzeÊ siÍ chorobie morskiej
+4,5,6,7,8,9
+4
+PRZEWOèNIK
+Ch≥opiec Pok≥adowy ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Bijatyka)/0/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Plotkowanie/9/podstawowa,P≥ywanie/2/zaawansowana,Unik/5/podstawowa,Wioúlarstwo/2/podstawowa,Øeglarstwo/5/zaawansowana
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem,åwietny P≥ywak/2/P≥ywanie
+2,3,5
+1
+PRZEWOèNIK
+Przewoünik ñ Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Targowanie/9/podstawowa,Wiedza (Szlaki Rzeczne)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Bardzo Silny/11/brak,Etykieta (Cechy)/9/Charyzma lub Plotkowanie (Cechy),Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Wodniak/5/Øeglarstwo na jednostkach p≥ywajπcych po rzece
+2,3,4,5
+2
+PRZEWOèNIK
+Sternik ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Leczenie/7/zaawansowana,Rzemios≥o (Szkutnictwo)/6/zaawansowana,Wspinaczka/2/podstawowa,WystÍpy (åpiewanie)/9/podstawowa
+Defraudant/7/Inteligencja (Defraudacja),Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Silny Cios/2/brak,Øy≥ka Handlowa/9/Targowanie
+2,3,4,5,6
+3
+PRZEWOèNIK
+Kapitan Barki ñ Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Nawigacja/4/podstawowa
+Groüny/2/Zastraszanie,MÛwca/9/brak,Pilot/4/Wios≥owanie lub Øeglowanie podczas wytyczania kursu przez nieznane wody,Wyczucie Kierunku/4/Nawigacja
+2,3,4,5,6,7
+4
+STRAØNIK RZECZNY
+Rekrut Rzeczny ñ Srebro 1
+Ludzie,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Podstawowa)/0/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,P≥ywanie/2/zaawansowana,Unik/5/podstawowa,Wioúlarstwo/2/podstawowa,Øeglarstwo/5/zaawansowana
+Bardzo Silny/11/brak,Mocne Plecy/2/Wios≥owanie lub P≥ywanie,åwietny P≥ywak/2/P≥ywanie,Wodniak/5/Øeglarstwo na jednostkach p≥ywajπcych po rzece
+1,2,9
+1
+STRAØNIK RZECZNY
+Straønik Rzeczny ñ Srebro 2
+Ludzie,Nizio≥ki
+BroÒ ZasiÍgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Przekupstwo/9/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Zastraszanie/2/podstawowa
+Artylerzysta/6/brak,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,PrzestÍpca/10/brak,Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem
+0,1,2,9
+2
+STRAØNIK RZECZNY
+Øo≥nierz OkrÍtowy ñ Srebro 4
+Ludzie,Nizio≥ki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Wspinaczka/2/podstawowa
+NienawiúÊ (Dowolna)/8/Si≥a Woli (Opieranie siÍ Grupie),Nieustraszony (Piraci Rzeczni)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Pilot/4/Wios≥owanie lub Øeglowanie podczas wytyczania kursu przez nieznane wody,Urodzony Øeglarz/3/Wszystkie wykonywane by oprzeÊ siÍ chorobie morskiej
+0,1,2,4,9
+3
+STRAØNIK RZECZNY
+Mistrz Øo≥nierzy OkrÍtowych ñ Z≥oto 1
+Ludzie,Nizio≥ki
+Nawigacja/4/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Groüny/2/Zastraszanie,Szycha/11/brak,W≥adcza Postura/9/Dowodzenie,Wyczucie Kierunku/4/Nawigacja
+0,1,2,4,7,9
+4
+ØEGLARZ
+Szczur Lπdowy ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Bijatyka)/0/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,P≥ywanie/2/zaawansowana,Wioúlarstwo/2/podstawowa,Wspinaczka/2/podstawowa,Øeglarstwo/5/zaawansowana
+Doúwiadczony WÍdrowiec (Wybrany Teren)/5/Atletyki podczas podrÛøy w terenie (Wybrzeøa),Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Rybak/4/Dowolne wiπøπce siÍ z rybo≥Ûwstwem,åwietny P≥ywak/2/P≥ywanie
+5,6,9
+1
+ØEGLARZ
+Øeglarz ñ Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Podstawowa)/0/podstawowa,JÍzyk (Dowolny)/7/zaawansowana,OdpornoúÊ/3/podstawowa,Unik/5/podstawowa,WystÍpy (åpiewanie)/9/podstawowa
+Na Cztery £apy /5/Atletyka podczas spadania,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Silne Nogi/2/brak,Urodzony Øeglarz/3/Wszystkie wykonywane by oprzeÊ siÍ chorobie morskiej
+0,5,6,9
+2
+ØEGLARZ
+Bosman ñ Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Rzemios≥o (Cieúla)/6/zaawansowana
+Bardzo Silny/11/brak,Silny Cios/2/brak,Wilk Morski/5/Øeglowanie (kaødy statek morski),Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,4,5,6,9
+3
+ØEGLARZ
+Kapitan Statku ñ Z≥oto 2
+Ludzie,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Nawigacja/4/podstawowa
+B≥yskotliwoúÊ/11/brak,MÛwca/9/brak,Pilot/4/Wios≥owanie lub Øeglowanie podczas wytyczania kursu przez nieznane wody,Wyczucie Kierunku/4/Nawigacja
+0,4,5,6,7,9
+4
+BANITA
+ZbÛj ñ Brπz 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Podstawowa)/0/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Opanowanie/8/podstawowa,OdpornoúÊ/3/podstawowa,Sztuka Przetrwania/7/podstawowa,Zastraszanie/2/podstawowa
+Zmys≥ Bitewny/4/Percepcja w trakcie walki,PrzestÍpca/10/brak,W≥Ûczykij/6/Skradania na wsi,Chodu!/5/Atletyka gdy Uciekasz
+0,2,3
+1
+BANITA
+Banita ñ Brπz 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (£uk)/1/zaawansowana,Leczenie/7/zaawansowana,Percepcja/4/podstawowa,Skradanie (Wieú)/5/podstawowa,Unik/5/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Strzelec Wyborowy/11/brak,Traper/4/Percepcja by zauwaøyÊ pu≥apki lub Zastawianie Pu≥apek
+0,1,2,3
+2
+BANITA
+Herszt BanitÛw ñ Brπz 4
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,Plotkowanie/9/podstawowa
+Groüny/2/Zastraszanie,Niezwykle Odporny/11/brak,Szybkie Prze≥adowanie/6/brak,Urodzony w Siodle/5/Jeüdziectwo (Konie) w walce
+0,1,2,3,4
+3
+BANITA
+KrÛl BandytÛw ñ Srebro 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Wiedza (Imperium)/7/zaawansowana
+Prosto MiÍdzy Oczy/11/brak,Nieustraszony (Straønicy DrÛg)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu,Krzepki/3/brak
+0,1,2,3,4,9
+4
+CZAROWNICA
+Szeptucha ñ Brπz 1
+Ludzie
+JÍzyk (Magiczny)/7/zaawansowana,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Wieú)/5/podstawowa,Splatanie Magii/8/zaawansowana,Zastraszanie/2/podstawowa,Zwinne Palce/6/zaawansowana
+Groüny/2/Zastraszanie,Magia Prosta/11/brak,Precyzyjne Inkantowanie/4/JÍzyk (Magiczny) podczas rzucania czaru,PrzestÍpca/10/brak
+0,3,8
+1
+CZAROWNICA
+Czarownica ñ Brπz 2
+Ludzie
+BroÒ Bia≥a (Drzewcowa)/0/podstawowa,Intuicja/4/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Rzemios≥o (Zielarz)/6/zaawansowana,Unik/5/podstawowa
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,Czarownica!/8/brak,Magia Tajemna (Czarownic)/11/brak,Percepcja Magiczna/4/Kaødy Test dotyczπcy wykrywania WiatrÛw Magii,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥
+0,3,4,8
+2
+CZAROWNICA
+Wiedüma ñ Brπz 3
+Ludzie
+Charyzma/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Mroczna Magia)/7/zaawansowana
+Pos≥uch u Zwierzπt/8/Oswajanie,Ruchliwe d≥onie/6/Zwinne Palce lub BroÒ Bia≥a (Bijatyka) aby dotknπÊ przeciwnika,Straszny/2/brak,Wykrywanie Magii/4/Intuicja by wykrywaÊ czarodziejÛw
+0,3,4,8,9
+3
+CZAROWNICA
+CzarnoksiÍønik ñ Brπz 5
+Ludzie
+Wiedza (Demonologia)/7/zaawansowana,Wiedza (Magia)/7/zaawansowana
+Niezwykle Odporny/11/brak,OdpornoúÊ Psychiczna/8/brak,SzczÍúcie/9/brak,Zmys≥ Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+0,3,4,7,8,9
+4
+HIENA CMENTARNA
+Porywacz Zw≥ok ñ Brπz 2
+Ludzie,Nizio≥ki
+Intuicja/4/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Dowolne)/5/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,PrzestÍpca/10/brak,Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Ulicznik/4/Skradanie (Miasto)
+2,4,8
+1
+HIENA CMENTARNA
+Hiena Cmentarna ñ Brπz 3
+Ludzie,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Powoøenie/5/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Medycyna)/7/zaawansowana,Wycena/7/zaawansowana
+Bardzo Silny/11/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle,WtargniÍcie z W≥amaniem/2/BroÒ Bia≥a gdy prÛbujesz zniszczyÊ lub przesunπÊ przedmioty
+0,2,4,8
+2
+HIENA CMENTARNA
+Rabuú GrobowcÛw ñ Srebro 1
+Ludzie,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Otwieranie ZamkÛw/6/zaawansowana,Wiedza (Historia)/7/zaawansowana,Zastawianie Pu≥apek/6/zaawansowana
+Czytanie-Pisanie/11/brak,Silny Cios/2/brak,Szczur Tunelowy/5/Skradanie pod ziemiπ,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,2,4,6,8
+3
+HIENA CMENTARNA
+£owca SkarbÛw ñ Srebro 5
+Ludzie,Nizio≥ki
+Nawigacja/4/podstawowa,Rzemios≥o (Inøynier)/6/zaawansowana
+Nieustraszony (Nieumarli)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,OdpornoúÊ Psychiczna/8/brak,SzÛsty Zmys≥/4/Intuicji wykorzystujπce twÛj SzÛsty Zmys≥,Traper/4/Percepcja by zauwaøyÊ pu≥apki lub Zastawianie Pu≥apek
+0,2,4,6,7,8
+4
+PASER
+Poúrednik ñ Srebro 1
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Wycena/7/zaawansowana
+Szuler/7/Hazard i Zwinne Palce w grach karcianych,Towarzyski/9/Plotkowanie z wÍdrowcami,Ulicznik/4/Skradanie (Miasto),Øy≥ka Handlowa/9/Targowanie
+4,5,9
+1
+PASER
+Paser ñ Srebro 2
+Ludzie,Krasnoludy,Nizio≥ki
+Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Rzemios≥o (Grawer)/6/zaawansowana,Sekretne Znaki (Z≥odziei)/7/zaawansowana,Zastraszanie/2/podstawowa
+B≥yskotliwoúÊ/11/brak,Etykieta (PrzestÍpcy)/9/Charyzma lub Plotkowanie (PrzestÍpcy),Numizmatyka/4/Wycena podczas ustalania wartoúci monet,PrzestÍpca/10/brak
+4,5,6,9
+2
+PASER
+Mistrz PaserÛw ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Przekupstwo/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Sztuka)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Charyzmatyczny/11/brak,Geniusz Arytmetyczny/7/Wycena lub Hazard,Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Szycha/11/brak
+4,5,6,7,9
+3
+PASER
+Broker Informacji ñ Srebro 4
+Ludzie,Krasnoludy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Groüny/2/Zastraszanie,£apÛwkarz/9/£apÛwkarstwo,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+4,5,6,7,8,9
+4
+RAJFUR
+Naganiacz ñ Brπz 1
+Ludzie,Wysokie elfy,Nizio≥ki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Przekupstwo/9/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,WystÍpy (Dowolne)/9/podstawowa,Zastraszanie/2/podstawowa
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,Gadanina/9/Charyzma by kogoú zagadaÊ,Towarzyski/9/Plotkowanie z wÍdrowcami,Ulicznik/4/Skradanie (Miasto)
+5,6,9
+1
+RAJFUR
+Rajfur ñ Brπz 3
+Ludzie,Wysokie elfy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Intuicja/4/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Hulaka/3/Charyzma i Plotkowanie podczas przyjÍÊ oraz Mocna G≥owa,OburÍcznoúÊ/12/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,PrzestÍpca/10/brak
+4,5,6,9
+2
+RAJFUR
+StrÍczyciel ñ Srebro 1
+Ludzie,Wysokie elfy,Nizio≥ki
+JÍzyk (Dowolny)/7/zaawansowana,Opanowanie/8/podstawowa,Wiedza (Prawo)/7/zaawansowana,Wycena/7/zaawansowana
+Charyzmatyczny/11/brak,Defraudant/7/Inteligencja (Defraudacja),Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Øy≥ka Handlowa/9/Targowanie
+4,5,6,8,9
+3
+RAJFUR
+Herszt RajfurÛw ñ Srebro 3
+Ludzie,Wysokie elfy,Nizio≥ki
+Dowodzenie/9/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+B≥yskotliwoúÊ/11/brak,£apÛwkarz/9/£apÛwkarstwo,Numizmatyka/4/Wycena podczas ustalania wartoúci monet,Szycha/11/brak
+4,5,6,7,8,9
+4
+REKETER
+Zbir ñ Brπz 3
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Bijatyka)/0/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Skradanie (Miasto)/5/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Etykieta (PrzestÍpcy)/9/Charyzma lub Plotkowanie (PrzestÍpcy),Groüny/2/Zastraszanie,PrzestÍpca/10/brak,Silny Cios/2/brak
+0,2,3
+1
+REKETER
+Reketer ñ Brπz 5
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,JÍzyk (Estalijski albo TileaÒski)/7/zaawansowana,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Wycena/7/zaawansowana
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Defraudant/7/Inteligencja (Defraudacja),Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Urodzony Wojownik/11/brak
+0,2,3,9
+2
+REKETER
+G≥owa Gangu ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Intuicja/4/podstawowa,Dowodzenie/9/podstawowa,Percepcja/4/podstawowa,BroÒ ZasiÍgowa (Kusza)/1/zaawansowana
+Krzepki/3/brak,Nieustraszony (Straøe)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Odporny na (Trucizny)/3/Wszystkie gdy opierasz siÍ powiπzanemu zagroøeniu,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,2,3,8,9
+3
+REKETER
+KrÛl Podziemia ñ Srebro 5
+Ludzie,Krasnoludy,Nizio≥ki
+Wiedza (Polityka)/7/zaawansowana,Wiedza (Prawo)/7/zaawansowana
+MajÍtny/10/brak,Straszny/2/brak,Szycha/11/brak,W≥adcza Postura/9/Dowodzenie
+0,2,3,7,8,9
+4
+SZARLATAN
+Kanciarz ñ Brπz 3
+Ludzie,Wysokie elfy,Nizio≥ki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),SzczÍúcie/9/brak,Szuler/7/Hazard i Zwinne Palce w grach karcianych,Szuler Koúciany/7/Hazard lub Zwinne Palce podczas gier koúcianych
+4,6,9
+1
+SZARLATAN
+Szarlatan ñ Brπz 5
+Ludzie,Wysokie elfy,Nizio≥ki
+Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa,Wycena/7/zaawansowana,WystÍpy (Aktorstwo)/9/podstawowa
+Gadanina/9/Charyzma by kogoú zagadaÊ,PrzestÍpca/10/brak,Ruchliwe d≥onie/6/Zwinne Palce lub BroÒ Bia≥a (Bijatyka) aby dotknπÊ przeciwnika,Sekretna ToøsamoúÊ/7/WystÍpy (Aktorstwo) by uwiarygodniÊ swojπ sekretnπ toøsamoúÊ
+4,6,8,9
+2
+SZARLATAN
+Oszust ñ Srebro 2
+Ludzie,Wysokie elfy,Nizio≥ki
+JÍzyk (Grypsera)/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana,Otwieranie ZamkÛw/6/zaawansowana,Sekretne Znaki (Z≥odziei)/7/zaawansowana
+Atrakcyjny/9/Charyzma by wp≥ynπÊ na tych ktÛrym siÍ podobasz,Czytanie-Pisanie/11/brak,G≥adkie S≥Ûwka/9/Charyzma podczas k≥amania,Øy≥ka Handlowa/9/Targowanie
+4,5,6,8,9
+3
+SZARLATAN
+£ajdak ñ Srebro 4
+Ludzie,Wysokie elfy,Nizio≥ki
+Badania Naukowe/7/zaawansowana,Wiedza (Genealogia)/7/zaawansowana
+Charyzmatyczny/11/brak,Mistrz Charakteryzacji/9/WystÍpy (Aktorstwo) gdy udajesz kogoú innego,Nos do K≥opotÛw/4/Kaødy by wypatrzeÊ potencjalne problemy,Towarzyski/9/Plotkowanie z wÍdrowcami
+4,5,6,7,8,9
+4
+Z£ODZIEJ
+Bandzior ñ Brπz 1
+Ludzie,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Skradanie (Miasto)/5/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,PrzestÍpca/10/brak,Ulicznik/4/Skradanie (Miasto)
+4,5,8
+1
+Z£ODZIEJ
+Z≥odziej ñ Brπz 3
+Ludzie,Krasnoludy,Nizio≥ki
+Otwieranie ZamkÛw/6/zaawansowana,Plotkowanie/9/podstawowa,Sekretne Znaki (Z≥odziei)/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana,Zwinne Palce/6/zaawansowana
+CieÒ/5/Wszystkie zwiπzane ze úledzeniem Etykieta (PrzestÍpcy) lub Plotkowanie (PrzestÍpcy),Ruchliwe d≥onie/6/Zwinne Palce lub BroÒ Bia≥a (Bijatyka) aby dotknπÊ przeciwnika,Szybki Refleks/11/brak,WtargniÍcie z W≥amaniem/2/BroÒ Bia≥a gdy prÛbujesz zniszczyÊ lub przesunπÊ przedmioty
+4,5,6,8
+2
+Z£ODZIEJ
+Mistrz Z≥odziejski ñ Brπz 5
+Ludzie,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Kusza)/1/zaawansowana,Hazard/7/podstawowa,Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Traper/4/Percepcja by zauwaøyÊ pu≥apki lub Zastawianie Pu≥apek,Widzenie w Ciemnoúci/4/Percepcja przy s≥abym úwietle,Zejúcie z Linii/5/Unik gdy uøywasz tego Talentu,ZrÍczny/11/brak
+2,4,5,6,8
+3
+Z£ODZIEJ
+W≥amywacz ñ Srebro 3
+Ludzie,Krasnoludy,Nizio≥ki
+Charyzma/9/podstawowa,Zastawianie Pu≥apek/6/zaawansowana
+Na Cztery £apy /5/Atletyka podczas spadania,MajÍtny/10/brak,Silne Nogi/2/brak,Wyborny Wspinacz/2/Wspinaczka
+2,4,5,6,8,9
+4
+GLADIATOR
+PiÍúciarz ñ Brπz 4
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Bijatyka)/0/podstawowa,BroÒ Bia≥a (Dowolna)/0/podstawowa,Hazard/7/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),OdwrÛcenie Szans/0/BroÒ Bia≥a w obronie,SkrÛcenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia,Øelazna SzczÍka/3/OdpornoúÊ wykonywana przeciw Oszo≥omieniu
+0,2,3
+1
+GLADIATOR
+Gladiator ñ Srebro 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Targowanie/9/podstawowa,Intuicja/4/podstawowa,BroÒ Bia≥a (Podstawowa)/0/podstawowa,BroÒ Bia≥a (Korbacz albo DwurÍczna)/0/podstawowa,Percepcja/4/podstawowa,BroÒ ZasiÍgowa (Unieruchamiajπca)/1/zaawansowana
+Bitewny Refleks/4/brak,Dwie Bronie/5/BroÒ Bia≥a lub ZasiÍgowa kiedy atakujesz dwoma sztukami orÍøa,OburÍcznoúÊ/12/brak,Tarczownik/2/brak
+0,2,3,4
+2
+GLADIATOR
+Mistrz Areny ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Kuglarstwo (Walka Pokazowa)/5/zaawansowana,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Anatomia)/7/zaawansowana
+Groüny/2/Zastraszanie,Krzepki/3/brak,Mistrz Walki/5/brak,Rozbrojenie/4/BroÒ Bia≥a w sytuacjach zwiπzanych z tym Talentem
+0,2,3,4,5
+3
+GLADIATOR
+Legenda Areny ñ Z≥oto 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ ZasiÍgowa (Dowolna)/1/zaawansowana,Charyzma/9/podstawowa
+Atak Wyprzedzajπcy/4/brak,Nieub≥agany/3/brak,Straszny/2/brak,Wúciek≥y Atak/5/BroÒ Bia≥a podczas wykonywania dodatkowych atakÛw
+0,2,3,4,5,9
+4
+KAP£AN-WOJOWNIK
+Nowicjusz Kap≥anÛw-wojownikÛw ñ Brπz 2
+Ludzie
+BroÒ Bia≥a (Dowolna)/0/podstawowa,Dowodzenie/9/podstawowa,Leczenie/7/zaawansowana,Modlitwa/9/zaawansowana,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Wiedza (Teologia)/7/zaawansowana,Unik/5/podstawowa
+B≥ogos≥awieÒstwo (Dowolna Tradycja)/11/brak,Czytanie-Pisanie/11/brak,Etykieta (Kultyúci)/9/Charyzma lub Plotkowanie (Kultyúci),OdpornoúÊ Psychiczna/8/brak
+0,3,8
+1
+KAP£AN-WOJOWNIK
+Kap≥an-wojownik ñ Srebro 2
+Ludzie
+BroÒ Bia≥a (Dowolna)/0/podstawowa,BroÒ ZasiÍgowa (Dowolna)/1/zaawansowana,Charyzma/9/podstawowa,JÍzyk (Bitewny)/7/zaawansowana,WystÍpy (Przemawianie)/9/podstawowa,Zastraszanie/2/podstawowa
+Dwie Bronie/5/BroÒ Bia≥a lub ZasiÍgowa kiedy atakujesz dwoma sztukami orÍøa,Inspirujπcy/9/Dowodzenie podczas wojny,Inwokacja (Dowolna Tradycja)/11/brak,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ
+0,2,3,8
+2
+KAP£AN-WOJOWNIK
+Kap≥an-sierøant ñ Srebro 3
+Ludzie
+Intuicja/4/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,Percepcja/4/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana
+Czysta Dusza/8/brak,åwiÍte Wizje/4/Testy Intuicji kiedy znajdujesz siÍ na úwiÍtej ziemi,Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika,Zmys≥ Bitewny/4/Percepcja w trakcie walki
+0,2,3,4,8
+3
+KAP£AN-WOJOWNIK
+Kap≥an-kapitan ñ Srebro 4
+Ludzie
+Mocna G≥owa/3/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Nieustraszony (Dowolny)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,åwiÍta NienawiúÊ/9/brak,WÛdz/9/Dowodzenie podczas wojny,Wúciek≥y Atak/5/BroÒ Bia≥a podczas wykonywania dodatkowych atakÛw
+0,2,3,4,8,9
+4
+KAWALERZYSTA
+Jeüdziec ñ Srebro 2
+Ludzie,Leúne elfy,Wysokie elfy
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,JÍzyk (Bitewny)/7/zaawansowana,OdpornoúÊ/3/podstawowa,Opieka nad ZwierzÍtami/7/zaawansowana,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Sztuka Przetrwania/7/podstawowa
+Szybki Refleks/11/brak,Urodzony w Siodle/5/Jeüdziectwo (Konie) w walce,Z Bata/6/Powoøenie lub Jeüdziectwo podczas Ucieczki lub Biegu,Zmys≥ Bitewny/4/Percepcja w trakcie walki
+0,2,5
+1
+KAWALERZYSTA
+Kawalerzysta ñ Srebro 4
+Ludzie,Leúne elfy,Wysokie elfy
+BroÒ Bia≥a (Kawaleryjska)/0/podstawowa,BroÒ ZasiÍgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Mocna G≥owa/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa
+Artylerzysta/6/brak,Etykieta (Øo≥nierze)/9/Charyzma lub Plotkowanie (Øo≥nierze),Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Woltyøerka/5/Unik na koniu Jeüdziectwo (Konie)
+0,1,2,5
+2
+KAWALERZYSTA
+Sierøant Kawalerii ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy
+Intuicja/4/podstawowa,Dowodzenie/9/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Bitewny Refleks/4/brak,B≥yskawiczny Strza≥/5/BroÒ ZasiÍgowa gdy wykorzystujesz Talent B≥yskawiczny Strza≥,NienawiúÊ (Dowolna)/8/Si≥a Woli (Opieranie siÍ Grupie),WÛdz/9/Dowodzenie podczas wojny
+0,1,2,4,5
+3
+KAWALERZYSTA
+Oficer Kawalerii ñ Z≥oto 2
+Ludzie,Leúne elfy,Wysokie elfy
+Hazard/7/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+Atak Wyprzedzajπcy/4/brak,Celny Strza≥/1/brak,Inspirujπcy/9/Dowodzenie podczas wojny,Krzepki/3/brak
+0,1,2,4,5,9
+4
+OCHRONIARZ
+StrÛø ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Hazard/7/podstawowa,Intuicja/4/podstawowa,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Etykieta (S≥udzy)/9/Charyzma lub Plotkowanie (S≥udzy),Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,Szuler Koúciany/7/Hazard lub Zwinne Palce podczas gier koúcianych,Wytrwa≥y/3/OdpornoúÊ by wytrzymaÊ trudnoúci
+0,3,5
+1
+OCHRONIARZ
+Ochroniarz ñ Srebro 2
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Drzewcowa)/0/podstawowa,BroÒ ZasiÍgowa (£uk)/1/zaawansowana,Opanowanie/8/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+NieustÍpliwy/5/brak,OdwrÛcenie Szans/0/BroÒ Bia≥a w obronie,Silny Cios/2/brak,Tarczownik/2/brak
+0,3,4,5
+2
+OCHRONIARZ
+Gwardzista ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (DwurÍczna)/0/podstawowa,JÍzyk (Bitewny)/7/zaawansowana,Leczenie/7/zaawansowana,Wiedza (Etykieta)/7/zaawansowana
+Nieustraszony (Intruzi)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Niewzruszony/8/Opanowanie przeciwko panice prochowej,SprÍøynka/11/brak,Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika
+0,2,3,4,5
+3
+OCHRONIARZ
+Oficer Gwardii ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Krzepki/3/brak,Mistrz Walki/5/brak,Wúciek≥y Atak/5/BroÒ Bia≥a podczas wykonywania dodatkowych atakÛw,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,2,3,4,5,7
+4
+OPRYCH
+Tani DraÒ ñ Brπz 2
+Ludzie,Wysokie elfy,Krasnoludy
+Atletyka/5/podstawowa,BroÒ Bia≥a (Dowolna)/0/podstawowa,OdpornoúÊ/3/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,WystÍpy (Szydzenie)/9/podstawowa,Zastraszanie/2/podstawowa
+Cios Poniøej Pasa/0/BroÒ Bia≥a (Bijatyka),Groüny/2/Zastraszanie,SkrÛcenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia,Urodzony Wojownik/11/brak
+0,3,5
+1
+OPRYCH
+Oprych ñ Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,Percepcja/4/podstawowa,Przekupstwo/9/podstawowa
+Bitewny Refleks/4/brak,OdwrÛcenie Szans/0/BroÒ Bia≥a w obronie,Og≥uszenie/0/BroÒ Bia≥a gdy Og≥uszasz przeciwnika,PrzestÍpca/10/brak
+0,3,4,5
+2
+OPRYCH
+P≥atny Morderca ñ Srebro 4
+Ludzie,Wysokie elfy,Krasnoludy
+BroÒ ZasiÍgowa (Rzucana)/1/zaawansowana,Nawigacja/4/podstawowa,Opanowanie/8/podstawowa,Wspinaczka/2/podstawowa
+Cios Mierzony/4/brak,NieustÍpliwy/5/brak,Rozbrojenie/4/BroÒ Bia≥a w sytuacjach zwiπzanych z tym Talentem,Strzelec Wyborowy/11/brak
+0,1,3,4,5
+3
+OPRYCH
+SkrytobÛjca ñ Z≥oto 1
+Ludzie,Wysokie elfy,Krasnoludy
+BroÒ ZasiÍgowa (Kusza)/1/zaawansowana,WystÍpy (Aktorstwo)/9/podstawowa
+Celny Strza≥/1/brak,Morderczy Atak/4/brak,OburÍcznoúÊ/12/brak,Wúciek≥y Atak/5/BroÒ Bia≥a podczas wykonywania dodatkowych atakÛw
+0,1,3,4,5,9
+4
+RYCERZ
+Giermek ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy
+Atletyka/5/podstawowa,BroÒ Bia≥a (Kawaleryjska)/0/podstawowa,Jeüdziectwo (Konie)/5/podstawowa,Leczenie/7/zaawansowana,Opieka nad ZwierzÍtami/7/zaawansowana Oswajanie/8/podstawowa,Rzemios≥o  (Podkuwanie Koni)/6/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo≥eczna),Tragarz/2/Si≥y podczas podnoszenia,Urodzony Wojownik/11/brak,Urodzony w Siodle/5/Jeüdziectwo (Konie) w walce
+2,4,5
+1
+RYCERZ
+Rycerz ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy
+BroÒ Bia≥a (Dowolna)/0/podstawowa,JÍzyk (Bitewny)/7/zaawansowana,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+Groüny/2/Zastraszanie,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Silny Cios/2/brak,Tarczownik/2/brak
+0,2,4,5
+2
+RYCERZ
+Pierwszy Rycerz ñ Z≥oto 2
+Ludzie,Leúne elfy,Wysokie elfy
+Charyzma/9/podstawowa,Mocna G≥owa/3/podstawowa,Dowodzenie/9/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Niewzruszony/8/Opanowanie przeciwko panice prochowej,Nieustraszony (Dowolny)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika,WÛdz/9/Dowodzenie podczas wojny
+0,2,4,5,8
+3
+RYCERZ
+Rycerz WewnÍtrznego KrÍgu ñ Z≥oto 4
+Ludzie,Leúne elfy,Wysokie elfy
+Sekretne Znaki (Zakonu Rycerskiego)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Inspirujπcy/9/Dowodzenie podczas wojny,Morderczy Atak/4/brak,Rozbrojenie/4/BroÒ Bia≥a w sytuacjach zwiπzanych z tym Talentem,Øelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,2,4,5,8,9
+4
+ZAB”JCA
+ZabÛjca Trolli ñ Brπz 2
+Krasnoludy
+BroÒ Bia≥a (Podstawowa)/0/podstawowa,Hazard/7/podstawowa,Leczenie/7/zaawansowana,Mocna G≥owa/3/podstawowa,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wiedza (Trolle)/7/zaawansowana
+Dwie Bronie/5/BroÒ Bia≥a lub ZasiÍgowa kiedy atakujesz dwoma sztukami orÍøa,Nieustraszony (Wszystko)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Sza≥ Bojowy/11/brak,ZabÛjca/11/brak
+0,2,8
+1
+ZAB”JCA
+ZabÛjca OlbrzymÛw ñ Brπz 2
+Krasnoludy
+BroÒ Bia≥a (DwurÍczna)/0/podstawowa,JÍzyk (Bitewny)/7/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Olbrzymy)/7/zaawansowana,Wycena/7/zaawansowana,Zastraszanie/2/podstawowa
+Groüny/2/Zastraszanie,Nieub≥agany/3/brak,OdwrÛcenie Szans/0/BroÒ Bia≥a w obronie,Twardziel/3/brak
+0,2,3,8
+2
+ZAB”JCA
+ZabÛjca SmokÛw ñ Brπz 2
+Krasnoludy
+BroÒ ZasiÍgowa (Rzucana)/1/zaawansowana,Percepcja/4/podstawowa,Wiedza (Smoki)/7/zaawansowana,WystÍpy (GawÍdziarstwo)/9/podstawowa
+Wúciek≥y Atak/5/BroÒ Bia≥a podczas wykonywania dodatkowych atakÛw,NieustÍpliwy/5/brak,Krzepki/3/brak,Niezwykle Odporny/11/brak
+0,2,3,5,8
+3
+ZAB”JCA
+ZabÛjca DemonÛw ñ Brπz 2
+Krasnoludy
+Intuicja/4/podstawowa,Wiedza (Chaos)/7/zaawansowana
+Bardzo Silny/11/brak,Silny Cios/2/brak,Straszny/2/brak,Mistrz Walki/5/brak
+0,2,3,4,5,8
+4
+ØO£NIERZ
+Rekrut ñ Srebro 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Atletyka/5/podstawowa,BroÒ Bia≥a (Podstawowa)/0/podstawowa,JÍzyk (Bitewny)/7/zaawansowana,Muzyka (BÍben albo Piszcza≥ka)/6/zaawansowana,OdpornoúÊ/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Mocne Plecy/2/Wios≥owanie lub P≥ywanie,Strzelec Wyborowy/11/brak,Szuler Koúciany/7/Hazard lub Zwinne Palce podczas gier koúcianych,Urodzony Wojownik/11/brak
+0,3,8
+1
+ØO£NIERZ
+Øo≥nierz ñ Srebro 3
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+BroÒ Bia≥a (Dowolna)/0/podstawowa,BroÒ ZasiÍgowa (Dowolna)/1/zaawansowana,Hazard/7/podstawowa,Mocna G≥owa/3/podstawowa,Plotkowanie/9/podstawowa,Sztuka Przetrwania/7/podstawowa
+Etykieta (Øo≥nierze)/9/Charyzma lub Plotkowanie (Øo≥nierze),Musztra/0/BroÒ Bia≥a kiedy jesteú w pobliøu sojuszniczej postaci z tym Talentem,Szybkie Prze≥adowanie/6/brak,Tarczownik/2/brak
+0,1,3,8
+2
+ØO£NIERZ
+Sierøant ñ Srebro 5
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Leczenie/7/zaawansowana,Percepcja/4/podstawowa
+Niewzruszony/8/Opanowanie przeciwko panice prochowej,Walka w Ciasnocie/5/Unik w ciasnej przestrzeni,WÛdz/9/Dowodzenie podczas wojny,Zmys≥ Bitewny/4/Percepcja w trakcie walki
+0,1,3,4,8
+3
+ØO£NIERZ
+Oficer ñ Z≥oto 1
+Ludzie,Leúne elfy,Wysokie elfy,Krasnoludy,Nizio≥ki
+Nawigacja/4/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Inspirujπcy/9/Dowodzenie podczas wojny,MÛwca/9/brak,Obieøyúwiat/7/Dowolnej Wiedzy zwiπzanej z okolicπ,Waleczne Serce/8/Opanowanie by prze≥amaÊ Stan Panika
+0,1,3,4,8,9
+4
+
+
+
