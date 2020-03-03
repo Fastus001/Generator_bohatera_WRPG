@@ -418,6 +418,8 @@ class GeneratorCech{
 	public ArrayList<Talent> getListaTalentow(){
 		return listaTalentow;
 	}
+	
+	
 	//szansa jak w podrêczniku
 	private int losowanieRasy() {
 		int rzut = (int) (Math.random()*100)+1;
