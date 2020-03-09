@@ -1,9 +1,10 @@
 package views;
 
-import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.GroupLayout;
@@ -28,10 +29,11 @@ import commons.Talent;
 import commons.Umiejetnosc;
 
 import java.awt.Rectangle;
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
 import javax.swing.UIManager;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.DefaultListCellRenderer;
+import javax.swing.DefaultListModel;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JCheckBox;
@@ -39,9 +41,17 @@ import javax.swing.JScrollPane;
 import java.awt.Font;
 import javax.swing.ScrollPaneConstants;
 import java.awt.Insets;
+import javax.swing.JList;
+import javax.swing.JRadioButton;
+import javax.swing.ButtonGroup;
 
 public class NewGui extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	//Components
 	private JPanel contentPane;
 	private JComboBox<Profesja> cbProfesja;
 	private JComboBox<Object> cbRasa;
@@ -50,13 +60,22 @@ public class NewGui extends JFrame {
 	private JButton btnPodniesPoziomPr;
 	private JCheckBox chckbxShowTalents;
 	private JTextArea textArea;
+	private JList<Bohater> list;
 	
+	
+	private DefaultListModel<Bohater> listaBohaterow = new DefaultListModel<Bohater>();
 	private Bohater nowyBohater;
 	private ArrayList<Rasa> listaRas;
 	public ArrayList<Talent> listaTalentow;	
 	private ArrayList<Profesja> listaProfesji;
 	private ArrayList<Profesja> profesjePierwszyPoziom;
 	private ArrayList<Umiejetnosc> listaUm;
+	private JScrollPane scrlPaneLista;
+	private JButton btsSaveHero;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
+	private JRadioButton rdbtnMen;
+	private JRadioButton rdbtnWomen;
+	
 
 	
 	
@@ -93,6 +112,32 @@ public class NewGui extends JFrame {
 
 	private void createEvents() {
 		
+		btsSaveHero.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				listaBohaterow.addElement(nowyBohater);
+			}
+		});
+		
+		///////////////////////////////////////////////////////////////
+		list.setCellRenderer(new DefaultListCellRenderer() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus)
+			{
+				Component renderer = super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+		                if (renderer instanceof JLabel && value instanceof Bohater)
+			{
+		                    // Here value will be of the Type 'Reservation'
+		                    ((JLabel) renderer).setText(((Bohater) value).toString());
+		                }
+		                return renderer;
+		        }
+		});
+		
 		/////////////////////////////////////////////////////////////////////////
 		//utworzenie nowego bohatera
 		/////////////////////////////////////////////////////////////////////////
@@ -113,8 +158,10 @@ public class NewGui extends JFrame {
 					szukajProfesjiPierwszyPoziom(losowaRasa);
 					losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
 				}
-				
-				nowyBohater = new Bohater(losowaRasa,losowaProfesja);
+				if(rdbtnMen.isSelected())
+					nowyBohater = new Bohater(losowaRasa,losowaProfesja, true);
+				else
+					nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
 				
 				int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
 				nowyBohater.doswiadczenieBohatera(opcjaDoswiadczenia);
@@ -125,6 +172,7 @@ public class NewGui extends JFrame {
 				//System.out.println(checkBox1.isSelected());
 				//nowyBohater.closeBohater();
 				btnPodniesPoziomPr.setEnabled(true);
+				btsSaveHero.setEnabled(true);
 			}
 		});
 		
@@ -208,7 +256,7 @@ public class NewGui extends JFrame {
 		WczytajProfesje();
 		
 		cbDoswiadczenie = new JComboBox<String>();
-		cbDoswiadczenie.setModel(new DefaultComboBoxModel(new String[] {"Brak", "Pocz\u0105tkuj\u0105ca", "\u015Arednio zaawansowana", "Do\u015Bwiadczona"}));
+		cbDoswiadczenie.setModel(new DefaultComboBoxModel<String>(new String[] {"Brak", "Pocz\u0105tkuj\u0105ca", "\u015Arednio zaawansowana", "Do\u015Bwiadczona"}));
 		cbDoswiadczenie.setToolTipText("Czy posta\u0107 posiada ju\u017C jakie\u015B rozwini\u0119cia. W zale\u017Cno\u015Bci od wybranej opcji, posta\u0107 otrzymuje  (3,5,7) rozwini\u0119\u0107 (umiej\u0119tno\u015Bci, cechy klasowe lub talent).\r\n");
 		
 		
@@ -223,6 +271,20 @@ public class NewGui extends JFrame {
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		
+		btsSaveHero = new JButton("Zapisz posta\u0107");
+		btsSaveHero.setEnabled(false);
+
+		
+		scrlPaneLista = new JScrollPane();
+		scrlPaneLista.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		
+		rdbtnMen = new JRadioButton("M\u0119\u017Cczyzna");
+		rdbtnMen.setSelected(true);
+		buttonGroup.add(rdbtnMen);
+		
+		rdbtnWomen = new JRadioButton("Kobieta");
+		buttonGroup.add(rdbtnWomen);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -239,15 +301,28 @@ public class NewGui extends JFrame {
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(btnPodniesPoziomPr)
 							.addPreferredGap(ComponentPlacement.UNRELATED)
-							.addComponent(chckbxShowTalents))
+							.addComponent(chckbxShowTalents)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(rdbtnMen)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(rdbtnWomen))
 						.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 745, GroupLayout.PREFERRED_SIZE))
-					.addContainerGap(29, Short.MAX_VALUE))
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_contentPane.createSequentialGroup()
+							.addGap(18)
+							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE))
+						.addGroup(gl_contentPane.createSequentialGroup()
+							.addPreferredGap(ComponentPlacement.UNRELATED)
+							.addComponent(btsSaveHero)))
+					.addContainerGap())
 		);
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.TRAILING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
-					.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+						.addComponent(scrlPaneLista, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+						.addComponent(scrollPane, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnNowyBohater)
@@ -255,8 +330,14 @@ public class NewGui extends JFrame {
 						.addComponent(cbProfesja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(cbDoswiadczenie, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnPodniesPoziomPr)
-						.addComponent(chckbxShowTalents)))
+						.addComponent(chckbxShowTalents)
+						.addComponent(rdbtnMen)
+						.addComponent(rdbtnWomen)
+						.addComponent(btsSaveHero)))
 		);
+		
+		list = new JList<Bohater>(listaBohaterow);
+		scrlPaneLista.setViewportView(list);
 		scrollPane.setViewportView(textArea);
 		contentPane.setLayout(gl_contentPane);
 

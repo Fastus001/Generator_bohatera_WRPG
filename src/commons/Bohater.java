@@ -3,6 +3,11 @@ package commons;
 import java.util.*;
 
 public class Bohater {
+
+	private String imieNazwisko;
+	private String plecBohatera;
+	
+	
 	private Rasa rasa;
 	private Profesja prof;
 	private Cechy cechy;
@@ -10,9 +15,17 @@ public class Bohater {
 	private ArrayList<Talent> znaneTalenty;
 	private ArrayList<Profesja> historiaProfesji;
 	
-	public Bohater(Rasa rs, Profesja pr) {
+	public Bohater(Rasa rs, Profesja pr, boolean plec) {
 		rasa = new Rasa(rs);
 		prof = new Profesja(pr);
+		
+		GeneratorImion genImion = new GeneratorImion();
+		imieNazwisko = genImion.getFullName(rasa.getName(), plec);
+		if(plec)
+			plecBohatera = "Mê¿czyzna";
+		else
+			plecBohatera = "Kobieta";
+
 		
 		cechy = new Cechy(rs.cechyBazowe, rs.nazwa);
 		znaneUmiejetnosci = new ArrayList<Umiejetnosc>();
@@ -32,6 +45,10 @@ public class Bohater {
 		historiaProfesji = new ArrayList<Profesja>();
 	}
 	
+	@Override
+	public String toString() {
+		return "Bohater [rasa=" + rasa + ", prof=" + prof + "]";
+	}
 	
 		
 	public void nowaProfesja(Profesja nowaProfesja){
@@ -97,7 +114,7 @@ public class Bohater {
 	//pewnie siê zmieni nazwe
 	public String wyswietlBohatera(boolean czyWyswietlicTalent){
 		
-		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+"\n");
+		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+" " +imieNazwisko +" ("+ plecBohatera + ")\n");
 		stringBuilder.append(prof.getNameProfesjaSciezka()+"\n").append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
 		stringBuilder.append("\nPoziom profesji: " + prof.getPoziomUmiejetnosciString()).append("\nZnane Umiejêtnoœci: ");
 		
