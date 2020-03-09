@@ -1,0 +1,19 @@
+Biały;Blond;Biały;Srebrnosiwy;Brzozowobiały
+Złoty blond;Siwy;Lniany;Popielaty;Blond
+Rudoblond;Jasny blond;Rudawy;Jasny blond;Różowe złoto
+Złoty;Brązowy;Złoty;Miodowoblond;Miodowoblond
+Złoty;Brązowy;Złoty;Miodowoblond;Miodowoblond
+Złoty;Brązowy;Złoty;Miodowoblond;Miodowoblond
+Jasny brąz;Miedziany;Kasztanowy;Żółty;Brązowy
+Jasny brąz;Miedziany;Kasztanowy;Żółty;Brązowy
+Jasny brąz;Miedziany;Kasztanowy;Żółty;Brązowy
+Ciemny brąz;Brąz;Rudy;Miedziany blond;Mahoniowy
+Ciemny brąz;Brąz;Rudy;Miedziany blond;Mahoniowy
+Ciemny brąz;Brąz;Rudy;Miedziany blond;Mahoniowy
+Ciemny brąz;Brąz;Rudy;Miedziany blond;Mahoniowy
+Czarny;Brąz;Musztardowy;Blond;Ciemny brąz
+Czarny;Brąz;Musztardowy;Blond;Ciemny brąz
+Czarny;Brąz;Musztardowy;Blond;Ciemny brąz
+Kasztanowy;Ciemny brąz;Migdałowy;Migdałowy;Sjena
+Rudy;Rudy braż;Czekoladowy;Czerwony;Hebanowy
+Siwy;Czarny;Lukrecjowy;Czarny;Niebiesko-czarny
