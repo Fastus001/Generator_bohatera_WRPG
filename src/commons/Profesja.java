@@ -82,7 +82,7 @@ public class Profesja implements Comparable<Profesja>{
 	}
 	
 	public String getNameProfesjaSciezka(){
-		return nazwa + "\n" +sciezkaProfesji;
+		return nazwa + "\n " +sciezkaProfesji;
 	}
 	
 	public ArrayList<Umiejetnosc> getDostepneUmiejetnosciLista(){

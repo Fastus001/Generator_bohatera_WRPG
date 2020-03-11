@@ -6,6 +6,7 @@ public class Bohater {
 
 	private String imieNazwisko;
 	private String plecBohatera;
+	private Wyglad wyglad;
 	
 	
 	private Rasa rasa;
@@ -21,6 +22,9 @@ public class Bohater {
 		
 		GeneratorImion genImion = new GeneratorImion();
 		imieNazwisko = genImion.getFullName(rasa.getName(), plec);
+		
+		wyglad = new Wyglad(rasa);
+		
 		if(plec)
 			plecBohatera = "Mê¿czyzna";
 		else
@@ -47,7 +51,7 @@ public class Bohater {
 	
 	@Override
 	public String toString() {
-		return "Bohater [rasa=" + rasa + ", prof=" + prof + "]";
+		return imieNazwisko + ", Profesja: " + prof.getNameProfesjaSciezka();
 	}
 	
 		
@@ -115,6 +119,7 @@ public class Bohater {
 	public String wyswietlBohatera(boolean czyWyswietlicTalent){
 		
 		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+" " +imieNazwisko +" ("+ plecBohatera + ")\n");
+		stringBuilder.append(wyglad.toString());
 		stringBuilder.append(prof.getNameProfesjaSciezka()+"\n").append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
 		stringBuilder.append("\nPoziom profesji: " + prof.getPoziomUmiejetnosciString()).append("\nZnane Umiejêtnoœci: ");
 		

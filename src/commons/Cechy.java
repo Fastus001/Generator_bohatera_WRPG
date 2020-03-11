@@ -28,9 +28,7 @@ public class Cechy implements RzutKoscia{
 				case "Wysokie elfy": szybkosc = 5; break;
 				case "Leœne elfy": szybkosc = 5; break;
 			}
-			
 			System.out.println(sredniaRzutow);
-			
 		}
 		
 		public Cechy(Rasa rs){

@@ -1,19 +1,39 @@
-BiaÅ‚y;Blond;BiaÅ‚y;Srebrnosiwy;BrzozowobiaÅ‚y
-ZÅ‚oty blond;Siwy;Lniany;Popielaty;Blond
-Rudoblond;Jasny blond;Rudawy;Jasny blond;RÃ³Å¼owe zÅ‚oto
-ZÅ‚oty;BrÄ…zowy;ZÅ‚oty;Miodowoblond;Miodowoblond
-ZÅ‚oty;BrÄ…zowy;ZÅ‚oty;Miodowoblond;Miodowoblond
-ZÅ‚oty;BrÄ…zowy;ZÅ‚oty;Miodowoblond;Miodowoblond
-Jasny brÄ…z;Miedziany;Kasztanowy;Å»Ã³Å‚ty;BrÄ…zowy
-Jasny brÄ…z;Miedziany;Kasztanowy;Å»Ã³Å‚ty;BrÄ…zowy
-Jasny brÄ…z;Miedziany;Kasztanowy;Å»Ã³Å‚ty;BrÄ…zowy
-Ciemny brÄ…z;BrÄ…z;Rudy;Miedziany blond;Mahoniowy
-Ciemny brÄ…z;BrÄ…z;Rudy;Miedziany blond;Mahoniowy
-Ciemny brÄ…z;BrÄ…z;Rudy;Miedziany blond;Mahoniowy
-Ciemny brÄ…z;BrÄ…z;Rudy;Miedziany blond;Mahoniowy
-Czarny;BrÄ…z;Musztardowy;Blond;Ciemny brÄ…z
-Czarny;BrÄ…z;Musztardowy;Blond;Ciemny brÄ…z
-Czarny;BrÄ…z;Musztardowy;Blond;Ciemny brÄ…z
-Kasztanowy;Ciemny brÄ…z;MigdaÅ‚owy;MigdaÅ‚owy;Sjena
-Rudy;Rudy braÅ¼;Czekoladowy;Czerwony;Hebanowy
+Bia³y;Blond;Bia³y;Srebrnosiwy;Brzozowobia³y
+Z³oty blond;Siwy;Lniany;Popielaty;Blond
+Rudoblond;Jasny blond;Rudawy;Jasny blond;Ró¿owe z³oto
+Z³oty;Br¹zowy;Z³oty;Miodowoblond;Miodowoblond
+Z³oty;Br¹zowy;Z³oty;Miodowoblond;Miodowoblond
+Z³oty;Br¹zowy;Z³oty;Miodowoblond;Miodowoblond
+Jasny br¹z;Miedziany;Kasztanowy;¯ó³ty;Br¹zowy
+Jasny br¹z;Miedziany;Kasztanowy;¯ó³ty;Br¹zowy
+Jasny br¹z;Miedziany;Kasztanowy;¯ó³ty;Br¹zowy
+Ciemny br¹z;Br¹z;Rudy;Miedziany blond;Mahoniowy
+Ciemny br¹z;Br¹z;Rudy;Miedziany blond;Mahoniowy
+Ciemny br¹z;Br¹z;Rudy;Miedziany blond;Mahoniowy
+Ciemny br¹z;Br¹z;Rudy;Miedziany blond;Mahoniowy
+Czarny;Br¹z;Musztardowy;Blond;Ciemny br¹z
+Czarny;Br¹z;Musztardowy;Blond;Ciemny br¹z
+Czarny;Br¹z;Musztardowy;Blond;Ciemny br¹z
+Kasztanowy;Ciemny br¹z;Migda³owy;Migda³owy;Sjena
+Rudy;Rudy bra¿;Czekoladowy;Czerwony;Hebanowy
 Siwy;Czarny;Lukrecjowy;Czarny;Niebiesko-czarny
+Dowolny wybór;Czarny jak wêgiel;Jasnoszary;Czarny jak smo³a;Koloru koœci s³oniowej
+Zielony;Szary jak o³ów;Szary;Ametystowy;Antracyt
+B³êkitny;Stalowoszary;B³êkitny;Akwamaryna;Zielony jak bluszcz
+Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
+Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
+Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
+Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Szary;Ciemnobr¹zowy;Orzechowy;Szmaragdowy;Kasztanowy
+Szary;Ciemnobr¹zowy;Orzechowy;Szmaragdowy;Kasztanowy
+Szary;Ciemnobr¹zowy;Orzechowy;Szmaragdowy;Kasztanowy
+Br¹zowy;Orzechowy;Br¹zowy;Bursztynowy;Ciemnobr¹zowy
+Br¹zowy;Orzechowy;Br¹zowy;Bursztynowy;Ciemnobr¹zowy
+Br¹zowy;Orzechowy;Br¹zowy;Bursztynowy;Ciemnobr¹zowy
+Orzechowy;Zielony;Miedziany;Miedziany;Jasnobr¹zowy
+Ciemnobr¹zowy;Ciemny miedziany;Ciemnobr¹zowy;Cytrynowo¿ó³ty;Z³otobr¹zowy
+Czarny;Z³oty;Ciemnobr¹zowy;Z³oty;Fio³kowy
+

@@ -44,6 +44,9 @@ import java.awt.Insets;
 import javax.swing.JList;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
+import java.awt.event.MouseMotionAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseAdapter;
 
 public class NewGui extends JFrame {
 
@@ -111,6 +114,14 @@ public class NewGui extends JFrame {
 
 
 	private void createEvents() {
+		
+		list.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+			}
+		});
+
 		
 		btsSaveHero.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -337,6 +348,8 @@ public class NewGui extends JFrame {
 		);
 		
 		list = new JList<Bohater>(listaBohaterow);
+
+
 		scrlPaneLista.setViewportView(list);
 		scrollPane.setViewportView(textArea);
 		contentPane.setLayout(gl_contentPane);
