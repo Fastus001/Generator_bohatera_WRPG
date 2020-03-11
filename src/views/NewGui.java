@@ -125,7 +125,8 @@ public class NewGui extends JFrame {
 		
 		btsSaveHero.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				listaBohaterow.addElement(nowyBohater);
+				Bohater nowy = new Bohater(nowyBohater);
+				listaBohaterow.addElement(nowy);
 			}
 		});
 		

@@ -31,6 +31,17 @@ public class Cechy implements RzutKoscia{
 			System.out.println(sredniaRzutow);
 		}
 		
+		public Cechy(Cechy stary) {
+			this.stat = new int[IC];
+			this.rozwiniecia = new int[IC];
+			for(int i = 0; i  < IC; i++) {
+				this.stat[i] = stary.stat[i];
+				this.rozwiniecia[i] = stary.rozwiniecia[i];
+			}
+			this.hp = stary.hp;
+			this.szybkosc = stary.szybkosc;
+		}
+		
 		public Cechy(Rasa rs){
 			stat = new int[IC]; //HP traktowane jako dodatkowa osobna cecha
 			rozwiniecia = new int[IC];

@@ -16,6 +16,30 @@ public class Bohater {
 	private ArrayList<Talent> znaneTalenty;
 	private ArrayList<Profesja> historiaProfesji;
 	
+	public Bohater(Bohater bh) {
+		this.imieNazwisko = bh.imieNazwisko;
+		this.plecBohatera = bh.plecBohatera;
+		this.wyglad = new Wyglad(bh.wyglad);
+		this.rasa = new Rasa(bh.rasa);
+		this.prof = new Profesja(bh.prof);
+		this.cechy = new Cechy(bh.cechy);
+		this.znaneUmiejetnosci = new ArrayList<Umiejetnosc>();
+		for(Umiejetnosc um:bh.znaneUmiejetnosci) {
+			Umiejetnosc nowa = new Umiejetnosc(um);
+			this.znaneUmiejetnosci.add(nowa);
+		}
+		this.znaneTalenty = new ArrayList<Talent>();
+		for(Talent tl:bh.znaneTalenty) {
+			Talent nowyTl = new Talent(tl);
+			this.znaneTalenty.add(nowyTl);
+		}
+		this.historiaProfesji = new ArrayList<Profesja>();
+		for(Profesja pr:bh.historiaProfesji) {
+			Profesja nowaPr = new Profesja(pr);
+			this.historiaProfesji.add(nowaPr);
+		}
+	}
+	
 	public Bohater(Rasa rs, Profesja pr, boolean plec) {
 		rasa = new Rasa(rs);
 		prof = new Profesja(pr);

@@ -11,7 +11,7 @@ public class Wyglad implements RzutKoscia{
 	private String kolorWlosow;
 	private ArrayList<String[]> listaWlosyOczy;
 	
-	Wyglad(Rasa rs){
+	public Wyglad(Rasa rs){
 		//todo
 
 		wczytajListe();
@@ -19,6 +19,13 @@ public class Wyglad implements RzutKoscia{
 		setKolorWlosow(rs.getName());
 		setKolorOczu(rs.getName());
 	}
+	
+	public Wyglad(Wyglad stary) {
+		this.wiek = stary.wiek;
+		this.kolorOczu = stary.kolorOczu;
+		this.kolorWlosow = stary.kolorWlosow;
+	}
+	
 	
 	public String toString() {
 		String wszystko = "Wiek: " + wiek + ", Kolor oczu: " + kolorOczu + ", Kolor w³osów: " + kolorWlosow + ".\n";
