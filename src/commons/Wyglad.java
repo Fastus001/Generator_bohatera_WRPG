@@ -90,9 +90,21 @@ public class Wyglad implements RzutKoscia{
 		
 		switch(nazwaRasy) {
 		case "Ludzie": this.wiek = 15 + RzutKoscia.rzutK(10);break;
-		case "Krasnoludy":this.wiek = 15 + 10*RzutKoscia.rzutK(10);break;
-		case "Nizio³ki":this.wiek = 15 + 5*RzutKoscia.rzutK(10);break;
-		case "Elfy":this.wiek = 30 + 10*RzutKoscia.rzutK(10);break;
+		case "Krasnoludy":this.wiek = 15 + RzutKoscia.rzutK(10,10);break;
+		case "Nizio³ki":this.wiek = 15 + RzutKoscia.rzutK(10,5);break;
+		case "Elfy":this.wiek = 30 + RzutKoscia.rzutK(10,10);break;
+		}
+	}
+	
+	public void addWiekPoziomProf(String nazwaRasy) {
+		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Leœne elfy"))
+			nazwaRasy = "Elfy";
+		
+		switch(nazwaRasy) {
+		case "Ludzie": this.wiek += RzutKoscia.rzutK(6,2);break;
+		case "Krasnoludy":this.wiek += RzutKoscia.rzutK(10,4);break;
+		case "Nizio³ki":this.wiek += RzutKoscia.rzutK(10,2);break;
+		case "Elfy":this.wiek += RzutKoscia.rzutK(10,8);break;
 		}
 	}
 }

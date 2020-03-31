@@ -42,6 +42,7 @@ import java.awt.Font;
 import javax.swing.ScrollPaneConstants;
 import java.awt.Insets;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 import java.awt.event.MouseMotionAdapter;
@@ -63,6 +64,12 @@ public class NewGui extends JFrame {
 	private JButton btnPodniesPoziomPr;
 	private JCheckBox chckbxShowTalents;
 	private JTextArea textArea;
+	private JScrollPane scrlPaneLista;
+	private JButton btsSaveHero;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
+	private JRadioButton rdbtnMen;
+	private JRadioButton rdbtnWomen;
+	private JButton btnNowaProfesja;
 	private JList<Bohater> list;
 	
 	
@@ -73,11 +80,8 @@ public class NewGui extends JFrame {
 	private ArrayList<Profesja> listaProfesji;
 	private ArrayList<Profesja> profesjePierwszyPoziom;
 	private ArrayList<Umiejetnosc> listaUm;
-	private JScrollPane scrlPaneLista;
-	private JButton btsSaveHero;
-	private final ButtonGroup buttonGroup = new ButtonGroup();
-	private JRadioButton rdbtnMen;
-	private JRadioButton rdbtnWomen;
+	private Profesja nowaProfesja;
+
 	
 
 	
@@ -118,7 +122,8 @@ public class NewGui extends JFrame {
 		list.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				
+				nowyBohater = new Bohater(listaBohaterow.elementAt(list.getSelectedIndex()));
+				textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
 			}
 		});
 
@@ -185,6 +190,8 @@ public class NewGui extends JFrame {
 				//nowyBohater.closeBohater();
 				btnPodniesPoziomPr.setEnabled(true);
 				btsSaveHero.setEnabled(true);
+				
+
 			}
 		});
 		
@@ -192,14 +199,18 @@ public class NewGui extends JFrame {
 		//podniesienie poziomu we wczeœniej wygenerowanym bohaterze
 		/////////////////////////////////////////////////////////////////////////				
 		btnPodniesPoziomPr.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) 
+			{
 				Profesja profesjaNowyPoziom = null;
-				for(Profesja p: listaProfesji){
-					if(p.toString().equals(nowyBohater.getCurrentProfesjaName()) && (p.getPoziom() == nowyBohater.getCurrentProfPoziom()+1)){
+				for(Profesja p: listaProfesji)
+				{
+					if(p.toString().equals(nowyBohater.getCurrentProfesjaName()) && (p.getPoziom() == nowyBohater.getCurrentProfPoziom()+1))
+					{
 						profesjaNowyPoziom = new Profesja(p);
 					}
 				}
-				if(profesjaNowyPoziom != null){
+				if(profesjaNowyPoziom != null)
+				{
 				//System.out.println("Nowa œcie¿ka profesji to: " + profesjaNowyPoziom.getNameProfesjaSciezka());
 				nowyBohater.nowaProfesja(profesjaNowyPoziom);
 				
@@ -207,11 +218,17 @@ public class NewGui extends JFrame {
 				nowyBohater.doswiadczenieBohatera(opcjaDoswiadczenia);
 				
 				
-				textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+
 				
-				if(profesjaNowyPoziom.getPoziom() == 4){
+				if(profesjaNowyPoziom.getPoziom() == 4)
+					{
 					btnPodniesPoziomPr.setEnabled(false);
-					}
+					int potwierdznie = JOptionPane.showConfirmDialog(null, "Postaæ osi¹gne³a maksymalny poziom profesji,czy chcesz aby \"ukoñczy³a\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
+						if(potwierdznie == JOptionPane.OK_OPTION)
+							nowyBohater.ukonczPoziomProfesji(5);
+						
+					}//koniec if
+				textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
 				}
 			}
 		});
@@ -232,8 +249,72 @@ public class NewGui extends JFrame {
 				}
 				cbProfesja.setEnabled(true);
 				
-				textArea.append(wybor.toString());
+				textArea.append(wybor.toString()+"\n");
+				if(btnNowaProfesja.isEnabled()) {
+					btnNowaProfesja.setEnabled(false);
+				}
 			}
+		});
+		
+
+		/////////////////////////////////////////////////////////////////////////
+		//dodanie nowej profesji do istniej¹cego bohatera, który zaczyna³ z inn¹ profesj¹
+		/////////////////////////////////////////////////////////////////////////
+		btnNowaProfesja.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				//pytanie czy wczesniejsza sciezka ma byæ ukoñczona
+				int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma byæ ukoñczony przed zmian¹ profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
+				if(potwierdzenie == JOptionPane.OK_OPTION) 
+				{
+					nowyBohater.ukonczPoziomProfesji(nowyBohater.getCurrentProfPoziom()+1);
+				}
+				
+				int sprawdzHistorieProfesji = nowyBohater.sprawdzHistorieProfesji(nowaProfesja);
+				if(sprawdzHistorieProfesji == -1) {
+					nowyBohater.nowaProfesja(nowaProfesja);
+					int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
+					nowyBohater.doswiadczenieBohatera(opcjaDoswiadczenia);
+					//wyswietlenie nowego bohatera
+					textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+				}else {
+					//to do
+					Integer liczba = sprawdzHistorieProfesji;
+					textArea.append("\n" +liczba.toString());
+				}
+
+			}
+		});
+		
+
+		
+		cbProfesja.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btnPodniesPoziomPr.isEnabled()) 
+				{
+					
+					if(nowyBohater!=null) 
+					{
+					/*
+					 * sprawdzamy czy combo box profesje jest wybrany, bo by³y problemy gdy postaæ by³a utworzona i zmienia³o siê rasê...
+					 */
+					int select = cbProfesja.getSelectedIndex();
+					if(select != -1) {
+						nowaProfesja = (Profesja) cbProfesja.getSelectedItem();
+						if(nowaProfesja.toString().equals(nowyBohater.getCurrentProfesjaName()))
+						{
+							btnNowaProfesja.setEnabled(false);
+						}
+						else {
+							btnNowaProfesja.setEnabled(true);
+							}
+					}
+						
+					}//koniec if(nowy bohater...
+					
+				}
+			}
+			
 		});
 		
 	}
@@ -255,6 +336,7 @@ public class NewGui extends JFrame {
 
 		
 		btnNowyBohater = new JButton("Nowy Bohater");
+		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 		
 		WczytajTalenty();
 		
@@ -263,6 +345,9 @@ public class NewGui extends JFrame {
 		cbRasa.setToolTipText("Wybierz ras\u0119, je\u017Celi nie chcesz aby by\u0142a ona losowa.");
 		
 		cbProfesja = new JComboBox<Profesja>();
+
+
+
 		cbProfesja.setToolTipText("Wybierz profesj\u0119 dla bohatera.");
 		
 		WczytajProfesje();
@@ -292,11 +377,18 @@ public class NewGui extends JFrame {
 		scrlPaneLista.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		
 		rdbtnMen = new JRadioButton("M\u0119\u017Cczyzna");
+		rdbtnMen.setToolTipText("P\u00F3ki co nie chce mi si\u0119 zmienia\u0107 \r\nopis\u00F3w nazw profesji aby by\u0142y adekwatne\r\ndo wybranej p\u0142ci. Mo\u017Ce kiedy\u015B....");
 		rdbtnMen.setSelected(true);
 		buttonGroup.add(rdbtnMen);
 		
 		rdbtnWomen = new JRadioButton("Kobieta");
+		rdbtnWomen.setToolTipText("P\u00F3ki co nie chce mi si\u0119 zmienia\u0107 \r\nopis\u00F3w nazw profesji aby by\u0142y adekwatne\r\ndo wybranej p\u0142ci. Mo\u017Ce kiedy\u015B....");
 		buttonGroup.add(rdbtnWomen);
+		
+		btnNowaProfesja = new JButton("Nowa profesja");
+		btnNowaProfesja.setToolTipText("Dodaj now\u0105 porfesj\u0119 do aktualnie tworzonego bohatera.\r\nNowa profesja zawsze zaczyna si\u0119 od pierwszego poziomu.");
+
+		btnNowaProfesja.setEnabled(false);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -322,10 +414,12 @@ public class NewGui extends JFrame {
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(18)
-							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE))
+							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 374, Short.MAX_VALUE))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addPreferredGap(ComponentPlacement.UNRELATED)
-							.addComponent(btsSaveHero)))
+							.addComponent(btsSaveHero)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(btnNowaProfesja)))
 					.addContainerGap())
 		);
 		gl_contentPane.setVerticalGroup(
@@ -345,7 +439,8 @@ public class NewGui extends JFrame {
 						.addComponent(chckbxShowTalents)
 						.addComponent(rdbtnMen)
 						.addComponent(rdbtnWomen)
-						.addComponent(btsSaveHero)))
+						.addComponent(btsSaveHero)
+						.addComponent(btnNowaProfesja)))
 		);
 		
 		list = new JList<Bohater>(listaBohaterow);
@@ -542,6 +637,20 @@ public class NewGui extends JFrame {
 		}else{
 			return 4;
 		}
+	}
+	
+	/*
+	 * wyszukanie profesji z konkretnym poziomem
+	 * zabezpieczyc przed podaniemi poziomu wyzszczego niz 4!
+	 */
+	public Profesja getProfesjaWybranyPoziom(String nazwaP, int poziom) {
+		Profesja nowa = new Profesja();
+		for(Profesja pr: listaProfesji) {
+			if(pr.toString().equals(nazwaP) && pr.getPoziom()==poziom) {
+				nowa = new Profesja(pr);
+			}		
+		}
+		return nowa;
 	}
 	
 	public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {

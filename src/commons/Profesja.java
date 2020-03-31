@@ -11,11 +11,16 @@ public class Profesja implements Comparable<Profesja>{
 	private int [] cechyRozwoju;
 	
 	//utworzenie obiektu profesja 
+	
+	public Profesja() {
+		nazwa = "brak";
+		sciezkaProfesji = "brak";
+		poziom = 0;
+	}
 	public Profesja(String n,  String sP, int p, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String[] dR, int[] cR){
 		nazwa = new String(n);
 		sciezkaProfesji = new String(sP);
 		poziom = p;
-		//TODO
 		dostepneUmiejetnosci = dU;
 		dostepneTalenty = dT;
 		dostepnaRasa = dR;
@@ -82,7 +87,7 @@ public class Profesja implements Comparable<Profesja>{
 	}
 	
 	public String getNameProfesjaSciezka(){
-		return nazwa + "\n " +sciezkaProfesji;
+		return nazwa + "\n" +sciezkaProfesji;
 	}
 	
 	public ArrayList<Umiejetnosc> getDostepneUmiejetnosciLista(){
@@ -130,6 +135,11 @@ public class Profesja implements Comparable<Profesja>{
 		return cechyRozwoju;
 	}
 	
-			
+	/**
+	 * @return the sciezkaProfesji
+	 */
+	public String getSciezkaProfesji() {
+		return sciezkaProfesji;
+	}		
 	
 }

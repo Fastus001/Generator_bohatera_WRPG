@@ -16,29 +16,7 @@ public class Bohater {
 	private ArrayList<Talent> znaneTalenty;
 	private ArrayList<Profesja> historiaProfesji;
 	
-	public Bohater(Bohater bh) {
-		this.imieNazwisko = bh.imieNazwisko;
-		this.plecBohatera = bh.plecBohatera;
-		this.wyglad = new Wyglad(bh.wyglad);
-		this.rasa = new Rasa(bh.rasa);
-		this.prof = new Profesja(bh.prof);
-		this.cechy = new Cechy(bh.cechy);
-		this.znaneUmiejetnosci = new ArrayList<Umiejetnosc>();
-		for(Umiejetnosc um:bh.znaneUmiejetnosci) {
-			Umiejetnosc nowa = new Umiejetnosc(um);
-			this.znaneUmiejetnosci.add(nowa);
-		}
-		this.znaneTalenty = new ArrayList<Talent>();
-		for(Talent tl:bh.znaneTalenty) {
-			Talent nowyTl = new Talent(tl);
-			this.znaneTalenty.add(nowyTl);
-		}
-		this.historiaProfesji = new ArrayList<Profesja>();
-		for(Profesja pr:bh.historiaProfesji) {
-			Profesja nowaPr = new Profesja(pr);
-			this.historiaProfesji.add(nowaPr);
-		}
-	}
+
 	
 	public Bohater(Rasa rs, Profesja pr, boolean plec) {
 		rasa = new Rasa(rs);
@@ -73,19 +51,68 @@ public class Bohater {
 		historiaProfesji = new ArrayList<Profesja>();
 	}
 	
+	/*
+	 * konstrukto kopiuj¹cy
+	 */
+	public Bohater(Bohater bh) {
+		this.imieNazwisko = bh.imieNazwisko;
+		this.plecBohatera = bh.plecBohatera;
+		this.wyglad = new Wyglad(bh.wyglad);
+		this.rasa = new Rasa(bh.rasa);
+		this.prof = new Profesja(bh.prof);
+		this.cechy = new Cechy(bh.cechy);
+		this.znaneUmiejetnosci = new ArrayList<Umiejetnosc>();
+		for(Umiejetnosc um:bh.znaneUmiejetnosci) {
+			Umiejetnosc nowa = new Umiejetnosc(um);
+			this.znaneUmiejetnosci.add(nowa);
+		}
+		this.znaneTalenty = new ArrayList<Talent>();
+		for(Talent tl:bh.znaneTalenty) {
+			Talent nowyTl = new Talent(tl);
+			this.znaneTalenty.add(nowyTl);
+		}
+		this.historiaProfesji = new ArrayList<Profesja>();
+		for(Profesja pr:bh.historiaProfesji) {
+			Profesja nowaPr = new Profesja(pr);
+			this.historiaProfesji.add(nowaPr);
+		}
+	}
+	
 	@Override
 	public String toString() {
-		return imieNazwisko + ", Profesja: " + prof.getNameProfesjaSciezka();
+		return imieNazwisko + ", Profesja: " + prof.getName() + " poziom profesji: " + prof.getPoziom();
+	}
+	
+	/*
+	 * metoda która podnosi cechy aby mo¿na by³o ukoñczyc dany poziom profesji (przewa¿nie 4 poziom)
+	 */
+	public void ukonczPoziomProfesji(int poziom) {
+		if(prof.getPoziom() < poziom){
+			int minPoziomUm = 5*prof.getPoziom();
+			//sprawdzenie umiejetnosci
+			nowyPoziomUmiejetnosciNowyLvl(minPoziomUm);
+			//sprawdzenie cech
+			nowyPoziomCechyNowyLvl(minPoziomUm);
+		}
+		for(Talent t:znaneTalenty){
+			sprawdzTalenty(t);
+		}
+		
+		//uaktualnienie poziomu zycia
+		cechy.updateHp();
 	}
 	
 		
 	public void nowaProfesja(Profesja nowaProfesja){
 		if(prof.getPoziom() < nowaProfesja.getPoziom()){
 			int minPoziomUm = 5*prof.getPoziom();
+			//sprawdzenie umiejetnosci
 			nowyPoziomUmiejetnosciNowyLvl(minPoziomUm);
 			//sprawdzenie cech
 			nowyPoziomCechyNowyLvl(minPoziomUm);
 		}
+		wyglad.addWiekPoziomProf(rasa.nazwa);
+		
 		Profesja staraProfesja = new Profesja(prof);
 		historiaProfesji.add(staraProfesja);
 		
@@ -144,8 +171,17 @@ public class Bohater {
 		
 		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+" " +imieNazwisko +" ("+ plecBohatera + ")\n");
 		stringBuilder.append(wyglad.toString());
-		stringBuilder.append(prof.getNameProfesjaSciezka()+"\n").append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
-		stringBuilder.append("\nPoziom profesji: " + prof.getPoziomUmiejetnosciString()).append("\nZnane Umiejêtnoœci: ");
+		stringBuilder.append(prof.getNameProfesjaSciezka());
+		stringBuilder.append(" (Poziom profesji: " + prof.getPoziomUmiejetnosciString()+")\n");
+		stringBuilder.append("Historia rozwoju bohatera: ");
+		for(Profesja pr:historiaProfesji)
+		{
+			String[] nazwaSciezkiProfesji = pr.getSciezkaProfesji().split("–");
+			stringBuilder.append("ex-"+nazwaSciezkiProfesji[0] + ",");
+		}
+		stringBuilder.append("\n");
+		stringBuilder.append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
+		stringBuilder.append("\nZnane Umiejêtnoœci:\n ");
 		
 		
 		Collections.sort(znaneUmiejetnosci);
@@ -154,7 +190,7 @@ public class Bohater {
 			int poziomTestowanejUmiejetn = cechy.getCecha(u.getPozycjaCechy()) + u.getPoziom();
 			stringBuilder.append(u.toString() + " (" + Integer.toString(poziomTestowanejUmiejetn) + "), ");
 		}
-		stringBuilder.append("\n\nTalenty: ");
+		stringBuilder.append("\n\nZnane talenty:\n");
 		
 		Collections.sort(znaneTalenty);
 		for(Talent t: znaneTalenty){
@@ -168,7 +204,7 @@ public class Bohater {
 				}		
 			}
 		}
-		
+
 		
 		
 		return stringBuilder.toString();
@@ -471,6 +507,10 @@ public class Bohater {
 			}
 	}
 	
+	public String getProfesjaNameMain() {
+		return this.prof.toString();
+	}
+	
 	public Profesja getCurrentProfesja(){
 		return prof;
 	}
@@ -481,6 +521,19 @@ public class Bohater {
 	
 	public int getCurrentProfPoziom() {
 		return prof.getPoziom();
+	}
+	
+	/*
+	 * Sprawdzenie czy dana profesja juz nie by³a wczeœniej rozwijana u danego bohatera
+	 * je¿eli nie bêdzie to zwraca -1, inaczej podaje poziom profesji
+	 */
+	public int sprawdzHistorieProfesji(Profesja nowaProfesja) {
+		int poziom = -1;
+		for(Profesja staraProf:historiaProfesji) {
+			if(nowaProfesja.toString().equals(staraProf.toString()))
+				poziom = staraProf.getPoziom();
+		}
+		return poziom;
 	}
 	
 }
