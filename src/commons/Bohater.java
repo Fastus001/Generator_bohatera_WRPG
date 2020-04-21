@@ -49,6 +49,7 @@ public class Bohater {
 		postacLosowyBonus(1);
 		
 		historiaProfesji = new ArrayList<Profesja>();
+		historiaProfesji.add(prof);
 	}
 	
 	/*
@@ -113,8 +114,7 @@ public class Bohater {
 		}
 		wyglad.addWiekPoziomProf(rasa.nazwa);
 		
-		Profesja staraProfesja = new Profesja(prof);
-		historiaProfesji.add(staraProfesja);
+		historiaProfesji.add(nowaProfesja);
 		
 		prof = new Profesja(nowaProfesja);
 		dodajZnaneUmiejetnosciZProfesji();
@@ -177,7 +177,7 @@ public class Bohater {
 		for(Profesja pr:historiaProfesji)
 		{
 			String[] nazwaSciezkiProfesji = pr.getSciezkaProfesji().split("–");
-			stringBuilder.append("ex-"+nazwaSciezkiProfesji[0] + ",");
+			stringBuilder.append("ex-"+nazwaSciezkiProfesji[0] + "" + "(" + pr.toString()+"),");
 		}
 		stringBuilder.append("\n");
 		stringBuilder.append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
