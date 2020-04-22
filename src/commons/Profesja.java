@@ -9,6 +9,7 @@ public class Profesja implements Comparable<Profesja>{
 	public ArrayList<Talent> dostepneTalenty;
 	public String [] dostepnaRasa;
 	private int [] cechyRozwoju;
+	private boolean czyUkonczona;
 	
 	//utworzenie obiektu profesja 
 	
@@ -16,8 +17,9 @@ public class Profesja implements Comparable<Profesja>{
 		nazwa = "brak";
 		sciezkaProfesji = "brak";
 		poziom = 0;
+		czyUkonczona = false;
 	}
-	public Profesja(String n,  String sP, int p, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String[] dR, int[] cR){
+	public Profesja(String n,  String sP, int p, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String[] dR, int[] cR, boolean koniec){
 		nazwa = new String(n);
 		sciezkaProfesji = new String(sP);
 		poziom = p;
@@ -25,6 +27,7 @@ public class Profesja implements Comparable<Profesja>{
 		dostepneTalenty = dT;
 		dostepnaRasa = dR;
 		cechyRozwoju = cR;
+		czyUkonczona = koniec;
 	}
 	
 	public Profesja(Profesja pr) {
@@ -43,6 +46,7 @@ public class Profesja implements Comparable<Profesja>{
 		}
 		dostepnaRasa = pr.dostepnaRasa;
 		cechyRozwoju = pr.cechyRozwoju;
+		this.czyUkonczona = pr.czyUkonczona;
 	}
 	
 	
@@ -140,6 +144,18 @@ public class Profesja implements Comparable<Profesja>{
 	 */
 	public String getSciezkaProfesji() {
 		return sciezkaProfesji;
+	}
+	/**
+	 * @return the czyUkonczona
+	 */
+	public boolean isCzyUkonczona() {
+		return czyUkonczona;
+	}
+	/**
+	 * @param czyUkonczona the czyUkonczona to set
+	 */
+	public void setCzyUkonczona(boolean czyUkonczona) {
+		this.czyUkonczona = czyUkonczona;
 	}		
 	
 }

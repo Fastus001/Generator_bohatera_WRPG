@@ -208,8 +208,20 @@ public class NewGui extends JFrame {
 				int poziomProfesji = nowyBohater.getCurrentProfPoziom()+1;
 				
 				if(poziomProfesji>4)
-					JOptionPane.showMessageDialog(null, "Postaæ osi¹gnê³a maksymalny poziom, wybierz inn¹ profesjê jeœli dalej chcesz rozwijaæ postaæ!", "Maksymalny poziom", JOptionPane.INFORMATION_MESSAGE);
-				else {
+				{
+					if(!nowyBohater.getProfesjaUkonczona())
+					{
+					int potwierdznie = JOptionPane.showConfirmDialog(null, "Postaæ osi¹gne³a maksymalny poziom profesji,czy chcesz aby \"ukoñczy³a\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
+						if(potwierdznie == JOptionPane.OK_OPTION)
+							{
+							nowyBohater.ukonczPoziomProfesji(5);
+							textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+							}
+						
+					}else {
+						JOptionPane.showMessageDialog(null, "Postaæ osi¹gnê³a maksymalny poziom, wybierz inn¹ profesjê jeœli dalej chcesz rozwijaæ postaæ!", "Maksymalny poziom", JOptionPane.INFORMATION_MESSAGE);
+					}
+				}else {
 					
 							
 				/*
@@ -262,13 +274,7 @@ public class NewGui extends JFrame {
 				}
 				
 				
-				if(profesjaNowyPoziom.getPoziom() == 4)
-				{
-				int potwierdznie = JOptionPane.showConfirmDialog(null, "Postaæ osi¹gne³a maksymalny poziom profesji,czy chcesz aby \"ukoñczy³a\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
-					if(potwierdznie == JOptionPane.OK_OPTION)
-						nowyBohater.ukonczPoziomProfesji(5);
-					
-				}//koniec if
+
 				
 				if(profesjaNowyPoziom != null)
 				{
@@ -317,11 +323,15 @@ public class NewGui extends JFrame {
 			public void actionPerformed(ActionEvent e) 
 			{
 				//pytanie czy wczesniejsza sciezka ma byæ ukoñczona
-				int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma byæ ukoñczony przed zmian¹ profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
-				if(potwierdzenie == JOptionPane.OK_OPTION) 
+				if(!nowyBohater.getProfesjaUkonczona())
 				{
-					nowyBohater.ukonczPoziomProfesji(nowyBohater.getCurrentProfPoziom()+1);
+					int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma byæ ukoñczony przed zmian¹ profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
+					if(potwierdzenie == JOptionPane.OK_OPTION) 
+					{
+						nowyBohater.ukonczPoziomProfesji(nowyBohater.getCurrentProfPoziom()+1);
+					}
 				}
+
 				
 				int sprawdzHistorieProfesji = nowyBohater.sprawdzHistorieProfesji(nowaProfesja);
 				
@@ -417,7 +427,7 @@ public class NewGui extends JFrame {
 		btnPodniesPoziomPr = new JButton("Podnie\u015B poziom");
 
 		btnPodniesPoziomPr.setToolTipText("Posta\u0107 awansuje na nast\u0119pny poziom rozwoju swojej \u015Bcie\u017Cki profesji.\r\nJe\u017Celi poziom cech lub przynajmniej o\u015Bmiu umiej\u0119tno\u015Bci jest zbyt niski, to s\u0105 one automoatyczne podnoszone do wymaganego poziomu (aby uko\u0144czy\u0107 dany poziom profesji).");
-		
+		btnPodniesPoziomPr.setEnabled(false);
 
 		
 		chckbxShowTalents = new JCheckBox("Wy\u015Bwietl talenty");
@@ -643,7 +653,7 @@ public class NewGui extends JFrame {
 				//poziom profesji
 				int poziomProfesji = Integer.parseInt(czytajB.readLine());
 				
-				Profesja prof = new Profesja(nazwaProfesji, sciezkaProfesji, poziomProfesji, umiej,listaZnTalentow,dostepneRasy,cechyRozwoju );
+				Profesja prof = new Profesja(nazwaProfesji, sciezkaProfesji, poziomProfesji, umiej,listaZnTalentow,dostepneRasy,cechyRozwoju,false );
 				listaProfesji.add(prof);
 
 			}

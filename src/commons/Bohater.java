@@ -101,6 +101,7 @@ public class Bohater {
 		
 		//uaktualnienie poziomu zycia
 		cechy.updateHp();
+		prof.setCzyUkonczona(true);
 	}
 	
 		
@@ -113,6 +114,9 @@ public class Bohater {
 			nowyPoziomCechyNowyLvl(minPoziomUm);
 		}
 		wyglad.addWiekPoziomProf(rasa.nazwa);
+		
+		if(!prof.isCzyUkonczona())
+			prof.setCzyUkonczona(true);
 		
 		historiaProfesji.add(nowaProfesja);
 		
@@ -534,6 +538,10 @@ public class Bohater {
 				poziom = staraProf.getPoziom();
 		}
 		return poziom;
+	}
+	
+	public boolean getProfesjaUkonczona() {
+		return prof.isCzyUkonczona();
 	}
 	
 }
