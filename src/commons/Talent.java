@@ -38,9 +38,9 @@ public class Talent implements Comparable<Talent>{
 		max = talent.max;
 		test = talent.test;
 		opis = talent.opis;
-		maksimum = 0;
-		poziom = 1;
-		pokaz = true;
+		maksimum = talent.maksimum;
+		poziom = talent.poziom;
+		pokaz = talent.pokaz;
 	}
 	
 	public String wyswietlWszystkoTalent(){

@@ -4,7 +4,7 @@ public class Umiejetnosc  implements Comparable<Umiejetnosc>{
 	 
 	String nazwa;
 	int tcecha; // numer cechy g³ównej, która jest testowana
-	String typ;  //podstawowa (false) lub zawansowana (true)
+	String typ;  //podstawowa (false) lub zaawansowana (true)
 	int poz;
 	
 	static String[] cechyNazwa = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd"};
@@ -19,6 +19,8 @@ public class Umiejetnosc  implements Comparable<Umiejetnosc>{
 		poz = p;
 	}
 	
+
+
 	public Umiejetnosc(Umiejetnosc um) {
 		nazwa = new String(um.nazwa);
 		tcecha = um.tcecha;
@@ -35,6 +37,13 @@ public class Umiejetnosc  implements Comparable<Umiejetnosc>{
 	
 	public void setPoziom(int x) {
 		poz = x;
+	}
+	
+	/**
+	 * @param typ the typ to set
+	 */
+	public void setTyp(String typ) {
+		this.typ = typ;
 	}
 	
 	public void addPoziom(int x) {

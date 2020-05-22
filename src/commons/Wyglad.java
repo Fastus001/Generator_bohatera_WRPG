@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class Wyglad implements RzutKoscia{
 	private int wiek;
+	private int wzrost;
 	private String kolorOczu;
 	private String kolorWlosow;
 	private ArrayList<String[]> listaWlosyOczy;
@@ -18,19 +19,38 @@ public class Wyglad implements RzutKoscia{
 		setWiek(rs.getName());
 		setKolorWlosow(rs.getName());
 		setKolorOczu(rs.getName());
+		setWzrost(rs.getName());
 	}
 	
+
+
 	public Wyglad(Wyglad stary) {
 		this.wiek = stary.wiek;
 		this.kolorOczu = stary.kolorOczu;
 		this.kolorWlosow = stary.kolorWlosow;
+		this.wzrost = stary.wzrost;
 	}
 	
 	
 	public String toString() {
-		String wszystko = "Wiek: " + wiek + ", Kolor oczu: " + kolorOczu + ", Kolor w³osów: " + kolorWlosow + ".\n";
+		String wszystko = "Wiek: " + wiek + ", Wzrost: " + wzrost + " cm, Kolor oczu: " + kolorOczu + ", Kolor w³osów: " + kolorWlosow + ".\n";
 		return wszystko;
 	}
+	
+
+
+
+
+	public void setWzrost(String nazwaRasy) {
+		switch(nazwaRasy) {
+		case "Ludzie": this.wzrost = 150 + RzutKoscia.rzutK(4, 10);break;
+		case "Krasnoludy":this.wzrost = 130 + RzutKoscia.rzutK(2, 10);break;
+		case "Nizio³ki":this.wzrost = 95 + RzutKoscia.rzutK(2, 10);break;
+		case "Wysokie elfy":this.wzrost = 180 + RzutKoscia.rzutK(3, 10);break;
+		case "Leœne elfy":this.wzrost = 180 + RzutKoscia.rzutK(3, 10);break;
+	}
+	}
+
 	
 	public void setKolorOczu(String nazwaRasy) {
 		int rand = 18 + ((int) (Math.random()*19));
@@ -106,5 +126,33 @@ public class Wyglad implements RzutKoscia{
 		case "Nizio³ki":this.wiek += RzutKoscia.rzutK(10,2);break;
 		case "Elfy":this.wiek += RzutKoscia.rzutK(10,8);break;
 		}
+	}
+	
+	/**
+	 * @return the wiek
+	 */
+	public int getWiek() {
+		return wiek;
+	}
+
+	/**
+	 * @return the kolorOczu
+	 */
+	public String getKolorOczu() {
+		return kolorOczu;
+	}
+
+	/**
+	 * @return the kolorWlosow
+	 */
+	public String getKolorWlosow() {
+		return kolorWlosow;
+	}
+	
+	/**
+	 * @return the wzrost
+	 */
+	public int getWzrost() {
+		return wzrost;
 	}
 }

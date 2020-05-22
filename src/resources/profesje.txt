@@ -282,7 +282,7 @@ MIESZCZKA
 Przekupka – Srebro 1
 Ludzie,Wysokie elfy,Krasnoludy,Nizio³ki
 Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna G³owa/3/podstawowa,Powo¿enie/5/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
-Ulicznik/4/Skradanie (Miasto)/5/podstawowa,Niegodny Uwagi/9/Skradanie kiedy jesteœ na widoku,Etykieta (S³udzy)/9/Charyzma lub Plotkowanie (S³udzy),Krzepki/3/brak
+Ulicznik/4/Skradanie (Miasto),Niegodny Uwagi/9/Skradanie kiedy jesteœ na widoku,Etykieta (S³udzy)/9/Charyzma lub Plotkowanie (S³udzy),Krzepki/3/brak
 5,7,9
 1
 MIESZCZKA
@@ -429,7 +429,7 @@ Naci¹gacz/9/Charyzma (¯ebractwo),Niezwykle Odporny/11/brak,Odporny na (Choroby)/
 ¯ebrak – Br¹z 2
 Ludzie,Krasnoludy,Nizio³ki
 Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wystêpy (Aktorstwo)/9/podstawowa,Wystêpy (Dowolne)/9/podstawowa,Zwinne Palce/6/zaawansowana
-Etykieta (Przestêpcy)/9/Charyzma lub Plotkowanie (Przestêpcy),Niegodny Uwagi/9/Skradanie kiedy jesteœ na widoku,Przestêpca/10/brak,Ulicznik/4/Skradanie (Miasto)/5/podstawowa
+Etykieta (Przestêpcy)/9/Charyzma lub Plotkowanie (Przestêpcy),Niegodny Uwagi/9/Skradanie kiedy jesteœ na widoku,Przestêpca/10/brak,Ulicznik/4/Skradanie (Miasto)
 3,5,8,9
 2
 ¯EBRAK
@@ -1233,7 +1233,7 @@ Pilot/4/Wios³owanie lub ¯eglowanie podczas wytyczania kursu przez nieznane wody,
 PRZEMYTNICZKA
 Szmuglerka Rzeczna – Br¹z 2
 Ludzie,Wysokie elfy,Krasnoludy,Nizio³ki
-Atletyka/5/podstawowa,Mocna G³owa/3/podstawowa,Opanowanie/8/podstawowa,P³ywanie/2/zaawansowana,Przekupstwo/9/podstawowa,Skradanie (Wieœ albo Miasto)/5/podstawowa,Wioœlarstwo/2/podstawowa,¯eglarstwo/5/zaawansowana
+Atletyka/5/podstawowa,Mocna G³owa/3/podstawowa,Opanowanie/8/podstawowa,P³ywanie/2/zaawansowana,Przekupstwo/9/podstawowa,Skradanie (Miasto albo Wieœ)/5/podstawowa,Wioœlarstwo/2/podstawowa,¯eglarstwo/5/zaawansowana
 Doœwiadczony Wêdrowiec (Wybrany Teren)/5/Atletyki podczas podró¿y w terenie (Bagna),Mocne Plecy/2/Wios³owanie lub P³ywanie,Przestêpca/10/brak,Rybak/4/Dowolne wi¹¿¹ce siê z rybo³ówstwem
 5,6,8
 1

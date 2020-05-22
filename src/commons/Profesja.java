@@ -156,6 +156,14 @@ public class Profesja implements Comparable<Profesja>{
 	 */
 	public void setCzyUkonczona(boolean czyUkonczona) {
 		this.czyUkonczona = czyUkonczona;
-	}		
+	}	
+	
+	public boolean czyJestCechaRozwoju(int x) {
+		for(int i=0; i<this.cechyRozwoju.length; i++) {
+			if(cechyRozwoju[i] == x)
+				return true;
+		}
+		return false;
+	}
 	
 }

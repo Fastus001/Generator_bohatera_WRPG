@@ -13,6 +13,9 @@ import java.awt.Toolkit;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -23,10 +26,12 @@ import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
 import commons.Bohater;
+import commons.ExportToPdf;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
 import commons.Umiejetnosc;
+
 
 import java.awt.Rectangle;
 import javax.swing.UIManager;
@@ -47,6 +52,10 @@ import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseAdapter;
+import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 
 public class NewGui extends JFrame {
 
@@ -80,6 +89,7 @@ public class NewGui extends JFrame {
 	private ArrayList<Profesja> profesjePierwszyPoziom;
 	private ArrayList<Umiejetnosc> listaUm;
 	private Profesja nowaProfesja;
+	private JButton btnExportToPdf;
 
 	
 
@@ -118,11 +128,20 @@ public class NewGui extends JFrame {
 
 	private void createEvents() {
 		
+		list.addFocusListener(new FocusAdapter() {
+			@Override
+			public void focusLost(FocusEvent e) {
+				//btnExportToPdf.setEnabled(false);
+				
+			}
+		});
+		
 		list.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				nowyBohater = new Bohater(listaBohaterow.elementAt(list.getSelectedIndex()));
 				textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+				btnExportToPdf.setEnabled(true);
 			}
 		});
 
@@ -273,9 +292,7 @@ public class NewGui extends JFrame {
 					}
 				}
 				
-				
-
-				
+						
 				if(profesjaNowyPoziom != null)
 				{
 				nowyBohater.nowaProfesja(profesjaNowyPoziom);
@@ -384,6 +401,23 @@ public class NewGui extends JFrame {
 			
 		});
 		
+		/*
+		 * Eksport utworzonego bohatera do pliku pdf
+		 */
+		btnExportToPdf.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				try {
+					new ExportToPdf(nowyBohater);	
+				} catch (Exception e2) {
+					// TODO: handle exception
+				}
+				
+				
+			}
+		});
+		
 	}
 
 	private void initComponents() {
@@ -403,6 +437,8 @@ public class NewGui extends JFrame {
 
 		
 		btnNowyBohater = new JButton("Nowy Bohater");
+		btnNowyBohater.setIcon(new ImageIcon(NewGui.class.getResource("/resources/knight (1).png")));
+		btnNowyBohater.setSelectedIcon(null);
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 		
 		WczytajTalenty();
@@ -425,6 +461,7 @@ public class NewGui extends JFrame {
 		
 		
 		btnPodniesPoziomPr = new JButton("Podnie\u015B poziom");
+		btnPodniesPoziomPr.setIcon(new ImageIcon(NewGui.class.getResource("/resources/crossbow.png")));
 
 		btnPodniesPoziomPr.setToolTipText("Posta\u0107 awansuje na nast\u0119pny poziom rozwoju swojej \u015Bcie\u017Cki profesji.\r\nJe\u017Celi poziom cech lub przynajmniej o\u015Bmiu umiej\u0119tno\u015Bci jest zbyt niski, to s\u0105 one automoatyczne podnoszone do wymaganego poziomu (aby uko\u0144czy\u0107 dany poziom profesji).");
 		btnPodniesPoziomPr.setEnabled(false);
@@ -437,6 +474,7 @@ public class NewGui extends JFrame {
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		
 		btsSaveHero = new JButton("Zapisz posta\u0107");
+		btsSaveHero.setIcon(new ImageIcon(NewGui.class.getResource("/resources/save.png")));
 		btsSaveHero.setEnabled(false);
 
 		
@@ -453,40 +491,49 @@ public class NewGui extends JFrame {
 		buttonGroup.add(rdbtnWomen);
 		
 		btnNowaProfesja = new JButton("Nowa profesja");
+		btnNowaProfesja.setIcon(new ImageIcon(NewGui.class.getResource("/resources/wizard.png")));
 		btnNowaProfesja.setToolTipText("Dodaj now\u0105 porfesj\u0119 do aktualnie tworzonego bohatera.\r\nNowa profesja zawsze zaczyna si\u0119 od pierwszego poziomu.");
 
 		btnNowaProfesja.setEnabled(false);
+		
+		btnExportToPdf = new JButton("Zapisz do PDF");
+		btnExportToPdf.setEnabled(false);
+
+		btnExportToPdf.setIcon(new ImageIcon(NewGui.class.getResource("/resources/document.png")));
+		
+		JLabel lblLabelRasa = new JLabel("Rasa:");
+		
+		JLabel lblLabelProfesja = new JLabel("Profesja:");
+		lblLabelProfesja.setDisplayedMnemonic(KeyEvent.VK_ENTER);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addComponent(btnNowyBohater)
+							.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 745, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(cbRasa, GroupLayout.PREFERRED_SIZE, 76, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(cbProfesja, GroupLayout.PREFERRED_SIZE, 78, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(cbDoswiadczenie, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(btnPodniesPoziomPr)
-							.addPreferredGap(ComponentPlacement.UNRELATED)
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
+								.addComponent(lblLabelRasa)
+								.addComponent(cbRasa, GroupLayout.PREFERRED_SIZE, 76, GroupLayout.PREFERRED_SIZE)
+								.addComponent(btnNowaProfesja)
+								.addComponent(btnPodniesPoziomPr)
+								.addComponent(btnNowyBohater)
+								.addComponent(lblLabelProfesja)
+								.addComponent(cbProfesja, GroupLayout.PREFERRED_SIZE, 78, GroupLayout.PREFERRED_SIZE)
+								.addComponent(btsSaveHero, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(btnExportToPdf, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addGap(24)
+							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE))
+						.addGroup(gl_contentPane.createSequentialGroup()
+							.addGap(529)
 							.addComponent(chckbxShowTalents)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(rdbtnMen)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(rdbtnWomen))
-						.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 745, GroupLayout.PREFERRED_SIZE))
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGap(18)
-							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 374, Short.MAX_VALUE))
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addPreferredGap(ComponentPlacement.UNRELATED)
-							.addComponent(btsSaveHero)
+							.addComponent(rdbtnWomen)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(btnNowaProfesja)))
+							.addComponent(cbDoswiadczenie, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
 					.addContainerGap())
 		);
 		gl_contentPane.setVerticalGroup(
@@ -495,22 +542,38 @@ public class NewGui extends JFrame {
 					.addContainerGap()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
 						.addComponent(scrlPaneLista, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
-						.addComponent(scrollPane, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE))
+						.addGroup(Alignment.LEADING, gl_contentPane.createParallelGroup(Alignment.BASELINE)
+							.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+							.addGroup(gl_contentPane.createSequentialGroup()
+								.addComponent(lblLabelRasa)
+								.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(cbRasa, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addGap(10)
+								.addComponent(lblLabelProfesja)
+								.addGap(7)
+								.addComponent(cbProfesja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addGap(20)
+								.addComponent(btnNowyBohater)
+								.addGap(12)
+								.addComponent(btnPodniesPoziomPr)
+								.addGap(12)
+								.addComponent(btnNowaProfesja)
+								.addGap(13)
+								.addComponent(btsSaveHero)
+								.addGap(12)
+								.addComponent(btnExportToPdf)
+								.addGap(412))))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(btnNowyBohater)
-						.addComponent(cbRasa, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(cbProfesja, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(cbDoswiadczenie, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(btnPodniesPoziomPr)
 						.addComponent(chckbxShowTalents)
 						.addComponent(rdbtnMen)
 						.addComponent(rdbtnWomen)
-						.addComponent(btsSaveHero)
-						.addComponent(btnNowaProfesja)))
+						.addComponent(cbDoswiadczenie, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addContainerGap())
 		);
 		
 		list = new JList<Bohater>(listaBohaterow);
+
 
 
 		scrlPaneLista.setViewportView(list);
@@ -542,9 +605,11 @@ public class NewGui extends JFrame {
 }//koniec metody
 	
 	public Object[] WczytajRasy(){
+		String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
+		
 		try{
 			listaRas = new ArrayList<Rasa>();
-			File plik = new File("../GeneratorBohatera/src/resources/rasy.txt");
+			File plik = new File(urlRasy);
 			FileReader czytaj = new FileReader(plik);
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
@@ -601,10 +666,10 @@ public class NewGui extends JFrame {
 	
 	public void WczytajProfesje(){
 		
-		
+		String urlProfesja = "../GeneratorBohatera/src/resources/profesje.txt";
 		try{
 			listaProfesji = new ArrayList<Profesja>();
-			File plik = new File("../GeneratorBohatera/src/resources/profesje.txt");
+			File plik = new File(urlProfesja);
 			FileReader czytaj = new FileReader(plik);
 			BufferedReader czytajB = new BufferedReader(czytaj);
 			

@@ -5,6 +5,8 @@ import java.util.*;
 public class Bohater {
 
 	private String imieNazwisko;
+
+
 	private String plecBohatera;
 	private Wyglad wyglad;
 	
@@ -12,8 +14,8 @@ public class Bohater {
 	private Rasa rasa;
 	private Profesja prof;
 	private Cechy cechy;
-	private ArrayList <Umiejetnosc> znaneUmiejetnosci;
-	private ArrayList<Talent> znaneTalenty;
+	public ArrayList <Umiejetnosc> znaneUmiejetnosci;
+	public ArrayList<Talent> znaneTalenty;
 	private ArrayList<Profesja> historiaProfesji;
 	
 
@@ -100,7 +102,7 @@ public class Bohater {
 		}
 		
 		//uaktualnienie poziomu zycia
-		cechy.updateHp();
+		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
 		prof.setCzyUkonczona(true);
 	}
 	
@@ -137,7 +139,7 @@ public class Bohater {
 		}
 		
 		//uaktualnienie poziomu zycia
-		cechy.updateHp();
+		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
 	}
 	
 	//sprawdzenie czy atrybuty klasowe maj¹ odpowiedniu poziom do przejscia na nowy poziom
@@ -185,7 +187,7 @@ public class Bohater {
 		}
 		stringBuilder.append("\n");
 		stringBuilder.append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
-		stringBuilder.append("\nZnane Umiejêtnoœci:\n ");
+		stringBuilder.append("\nZnane Umiejêtnoœci:\n");
 		
 		
 		Collections.sort(znaneUmiejetnosci);
@@ -469,9 +471,7 @@ public class Bohater {
 			case "Bardzo Szybki": if(talent.getOpcjeWyswietlania()){
 				cechy.addSzybkosc(); talent.niePokazujOpisu();
 				}break;
-			case "Twardziel": if(talent.getOpcjeWyswietlania()){
-				cechy.podniesZywotnosc(); talent.niePokazujOpisu();
-				}break;
+
 			case "S³uch Absolutny":  nowa = new Umiejetnosc("Wystêpy (Œpiewanie)",9,"podstawowa",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
 			case "Obie¿yœwiat":  nowa = new Umiejetnosc("Wiedza (Lokalna)",7,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
 			case "Czarownica!":  nowa = new Umiejetnosc("Jêzyk (Magiczny)",7,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
@@ -509,6 +509,36 @@ public class Bohater {
 				zmienOpisSciekiProfesji("doœwiadczona");
 				System.out.println("profesja zaawansowana"); break;
 			}
+		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
+	}
+	
+
+	
+	/*
+	 * Sprawdzenie czy dana profesja juz nie by³a wczeœniej rozwijana u danego bohatera
+	 * je¿eli nie bêdzie to zwraca -1, inaczej podaje poziom profesji
+	 */
+	public int sprawdzHistorieProfesji(Profesja nowaProfesja) {
+		int poziom = -1;
+		for(Profesja staraProf:historiaProfesji) {
+			if(nowaProfesja.toString().equals(staraProf.toString()))
+				poziom = staraProf.getPoziom();
+		}
+		return poziom;
+	}
+	
+	public boolean getProfesjaUkonczona() {
+		return prof.isCzyUkonczona();
+	}
+	//getters
+	/**
+	 * @return the imieNazwisko
+	 */
+	public String getImieNazwisko() {
+		return imieNazwisko;
+	}
+	public String getRasaName() {
+		return rasa.getName();
 	}
 	
 	public String getProfesjaNameMain() {
@@ -527,21 +557,79 @@ public class Bohater {
 		return prof.getPoziom();
 	}
 	
-	/*
-	 * Sprawdzenie czy dana profesja juz nie by³a wczeœniej rozwijana u danego bohatera
-	 * je¿eli nie bêdzie to zwraca -1, inaczej podaje poziom profesji
-	 */
-	public int sprawdzHistorieProfesji(Profesja nowaProfesja) {
-		int poziom = -1;
-		for(Profesja staraProf:historiaProfesji) {
-			if(nowaProfesja.toString().equals(staraProf.toString()))
-				poziom = staraProf.getPoziom();
-		}
-		return poziom;
+	public String getProfesjaSciezka() {
+		String [] tablica =prof.getSciezkaProfesji().split("–"); 
+		return tablica[0];
 	}
 	
-	public boolean getProfesjaUkonczona() {
-		return prof.isCzyUkonczona();
+	public String getProfesjaStatus() {
+		String [] tablica =prof.getSciezkaProfesji().split("–"); 
+		return tablica[1];
 	}
+	
+	public String getWygladWiek() {
+		Integer wiek = this.wyglad.getWiek();
+		return wiek.toString();
+	}
+	
+	public String getWygladWzrost() {
+		Integer wzrost = this.wyglad.getWzrost();
+		return wzrost.toString();
+	}
+	
+	public String getWygladWlosy() {
+		return this.wyglad.getKolorWlosow();
+	}
+	
+	public String getWygladOczy() {
+		return this.wyglad.getKolorOczu();
+	}
+	
+	public String [] getCechyAktualne() {
+		String [] tab = new String[10];
+		for(int x =0; x<10; x++) {
+			Integer aktualne = this.cechy.getCecha(x);
+			tab[x] = aktualne.toString();
+		}
+		return tab;
+	}
+	
+	public String [] getCechyRozwiniecia() {
+		String [] tabRozw = new String[10];
+		for(int x =0; x<10; x++) {
+			Integer aktualne = this.cechy.getRozwiniecia(x);
+			if(aktualne >0)
+				tabRozw[x] = aktualne.toString();
+			else {
+				tabRozw[x] = null;
+			}
+		}
+		return tabRozw;
+	}
+	
+	public int getCechySzybkosc() {
+		return this.cechy.getSzybkosc();
+	}
+	
+	public int getCzyJestTwardziel() {
+		int liczba = 0;
+		for(Talent tl:znaneTalenty) {
+			if(tl.nazwaTalentu().equals("Twardziel"))
+			{
+				liczba = tl.getPoziomValue();
+			}
+		}
+		return liczba;
+	}
+	
+	public String getCechyHpString() {
+		Integer hp = this.cechy.getHp();
+		return hp.toString();
+	}
+	
+	public boolean czyJestCechaRozwojuProfesji(int x) {
+		return this.prof.czyJestCechaRozwoju(x);
+	}
+	
 	
 }

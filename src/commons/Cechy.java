@@ -12,14 +12,14 @@ public class Cechy implements RzutKoscia{
 		public Cechy(int [] cechyBazowe, String nazwaRasy){
 			stat = new int[IC]; //HP traktowane jako dodatkowa osobna cecha
 			rozwiniecia = new int[IC];
-			int sredniaRzutow = 0;
+		
 			for (int i = 0; i < IC; i++){
-				stat[i] = cechyBazowe[i]+ RzutKoscia.rzutK(10,2);
-				sredniaRzutow += stat[i] - cechyBazowe[i];
+				stat[i] = cechyBazowe[i]+ RzutKoscia.rzutK(10,2);			
 				rozwiniecia[i] = 0;
 			}
 			//ustelenie iloœci HP 
-			hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 × TB)+WPB - iloœæ ¿ycia w odniesieniu do statystyk
+			updateHp(nazwaRasy,0);
+			
 			
 			switch(nazwaRasy){
 				case "Ludzie": szybkosc =4; break;
@@ -28,9 +28,11 @@ public class Cechy implements RzutKoscia{
 				case "Wysokie elfy": szybkosc = 5; break;
 				case "Leœne elfy": szybkosc = 5; break;
 			}
-			System.out.println(sredniaRzutow);
+		
 		}
 		
+
+
 		public Cechy(Cechy stary) {
 			this.stat = new int[IC];
 			this.rozwiniecia = new int[IC];
@@ -41,7 +43,7 @@ public class Cechy implements RzutKoscia{
 			this.hp = stary.hp;
 			this.szybkosc = stary.szybkosc;
 		}
-		
+		/*
 		public Cechy(Rasa rs){
 			stat = new int[IC]; //HP traktowane jako dodatkowa osobna cecha
 			rozwiniecia = new int[IC];
@@ -54,7 +56,7 @@ public class Cechy implements RzutKoscia{
 			
 		}
 				
-		
+		*/
 		
 		public String wyswietlStaty(int [] tablica){
 			String tekst = "";
@@ -72,13 +74,28 @@ public class Cechy implements RzutKoscia{
 			return tekst;
 		}
 		
-		public void updateHp(){
-			hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 × TB)+WPB - iloœæ ¿ycia w odniesieniu do statystyk
+		public void updateHp(String nazwaRasy, int twardziel){
+			
+			//ustelenie iloœci HP 
+			if(nazwaRasy == "Nizio³ki")
+				hp = 2*((int)(stat[3]/10))+(int)(stat[8]/10); //(2 × TB)+WPB
+			else {
+				hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 × TB)+WPB - iloœæ ¿ycia w odniesieniu do statystyk
+			}
+			System.out.println("¯ywotnoœæ przed twardzielem = " + hp);
+			if(twardziel>0) {
+				hp += twardziel*((int)(stat[3]/10));
+			}
+			System.out.println("¯ywotnoœæ z twardzielem = " + hp);
 		}
 		
 		public int getCecha(int x){
 			return stat[x];
 		}
+
+
+
+
 		//podniesc cechê, boolean jest w zale¿noœci czy dodatkowa cecha ma siê wliczaæ do rozwinieæ aktualnych
 		public void podniesCeche(int oIle, int ktoraCecha, boolean or) {
 			stat[ktoraCecha] +=oIle;
@@ -89,7 +106,7 @@ public class Cechy implements RzutKoscia{
 		}
 		//metoda dla talentu twardziel
 		public void podniesZywotnosc(){
-			hp += stat[3]/10;
+			hp += (int) stat[3]/10;
 		}
 		
 		public void addSzybkosc(){
@@ -100,7 +117,19 @@ public class Cechy implements RzutKoscia{
 			return rozwiniecia[pozycja];
 		}
 		
+		/**
+		 * @return the szybkosc
+		 */
+		public int getSzybkosc() {
+			return szybkosc;
+		}
 		
+		/**
+		 * @return the hp
+		 */
+		public int getHp() {
+			return hp;
+		}
 		
 		
 		
