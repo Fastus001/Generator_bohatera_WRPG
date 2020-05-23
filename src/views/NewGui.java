@@ -15,6 +15,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -178,37 +180,46 @@ public class NewGui extends JFrame {
 		btnNowyBohater.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				Rasa losowaRasa = listaRas.get(losowanieRasy());
-				Profesja losowaProfesja;
-				
-				if(cbRasa.getSelectedIndex()!= -1){
-					losowaRasa = (Rasa) cbRasa.getSelectedItem();
+				try {
+					Rasa losowaRasa = listaRas.get(losowanieRasy());
+					Profesja losowaProfesja;
+					
+					if(cbRasa.getSelectedIndex()!= -1){
+						losowaRasa = (Rasa) cbRasa.getSelectedItem();
+					}
+					
+					
+					if(cbProfesja.getSelectedIndex()!= -1){
+						losowaProfesja = (Profesja) cbProfesja.getSelectedItem();
+					}else{
+						szukajProfesjiPierwszyPoziom(losowaRasa);
+						losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
+					}
+					if(rdbtnMen.isSelected())
+						nowyBohater = new Bohater(losowaRasa,losowaProfesja, true);
+					else
+						nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
+					
+					int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
+					nowyBohater.doswiadczenieBohatera(opcjaDoswiadczenia);
+					
+							
+					//wyswietlenie nowego bohatera
+					textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+					//System.out.println(checkBox1.isSelected());
+					//nowyBohater.closeBohater();
+					btnPodniesPoziomPr.setEnabled(true);
+					btsSaveHero.setEnabled(true);
+					
+					btnNowaProfesja.setEnabled(false);
+				} catch (Exception e2) {
+					StringWriter sw = new StringWriter();
+					PrintWriter pw = new PrintWriter(sw);
+					e2.printStackTrace(pw);
+					String sStackTrace = sw.toString(); // stack trace as a string
+					textArea.append(sStackTrace);
 				}
-				
-				
-				if(cbProfesja.getSelectedIndex()!= -1){
-					losowaProfesja = (Profesja) cbProfesja.getSelectedItem();
-				}else{
-					szukajProfesjiPierwszyPoziom(losowaRasa);
-					losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
-				}
-				if(rdbtnMen.isSelected())
-					nowyBohater = new Bohater(losowaRasa,losowaProfesja, true);
-				else
-					nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
-				
-				int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
-				nowyBohater.doswiadczenieBohatera(opcjaDoswiadczenia);
-				
-						
-				//wyswietlenie nowego bohatera
-				textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
-				//System.out.println(checkBox1.isSelected());
-				//nowyBohater.closeBohater();
-				btnPodniesPoziomPr.setEnabled(true);
-				btsSaveHero.setEnabled(true);
-				
-				btnNowaProfesja.setEnabled(false);
+
 			}
 		});
 		
@@ -441,7 +452,9 @@ public class NewGui extends JFrame {
 		btnNowyBohater.setSelectedIcon(null);
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 		
-		WczytajTalenty();
+		//WczytajTalenty();
+		//do wczytania z pliku jar
+		WczytajTalentyStream();
 		
 		cbRasa = new JComboBox<Object>(WczytajRasy());
 
@@ -604,13 +617,45 @@ public class NewGui extends JFrame {
 		}
 }//koniec metody
 	
+	/*
+	 * wersja do wczytania z pliku .JAR
+	 */
+	public void WczytajTalentyStream(){
+		ClassLoader classLoader2 = getClass().getClassLoader();
+		try{
+				listaTalentow = new ArrayList<Talent>();
+				InputStream inputStream2 = classLoader2.getResourceAsStream("resources/talenty.txt");
+				InputStreamReader strumien = new InputStreamReader(inputStream2);
+				BufferedReader czytajBuf = new BufferedReader(strumien);
+				String wiersz = null;
+				
+				while((wiersz = czytajBuf.readLine()) !=null){
+					if(wiersz.length()==0)
+						break;
+					tworzTalent(wiersz);
+				}
+				czytajBuf.close();
+				//wyswietlTalentyWszystkie();
+		}catch(Exception ex){
+			textArea.append(ex.toString());
+			ex.printStackTrace();
+			System.out.println("Talenty nie wczytane!!");
+		}
+}//koniec metody
+	
 	public Object[] WczytajRasy(){
-		String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
 		
 		try{
 			listaRas = new ArrayList<Rasa>();
+			
+			ClassLoader classLoader2 = getClass().getClassLoader();
+			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/rasy.txt");
+			InputStreamReader czytaj = new InputStreamReader(inputStream2);
+			/*
+			String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
 			File plik = new File(urlRasy);
 			FileReader czytaj = new FileReader(plik);
+			*/
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
 			
@@ -657,6 +702,7 @@ public class NewGui extends JFrame {
 			//wyswietlRasyWszystkie();
 			//wczytajProfesjePrzycisk.setEnabled(true);
 		}catch(Exception ex){
+			textArea.append(ex.toString());
 			ex.printStackTrace();
 		}
 		
@@ -666,11 +712,19 @@ public class NewGui extends JFrame {
 	
 	public void WczytajProfesje(){
 		
-		String urlProfesja = "../GeneratorBohatera/src/resources/profesje.txt";
+		
 		try{
 			listaProfesji = new ArrayList<Profesja>();
+	
+			ClassLoader classLoader2 = getClass().getClassLoader();
+			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/profesje.txt");
+			InputStreamReader czytaj = new InputStreamReader(inputStream2);
+			/*
+			String urlProfesja = "../GeneratorBohatera/src/resources/profesje.txt";
 			File plik = new File(urlProfesja);
 			FileReader czytaj = new FileReader(plik);
+			*/
+			
 			BufferedReader czytajB = new BufferedReader(czytaj);
 			
 			String wiersz = null;
@@ -728,6 +782,7 @@ public class NewGui extends JFrame {
 			
 			
 		}catch(Exception ex){
+			textArea.append(ex.toString());
 			ex.printStackTrace();
 		}
 }//koniec metody
