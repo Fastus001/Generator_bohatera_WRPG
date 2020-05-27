@@ -85,15 +85,15 @@ public class Wyglad implements RzutKoscia{
 	private void wczytajListe() {
 		listaWlosyOczy = new ArrayList<String[]>();
 		try {
-			
+			/*
 			ClassLoader classLoader2 = getClass().getClassLoader();
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/wlosy.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
 			
-			/*
+			/*/
 			File file = new File("../GeneratorBohatera/src/resources/wlosy.txt");
 			FileReader czytaj = new FileReader(file);
-			*/
+			
 			
 			
 			BufferedReader bufor = new BufferedReader(czytaj);

@@ -462,9 +462,9 @@ public class NewGui extends JFrame {
 		btnNowyBohater.setSelectedIcon(null);
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 		
-		//WczytajTalenty();
+		WczytajTalenty();
 		//do wczytania z pliku jar
-		WczytajTalentyStream();
+		//WczytajTalentyStream();
 		
 		cbRasa = new JComboBox<Object>(WczytajRasy());
 
@@ -631,9 +631,10 @@ public class NewGui extends JFrame {
 	 * wersja do wczytania z pliku .JAR
 	 */
 	public void WczytajTalentyStream(){
-		ClassLoader classLoader2 = getClass().getClassLoader();
+		
 		try{
 				listaTalentow = new ArrayList<Talent>();
+				ClassLoader classLoader2 = getClass().getClassLoader();
 				InputStream inputStream2 = classLoader2.getResourceAsStream("resources/talenty.txt");
 				InputStreamReader strumien = new InputStreamReader(inputStream2);
 				BufferedReader czytajBuf = new BufferedReader(strumien);
@@ -657,15 +658,15 @@ public class NewGui extends JFrame {
 		
 		try{
 			listaRas = new ArrayList<Rasa>();
-			
+			/*
 			ClassLoader classLoader2 = getClass().getClassLoader();
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/rasy.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			/*
+			/*/
 			String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
 			File plik = new File(urlRasy);
 			FileReader czytaj = new FileReader(plik);
-			*/
+			
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
 			
@@ -725,15 +726,15 @@ public class NewGui extends JFrame {
 		
 		try{
 			listaProfesji = new ArrayList<Profesja>();
-	
+			/*
 			ClassLoader classLoader2 = getClass().getClassLoader();
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/profesje.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			/*
+			*/
 			String urlProfesja = "../GeneratorBohatera/src/resources/profesje.txt";
 			File plik = new File(urlProfesja);
 			FileReader czytaj = new FileReader(plik);
-			*/
+			
 			
 			BufferedReader czytajB = new BufferedReader(czytaj);
 			

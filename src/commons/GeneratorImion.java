@@ -61,14 +61,14 @@ public class GeneratorImion {
 	{
 		
 		try {
-			
+		/*	
 			ClassLoader classLoader2 = getClass().getClassLoader();
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/imiona.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-		/*	
+			*/
 		File plik = new File("../GeneratorBohatera/src/resources/imiona.txt");
 		FileReader czytaj = new FileReader(plik);
-		*/
+		
 		
 		BufferedReader bufor = new BufferedReader(czytaj);
 		String wiersz = null;

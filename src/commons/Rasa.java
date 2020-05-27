@@ -79,13 +79,14 @@ public class Rasa  {
 			ArrayList<Talent> listaLosowychTalentow = new ArrayList<Talent>();
 			ArrayList<Talent> listaTalentow2 = new ArrayList<Talent>();
 			try{
+				/*
 				ClassLoader classLoader2 = getClass().getClassLoader();
 				InputStream inputStream2 = classLoader2.getResourceAsStream("resources/talenty.txt");
 				InputStreamReader czytaj = new InputStreamReader(inputStream2);
-				/*
+				*/
 					File plik = new File("../GeneratorBohatera/src/resources/talenty.txt");
 					FileReader czytaj = new FileReader(plik);
-					*/
+					
 					BufferedReader czytajBuf = new BufferedReader(czytaj);
 					String wiersz = null;
 					
