@@ -691,7 +691,7 @@ public class NewGui extends JFrame {
 					ArrayList<Umiejetnosc> umiej = new ArrayList<Umiejetnosc>();
 					for(String x:wynik2){
 						String[] doZapisaniaUm = x.split("/");
-						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0);
+						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0,false);
 						umiej.add(tempUm);
 					}
 					//konwersja talentow na obiekty
@@ -755,7 +755,7 @@ public class NewGui extends JFrame {
 				ArrayList<Umiejetnosc> umiej = new ArrayList<Umiejetnosc>();
 				for(String x:dostepneUm){
 						String[] doZapisaniaUm = x.split("/");
-						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0);
+						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0,false);
 						umiej.add(tempUm);
 					}
 				
@@ -873,7 +873,7 @@ public class NewGui extends JFrame {
 	/////////////////////////////////////////////////////////////////////////	
 	public void tworzUm(String wierszDanych){
 		String[] wynik = wierszDanych.split("/");
-		Umiejetnosc um = new Umiejetnosc(wynik[0], Integer.parseInt(wynik[1]),wynik[2],0);
+		Umiejetnosc um = new Umiejetnosc(wynik[0], Integer.parseInt(wynik[1]),wynik[2],0,false);
 		listaUm.add(um);
 		}
 	

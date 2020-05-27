@@ -55,7 +55,7 @@ public class Bohater {
 	}
 	
 	/*
-	 * konstrukto kopiuj¹cy
+	 * konstruktor kopiuj¹cy
 	 */
 	public Bohater(Bohater bh) {
 		this.imieNazwisko = bh.imieNazwisko;
@@ -121,7 +121,12 @@ public class Bohater {
 			prof.setCzyUkonczona(true);
 		
 		historiaProfesji.add(nowaProfesja);
-		
+		if(!prof.toString().equals(nowaProfesja.toString()))
+		{
+			System.out.println("Kompletnie nowa profesja, zmieniam umiejêtnoœci profesyjne");
+			for(Umiejetnosc um:znaneUmiejetnosci)
+				um.setCzyProfesyjna(false);
+		}
 		prof = new Profesja(nowaProfesja);
 		dodajZnaneUmiejetnosciZProfesji();
 		
@@ -157,15 +162,23 @@ public class Bohater {
 	}
 	
 	//sprawdzenie znanych umiejetnosci czy jest przynajmniej osiem na minimalnym poziomie rowiniecia do przejscia na now¹ profesjê
+	/*
+	 * TODO - sprawdzenie umiejêtnoœci pod k¹tem tego czy s¹ klasowe (profesji)
+	 */
 	public void nowyPoziomUmiejetnosciNowyLvl(int minPozUm) {
 		int ile = 0;
 		for(Umiejetnosc um:znaneUmiejetnosci){
-			if(um.getPoziom() >= minPozUm){
+			if(um.isCzyProfesyjna() && um.getPoziom() >= minPozUm)
+			{
 				ile++;
 			}
 		}
 		if(ile<8){
 			System.out.println("Brak wystarczaj¹cej ilosci umiejetnosci na odpowiednim poziomie, jest tylko " + ile);
+			/*
+			 * metoda podnosi o jeden umiejêtnoœci ale tylko takiej, która ma poziom ni¿szy od wymaganego, czyli efektywnie nie bêdzie 
+			 * podnosic poziomu ponad 20
+			 */
 			podniesUmiejRandomMinPoz(1,minPozUm);
 			nowyPoziomUmiejetnosciNowyLvl(minPozUm);
 		}
@@ -236,12 +249,14 @@ public class Bohater {
 				//jezeli juz jest taka umiejetnosc to dodajemy do znanej +5, a now¹ ustawiamy na -10
 				if(um.getName().equals(umZnane.getName())){
 					umZnane.addPoziom(um.getPoziom());
+					umZnane.setCzyProfesyjna(true);
 					um.addPoziom(-40);
 					break;
 				}	
 			}
 			//jezeli poziom umiejetnosci jest na minus, to nie dodawaj jej do znanych umiejetnosci
 			if(um.getPoziom() >= 0){
+				um.setCzyProfesyjna(true);
 				znaneUmiejetnosci.add(um);
 			}
 		}
@@ -253,6 +268,7 @@ public class Bohater {
 				//jezeli juz jest taka umiejetnosc to ignorujemy
 				if(um.getName().equals(umZnane.getName())){
 					//umZnane.addPoziom(um.getPoziom());
+					umZnane.setCzyProfesyjna(true);
 					um.addPoziom(-40);
 					break;
 				}	
@@ -260,6 +276,7 @@ public class Bohater {
 			//jezeli poziom umiejetnosci jest na minus, to nie dodawaj jej do znanych umiejetnosci
 			if(um.getPoziom() >= 0){
 				System.out.println("Dodajemy now¹ umiejêtnoœæ z nowej profesji " + um.toString());
+				um.setCzyProfesyjna(true);
 				znaneUmiejetnosci.add(um);
 			}
 		}
@@ -475,16 +492,16 @@ public class Bohater {
 				cechy.addSzybkosc(); talent.niePokazujOpisu();
 				}break;
 
-			case "S³uch Absolutny":  nowa = new Umiejetnosc("Wystêpy (Œpiewanie)",9,"podstawowa",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Obie¿yœwiat":  nowa = new Umiejetnosc("Wiedza (Lokalna)",7,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Czarownica!":  nowa = new Umiejetnosc("Jêzyk (Magiczny)",7,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytwórca (Dowolny)":  nowa = new Umiejetnosc("Rzemios³o (Dowolny)",6,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytwórca (Materia³y Wybuchowe)":  nowa = new Umiejetnosc("Rzemios³o (Materia³y Wybuchowe)",6,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytwórca (Zielarz)":  nowa = new Umiejetnosc("Rzemios³o (Zielarz)",6,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytwórca (Dowolne Rzemios³o)":  nowa = new Umiejetnosc("Rzemios³o (Dowolne Rzemios³o)",6,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytwórca (Szkutnik)":  nowa = new Umiejetnosc("Rzemios³o (Szkutnik)",6,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytwórca (Aptekarz)":  nowa = new Umiejetnosc("Rzemios³o (Aptekarz)",6,"zaawansowana",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Talent Artystyczny":  nowa = new Umiejetnosc("Sztuka (Dowolna)",6,"podstawowa",0); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "S³uch Absolutny":  nowa = new Umiejetnosc("Wystêpy (Œpiewanie)",9,"podstawowa",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Obie¿yœwiat":  nowa = new Umiejetnosc("Wiedza (Lokalna)",7,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Czarownica!":  nowa = new Umiejetnosc("Jêzyk (Magiczny)",7,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Dowolny)":  nowa = new Umiejetnosc("Rzemios³o (Dowolny)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Materia³y Wybuchowe)":  nowa = new Umiejetnosc("Rzemios³o (Materia³y Wybuchowe)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Zielarz)":  nowa = new Umiejetnosc("Rzemios³o (Zielarz)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Dowolne Rzemios³o)":  nowa = new Umiejetnosc("Rzemios³o (Dowolne Rzemios³o)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Szkutnik)":  nowa = new Umiejetnosc("Rzemios³o (Szkutnik)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Aptekarz)":  nowa = new Umiejetnosc("Rzemios³o (Aptekarz)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Talent Artystyczny":  nowa = new Umiejetnosc("Sztuka (Dowolna)",6,"podstawowa",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
 		}
 	}
 	
