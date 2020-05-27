@@ -180,10 +180,13 @@ public class Bohater {
 		stringBuilder.append(prof.getNameProfesjaSciezka());
 		stringBuilder.append(" (Poziom profesji: " + prof.getPoziomUmiejetnosciString()+")\n");
 		stringBuilder.append("Historia rozwoju bohatera: ");
-		for(Profesja pr:historiaProfesji)
+		for(int i = 0; i < (historiaProfesji.size()-1); i++)
 		{
-			String[] nazwaSciezkiProfesji = pr.getSciezkaProfesji().split("–");
-			stringBuilder.append("ex-"+nazwaSciezkiProfesji[0] + "" + "(" + pr.toString()+"),");
+			if(i>=0)
+			{
+				String[] nazwaSciezkiProfesji = historiaProfesji.get(i).getSciezkaProfesji().split("–");
+				stringBuilder.append("ex-"+nazwaSciezkiProfesji[0] + "" + "(" + historiaProfesji.get(i).toString()+"),");
+			}
 		}
 		stringBuilder.append("\n");
 		stringBuilder.append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
