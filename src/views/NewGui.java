@@ -23,6 +23,7 @@ import java.util.Collections;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JFileChooser;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
@@ -65,6 +66,7 @@ public class NewGui extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private String urlSavaPdf = null;
 	//Components
 	private JPanel contentPane;
 	private JComboBox<Profesja> cbProfesja;
@@ -417,10 +419,18 @@ public class NewGui extends JFrame {
 		 */
 		btnExportToPdf.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				if(urlSavaPdf==null)
+				{
+					JFileChooser dialogFolder = new JFileChooser();
+					dialogFolder.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+					int returnVal = dialogFolder.showOpenDialog(getParent());
+					if(returnVal == JFileChooser.APPROVE_OPTION) {
+						urlSavaPdf = dialogFolder.getSelectedFile().getAbsolutePath()+"\\";
+					}
+				}
 				
 				try {
-					new ExportToPdf(nowyBohater);	
+					new ExportToPdf(nowyBohater,urlSavaPdf);	
 				} catch (Exception e2) {
 					// TODO: handle exception
 				}

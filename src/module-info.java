@@ -1,8 +1,8 @@
 module generatorBohatera {
 	requires java.desktop;
-	requires kernel;
-	requires layout;
-	requires io;
 	requires forms;
+	requires io;
+	requires kernel;
+
 
 }

@@ -1,6 +1,7 @@
 package commons;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 import javax.swing.JOptionPane;
 
@@ -14,11 +15,10 @@ import com.itextpdf.kernel.pdf.PdfWriter;
 
 
 public class ExportToPdf {
-	public static final String DEST = "C:\\Users\\Tom\\Desktop\\";
-	public static final String FONT = "../GeneratorBohatera/src/resources/FreeSans.ttf";
-	public static final String FONT_CASLON_PL = "../GeneratorBohatera/src/resources/CaslonAntiquePolskieZnaki.ttf";
-	public static final String FONT_CASLON_ENG = "../GeneratorBohatera/src/resources/CaslonAntique.ttf";
-	public static final String SRC = "../GeneratorBohatera/src/resources/WFRP_4ed_final_edytowalna.pdf";
+	
+	//public static final String FONT_CASLON_PL = "../GeneratorBohatera/src/resources/CaslonAntiquePolskieZnaki.ttf";
+	public static final String FONT_CASLON_PL = "resources/CaslonAntiquePolskieZnaki.ttf";
+	//public static final String SRC = "../GeneratorBohatera/src/resources/WFRP_4ed_final_edytowalna.pdf";
 	public static final float SZESC = 6f;
 	public static final float OSIEM = 8f;
 	public static final float TEN = 10f;
@@ -30,12 +30,14 @@ public class ExportToPdf {
 	private Bohater hero;
 	
 	
-	public ExportToPdf(Bohater h) throws IOException{
+	public ExportToPdf(Bohater h, String des) throws IOException{
 		this.hero = h;
 		String nazwaPliku = hero.getImieNazwisko().replace(" ", "_")+"_"+ hero.getCurrentProfesjaName() + "_poz"+ hero.getCurrentProfPoziom() +".pdf";
-		
+		ClassLoader classLoader2 = getClass().getClassLoader();
+		InputStream inputStream2 = classLoader2.getResourceAsStream("resources/WFRP_4ed_final_edytowalna.pdf");
+
 		System.out.println(nazwaPliku);
-		pdf = new PdfDocument(new PdfReader(SRC),new PdfWriter(DEST+nazwaPliku));
+		pdf = new PdfDocument(new PdfReader(inputStream2),new PdfWriter(des+nazwaPliku));
 		//czcionka i ustawienie kodowania
 		font1 = PdfFontFactory.createFont(FONT_CASLON_PL, PdfEncodings.CP1250,true);
 
