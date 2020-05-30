@@ -1,0 +1,317 @@
+Ogr
+6,30,20,45,45,10,25,20,20,30,20,30
+Broń +8, Pancerz (1), Rozmiar (Duży), Uprzedzenie (Szczupłe Osoby), Widzenie w Ciemności, Żarłoczny
+Tropiciel, Wojowniczy, Zaraza
+Są wielkie, hałaśliwe, brutalne i niezwykle porywcze. Życiową motywacją ogrów jest potrzeba napełniania swoich ogromnych, muskularnych brzuchów. Brakuje im sprytu lub inteligencji, by robić to mądrze, dlatego w większości sytuacji standardowo wybierają rozwiązanie siłowe. Ogry pochodzą z krain położonych daleko na wschodzie, ale są częstym widokiem w Starym Świecie, uwielbiają bowiem wędrować i stale poszukują nowego mięsiwa za horyzontem. W czasie swoich trwających dekady wypraw po jedzenie ciężko pracują, starają się integrować, noszą miejscowe ubrania i naśladują lokalne zwyczaje, które są w stanie zrozumieć, ponieważ to wszystko zwiększa szansę na otrzymanie kolejnego posiłku. W Imperium często służą w Armii Prowincji i codziennie widuje się je w większych miastach, gdzie pracują jako osiłki do wynajęcia. Niziołkowa Gildia Majstrów (przedsiębiorcy budowlani) w wielu miastach i miasteczkach Imperium praktycznie całkowicie opanowała rynek taniej siły roboczej, jaką stanowią ogry, co bardzo irytuje konkurencję. 
+Niedźwiedż
+4,35,-,55,45,20,25,15,10,15,-,28
+Broń +8, Długi Krok, Pancerz (1, Skóra), Płochliwy, Rozmiar (Duży), Ugryzienie +9,Widzenie w Ciemności, Zwierzęcy
+Rozmiar (Wielki), Terytorialny, Wyszkolony (Bojowy, Maskotka, Ujarzmiony),Zakażony, Zaraza, Żarłoczny
+To wędrowcy po bezdrożach Reiklandu. Niedźwiedzie zwykle są nieśmiałymi samotnikami. Stają się agresywne tylko wtedy, gdy intruzi zagrażają ich młodym lub gdy są ranne. Kiedy brakuje pożywienia, podchodzą do niechronionych osad i podróżnych, zwłaszcza tych, którzy nie pilnują należycie swojego prowiantu. 
+Dzik
+7,35,-,33,35,33,35,-,10,10,-,10
+Broń +6, Długi Krok, Pancerz (1, Skóra), Płochliwy, Rogi (Kły), Widzenie w Ciemności,Zwierzęcy
+Rozmiar (Duży), Szał Bojowy, Terytorialny, Wojowniczy, Wyszkolony (Bojowy,Magiczny, Ujarzmiony, Wierzchowiec), Zakażony, Zaraza
+Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150–180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe. 
+Pies
+4,25,-,20,20,35,30,-,15,10,15,5
+Broń +5, Długi Krok, Płochliwy, Rozmiar (Mały), Widzenie w Ciemności, Zwierzęcy
+Pancerz (1), Rozmiar (Niewielki do Średniego), Szał Bojowy, Terytorialny, Tropiciel,Wyszkolony (Aportujący, Bojowy, Maskotka, Magiczny, Stróżujący, Ujarzmiony), Zaraza
+Psy hodowane są w całym Starym Świecie z przeznaczeniem do niezliczonych zadań. Podczas gdy rozpieszczone pudle dworzan z Altdorfu stanowią zagrożenie jedynie dla godności poszukiwacza przygód, większe rasy, włącznie z tymi, które przyuczane są do udziału w bitwach lub walkach psów, mogą być bardzo groźne. 
+Olbrzymie szczury
+4,25,-,30,25,25,35,-,15,15,-,5
+Broń +4, Długi Krok, Płochliwy, Rozmiar (Mały), Widzenie w Ciemności, Zaraza, Zwierzęcy
+Choroba (Czarna Zaraza lub Szczurza Gorączka), Pancerz (1), Rozmiar (Niewielki do Średniego), Rój, Wyszkolony (Bojowy)
+Szczury przedostają się wszędzie. Szczególnie rozpowszechnione są w miastach i miasteczkach. Im bardziej stłoczeni są ludzie, tym bardziej stłoczone są z nimi szczury, co jest szczególnie groźne, gdy stwory okazują się nosicielami zarazy. Chociaż szczury zwykle są małe, mogą wyrastać do monstrualnych rozmiarów. Pojawiały się doniesienia o szczurach pod Altdorfem o rozmiarach człowieka lub jeszcze większych. Aby trzymać je w ryzach, zatrudnia się szczurołapów. 
+Olbrzymie pająki
+5,35,25,15,25,10,35,30,5,25,-,2
+Broń +3, Rozmiar (Niewielki), Sieć (40), Widzenie w Ciemności, Wspinacz, Zwierzęcy
+Jad (Przeciętny), Mieszkaniec Lasu, Pancerz (1), Rozmiar (Niewielki do Wielkiego), Rój,Ugryzienie, Wyszkolony (Bojowy, Magiczny, Stróżujący, Ujarzmiony, Wierzchowiec)
+Olbrzymie pająki czają się głęboko w lasach i jaskiniach Imperium, ale mogą żyć gdziekolwiek, włącznie z zakurzonymi strychami i ciemnymi piwnicami. Większość chwyta ofiary w mocne sieci, a następnie wstrzykuje im jad. Chociaż większość ma rozmiary dużego szczura, niektóre odmiany olbrzymich pająków są przerażająco wielkie. Leśne gobliny często chwytają większe okazy, by służyły im za wierzchowce. 
+Koń
+7,25,-,45,35,15,30,-,10,10,10,22
+Broń +7, Długi Krok, Płochliwy, Rozmiar (Duży), Zwierzęcy
+Pancerz, Wyszkolony (Bojowy, Magiczny, Maskotka, Pociągowy, Ujarzmiony,Wierzchowiec)
+Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności. 
+Gołąb
+2,15,-,5,15,25,40,-,10,20,10,1
+Broń +0, Latanie 100, Płochliwy, Rozmiar (Drobny), Zwierzęcy
+Rozmiar (Mały), Wyszkolony (Powracający, Ujarzmiony)
+Gołębie hodowane są w całym Reiklandzie w celu dostarczania wszelkiego rodzaju wiadomości. Ostatnio zasłynęły z przenoszenia bardziej zabójczych ładunków. Łatwo dostępne ptaki stały się ulubieńcami inżynierów, którzy z różnym powodzeniem wysyłają swoje „bomby gołębie”. 
+Wąż
+3,40,-,30,25,25,40,-,5,45,-,8
+Broń +5, Pancerz (1), Rozmiar (Mały), Szybki, Zwierzęcy, Zimnokrwisty
+Bagnołaz, Dusiciel, Jad (Bardzo Łatwy do Bardzo Trudnego), Rozmiar (Drobny do Wielkiego), Rój
+Węże można znaleźć w całym Imperium, zwłaszcza w głębi lasów. Większość jest niegroźna, ale niektóre mają zabójczy jad lub potrafią udusić swoją ofiarę. Podobnie jak wiele stworzeń Starego Świata, mogą wyrosnąć do olbrzymich rozmiarów – jak ogromny żmij bagienny, który stanowi prawdziwe zagrożenie nawet dla najsilniejszego najemnika. 
+Wilk
+4,35,-,35,30,35,30,-,15,15,-,10
+Broń +6, Długi Krok, Pancerz (1), Płochliwy, Tropiciel, Widzenie w Ciemności, Zwierzęcy
+Rozmiar (Duży), Szał Bojowy, Terytorialny, Wyszkolony (Aportujący, Bojowy, Magiczny,Pociągowy, Stróżujący, Ujarzmiony, Wierzchowiec), Zaraza
+Wilki zazwyczaj polują w stadach i znane są jako zacięci łowcy, którzy ścigają swoją ofiarę przez dziesiątki kilometrów bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilków, włącznie z groźnymi olbrzymimi wilkami, które są chwytane i hodowane przez gobliny do użytku jako strażnicy oraz wierzchowce. 
+Bazyliszek
+4,45,35,55,55,25,15,-,15,15,-,64
+Broń +9, Długi Krok, Jad, Niewrażliwość (Trucizna),Ogon +8, Pancerz (2), Petryfikujące Spojrzenie, Rozmiar (Wielki),Ugryzienie +9, Widzenie w Ciemności,Zimnokrwisty, Zaraza, Zwierzęcy
+Mutacja, Terytorialny
+Te ośmionogie, gadzie stwory są samotnicze i nieuchwytne. Podobno należą do najstarszych stworzeń Chaosu. Jak twierdzą pogłoski, przepełnia je tak wielka złość i jad, że zatruta jest nawet ziemia, po której chodzą. Także ich ukąszenie jest trujące, ale największy lęk budzi petryfikujące spojrzenie tych potworów. Obecnie spotyka się je rzadko, jednak bazyliszki to wciąż groźni przeciwnicy. Ich gruczoły i organy są wysoko cenione przez czarodziejów i alchemików, dlatego szukający okazji łowcy często sprawdzają, ile jest prawdy w pogłoskach o bazyliszkach bytujących podobno w dzikich ostępach Vorberglandu. Niewielu powraca z takich wypraw. 
+Bagienna ośmiornica
+3,35,-,80,75,15,55,-,5,65,0,56
+Bagnołaz, Dusiciel, 8x Macki +9, Rozmiar (Duży), Skryty, Ziemnowodny, Zwierzęcy
+Rozmiar (Wielki do Monstrualnego), Terytorialny
+Bagienne ośmiornice czają się w płytkich wodach, zazwyczaj w bagnach i na moczarach. Czekają na ofiarę w całkowitym bezruchu, zdolne wyczuć wibracje powodowane przez zbliżające się stworzenia. Potem wyskakują z błotnistej wody, starając się chwycić i utopić zdobycz za pomocą silnych macek. Bagienne ośmiornice mają kamuflaż doskonale przystosowany do bagnistego otoczenia – zwykle pokryte są zielonymi i brązowymi cętkami. Jedyną wskazówką zdradzającą ich obecność są wielkie, szkliste oczy. Większość ośmiornic ma macki długości około 6 metrów i ciało mierzące prawie 2 metry. Krążą jednak opowieści, że mogą urosnąć wielokrotnie większe, zwłaszcza gdy mają zapewniony regularny napływ mięsa. 
+Zębacz jaskiniowy
+4,45,-,50,30,10,40,-,5,15,-,12
+Broń +9, Skoczny, Widzenie w Ciemności, Zaraza, Zwierzęcy
+Furia, Rogi, Rozmiar (Drobny do Wielkiego), Szał Bojowy, Widzenie w Mroku, Ziemnowodny, Zionięcie (Gaz albo Kwas)
+Zębacze to duże, okrągławe, grzybowate stwory, które żyją głęboko pod ziemią w najwilgotniejszych, najciemniejszych jaskiniach. Mają rozdziawioną gębę i wielkie, ostre zęby. Cenione są przez gobliny za mięso i skórę oraz służą im jako strażnicy lub pupile. 
+Półgryf
+7,35,-,55,40,30,45,-,15,25,-,30
+Broń +9, Długi Krok, Pancerz (1), Rozmiar (Duży), Ugryzienie +9, Widzenie w Ciemności,Zwierzęcy
+Wyszkolony (Bojowy, Pociągowy, Stróżujący, Ujarzmiony, Wierzchowiec)
+Posiadające głowę orła i korpus lwa półgryfy to potężne stworzenia o szlachetnym wyglądzie. Wędrują po lasach i łąkach Imperium, zwykle trzymając się z dala od ludzkich osad. Polują w pojedynkę. Najodważniejsze zakony rycerskie wykorzystują schwytane półgryfy jako rumaki bojowe. W odróżnieniu od większych potwornych wierzchowców, które zazwyczaj są zabierane jako młode lub hodowane w niewoli, te często chwyta się dorosłe. Stanowi to wręcz rytuał inicjacji w niektórych zakonach. 
+Smok
+6,65,60,65,65,60,25,15,45,85,25,104
+Broń +10, Latanie (80), Pancerz (5), Ogon +9,Rozmiar (Wielki), Ugryzienie +10,Widzenie w Ciemności, Zionięcie +15 (różne)
+Bagnołaz, Jad, Magiczny, Mieszkaniec Lasu, Mutacja, Niewrażliwość (wybierz jedną),Ożywieniec, Rozmiar (Monstrualny),Rzucanie Czarów (różne), Spaczenie Umysłu,Wyszkolony, (Wierzchowiec), Zakażony
+Smoki rządziły niebiosami na długo przed tym, zanim starsze rasy pojawiły się w Znanym Świecie. Podczas gdy współczesne smoki są ledwie cieniem swoich prastarych braci, pozostają jednymi z najpotężniejszych stworzeń znanych Imperium. Kilka pozostałych starych smoków jest przerażająco ogromnych. Rzadko budzą się ze snu. Mała drużyna poszukiwaczy przygód, która rozjuszyłaby smoka, powinna brać nogi za pas. Przeciw takiej bestii wiele nie wskóra. 
+Bestia bagienna
+5,35,-,50,55,10,15,10,-,-,-,40
+Bagnołaz, Broń +8, Głupi, Konstrukt, Nie do Zdarcia, Niestabilny, Regeneracja,Rozmiar (Duży), Widzenie w Mroku, Zaraza
+Szał Bojowy, Terytorialny, Zakażony, Żarłoczny
+Tworzone przez czarodziejów z mułu bagnisk i moczarów bestie bagienne to praktycznie bezmyślne automaty spajane siłą magii. Są w przybliżeniu człekokształtne i zbudowane z błota, kości, gałęzi oraz śluzu. Utrzymanie ich w całości wymaga znacznych zasobów magii. Od czasu do czasu tworzone są przez czarodziejów władających magią Jadeitu. Służą im za ochroniarzy lub wypełniają określone zadania wymagające brutalnej siły albo bezmyślnego zabijania. Czasami pojawiają się same z siebie, powstając w stojących, gnijących stawach, gdzie nurt magii został zakłócony. Podobno Kolegium Jadeitu w Altdorfie trzyma tuzin tych stworów w charakterze służących, którzy dźwigają ciężary i przynoszą różne rzeczy dla starszych czarodziejów. W spójnej postaci trzyma je nieustanne splatanie magii dokonywane przez dziesiątki uczniów. 
+Fimir
+6,35,20,45,40,30,20,20,30,30,15,30
+Bagnołaz, Broń +8, Pancerz (2), Rozmiar (Duży), Widzenie w Ciemności, Zimnokrwisty
+Ogon +7, Rzucanie Czarów (Demonologia)
+Fimiry to tajemnicze, jednookie, podobne do gadów stworzenia, które grasują w najciemniejszych zakątkach wilgotnych bagien i trzęsawisk zachodniego Reiklandu. Unikają światła słonecznego i pojawiają się zwykle tylko o świcie lub o zmierzchu albo pod osłoną mgły, aby porywać ofiary w sobie tylko znanych, przerażających celach. Znane są przypadki, gdy ludzcy czarownicy na tyle lekkomyślni lub zdesperowani, by zwracać się do demonów, szukali fimirów, chcąc poznać ich niepokojące tajemnice. Mówi się bowiem, że stwory te przywołują i kontrolują istoty demoniczne. Można tylko zgadywać, czy większe ryzyko stanowi igranie z Niszczycielskimi Potęgami, czy układanie się z fimirami. Społeczeństwo fimirów jest matriarchalne. Każdemu klanowi przewodzi potężna wiedźma zwana mergą, której pomaga kadra pomniejszych czarowników nazywanych dirachami. Większość członków klanu to pokorne szerle. Chroni ich kasta wojowników, fimmów, którzy mają kostne kolce i guzy na ogonach. Używają ich do gruchotania kości niebacznych przeciwników. 
+Olbrzym
+6,30,30,65,55,30,20,15,25,25,20,72
+Broń +10, Długi Krok, Pancerz (1), Rozmiar (Wielki), Twardy, Widzenie w Ciemności
+Głupi, Rozmiar (Monstrualny), Zaraza, Zakażony, Zionięcie (Pijackie Rzygnięcie), Zwierzęcy, Żarłoczny
+Olbrzymy to samotnicze stworzenia, które zwykle unikają cywilizacji. Większość czatuje w niedostępnych i wysoko położonych miejscach wokół Imperium. Zaszywają się w jaskiniach i zapomnianych ruinach, z dala od mniejszych ludzi, chociaż czasami wędrują na podgórza w poszukiwaniu jedzenia. Słyną z agresywności i gwałtowności zarówno ze względu na swoje zastraszające rozmiary, pożeranie bydła, jak i związki z łupieżczymi armiami zielonoskórych, którzy ich niewolą. W rzeczywistości wiele olbrzymów to łagodne istoty, czasem podatne na wybuchy wściekłości i zaciekle chroniące swojej prywatności, ale niekoniecznie wrogie wobec innych. Ponieważ są długowieczne, plotki utrzymują, że olbrzymy nabyły prastarą wiedzę, chociaż większość wydaje się niezbyt przytomna i z pewnością bardziej zainteresowana alkoholem niż debatami na temat historii. 
+Gryf
+6,50,-,50,50,45,60,-,20,40,-,76
+Broń +9, Latanie (80), Pancerz (1), Rozmiar (Wielki), Ugryzienie +9, Widzenie w Ciemności, Zwierzęcy
+Wyszkolony (Bojowy, Magiczny, Stróżujący, Ujarzmiony, Wierzchowiec)
+Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza – ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach. 
+Hipogryf
+7,45,-,55,50,20,55,-,5,35,-,72
+Broń +9, Długi Krok, Latanie (120), Rozmiar (Duży), Ugryzienie +9, Widzenie w Ciemności, Wojowniczy, Wrogość (Wszystko), Terytorialny, Zwierzęcy
+Furia, Nienawiść (Wszystko), Szał Bojowy, Ujarzmiony, Wyszkolony (Ujarzmiony, Wierzchowiec)
+Niezwykle zaciekłe i terytorialne hipogryfy mają głowę i skrzydła orła, przednią część ciała lwa oraz koński zad. Pochodzą najczęściej z Gór Szarych. Atakują bez prowokacji, niemal bezmyślne w swojej furii, drąc ciało na strzępy, aby pożreć je później. Wpadają w tak wielki szał, że pojedynczy hipogryf może wybić całe stado bydła, aby potem odlecieć z wybranym kawałem mięsa, zostawiwszy resztę padlinożernym ptakom. Hipogryfy nie są zbyt inteligentne i gdy polują, zwykle starają się zabić wszystko w polu widzenia. Myślą, że cokolwiek zniknęło im z oczu, przepadło na zawsze. Oznacza to, że faktyczna liczba zgonów spowodowanych przez hipogryfy jest stosunkowo niska, ponieważ wystarczy znaleźć dobrą kryjówkę, aby ich uniknąć. 
+Hydra
+6,45,-,50,55,15,35,-,15,25,-,68
+Broń +9, Długi Krok, Dusiciel, Pancerz (3), Regeneracja, Rozmiar (Wielki), Skryty, Tropiciel, Widzenie w Ciemności, Zionięcie +10 (Ogień),Zwierzęcy
+Jad, Terytorialny, Wojowniczy
+Wielogłowa, przypominająca jaszczura hydra ma ciężkie ciało podtrzymujące plątaninę szyi i łbów, które zioną dymiącym ogniem i wściekle kąsają. To zaskakująco zaciekłe i skryte stwory. Hydry potrafią skradać się za ofiarą przez wiele kilometrów, jednak zwykle tracą cierpliwość i rzucają się do ataku przy akompaniamencie ryku ze wszystkich paszcz. 
+Dżabersmok
+7,45,40,55,50,20,35,-,10,20,-,68
+Atak Językiem +5 (12), Broń +9, Dekoncentrujący, Jad (+0),Kwasowa Krew, Ogon +8, Pancerz (3), Rozmiar (Wielki),Skoczny, Ugryzienie +9, Widzenie w Ciemności, Zaraza, Zwierzęcy
+Mutacja, Terytorialny
+Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada – wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko. 
+Mantikora
+6,55,-,55,55,50,65,-,10,35,-,72
+Broń +9, Jad, Latanie (80), Ogon +8, Pancerz (2), Rozmiar (Wielki),Terytorialny, Ugryzienie +9, Zwierzęcy
+Mutant, Nienawiść (Drapieżniki), Wyszkolony (Magiczny, Ujarzmiony,Wierzchowiec)
+Na szczęście występują rzadko. Mantikory są niemiłosiernie zawzięte, z niezwykłą brutalnością dążąc do usunięcia ze swojego terytorium drapieżnych rywali. Dlatego zwykle wiadomo, że wchodzi się na teren mantikory – wzniesienia zawalone są ścierwami innych potworów. Stwór ma głowę i korpus zniekształconego wielkiego kota (chociaż czasami jego twarz wydaje się niemal zbyt ludzka), skrzydła nietoperza i paskudny, młócący, kolczasty ogon. 
+Pegaz
+8,35,-,45,40,30,45,-,20,25,-,28
+Broń +7, Długi Krok, Latanie (100), Rozmiar (Duży)
+Wyszkolony (Bojowy, Magiczny, Pociągowy, Ujarzmiony, Wierzchowiec)
+Pegazy to urodziwe białe konie z wielkimi, łabędzimi skrzydłami. Są wytrwałymi i niestrudzonymi lotnikami. Latają wielkimi stadami w wysokich górach, najwyraźniej czerpiąc ogromną radość z szybowania i wirowania w krętych prądach powietrznych. Są oczywistymi kandydatami na wierzchowce i niejeden wojownik lub zwiadowca usiłował schwytać dla siebie pegaza. Pegazy są bardzo inteligentne, a według niektórych same pozwalają się schwytać, jeśli tego chcą. To doprowadziło do powstania wszelkiego rodzaju fantastycznych, romantycznych legend, zgodnie z którymi wybrańcami pegazów mogą być tylko osoby wystarczająco godne lub cnotliwe. 
+Troll
+6,30,15,55,45,10,15,15,10,20,5,30
+Broń +9, Głupi, Nie do Zdarcia, Pancerz (2), Regeneracja, Rozmiar (Duży),Twardy, Ugryzienie +8, Wymiot, Zaraza
+Bagnołaz, Mutacja, Nie Czuje Bólu, Odporność na Magię, Skryty, Szał Bojowy, Widzenie w Ciemności, Zakażony, Ziemnowodny, Zwierzęcy, Żarłoczny
+Trolle to brudne, wstrętne stwory, które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia, ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli, wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie, co oznacza, że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować, co sprawia, że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek, wymiotując żrącą żółcią na szokująco dużą odległość – chociaż nie cierpią tego robić, ponieważ są potem straszliwie głodne. 
+Wywerna
+4,55,-,60,55,15,45,-,10,50,-,84
+Broń +10, Jad, Latanie (90), Pancerz (2), Rozmiar (Wielki), Zwierzęcy
+Ogon +9, Rogi, Wyszkolony (Bojowy, Magiczny, Stróżujący,Ujarzmiony, Wierzchowiec), Zionięcie (Jad)
+Chociaż niedouczeni często mylą je ze smokami, poza powierzchownym podobieństwem cuchnące wywerny w niczym nie przypominają tych dostojnych stworzeń. To tchórzliwe ścierwojady o słabym wzroku. Zwykle zaspokajają swój wielki apetyt, porywając bezbronne zwierzęta, głównie owce i kozy. Unikają też otwartej walki, gdy to tylko możliwe. W odróżnieniu od innych potworów z gór wywerny nie chronią szczególnie zaciekle terytorium i przeważnie przenoszą się w inne miejsce, gdy coś wtargnie na ich tereny łowieckie. 
+Ork
+4,35,30,35,45,20,25,20,25,35,20,14
+Broń +8, Nie do Zdarcia, Pancerz (3), Widzenie w Ciemności, Wojowniczy, Wrogość (Zielonoskórzy), Zaraza
+Nie Czuje Bólu, Rozmiar (Duży), Strzelanie+8 (50)
+Orki są wstrętne, brutalne, wojownicze i niemal niewrażliwe na ból. Mają muskularne, krępe ciała, szerokie, potężne barki i nie pozwolą, by drobnostka w rodzaju straconej ręki przeszkodziła im w dobrym łomocie. Stworzone są do walki i niczego innego nie lubią bardziej. Gdy nie mają wrogów, z którymi mogą walczyć, biorą się za grupy rywalizujących z nimi zielonoskórych. Jeśli nie ma rywali, walczą między sobą. Chociaż nie tak liczne jak gobliny, są od nich większe i silniejsze, co pokazują przy każdej okazji. Orki mogą osiągać ogromne rozmiary. Większe orki są silniejsze, twardsze i bardziej agresywne, a zatem cieszą się większym prestiżem: w ich wojowniczym społeczeństwie rację ma ten, kto jest silniejszy. Niektóre orki dosiadają w boju wielkich dzików. To widok, który u mało kogo nie wzbudza przerażenia. 
+Goblin
+4,25,30,30,30,20,35,30,30,20,20,11
+Broń +7, Lęk (Elfy), Pancerz (1), Widzenie w Ciemności, Wrogość (Zielonoskórzy), Zaraza
+Jad, Mieszkaniec Lasu, Nienawiść (Krasnoludy), Strzelanie +7 (25), Widzenie w Mroku
+Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii orków – nie zawsze z własnego wyboru – oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki. 
+Snotling
+4,25,15,25,20,20,30,-,15,30,-,7
+Broń +4, Rozmiar (Mały), Widzenie w Mroku, Zaraza, Zwierzęcy
+Jad, Rój, Wyszkolony (Aportujący, Stróżujący, Ujarzmiony)
+Stwory o mózgu wielkości orzeszka, podobne do podekscytowanych, niekontrolowanych szczeniąt. Snotlingi to zbieracze i urodzeni imitatorzy. Zbierają kości i błyszczące rzeczy albo naśladują zachowanie wszystkiego, co widzą. Gdy zostaną pchnięte do walki przez gobliny lub orki, walczą w cuchnących rojach, starając się stłamsić wrogów samą swoją liczebnością. Wykorzystują przy tym wszelkiego rodzaju odrażające i szkodliwe substancje, jak trujące grzyby i odchody, którymi rzucają w przeciwników. 
+Szkielet
+4,25,25,30,30,20,20,25,-,-,-,12
+Broń +7, Konstrukt, Nie Czuje Bólu, Niestabilny, Ożywieniec, Pancerz (2),Strach (2), Widzenie w Mroku
+Spaczenie (Pomniejsze), Terytorialny, Zaraza
+Szkielety to pozbawione ciała kości dawno umarłych, poruszane mroczną magią, która zmusza je, by chodziły po ziemi, szydząc z żywych. Ci, którzy po śmierci nie zostali złożeni na spoczynek zgodnie z rytuałami Morra, Boga Śmierci, mogą zostać wskrzeszeni w tej postaci przez wystarczająco potężnego nekromantę. Całkowicie bezmyślne szkielety będą walczyły, dopóki ich kości nie zostaną rozbite na kawałki. Nie wiedzą, co to odwaga, ponieważ nie wiedzą, co to strach. Nie mogą zostać zabite, ponieważ nie są żywe. 
+Zombi
+4,15,-,30,30,5,10,15,-,-,-,12
+Broń +7, Konstrukt, Nie Czuje Bólu, Niestabilny, Ożywieniec, Strach (2),Widzenie w Mroku
+Choroba, Dekoncentrujący, Pancerz, Spaczenie (Pomniejsze), Terytorialny,Zakażony, Zaraza
+Podobnie jak szkielety, zombi to ożywione zwłoki spajane przez plugawą magię. W odróżnieniu od szkieletów zombi to niedawno umarli i większość ich ciała nadal istnieje. Gnijące i zepsute mięso zwisa z robaczywych, nabrzmiałych organów wewnętrznych. Gdy walczą, ich ciało i narządy odpadają od kości, wydzielając przyprawiający o mdłości, obrzydliwy odór, wystarczająco silny, by wywrócić żołądek każdemu poza najtwardszymi żołnierzami. 
+Upiorny wilk
+9,30,-,35,35,30,30,-,-,-,-,24
+Broń +6, Długi Krok, Konstrukt, Niestabilny, Ożywieniec, Pancerz (1), Rozmiar (Duży), Strach (2), Tropiciel, Widzenie w Mroku
+Dekoncentrujący, Nie Czuje Bólu, Spaczenie (Pomniejsze), Terytorialny,Zaraza
+Gdy ziemia oddaje zmarłych, powstają nie tylko ludzie. W imieniu swoich mrocznych panów na nocne łowy wyruszają makabryczne parodie olbrzymich basiorów z lśniącymi ślepiami i strzępami ciała odpadającymi od gnijących, butwiejących ścierw – upiorne wilki. W Reiklandzie mówi się, że gdy Morrslieb stoi w pełni, upiorne wilki grasują po nawiedzonych lasach Hägerkrybów. Biegają w poszukiwaniu ofiary, aby zaspokoić swój nienasycony głód, przeklęte żądzą pożerania mięsa i wyostrzoną wrażliwością na zapach krwi. 
+Ghul z krypty
+4,30,-,35,30,30,35,25,20,20,5,11
+Broń +6, Ugryzienie +5, Widzenie w Ciemności, Zaraza
+Jad, Nie Czuje Bólu, Zwierzęcy
+Należą do najżałośniejszych stworzeń w Starym Świecie. Ghule to brzydkie, zgarbione stwory o bladej, brudnej skórze i ostrych, żółtych zębach, którymi zdzierają ciało z kości ofiar. Ghule podążają za magicznymi energiami Shyish i Dhar, co w praktyce oznacza, że ściągają na cmentarze i do krypt oraz krążą po polach bitew. 
+Varghulf
+8,55,-,55,55,30,50,20,10,60,-,42
+Broń +9, Groza (3), Nienawiść (Żywe Istoty), Ożywieniec, Pancerz (1), Regeneracja,Rozmiar (Duży), Strach (4), Ugryzienie +8, Wampiryczny, Widzenie w Mroku, Zwierzęcy,Żarłoczny
+Furia, Latanie, Spaczenie (Pomniejsze), Szał Bojowy, Terytorialny, Tropiciel
+Większość wampirów utrzymuje w równowadze swoje nieumarłe łaknienie krwi z ułudą obycia i przyzwoitości, pozując na arystokrację ożywieńców. Niektóre jednak odrzucają swą ludzką fasadę, poddając się wewnętrznej bestii. Te varghulfy to brutalne i dzikie stworzenia pozbawione wszelkiego wyrafinowania, całkowicie pochłonięte przez zwierzęce dążenie do zaspokojenia własnych potrzeb. Pojawiają się pod postacią wielkich, nadętych bestii podobnych do nietoperza, które pławią się w prymitywnej żądzy krwi.  
+Widmo z kurhanu
+6,35,-,35,30,15,30,25,25,50,15,14
+Broń +9, Eteryczny, Groza (3), Lodowaty Uścisk, Niestabilny, Ożywieniec, Widzenie w Mroku
+Nie Czuje Bólu, Terytorialny, Czempion, Zwierzęcy
+Widma z kurhanu to wyjątkowo potężne duchy, eteryczne pozostałości ambitnych nekromantów, którzy usiłowali przedłużyć swoje istnienie za pomocą mrocznej magii. Za życia odznaczali się złowrogą siłą woli, która po śmierci pcha ich do wywierania straszliwej zemsty na pełnych ognia duszach żywych. Wiele takich widm nawiedza spowite mgłami kurhany, jakich pełno na ziemiach Imperium, szczególnie w Hägerkrybach. 
+Upiorna Płaczka
+6,30,-,30,30,20,30,30,25,40,20,13
+Broń +7, Eteryczny, Groza (3), Niestabilny, Ożywieniec, Upiorne Wycie, Widzenie w Mroku
+Furia, Latanie, Nie Czuje Bólu, Terytorialny, Zwierzęcy
+Płaczki to widmowe pozostałości niegdyś potężnych wiedźm, których duchy przesiąknięte są plugawą energią Dhar. Ich niespokojne nieżycie wypełnia udręka z powodu straty i zgorzknienia, ziejąca pustka w duszach, która wyrywa z ich piersi przerażające, szarpiące duszę wycie. Jest ono tak straszliwe, że może doprowadzić do szaleństwa tych, którzy je słyszą, a nawet zatrzymać bicie serca. 
+Wampir
+6,60,40,50,40,50,70,40,40,60,40,19
+Broń +9, Ożywieniec, Ugryzienie +8, Wampiryczny, Widzenie w Ciemności
+Czempion, Dekoncentrujący, Furia, Latanie, Nie Czuje Bólu, Nie Do Zdarcia, Petryfikujące Spojrzenie, Regeneracja, Rzucanie Czarów (Nekromancja lub Śmierć), Spaczenie (Pomniejsze), Spaczenie Umysłu, Strach, Szał Bojowy, Tropiciel, Widzenie w Mroku, Wspinacz, Zwierzęcy, Żarłoczny
+Wampiry postrzegają same siebie jako władców nocy. Wiele z nich może podawać się za ludzi, a niektóre rzeczywiście przez długi czas przebywały pośród żywych. Pomimo zewnętrznego podobieństwa do ludzi pod ich bladą skórą nie bije serce, a zamiast zwykłego głodu, jak u śmiertelników, odczuwają nieustanne łaknienie krwi. Wszystkie wampiry Starego Świata wywodzą się ze starożytnych rodów, które powstały tysiące lat temu daleko na południu. Wiele z nich jest niezwykle dumnych ze swojego pochodzenia oraz cech i tradycji, które odróżniają je od innych. Wampiry różnych rodowodów są często zaciekłymi rywalami, ale mają dość rozsądku, by stawać ramię w ramię w razie konieczności zmierzenia się z potężniejszymi wrogami. 
+Duch
+6,30,-,30,30,10,30,20,15,15,-,10
+Broń +6, Eteryczny, Niestabilny, Ożywieniec, Strach (2), Widzenie w Mroku
+Furia, Nienawiść, Rój, Terytorialny, Zwierzęcy
+Duchy to pozostałości udręczonych istot, które umarły, za życia nie ukończywszy swoich spraw. Podobnie jak szkielety i zombi, duchy mogą być wzywane przez wampiry lub nekromantów albo nawiedzać obszary przesycone Dhar. W wyjątkowych okolicznościach szczególnie zdeterminowane duchy wyrywają się z Królestwa Morra, pragnąc wypełnić swoje życiowe plany. Jednak takie przypadki szybko przyciągają uwagę morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomocą nekromanckiej sztuki duchy zbierają się w rój, tworząc wielkie Zastępy Duchów, które spadają jak burza na wrogów, siejąc strach i zamęt. 
+Gor
+4,45,30,35,45,30,35,25,25,30,25,14
+Broń +7, Furia, Mieszkaniec Lasu, Pancerz (1), Rogi +6, Widzenie w Ciemności
+Choroba (Ospa Zwierzęca), Mutacja, Pancerz (2), Rozmiar (Duży), Rzucanie Czarów (Zwierząt), Spaczenie (Pomniejsze), Zakażony, Zaraza
+Gory, najpowszechniejsze ze zwierzoludzi, są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem, ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą, którą posiadają wszystkie gory, jest para wielkich rogów – im większe, tym lepiej. Rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha, która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów. 
+Ungor
+4,35,30,30,35,30,35,25,25,35,25,12
+Broń +6, Mieszkaniec Lasu, Widzenie w Ciemności
+Choroba (Ospa Zwierzęca), Mutacja, Pancerz (1), Rozmiar (Mały), Spaczenie (Pomniejsze), Strzelanie +7 (25), Zakażony, Zaraza
+Ungory mają szczątkowe lub bardzo krótkie rogi, a zatem rzadko uważane są za „gory” przez resztę stada. Niektóre odznaczają się niemal ludzką twarzą, dzięki czemu są skutecznymi wywiadowcami, ale także stają się przedmiotem szykan. Istotnie, ungory są źle traktowane przez gory i bywają niskie lub niedożywione w porównaniu ze swoimi wielkorogimi braćmi. To sprawia, że stają się zgorzkniałymi stworzeniami, które pragną wyładować na innych jątrzącą się w nich zazdrość. 
+Minotaur
+6,45,25,44,45,20,35,25,20,30,15,30
+Broń +9, Rogi +9, Rozmiar (Duży), Widzenie w Ciemności, Żarłoczny
+Choroba (Ospa Zwierzęca), Furia, Mieszkaniec Lasu, Mutacja, Spaczenie (Pomniejsze), Wojowniczy, Zakażony, Zaraza
+Potężne i zwaliste, przypominające byki minotaury górują nawet nad największymi bestigorami. Stada z dużą grupą minotaurów uważają się za szczególnie pobłogosławione przez Mrocznych Bogów. Hordy zwierzoludzi zbierają się wokół minotaurów, których imponująca postura dodaje odwagi mniejszym stworom. 
+Szaman rykowców
+4,40,30,30,45,40,35,25,30,50,30,16
+Broń +7, Mieszkaniec Lasu, Spaczenie (Pomniejsze), Furia, Rogi +6, Widzenie w Ciemności,Rzucanie Czarów (Cienia, Śmierci lub Zwierząt albo dowolna Tradycja Chaosu)
+Choroba (Ospa Zwierzęca), Mutacja, Rozmiar (Duży), Zakażony, Zaraza
+Szamani rykowców rodzą się z instynktowną umiejętnością władania mocami Chaosu, z której korzystają z przerażającą skutecznością. Są unikatowi wśród zwierzoludzi i nigdy nie muszą bronić się przed innymi członkami swojego stada, nikt bowiem nie ośmiela się wyrządzać im krzywdy – ich głos wyraża podobno wolę samych Mrocznych Bogów. 
+Mutant
+4,30,30,30,30,30,30,30,30,30,30,12
+Broń +7, Mutacja, Spaczenie (Pomniejsze)
+Wszystkie Cechy Stworzeń
+Jednym z najtragiczniejszych losów, jaki może stać się udziałem człowieka, jest ulegnięcie mutagennemu wpływowi Chaosu. To może wydarzyć się bez jakiegokolwiek powodu. Bywa nawet, że rodzą się zmutowane dzieci. Gdy coś takiego się stanie, wielu rodziców nie potrafi zdobyć się na zamordowanie własnego potomstwa. Zamiast tego porzucają je w lasach, gdzie dziecko umiera albo zostaje przyjęte przez innych mutantów, a nawet zwierzoludzi. Bez względu na to, jak bardzo mogą być niewinni, wszyscy mutanci budzą grozę wśród zwykłych ludzi, dlatego większość porzuconych i zgorzkniałych mutantów oddaje się Mrocznym Bogom. Ewentualnie kończą ze sobą, zanim będzie za późno. 
+Kultysta
+4,30,30,30,30,30,30,30,30,30,30,12
+Broń +6
+Mutacja, Pancerz (1), Rzucanie Czarów (Chaos), Spaczenie (Pomniejsze)
+Dla tych, których nie dotknęła plaga Chaosu, jego piętno wydaje się przerażająco obce. Jednak tacy, którzy zostali wystawieni na jego wpływ, każdy krok ku potępieniu, każdy pomysł zbliżający ich do Chaosu uważają nie tylko za logiczny, ale i nieunikniony. Niektórzy szczególnie gorliwi wyznawcy zakazanych kultów obdarzani są przez swych bogów „darami”: to paskudne mutacje, które gwarantują im śmierć w przypadku odkrycia ich sekretu przez łowców czarownic. 
+Wojownik Chaosu
+4,55,30,45,45,45,55,30,35,55,25,17
+Czempion, Broń +8, Pancerz (5), Spaczenie (Pomniejsze)
+Choroba, Dekoncentrujący, Mutacja, Rzucanie Czarów (Chaos), Spaczenie Umysłu,Szał Bojowy, Wojowniczy
+Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach– wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą mogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo. 
+Krwiopuszcz Khorna
+5,55,35,45,35,60,40,30,25,70,15,17
+Broń +9, Czempion, Demoniczny 8+, Nie Czuje Bólu, Niestabilny,Pancerz (5), Pazury, Rogi +8, Spaczenie (Średnie), Strach (3), Szał Bojowy
+-
+Wybrańcy Khorna, krwiopuszcze, grasują na polach bitew Starego Świata, zbierając czaszki i odbierając żywoty ku czci Boga Krwi. Z ich potwornych, rogatych obliczy wystają ostre jak igły zęby. Ich krwawoczerwona skóra jest twarda jak mosiądz wykuty na kowadłach nieustannej wojny. Każdy krwiopuszcz niesie Piekielne Ostrze, przeraźliwie ostry miecz unurzany w posoce, którym wymachuje z przerażającą niedbałością, poddając się słodkiemu doznaniu bezsensownej rzezi. 
+Demonetka Slaanesha
+4,60,50,40,30,65,60,35,30,70,45,17
+Broń +9, Czempion, Dekoncentrujący, Demoniczny 8+, Niestabilny, Spaczenie (Średnie), Strach (2), Widzenie w Ciemności
+-
+Podobnie jak wszystkie stwory Księcia Bólu i Rozkoszy, demonetki Slaanesha są jednocześnie piękne i budzące grozę. Otacza je nieziemski urok, który urąga wszelkiemu rozsądkowi i przeczy zdrowym zmysłom. Sprawia, że wrogowie są bezsilni, nie będąc w stanie stawiać oporu, zafascynowani bluźnierczą zmysłowością potwornych postaci. Demonetki mają kremową, bladą skórę i wielkie, głęboko czarne oczy. Ich delikatne skronie zdobią powiewające swobodnie włosy o nienaturalnej barwie. Ich smukłe ręce kończą się zakrzywionymi krabimi szczypcami zamiast dłońmi. 
+Smukłoudy Jęzobicz – książę demonów Slaanesha
+6,95,110,115,120,100,95,40,70,85,85,86
+Broń +16, Czempion, Dekoncentrujący, Demoniczny 8+, Groza (3),Niestabilny, Pancerz (1), Rogi +15, Rozmiar (Duży), Rzucanie Czarów (Slaanesh), Spaczenie (Większe), Widzenie w Ciemności
+-
+Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium. 
+Fr’hough Żałobny Oddech – książę demonów Nurgla
+4,70,35,120,150,50,20,30,85,120,50,108
+Broń +15, Choroba (Ospa Swędząca), Demoniczny 7+, Groza (3),Niestabilny, Pancerz (4), Rogi +14, Rozmiar (Duży), Rzucanie Czarów (Nurgle), Spaczenie (Większe), Widzenie w Mroku, Zakażony, Zaraza,Zionięcie +12 (Kwas)
+-
+Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium. 
+Klanbrat
+5,30,30,30,30,40,35,30,30,20,20,11
+Broń +7, Pancerz (2), Widzenie w Ciemności, Zaraza
+Choroba (Szczurza Gorączka), Mutacja, Płochliwy, Skryty, Tropiciel
+Większość skavenów stanowią klanbracia pochodzący z jednego z wielu złożonych skaveńskich klanów, które nieustannie kłócą się, politykują, wbijają sobie noże w plecy i w końcu wojują między sobą. Generalnie działają z rozkazu skavena o wyższym statusie, ale zawsze szukają sposobu, by zdobyć dla siebie lepszą pozycję, najczęściej poprzez zdradę. Zwykle odziani są w pleśniejącą skórę lub brudne szmaty z kawałkami pordzewiałego i zmatowiałego metalu służącymi za prowizoryczny pancerz. Klanbracia często wysyłani są jako zwiadowcy lub łupieżcy, którzy zdobywają potrzebne dobra, szukają spaczenia lub łowią niewolników. 
+Szturmoszczur
+5,45,35,35,35,55,50,30,30,25,20,11
+Broń +8, Pancerz (4), Widzenie w Ciemności, Zaraza
+Choroba (Szczurza Gorączka), Mutacja, Tropiciel
+Elitarnymi wojownikami skavenów są szturmoszczury: większe, silniejsze, twardsze i bardziej zdyscyplinowane od klanbraci. Służą jako podstawowa jednostka każdego większego napadu i pełnią funkcję ochroniarzy ważnych skavenów. Szturmoszczury są zwykle dobrze uzbrojone i opancerzone. Posługują się bronią preferowaną przez swój klan. 
+Szczurogr
+5,35,10,55,45,35,45,25,10,25,15,30
+Broń +9, Głupi, Pancerz (1), Rozmiar (Duży), Widzenie w Ciemności, Zaraza
+Choroba (Szczurza Gorączka), Mutacja, Ogon +8, Spaczenie (Pomniejsze), Tropiciel,Widzenie w Mroku, Wyszkolony (Bojowy, Stróżujący, Ujarzmiony, Wierzchowiec), Zakażony
+Szczurogry to zwaliste brutale hodowane w ciemnych jaskiniach Podimperium przez obłąkanych poganiaczy klanu Moulder. Są głupie, ale także nieulękłe i nieustępliwe w walce, gdy poganiają je skaveńscy panowie. Rzadko bywają spotykane w pojedynkę. Zwykle towarzyszą Szarym Prorokom lub innym skavenom wysokiej rangi, którym służą jako ochroniarze. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
