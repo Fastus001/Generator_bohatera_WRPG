@@ -5,6 +5,9 @@ import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import commons.KontrolerInterface;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JSpinner;
@@ -20,6 +23,7 @@ import javax.swing.JButton;
 
 public class NpcGUI extends JFrame {
 
+	KontrolerInterface kontroler;
 	private JPanel contentPane;
 	private JButton btnDodaj;
 	private JButton btnZapisz;
@@ -41,24 +45,14 @@ public class NpcGUI extends JFrame {
 	private JTextArea textAreaOpis;
 	private JComboBox cbWyborNPC;
 
-	/**
-	 * Launch the application.
-	 */
-	public void run() {
-				try {
-					NpcGUI frame = new NpcGUI();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
+
 		
 	
 	/**
 	 * Create the frame.
 	 */
-	public NpcGUI() {
-		
+	public NpcGUI(KontrolerInterface kontroler) {
+		this.kontroler = kontroler;
 		initComponents();
 		createEvents();
 		
