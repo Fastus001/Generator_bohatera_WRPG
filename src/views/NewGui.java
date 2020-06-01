@@ -30,6 +30,8 @@ import javax.swing.border.EtchedBorder;
 
 import commons.Bohater;
 import commons.ExportToPdf;
+import commons.NpcKontroler;
+import commons.NpcModel;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
@@ -94,6 +96,7 @@ public class NewGui extends JFrame {
 	private ArrayList<Umiejetnosc> listaUm;
 	private Profesja nowaProfesja;
 	private JButton btnExportToPdf;
+	private JButton btnNPC;
 
 	
 
@@ -131,6 +134,16 @@ public class NewGui extends JFrame {
 
 
 	private void createEvents() {
+		
+		/*
+		 * tworzenie potwora / NPCa
+		 */
+		btnNPC.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				NpcModel npcModel = new NpcModel();
+				NpcKontroler kontroler = new NpcKontroler(npcModel);
+			}
+		});
 		
 		list.addFocusListener(new FocusAdapter() {
 			@Override
@@ -528,6 +541,9 @@ public class NewGui extends JFrame {
 		
 		JLabel lblLabelProfesja = new JLabel("Profesja:");
 		lblLabelProfesja.setDisplayedMnemonic(KeyEvent.VK_ENTER);
+		
+		btnNPC = new JButton("Utw\u00F3rz NPCa");
+
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -537,17 +553,18 @@ public class NewGui extends JFrame {
 							.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 745, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
+								.addComponent(btnNPC, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(lblLabelRasa)
 								.addComponent(cbRasa, GroupLayout.PREFERRED_SIZE, 76, GroupLayout.PREFERRED_SIZE)
 								.addComponent(btnNowaProfesja)
-								.addComponent(btnPodniesPoziomPr)
+								.addComponent(btnPodniesPoziomPr, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(btnNowyBohater)
 								.addComponent(lblLabelProfesja)
 								.addComponent(cbProfesja, GroupLayout.PREFERRED_SIZE, 78, GroupLayout.PREFERRED_SIZE)
 								.addComponent(btsSaveHero, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(btnExportToPdf, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 							.addGap(24)
-							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE))
+							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(529)
 							.addComponent(chckbxShowTalents)
@@ -563,10 +580,10 @@ public class NewGui extends JFrame {
 			gl_contentPane.createParallelGroup(Alignment.TRAILING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-						.addComponent(scrlPaneLista, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
-						.addGroup(Alignment.LEADING, gl_contentPane.createParallelGroup(Alignment.BASELINE)
-							.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+						.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
+						.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
+							.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
 							.addGroup(gl_contentPane.createSequentialGroup()
 								.addComponent(lblLabelRasa)
 								.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -585,7 +602,8 @@ public class NewGui extends JFrame {
 								.addComponent(btsSaveHero)
 								.addGap(12)
 								.addComponent(btnExportToPdf)
-								.addGap(412))))
+								.addGap(389)
+								.addComponent(btnNPC))))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(chckbxShowTalents)
