@@ -140,6 +140,7 @@ public class NewGui extends JFrame {
 		 */
 		btnNPC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				//TODO - kwestia zapisania NPCa, nie otwierania wielu kart na raz, plus jeszcze nie wiem co
 				NpcModel npcModel = new NpcModel();
 				NpcKontroler kontroler = new NpcKontroler(npcModel);
 			}

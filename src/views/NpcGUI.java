@@ -6,8 +6,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import commons.CechyPotworow;
 import commons.KontrolerInterface;
+import commons.Potwory;
 
+import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JSpinner;
@@ -15,11 +19,18 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.util.ArrayList;
+
 import javax.swing.JComboBox;
 import javax.swing.JScrollPane;
 import javax.swing.JList;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.ScrollPaneConstants;
 
 public class NpcGUI extends JFrame {
 
@@ -40,10 +51,12 @@ public class NpcGUI extends JFrame {
 	private JSpinner spinner_10;
 	private JSpinner spinner_11;
 	private JPanel panelNazwa;
-	private JList listCechy;
-	private JList listOpcjonalne;
+	private JList<Object> listCechy;
+	private JList<Object> listOpcjonalne;
 	private JTextArea textAreaOpis;
-	private JComboBox cbWyborNPC;
+	private JComboBox<Object> cbWyborNPC;
+	Potwory potwor;
+	private JLabel lblNazwa;
 
 
 		
@@ -60,22 +73,85 @@ public class NpcGUI extends JFrame {
 
 
 	private void createEvents() {
-		// TODO Auto-generated method stub
+		/*
+		 * wybór konkretnego NPCa
+		 */
+		cbWyborNPC.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				potwor = (Potwory) cbWyborNPC.getSelectedItem();
+				kontroler.setPotwora(potwor);
+				dodajPotworaDoGui(potwor);
+				textAreaOpis.setText(potwor.getOpisStwora());
+			}
+
+
+		});
+		/*
+		 * zaznaczenie cechy w oknie
+		 */
+		listCechy.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				CechyPotworow cechyP = (CechyPotworow) listCechy.getModel().getElementAt(listCechy.getSelectedIndex());
+				textAreaOpis.setText(cechyP.getOpis());
+			}
+		});
 		
+		/*
+		 * zaznaczenie cechy opcjonalnej
+		 */
+		listOpcjonalne.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				CechyPotworow cechyOpcjaOpis = (CechyPotworow) listOpcjonalne.getModel().getElementAt(listOpcjonalne.getSelectedIndex());
+				textAreaOpis.setText(cechyOpcjaOpis.getOpis());
+			}
+		});
+	
+		
+	}
+	public void dodajPotworaDoGui(Potwory potwor) {
+		// TODO Auto-generated method stub
+		String [] tab = potwor.getStatyPotwora();
+		//dodanie statów do spinnerów
+		spinner_0.getModel().setValue(Integer.parseInt(tab[0]));
+		spinner_1.getModel().setValue(Integer.parseInt(tab[1]));
+		spinner_2.getModel().setValue(Integer.parseInt(tab[2]));
+		spinner_3.getModel().setValue(Integer.parseInt(tab[3]));
+		spinner_4.getModel().setValue(Integer.parseInt(tab[4]));
+		spinner_5.getModel().setValue(Integer.parseInt(tab[5]));
+		spinner_6.getModel().setValue(Integer.parseInt(tab[6]));
+		spinner_7.getModel().setValue(Integer.parseInt(tab[7]));
+		spinner_8.getModel().setValue(Integer.parseInt(tab[8]));
+		spinner_9.getModel().setValue(Integer.parseInt(tab[9]));
+		spinner_10.getModel().setValue(Integer.parseInt(tab[10]));
+		spinner_11.getModel().setValue(Integer.parseInt(tab[11]));
+		//nazwa
+		lblNazwa.setText(potwor.getNazwa());
+		//cechy
+		listCechy.setModel(new DefaultComboBoxModel<Object>(potwor.getCechy().toArray()));
+		//cechy opcjonalne
+		listOpcjonalne.setModel(new DefaultComboBoxModel<Object>(potwor.getCechyOpcjonalne().toArray()));
+		
+	}
+
+	public void setComboBox(Object [] obj) {
+		cbWyborNPC.setModel(new DefaultComboBoxModel<Object>(obj));
 	}
 
 
 	private void initComponents() {
 		setTitle("Tworzenie NPC");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 700, 435);
+		setBounds(100, 100, 700, 546);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
 		JPanel panelCechy = new JPanel();
 		
-		cbWyborNPC = new JComboBox();
+		cbWyborNPC = new JComboBox<Object>();
+
 		
 		panelNazwa = new JPanel();
 		
@@ -93,6 +169,7 @@ public class NpcGUI extends JFrame {
 		lblOpis.setFont(new Font("Caslon Antique", Font.PLAIN, 13));
 		
 		JScrollPane scrollPaneOpis = new JScrollPane();
+		scrollPaneOpis.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		
 		btnDodaj = new JButton("Dodaj");
 		
@@ -107,38 +184,40 @@ public class NpcGUI extends JFrame {
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+						.addComponent(panelCechy, GroupLayout.PREFERRED_SIZE, 96, GroupLayout.PREFERRED_SIZE)
+						.addGroup(gl_contentPane.createSequentialGroup()
+							.addContainerGap()
+							.addComponent(lblwybierzPotwora, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+						.addComponent(scrollPaneOpis, GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
+						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+							.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED, 357, Short.MAX_VALUE)
+							.addComponent(btnZapisz))
+						.addComponent(panelNazwa, GroupLayout.PREFERRED_SIZE, 572, GroupLayout.PREFERRED_SIZE)
+						.addComponent(lblOpis, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING, false)
-								.addComponent(lblwybierzPotwora, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(panelCechy, Alignment.LEADING, GroupLayout.PREFERRED_SIZE, 96, Short.MAX_VALUE))
-							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(panelNazwa, GroupLayout.PREFERRED_SIZE, 572, GroupLayout.PREFERRED_SIZE)
-								.addComponent(lblOpis, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
-								.addComponent(scrollPaneOpis, GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
-								.addGroup(gl_contentPane.createSequentialGroup()
-									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-										.addComponent(scrollPaneCechy, GroupLayout.PREFERRED_SIZE, 169, GroupLayout.PREFERRED_SIZE)
-										.addComponent(lblCechyPotwora))
-									.addPreferredGap(ComponentPlacement.RELATED)
-									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
-										.addComponent(btnUsun, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-										.addComponent(btnDodaj, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-									.addPreferredGap(ComponentPlacement.UNRELATED)
-									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-										.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
-										.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.PREFERRED_SIZE, 169, GroupLayout.PREFERRED_SIZE)))))
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED, 500, Short.MAX_VALUE)
-							.addComponent(btnZapisz)))
-					.addContainerGap())
+								.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+								.addComponent(lblCechyPotwora))
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
+								.addComponent(btnUsun, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(btnDodaj, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addPreferredGap(ComponentPlacement.UNRELATED)
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+								.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
+								.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE))
+							.addGap(157)))
+					.addGap(0))
 		);
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+						.addComponent(panelCechy, GroupLayout.PREFERRED_SIZE, 316, GroupLayout.PREFERRED_SIZE)
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(panelNazwa, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
@@ -147,7 +226,7 @@ public class NpcGUI extends JFrame {
 									.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
 									.addPreferredGap(ComponentPlacement.RELATED)
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-										.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.PREFERRED_SIZE, 140, GroupLayout.PREFERRED_SIZE)
+										.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
 										.addGroup(gl_contentPane.createSequentialGroup()
 											.addComponent(btnDodaj)
 											.addPreferredGap(ComponentPlacement.RELATED)
@@ -155,36 +234,38 @@ public class NpcGUI extends JFrame {
 								.addGroup(gl_contentPane.createSequentialGroup()
 									.addComponent(lblCechyPotwora)
 									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(scrollPaneCechy, GroupLayout.PREFERRED_SIZE, 140, GroupLayout.PREFERRED_SIZE)))
+									.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)))
 							.addPreferredGap(ComponentPlacement.UNRELATED)
 							.addComponent(lblOpis, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(scrollPaneOpis, GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE))
-						.addComponent(panelCechy, GroupLayout.PREFERRED_SIZE, 316, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addComponent(lblwybierzPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
-							.addGap(11)
-							.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap())
-						.addComponent(btnZapisz)))
+							.addComponent(scrollPaneOpis, GroupLayout.PREFERRED_SIZE, 158, GroupLayout.PREFERRED_SIZE)
+							.addGap(2)))
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
+						.addComponent(btnZapisz)
+						.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(lblwybierzPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)))
 		);
 		
 		textAreaOpis = new JTextArea();
+		textAreaOpis.setLineWrap(true);
+		textAreaOpis.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		scrollPaneOpis.setViewportView(textAreaOpis);
 		
 		listOpcjonalne = new JList();
+
+		listOpcjonalne.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		scrollPaneOpcjonalneCechy.setViewportView(listOpcjonalne);
 		
-		listCechy = new JList();
+		listCechy = new JList<Object>();
+
+		listCechy.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		scrollPaneCechy.setViewportView(listCechy);
 		
 	
 		
 		
 		
-		JLabel lblNazwa = new JLabel("Nazwa Potwora");
+		lblNazwa = new JLabel("Nazwa Potwora");
 		lblNazwa.setFont(new Font("Caslon Antique", Font.PLAIN, 20));
 		panelNazwa.add(lblNazwa);
 		
@@ -198,31 +279,31 @@ public class NpcGUI extends JFrame {
 		spinner_0.setModel(new SpinnerNumberModel(0, null, 19, 1));
 		
 		spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_1.setModel(new SpinnerNumberModel(0, null, 120, 1));
 		
 		JLabel lblUs = new JLabel("US");
 		lblUs.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		
 		spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblSila = new JLabel("S");
 		lblSila.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		
 		spinner_3 = new JSpinner();
-		spinner_3.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_3.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblWytrzymalosc = new JLabel("Wt");
 		lblWytrzymalosc.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		
 		spinner_4 = new JSpinner();
-		spinner_4.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_4.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblInicjatywa = new JLabel("I");
 		lblInicjatywa.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		
 		spinner_5 = new JSpinner();
-		spinner_5.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_5.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblZwinnosc = new JLabel("Zw");
 		lblZwinnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
@@ -243,22 +324,22 @@ public class NpcGUI extends JFrame {
 		lblZywotnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
 		
 		spinner_6 = new JSpinner();
-		spinner_6.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_6.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_7 = new JSpinner();
-		spinner_7.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_7.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_8 = new JSpinner();
-		spinner_8.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_8.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_9 = new JSpinner();
-		spinner_9.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_9.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_10 = new JSpinner();
-		spinner_10.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_10.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_11 = new JSpinner();
-		spinner_11.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_11.setModel(new SpinnerNumberModel(0, 0, 500, 1));
 		GroupLayout gl_panelCechy = new GroupLayout(panelCechy);
 		gl_panelCechy.setHorizontalGroup(
 			gl_panelCechy.createParallelGroup(Alignment.LEADING)

@@ -1,269 +1,263 @@
 Ogr
 6,30,20,45,45,10,25,20,20,30,20,30
-BroÅ„ +8, Pancerz (1), Rozmiar (DuÅ¼y), Uprzedzenie (SzczupÅ‚e Osoby), Widzenie w CiemnoÅ›ci, Å»arÅ‚oczny
-Tropiciel, Wojowniczy, Zaraza
-SÄ… wielkie, haÅ‚aÅ›liwe, brutalne i niezwykle porywcze. Å»yciowÄ… motywacjÄ… ogrÃ³w jest potrzeba napeÅ‚niania swoich ogromnych, muskularnych brzuchÃ³w. Brakuje im sprytu lub inteligencji, by robiÄ‡ to mÄ…drze, dlatego w wiÄ™kszoÅ›ci sytuacji standardowo wybierajÄ… rozwiÄ…zanie siÅ‚owe. Ogry pochodzÄ… z krain poÅ‚oÅ¼onych daleko na wschodzie, ale sÄ… czÄ™stym widokiem w Starym Åšwiecie, uwielbiajÄ… bowiem wÄ™drowaÄ‡ i stale poszukujÄ… nowego miÄ™siwa za horyzontem. W czasie swoich trwajÄ…cych dekady wypraw po jedzenie ciÄ™Å¼ko pracujÄ…, starajÄ… siÄ™ integrowaÄ‡, noszÄ… miejscowe ubrania i naÅ›ladujÄ… lokalne zwyczaje, ktÃ³re sÄ… w stanie zrozumieÄ‡, poniewaÅ¼ to wszystko zwiÄ™ksza szansÄ™ na otrzymanie kolejnego posiÅ‚ku. W Imperium czÄ™sto sÅ‚uÅ¼Ä… w Armii Prowincji i codziennie widuje siÄ™ je w wiÄ™kszych miastach, gdzie pracujÄ… jako osiÅ‚ki do wynajÄ™cia. NizioÅ‚kowa Gildia MajstrÃ³w (przedsiÄ™biorcy budowlani) w wielu miastach i miasteczkach Imperium praktycznie caÅ‚kowicie opanowaÅ‚a rynek taniej siÅ‚y roboczej, jakÄ… stanowiÄ… ogry, co bardzo irytuje konkurencjÄ™. 
-NiedÅºwiedÅ¼
+Broñ +8,Pancerz (1),Rozmiar (Du¿y),Uprzedzenie (Szczup³e Osoby),Widzenie w Ciemnoœci,¯ar³oczny
+Tropiciel,Wojowniczy,Zaraza
+S¹ wielkie,ha³aœliwe,brutalne i niezwykle porywcze. ¯yciow¹ motywacj¹ ogrów jest potrzeba nape³niania swoich ogromnych,muskularnych brzuchów. Brakuje im sprytu lub inteligencji,by robiæ to m¹drze,dlatego w wiêkszoœci sytuacji standardowo wybieraj¹ rozwi¹zanie si³owe. Ogry pochodz¹ z krain po³o¿onych daleko na wschodzie,ale s¹ czêstym widokiem w Starym Œwiecie,uwielbiaj¹ bowiem wêdrowaæ i stale poszukuj¹ nowego miêsiwa za horyzontem. W czasie swoich trwaj¹cych dekady wypraw po jedzenie ciê¿ko pracuj¹,staraj¹ siê integrowaæ,nosz¹ miejscowe ubrania i naœladuj¹ lokalne zwyczaje,które s¹ w stanie zrozumieæ,poniewa¿ to wszystko zwiêksza szansê na otrzymanie kolejnego posi³ku. W Imperium czêsto s³u¿¹ w Armii Prowincji i codziennie widuje siê je w wiêkszych miastach,gdzie pracuj¹ jako osi³ki do wynajêcia. Nizio³kowa Gildia Majstrów (przedsiêbiorcy budowlani) w wielu miastach i miasteczkach Imperium praktycznie ca³kowicie opanowa³a rynek taniej si³y roboczej,jak¹ stanowi¹ ogry,co bardzo irytuje konkurencjê. 
+NiedŸwied¿
 4,35,-,55,45,20,25,15,10,15,-,28
-BroÅ„ +8, DÅ‚ugi Krok, Pancerz (1, SkÃ³ra), PÅ‚ochliwy, Rozmiar (DuÅ¼y), Ugryzienie +9,Widzenie w CiemnoÅ›ci, ZwierzÄ™cy
-Rozmiar (Wielki), Terytorialny, Wyszkolony (Bojowy, Maskotka, Ujarzmiony),ZakaÅ¼ony, Zaraza, Å»arÅ‚oczny
-To wÄ™drowcy po bezdroÅ¼ach Reiklandu. NiedÅºwiedzie zwykle sÄ… nieÅ›miaÅ‚ymi samotnikami. StajÄ… siÄ™ agresywne tylko wtedy, gdy intruzi zagraÅ¼ajÄ… ich mÅ‚odym lub gdy sÄ… ranne. Kiedy brakuje poÅ¼ywienia, podchodzÄ… do niechronionych osad i podrÃ³Å¼nych, zwÅ‚aszcza tych, ktÃ³rzy nie pilnujÄ… naleÅ¼ycie swojego prowiantu. 
+Broñ +8,D³ugi Krok,Pancerz (1,Skóra),P³ochliwy,Rozmiar (Du¿y),Ugryzienie +9,Widzenie w Ciemnoœci,Zwierzêcy
+Rozmiar (Wielki),Terytorialny,Wyszkolony (Bojowy),Wyszkolony (Maskotka),Wyszkolony (Ujarzmiony),Zaka¿ony,Zaraza,¯ar³oczny
+To wêdrowcy po bezdro¿ach Reiklandu. NiedŸwiedzie zwykle s¹ nieœmia³ymi samotnikami. Staj¹ siê agresywne tylko wtedy,gdy intruzi zagra¿aj¹ ich m³odym lub gdy s¹ ranne. Kiedy brakuje po¿ywienia,podchodz¹ do niechronionych osad i podró¿nych,zw³aszcza tych,którzy nie pilnuj¹ nale¿ycie swojego prowiantu. 
 Dzik
 7,35,-,33,35,33,35,-,10,10,-,10
-BroÅ„ +6, DÅ‚ugi Krok, Pancerz (1, SkÃ³ra), PÅ‚ochliwy, Rogi (KÅ‚y), Widzenie w CiemnoÅ›ci,ZwierzÄ™cy
-Rozmiar (DuÅ¼y), SzaÅ‚ Bojowy, Terytorialny, Wojowniczy, Wyszkolony (Bojowy,Magiczny, Ujarzmiony, Wierzchowiec), ZakaÅ¼ony, Zaraza
-BuszujÄ…ce po lasach dziki to stworzenia skryte, ale osaczone walczÄ…, uÅ¼ywajÄ…c ostrych kÅ‚Ã³w z zaciekÅ‚oÅ›ciÄ…, ktÃ³ra szokuje nieprzygotowanych. ChociaÅ¼ wiÄ™kszoÅ›Ä‡ dzikÃ³w ma 150â€“180 cm dÅ‚ugoÅ›ci, niektÃ³re osiÄ…gajÄ… niezwykÅ‚e rozmiary. NajwiÄ™ksze okazy cenione sÄ… przez orki, ktÃ³re wykorzystujÄ… je jako przeraÅ¼ajÄ…ce wierzchowce bojowe. 
+Broñ +6,D³ugi Krok,Pancerz (1,Skóra),P³ochliwy,Rogi (K³y),Widzenie w Ciemnoœci,Zwierzêcy
+Rozmiar (Du¿y),Sza³ Bojowy,Terytorialny,Wojowniczy,Wyszkolony (Bojowy),Wyszkolony (Magiczny),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec),Zaka¿ony,Zaraza
+Buszuj¹ce po lasach dziki to stworzenia skryte,ale osaczone walcz¹,u¿ywaj¹c ostrych k³ów z zaciek³oœci¹,która szokuje nieprzygotowanych. Chocia¿ wiêkszoœæ dzików ma 150–180 cm d³ugoœci,niektóre osi¹gaj¹ niezwyk³e rozmiary. Najwiêksze okazy cenione s¹ przez orki,które wykorzystuj¹ je jako przera¿aj¹ce wierzchowce bojowe. 
 Pies
 4,25,-,20,20,35,30,-,15,10,15,5
-BroÅ„ +5, DÅ‚ugi Krok, PÅ‚ochliwy, Rozmiar (MaÅ‚y), Widzenie w CiemnoÅ›ci, ZwierzÄ™cy
-Pancerz (1), Rozmiar (Niewielki do Åšredniego), SzaÅ‚ Bojowy, Terytorialny, Tropiciel,Wyszkolony (AportujÄ…cy, Bojowy, Maskotka, Magiczny, StrÃ³Å¼ujÄ…cy, Ujarzmiony), Zaraza
-Psy hodowane sÄ… w caÅ‚ym Starym Åšwiecie z przeznaczeniem do niezliczonych zadaÅ„. Podczas gdy rozpieszczone pudle dworzan z Altdorfu stanowiÄ… zagroÅ¼enie jedynie dla godnoÅ›ci poszukiwacza przygÃ³d, wiÄ™ksze rasy, wÅ‚Ä…cznie z tymi, ktÃ³re przyuczane sÄ… do udziaÅ‚u w bitwach lub walkach psÃ³w, mogÄ… byÄ‡ bardzo groÅºne. 
+Broñ +5,D³ugi Krok,P³ochliwy,Rozmiar (Ma³y),Widzenie w Ciemnoœci,Zwierzêcy
+Pancerz (1),Rozmiar (Œredni),Rozmiar (Niewielki),Sza³ Bojowy,Terytorialny,Tropiciel,Wyszkolony (Aportuj¹cy),Wyszkolony (Bojowy),Wyszkolony (Maskotka),Wyszkolony (Magiczny),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony),Zaraza
+Psy hodowane s¹ w ca³ym Starym Œwiecie z przeznaczeniem do niezliczonych zadañ. Podczas gdy rozpieszczone pudle dworzan z Altdorfu stanowi¹ zagro¿enie jedynie dla godnoœci poszukiwacza przygód,wiêksze rasy,w³¹cznie z tymi,które przyuczane s¹ do udzia³u w bitwach lub walkach psów,mog¹ byæ bardzo groŸne. 
 Olbrzymie szczury
 4,25,-,30,25,25,35,-,15,15,-,5
-BroÅ„ +4, DÅ‚ugi Krok, PÅ‚ochliwy, Rozmiar (MaÅ‚y), Widzenie w CiemnoÅ›ci, Zaraza, ZwierzÄ™cy
-Choroba (Czarna Zaraza lub Szczurza GorÄ…czka), Pancerz (1), Rozmiar (Niewielki do Åšredniego), RÃ³j, Wyszkolony (Bojowy)
-Szczury przedostajÄ… siÄ™ wszÄ™dzie. SzczegÃ³lnie rozpowszechnione sÄ… w miastach i miasteczkach. Im bardziej stÅ‚oczeni sÄ… ludzie, tym bardziej stÅ‚oczone sÄ… z nimi szczury, co jest szczegÃ³lnie groÅºne, gdy stwory okazujÄ… siÄ™ nosicielami zarazy. ChociaÅ¼ szczury zwykle sÄ… maÅ‚e, mogÄ… wyrastaÄ‡ do monstrualnych rozmiarÃ³w. PojawiaÅ‚y siÄ™ doniesienia o szczurach pod Altdorfem o rozmiarach czÅ‚owieka lub jeszcze wiÄ™kszych. Aby trzymaÄ‡ je w ryzach, zatrudnia siÄ™ szczuroÅ‚apÃ³w. 
-Olbrzymie pajÄ…ki
+Broñ +4,D³ugi Krok,P³ochliwy,Rozmiar (Ma³y),Widzenie w Ciemnoœci,Zaraza,Zwierzêcy
+Choroba (Czarna Zaraza),Choroba (Szczurza Gor¹czka),Pancerz (1),Rozmiar (Niewielki),Rozmiar (Œredni),Rój,Wyszkolony (Bojowy)
+Szczury przedostaj¹ siê wszêdzie. Szczególnie rozpowszechnione s¹ w miastach i miasteczkach. Im bardziej st³oczeni s¹ ludzie,tym bardziej st³oczone s¹ z nimi szczury,co jest szczególnie groŸne,gdy stwory okazuj¹ siê nosicielami zarazy. Chocia¿ szczury zwykle s¹ ma³e,mog¹ wyrastaæ do monstrualnych rozmiarów. Pojawia³y siê doniesienia o szczurach pod Altdorfem o rozmiarach cz³owieka lub jeszcze wiêkszych. Aby trzymaæ je w ryzach,zatrudnia siê szczuro³apów. 
+Olbrzymie paj¹ki
 5,35,25,15,25,10,35,30,5,25,-,2
-BroÅ„ +3, Rozmiar (Niewielki), SieÄ‡ (40), Widzenie w CiemnoÅ›ci, Wspinacz, ZwierzÄ™cy
-Jad (PrzeciÄ™tny), Mieszkaniec Lasu, Pancerz (1), Rozmiar (Niewielki do Wielkiego), RÃ³j,Ugryzienie, Wyszkolony (Bojowy, Magiczny, StrÃ³Å¼ujÄ…cy, Ujarzmiony, Wierzchowiec)
-Olbrzymie pajÄ…ki czajÄ… siÄ™ gÅ‚Ä™boko w lasach i jaskiniach Imperium, ale mogÄ… Å¼yÄ‡ gdziekolwiek, wÅ‚Ä…cznie z zakurzonymi strychami i ciemnymi piwnicami. WiÄ™kszoÅ›Ä‡ chwyta ofiary w mocne sieci, a nastÄ™pnie wstrzykuje im jad. ChociaÅ¼ wiÄ™kszoÅ›Ä‡ ma rozmiary duÅ¼ego szczura, niektÃ³re odmiany olbrzymich pajÄ…kÃ³w sÄ… przeraÅ¼ajÄ…co wielkie. LeÅ›ne gobliny czÄ™sto chwytajÄ… wiÄ™ksze okazy, by sÅ‚uÅ¼yÅ‚y im za wierzchowce. 
-KoÅ„
+Broñ +3,Rozmiar (Niewielki),Sieæ (40),Widzenie w Ciemnoœci,Wspinacz,Zwierzêcy
+Jad (Przeciêtny),Mieszkaniec Lasu,Pancerz (1),Rozmiar (Ma³y), Rozmiar(Œredni), Rozmiar (Wielki),Rój,Ugryzienie,Wyszkolony (Bojowy),Wyszkolony (Magiczny),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec)
+Olbrzymie paj¹ki czaj¹ siê g³êboko w lasach i jaskiniach Imperium,ale mog¹ ¿yæ gdziekolwiek,w³¹cznie z zakurzonymi strychami i ciemnymi piwnicami. Wiêkszoœæ chwyta ofiary w mocne sieci,a nastêpnie wstrzykuje im jad. Chocia¿ wiêkszoœæ ma rozmiary du¿ego szczura,niektóre odmiany olbrzymich paj¹ków s¹ przera¿aj¹co wielkie. Leœne gobliny czêsto chwytaj¹ wiêksze okazy,by s³u¿y³y im za wierzchowce. 
+Koñ
 7,25,-,45,35,15,30,-,10,10,10,22
-BroÅ„ +7, DÅ‚ugi Krok, PÅ‚ochliwy, Rozmiar (DuÅ¼y), ZwierzÄ™cy
-Pancerz, Wyszkolony (Bojowy, Magiczny, Maskotka, PociÄ…gowy, Ujarzmiony,Wierzchowiec)
-Konie hodowane sÄ… z przeznaczeniem do wykonywania rozmaitych prac. NaleÅ¼Ä… do nich chyÅ¼e wierzchowce kurierÃ³w, krzepkie rumaki rycerzy i wielkie konie ciÄ…gnÄ…ce wozy farmerÃ³w. SÄ… tak przydatne, Å¼e handel koÅ„mi staÅ‚ siÄ™ w Reiklandzie niemal konkurencjÄ… sportowÄ…. Nieuczciwi sprzedawcy chcÄ… zarobiÄ‡ kosztem ignoranckiego nabywcy. WypeÅ‚niajÄ… luki i malujÄ… zÄ™by podstarzaÅ‚ych koni albo wpychajÄ… im do nozdrzy szmaty wchÅ‚aniajÄ…ce Å›luz. NieznajÄ…cy siÄ™ na rzeczy kupujÄ…cy powinni mieÄ‡ siÄ™ na bacznoÅ›ci. 
-GoÅ‚Ä…b
+Broñ +7,D³ugi Krok,P³ochliwy,Rozmiar (Du¿y),Zwierzêcy
+Pancerz,Wyszkolony (Bojowy),Wyszkolony (Magiczny),Wyszkolony (Maskotka),Wyszkolony (Poci¹gowy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec)
+Konie hodowane s¹ z przeznaczeniem do wykonywania rozmaitych prac. Nale¿¹ do nich chy¿e wierzchowce kurierów,krzepkie rumaki rycerzy i wielkie konie ci¹gn¹ce wozy farmerów. S¹ tak przydatne,¿e handel koñmi sta³ siê w Reiklandzie niemal konkurencj¹ sportow¹. Nieuczciwi sprzedawcy chc¹ zarobiæ kosztem ignoranckiego nabywcy. Wype³niaj¹ luki i maluj¹ zêby podstarza³ych koni albo wpychaj¹ im do nozdrzy szmaty wch³aniaj¹ce œluz. Nieznaj¹cy siê na rzeczy kupuj¹cy powinni mieæ siê na bacznoœci. 
+Go³¹b
 2,15,-,5,15,25,40,-,10,20,10,1
-BroÅ„ +0, Latanie 100, PÅ‚ochliwy, Rozmiar (Drobny), ZwierzÄ™cy
-Rozmiar (MaÅ‚y), Wyszkolony (PowracajÄ…cy, Ujarzmiony)
-GoÅ‚Ä™bie hodowane sÄ… w caÅ‚ym Reiklandzie w celu dostarczania wszelkiego rodzaju wiadomoÅ›ci. Ostatnio zasÅ‚ynÄ™Å‚y z przenoszenia bardziej zabÃ³jczych Å‚adunkÃ³w. Åatwo dostÄ™pne ptaki staÅ‚y siÄ™ ulubieÅ„cami inÅ¼ynierÃ³w, ktÃ³rzy z rÃ³Å¼nym powodzeniem wysyÅ‚ajÄ… swoje â€bomby goÅ‚Ä™bieâ€. 
-WÄ…Å¼
+Broñ +0,Latanie (100),P³ochliwy,Rozmiar (Drobny),Zwierzêcy
+Rozmiar (Ma³y),Wyszkolony (Powracaj¹cy),Wyszkolony (Ujarzmiony)
+Go³êbie hodowane s¹ w ca³ym Reiklandzie w celu dostarczania wszelkiego rodzaju wiadomoœci. Ostatnio zas³ynê³y z przenoszenia bardziej zabójczych ³adunków. £atwo dostêpne ptaki sta³y siê ulubieñcami in¿ynierów,którzy z ró¿nym powodzeniem wysy³aj¹ swoje „bomby go³êbie”. 
+W¹¿
 3,40,-,30,25,25,40,-,5,45,-,8
-BroÅ„ +5, Pancerz (1), Rozmiar (MaÅ‚y), Szybki, ZwierzÄ™cy, Zimnokrwisty
-BagnoÅ‚az, Dusiciel, Jad (Bardzo Åatwy do Bardzo Trudnego), Rozmiar (Drobny do Wielkiego), RÃ³j
-WÄ™Å¼e moÅ¼na znaleÅºÄ‡ w caÅ‚ym Imperium, zwÅ‚aszcza w gÅ‚Ä™bi lasÃ³w. WiÄ™kszoÅ›Ä‡ jest niegroÅºna, ale niektÃ³re majÄ… zabÃ³jczy jad lub potrafiÄ… udusiÄ‡ swojÄ… ofiarÄ™. Podobnie jak wiele stworzeÅ„ Starego Åšwiata, mogÄ… wyrosnÄ…Ä‡ do olbrzymich rozmiarÃ³w â€“ jak ogromny Å¼mij bagienny, ktÃ³ry stanowi prawdziwe zagroÅ¼enie nawet dla najsilniejszego najemnika. 
+Broñ +5,Pancerz (1),Rozmiar (Ma³y),Szybki,Zwierzêcy,Zimnokrwisty
+Bagno³az,Dusiciel,Jad (Bardzo £atwy),Jad (Przeciêtny),Jad (Wymagaj¹cy),Jad (Trudny),Jad (Bardzo Trudny),Rozmiar (Drobny),Rozmiar (Ma³y),Rozmiar (Niewielki),Rozmiar (Œredni),Rozmiar (Du¿y),Rozmiar (Wielki),Rój
+Wê¿e mo¿na znaleŸæ w ca³ym Imperium,zw³aszcza w g³êbi lasów. Wiêkszoœæ jest niegroŸna,ale niektóre maj¹ zabójczy jad lub potrafi¹ udusiæ swoj¹ ofiarê. Podobnie jak wiele stworzeñ Starego Œwiata,mog¹ wyrosn¹æ do olbrzymich rozmiarów – jak ogromny ¿mij bagienny,który stanowi prawdziwe zagro¿enie nawet dla najsilniejszego najemnika. 
 Wilk
 4,35,-,35,30,35,30,-,15,15,-,10
-BroÅ„ +6, DÅ‚ugi Krok, Pancerz (1), PÅ‚ochliwy, Tropiciel, Widzenie w CiemnoÅ›ci, ZwierzÄ™cy
-Rozmiar (DuÅ¼y), SzaÅ‚ Bojowy, Terytorialny, Wyszkolony (AportujÄ…cy, Bojowy, Magiczny,PociÄ…gowy, StrÃ³Å¼ujÄ…cy, Ujarzmiony, Wierzchowiec), Zaraza
-Wilki zazwyczaj polujÄ… w stadach i znane sÄ… jako zaciÄ™ci Å‚owcy, ktÃ³rzy Å›cigajÄ… swojÄ… ofiarÄ™ przez dziesiÄ…tki kilometrÃ³w bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilkÃ³w, wÅ‚Ä…cznie z groÅºnymi olbrzymimi wilkami, ktÃ³re sÄ… chwytane i hodowane przez gobliny do uÅ¼ytku jako straÅ¼nicy oraz wierzchowce. 
+Broñ +6,D³ugi Krok,Pancerz (1),P³ochliwy,Tropiciel,Widzenie w Ciemnoœci,Zwierzêcy
+Rozmiar (Du¿y),Sza³ Bojowy,Terytorialny,Wyszkolony (Aportuj¹cy),Wyszkolony (Bojowy),Wyszkolony (Magiczny),Wyszkolony (Poci¹gowy),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec),Zaraza
+Wilki zazwyczaj poluj¹ w stadach i znane s¹ jako zaciêci ³owcy,którzy œcigaj¹ swoj¹ ofiarê przez dziesi¹tki kilometrów bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilków,w³¹cznie z groŸnymi olbrzymimi wilkami,które s¹ chwytane i hodowane przez gobliny do u¿ytku jako stra¿nicy oraz wierzchowce. 
 Bazyliszek
 4,45,35,55,55,25,15,-,15,15,-,64
-BroÅ„ +9, DÅ‚ugi Krok, Jad, NiewraÅ¼liwoÅ›Ä‡ (Trucizna),Ogon +8, Pancerz (2), PetryfikujÄ…ce Spojrzenie, Rozmiar (Wielki),Ugryzienie +9, Widzenie w CiemnoÅ›ci,Zimnokrwisty, Zaraza, ZwierzÄ™cy
-Mutacja, Terytorialny
-Te oÅ›mionogie, gadzie stwory sÄ… samotnicze i nieuchwytne. Podobno naleÅ¼Ä… do najstarszych stworzeÅ„ Chaosu. Jak twierdzÄ… pogÅ‚oski, przepeÅ‚nia je tak wielka zÅ‚oÅ›Ä‡ i jad, Å¼e zatruta jest nawet ziemia, po ktÃ³rej chodzÄ…. TakÅ¼e ich ukÄ…szenie jest trujÄ…ce, ale najwiÄ™kszy lÄ™k budzi petryfikujÄ…ce spojrzenie tych potworÃ³w. Obecnie spotyka siÄ™ je rzadko, jednak bazyliszki to wciÄ…Å¼ groÅºni przeciwnicy. Ich gruczoÅ‚y i organy sÄ… wysoko cenione przez czarodziejÃ³w i alchemikÃ³w, dlatego szukajÄ…cy okazji Å‚owcy czÄ™sto sprawdzajÄ…, ile jest prawdy w pogÅ‚oskach o bazyliszkach bytujÄ…cych podobno w dzikich ostÄ™pach Vorberglandu. Niewielu powraca z takich wypraw. 
-Bagienna oÅ›miornica
+Broñ +9,D³ugi Krok,Jad,Niewra¿liwoœæ (Trucizna),Ogon +8,Pancerz (2),Petryfikuj¹ce Spojrzenie,Rozmiar (Wielki),Ugryzienie +9,Widzenie w Ciemnoœci,Zimnokrwisty,Zaraza,Zwierzêcy
+Mutacja,Terytorialny
+Te oœmionogie,gadzie stwory s¹ samotnicze i nieuchwytne. Podobno nale¿¹ do najstarszych stworzeñ Chaosu. Jak twierdz¹ pog³oski,przepe³nia je tak wielka z³oœæ i jad,¿e zatruta jest nawet ziemia,po której chodz¹. Tak¿e ich uk¹szenie jest truj¹ce,ale najwiêkszy lêk budzi petryfikuj¹ce spojrzenie tych potworów. Obecnie spotyka siê je rzadko,jednak bazyliszki to wci¹¿ groŸni przeciwnicy. Ich gruczo³y i organy s¹ wysoko cenione przez czarodziejów i alchemików,dlatego szukaj¹cy okazji ³owcy czêsto sprawdzaj¹,ile jest prawdy w pog³oskach o bazyliszkach bytuj¹cych podobno w dzikich ostêpach Vorberglandu. Niewielu powraca z takich wypraw. 
+Bagienna oœmiornica
 3,35,-,80,75,15,55,-,5,65,0,56
-BagnoÅ‚az, Dusiciel, 8x Macki +9, Rozmiar (DuÅ¼y), Skryty, Ziemnowodny, ZwierzÄ™cy
-Rozmiar (Wielki do Monstrualnego), Terytorialny
-Bagienne oÅ›miornice czajÄ… siÄ™ w pÅ‚ytkich wodach, zazwyczaj w bagnach i na moczarach. CzekajÄ… na ofiarÄ™ w caÅ‚kowitym bezruchu, zdolne wyczuÄ‡ wibracje powodowane przez zbliÅ¼ajÄ…ce siÄ™ stworzenia. Potem wyskakujÄ… z bÅ‚otnistej wody, starajÄ…c siÄ™ chwyciÄ‡ i utopiÄ‡ zdobycz za pomocÄ… silnych macek. Bagienne oÅ›miornice majÄ… kamuflaÅ¼ doskonale przystosowany do bagnistego otoczenia â€“ zwykle pokryte sÄ… zielonymi i brÄ…zowymi cÄ™tkami. JedynÄ… wskazÃ³wkÄ… zdradzajÄ…cÄ… ich obecnoÅ›Ä‡ sÄ… wielkie, szkliste oczy. WiÄ™kszoÅ›Ä‡ oÅ›miornic ma macki dÅ‚ugoÅ›ci okoÅ‚o 6 metrÃ³w i ciaÅ‚o mierzÄ…ce prawie 2 metry. KrÄ…Å¼Ä… jednak opowieÅ›ci, Å¼e mogÄ… urosnÄ…Ä‡ wielokrotnie wiÄ™ksze, zwÅ‚aszcza gdy majÄ… zapewniony regularny napÅ‚yw miÄ™sa. 
-ZÄ™bacz jaskiniowy
+Bagno³az,Dusiciel,8x Macki +9,Rozmiar (Du¿y),Skryty,Ziemnowodny,Zwierzêcy
+Rozmiar (Wielki),Rozmiar (Monstrualny),Terytorialny
+Bagienne oœmiornice czaj¹ siê w p³ytkich wodach,zazwyczaj w bagnach i na moczarach. Czekaj¹ na ofiarê w ca³kowitym bezruchu,zdolne wyczuæ wibracje powodowane przez zbli¿aj¹ce siê stworzenia. Potem wyskakuj¹ z b³otnistej wody,staraj¹c siê chwyciæ i utopiæ zdobycz za pomoc¹ silnych macek. Bagienne oœmiornice maj¹ kamufla¿ doskonale przystosowany do bagnistego otoczenia – zwykle pokryte s¹ zielonymi i br¹zowymi cêtkami. Jedyn¹ wskazówk¹ zdradzaj¹c¹ ich obecnoœæ s¹ wielkie,szkliste oczy. Wiêkszoœæ oœmiornic ma macki d³ugoœci oko³o 6 metrów i cia³o mierz¹ce prawie 2 metry. Kr¹¿¹ jednak opowieœci,¿e mog¹ urosn¹æ wielokrotnie wiêksze,zw³aszcza gdy maj¹ zapewniony regularny nap³yw miêsa. 
+Zêbacz jaskiniowy
 4,45,-,50,30,10,40,-,5,15,-,12
-BroÅ„ +9, Skoczny, Widzenie w CiemnoÅ›ci, Zaraza, ZwierzÄ™cy
-Furia, Rogi, Rozmiar (Drobny do Wielkiego), SzaÅ‚ Bojowy, Widzenie w Mroku, Ziemnowodny, ZioniÄ™cie (Gaz albo Kwas)
-ZÄ™bacze to duÅ¼e, okrÄ…gÅ‚awe, grzybowate stwory, ktÃ³re Å¼yjÄ… gÅ‚Ä™boko pod ziemiÄ… w najwilgotniejszych, najciemniejszych jaskiniach. MajÄ… rozdziawionÄ… gÄ™bÄ™ i wielkie, ostre zÄ™by. Cenione sÄ… przez gobliny za miÄ™so i skÃ³rÄ™ oraz sÅ‚uÅ¼Ä… im jako straÅ¼nicy lub pupile. 
-PÃ³Å‚gryf
+Broñ +9,Skoczny,Widzenie w Ciemnoœci,Zaraza,Zwierzêcy
+Furia,Rogi,Rozmiar (Drobny),Rozmiar (Ma³y),Rozmiar (Niewielki),Rozmiar (Œredni),Rozmiar (Du¿y),Rozmiar (Wielki),Sza³ Bojowy,Widzenie w Mroku,Ziemnowodny,Zioniêcie (Gaz), Zioniêcie (Kwas)
+Zêbacze to du¿e,okr¹g³awe,grzybowate stwory,które ¿yj¹ g³êboko pod ziemi¹ w najwilgotniejszych,najciemniejszych jaskiniach. Maj¹ rozdziawion¹ gêbê i wielkie,ostre zêby. Cenione s¹ przez gobliny za miêso i skórê oraz s³u¿¹ im jako stra¿nicy lub pupile. 
+Pó³gryf
 7,35,-,55,40,30,45,-,15,25,-,30
-BroÅ„ +9, DÅ‚ugi Krok, Pancerz (1), Rozmiar (DuÅ¼y), Ugryzienie +9, Widzenie w CiemnoÅ›ci,ZwierzÄ™cy
-Wyszkolony (Bojowy, PociÄ…gowy, StrÃ³Å¼ujÄ…cy, Ujarzmiony, Wierzchowiec)
-PosiadajÄ…ce gÅ‚owÄ™ orÅ‚a i korpus lwa pÃ³Å‚gryfy to potÄ™Å¼ne stworzenia o szlachetnym wyglÄ…dzie. WÄ™drujÄ… po lasach i Å‚Ä…kach Imperium, zwykle trzymajÄ…c siÄ™ z dala od ludzkich osad. PolujÄ… w pojedynkÄ™. NajodwaÅ¼niejsze zakony rycerskie wykorzystujÄ… schwytane pÃ³Å‚gryfy jako rumaki bojowe. W odrÃ³Å¼nieniu od wiÄ™kszych potwornych wierzchowcÃ³w, ktÃ³re zazwyczaj sÄ… zabierane jako mÅ‚ode lub hodowane w niewoli, te czÄ™sto chwyta siÄ™ dorosÅ‚e. Stanowi to wrÄ™cz rytuaÅ‚ inicjacji w niektÃ³rych zakonach. 
+Broñ +9,D³ugi Krok,Pancerz (1),Rozmiar (Du¿y),Ugryzienie +9,Widzenie w Ciemnoœci,Zwierzêcy
+Wyszkolony (Bojowy),Wyszkolony (Poci¹gowy),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec)
+Posiadaj¹ce g³owê or³a i korpus lwa pó³gryfy to potê¿ne stworzenia o szlachetnym wygl¹dzie. Wêdruj¹ po lasach i ³¹kach Imperium,zwykle trzymaj¹c siê z dala od ludzkich osad. Poluj¹ w pojedynkê. Najodwa¿niejsze zakony rycerskie wykorzystuj¹ schwytane pó³gryfy jako rumaki bojowe. W odró¿nieniu od wiêkszych potwornych wierzchowców,które zazwyczaj s¹ zabierane jako m³ode lub hodowane w niewoli,te czêsto chwyta siê doros³e. Stanowi to wrêcz rytua³ inicjacji w niektórych zakonach. 
 Smok
 6,65,60,65,65,60,25,15,45,85,25,104
-BroÅ„ +10, Latanie (80), Pancerz (5), Ogon +9,Rozmiar (Wielki), Ugryzienie +10,Widzenie w CiemnoÅ›ci, ZioniÄ™cie +15 (rÃ³Å¼ne)
-BagnoÅ‚az, Jad, Magiczny, Mieszkaniec Lasu, Mutacja, NiewraÅ¼liwoÅ›Ä‡ (wybierz jednÄ…),OÅ¼ywieniec, Rozmiar (Monstrualny),Rzucanie CzarÃ³w (rÃ³Å¼ne), Spaczenie UmysÅ‚u,Wyszkolony, (Wierzchowiec), ZakaÅ¼ony
-Smoki rzÄ…dziÅ‚y niebiosami na dÅ‚ugo przed tym, zanim starsze rasy pojawiÅ‚y siÄ™ w Znanym Åšwiecie. Podczas gdy wspÃ³Å‚czesne smoki sÄ… ledwie cieniem swoich prastarych braci, pozostajÄ… jednymi z najpotÄ™Å¼niejszych stworzeÅ„ znanych Imperium. Kilka pozostaÅ‚ych starych smokÃ³w jest przeraÅ¼ajÄ…co ogromnych. Rzadko budzÄ… siÄ™ ze snu. MaÅ‚a druÅ¼yna poszukiwaczy przygÃ³d, ktÃ³ra rozjuszyÅ‚aby smoka, powinna braÄ‡ nogi za pas. Przeciw takiej bestii wiele nie wskÃ³ra. 
+Broñ +10,Latanie (80),Pancerz (5),Ogon +9,Rozmiar (Wielki),Ugryzienie +10,Widzenie w Ciemnoœci,Zioniêcie +15 (ró¿ne)
+Bagno³az,Jad,Magiczny,Mieszkaniec Lasu,Mutacja,Niewra¿liwoœæ (wybierz jedn¹),O¿ywieniec,Rozmiar (Monstrualny),Rzucanie Czarów (ró¿ne),Spaczenie Umys³u,Wyszkolony (Wierzchowiec),Zaka¿ony
+Smoki rz¹dzi³y niebiosami na d³ugo przed tym,zanim starsze rasy pojawi³y siê w Znanym Œwiecie. Podczas gdy wspó³czesne smoki s¹ ledwie cieniem swoich prastarych braci,pozostaj¹ jednymi z najpotê¿niejszych stworzeñ znanych Imperium. Kilka pozosta³ych starych smoków jest przera¿aj¹co ogromnych. Rzadko budz¹ siê ze snu. Ma³a dru¿yna poszukiwaczy przygód,która rozjuszy³aby smoka,powinna braæ nogi za pas. Przeciw takiej bestii wiele nie wskóra. 
 Bestia bagienna
 5,35,-,50,55,10,15,10,-,-,-,40
-BagnoÅ‚az, BroÅ„ +8, GÅ‚upi, Konstrukt, Nie do Zdarcia, Niestabilny, Regeneracja,Rozmiar (DuÅ¼y), Widzenie w Mroku, Zaraza
-SzaÅ‚ Bojowy, Terytorialny, ZakaÅ¼ony, Å»arÅ‚oczny
-Tworzone przez czarodziejÃ³w z muÅ‚u bagnisk i moczarÃ³w bestie bagienne to praktycznie bezmyÅ›lne automaty spajane siÅ‚Ä… magii. SÄ… w przybliÅ¼eniu czÅ‚ekoksztaÅ‚tne i zbudowane z bÅ‚ota, koÅ›ci, gaÅ‚Ä™zi oraz Å›luzu. Utrzymanie ich w caÅ‚oÅ›ci wymaga znacznych zasobÃ³w magii. Od czasu do czasu tworzone sÄ… przez czarodziejÃ³w wÅ‚adajÄ…cych magiÄ… Jadeitu. SÅ‚uÅ¼Ä… im za ochroniarzy lub wypeÅ‚niajÄ… okreÅ›lone zadania wymagajÄ…ce brutalnej siÅ‚y albo bezmyÅ›lnego zabijania. Czasami pojawiajÄ… siÄ™ same z siebie, powstajÄ…c w stojÄ…cych, gnijÄ…cych stawach, gdzie nurt magii zostaÅ‚ zakÅ‚Ã³cony. Podobno Kolegium Jadeitu w Altdorfie trzyma tuzin tych stworÃ³w w charakterze sÅ‚uÅ¼Ä…cych, ktÃ³rzy dÅºwigajÄ… ciÄ™Å¼ary i przynoszÄ… rÃ³Å¼ne rzeczy dla starszych czarodziejÃ³w. W spÃ³jnej postaci trzyma je nieustanne splatanie magii dokonywane przez dziesiÄ…tki uczniÃ³w. 
+Bagno³az,Broñ +8,G³upi,Konstrukt,Nie do Zdarcia,Niestabilny,Regeneracja,Rozmiar (Du¿y),Widzenie w Mroku,Zaraza
+Sza³ Bojowy,Terytorialny,Zaka¿ony,¯ar³oczny
+Tworzone przez czarodziejów z mu³u bagnisk i moczarów bestie bagienne to praktycznie bezmyœlne automaty spajane si³¹ magii. S¹ w przybli¿eniu cz³ekokszta³tne i zbudowane z b³ota,koœci,ga³êzi oraz œluzu. Utrzymanie ich w ca³oœci wymaga znacznych zasobów magii. Od czasu do czasu tworzone s¹ przez czarodziejów w³adaj¹cych magi¹ Jadeitu. S³u¿¹ im za ochroniarzy lub wype³niaj¹ okreœlone zadania wymagaj¹ce brutalnej si³y albo bezmyœlnego zabijania. Czasami pojawiaj¹ siê same z siebie,powstaj¹c w stoj¹cych,gnij¹cych stawach,gdzie nurt magii zosta³ zak³ócony. Podobno Kolegium Jadeitu w Altdorfie trzyma tuzin tych stworów w charakterze s³u¿¹cych,którzy dŸwigaj¹ ciê¿ary i przynosz¹ ró¿ne rzeczy dla starszych czarodziejów. W spójnej postaci trzyma je nieustanne splatanie magii dokonywane przez dziesi¹tki uczniów. 
 Fimir
 6,35,20,45,40,30,20,20,30,30,15,30
-BagnoÅ‚az, BroÅ„ +8, Pancerz (2), Rozmiar (DuÅ¼y), Widzenie w CiemnoÅ›ci, Zimnokrwisty
-Ogon +7, Rzucanie CzarÃ³w (Demonologia)
-Fimiry to tajemnicze, jednookie, podobne do gadÃ³w stworzenia, ktÃ³re grasujÄ… w najciemniejszych zakÄ…tkach wilgotnych bagien i trzÄ™sawisk zachodniego Reiklandu. UnikajÄ… Å›wiatÅ‚a sÅ‚onecznego i pojawiajÄ… siÄ™ zwykle tylko o Å›wicie lub o zmierzchu albo pod osÅ‚onÄ… mgÅ‚y, aby porywaÄ‡ ofiary w sobie tylko znanych, przeraÅ¼ajÄ…cych celach. Znane sÄ… przypadki, gdy ludzcy czarownicy na tyle lekkomyÅ›lni lub zdesperowani, by zwracaÄ‡ siÄ™ do demonÃ³w, szukali fimirÃ³w, chcÄ…c poznaÄ‡ ich niepokojÄ…ce tajemnice. MÃ³wi siÄ™ bowiem, Å¼e stwory te przywoÅ‚ujÄ… i kontrolujÄ… istoty demoniczne. MoÅ¼na tylko zgadywaÄ‡, czy wiÄ™ksze ryzyko stanowi igranie z Niszczycielskimi PotÄ™gami, czy ukÅ‚adanie siÄ™ z fimirami. SpoÅ‚eczeÅ„stwo fimirÃ³w jest matriarchalne. KaÅ¼demu klanowi przewodzi potÄ™Å¼na wiedÅºma zwana mergÄ…, ktÃ³rej pomaga kadra pomniejszych czarownikÃ³w nazywanych dirachami. WiÄ™kszoÅ›Ä‡ czÅ‚onkÃ³w klanu to pokorne szerle. Chroni ich kasta wojownikÃ³w, fimmÃ³w, ktÃ³rzy majÄ… kostne kolce i guzy na ogonach. UÅ¼ywajÄ… ich do gruchotania koÅ›ci niebacznych przeciwnikÃ³w. 
+Bagno³az,Broñ +8,Pancerz (2),Rozmiar (Du¿y),Widzenie w Ciemnoœci,Zimnokrwisty
+Ogon +7,Rzucanie Czarów (Demonologia)
+Fimiry to tajemnicze,jednookie,podobne do gadów stworzenia,które grasuj¹ w najciemniejszych zak¹tkach wilgotnych bagien i trzêsawisk zachodniego Reiklandu. Unikaj¹ œwiat³a s³onecznego i pojawiaj¹ siê zwykle tylko o œwicie lub o zmierzchu albo pod os³on¹ mg³y,aby porywaæ ofiary w sobie tylko znanych,przera¿aj¹cych celach. Znane s¹ przypadki,gdy ludzcy czarownicy na tyle lekkomyœlni lub zdesperowani,by zwracaæ siê do demonów,szukali fimirów,chc¹c poznaæ ich niepokoj¹ce tajemnice. Mówi siê bowiem,¿e stwory te przywo³uj¹ i kontroluj¹ istoty demoniczne. Mo¿na tylko zgadywaæ,czy wiêksze ryzyko stanowi igranie z Niszczycielskimi Potêgami,czy uk³adanie siê z fimirami. Spo³eczeñstwo fimirów jest matriarchalne. Ka¿demu klanowi przewodzi potê¿na wiedŸma zwana merg¹,której pomaga kadra pomniejszych czarowników nazywanych dirachami. Wiêkszoœæ cz³onków klanu to pokorne szerle. Chroni ich kasta wojowników,fimmów,którzy maj¹ kostne kolce i guzy na ogonach. U¿ywaj¹ ich do gruchotania koœci niebacznych przeciwników. 
 Olbrzym
 6,30,30,65,55,30,20,15,25,25,20,72
-BroÅ„ +10, DÅ‚ugi Krok, Pancerz (1), Rozmiar (Wielki), Twardy, Widzenie w CiemnoÅ›ci
-GÅ‚upi, Rozmiar (Monstrualny), Zaraza, ZakaÅ¼ony, ZioniÄ™cie (Pijackie RzygniÄ™cie), ZwierzÄ™cy, Å»arÅ‚oczny
-Olbrzymy to samotnicze stworzenia, ktÃ³re zwykle unikajÄ… cywilizacji. WiÄ™kszoÅ›Ä‡ czatuje w niedostÄ™pnych i wysoko poÅ‚oÅ¼onych miejscach wokÃ³Å‚ Imperium. ZaszywajÄ… siÄ™ w jaskiniach i zapomnianych ruinach, z dala od mniejszych ludzi, chociaÅ¼ czasami wÄ™drujÄ… na podgÃ³rza w poszukiwaniu jedzenia. SÅ‚ynÄ… z agresywnoÅ›ci i gwaÅ‚townoÅ›ci zarÃ³wno ze wzglÄ™du na swoje zastraszajÄ…ce rozmiary, poÅ¼eranie bydÅ‚a, jak i zwiÄ…zki z Å‚upieÅ¼czymi armiami zielonoskÃ³rych, ktÃ³rzy ich niewolÄ…. W rzeczywistoÅ›ci wiele olbrzymÃ³w to Å‚agodne istoty, czasem podatne na wybuchy wÅ›ciekÅ‚oÅ›ci i zaciekle chroniÄ…ce swojej prywatnoÅ›ci, ale niekoniecznie wrogie wobec innych. PoniewaÅ¼ sÄ… dÅ‚ugowieczne, plotki utrzymujÄ…, Å¼e olbrzymy nabyÅ‚y prastarÄ… wiedzÄ™, chociaÅ¼ wiÄ™kszoÅ›Ä‡ wydaje siÄ™ niezbyt przytomna i z pewnoÅ›ciÄ… bardziej zainteresowana alkoholem niÅ¼ debatami na temat historii. 
+Broñ +10,D³ugi Krok,Pancerz (1),Rozmiar (Wielki),Twardy,Widzenie w Ciemnoœci
+G³upi,Rozmiar (Monstrualny),Zaraza,Zaka¿ony,Zioniêcie (Pijackie Rzygniêcie),Zwierzêcy,¯ar³oczny
+Olbrzymy to samotnicze stworzenia,które zwykle unikaj¹ cywilizacji. Wiêkszoœæ czatuje w niedostêpnych i wysoko po³o¿onych miejscach wokó³ Imperium. Zaszywaj¹ siê w jaskiniach i zapomnianych ruinach,z dala od mniejszych ludzi,chocia¿ czasami wêdruj¹ na podgórza w poszukiwaniu jedzenia. S³yn¹ z agresywnoœci i gwa³townoœci zarówno ze wzglêdu na swoje zastraszaj¹ce rozmiary,po¿eranie byd³a,jak i zwi¹zki z ³upie¿czymi armiami zielonoskórych,którzy ich niewol¹. W rzeczywistoœci wiele olbrzymów to ³agodne istoty,czasem podatne na wybuchy wœciek³oœci i zaciekle chroni¹ce swojej prywatnoœci,ale niekoniecznie wrogie wobec innych. Poniewa¿ s¹ d³ugowieczne,plotki utrzymuj¹,¿e olbrzymy naby³y prastar¹ wiedzê,chocia¿ wiêkszoœæ wydaje siê niezbyt przytomna i z pewnoœci¹ bardziej zainteresowana alkoholem ni¿ debatami na temat historii. 
 Gryf
 6,50,-,50,50,45,60,-,20,40,-,76
-BroÅ„ +9, Latanie (80), Pancerz (1), Rozmiar (Wielki), Ugryzienie +9, Widzenie w CiemnoÅ›ci, ZwierzÄ™cy
-Wyszkolony (Bojowy, Magiczny, StrÃ³Å¼ujÄ…cy, Ujarzmiony, Wierzchowiec)
-PosiadajÄ…ce przÃ³d ciaÅ‚a i skrzydÅ‚a orÅ‚a oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i krÃ³lewskim wyglÄ…dzie. GniazdujÄ… wysoko w gÃ³rach otaczajÄ…cych Imperium i sÄ… szybkimi, skutecznymi zabÃ³jcami, nieskorymi do bezmyÅ›lnego zniszczenia, jakiego dokonujÄ… stwory takie jak hipogryfy lub mantikory. ByÄ‡ moÅ¼e ze wzglÄ™du na ten pozÃ³r szlachetnoÅ›ci wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy sÄ… jednymi z najinteligentniejszych zwierzÄ…t. JeÅ›li zostanÄ… schwytane stosunkowo mÅ‚ode i poddane prawidÅ‚owemu szkoleniu, mogÄ… byÄ‡ niesamowicie wierne, zdolne do przewidywania i posÅ‚usznego wykonywania szerokiego wachlarza komend. SÄ… tak bardzo poszukiwane, Å¼e co rusz sÅ‚yszy siÄ™ o myÅ›liwym, ktÃ³ry straciÅ‚ Å¼ycie, prÃ³bujÄ…c zdobyÄ‡ jaja gryfa na sprzedaÅ¼. Prawdopodobnie najsÅ‚ynniejszym gryfem w Reiklandzie jest Szpon Åšmierci. Trzymany w Imperialnym ZwierzyÅ„cu w Altdorfie Szpon Åšmierci stanowi osobistÄ… wÅ‚asnoÅ›Ä‡ nastÄ™pcy tronu Reiklandu i podobno wykluÅ‚ siÄ™ dziÄ™ki troskliwej opiece samego Imperatora Karla-Franza â€“ ta opowieÅ›Ä‡ zapoczÄ…tkowaÅ‚a drukowanie wszelkiego rodzaju sproÅ›nych karykatur w wywrotowych pamfletach. 
+Broñ +9,Latanie (80),Pancerz (1),Rozmiar (Wielki),Ugryzienie +9,Widzenie w Ciemnoœci,Zwierzêcy
+Wyszkolony (Bojowy),Wyszkolony (Magiczny),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec)
+Posiadaj¹ce przód cia³a i skrzyd³a or³a oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wygl¹dzie. Gniazduj¹ wysoko w górach otaczaj¹cych Imperium i s¹ szybkimi,skutecznymi zabójcami,nieskorymi do bezmyœlnego zniszczenia,jakiego dokonuj¹ stwory takie jak hipogryfy lub mantikory. Byæ mo¿e ze wzglêdu na ten pozór szlachetnoœci wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce,ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy s¹ jednymi z najinteligentniejszych zwierz¹t. Jeœli zostan¹ schwytane stosunkowo m³ode i poddane prawid³owemu szkoleniu,mog¹ byæ niesamowicie wierne,zdolne do przewidywania i pos³usznego wykonywania szerokiego wachlarza komend. S¹ tak bardzo poszukiwane,¿e co rusz s³yszy siê o myœliwym,który straci³ ¿ycie,próbuj¹c zdobyæ jaja gryfa na sprzeda¿. Prawdopodobnie najs³ynniejszym gryfem w Reiklandzie jest Szpon Œmierci. Trzymany w Imperialnym Zwierzyñcu w Altdorfie Szpon Œmierci stanowi osobist¹ w³asnoœæ nastêpcy tronu Reiklandu i podobno wyklu³ siê dziêki troskliwej opiece samego Imperatora Karla-Franza – ta opowieœæ zapocz¹tkowa³a drukowanie wszelkiego rodzaju sproœnych karykatur w wywrotowych pamfletach. 
 Hipogryf
 7,45,-,55,50,20,55,-,5,35,-,72
-BroÅ„ +9, DÅ‚ugi Krok, Latanie (120), Rozmiar (DuÅ¼y), Ugryzienie +9, Widzenie w CiemnoÅ›ci, Wojowniczy, WrogoÅ›Ä‡ (Wszystko), Terytorialny, ZwierzÄ™cy
-Furia, NienawiÅ›Ä‡ (Wszystko), SzaÅ‚ Bojowy, Ujarzmiony, Wyszkolony (Ujarzmiony, Wierzchowiec)
-Niezwykle zaciekÅ‚e i terytorialne hipogryfy majÄ… gÅ‚owÄ™ i skrzydÅ‚a orÅ‚a, przedniÄ… czÄ™Å›Ä‡ ciaÅ‚a lwa oraz koÅ„ski zad. PochodzÄ… najczÄ™Å›ciej z GÃ³r Szarych. AtakujÄ… bez prowokacji, niemal bezmyÅ›lne w swojej furii, drÄ…c ciaÅ‚o na strzÄ™py, aby poÅ¼reÄ‡ je pÃ³Åºniej. WpadajÄ… w tak wielki szaÅ‚, Å¼e pojedynczy hipogryf moÅ¼e wybiÄ‡ caÅ‚e stado bydÅ‚a, aby potem odlecieÄ‡ z wybranym kawaÅ‚em miÄ™sa, zostawiwszy resztÄ™ padlinoÅ¼ernym ptakom. Hipogryfy nie sÄ… zbyt inteligentne i gdy polujÄ…, zwykle starajÄ… siÄ™ zabiÄ‡ wszystko w polu widzenia. MyÅ›lÄ…, Å¼e cokolwiek zniknÄ™Å‚o im z oczu, przepadÅ‚o na zawsze. Oznacza to, Å¼e faktyczna liczba zgonÃ³w spowodowanych przez hipogryfy jest stosunkowo niska, poniewaÅ¼ wystarczy znaleÅºÄ‡ dobrÄ… kryjÃ³wkÄ™, aby ich uniknÄ…Ä‡. 
+Broñ +9,D³ugi Krok,Latanie (120),Rozmiar (Du¿y),Ugryzienie +9,Widzenie w Ciemnoœci,Wojowniczy,Wrogoœæ (Wszystko),Terytorialny,Zwierzêcy
+Furia,Nienawiœæ (Wszystko),Sza³ Bojowy,Ujarzmiony,Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec)
+Niezwykle zaciek³e i terytorialne hipogryfy maj¹ g³owê i skrzyd³a or³a,przedni¹ czêœæ cia³a lwa oraz koñski zad. Pochodz¹ najczêœciej z Gór Szarych. Atakuj¹ bez prowokacji,niemal bezmyœlne w swojej furii,dr¹c cia³o na strzêpy,aby po¿reæ je póŸniej. Wpadaj¹ w tak wielki sza³,¿e pojedynczy hipogryf mo¿e wybiæ ca³e stado byd³a,aby potem odlecieæ z wybranym kawa³em miêsa,zostawiwszy resztê padlino¿ernym ptakom. Hipogryfy nie s¹ zbyt inteligentne i gdy poluj¹,zwykle staraj¹ siê zabiæ wszystko w polu widzenia. Myœl¹,¿e cokolwiek zniknê³o im z oczu,przepad³o na zawsze. Oznacza to,¿e faktyczna liczba zgonów spowodowanych przez hipogryfy jest stosunkowo niska,poniewa¿ wystarczy znaleŸæ dobr¹ kryjówkê,aby ich unikn¹æ. 
 Hydra
 6,45,-,50,55,15,35,-,15,25,-,68
-BroÅ„ +9, DÅ‚ugi Krok, Dusiciel, Pancerz (3), Regeneracja, Rozmiar (Wielki), Skryty, Tropiciel, Widzenie w CiemnoÅ›ci, ZioniÄ™cie +10 (OgieÅ„),ZwierzÄ™cy
-Jad, Terytorialny, Wojowniczy
-WielogÅ‚owa, przypominajÄ…ca jaszczura hydra ma ciÄ™Å¼kie ciaÅ‚o podtrzymujÄ…ce plÄ…taninÄ™ szyi i Å‚bÃ³w, ktÃ³re zionÄ… dymiÄ…cym ogniem i wÅ›ciekle kÄ…sajÄ…. To zaskakujÄ…co zaciekÅ‚e i skryte stwory. Hydry potrafiÄ… skradaÄ‡ siÄ™ za ofiarÄ… przez wiele kilometrÃ³w, jednak zwykle tracÄ… cierpliwoÅ›Ä‡ i rzucajÄ… siÄ™ do ataku przy akompaniamencie ryku ze wszystkich paszcz. 
-DÅ¼abersmok
+Broñ +9,D³ugi Krok,Dusiciel,Pancerz (3),Regeneracja,Rozmiar (Wielki),Skryty,Tropiciel,Widzenie w Ciemnoœci,Zioniêcie +10 (Ogieñ),Zwierzêcy
+Jad,Terytorialny,Wojowniczy
+Wielog³owa,przypominaj¹ca jaszczura hydra ma ciê¿kie cia³o podtrzymuj¹ce pl¹taninê szyi i ³bów,które zion¹ dymi¹cym ogniem i wœciekle k¹saj¹. To zaskakuj¹co zaciek³e i skryte stwory. Hydry potrafi¹ skradaæ siê za ofiar¹ przez wiele kilometrów,jednak zwykle trac¹ cierpliwoœæ i rzucaj¹ siê do ataku przy akompaniamencie ryku ze wszystkich paszcz. 
+D¿abersmok
 7,45,40,55,50,20,35,-,10,20,-,68
-Atak JÄ™zykiem +5 (12), BroÅ„ +9, DekoncentrujÄ…cy, Jad (+0),Kwasowa Krew, Ogon +8, Pancerz (3), Rozmiar (Wielki),Skoczny, Ugryzienie +9, Widzenie w CiemnoÅ›ci, Zaraza, ZwierzÄ™cy
-Mutacja, Terytorialny
-DÅ¼abersmoki to prastare stwory Chaosu, ktÃ³re czajÄ… siÄ™ pod cienistymi okapami najgÅ‚Ä™bszych, najciemniejszych lasÃ³w. To szaleÅ„cze stworzenia. DÅ¼abersmok stanowi odraÅ¼ajÄ…ce poÅ‚Ä…czenie ropuchy, smoka muÅ‚owego i owada â€“ wszystko to wypeÅ‚nione kwasowÄ…, czarnÄ… krwiÄ…, ktÃ³ra tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratÄ™ zdrowych zmysÅ‚Ã³w. Ofiara beÅ‚kocze, szwargocze bez Å‚adu i skÅ‚adu, rzuca siÄ™ z pazurami do oczu i rechocze szaleÅ„czym Å›miechem. To uÅ‚atwia dÅ¼abersmokowi jej zdobycie. Nie koniec na tym. DÅ¼abersmok ma lepki jÄ™zor, ktÃ³rym moÅ¼e atakowaÄ‡ i wciÄ…gaÄ‡ kolejny posiÅ‚ek do rozdziawionej gÄ™by. Jak przystaÅ‚o na jego wyglÄ…d, stwÃ³r chodzi, kiwajÄ…c siÄ™ nieporadnie, a nawet posiada skrzydÅ‚a, ktÃ³re sÄ… jednak za maÅ‚e, by mogÅ‚y faktycznie poderwaÄ‡ nadÄ™te cielsko. 
+Atak Jêzykiem +5 (12),Broñ +9,Dekoncentruj¹cy,Jad (+0),Kwasowa Krew,Ogon +8,Pancerz (3),Rozmiar (Wielki),Skoczny,Ugryzienie +9,Widzenie w Ciemnoœci,Zaraza,Zwierzêcy
+Mutacja,Terytorialny
+D¿abersmoki to prastare stwory Chaosu,które czaj¹ siê pod cienistymi okapami najg³êbszych,najciemniejszych lasów. To szaleñcze stworzenia. D¿abersmok stanowi odra¿aj¹ce po³¹czenie ropuchy,smoka mu³owego i owada – wszystko to wype³nione kwasow¹,czarn¹ krwi¹,która tryska obficie z najmniejszej rany. Co gorsza,sam widok tego koszmaru przyprawia o utratê zdrowych zmys³ów. Ofiara be³kocze,szwargocze bez ³adu i sk³adu,rzuca siê z pazurami do oczu i rechocze szaleñczym œmiechem. To u³atwia d¿abersmokowi jej zdobycie. Nie koniec na tym. D¿abersmok ma lepki jêzor,którym mo¿e atakowaæ i wci¹gaæ kolejny posi³ek do rozdziawionej gêby. Jak przysta³o na jego wygl¹d,stwór chodzi,kiwaj¹c siê nieporadnie,a nawet posiada skrzyd³a,które s¹ jednak za ma³e,by mog³y faktycznie poderwaæ nadête cielsko. 
 Mantikora
 6,55,-,55,55,50,65,-,10,35,-,72
-BroÅ„ +9, Jad, Latanie (80), Ogon +8, Pancerz (2), Rozmiar (Wielki),Terytorialny, Ugryzienie +9, ZwierzÄ™cy
-Mutant, NienawiÅ›Ä‡ (DrapieÅ¼niki), Wyszkolony (Magiczny, Ujarzmiony,Wierzchowiec)
-Na szczÄ™Å›cie wystÄ™pujÄ… rzadko. Mantikory sÄ… niemiÅ‚osiernie zawziÄ™te, z niezwykÅ‚Ä… brutalnoÅ›ciÄ… dÄ…Å¼Ä…c do usuniÄ™cia ze swojego terytorium drapieÅ¼nych rywali. Dlatego zwykle wiadomo, Å¼e wchodzi siÄ™ na teren mantikory â€“ wzniesienia zawalone sÄ… Å›cierwami innych potworÃ³w. StwÃ³r ma gÅ‚owÄ™ i korpus znieksztaÅ‚conego wielkiego kota (chociaÅ¼ czasami jego twarz wydaje siÄ™ niemal zbyt ludzka), skrzydÅ‚a nietoperza i paskudny, mÅ‚Ã³cÄ…cy, kolczasty ogon. 
+Broñ +9,Jad,Latanie (80),Ogon +8,Pancerz (2),Rozmiar (Wielki),Terytorialny,Ugryzienie +9,Zwierzêcy
+Mutant,Nienawiœæ (Drapie¿niki),Wyszkolony (Magiczny),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec)
+Na szczêœcie wystêpuj¹ rzadko. Mantikory s¹ niemi³osiernie zawziête,z niezwyk³¹ brutalnoœci¹ d¹¿¹c do usuniêcia ze swojego terytorium drapie¿nych rywali. Dlatego zwykle wiadomo,¿e wchodzi siê na teren mantikory – wzniesienia zawalone s¹ œcierwami innych potworów. Stwór ma g³owê i korpus zniekszta³conego wielkiego kota (chocia¿ czasami jego twarz wydaje siê niemal zbyt ludzka),skrzyd³a nietoperza i paskudny,m³óc¹cy,kolczasty ogon. 
 Pegaz
 8,35,-,45,40,30,45,-,20,25,-,28
-BroÅ„ +7, DÅ‚ugi Krok, Latanie (100), Rozmiar (DuÅ¼y)
-Wyszkolony (Bojowy, Magiczny, PociÄ…gowy, Ujarzmiony, Wierzchowiec)
-Pegazy to urodziwe biaÅ‚e konie z wielkimi, Å‚abÄ™dzimi skrzydÅ‚ami. SÄ… wytrwaÅ‚ymi i niestrudzonymi lotnikami. LatajÄ… wielkimi stadami w wysokich gÃ³rach, najwyraÅºniej czerpiÄ…c ogromnÄ… radoÅ›Ä‡ z szybowania i wirowania w krÄ™tych prÄ…dach powietrznych. SÄ… oczywistymi kandydatami na wierzchowce i niejeden wojownik lub zwiadowca usiÅ‚owaÅ‚ schwytaÄ‡ dla siebie pegaza. Pegazy sÄ… bardzo inteligentne, a wedÅ‚ug niektÃ³rych same pozwalajÄ… siÄ™ schwytaÄ‡, jeÅ›li tego chcÄ…. To doprowadziÅ‚o do powstania wszelkiego rodzaju fantastycznych, romantycznych legend, zgodnie z ktÃ³rymi wybraÅ„cami pegazÃ³w mogÄ… byÄ‡ tylko osoby wystarczajÄ…co godne lub cnotliwe. 
+Broñ +7,D³ugi Krok,Latanie (100),Rozmiar (Du¿y)
+Wyszkolony (Bojowy),Wyszkolony (Magiczny),Wyszkolony (Poci¹gowy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec)
+Pegazy to urodziwe bia³e konie z wielkimi,³abêdzimi skrzyd³ami. S¹ wytrwa³ymi i niestrudzonymi lotnikami. Lataj¹ wielkimi stadami w wysokich górach,najwyraŸniej czerpi¹c ogromn¹ radoœæ z szybowania i wirowania w krêtych pr¹dach powietrznych. S¹ oczywistymi kandydatami na wierzchowce i niejeden wojownik lub zwiadowca usi³owa³ schwytaæ dla siebie pegaza. Pegazy s¹ bardzo inteligentne,a wed³ug niektórych same pozwalaj¹ siê schwytaæ,jeœli tego chc¹. To doprowadzi³o do powstania wszelkiego rodzaju fantastycznych,romantycznych legend,zgodnie z którymi wybrañcami pegazów mog¹ byæ tylko osoby wystarczaj¹co godne lub cnotliwe. 
 Troll
 6,30,15,55,45,10,15,15,10,20,5,30
-BroÅ„ +9, GÅ‚upi, Nie do Zdarcia, Pancerz (2), Regeneracja, Rozmiar (DuÅ¼y),Twardy, Ugryzienie +8, Wymiot, Zaraza
-BagnoÅ‚az, Mutacja, Nie Czuje BÃ³lu, OdpornoÅ›Ä‡ na MagiÄ™, Skryty, SzaÅ‚ Bojowy, Widzenie w CiemnoÅ›ci, ZakaÅ¼ony, Ziemnowodny, ZwierzÄ™cy, Å»arÅ‚oczny
-Trolle to brudne, wstrÄ™tne stwory, ktÃ³re nÄ™kajÄ… wszystkie zakÄ…tki Starego Åšwiata. Szybko dostosowujÄ… siÄ™ do otoczenia i wystÄ™pujÄ… w rÃ³Å¼nych odmianach. Wszystkie jednak sÄ… wielkie i okazaÅ‚e. To stworzenia tÄ™pe i kierowane instynktem poszukiwania Å¼arcia, ale lubiÄ… gromadziÄ‡ teÅ¼ inne dobra. LeÅ¼a trolli mogÄ… skrywaÄ‡ przydatne i cenne skarby... A takÅ¼e okropne resztki ich posiÅ‚kÃ³w. ChociaÅ¼ istnieje wiele gatunkÃ³w trolli, wszystkie majÄ… pewne wspÃ³lne cechy: zazwyczaj sÄ… niezwykle gÅ‚upie, co oznacza, Å¼e kaÅ¼dy bystry przeciwnik ma nad nimi przewagÄ™; mogÄ… siÄ™ regenerowaÄ‡, co sprawia, Å¼e niezwykle trudno je zabiÄ‡; a takÅ¼e potrafiÄ… na zawoÅ‚anie zwrÃ³ciÄ‡ ostatni posiÅ‚ek, wymiotujÄ…c Å¼rÄ…cÄ… Å¼Ã³Å‚ciÄ… na szokujÄ…co duÅ¼Ä… odlegÅ‚oÅ›Ä‡ â€“ chociaÅ¼ nie cierpiÄ… tego robiÄ‡, poniewaÅ¼ sÄ… potem straszliwie gÅ‚odne. 
+Broñ +9,G³upi,Nie do Zdarcia,Pancerz (2),Regeneracja,Rozmiar (Du¿y),Twardy,Ugryzienie +8,Wymiot,Zaraza
+Bagno³az,Mutacja,Nie Czuje Bólu,Odpornoœæ na Magiê,Skryty,Sza³ Bojowy,Widzenie w Ciemnoœci,Zaka¿ony,Ziemnowodny,Zwierzêcy,¯ar³oczny
+Trolle to brudne,wstrêtne stwory,które nêkaj¹ wszystkie zak¹tki Starego Œwiata. Szybko dostosowuj¹ siê do otoczenia i wystêpuj¹ w ró¿nych odmianach. Wszystkie jednak s¹ wielkie i okaza³e. To stworzenia têpe i kierowane instynktem poszukiwania ¿arcia,ale lubi¹ gromadziæ te¿ inne dobra. Le¿a trolli mog¹ skrywaæ przydatne i cenne skarby... A tak¿e okropne resztki ich posi³ków. Chocia¿ istnieje wiele gatunków trolli,wszystkie maj¹ pewne wspólne cechy: zazwyczaj s¹ niezwykle g³upie,co oznacza,¿e ka¿dy bystry przeciwnik ma nad nimi przewagê; mog¹ siê regenerowaæ,co sprawia,¿e niezwykle trudno je zabiæ; a tak¿e potrafi¹ na zawo³anie zwróciæ ostatni posi³ek,wymiotuj¹c ¿r¹c¹ ¿ó³ci¹ na szokuj¹co du¿¹ odleg³oœæ – chocia¿ nie cierpi¹ tego robiæ,poniewa¿ s¹ potem straszliwie g³odne. 
 Wywerna
 4,55,-,60,55,15,45,-,10,50,-,84
-BroÅ„ +10, Jad, Latanie (90), Pancerz (2), Rozmiar (Wielki), ZwierzÄ™cy
-Ogon +9, Rogi, Wyszkolony (Bojowy, Magiczny, StrÃ³Å¼ujÄ…cy,Ujarzmiony, Wierzchowiec), ZioniÄ™cie (Jad)
-ChociaÅ¼ niedouczeni czÄ™sto mylÄ… je ze smokami, poza powierzchownym podobieÅ„stwem cuchnÄ…ce wywerny w niczym nie przypominajÄ… tych dostojnych stworzeÅ„. To tchÃ³rzliwe Å›cierwojady o sÅ‚abym wzroku. Zwykle zaspokajajÄ… swÃ³j wielki apetyt, porywajÄ…c bezbronne zwierzÄ™ta, gÅ‚Ã³wnie owce i kozy. UnikajÄ… teÅ¼ otwartej walki, gdy to tylko moÅ¼liwe. W odrÃ³Å¼nieniu od innych potworÃ³w z gÃ³r wywerny nie chroniÄ… szczegÃ³lnie zaciekle terytorium i przewaÅ¼nie przenoszÄ… siÄ™ w inne miejsce, gdy coÅ› wtargnie na ich tereny Å‚owieckie. 
+Broñ +10,Jad (Trudny),Latanie (90),Pancerz (2),Rozmiar (Wielki),Zwierzêcy
+Ogon +9,Rogi,Wyszkolony (Bojowy),Wyszkolony (Magiczny),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec),Zioniêcie (Jad)
+Chocia¿ niedouczeni czêsto myl¹ je ze smokami,poza powierzchownym podobieñstwem cuchn¹ce wywerny w niczym nie przypominaj¹ tych dostojnych stworzeñ. To tchórzliwe œcierwojady o s³abym wzroku. Zwykle zaspokajaj¹ swój wielki apetyt,porywaj¹c bezbronne zwierzêta,g³ównie owce i kozy. Unikaj¹ te¿ otwartej walki,gdy to tylko mo¿liwe. W odró¿nieniu od innych potworów z gór wywerny nie chroni¹ szczególnie zaciekle terytorium i przewa¿nie przenosz¹ siê w inne miejsce,gdy coœ wtargnie na ich tereny ³owieckie. 
 Ork
 4,35,30,35,45,20,25,20,25,35,20,14
-BroÅ„ +8, Nie do Zdarcia, Pancerz (3), Widzenie w CiemnoÅ›ci, Wojowniczy, WrogoÅ›Ä‡ (ZielonoskÃ³rzy), Zaraza
-Nie Czuje BÃ³lu, Rozmiar (DuÅ¼y), Strzelanie+8 (50)
-Orki sÄ… wstrÄ™tne, brutalne, wojownicze i niemal niewraÅ¼liwe na bÃ³l. MajÄ… muskularne, krÄ™pe ciaÅ‚a, szerokie, potÄ™Å¼ne barki i nie pozwolÄ…, by drobnostka w rodzaju straconej rÄ™ki przeszkodziÅ‚a im w dobrym Å‚omocie. Stworzone sÄ… do walki i niczego innego nie lubiÄ… bardziej. Gdy nie majÄ… wrogÃ³w, z ktÃ³rymi mogÄ… walczyÄ‡, biorÄ… siÄ™ za grupy rywalizujÄ…cych z nimi zielonoskÃ³rych. JeÅ›li nie ma rywali, walczÄ… miÄ™dzy sobÄ…. ChociaÅ¼ nie tak liczne jak gobliny, sÄ… od nich wiÄ™ksze i silniejsze, co pokazujÄ… przy kaÅ¼dej okazji. Orki mogÄ… osiÄ…gaÄ‡ ogromne rozmiary. WiÄ™ksze orki sÄ… silniejsze, twardsze i bardziej agresywne, a zatem cieszÄ… siÄ™ wiÄ™kszym prestiÅ¼em: w ich wojowniczym spoÅ‚eczeÅ„stwie racjÄ™ ma ten, kto jest silniejszy. NiektÃ³re orki dosiadajÄ… w boju wielkich dzikÃ³w. To widok, ktÃ³ry u maÅ‚o kogo nie wzbudza przeraÅ¼enia. 
+Broñ +8,Nie do Zdarcia,Pancerz (3),Widzenie w Ciemnoœci,Wojowniczy,Wrogoœæ (Zielonoskórzy),Zaraza
+Nie Czuje Bólu,Rozmiar (Du¿y),Strzelanie+8 (50)
+Orki s¹ wstrêtne,brutalne,wojownicze i niemal niewra¿liwe na ból. Maj¹ muskularne,krêpe cia³a,szerokie,potê¿ne barki i nie pozwol¹,by drobnostka w rodzaju straconej rêki przeszkodzi³a im w dobrym ³omocie. Stworzone s¹ do walki i niczego innego nie lubi¹ bardziej. Gdy nie maj¹ wrogów,z którymi mog¹ walczyæ,bior¹ siê za grupy rywalizuj¹cych z nimi zielonoskórych. Jeœli nie ma rywali,walcz¹ miêdzy sob¹. Chocia¿ nie tak liczne jak gobliny,s¹ od nich wiêksze i silniejsze,co pokazuj¹ przy ka¿dej okazji. Orki mog¹ osi¹gaæ ogromne rozmiary. Wiêksze orki s¹ silniejsze,twardsze i bardziej agresywne,a zatem ciesz¹ siê wiêkszym presti¿em: w ich wojowniczym spo³eczeñstwie racjê ma ten,kto jest silniejszy. Niektóre orki dosiadaj¹ w boju wielkich dzików. To widok,który u ma³o kogo nie wzbudza przera¿enia. 
 Goblin
 4,25,30,30,30,20,35,30,30,20,20,11
-BroÅ„ +7, LÄ™k (Elfy), Pancerz (1), Widzenie w CiemnoÅ›ci, WrogoÅ›Ä‡ (ZielonoskÃ³rzy), Zaraza
-Jad, Mieszkaniec Lasu, NienawiÅ›Ä‡ (Krasnoludy), Strzelanie +7 (25), Widzenie w Mroku
-SÄ… wychudzone, zÅ‚oÅ›liwe, zwinne i inteligentne. BÅ‚Ä™dem jest niedocenianie instynktu samozachowawczego goblinÃ³w. ChociaÅ¼ sÄ… tchÃ³rzliwe, chÄ™tnie zbierajÄ… siÄ™ w bandy, jeÅ›li to zapewnia im znacznÄ… przewagÄ™ liczebnÄ…. CzÄ™sto doÅ‚Ä…czajÄ… do armii orkÃ³w â€“ nie zawsze z wÅ‚asnego wyboru â€“ oportunistycznie korzystajÄ…c z Å‚upÃ³w wojennych, podczas gdy inni zajmujÄ… siÄ™ wiÄ™kszoÅ›ciÄ… faktycznej walki. 
+Broñ +7,Lêk (Elfy),Pancerz (1),Widzenie w Ciemnoœci,Wrogoœæ (Zielonoskórzy),Zaraza
+Jad,Mieszkaniec Lasu,Nienawiœæ (Krasnoludy),Strzelanie +7 (25),Widzenie w Mroku
+S¹ wychudzone,z³oœliwe,zwinne i inteligentne. B³êdem jest niedocenianie instynktu samozachowawczego goblinów. Chocia¿ s¹ tchórzliwe,chêtnie zbieraj¹ siê w bandy,jeœli to zapewnia im znaczn¹ przewagê liczebn¹. Czêsto do³¹czaj¹ do armii orków – nie zawsze z w³asnego wyboru – oportunistycznie korzystaj¹c z ³upów wojennych,podczas gdy inni zajmuj¹ siê wiêkszoœci¹ faktycznej walki. 
 Snotling
 4,25,15,25,20,20,30,-,15,30,-,7
-BroÅ„ +4, Rozmiar (MaÅ‚y), Widzenie w Mroku, Zaraza, ZwierzÄ™cy
-Jad, RÃ³j, Wyszkolony (AportujÄ…cy, StrÃ³Å¼ujÄ…cy, Ujarzmiony)
-Stwory o mÃ³zgu wielkoÅ›ci orzeszka, podobne do podekscytowanych, niekontrolowanych szczeniÄ…t. Snotlingi to zbieracze i urodzeni imitatorzy. ZbierajÄ… koÅ›ci i bÅ‚yszczÄ…ce rzeczy albo naÅ›ladujÄ… zachowanie wszystkiego, co widzÄ…. Gdy zostanÄ… pchniÄ™te do walki przez gobliny lub orki, walczÄ… w cuchnÄ…cych rojach, starajÄ…c siÄ™ stÅ‚amsiÄ‡ wrogÃ³w samÄ… swojÄ… liczebnoÅ›ciÄ…. WykorzystujÄ… przy tym wszelkiego rodzaju odraÅ¼ajÄ…ce i szkodliwe substancje, jak trujÄ…ce grzyby i odchody, ktÃ³rymi rzucajÄ… w przeciwnikÃ³w. 
+Broñ +4,Rozmiar (Ma³y),Widzenie w Mroku,Zaraza,Zwierzêcy
+Jad,Rój,Wyszkolony (Aportuj¹cy),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony)
+Stwory o mózgu wielkoœci orzeszka,podobne do podekscytowanych,niekontrolowanych szczeni¹t. Snotlingi to zbieracze i urodzeni imitatorzy. Zbieraj¹ koœci i b³yszcz¹ce rzeczy albo naœladuj¹ zachowanie wszystkiego,co widz¹. Gdy zostan¹ pchniête do walki przez gobliny lub orki,walcz¹ w cuchn¹cych rojach,staraj¹c siê st³amsiæ wrogów sam¹ swoj¹ liczebnoœci¹. Wykorzystuj¹ przy tym wszelkiego rodzaju odra¿aj¹ce i szkodliwe substancje,jak truj¹ce grzyby i odchody,którymi rzucaj¹ w przeciwników. 
 Szkielet
 4,25,25,30,30,20,20,25,-,-,-,12
-BroÅ„ +7, Konstrukt, Nie Czuje BÃ³lu, Niestabilny, OÅ¼ywieniec, Pancerz (2),Strach (2), Widzenie w Mroku
-Spaczenie (Pomniejsze), Terytorialny, Zaraza
-Szkielety to pozbawione ciaÅ‚a koÅ›ci dawno umarÅ‚ych, poruszane mrocznÄ… magiÄ…, ktÃ³ra zmusza je, by chodziÅ‚y po ziemi, szydzÄ…c z Å¼ywych. Ci, ktÃ³rzy po Å›mierci nie zostali zÅ‚oÅ¼eni na spoczynek zgodnie z rytuaÅ‚ami Morra, Boga Åšmierci, mogÄ… zostaÄ‡ wskrzeszeni w tej postaci przez wystarczajÄ…co potÄ™Å¼nego nekromantÄ™. CaÅ‚kowicie bezmyÅ›lne szkielety bÄ™dÄ… walczyÅ‚y, dopÃ³ki ich koÅ›ci nie zostanÄ… rozbite na kawaÅ‚ki. Nie wiedzÄ…, co to odwaga, poniewaÅ¼ nie wiedzÄ…, co to strach. Nie mogÄ… zostaÄ‡ zabite, poniewaÅ¼ nie sÄ… Å¼ywe. 
+Broñ +7,Konstrukt,Nie Czuje Bólu,Niestabilny,O¿ywieniec,Pancerz (2),Strach (2),Widzenie w Mroku
+Spaczenie (Pomniejsze),Terytorialny,Zaraza
+Szkielety to pozbawione cia³a koœci dawno umar³ych,poruszane mroczn¹ magi¹,która zmusza je,by chodzi³y po ziemi,szydz¹c z ¿ywych. Ci,którzy po œmierci nie zostali z³o¿eni na spoczynek zgodnie z rytua³ami Morra,Boga Œmierci,mog¹ zostaæ wskrzeszeni w tej postaci przez wystarczaj¹co potê¿nego nekromantê. Ca³kowicie bezmyœlne szkielety bêd¹ walczy³y,dopóki ich koœci nie zostan¹ rozbite na kawa³ki. Nie wiedz¹,co to odwaga,poniewa¿ nie wiedz¹,co to strach. Nie mog¹ zostaæ zabite,poniewa¿ nie s¹ ¿ywe. 
 Zombi
 4,15,-,30,30,5,10,15,-,-,-,12
-BroÅ„ +7, Konstrukt, Nie Czuje BÃ³lu, Niestabilny, OÅ¼ywieniec, Strach (2),Widzenie w Mroku
-Choroba, DekoncentrujÄ…cy, Pancerz, Spaczenie (Pomniejsze), Terytorialny,ZakaÅ¼ony, Zaraza
-Podobnie jak szkielety, zombi to oÅ¼ywione zwÅ‚oki spajane przez plugawÄ… magiÄ™. W odrÃ³Å¼nieniu od szkieletÃ³w zombi to niedawno umarli i wiÄ™kszoÅ›Ä‡ ich ciaÅ‚a nadal istnieje. GnijÄ…ce i zepsute miÄ™so zwisa z robaczywych, nabrzmiaÅ‚ych organÃ³w wewnÄ™trznych. Gdy walczÄ…, ich ciaÅ‚o i narzÄ…dy odpadajÄ… od koÅ›ci, wydzielajÄ…c przyprawiajÄ…cy o mdÅ‚oÅ›ci, obrzydliwy odÃ³r, wystarczajÄ…co silny, by wywrÃ³ciÄ‡ Å¼oÅ‚Ä…dek kaÅ¼demu poza najtwardszymi Å¼oÅ‚nierzami. 
+Broñ +7,Konstrukt,Nie Czuje Bólu,Niestabilny,O¿ywieniec,Strach (2),Widzenie w Mroku
+Choroba,Dekoncentruj¹cy,Pancerz,Spaczenie (Pomniejsze),Terytorialny,Zaka¿ony,Zaraza
+Podobnie jak szkielety,zombi to o¿ywione zw³oki spajane przez plugaw¹ magiê. W odró¿nieniu od szkieletów zombi to niedawno umarli i wiêkszoœæ ich cia³a nadal istnieje. Gnij¹ce i zepsute miêso zwisa z robaczywych,nabrzmia³ych organów wewnêtrznych. Gdy walcz¹,ich cia³o i narz¹dy odpadaj¹ od koœci,wydzielaj¹c przyprawiaj¹cy o md³oœci,obrzydliwy odór,wystarczaj¹co silny,by wywróciæ ¿o³¹dek ka¿demu poza najtwardszymi ¿o³nierzami. 
 Upiorny wilk
 9,30,-,35,35,30,30,-,-,-,-,24
-BroÅ„ +6, DÅ‚ugi Krok, Konstrukt, Niestabilny, OÅ¼ywieniec, Pancerz (1), Rozmiar (DuÅ¼y), Strach (2), Tropiciel, Widzenie w Mroku
-DekoncentrujÄ…cy, Nie Czuje BÃ³lu, Spaczenie (Pomniejsze), Terytorialny,Zaraza
-Gdy ziemia oddaje zmarÅ‚ych, powstajÄ… nie tylko ludzie. W imieniu swoich mrocznych panÃ³w na nocne Å‚owy wyruszajÄ… makabryczne parodie olbrzymich basiorÃ³w z lÅ›niÄ…cymi Å›lepiami i strzÄ™pami ciaÅ‚a odpadajÄ…cymi od gnijÄ…cych, butwiejÄ…cych Å›cierw â€“ upiorne wilki. W Reiklandzie mÃ³wi siÄ™, Å¼e gdy Morrslieb stoi w peÅ‚ni, upiorne wilki grasujÄ… po nawiedzonych lasach HÃ¤gerkrybÃ³w. BiegajÄ… w poszukiwaniu ofiary, aby zaspokoiÄ‡ swÃ³j nienasycony gÅ‚Ã³d, przeklÄ™te Å¼Ä…dzÄ… poÅ¼erania miÄ™sa i wyostrzonÄ… wraÅ¼liwoÅ›ciÄ… na zapach krwi. 
+Broñ +6,D³ugi Krok,Konstrukt,Niestabilny,O¿ywieniec,Pancerz (1),Rozmiar (Du¿y),Strach (2),Tropiciel,Widzenie w Mroku
+Dekoncentruj¹cy,Nie Czuje Bólu,Spaczenie (Pomniejsze),Terytorialny,Zaraza
+Gdy ziemia oddaje zmar³ych,powstaj¹ nie tylko ludzie. W imieniu swoich mrocznych panów na nocne ³owy wyruszaj¹ makabryczne parodie olbrzymich basiorów z lœni¹cymi œlepiami i strzêpami cia³a odpadaj¹cymi od gnij¹cych,butwiej¹cych œcierw – upiorne wilki. W Reiklandzie mówi siê,¿e gdy Morrslieb stoi w pe³ni,upiorne wilki grasuj¹ po nawiedzonych lasach Hägerkrybów. Biegaj¹ w poszukiwaniu ofiary,aby zaspokoiæ swój nienasycony g³ód,przeklête ¿¹dz¹ po¿erania miêsa i wyostrzon¹ wra¿liwoœci¹ na zapach krwi. 
 Ghul z krypty
 4,30,-,35,30,30,35,25,20,20,5,11
-BroÅ„ +6, Ugryzienie +5, Widzenie w CiemnoÅ›ci, Zaraza
-Jad, Nie Czuje BÃ³lu, ZwierzÄ™cy
-NaleÅ¼Ä… do najÅ¼aÅ‚oÅ›niejszych stworzeÅ„ w Starym Åšwiecie. Ghule to brzydkie, zgarbione stwory o bladej, brudnej skÃ³rze i ostrych, Å¼Ã³Å‚tych zÄ™bach, ktÃ³rymi zdzierajÄ… ciaÅ‚o z koÅ›ci ofiar. Ghule podÄ…Å¼ajÄ… za magicznymi energiami Shyish i Dhar, co w praktyce oznacza, Å¼e Å›ciÄ…gajÄ… na cmentarze i do krypt oraz krÄ…Å¼Ä… po polach bitew. 
+Broñ +6,Ugryzienie +5,Widzenie w Ciemnoœci,Zaraza
+Jad,Nie Czuje Bólu,Zwierzêcy
+Nale¿¹ do naj¿a³oœniejszych stworzeñ w Starym Œwiecie. Ghule to brzydkie,zgarbione stwory o bladej,brudnej skórze i ostrych,¿ó³tych zêbach,którymi zdzieraj¹ cia³o z koœci ofiar. Ghule pod¹¿aj¹ za magicznymi energiami Shyish i Dhar,co w praktyce oznacza,¿e œci¹gaj¹ na cmentarze i do krypt oraz kr¹¿¹ po polach bitew. 
 Varghulf
 8,55,-,55,55,30,50,20,10,60,-,42
-BroÅ„ +9, Groza (3), NienawiÅ›Ä‡ (Å»ywe Istoty), OÅ¼ywieniec, Pancerz (1), Regeneracja,Rozmiar (DuÅ¼y), Strach (4), Ugryzienie +8, Wampiryczny, Widzenie w Mroku, ZwierzÄ™cy,Å»arÅ‚oczny
-Furia, Latanie, Spaczenie (Pomniejsze), SzaÅ‚ Bojowy, Terytorialny, Tropiciel
-WiÄ™kszoÅ›Ä‡ wampirÃ³w utrzymuje w rÃ³wnowadze swoje nieumarÅ‚e Å‚aknienie krwi z uÅ‚udÄ… obycia i przyzwoitoÅ›ci, pozujÄ…c na arystokracjÄ™ oÅ¼ywieÅ„cÃ³w. NiektÃ³re jednak odrzucajÄ… swÄ… ludzkÄ… fasadÄ™, poddajÄ…c siÄ™ wewnÄ™trznej bestii. Te varghulfy to brutalne i dzikie stworzenia pozbawione wszelkiego wyrafinowania, caÅ‚kowicie pochÅ‚oniÄ™te przez zwierzÄ™ce dÄ…Å¼enie do zaspokojenia wÅ‚asnych potrzeb. PojawiajÄ… siÄ™ pod postaciÄ… wielkich, nadÄ™tych bestii podobnych do nietoperza, ktÃ³re pÅ‚awiÄ… siÄ™ w prymitywnej Å¼Ä…dzy krwi.  
+Broñ +9,Groza (3),Nienawiœæ (¯ywe Istoty),O¿ywieniec,Pancerz (1),Regeneracja,Rozmiar (Du¿y),Strach (4),Ugryzienie +8,Wampiryczny,Widzenie w Mroku,Zwierzêcy,¯ar³oczny
+Furia,Latanie,Spaczenie (Pomniejsze),Sza³ Bojowy,Terytorialny,Tropiciel
+Wiêkszoœæ wampirów utrzymuje w równowadze swoje nieumar³e ³aknienie krwi z u³ud¹ obycia i przyzwoitoœci,pozuj¹c na arystokracjê o¿ywieñców. Niektóre jednak odrzucaj¹ sw¹ ludzk¹ fasadê,poddaj¹c siê wewnêtrznej bestii. Te varghulfy to brutalne i dzikie stworzenia pozbawione wszelkiego wyrafinowania,ca³kowicie poch³oniête przez zwierzêce d¹¿enie do zaspokojenia w³asnych potrzeb. Pojawiaj¹ siê pod postaci¹ wielkich,nadêtych bestii podobnych do nietoperza,które p³awi¹ siê w prymitywnej ¿¹dzy krwi.  
 Widmo z kurhanu
 6,35,-,35,30,15,30,25,25,50,15,14
-BroÅ„ +9, Eteryczny, Groza (3), Lodowaty UÅ›cisk, Niestabilny, OÅ¼ywieniec, Widzenie w Mroku
-Nie Czuje BÃ³lu, Terytorialny, Czempion, ZwierzÄ™cy
-Widma z kurhanu to wyjÄ…tkowo potÄ™Å¼ne duchy, eteryczne pozostaÅ‚oÅ›ci ambitnych nekromantÃ³w, ktÃ³rzy usiÅ‚owali przedÅ‚uÅ¼yÄ‡ swoje istnienie za pomocÄ… mrocznej magii. Za Å¼ycia odznaczali siÄ™ zÅ‚owrogÄ… siÅ‚Ä… woli, ktÃ³ra po Å›mierci pcha ich do wywierania straszliwej zemsty na peÅ‚nych ognia duszach Å¼ywych. Wiele takich widm nawiedza spowite mgÅ‚ami kurhany, jakich peÅ‚no na ziemiach Imperium, szczegÃ³lnie w HÃ¤gerkrybach. 
-Upiorna PÅ‚aczka
+Broñ +9,Eteryczny,Groza (3),Lodowaty Uœcisk,Niestabilny,O¿ywieniec,Widzenie w Mroku
+Nie Czuje Bólu,Terytorialny,Czempion,Zwierzêcy
+Widma z kurhanu to wyj¹tkowo potê¿ne duchy,eteryczne pozosta³oœci ambitnych nekromantów,którzy usi³owali przed³u¿yæ swoje istnienie za pomoc¹ mrocznej magii. Za ¿ycia odznaczali siê z³owrog¹ si³¹ woli,która po œmierci pcha ich do wywierania straszliwej zemsty na pe³nych ognia duszach ¿ywych. Wiele takich widm nawiedza spowite mg³ami kurhany,jakich pe³no na ziemiach Imperium,szczególnie w Hägerkrybach. 
+Upiorna P³aczka
 6,30,-,30,30,20,30,30,25,40,20,13
-BroÅ„ +7, Eteryczny, Groza (3), Niestabilny, OÅ¼ywieniec, Upiorne Wycie, Widzenie w Mroku
-Furia, Latanie, Nie Czuje BÃ³lu, Terytorialny, ZwierzÄ™cy
-PÅ‚aczki to widmowe pozostaÅ‚oÅ›ci niegdyÅ› potÄ™Å¼nych wiedÅºm, ktÃ³rych duchy przesiÄ…kniÄ™te sÄ… plugawÄ… energiÄ… Dhar. Ich niespokojne nieÅ¼ycie wypeÅ‚nia udrÄ™ka z powodu straty i zgorzknienia, ziejÄ…ca pustka w duszach, ktÃ³ra wyrywa z ich piersi przeraÅ¼ajÄ…ce, szarpiÄ…ce duszÄ™ wycie. Jest ono tak straszliwe, Å¼e moÅ¼e doprowadziÄ‡ do szaleÅ„stwa tych, ktÃ³rzy je sÅ‚yszÄ…, a nawet zatrzymaÄ‡ bicie serca. 
+Broñ +7,Eteryczny,Groza (3),Niestabilny,O¿ywieniec,Upiorne Wycie,Widzenie w Mroku
+Furia,Latanie,Nie Czuje Bólu,Terytorialny,Zwierzêcy
+P³aczki to widmowe pozosta³oœci niegdyœ potê¿nych wiedŸm,których duchy przesi¹kniête s¹ plugaw¹ energi¹ Dhar. Ich niespokojne nie¿ycie wype³nia udrêka z powodu straty i zgorzknienia,ziej¹ca pustka w duszach,która wyrywa z ich piersi przera¿aj¹ce,szarpi¹ce duszê wycie. Jest ono tak straszliwe,¿e mo¿e doprowadziæ do szaleñstwa tych,którzy je s³ysz¹,a nawet zatrzymaæ bicie serca. 
 Wampir
 6,60,40,50,40,50,70,40,40,60,40,19
-BroÅ„ +9, OÅ¼ywieniec, Ugryzienie +8, Wampiryczny, Widzenie w CiemnoÅ›ci
-Czempion, DekoncentrujÄ…cy, Furia, Latanie, Nie Czuje BÃ³lu, Nie Do Zdarcia, PetryfikujÄ…ce Spojrzenie, Regeneracja, Rzucanie CzarÃ³w (Nekromancja lub ÅšmierÄ‡), Spaczenie (Pomniejsze), Spaczenie UmysÅ‚u, Strach, SzaÅ‚ Bojowy, Tropiciel, Widzenie w Mroku, Wspinacz, ZwierzÄ™cy, Å»arÅ‚oczny
-Wampiry postrzegajÄ… same siebie jako wÅ‚adcÃ³w nocy. Wiele z nich moÅ¼e podawaÄ‡ siÄ™ za ludzi, a niektÃ³re rzeczywiÅ›cie przez dÅ‚ugi czas przebywaÅ‚y poÅ›rÃ³d Å¼ywych. Pomimo zewnÄ™trznego podobieÅ„stwa do ludzi pod ich bladÄ… skÃ³rÄ… nie bije serce, a zamiast zwykÅ‚ego gÅ‚odu, jak u Å›miertelnikÃ³w, odczuwajÄ… nieustanne Å‚aknienie krwi. Wszystkie wampiry Starego Åšwiata wywodzÄ… siÄ™ ze staroÅ¼ytnych rodÃ³w, ktÃ³re powstaÅ‚y tysiÄ…ce lat temu daleko na poÅ‚udniu. Wiele z nich jest niezwykle dumnych ze swojego pochodzenia oraz cech i tradycji, ktÃ³re odrÃ³Å¼niajÄ… je od innych. Wampiry rÃ³Å¼nych rodowodÃ³w sÄ… czÄ™sto zaciekÅ‚ymi rywalami, ale majÄ… doÅ›Ä‡ rozsÄ…dku, by stawaÄ‡ ramiÄ™ w ramiÄ™ w razie koniecznoÅ›ci zmierzenia siÄ™ z potÄ™Å¼niejszymi wrogami. 
+Broñ +9,O¿ywieniec,Ugryzienie +8,Wampiryczny,Widzenie w Ciemnoœci
+Czempion,Dekoncentruj¹cy,Furia,Latanie,Nie Czuje Bólu,Nie Do Zdarcia,Petryfikuj¹ce Spojrzenie,Regeneracja,Rzucanie Czarów (Nekromancja),Rzucanie Czarów (Œmieræ),Spaczenie (Pomniejsze),Spaczenie Umys³u,Strach,Sza³ Bojowy,Tropiciel,Widzenie w Mroku,Wspinacz,Zwierzêcy,¯ar³oczny
+Wampiry postrzegaj¹ same siebie jako w³adców nocy. Wiele z nich mo¿e podawaæ siê za ludzi,a niektóre rzeczywiœcie przez d³ugi czas przebywa³y poœród ¿ywych. Pomimo zewnêtrznego podobieñstwa do ludzi pod ich blad¹ skór¹ nie bije serce,a zamiast zwyk³ego g³odu,jak u œmiertelników,odczuwaj¹ nieustanne ³aknienie krwi. Wszystkie wampiry Starego Œwiata wywodz¹ siê ze staro¿ytnych rodów,które powsta³y tysi¹ce lat temu daleko na po³udniu. Wiele z nich jest niezwykle dumnych ze swojego pochodzenia oraz cech i tradycji,które odró¿niaj¹ je od innych. Wampiry ró¿nych rodowodów s¹ czêsto zaciek³ymi rywalami,ale maj¹ doœæ rozs¹dku,by stawaæ ramiê w ramiê w razie koniecznoœci zmierzenia siê z potê¿niejszymi wrogami. 
 Duch
 6,30,-,30,30,10,30,20,15,15,-,10
-BroÅ„ +6, Eteryczny, Niestabilny, OÅ¼ywieniec, Strach (2), Widzenie w Mroku
-Furia, NienawiÅ›Ä‡, RÃ³j, Terytorialny, ZwierzÄ™cy
-Duchy to pozostaÅ‚oÅ›ci udrÄ™czonych istot, ktÃ³re umarÅ‚y, za Å¼ycia nie ukoÅ„czywszy swoich spraw. Podobnie jak szkielety i zombi, duchy mogÄ… byÄ‡ wzywane przez wampiry lub nekromantÃ³w albo nawiedzaÄ‡ obszary przesycone Dhar. W wyjÄ…tkowych okolicznoÅ›ciach szczegÃ³lnie zdeterminowane duchy wyrywajÄ… siÄ™ z KrÃ³lestwa Morra, pragnÄ…c wypeÅ‚niÄ‡ swoje Å¼yciowe plany. Jednak takie przypadki szybko przyciÄ…gajÄ… uwagÄ™ morrytÃ³w lub czarodziejÃ³w Zakonu Ametystu. Wzywane za pomocÄ… nekromanckiej sztuki duchy zbierajÄ… siÄ™ w rÃ³j, tworzÄ…c wielkie ZastÄ™py DuchÃ³w, ktÃ³re spadajÄ… jak burza na wrogÃ³w, siejÄ…c strach i zamÄ™t. 
+Broñ +6,Eteryczny,Niestabilny,O¿ywieniec,Strach (2),Widzenie w Mroku
+Furia,Nienawiœæ,Rój,Terytorialny,Zwierzêcy
+Duchy to pozosta³oœci udrêczonych istot,które umar³y,za ¿ycia nie ukoñczywszy swoich spraw. Podobnie jak szkielety i zombi,duchy mog¹ byæ wzywane przez wampiry lub nekromantów albo nawiedzaæ obszary przesycone Dhar. W wyj¹tkowych okolicznoœciach szczególnie zdeterminowane duchy wyrywaj¹ siê z Królestwa Morra,pragn¹c wype³niæ swoje ¿yciowe plany. Jednak takie przypadki szybko przyci¹gaj¹ uwagê morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomoc¹ nekromanckiej sztuki duchy zbieraj¹ siê w rój,tworz¹c wielkie Zastêpy Duchów,które spadaj¹ jak burza na wrogów,siej¹c strach i zamêt. 
 Gor
 4,45,30,35,45,30,35,25,25,30,25,14
-BroÅ„ +7, Furia, Mieszkaniec Lasu, Pancerz (1), Rogi +6, Widzenie w CiemnoÅ›ci
-Choroba (Ospa ZwierzÄ™ca), Mutacja, Pancerz (2), Rozmiar (DuÅ¼y), Rzucanie CzarÃ³w (ZwierzÄ…t), Spaczenie (Pomniejsze), ZakaÅ¼ony, Zaraza
-Gory, najpowszechniejsze ze zwierzoludzi, sÄ… zakaÅ‚Ä… niemal kaÅ¼dego lasu w Starym Åšwiecie. Znacznie rÃ³Å¼niÄ… siÄ™ miÄ™dzy sobÄ… wyglÄ…dem, ale wszystkie Å‚Ä…czÄ… cechy zwierzÄ™ce i ludzkie. CzÄ™sto majÄ… gÅ‚owy i nogi kozÅ‚Ã³w oraz korpus i ramiona ludzi. JedynÄ… cechÄ…, ktÃ³rÄ… posiadajÄ… wszystkie gory, jest para wielkich rogÃ³w â€“ im wiÄ™ksze, tym lepiej. Rogi wyznaczajÄ… bowiem status wÅ›rÃ³d zwierzoludzi. To cecha, ktÃ³ra odrÃ³Å¼nia je od ungorÃ³w i innoskÃ³rych. NajwiÄ™ksze gory znane sÄ… pod nazwÄ… bestigorÃ³w. 
+Broñ +7,Furia,Mieszkaniec Lasu,Pancerz (1),Rogi +6,Widzenie w Ciemnoœci
+Choroba (Ospa Zwierzêca),Mutacja,Pancerz (2),Rozmiar (Du¿y),Rzucanie Czarów (Zwierz¹t),Spaczenie (Pomniejsze),Zaka¿ony,Zaraza
+Gory,najpowszechniejsze ze zwierzoludzi,s¹ zaka³¹ niemal ka¿dego lasu w Starym Œwiecie. Znacznie ró¿ni¹ siê miêdzy sob¹ wygl¹dem,ale wszystkie ³¹cz¹ cechy zwierzêce i ludzkie. Czêsto maj¹ g³owy i nogi koz³ów oraz korpus i ramiona ludzi. Jedyn¹ cech¹,któr¹ posiadaj¹ wszystkie gory,jest para wielkich rogów – im wiêksze,tym lepiej. Rogi wyznaczaj¹ bowiem status wœród zwierzoludzi. To cecha,która odró¿nia je od ungorów i innoskórych. Najwiêksze gory znane s¹ pod nazw¹ bestigorów. 
 Ungor
 4,35,30,30,35,30,35,25,25,35,25,12
-BroÅ„ +6, Mieszkaniec Lasu, Widzenie w CiemnoÅ›ci
-Choroba (Ospa ZwierzÄ™ca), Mutacja, Pancerz (1), Rozmiar (MaÅ‚y), Spaczenie (Pomniejsze), Strzelanie +7 (25), ZakaÅ¼ony, Zaraza
-Ungory majÄ… szczÄ…tkowe lub bardzo krÃ³tkie rogi, a zatem rzadko uwaÅ¼ane sÄ… za â€goryâ€ przez resztÄ™ stada. NiektÃ³re odznaczajÄ… siÄ™ niemal ludzkÄ… twarzÄ…, dziÄ™ki czemu sÄ… skutecznymi wywiadowcami, ale takÅ¼e stajÄ… siÄ™ przedmiotem szykan. Istotnie, ungory sÄ… Åºle traktowane przez gory i bywajÄ… niskie lub niedoÅ¼ywione w porÃ³wnaniu ze swoimi wielkorogimi braÄ‡mi. To sprawia, Å¼e stajÄ… siÄ™ zgorzkniaÅ‚ymi stworzeniami, ktÃ³re pragnÄ… wyÅ‚adowaÄ‡ na innych jÄ…trzÄ…cÄ… siÄ™ w nich zazdroÅ›Ä‡. 
+Broñ +6,Mieszkaniec Lasu,Widzenie w Ciemnoœci
+Choroba (Ospa Zwierzêca),Mutacja,Pancerz (1),Rozmiar (Ma³y),Spaczenie (Pomniejsze),Strzelanie +7 (25),Zaka¿ony,Zaraza
+Ungory maj¹ szcz¹tkowe lub bardzo krótkie rogi,a zatem rzadko uwa¿ane s¹ za „gory” przez resztê stada. Niektóre odznaczaj¹ siê niemal ludzk¹ twarz¹,dziêki czemu s¹ skutecznymi wywiadowcami,ale tak¿e staj¹ siê przedmiotem szykan. Istotnie,ungory s¹ Ÿle traktowane przez gory i bywaj¹ niskie lub niedo¿ywione w porównaniu ze swoimi wielkorogimi braæmi. To sprawia,¿e staj¹ siê zgorzknia³ymi stworzeniami,które pragn¹ wy³adowaæ na innych j¹trz¹c¹ siê w nich zazdroœæ. 
 Minotaur
 6,45,25,44,45,20,35,25,20,30,15,30
-BroÅ„ +9, Rogi +9, Rozmiar (DuÅ¼y), Widzenie w CiemnoÅ›ci, Å»arÅ‚oczny
-Choroba (Ospa ZwierzÄ™ca), Furia, Mieszkaniec Lasu, Mutacja, Spaczenie (Pomniejsze), Wojowniczy, ZakaÅ¼ony, Zaraza
-PotÄ™Å¼ne i zwaliste, przypominajÄ…ce byki minotaury gÃ³rujÄ… nawet nad najwiÄ™kszymi bestigorami. Stada z duÅ¼Ä… grupÄ… minotaurÃ³w uwaÅ¼ajÄ… siÄ™ za szczegÃ³lnie pobÅ‚ogosÅ‚awione przez Mrocznych BogÃ³w. Hordy zwierzoludzi zbierajÄ… siÄ™ wokÃ³Å‚ minotaurÃ³w, ktÃ³rych imponujÄ…ca postura dodaje odwagi mniejszym stworom. 
-Szaman rykowcÃ³w
+Broñ +9,Rogi +9,Rozmiar (Du¿y),Widzenie w Ciemnoœci,¯ar³oczny
+Choroba (Ospa Zwierzêca),Furia,Mieszkaniec Lasu,Mutacja,Spaczenie (Pomniejsze),Wojowniczy,Zaka¿ony,Zaraza
+Potê¿ne i zwaliste,przypominaj¹ce byki minotaury góruj¹ nawet nad najwiêkszymi bestigorami. Stada z du¿¹ grup¹ minotaurów uwa¿aj¹ siê za szczególnie pob³ogos³awione przez Mrocznych Bogów. Hordy zwierzoludzi zbieraj¹ siê wokó³ minotaurów,których imponuj¹ca postura dodaje odwagi mniejszym stworom. 
+Szaman rykowców
 4,40,30,30,45,40,35,25,30,50,30,16
-BroÅ„ +7, Mieszkaniec Lasu, Spaczenie (Pomniejsze), Furia, Rogi +6, Widzenie w CiemnoÅ›ci,Rzucanie CzarÃ³w (Cienia, Åšmierci lub ZwierzÄ…t albo dowolna Tradycja Chaosu)
-Choroba (Ospa ZwierzÄ™ca), Mutacja, Rozmiar (DuÅ¼y), ZakaÅ¼ony, Zaraza
-Szamani rykowcÃ³w rodzÄ… siÄ™ z instynktownÄ… umiejÄ™tnoÅ›ciÄ… wÅ‚adania mocami Chaosu, z ktÃ³rej korzystajÄ… z przeraÅ¼ajÄ…cÄ… skutecznoÅ›ciÄ…. SÄ… unikatowi wÅ›rÃ³d zwierzoludzi i nigdy nie muszÄ… broniÄ‡ siÄ™ przed innymi czÅ‚onkami swojego stada, nikt bowiem nie oÅ›miela siÄ™ wyrzÄ…dzaÄ‡ im krzywdy â€“ ich gÅ‚os wyraÅ¼a podobno wolÄ™ samych Mrocznych BogÃ³w. 
+Broñ +7,Mieszkaniec Lasu,Spaczenie (Pomniejsze),Furia,Rogi +6,Widzenie w Ciemnoœci,Rzucanie Czarów (Cienia),Rzucanie Czarów (Œmierci),Rzucanie Czarów (Zwierz¹t),Rzucanie Czarów (Nurgle),Rzucanie Czarów (Slaanesh),Rzucanie Czarów (Tzeentch)
+Choroba (Ospa Zwierzêca),Mutacja,Rozmiar (Du¿y),Zaka¿ony,Zaraza
+Szamani rykowców rodz¹ siê z instynktown¹ umiejêtnoœci¹ w³adania mocami Chaosu,z której korzystaj¹ z przera¿aj¹c¹ skutecznoœci¹. S¹ unikatowi wœród zwierzoludzi i nigdy nie musz¹ broniæ siê przed innymi cz³onkami swojego stada,nikt bowiem nie oœmiela siê wyrz¹dzaæ im krzywdy – ich g³os wyra¿a podobno wolê samych Mrocznych Bogów. 
 Mutant
 4,30,30,30,30,30,30,30,30,30,30,12
-BroÅ„ +7, Mutacja, Spaczenie (Pomniejsze)
-Wszystkie Cechy StworzeÅ„
-Jednym z najtragiczniejszych losÃ³w, jaki moÅ¼e staÄ‡ siÄ™ udziaÅ‚em czÅ‚owieka, jest ulegniÄ™cie mutagennemu wpÅ‚ywowi Chaosu. To moÅ¼e wydarzyÄ‡ siÄ™ bez jakiegokolwiek powodu. Bywa nawet, Å¼e rodzÄ… siÄ™ zmutowane dzieci. Gdy coÅ› takiego siÄ™ stanie, wielu rodzicÃ³w nie potrafi zdobyÄ‡ siÄ™ na zamordowanie wÅ‚asnego potomstwa. Zamiast tego porzucajÄ… je w lasach, gdzie dziecko umiera albo zostaje przyjÄ™te przez innych mutantÃ³w, a nawet zwierzoludzi. Bez wzglÄ™du na to, jak bardzo mogÄ… byÄ‡ niewinni, wszyscy mutanci budzÄ… grozÄ™ wÅ›rÃ³d zwykÅ‚ych ludzi, dlatego wiÄ™kszoÅ›Ä‡ porzuconych i zgorzkniaÅ‚ych mutantÃ³w oddaje siÄ™ Mrocznym Bogom. Ewentualnie koÅ„czÄ… ze sobÄ…, zanim bÄ™dzie za pÃ³Åºno. 
+Broñ +7,Mutacja,Spaczenie (Pomniejsze)
+Wszystkie Cechy Stworzeñ
+Jednym z najtragiczniejszych losów,jaki mo¿e staæ siê udzia³em cz³owieka,jest ulegniêcie mutagennemu wp³ywowi Chaosu. To mo¿e wydarzyæ siê bez jakiegokolwiek powodu. Bywa nawet,¿e rodz¹ siê zmutowane dzieci. Gdy coœ takiego siê stanie,wielu rodziców nie potrafi zdobyæ siê na zamordowanie w³asnego potomstwa. Zamiast tego porzucaj¹ je w lasach,gdzie dziecko umiera albo zostaje przyjête przez innych mutantów,a nawet zwierzoludzi. Bez wzglêdu na to,jak bardzo mog¹ byæ niewinni,wszyscy mutanci budz¹ grozê wœród zwyk³ych ludzi,dlatego wiêkszoœæ porzuconych i zgorzknia³ych mutantów oddaje siê Mrocznym Bogom. Ewentualnie koñcz¹ ze sob¹,zanim bêdzie za póŸno. 
 Kultysta
 4,30,30,30,30,30,30,30,30,30,30,12
-BroÅ„ +6
-Mutacja, Pancerz (1), Rzucanie CzarÃ³w (Chaos), Spaczenie (Pomniejsze)
-Dla tych, ktÃ³rych nie dotknÄ™Å‚a plaga Chaosu, jego piÄ™tno wydaje siÄ™ przeraÅ¼ajÄ…co obce. Jednak tacy, ktÃ³rzy zostali wystawieni na jego wpÅ‚yw, kaÅ¼dy krok ku potÄ™pieniu, kaÅ¼dy pomysÅ‚ zbliÅ¼ajÄ…cy ich do Chaosu uwaÅ¼ajÄ… nie tylko za logiczny, ale i nieunikniony. NiektÃ³rzy szczegÃ³lnie gorliwi wyznawcy zakazanych kultÃ³w obdarzani sÄ… przez swych bogÃ³w â€daramiâ€: to paskudne mutacje, ktÃ³re gwarantujÄ… im Å›mierÄ‡ w przypadku odkrycia ich sekretu przez Å‚owcÃ³w czarownic. 
+Broñ +6
+Mutacja,Pancerz (1),Rzucanie Czarów (Chaos),Spaczenie (Pomniejsze)
+Dla tych,których nie dotknê³a plaga Chaosu,jego piêtno wydaje siê przera¿aj¹co obce. Jednak tacy,którzy zostali wystawieni na jego wp³yw,ka¿dy krok ku potêpieniu,ka¿dy pomys³ zbli¿aj¹cy ich do Chaosu uwa¿aj¹ nie tylko za logiczny,ale i nieunikniony. Niektórzy szczególnie gorliwi wyznawcy zakazanych kultów obdarzani s¹ przez swych bogów „darami”: to paskudne mutacje,które gwarantuj¹ im œmieræ w przypadku odkrycia ich sekretu przez ³owców czarownic. 
 Wojownik Chaosu
 4,55,30,45,45,45,55,30,35,55,25,17
-Czempion, BroÅ„ +8, Pancerz (5), Spaczenie (Pomniejsze)
-Choroba, DekoncentrujÄ…cy, Mutacja, Rzucanie CzarÃ³w (Chaos), Spaczenie UmysÅ‚u,SzaÅ‚ Bojowy, Wojowniczy
-CiÄ™Å¼ko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bÃ³stw wywoÅ‚ujÄ…cymi zabobonny strachâ€“ wojownicy Chaosu zdecydowanie nie sÄ… juÅ¼ ludÅºmi. Nic nie pozostaÅ‚o z ich wczeÅ›niejszego Å¼ycia. IstniejÄ… wyÅ‚Ä…cznie po to, by sÅ‚uÅ¼yÄ‡ swojemu mrocznemu patronowi. Podczas gdy wiÄ™kszoÅ›Ä‡ wojownikÃ³w Chaosu to wywyÅ¼szeni Å‚upieÅ¼cy pochodzÄ…cy z krain poÅ‚oÅ¼onych daleko na pÃ³Å‚nocy, kilku wybranych kultystÃ³w moÅ¼e otrzymaÄ‡ od Mrocznych BogÃ³w nagrodÄ™ w postaci Pancerza Chaosu. Taka zbroja daje im wielkÄ… potÄ™gÄ™, a cenÄ… jest to, Å¼e nie bÄ™dÄ… mogli jej zdjÄ…Ä‡, dopÃ³ki bÄ™dÄ… Å¼yli. PoniewaÅ¼ niewielu wojownikÃ³w moÅ¼e siÄ™ z nimi mierzyÄ‡ w walce, a Å¼aden rycerz nie jest lepiej chroniony, zwykle Å¼yjÄ… caÅ‚kiem dÅ‚ugo. 
+Czempion,Broñ +8,Pancerz (5),Spaczenie (Pomniejsze)
+Choroba,Dekoncentruj¹cy,Mutacja,Rzucanie Czarów (Chaos),Spaczenie Umys³u,Sza³ Bojowy,Wojowniczy
+Ciê¿ko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywo³uj¹cymi zabobonny strach– wojownicy Chaosu zdecydowanie nie s¹ ju¿ ludŸmi. Nic nie pozosta³o z ich wczeœniejszego ¿ycia. Istniej¹ wy³¹cznie po to,by s³u¿yæ swojemu mrocznemu patronowi. Podczas gdy wiêkszoœæ wojowników Chaosu to wywy¿szeni ³upie¿cy pochodz¹cy z krain po³o¿onych daleko na pó³nocy,kilku wybranych kultystów mo¿e otrzymaæ od Mrocznych Bogów nagrodê w postaci Pancerza Chaosu. Taka zbroja daje im wielk¹ potêgê,a cen¹ jest to,¿e nie bêd¹ mogli jej zdj¹æ,dopóki bêd¹ ¿yli. Poniewa¿ niewielu wojowników mo¿e siê z nimi mierzyæ w walce,a ¿aden rycerz nie jest lepiej chroniony,zwykle ¿yj¹ ca³kiem d³ugo. 
 Krwiopuszcz Khorna
 5,55,35,45,35,60,40,30,25,70,15,17
-BroÅ„ +9, Czempion, Demoniczny 8+, Nie Czuje BÃ³lu, Niestabilny,Pancerz (5), Pazury, Rogi +8, Spaczenie (Åšrednie), Strach (3), SzaÅ‚ Bojowy
+Broñ +9,Czempion,Demoniczny 8+,Nie Czuje Bólu,Niestabilny,Pancerz (5),Pazury,Rogi +8,Spaczenie (Œrednie),Strach (3),Sza³ Bojowy
 -
-WybraÅ„cy Khorna, krwiopuszcze, grasujÄ… na polach bitew Starego Åšwiata, zbierajÄ…c czaszki i odbierajÄ…c Å¼ywoty ku czci Boga Krwi. Z ich potwornych, rogatych obliczy wystajÄ… ostre jak igÅ‚y zÄ™by. Ich krwawoczerwona skÃ³ra jest twarda jak mosiÄ…dz wykuty na kowadÅ‚ach nieustannej wojny. KaÅ¼dy krwiopuszcz niesie Piekielne Ostrze, przeraÅºliwie ostry miecz unurzany w posoce, ktÃ³rym wymachuje z przeraÅ¼ajÄ…cÄ… niedbaÅ‚oÅ›ciÄ…, poddajÄ…c siÄ™ sÅ‚odkiemu doznaniu bezsensownej rzezi. 
+Wybrañcy Khorna,krwiopuszcze,grasuj¹ na polach bitew Starego Œwiata,zbieraj¹c czaszki i odbieraj¹c ¿ywoty ku czci Boga Krwi. Z ich potwornych,rogatych obliczy wystaj¹ ostre jak ig³y zêby. Ich krwawoczerwona skóra jest twarda jak mosi¹dz wykuty na kowad³ach nieustannej wojny. Ka¿dy krwiopuszcz niesie Piekielne Ostrze,przeraŸliwie ostry miecz unurzany w posoce,którym wymachuje z przera¿aj¹c¹ niedba³oœci¹,poddaj¹c siê s³odkiemu doznaniu bezsensownej rzezi. 
 Demonetka Slaanesha
 4,60,50,40,30,65,60,35,30,70,45,17
-BroÅ„ +9, Czempion, DekoncentrujÄ…cy, Demoniczny 8+, Niestabilny, Spaczenie (Åšrednie), Strach (2), Widzenie w CiemnoÅ›ci
+Broñ +9,Czempion,Dekoncentruj¹cy,Demoniczny 8+,Niestabilny,Spaczenie (Œrednie),Strach (2),Widzenie w Ciemnoœci
 -
-Podobnie jak wszystkie stwory KsiÄ™cia BÃ³lu i Rozkoszy, demonetki Slaanesha sÄ… jednoczeÅ›nie piÄ™kne i budzÄ…ce grozÄ™. Otacza je nieziemski urok, ktÃ³ry urÄ…ga wszelkiemu rozsÄ…dkowi i przeczy zdrowym zmysÅ‚om. Sprawia, Å¼e wrogowie sÄ… bezsilni, nie bÄ™dÄ…c w stanie stawiaÄ‡ oporu, zafascynowani bluÅºnierczÄ… zmysÅ‚owoÅ›ciÄ… potwornych postaci. Demonetki majÄ… kremowÄ…, bladÄ… skÃ³rÄ™ i wielkie, gÅ‚Ä™boko czarne oczy. Ich delikatne skronie zdobiÄ… powiewajÄ…ce swobodnie wÅ‚osy o nienaturalnej barwie. Ich smukÅ‚e rÄ™ce koÅ„czÄ… siÄ™ zakrzywionymi krabimi szczypcami zamiast dÅ‚oÅ„mi. 
-SmukÅ‚oudy JÄ™zobicz â€“ ksiÄ…Å¼Ä™ demonÃ³w Slaanesha
+Podobnie jak wszystkie stwory Ksiêcia Bólu i Rozkoszy,demonetki Slaanesha s¹ jednoczeœnie piêkne i budz¹ce grozê. Otacza je nieziemski urok,który ur¹ga wszelkiemu rozs¹dkowi i przeczy zdrowym zmys³om. Sprawia,¿e wrogowie s¹ bezsilni,nie bêd¹c w stanie stawiaæ oporu,zafascynowani bluŸniercz¹ zmys³owoœci¹ potwornych postaci. Demonetki maj¹ kremow¹,blad¹ skórê i wielkie,g³êboko czarne oczy. Ich delikatne skronie zdobi¹ powiewaj¹ce swobodnie w³osy o nienaturalnej barwie. Ich smuk³e rêce koñcz¹ siê zakrzywionymi krabimi szczypcami zamiast d³oñmi. 
+Smuk³oudy Jêzobicz – ksi¹¿ê demonów Slaanesha
 6,95,110,115,120,100,95,40,70,85,85,86
-BroÅ„ +16, Czempion, DekoncentrujÄ…cy, Demoniczny 8+, Groza (3),Niestabilny, Pancerz (1), Rogi +15, Rozmiar (DuÅ¼y), Rzucanie CzarÃ³w (Slaanesh), Spaczenie (WiÄ™ksze), Widzenie w CiemnoÅ›ci
+Broñ +16,Czempion,Dekoncentruj¹cy,Demoniczny 8+,Groza (3),Niestabilny,Pancerz (1),Rogi +15,Rozmiar (Du¿y),Rzucanie Czarów (Slaanesh),Spaczenie (Wiêksze),Widzenie w Ciemnoœci
 -
-Ostatecznym celem wszystkich czempionÃ³w Chaosu jest dostÄ…pienie apoteozy: wyniesienia ponad demoniczne szeregi i sÅ‚uÅ¼enia swojemu panu przez wiecznoÅ›Ä‡ jako ksiÄ…Å¼Ä™ demonÃ³w w KrÃ³lestwach Chaosu. To potÄ™Å¼ne istoty o wielkiej mocy. KsiÄ…Å¼Ä™ta demonÃ³w sÄ… straszliwymi wrogami, starcia z ktÃ³rymi unikajÄ… nawet najwiÄ™ksi bohaterowie Imperium. 
-Frâ€™hough Å»aÅ‚obny Oddech â€“ ksiÄ…Å¼Ä™ demonÃ³w Nurgla
+Ostatecznym celem wszystkich czempionów Chaosu jest dost¹pienie apoteozy: wyniesienia ponad demoniczne szeregi i s³u¿enia swojemu panu przez wiecznoœæ jako ksi¹¿ê demonów w Królestwach Chaosu. To potê¿ne istoty o wielkiej mocy. Ksi¹¿êta demonów s¹ straszliwymi wrogami,starcia z którymi unikaj¹ nawet najwiêksi bohaterowie Imperium. 
+Fr’hough ¯a³obny Oddech – ksi¹¿ê demonów Nurgla
 4,70,35,120,150,50,20,30,85,120,50,108
-BroÅ„ +15, Choroba (Ospa SwÄ™dzÄ…ca), Demoniczny 7+, Groza (3),Niestabilny, Pancerz (4), Rogi +14, Rozmiar (DuÅ¼y), Rzucanie CzarÃ³w (Nurgle), Spaczenie (WiÄ™ksze), Widzenie w Mroku, ZakaÅ¼ony, Zaraza,ZioniÄ™cie +12 (Kwas)
+Broñ +15,Choroba (Ospa Swêdz¹ca),Demoniczny 7+,Groza (3),Niestabilny,Pancerz (4),Rogi +14,Rozmiar (Du¿y),Rzucanie Czarów (Nurgle),Spaczenie (Wiêksze),Widzenie w Mroku,Zaka¿ony,Zaraza,Zioniêcie +12 (Kwas)
 -
-Ostatecznym celem wszystkich czempionÃ³w Chaosu jest dostÄ…pienie apoteozy: wyniesienia ponad demoniczne szeregi i sÅ‚uÅ¼enia swojemu panu przez wiecznoÅ›Ä‡ jako ksiÄ…Å¼Ä™ demonÃ³w w KrÃ³lestwach Chaosu. To potÄ™Å¼ne istoty o wielkiej mocy. KsiÄ…Å¼Ä™ta demonÃ³w sÄ… straszliwymi wrogami, starcia z ktÃ³rymi unikajÄ… nawet najwiÄ™ksi bohaterowie Imperium. 
+Ostatecznym celem wszystkich czempionów Chaosu jest dost¹pienie apoteozy: wyniesienia ponad demoniczne szeregi i s³u¿enia swojemu panu przez wiecznoœæ jako ksi¹¿ê demonów w Królestwach Chaosu. To potê¿ne istoty o wielkiej mocy. Ksi¹¿êta demonów s¹ straszliwymi wrogami,starcia z którymi unikaj¹ nawet najwiêksi bohaterowie Imperium. 
 Klanbrat
 5,30,30,30,30,40,35,30,30,20,20,11
-BroÅ„ +7, Pancerz (2), Widzenie w CiemnoÅ›ci, Zaraza
-Choroba (Szczurza GorÄ…czka), Mutacja, PÅ‚ochliwy, Skryty, Tropiciel
-WiÄ™kszoÅ›Ä‡ skavenÃ³w stanowiÄ… klanbracia pochodzÄ…cy z jednego z wielu zÅ‚oÅ¼onych skaveÅ„skich klanÃ³w, ktÃ³re nieustannie kÅ‚Ã³cÄ… siÄ™, politykujÄ…, wbijajÄ… sobie noÅ¼e w plecy i w koÅ„cu wojujÄ… miÄ™dzy sobÄ…. Generalnie dziaÅ‚ajÄ… z rozkazu skavena o wyÅ¼szym statusie, ale zawsze szukajÄ… sposobu, by zdobyÄ‡ dla siebie lepszÄ… pozycjÄ™, najczÄ™Å›ciej poprzez zdradÄ™. Zwykle odziani sÄ… w pleÅ›niejÄ…cÄ… skÃ³rÄ™ lub brudne szmaty z kawaÅ‚kami pordzewiaÅ‚ego i zmatowiaÅ‚ego metalu sÅ‚uÅ¼Ä…cymi za prowizoryczny pancerz. Klanbracia czÄ™sto wysyÅ‚ani sÄ… jako zwiadowcy lub Å‚upieÅ¼cy, ktÃ³rzy zdobywajÄ… potrzebne dobra, szukajÄ… spaczenia lub Å‚owiÄ… niewolnikÃ³w. 
+Broñ +7,Pancerz (2),Widzenie w Ciemnoœci,Zaraza
+Choroba (Szczurza Gor¹czka),Mutacja,P³ochliwy,Skryty,Tropiciel
+Wiêkszoœæ skavenów stanowi¹ klanbracia pochodz¹cy z jednego z wielu z³o¿onych skaveñskich klanów,które nieustannie k³óc¹ siê,politykuj¹,wbijaj¹ sobie no¿e w plecy i w koñcu wojuj¹ miêdzy sob¹. Generalnie dzia³aj¹ z rozkazu skavena o wy¿szym statusie,ale zawsze szukaj¹ sposobu,by zdobyæ dla siebie lepsz¹ pozycjê,najczêœciej poprzez zdradê. Zwykle odziani s¹ w pleœniej¹c¹ skórê lub brudne szmaty z kawa³kami pordzewia³ego i zmatowia³ego metalu s³u¿¹cymi za prowizoryczny pancerz. Klanbracia czêsto wysy³ani s¹ jako zwiadowcy lub ³upie¿cy,którzy zdobywaj¹ potrzebne dobra,szukaj¹ spaczenia lub ³owi¹ niewolników. 
 Szturmoszczur
 5,45,35,35,35,55,50,30,30,25,20,11
-BroÅ„ +8, Pancerz (4), Widzenie w CiemnoÅ›ci, Zaraza
-Choroba (Szczurza GorÄ…czka), Mutacja, Tropiciel
-Elitarnymi wojownikami skavenÃ³w sÄ… szturmoszczury: wiÄ™ksze, silniejsze, twardsze i bardziej zdyscyplinowane od klanbraci. SÅ‚uÅ¼Ä… jako podstawowa jednostka kaÅ¼dego wiÄ™kszego napadu i peÅ‚niÄ… funkcjÄ™ ochroniarzy waÅ¼nych skavenÃ³w. Szturmoszczury sÄ… zwykle dobrze uzbrojone i opancerzone. PosÅ‚ugujÄ… siÄ™ broniÄ… preferowanÄ… przez swÃ³j klan. 
+Broñ +8,Pancerz (4),Widzenie w Ciemnoœci,Zaraza
+Choroba (Szczurza Gor¹czka),Mutacja,Tropiciel
+Elitarnymi wojownikami skavenów s¹ szturmoszczury: wiêksze,silniejsze,twardsze i bardziej zdyscyplinowane od klanbraci. S³u¿¹ jako podstawowa jednostka ka¿dego wiêkszego napadu i pe³ni¹ funkcjê ochroniarzy wa¿nych skavenów. Szturmoszczury s¹ zwykle dobrze uzbrojone i opancerzone. Pos³uguj¹ siê broni¹ preferowan¹ przez swój klan. 
 Szczurogr
 5,35,10,55,45,35,45,25,10,25,15,30
-BroÅ„ +9, GÅ‚upi, Pancerz (1), Rozmiar (DuÅ¼y), Widzenie w CiemnoÅ›ci, Zaraza
-Choroba (Szczurza GorÄ…czka), Mutacja, Ogon +8, Spaczenie (Pomniejsze), Tropiciel,Widzenie w Mroku, Wyszkolony (Bojowy, StrÃ³Å¼ujÄ…cy, Ujarzmiony, Wierzchowiec), ZakaÅ¼ony
-Szczurogry to zwaliste brutale hodowane w ciemnych jaskiniach Podimperium przez obÅ‚Ä…kanych poganiaczy klanu Moulder. SÄ… gÅ‚upie, ale takÅ¼e nieulÄ™kÅ‚e i nieustÄ™pliwe w walce, gdy poganiajÄ… je skaveÅ„scy panowie. Rzadko bywajÄ… spotykane w pojedynkÄ™. Zwykle towarzyszÄ… Szarym Prorokom lub innym skavenom wysokiej rangi, ktÃ³rym sÅ‚uÅ¼Ä… jako ochroniarze. 
-
-
-
-
-
-
+Broñ +9,G³upi,Pancerz (1),Rozmiar (Du¿y),Widzenie w Ciemnoœci,Zaraza
+Choroba (Szczurza Gor¹czka),Mutacja,Ogon +8,Spaczenie (Pomniejsze),Tropiciel,Widzenie w Mroku,Wyszkolony (Bojowy),Wyszkolony (Stró¿uj¹cy),Wyszkolony (Ujarzmiony),Wyszkolony (Wierzchowiec),Zaka¿ony
+Szczurogry to zwaliste brutale hodowane w ciemnych jaskiniach Podimperium przez ob³¹kanych poganiaczy klanu Moulder. S¹ g³upie,ale tak¿e nieulêk³e i nieustêpliwe w walce,gdy poganiaj¹ je skaveñscy panowie. Rzadko bywaj¹ spotykane w pojedynkê. Zwykle towarzysz¹ Szarym Prorokom lub innym skavenom wysokiej rangi,którym s³u¿¹ jako ochroniarze. 
 
 
 

@@ -61,14 +61,14 @@ public class Wyglad implements RzutKoscia{
 		switch(nazwaRasy) {
 		case "Ludzie": this.kolorOczu = tab[0];break;
 		case "Krasnoludy":this.kolorOczu = tab[1];break;
-		case "Nizio³ki":this.kolorOczu = tab[2];break;
+		case "Nizio³kiki":this.kolorOczu = tab[2];break;
 		case "Wysokie elfy":this.kolorOczu = tab[3];break;
 		case "Leœne elfy":this.kolorOczu = tab[4];break;
 		}
 	}
 	
 	/*
-	 * w pliku txt najpierw jest 19 wierszy z kolorem w³osów
+	 * w pliku txt najpierw jest 19 wierszy z kolorem wï¿½osï¿½w
 	 */
 	public void setKolorWlosow(String nazwaRasy) {
 		int rand = (int) (Math.random()*19);
@@ -112,7 +112,7 @@ public class Wyglad implements RzutKoscia{
 	}
 
 	/**
-	 * ustalenie wieku postaci w oparciu od rasê
+	 * ustalenie wieku postaci w oparciu od rasï¿½
 	 */
 	public void setWiek(String nazwaRasy) {
 		

@@ -20,12 +20,12 @@ public class GeneratorImion {
 		
 	public String getFullName(String nazwaRasy, boolean plec) {
 		
-		String nazwa = "Kosza³ek Opa³ek";
-		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Leœne elfy"))
+		String nazwa = "KoszaÅ‚ek OpaÅ‚ek";
+		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("LeÅ›ne elfy"))
 			nazwaRasy = "Elfy";
 		
 		/*
-		 * Je¿eli facet
+		 * Jeï¿½eli facet
 		 */
 		if(plec) {
 			switch(nazwaRasy) {
@@ -33,7 +33,7 @@ public class GeneratorImion {
 			case "Krasnoludy": nazwa = wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_MESKIE.ordinal()); 
 			nazwa += " " + wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_MESKIE.ordinal());
 			nazwa += zaimekKrasnoludy(plec); nazwa += " z klanu " + wczytajImieNazwisko(Imie.NAZWA_KLANU_KR.ordinal());break;
-			case "Nizio³ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_MESKIE.ordinal());
+			case "NizioÅ‚ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_MESKIE.ordinal());
 			nazwa += " " + wczytajImieNazwisko(Imie.NIZIOLEK_NAZWISKO.ordinal());break;
 			case "Elfy": nazwa = wczytajImieNazwisko(Imie.PIERWSZY_CZ_ELF.ordinal())+wczytajImieNazwisko(Imie.DRUGI_CZ_ELF.ordinal());
 			nazwa +=wczytajImieNazwisko(Imie.TRZECI_CZ_ELF_MESKIE.ordinal());break;
@@ -44,7 +44,7 @@ public class GeneratorImion {
 			case "Krasnoludy": nazwa = wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_ZENSKIE.ordinal()); 
 			nazwa += " " + wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_ZENSKIE.ordinal());
 			nazwa += zaimekKrasnoludy(plec); nazwa += " z klanu " + wczytajImieNazwisko(Imie.NAZWA_KLANU_KR.ordinal());break;
-			case "Nizio³ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_ZENSK.ordinal());
+			case "Nizioï¿½ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_ZENSK.ordinal());
 			nazwa += " " + wczytajImieNazwisko(Imie.NIZIOLEK_NAZWISKO.ordinal());break;
 			case "Elfy": nazwa = wczytajImieNazwisko(Imie.PIERWSZY_CZ_ELF.ordinal())+wczytajImieNazwisko(Imie.DRUGI_CZ_ELF.ordinal());
 			nazwa +=wczytajImieNazwisko(Imie.TRZECI_CZ_ELF_ZENSKIE.ordinal());break;
@@ -55,7 +55,7 @@ public class GeneratorImion {
 	
 
 	/*
-	 * zaczytanie pliku txt z wszystkimi modu³ami do genrowania imion i nazwisk dla dostêpnych ras z podstawowej wersji
+	 * zaczytanie pliku txt z wszystkimi moduï¿½ami do genrowania imion i nazwisk dla dostï¿½pnych ras z podstawowej wersji
 	 */
 	private void wczytajPlikTxt() 
 	{
@@ -97,7 +97,7 @@ public class GeneratorImion {
 	}
 	
 	/*
-	 * wygenerrowanie zaimka adekwatnego do p³ci
+	 * wygenerrowanie zaimka adekwatnego do pï¿½ci
 	 */
 	private String zaimekKrasnoludy(boolean facet) {
 		String[] tablica;
@@ -121,20 +121,20 @@ public class GeneratorImion {
 //////////////////////////////////////
 ///kolejnosc w pliku txt
 ///1.meskie imperium
-///2.¿eñskie imperium
+///2.ï¿½eï¿½skie imperium
 ///3.nazwiska
-///4. Pierwszy cz³on krasnoludzkie
-///5. Drugi cz³on krasnoludzkie mêskie
-///6. Drugi cz³on krasnoludzkie ¿eñskie
-///7. zaimki do nazwisk krasnoludzkich pierwsze dwa dla kobiet, pozostale dwa dla mê¿czyzn
+///4. Pierwszy czï¿½on krasnoludzkie
+///5. Drugi czï¿½on krasnoludzkie mï¿½skie
+///6. Drugi czï¿½on krasnoludzkie ï¿½eï¿½skie
+///7. zaimki do nazwisk krasnoludzkich pierwsze dwa dla kobiet, pozostale dwa dla mï¿½czyzn
 ///8. nazwa klanu krasnoludzkiego
-///9. Pierwszy cz³on imienia elfiego
-///10. Drugi cz³on imienia elfiego
-///11. Trzeci cz³on imienia elfiego - ¿eñski
-///12. Tzeci cz³on imienia elfiego - mêski
-///13. Imiona nizio³ków pierwszy cz³on
-///14. Imie nizio³ka kobiety drugi cz³on
-///15. Imie nizio³ka faceta drugi cz³on
-///16. Nazwisko nizio³ka
-///17. przydomek elfów
+///9. Pierwszy czï¿½on imienia elfiego
+///10. Drugi czï¿½on imienia elfiego
+///11. Trzeci czï¿½on imienia elfiego - ï¿½eï¿½ski
+///12. Tzeci czï¿½on imienia elfiego - mï¿½ski
+///13. Imiona nizioï¿½kï¿½w pierwszy czï¿½on
+///14. Imie nizioï¿½ka kobiety drugi czï¿½on
+///15. Imie nizioï¿½ka faceta drugi czï¿½on
+///16. Nazwisko nizioï¿½ka
+///17. przydomek elfï¿½w
 

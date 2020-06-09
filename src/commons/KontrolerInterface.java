@@ -1,5 +1,5 @@
 package commons;
 
 public interface KontrolerInterface {
-	void setNpcList();
+	void setPotwora(Potwory p);
 }

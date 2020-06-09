@@ -7,7 +7,7 @@ public class Cechy implements RzutKoscia{
 		int hp;
 		private int szybkosc;
 		static String[] CECHYNAZWA = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd"};
-		static int IC = 10; //iloœæ cech
+		static int IC = 10; //iloï¿½ï¿½ cech
 		
 		public Cechy(int [] cechyBazowe, String nazwaRasy){
 			stat = new int[IC]; //HP traktowane jako dodatkowa osobna cecha
@@ -17,7 +17,7 @@ public class Cechy implements RzutKoscia{
 				stat[i] = cechyBazowe[i]+ RzutKoscia.rzutK(10,2);			
 				rozwiniecia[i] = 0;
 			}
-			//ustelenie iloœci HP 
+			//ustelenie iloï¿½ci HP 
 			updateHp(nazwaRasy,0);
 			
 			
@@ -51,8 +51,8 @@ public class Cechy implements RzutKoscia{
 				stat[i] = rs.cechyBazowe[i]+ RzutKoscia.rzutK(10,2);
 				rozwiniecia[i] = 0;
 			}
-			//ustelenie iloœci HP 
-			hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 × TB)+WPB - iloœæ ¿ycia w odniesieniu do statystyk
+			//ustelenie iloï¿½ci HP 
+			hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 ï¿½ TB)+WPB - iloï¿½ï¿½ ï¿½ycia w odniesieniu do statystyk
 			
 		}
 				
@@ -70,17 +70,17 @@ public class Cechy implements RzutKoscia{
 				}
 				tekst += cechyNazwaI +": " + Integer.toString(stat[i]) + " (+" + Integer.toString(rozwiniecia[i]) + ") ";
 			}
-			tekst += " \nPunkty ¯ycia: "+ Integer.toString(hp)+ "\nSzybkoœæ: " + szybkosc + "\n";
+			tekst += " \nPunkty ¿ycia: "+ Integer.toString(hp)+ "\nSzybkoœæ: " + szybkosc + "\n";
 			return tekst;
 		}
 		
 		public void updateHp(String nazwaRasy, int twardziel){
 			
-			//ustelenie iloœci HP 
+			//ustelenie iloï¿½ci HP 
 			if(nazwaRasy == "Nizio³ki")
-				hp = 2*((int)(stat[3]/10))+(int)(stat[8]/10); //(2 × TB)+WPB
+				hp = 2*((int)(stat[3]/10))+(int)(stat[8]/10); //(2 ï¿½ TB)+WPB
 			else {
-				hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 × TB)+WPB - iloœæ ¿ycia w odniesieniu do statystyk
+				hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 ï¿½ TB)+WPB - iloï¿½ï¿½ ï¿½ycia w odniesieniu do statystyk
 			}
 			System.out.println("¯ywotnoœæ przed twardzielem = " + hp);
 			if(twardziel>0) {
@@ -96,7 +96,7 @@ public class Cechy implements RzutKoscia{
 
 
 
-		//podniesc cechê, boolean jest w zale¿noœci czy dodatkowa cecha ma siê wliczaæ do rozwinieæ aktualnych
+		//podniesc cechï¿½, boolean jest w zaleï¿½noï¿½ci czy dodatkowa cecha ma siï¿½ wliczaï¿½ do rozwinieï¿½ aktualnych
 		public void podniesCeche(int oIle, int ktoraCecha, boolean or) {
 			stat[ktoraCecha] +=oIle;
 			if(or){

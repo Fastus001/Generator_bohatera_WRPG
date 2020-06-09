@@ -1,6 +1,11 @@
 package commons;
 
 public class CechyPotworow {
+	@Override
+	public String toString() {
+		return nazwa;
+	}
+
 	private String nazwa;
 	private String opis;
 	
