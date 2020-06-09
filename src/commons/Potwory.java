@@ -6,7 +6,7 @@ public class Potwory {
 	private static final String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","¯yw"};
 	private static final int IC = 12; //iloœæ cech
 	private String nazwa;
-	private String [] statyPotwora;
+	private int [] statyPotwora;
 	private ArrayList<CechyPotworow> cechy;
 	private ArrayList<CechyPotworow> cechyOpcjonalne;
 	private String opisStwora;
@@ -20,16 +20,9 @@ public class Potwory {
 	/**
 	 * @return the statyPotwora
 	 */
-	public String[] getStatyPotwora() {
-		String [] staty = statyPotwora;
-		for(int i = 0; i < staty.length; i++)
-		{
-			if(staty[i].equals("-")) {
-				staty[i] = "0";
-			}
-		}
-	
-		return staty;
+	public int [] getStatyPotwora() {
+
+		return statyPotwora;
 	}
 	/**
 	 * @return the cechy
@@ -54,10 +47,13 @@ public class Potwory {
 	 */
 	public Potwory(String n, String [] staty, ArrayList<CechyPotworow> cP, ArrayList<CechyPotworow> cOp, String opis) {
 		this.nazwa = n;
-		this.statyPotwora = new String[IC];
+		this.statyPotwora = new int[IC];
 		for(int i=0; i < IC; i++) 
 		{
-			this.statyPotwora[i] = staty[i];
+			if(staty[i].equals("-")) {
+				staty[i] = "0";
+			}
+			this.statyPotwora[i] = Integer.parseInt(staty[i]);
 		}
 		cechy = new ArrayList<CechyPotworow>();
 		for(CechyPotworow cechyP:cP) {
@@ -78,7 +74,7 @@ public class Potwory {
 	 */
 	public Potwory(Potwory potwory) {
 		this.nazwa = potwory.nazwa;
-		this.statyPotwora = new String[IC];
+		this.statyPotwora = new int[IC];
 		for(int i=0; i < IC; i++) 
 		{
 			this.statyPotwora[i] = potwory.statyPotwora[i];

@@ -81,7 +81,6 @@ public class NpcGUI extends JFrame {
 				potwor = (Potwory) cbWyborNPC.getSelectedItem();
 				kontroler.setPotwora(potwor);
 				dodajPotworaDoGui(potwor);
-				textAreaOpis.setText(potwor.getOpisStwora());
 			}
 
 
@@ -112,26 +111,29 @@ public class NpcGUI extends JFrame {
 	}
 	public void dodajPotworaDoGui(Potwory potwor) {
 		// TODO Auto-generated method stub
-		String [] tab = potwor.getStatyPotwora();
+		int [] tab = potwor.getStatyPotwora();
 		//dodanie statów do spinnerów
-		spinner_0.getModel().setValue(Integer.parseInt(tab[0]));
-		spinner_1.getModel().setValue(Integer.parseInt(tab[1]));
-		spinner_2.getModel().setValue(Integer.parseInt(tab[2]));
-		spinner_3.getModel().setValue(Integer.parseInt(tab[3]));
-		spinner_4.getModel().setValue(Integer.parseInt(tab[4]));
-		spinner_5.getModel().setValue(Integer.parseInt(tab[5]));
-		spinner_6.getModel().setValue(Integer.parseInt(tab[6]));
-		spinner_7.getModel().setValue(Integer.parseInt(tab[7]));
-		spinner_8.getModel().setValue(Integer.parseInt(tab[8]));
-		spinner_9.getModel().setValue(Integer.parseInt(tab[9]));
-		spinner_10.getModel().setValue(Integer.parseInt(tab[10]));
-		spinner_11.getModel().setValue(Integer.parseInt(tab[11]));
+		spinner_0.getModel().setValue(tab[0]);
+		spinner_1.getModel().setValue(tab[1]);
+		spinner_2.getModel().setValue(tab[2]);
+		spinner_3.getModel().setValue(tab[3]);
+		spinner_4.getModel().setValue(tab[4]);
+		spinner_5.getModel().setValue(tab[5]);
+		spinner_6.getModel().setValue(tab[6]);
+		spinner_7.getModel().setValue(tab[7]);
+		spinner_8.getModel().setValue(tab[8]);
+		spinner_9.getModel().setValue(tab[9]);
+		spinner_10.getModel().setValue(tab[10]);
+		spinner_11.getModel().setValue(tab[11]);
 		//nazwa
 		lblNazwa.setText(potwor.getNazwa());
 		//cechy
 		listCechy.setModel(new DefaultComboBoxModel<Object>(potwor.getCechy().toArray()));
 		//cechy opcjonalne
 		listOpcjonalne.setModel(new DefaultComboBoxModel<Object>(potwor.getCechyOpcjonalne().toArray()));
+		//ustawienie opisu 
+		textAreaOpis.setText(potwor.getOpisStwora());
+		
 		
 	}
 
