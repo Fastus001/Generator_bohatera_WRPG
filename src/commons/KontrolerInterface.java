@@ -1,5 +1,6 @@
 package commons;
 
 public interface KontrolerInterface {
-	void setPotwora(Potwory p);
+	//PCS - Powrzechne Cechy Stworzeñ
+	void setPotwora(Potwory p, boolean czyPCS);
 }

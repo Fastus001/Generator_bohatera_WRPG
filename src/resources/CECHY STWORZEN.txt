@@ -12,7 +12,7 @@ Bagno³az
 Stworzenie na bagnie jest w swoim ¿ywiole. Nie dostaje kar do ruchu za przemieszczanie siê po bagnistym pod³o¿u. 
 B³ogos³awiony (ró¿ne) 
 Stworzenie jest b³ogos³awione i mo¿e udzielaæ B³ogos³awieñstw; odpowiednie bóstwo podano w nawiasie. 
-Broñ +Obra¿enia 
+Broñ +X
 Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹).
 Broñ +0
 Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹).

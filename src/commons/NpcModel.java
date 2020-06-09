@@ -112,9 +112,24 @@ public class NpcModel implements NpcModelInterface{
 	}
 
 	@Override
-	public void setPotworAktualny(Potwory potw) {
+	public Potwory setPotworAktualny(Potwory potw, boolean czyPCS) {
 		potworAktualny = new Potwory(potw);
-		
+		if(czyPCS)
+		{
+			String [] powszecheCechyStworzen = {"Broñ +X","Du¿y","Elita","Nienawiœæ","Pancerz (wartoœæ)","Przebieg³y","Przestraszony","Przywódca","Si³acz","Sprytny","Szybki","Twardy","Twardziel","Uprzedzenie (Obiekt)","Wrogoœæ (Obiekt)"};
+			for(int i = 0; i < powszecheCechyStworzen.length; i++) 
+			{
+				//System.out.println(tab[i]);
+				for(CechyPotworow cp:cechyPotworowLista) 
+				{
+					if(cp.toString().equals(powszecheCechyStworzen[i]))
+					{
+						potworAktualny.getCechyOpcjonalne().add(cp);
+					}
+				}
+			}
+		}
+		return potworAktualny;
 	}
 	
 	

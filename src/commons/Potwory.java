@@ -25,6 +25,18 @@ public class Potwory {
 		return statyPotwora;
 	}
 	/**
+	 * @param statyPotwora the statyPotwora to set
+	 */
+	public void setStatyPotwora(int[] statyPotwora) {
+		this.statyPotwora = statyPotwora;
+	}
+	/**
+	 * @param cechyOpcjonalne the cechyOpcjonalne to set
+	 */
+	public void addCechyOpcjonalne(CechyPotworow cechyOpcjonalne) {
+		this.cechyOpcjonalne.add(cechyOpcjonalne);
+	}
+	/**
 	 * @return the cechy
 	 */
 	public ArrayList<CechyPotworow> getCechy() {

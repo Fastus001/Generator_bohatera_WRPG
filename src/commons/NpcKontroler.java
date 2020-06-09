@@ -29,9 +29,8 @@ public class NpcKontroler implements KontrolerInterface{
 	}
 
 	@Override
-	public void setPotwora(Potwory p) {
-		model.setPotworAktualny(p);
-		widok.dodajPotworaDoGui(p);
+	public void setPotwora(Potwory p, boolean czyPcs) {
+		widok.dodajPotworaDoGui(model.setPotworAktualny(p,czyPcs));
 	}
 	
 

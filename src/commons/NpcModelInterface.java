@@ -6,6 +6,6 @@ public interface NpcModelInterface {
 	void wgrajCechyPotworow();
 	Object[] wgrajPotwory();
 	ArrayList<CechyPotworow> getCechyPotworow(String [] tab);
-	void setPotworAktualny(Potwory potw);
+	Potwory setPotworAktualny(Potwory potw, boolean czyPCS);
 
 }

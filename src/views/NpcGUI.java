@@ -31,6 +31,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JCheckBox;
 
 public class NpcGUI extends JFrame {
 
@@ -57,6 +58,7 @@ public class NpcGUI extends JFrame {
 	private JComboBox<Object> cbWyborNPC;
 	Potwory potwor;
 	private JLabel lblNazwa;
+	private JCheckBox chckbxPowCechyStworzen;
 
 
 		
@@ -79,8 +81,12 @@ public class NpcGUI extends JFrame {
 		cbWyborNPC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				potwor = (Potwory) cbWyborNPC.getSelectedItem();
-				kontroler.setPotwora(potwor);
-				dodajPotworaDoGui(potwor);
+				if(chckbxPowCechyStworzen.isSelected())
+					kontroler.setPotwora(potwor, true);
+				else {
+					kontroler.setPotwora(potwor, false);
+				}
+				//dodajPotworaDoGui(potwor);
 			}
 
 
@@ -133,7 +139,7 @@ public class NpcGUI extends JFrame {
 		listOpcjonalne.setModel(new DefaultComboBoxModel<Object>(potwor.getCechyOpcjonalne().toArray()));
 		//ustawienie opisu 
 		textAreaOpis.setText(potwor.getOpisStwora());
-		
+
 		
 	}
 
@@ -145,7 +151,7 @@ public class NpcGUI extends JFrame {
 	private void initComponents() {
 		setTitle("Tworzenie NPC");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 700, 546);
+		setBounds(100, 100, 800, 620);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -168,7 +174,7 @@ public class NpcGUI extends JFrame {
 		JScrollPane scrollPaneOpcjonalneCechy = new JScrollPane();
 		
 		JLabel lblOpis = new JLabel("Opis:");
-		lblOpis.setFont(new Font("Caslon Antique", Font.PLAIN, 13));
+		lblOpis.setFont(new Font("Caslon Antique", Font.PLAIN, 16));
 		
 		JScrollPane scrollPaneOpis = new JScrollPane();
 		scrollPaneOpis.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -178,54 +184,64 @@ public class NpcGUI extends JFrame {
 		JButton btnUsun = new JButton("Usu\u0144");
 		
 		JLabel lblwybierzPotwora = new JLabel("Wybierz potwora");
-		lblwybierzPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
+		lblwybierzPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		btnZapisz = new JButton("Zapisz");
 		btnZapisz.setFont(new Font("Caslon Antique", Font.PLAIN, 20));
+		
+		chckbxPowCechyStworzen = new JCheckBox("Powszechne Cechy Stworze\u0144");
+		chckbxPowCechyStworzen.setToolTipText("Zaznacz, je\u015Bli chcesz aby w opcjonalnych cechach by\u0142y dost\u0119pne dodatkowe cechy stworze\u0144!");
+		chckbxPowCechyStworzen.setFont(new Font("Caslon Antique", Font.PLAIN, 16));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-						.addComponent(panelCechy, GroupLayout.PREFERRED_SIZE, 96, GroupLayout.PREFERRED_SIZE)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addContainerGap()
-							.addComponent(lblwybierzPotwora, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-					.addPreferredGap(ComponentPlacement.RELATED)
+					.addContainerGap()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addComponent(scrollPaneOpis, GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
-						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+						.addComponent(lblwybierzPotwora, GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+						.addComponent(panelCechy, Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 112, Short.MAX_VALUE))
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED, 357, Short.MAX_VALUE)
+							.addPreferredGap(ComponentPlacement.UNRELATED)
+							.addComponent(chckbxPowCechyStworzen)
+							.addPreferredGap(ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
 							.addComponent(btnZapisz))
-						.addComponent(panelNazwa, GroupLayout.PREFERRED_SIZE, 572, GroupLayout.PREFERRED_SIZE)
 						.addComponent(lblOpis, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
-								.addComponent(lblCechyPotwora))
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
-								.addComponent(btnUsun, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(btnDodaj, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-							.addPreferredGap(ComponentPlacement.UNRELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
-								.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE))
-							.addGap(157)))
+								.addComponent(scrollPaneOpis, Alignment.TRAILING)
+								.addGroup(gl_contentPane.createSequentialGroup()
+									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+										.addGroup(gl_contentPane.createSequentialGroup()
+											.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
+											.addPreferredGap(ComponentPlacement.RELATED)
+											.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
+												.addComponent(btnUsun, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+												.addComponent(btnDodaj, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+										.addComponent(lblCechyPotwora))
+									.addPreferredGap(ComponentPlacement.UNRELATED)
+									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+										.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
+										.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE))
+									.addGap(157))
+								.addComponent(panelNazwa, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 542, Short.MAX_VALUE))))
 					.addGap(0))
 		);
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addComponent(panelCechy, GroupLayout.PREFERRED_SIZE, 316, GroupLayout.PREFERRED_SIZE)
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(panelNazwa, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
+								.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
+								.addComponent(lblCechyPotwora))
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_contentPane.createSequentialGroup()
-									.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
 									.addPreferredGap(ComponentPlacement.RELATED)
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 										.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
@@ -233,34 +249,34 @@ public class NpcGUI extends JFrame {
 											.addComponent(btnDodaj)
 											.addPreferredGap(ComponentPlacement.RELATED)
 											.addComponent(btnUsun))))
-								.addGroup(gl_contentPane.createSequentialGroup()
-									.addComponent(lblCechyPotwora)
-									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)))
+								.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE))
 							.addPreferredGap(ComponentPlacement.UNRELATED)
 							.addComponent(lblOpis, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(scrollPaneOpis, GroupLayout.PREFERRED_SIZE, 158, GroupLayout.PREFERRED_SIZE)
-							.addGap(2)))
+							.addComponent(scrollPaneOpis, GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE))
+						.addComponent(panelCechy, GroupLayout.DEFAULT_SIZE, 460, Short.MAX_VALUE))
+					.addGap(2)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnZapisz)
 						.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblwybierzPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)))
+						.addComponent(lblwybierzPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
+						.addComponent(chckbxPowCechyStworzen)))
 		);
 		
 		textAreaOpis = new JTextArea();
+		textAreaOpis.setWrapStyleWord(true);
 		textAreaOpis.setLineWrap(true);
-		textAreaOpis.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		textAreaOpis.setFont(new Font("Caslon Antique", Font.ITALIC, 17));
 		scrollPaneOpis.setViewportView(textAreaOpis);
 		
 		listOpcjonalne = new JList();
 
-		listOpcjonalne.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		listOpcjonalne.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		scrollPaneOpcjonalneCechy.setViewportView(listOpcjonalne);
 		
 		listCechy = new JList<Object>();
 
-		listCechy.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		listCechy.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		scrollPaneCechy.setViewportView(listCechy);
 		
 	
@@ -272,75 +288,87 @@ public class NpcGUI extends JFrame {
 		panelNazwa.add(lblNazwa);
 		
 		JLabel lblSz = new JLabel("Sz");
-		lblSz.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblSz.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		JLabel lblWW = new JLabel("WW");
-		lblWW.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblWW.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_0 = new JSpinner();
+		spinner_0.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_0.setModel(new SpinnerNumberModel(0, null, 19, 1));
 		
 		spinner_1 = new JSpinner();
+		spinner_1.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_1.setModel(new SpinnerNumberModel(0, null, 120, 1));
 		
 		JLabel lblUs = new JLabel("US");
-		lblUs.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblUs.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_2 = new JSpinner();
+		spinner_2.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_2.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblSila = new JLabel("S");
-		lblSila.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblSila.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_3 = new JSpinner();
+		spinner_3.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_3.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblWytrzymalosc = new JLabel("Wt");
-		lblWytrzymalosc.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblWytrzymalosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_4 = new JSpinner();
+		spinner_4.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_4.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblInicjatywa = new JLabel("I");
-		lblInicjatywa.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblInicjatywa.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_5 = new JSpinner();
+		spinner_5.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_5.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblZwinnosc = new JLabel("Zw");
-		lblZwinnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblZwinnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		JLabel lblZrecznosc = new JLabel("Zr");
-		lblZrecznosc.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblZrecznosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		JLabel lblInteligencja = new JLabel("Int");
-		lblInteligencja.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblInteligencja.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		JLabel lblSilaWoli = new JLabel("SW");
-		lblSilaWoli.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblSilaWoli.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		JLabel lblOglada = new JLabel("Ogd");
-		lblOglada.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblOglada.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		JLabel lblZywotnosc = new JLabel("\u017Byw");
-		lblZywotnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 14));
+		lblZywotnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_6 = new JSpinner();
+		spinner_6.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_6.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_7 = new JSpinner();
+		spinner_7.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_7.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_8 = new JSpinner();
+		spinner_8.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_8.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_9 = new JSpinner();
+		spinner_9.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_9.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_10 = new JSpinner();
+		spinner_10.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_10.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_11 = new JSpinner();
+		spinner_11.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_11.setModel(new SpinnerNumberModel(0, 0, 500, 1));
 		GroupLayout gl_panelCechy = new GroupLayout(panelCechy);
 		gl_panelCechy.setHorizontalGroup(
