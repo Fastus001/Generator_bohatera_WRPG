@@ -32,6 +32,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.JCheckBox;
+import javax.swing.ImageIcon;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.ChangeEvent;
 
 public class NpcGUI extends JFrame {
 
@@ -59,6 +62,7 @@ public class NpcGUI extends JFrame {
 	Potwory potwor;
 	private JLabel lblNazwa;
 	private JCheckBox chckbxPowCechyStworzen;
+	private JButton btnUsun;
 
 
 		
@@ -112,11 +116,121 @@ public class NpcGUI extends JFrame {
 				textAreaOpis.setText(cechyOpcjaOpis.getOpis());
 			}
 		});
+		/*
+		 * dodanie cechyOpcjonalnej do g³ownych i ca³a z tym zwi¹zana zabawa
+		 */
+		btnDodaj.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(!listOpcjonalne.isSelectionEmpty())
+				{
+					CechyPotworow cOpcja = (CechyPotworow) listOpcjonalne.getModel().getElementAt(listOpcjonalne.getSelectedIndex());
+					kontroler.dodajCeche(cOpcja.toString());
+				}
+			}
+		});
+		/*
+		 * usuniêcie cechy g³ownej i przesuniêcie jej do opcjonalnych
+		 */
+		btnUsun.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(!listCechy.isSelectionEmpty()) 
+				{
+					CechyPotworow cOpcja = (CechyPotworow) listCechy.getModel().getElementAt(listCechy.getSelectedIndex());
+					kontroler.usunCeche(cOpcja.toString());
+				}
+				
+			}
+		});
+		
+		/*
+		 * obs³uga zdarzeñ na spinerach :-(
+		 */
+		spinner_0.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_0.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 0);
+			}
+		});
+		
+		spinner_1.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_1.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 1);
+			}
+		});
+		
+		spinner_2.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_2.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 2);
+			}
+		});
+		
+		spinner_3.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_3.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 3);
+			}
+		});
+		
+		spinner_4.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_4.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 4);
+			}
+		});
+		
+		spinner_5.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_5.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 5);
+			}
+		});
 	
+		spinner_6.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_6.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 6);
+			}
+		});
+		
+		spinner_7.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_7.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 7);
+			}
+		});
+		
+		spinner_8.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_8.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 8);
+			}
+		});
+		
+		spinner_9.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_9.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 9);
+			}
+		});
+		
+		spinner_10.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_10.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 10);
+			}
+		});
+		
+		spinner_11.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				int ile = (int) spinner_11.getModel().getValue();
+				kontroler.zmianaStatystyki(ile, 11);
+			}
+		});
 		
 	}
 	public void dodajPotworaDoGui(Potwory potwor) {
-		// TODO Auto-generated method stub
 		int [] tab = potwor.getStatyPotwora();
 		//dodanie statów do spinnerów
 		spinner_0.getModel().setValue(tab[0]);
@@ -146,6 +260,24 @@ public class NpcGUI extends JFrame {
 	public void setComboBox(Object [] obj) {
 		cbWyborNPC.setModel(new DefaultComboBoxModel<Object>(obj));
 	}
+	
+	public void enableComponents() {
+		spinner_0.setEnabled(true);
+		spinner_1.setEnabled(true);
+		spinner_2.setEnabled(true);
+		spinner_3.setEnabled(true);
+		spinner_4.setEnabled(true);
+		spinner_5.setEnabled(true);
+		spinner_6.setEnabled(true);
+		spinner_7.setEnabled(true);
+		spinner_8.setEnabled(true);
+		spinner_9.setEnabled(true);
+		spinner_10.setEnabled(true);
+		spinner_11.setEnabled(true);
+		listCechy.setEnabled(true);
+		listOpcjonalne.setEnabled(true);
+		
+	}
 
 
 	private void initComponents() {
@@ -164,6 +296,7 @@ public class NpcGUI extends JFrame {
 		panelNazwa = new JPanel();
 		
 		JScrollPane scrollPaneCechy = new JScrollPane();
+		scrollPaneCechy.setEnabled(false);
 		
 		JLabel lblCechyPotwora = new JLabel("Cechy Potwora:");
 		lblCechyPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
@@ -172,6 +305,7 @@ public class NpcGUI extends JFrame {
 		lblOpcjonalneCechyPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		
 		JScrollPane scrollPaneOpcjonalneCechy = new JScrollPane();
+		scrollPaneOpcjonalneCechy.setEnabled(false);
 		
 		JLabel lblOpis = new JLabel("Opis:");
 		lblOpis.setFont(new Font("Caslon Antique", Font.PLAIN, 16));
@@ -180,8 +314,12 @@ public class NpcGUI extends JFrame {
 		scrollPaneOpis.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		
 		btnDodaj = new JButton("Dodaj");
+
+		btnDodaj.setIcon(new ImageIcon(NpcGUI.class.getResource("/resources/move.png")));
 		
-		JButton btnUsun = new JButton("Usu\u0144");
+		btnUsun = new JButton("Usu\u0144");
+
+		btnUsun.setIcon(new ImageIcon(NpcGUI.class.getResource("/resources/move (1).png")));
 		
 		JLabel lblwybierzPotwora = new JLabel("Wybierz potwora");
 		lblwybierzPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
@@ -270,11 +408,13 @@ public class NpcGUI extends JFrame {
 		scrollPaneOpis.setViewportView(textAreaOpis);
 		
 		listOpcjonalne = new JList();
+		listOpcjonalne.setEnabled(false);
 
 		listOpcjonalne.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		scrollPaneOpcjonalneCechy.setViewportView(listOpcjonalne);
 		
 		listCechy = new JList<Object>();
+		listCechy.setEnabled(false);
 
 		listCechy.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		scrollPaneCechy.setViewportView(listCechy);
@@ -294,17 +434,23 @@ public class NpcGUI extends JFrame {
 		lblWW.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_0 = new JSpinner();
+		spinner_0.setEnabled(false);
+
 		spinner_0.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_0.setModel(new SpinnerNumberModel(0, null, 19, 1));
+		spinner_0.setModel(new SpinnerNumberModel(0, 0, 19, 1));
 		
 		spinner_1 = new JSpinner();
+
+		spinner_1.setEnabled(false);
 		spinner_1.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_1.setModel(new SpinnerNumberModel(0, null, 120, 1));
+		spinner_1.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		JLabel lblUs = new JLabel("US");
 		lblUs.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_2 = new JSpinner();
+
+		spinner_2.setEnabled(false);
 		spinner_2.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_2.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
@@ -312,6 +458,8 @@ public class NpcGUI extends JFrame {
 		lblSila.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_3 = new JSpinner();
+
+		spinner_3.setEnabled(false);
 		spinner_3.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_3.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
@@ -319,6 +467,8 @@ public class NpcGUI extends JFrame {
 		lblWytrzymalosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_4 = new JSpinner();
+
+		spinner_4.setEnabled(false);
 		spinner_4.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_4.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
@@ -326,6 +476,8 @@ public class NpcGUI extends JFrame {
 		lblInicjatywa.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_5 = new JSpinner();
+
+		spinner_5.setEnabled(false);
 		spinner_5.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_5.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
@@ -348,26 +500,38 @@ public class NpcGUI extends JFrame {
 		lblZywotnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		spinner_6 = new JSpinner();
+
+		spinner_6.setEnabled(false);
 		spinner_6.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_6.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_7 = new JSpinner();
+
+		spinner_7.setEnabled(false);
 		spinner_7.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_7.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_8 = new JSpinner();
+
+		spinner_8.setEnabled(false);
 		spinner_8.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_8.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_9 = new JSpinner();
+
+		spinner_9.setEnabled(false);
 		spinner_9.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_9.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_10 = new JSpinner();
+
+		spinner_10.setEnabled(false);
 		spinner_10.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_10.setModel(new SpinnerNumberModel(0, 0, 120, 1));
 		
 		spinner_11 = new JSpinner();
+
+		spinner_11.setEnabled(false);
 		spinner_11.setFont(new Font("Dialog", Font.PLAIN, 17));
 		spinner_11.setModel(new SpinnerNumberModel(0, 0, 500, 1));
 		GroupLayout gl_panelCechy = new GroupLayout(panelCechy);

@@ -31,10 +31,24 @@ public class Potwory {
 		this.statyPotwora = statyPotwora;
 	}
 	/**
+	 * @param statyPotwora the statyPotwora to set, @param ktora
+	 */
+	public void setStatyPotwora(int statyPotwora, int ktora) {
+		this.statyPotwora[ktora] = statyPotwora;
+	}
+	
+	
+	/**
 	 * @param cechyOpcjonalne the cechyOpcjonalne to set
 	 */
 	public void addCechyOpcjonalne(CechyPotworow cechyOpcjonalne) {
 		this.cechyOpcjonalne.add(cechyOpcjonalne);
+	}
+	/**
+	 * @param cechy the cechy to set
+	 */
+	public void setCechy(CechyPotworow cechy) {
+		this.cechy.add(cechy);
 	}
 	/**
 	 * @return the cechy

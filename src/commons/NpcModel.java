@@ -131,6 +131,45 @@ public class NpcModel implements NpcModelInterface{
 		}
 		return potworAktualny;
 	}
+
+	@Override
+	public Potwory dodajCecheModel(String cPotw) {
+		ArrayList<CechyPotworow> tablica = potworAktualny.getCechyOpcjonalne();
+		for(int i = 0; i<tablica.size(); i++)
+		{
+			
+			if(cPotw.equals(tablica.get(i).toString()))
+			{
+				CechyPotworow nowa = new CechyPotworow(tablica.get(i));
+				potworAktualny.setCechy(nowa);
+				tablica.remove(i);
+				break;	
+			}
+		}
+		return potworAktualny;
+	}
+
+	@Override
+	public Potwory usunCecheModel(String cPotw) {
+		ArrayList<CechyPotworow> tablica = potworAktualny.getCechy();
+		for(int i = 0; i<tablica.size(); i++)
+		{
+			
+			if(cPotw.equals(tablica.get(i).toString()))
+			{
+				CechyPotworow nowa = new CechyPotworow(tablica.get(i));
+				potworAktualny.addCechyOpcjonalne(nowa);
+				tablica.remove(i);
+				break;	
+			}
+		}
+		return potworAktualny;
+	}
+
+	@Override
+	public void zmienStatystykeModel(int ile, int ktora) {
+		potworAktualny.setStatyPotwora(ile, ktora);
+	}
 	
 	
 
