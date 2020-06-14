@@ -1,8 +1,12 @@
 package commons;
 
 import java.util.ArrayList;
-
-public class Potwory {
+/**
+ * 
+ * @author Tom
+ *klasa opisujaca potwora NPC
+ */
+public class Potwory implements RzutKoscia{
 	private static final String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","¯yw"};
 	private static final int IC = 12; //iloœæ cech
 	private String nazwa;
@@ -25,6 +29,14 @@ public class Potwory {
 		return statyPotwora;
 	}
 	/**
+	 * 
+	 * @param x - enum, która pozycja cechy ma byc zwrócona 
+	 * @return - zwraca wartoœæ wybranej statystki w postaci wartoœci int
+	 */
+	public int getStatyPotwora(StatyNPC x) {
+		return statyPotwora[x.ordinal()];
+	}
+	/**
 	 * @param statyPotwora the statyPotwora to set
 	 */
 	public void setStatyPotwora(int[] statyPotwora) {
@@ -35,6 +47,22 @@ public class Potwory {
 	 */
 	public void setStatyPotwora(int statyPotwora, int ktora) {
 		this.statyPotwora[ktora] = statyPotwora;
+	}
+	
+	/**
+	 * @param ile wartoœæ o ile ma byæ podniesiona cecha, @param ktora - która cecha, @param plus - czy ma byæ podniesiona czy obni¿ona
+	 */
+	public void addRemoveStatyPotwora(int ile, StatyNPC ktora, boolean plus) {
+		if(plus)
+			this.statyPotwora[ktora.ordinal()] += ile;
+		else {
+			if(this.statyPotwora[ktora.ordinal()]-ile <0) {
+				this.statyPotwora[ktora.ordinal()] = 0;
+			}else {
+				this.statyPotwora[ktora.ordinal()] -= ile;
+			}
+			
+		}
 	}
 	
 	
@@ -76,10 +104,17 @@ public class Potwory {
 		this.statyPotwora = new int[IC];
 		for(int i=0; i < IC; i++) 
 		{
-			if(staty[i].equals("-")) {
+			if(i==0)
+				this.statyPotwora[i] = Integer.parseInt(staty[i]);
+			else if(staty[i].equals("-")) {
 				staty[i] = "0";
+			}else if(i<IC-1){
+				//wprowadzenie losowoœci do statystyk potwora
+				this.statyPotwora[i] = (Integer.parseInt(staty[i]) -10)+RzutKoscia.rzutK(10, 2);
+			}else {
+				this.statyPotwora[i] = Integer.parseInt(staty[i]);
 			}
-			this.statyPotwora[i] = Integer.parseInt(staty[i]);
+			
 		}
 		cechy = new ArrayList<CechyPotworow>();
 		for(CechyPotworow cechyP:cP) {

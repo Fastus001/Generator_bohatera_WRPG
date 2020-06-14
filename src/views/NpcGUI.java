@@ -443,7 +443,7 @@ public class NpcGUI extends JFrame {
 
 		spinner_1.setEnabled(false);
 		spinner_1.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_1.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_1.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		JLabel lblUs = new JLabel("US");
 		lblUs.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
@@ -452,7 +452,7 @@ public class NpcGUI extends JFrame {
 
 		spinner_2.setEnabled(false);
 		spinner_2.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_2.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		JLabel lblSila = new JLabel("S");
 		lblSila.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
@@ -461,7 +461,7 @@ public class NpcGUI extends JFrame {
 
 		spinner_3.setEnabled(false);
 		spinner_3.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_3.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_3.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		JLabel lblWytrzymalosc = new JLabel("Wt");
 		lblWytrzymalosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
@@ -470,7 +470,7 @@ public class NpcGUI extends JFrame {
 
 		spinner_4.setEnabled(false);
 		spinner_4.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_4.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_4.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		JLabel lblInicjatywa = new JLabel("I");
 		lblInicjatywa.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
@@ -479,7 +479,7 @@ public class NpcGUI extends JFrame {
 
 		spinner_5.setEnabled(false);
 		spinner_5.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_5.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_5.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		JLabel lblZwinnosc = new JLabel("Zw");
 		lblZwinnosc.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
@@ -503,31 +503,31 @@ public class NpcGUI extends JFrame {
 
 		spinner_6.setEnabled(false);
 		spinner_6.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_6.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_6.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		spinner_7 = new JSpinner();
 
 		spinner_7.setEnabled(false);
 		spinner_7.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_7.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_7.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		spinner_8 = new JSpinner();
 
 		spinner_8.setEnabled(false);
 		spinner_8.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_8.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_8.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		spinner_9 = new JSpinner();
 
 		spinner_9.setEnabled(false);
 		spinner_9.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_9.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_9.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		spinner_10 = new JSpinner();
 
 		spinner_10.setEnabled(false);
 		spinner_10.setFont(new Font("Dialog", Font.PLAIN, 17));
-		spinner_10.setModel(new SpinnerNumberModel(0, 0, 120, 1));
+		spinner_10.setModel(new SpinnerNumberModel(0, 0, 200, 1));
 		
 		spinner_11 = new JSpinner();
 

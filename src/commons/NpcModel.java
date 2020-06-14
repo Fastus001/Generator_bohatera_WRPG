@@ -4,7 +4,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
-
+/**
+ * 
+ * @author Tom
+ *
+ */
 public class NpcModel implements NpcModelInterface{
 	ArrayList<Potwory> potworyLista;
 	ArrayList<CechyPotworow> cechyPotworowLista;
@@ -141,12 +145,106 @@ public class NpcModel implements NpcModelInterface{
 			if(cPotw.equals(tablica.get(i).toString()))
 			{
 				CechyPotworow nowa = new CechyPotworow(tablica.get(i));
+				if(nowa.toString().contains("Rozmiar")) {
+					zmianaRozmiaruNpc();
+				}
+				zmianaWartosciCechPotwora(nowa, true);
 				potworAktualny.setCechy(nowa);
 				tablica.remove(i);
+				
 				break;	
 			}
 		}
+		uaktualnijHp();
 		return potworAktualny;
+	}
+	/*
+	 * Metoda sprawdza i uaktualnia hp obiektu NPC potwór w oparciu o statystyki, cechy i rozmiar potwora
+	 */
+	public void uaktualnijHp() {
+		int hp = 0;
+		int sila = 0;
+		int wytrzymalosc = 0;
+		int silaWoli = 0;
+		String rozmiar = "";
+		//sprawdzenie czy jest twardziel
+		for (CechyPotworow cechyPotworow : potworAktualny.getCechy()) {
+			if(cechyPotworow.toString().equals("Twardziel")) {
+				hp += (int) potworAktualny.getStatyPotwora(StatyNPC.WT)/10;
+			}
+			if(cechyPotworow.toString().contains("Rozmiar")) {
+				rozmiar = cechyPotworow.toString();
+			}
+		}
+		// je¿eli nie ma podanej wielkoœci domyœlnie zak³ada ¿e rozmiar jest œredni
+		if(rozmiar.length()==0)
+			rozmiar = "Rozmiar (Œredni)";
+		
+		//obliczenie ¿ywotnoœci z rozmiaru
+		switch (rozmiar) {
+		case "Rozmiar (Drobny)": {
+			hp +=1;
+		}break;
+		case "Rozmiar (Niewielki)": {
+			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
+			hp +=wytrzymalosc;
+			
+		}break;
+		case "Rozmiar (Ma³y)": {
+			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
+			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
+			hp +=(wytrzymalosc*2)+silaWoli;
+			
+		}break;
+		case "Rozmiar (Œredni)": {
+			sila = (int)(potworAktualny.getStatyPotwora(StatyNPC.S)/10);
+			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
+			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
+			hp +=sila + (wytrzymalosc*2)+silaWoli;
+			
+		}break;
+		case "Rozmiar (Du¿y)": {
+			sila = (int)(potworAktualny.getStatyPotwora(StatyNPC.S)/10);
+			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
+			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
+			hp +=(sila + (wytrzymalosc*2)+silaWoli)*2;
+			
+		}break;
+		case "Rozmiar (Wielki)": {
+			sila = (int)(potworAktualny.getStatyPotwora(StatyNPC.S)/10);
+			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
+			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
+			hp +=(sila + (wytrzymalosc*2)+silaWoli)*4;
+			
+		}break;
+		case "Rozmiar (Monstrualny)": {
+			sila = (int)(potworAktualny.getStatyPotwora(StatyNPC.S)/10);
+			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
+			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
+			hp +=(sila + (wytrzymalosc*2)+silaWoli)*8;
+			
+		}break;
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + rozmiar);
+		}
+	
+		potworAktualny.setStatyPotwora(hp,11);
+	}
+
+
+/**
+ *metoda sprawdza aktualne cechy NPC i przernosi aktualny rozmiar do opcjonalnych, je¿eli jest. 
+ */
+	private void zmianaRozmiaruNpc() {
+		for(int i = 0; i<potworAktualny.getCechy().size();i++)
+		{
+			if(potworAktualny.getCechy().get(i).toString().contains("Rozmiar")) {
+				CechyPotworow cechaNowa = new CechyPotworow(potworAktualny.getCechy().get(i));
+				potworAktualny.getCechy().remove(i);
+				potworAktualny.getCechyOpcjonalne().add(cechaNowa);
+			}
+		}
+		
 	}
 
 	@Override
@@ -158,19 +256,80 @@ public class NpcModel implements NpcModelInterface{
 			if(cPotw.equals(tablica.get(i).toString()))
 			{
 				CechyPotworow nowa = new CechyPotworow(tablica.get(i));
+				zmianaWartosciCechPotwora(nowa, false);
 				potworAktualny.addCechyOpcjonalne(nowa);
 				tablica.remove(i);
+				
 				break;	
 			}
 		}
+		System.out.println("Tutaj");
+		uaktualnijHp();
 		return potworAktualny;
 	}
 
 	@Override
 	public void zmienStatystykeModel(int ile, int ktora) {
 		potworAktualny.setStatyPotwora(ile, ktora);
+		if(ktora == 3 || ktora == 4 || ktora == 9)
+			uaktualnijHp();
 	}
 	
-	
-
+	/**
+	 * 
+	 * @param nowa - nowa cecha
+	 * @param plus - czy cecha stwora jest dodawana do cech g³ownych czy nie. False oznacza  ¿e usuwamy...
+	 */
+	private void zmianaWartosciCechPotwora(CechyPotworow nowa,boolean plus) {
+		// TODO Auto-generated method stub
+		switch (nowa.toString()) {
+		case "Du¿y": {
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.S, plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.WT, plus);
+			potworAktualny.addRemoveStatyPotwora(5, StatyNPC.ZW, !plus);
+					}break;
+		case "Mutacja": //TODO - zrobiæ mutacje ze strony 184 w podrêczniku
+					break;
+		case "Spaczenie Umys³u": //TODO - zrobiæ mutacje ze strony 185 w podrêczniku
+			break;
+		case "Przebieg³y": {
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.INT,plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.SW, plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.OGD, plus);
+		}break;
+		case "Przywódca": {
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.SW, plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.OGD, plus);
+		}break;
+		case "Si³acz": {
+			potworAktualny.addRemoveStatyPotwora(1, StatyNPC.SZ, !plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.ZW, !plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.S, plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.WT, plus);
+		}break;
+		case "Sprytny": {
+			potworAktualny.addRemoveStatyPotwora(20, StatyNPC.INT, plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.I, plus);
+		}break;
+		case "Szybki": {
+			potworAktualny.addRemoveStatyPotwora(1, StatyNPC.SZ, plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.ZW, plus);
+		}break;
+		case "Twardy": {
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.WT, plus);
+			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.SW, plus);
+		}break;
+		case "Elita": {
+			potworAktualny.addRemoveStatyPotwora(20, StatyNPC.WW, plus);
+			potworAktualny.addRemoveStatyPotwora(20, StatyNPC.US, plus);
+			potworAktualny.addRemoveStatyPotwora(20, StatyNPC.SW, plus);
+		}break;
+		
+		
+		default:
+			System.out.println("Dodana cecha: " + nowa.toString());
+			//throw new IllegalArgumentException("Unexpected value: " + nowa.toString());
+		}
+		
+	}
 }
