@@ -7,7 +7,6 @@ import java.util.ArrayList;
  *klasa opisujaca potwora NPC
  */
 public class Potwory implements RzutKoscia{
-	private static final String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","¯yw"};
 	private static final int IC = 12; //iloœæ cech
 	private String nazwa;
 	private int [] statyPotwora;

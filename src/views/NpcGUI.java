@@ -59,10 +59,10 @@ public class NpcGUI extends JFrame {
 	private JList<Object> listOpcjonalne;
 	private JTextArea textAreaOpis;
 	private JComboBox<Object> cbWyborNPC;
-	Potwory potwor;
 	private JLabel lblNazwa;
 	private JCheckBox chckbxPowCechyStworzen;
 	private JButton btnUsun;
+	Potwory potwor;
 
 
 		
@@ -79,6 +79,15 @@ public class NpcGUI extends JFrame {
 
 
 	private void createEvents() {
+		
+		/**
+		 * Zapisanie konkretnej postaci NPC
+		 */
+		btnZapisz.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				kontroler.zapiszPostac();
+			}
+		});
 		/*
 		 * wybór konkretnego NPCa
 		 */
@@ -325,6 +334,7 @@ public class NpcGUI extends JFrame {
 		lblwybierzPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		btnZapisz = new JButton("Zapisz");
+
 		btnZapisz.setFont(new Font("Caslon Antique", Font.PLAIN, 20));
 		
 		chckbxPowCechyStworzen = new JCheckBox("Powszechne Cechy Stworze\u0144");

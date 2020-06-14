@@ -10,5 +10,6 @@ public interface NpcModelInterface {
 	Potwory dodajCecheModel(String cPotw);
 	Potwory usunCecheModel(String cPotw);
 	void zmienStatystykeModel(int ile, int ktora);
+	Potwory getNpc();
 
 }

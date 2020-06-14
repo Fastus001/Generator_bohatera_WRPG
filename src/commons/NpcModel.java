@@ -332,4 +332,9 @@ public class NpcModel implements NpcModelInterface{
 		}
 		
 	}
+
+	@Override
+	public Potwory getNpc() {
+		return potworAktualny;
+	}
 }

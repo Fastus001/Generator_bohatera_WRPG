@@ -11,4 +11,6 @@ public interface KontrolerInterface {
 	void zmianaStatystyki(int wartosc,int ktora);
 	
 	void wlaczElementyGUI();
+	
+	void zapiszPostac();
 }

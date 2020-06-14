@@ -32,6 +32,7 @@ import commons.Bohater;
 import commons.ExportToPdf;
 import commons.NpcKontroler;
 import commons.NpcModel;
+import commons.Potwory;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
@@ -84,10 +85,10 @@ public class NewGui extends JFrame {
 	private JRadioButton rdbtnMen;
 	private JRadioButton rdbtnWomen;
 	private JButton btnNowaProfesja;
-	private JList<Bohater> list;
+	private JList<Object> list;
 	
 	
-	private DefaultListModel<Bohater> listaBohaterow = new DefaultListModel<Bohater>();
+	private DefaultListModel<Object> listaBohaterow = new DefaultListModel<Object>();
 	private Bohater nowyBohater;
 	private ArrayList<Rasa> listaRas;
 	public ArrayList<Talent> listaTalentow;	
@@ -142,7 +143,7 @@ public class NewGui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				//TODO - kwestia zapisania NPCa, nie otwierania wielu kart na raz, plus jeszcze nie wiem co
 				NpcModel npcModel = new NpcModel();
-				NpcKontroler kontroler = new NpcKontroler(npcModel);
+				NpcKontroler kontroler = new NpcKontroler(npcModel, listaBohaterow);
 			}
 		});
 		
@@ -157,9 +158,18 @@ public class NewGui extends JFrame {
 		list.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				nowyBohater = new Bohater(listaBohaterow.elementAt(list.getSelectedIndex()));
-				textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
-				btnExportToPdf.setEnabled(true);
+				Object obj = listaBohaterow.elementAt(list.getSelectedIndex());
+				if(obj instanceof Bohater) {
+					nowyBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
+					textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+					btnExportToPdf.setEnabled(true);
+				}else if (obj instanceof Potwory) {
+					Potwory nowyBohater = new Potwory((Potwory) listaBohaterow.elementAt(list.getSelectedIndex()));
+					//TODO - wyœwietlenie NPCa
+					textArea.setText(nowyBohater.toString());
+					btnExportToPdf.setEnabled(false);
+				}
+
 			}
 		});
 
@@ -614,7 +624,7 @@ public class NewGui extends JFrame {
 					.addContainerGap())
 		);
 		
-		list = new JList<Bohater>(listaBohaterow);
+		list = new JList<Object>(listaBohaterow);
 
 
 

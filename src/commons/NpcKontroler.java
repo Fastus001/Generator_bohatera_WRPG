@@ -2,18 +2,23 @@ package commons;
 
 import java.awt.EventQueue;
 
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+
 import views.NewGui;
 import views.NpcGUI;
 
 public class NpcKontroler implements KontrolerInterface{
 	NpcGUI widok;
 	NpcModelInterface model;
-	
+	DefaultListModel<Object> listaZapisanychProfesji;
 
 	
-	public NpcKontroler(NpcModelInterface model) {
+	public NpcKontroler(NpcModelInterface model,DefaultListModel<Object> listaBohaterow) {
 		try {
 			this.model = model;
+			this.listaZapisanychProfesji = listaBohaterow;
 			widok = new NpcGUI(this);
 			widok.setVisible(true);
 			model.wgrajCechyPotworow();
@@ -54,6 +59,14 @@ public class NpcKontroler implements KontrolerInterface{
 	@Override
 	public void wlaczElementyGUI() {
 		widok.enableComponents();
+		
+	}
+
+	@Override
+	public void zapiszPostac() {
+		// TODO Auto-generated method stub
+		listaZapisanychProfesji.addElement(model.getNpc());
+		widok.dispose();
 		
 	}
 	
