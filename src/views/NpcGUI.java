@@ -1,43 +1,51 @@
 package views;
 
-import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
+import javax.swing.JScrollPane;
+import javax.swing.JSpinner;
+import javax.swing.JTextArea;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.ListSelectionModel;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SpinnerNumberModel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 import commons.CechyPotworow;
 import commons.KontrolerInterface;
 import commons.Potwory;
+import java.awt.event.KeyAdapter;
 
-import javax.swing.ComboBoxModel;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JSpinner;
-import javax.swing.SpinnerNumberModel;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.JLabel;
-import java.awt.Font;
-import java.util.ArrayList;
+public class NpcGUI extends JFrame implements KeyListener{
 
-import javax.swing.JComboBox;
-import javax.swing.JScrollPane;
-import javax.swing.JList;
-import javax.swing.JTextArea;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.JCheckBox;
-import javax.swing.ImageIcon;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.ChangeEvent;
 
-public class NpcGUI extends JFrame {
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -662614772020108489L;
 	KontrolerInterface kontroler;
 	private JPanel contentPane;
 	private JButton btnDodaj;
@@ -63,6 +71,8 @@ public class NpcGUI extends JFrame {
 	private JCheckBox chckbxPowCechyStworzen;
 	private JButton btnUsun;
 	Potwory potwor;
+	private JPopupMenu popupMenu;
+	private JMenuItem popMenuZmienCeche;
 
 
 		
@@ -71,7 +81,13 @@ public class NpcGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public NpcGUI(KontrolerInterface kontroler) {
+
+
+
 		this.kontroler = kontroler;
+		addKeyListener(this);
+		setFocusable(true);
+		setFocusTraversalKeysEnabled(false);
 		initComponents();
 		createEvents();
 		
@@ -79,6 +95,28 @@ public class NpcGUI extends JFrame {
 
 
 	private void createEvents() {
+		addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				requestFocusInWindow();
+			}
+		});
+
+
+		/**
+		 * Menu po ppm w oknie z cechami
+		 */
+		popMenuZmienCeche.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				if(!listCechy.isSelectionEmpty()) {
+					CechyPotworow cechyP = (CechyPotworow) listCechy.getModel().getElementAt(listCechy.getSelectedIndex());
+					String nowaNazwa = JOptionPane.showInputDialog("Podaj now¹ nazwê cechy lub zmieñ j¹", cechyP.toString());
+					//TODO -  zmiana nazwy cechy
+				}
+				
+			}
+		});
 		
 		/**
 		 * Zapisanie konkretnej postaci NPC
@@ -113,6 +151,7 @@ public class NpcGUI extends JFrame {
 				CechyPotworow cechyP = (CechyPotworow) listCechy.getModel().getElementAt(listCechy.getSelectedIndex());
 				textAreaOpis.setText(cechyP.getOpis());
 			}
+
 		});
 		
 		/*
@@ -294,6 +333,8 @@ public class NpcGUI extends JFrame {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 800, 620);
 		contentPane = new JPanel();
+
+
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
@@ -334,6 +375,7 @@ public class NpcGUI extends JFrame {
 		lblwybierzPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		
 		btnZapisz = new JButton("Zapisz");
+		btnZapisz.setToolTipText("Zapisz posta\u0107 NPC i zamknij okno.");
 
 		btnZapisz.setFont(new Font("Caslon Antique", Font.PLAIN, 20));
 		
@@ -417,17 +459,29 @@ public class NpcGUI extends JFrame {
 		textAreaOpis.setFont(new Font("Caslon Antique", Font.ITALIC, 17));
 		scrollPaneOpis.setViewportView(textAreaOpis);
 		
-		listOpcjonalne = new JList();
+		listOpcjonalne = new JList<Object>();
+		listOpcjonalne.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		listOpcjonalne.setEnabled(false);
 
 		listOpcjonalne.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		scrollPaneOpcjonalneCechy.setViewportView(listOpcjonalne);
 		
 		listCechy = new JList<Object>();
+
+
+		listCechy.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		listCechy.setEnabled(false);
 
 		listCechy.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		scrollPaneCechy.setViewportView(listCechy);
+		
+		popupMenu = new JPopupMenu();
+		addPopup(listCechy, popupMenu);
+		
+		popMenuZmienCeche = new JMenuItem("Zmie\u0144 cech\u0119");
+
+		popMenuZmienCeche.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
+		popupMenu.add(popMenuZmienCeche);
 		
 	
 		
@@ -551,67 +605,66 @@ public class NpcGUI extends JFrame {
 					.addContainerGap()
 					.addGroup(gl_panelCechy.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_panelCechy.createSequentialGroup()
-							.addGroup(gl_panelCechy.createParallelGroup(Alignment.LEADING)
+							.addGroup(gl_panelCechy.createParallelGroup(Alignment.LEADING, false)
 								.addGroup(gl_panelCechy.createSequentialGroup()
 									.addComponent(lblSz)
-									.addPreferredGap(ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+									.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 									.addComponent(spinner_0, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 								.addGroup(gl_panelCechy.createSequentialGroup()
 									.addComponent(lblWW, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(spinner_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-									.addPreferredGap(ComponentPlacement.RELATED)))
-							.addContainerGap(10, Short.MAX_VALUE))
+									.addComponent(spinner_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+							.addContainerGap(14, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblUs, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblSila, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblWytrzymalosc, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblInicjatywa, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblZwinnosc, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblZrecznosc, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_7, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblInteligencja, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_8, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblSilaWoli, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_9, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblOglada, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_10, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addContainerGap(18, Short.MAX_VALUE))
 						.addGroup(gl_panelCechy.createSequentialGroup()
 							.addComponent(lblZywotnosc, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_11, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+							.addContainerGap(18, Short.MAX_VALUE))))
 		);
 		gl_panelCechy.setVerticalGroup(
 			gl_panelCechy.createParallelGroup(Alignment.LEADING)
@@ -663,10 +716,58 @@ public class NpcGUI extends JFrame {
 					.addGroup(gl_panelCechy.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblZywotnosc, GroupLayout.PREFERRED_SIZE, 19, GroupLayout.PREFERRED_SIZE)
 						.addComponent(spinner_11, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addContainerGap(24, Short.MAX_VALUE))
+					.addContainerGap(108, Short.MAX_VALUE))
 		);
 		panelCechy.setLayout(gl_panelCechy);
 		contentPane.setLayout(gl_contentPane);
 		
 	}
+	private static void addPopup(Component component, final JPopupMenu popup) {
+		component.addMouseListener(new MouseAdapter() {
+			public void mousePressed(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			public void mouseReleased(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			private void showMenu(MouseEvent e) {
+				popup.show(e.getComponent(), e.getX(), e.getY());
+			}
+
+
+		});
+	}
+
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/**
+	 * Naciœniêcie Escape na klawiaturze usuwa focus z okien z listami cech
+	 */
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		if(e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+			listCechy.clearSelection();
+			listOpcjonalne.clearSelection();
+		}
+
+	}
+
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 }

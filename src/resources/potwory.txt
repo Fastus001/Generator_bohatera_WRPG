@@ -1,3 +1,23 @@
+Ludzie
+4,30,30,30,30,30,30,30,30,30,30,12
+Broñ +7,Uprzedzenie (wybierz jedno)
+Choroba,Rzucanie Czarów (Dowolne),Strzelanie +8 (50)
+Ludzie
+Krasnoludy
+3,40,30,30,40,30,20,40,30,50,20,16
+Broñ +7,Nienawiœæ (Zielonoskórzy),Odpornoœæ na Magiê (1),Uprzedzenie (wybierz jedno),Widzenie w Ciemnoœci,Wrogoœæ (wybierz jedn¹)
+Furia,Strzelanie +8 (50)
+Krasnoludy
+Nizio³ki
+3,20,40,20,30,30,30,40,30,40,40,10
+Broñ +5,Rozmiar (Ma³y),Widzenie w Ciemnoœci
+Skryty,Strzelanie +7 (25)
+Nizio³ki
+Elfy (Leœne i Wysokie)
+5,40,40,30,30,50,40,40,40,40,30,13
+Broñ +7,Uprzedzenie (wybierz dwa),Widzenie w Ciemnoœci,Wrogoœæ (wybierz jedn¹)
+Magiczny,Mieszkaniec Lasu,Odpornoœæ na Magiê,Rzucanie Czarów (Dowolne),Skryty,Strzelanie +9 (150),Tropiciel
+Elfy (Leœne i Wysokie)
 Ogr
 6,30,20,45,45,10,25,20,20,30,20,30
 Broñ +8,Pancerz (1),Rozmiar (Du¿y),Uprzedzenie (Szczup³e Osoby),Widzenie w Ciemnoœci,¯ar³oczny

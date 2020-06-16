@@ -166,7 +166,7 @@ public class NewGui extends JFrame {
 				}else if (obj instanceof Potwory) {
 					Potwory nowyBohater = new Potwory((Potwory) listaBohaterow.elementAt(list.getSelectedIndex()));
 					//TODO - wyœwietlenie NPCa
-					textArea.setText(nowyBohater.toString());
+					textArea.setText(nowyBohater.wyswietl());
 					btnExportToPdf.setEnabled(false);
 				}
 
@@ -474,6 +474,7 @@ public class NewGui extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		textArea = new JTextArea();
+		textArea.setWrapStyleWord(true);
 		textArea.setMargin(new Insets(4, 4, 3, 3));
 		textArea.setLineWrap(true);
 		textArea.setBounds(new Rectangle(5, 5, 5, 5));

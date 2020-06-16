@@ -124,6 +124,8 @@ Nie do Zdarcia
 Bez wzglêdu na to,jak mocno obrywa stworzenie,wci¹¿ siê podnosi. Wszystkie Rany Krytyczne,których wynikiem nie jest œmieræ,mog¹ zostaæ wyleczone; wystarczy po³¹czyæ potrzebne czêœci cia³a w odpowiednich miejscach,mo¿e unieruchamiaj¹c je klamrami lub du¿ymi ko³kami,a stwór zaraz bêdzie gotowy funkcjonowaæ dalej. Nawet „œmieræ” mo¿na „wyleczyæ”,jeœli do cia³a zostan¹ przymocowane odpowiednie czêœci takie jak stracona g³owa. Jeœli nast¹pi zgon,a wszystkie czêœci cia³a bêd¹ na swoim miejscu,stworzenie mo¿e wykonywaæ po swojej œmierci Wymagaj¹cy (+0) Test Odpornoœci z PS wynosz¹cym 6 na pocz¹tku ka¿dej Rundy (przez tyle Rund,ile wynosi jego Bonus z Wytrzyma³oœci). Jeœli Test jest udany,stworzenie z charkotem budzi siê do ¿ycia z 1 punktem ¯ywotnoœci.
 Nienawiœæ (Obiekt)
 Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
+Nienawiœæ (Zielonoskórzy)
+Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
 Nienawiœæ (Drapie¿niki)
 Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
 Nienawiœæ (¯ywe Istoty)
@@ -145,6 +147,8 @@ Stworzenie jest odwa¿ne,nadzwyczajnie g³upie albo po prostu da³o siê ponieœæ chw
 Ochrona (wartoœæ)
 Stworzenie jest magiczne,nosi specjalny talizman albo ma szczêœcie – niektóre ciosy po prostu go nie trafiaj¹. Rzuæ 1k10 po ka¿dym otrzymanym ciosie. Jeœli stworzenie wyrzuci tyle,ile wynosi podana wartoœæ,lub wiêcej,cios zostaje zignorowany,nawet jeœli jest to Trafienie Krytyczne.
 Odpornoœæ na Magiê (wartoœæ)
+Efekt wywierany przez magiê na stworzenie jest ograniczony. PS dowolnego wp³ywaj¹cego na stworzenie czaru zmniejszany jest o podan¹ wartoœæ. Zatem Odpornoœæ na Magiê 2 zmniejsza PS o 2.
+Odpornoœæ na Magiê (1)
 Efekt wywierany przez magiê na stworzenie jest ograniczony. PS dowolnego wp³ywaj¹cego na stworzenie czaru zmniejszany jest o podan¹ wartoœæ. Zatem Odpornoœæ na Magiê 2 zmniejsza PS o 2.
 O¿ywieniec
 O¿ywieñcy nie s¹ ani ¿ywi,ani martwi,co oznacza,¿e nie potrzebuj¹ powietrza,jedzenia,wody... Ta cecha u¿ywana jest najczêœciej wtedy,gdy czary,cuda i inne zdolnoœci obejmuj¹ tylko O¿ywieñców.
@@ -203,25 +207,43 @@ Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w gr
 Rój
 Roje to wielkie iloœci tych samych stworów dzia³aj¹cych jak jeden. Rój liczy siê jako jeden stwór,który ignoruje zasady efektów psychologicznych (patrz strona 190) i mo¿e ignorowaæ zasady Zwi¹zania walk¹,gdy wykonuje Ruch. Jeœli rój trafi przeciwnika,aktywuje zasadê Œmiertelny cios (nawet jeœli nie zabi³ przeciwnika – patrz strona 160). Wszyscy przeciwnicy Zwi¹zani walk¹ z rojem automatycznie otrzymuj¹ 1 Ranê pod koniec ka¿dej Rundy,gdy rój opada na wszystko w pobli¿u. Rój ma piêæ razy wiêcej ¯ywotnoœci ni¿ normalny okaz danego stworzenia i dostaje +10 do Walki Wrêcz. Wszelkie próby strzelania do roju maj¹ premiê +40 do trafienia. Rój ignoruje wszelkie zasady Rozmiaru stworzeñ.
 Rzucanie Czarów (ró¿ne)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Dowolne)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Magia Prosta)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Metalu)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Niebios)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Ognia)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Œwiat³a)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (¯ycia)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Chaos)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Demonologia)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Nekromancja)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Œmieræ)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Zwierz¹t)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Cienia)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Nurgle)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Slaanesh)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Rzucanie Czarów (Tzeentch)
-Stworzenie potrafi rzucaæ wszystkie zaklêcia Tradycji Magii podanej w nawiasie.
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Guœlarstwo)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarów (Czarownictwo)
+Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
 Sieæ (wartoœæ)
 Stworzenie mo¿e tworzyæ sieci s³u¿¹ce do ³apania niebacznych wrogów. Za ka¿dym razem,gdy stwór trafia przeciwników,dostaj¹ oni 1 Stan Pochwycenie o Sile równej podanej wartoœci. Patrz: strona 168.
 Sieæ (40)
@@ -258,6 +280,8 @@ Strzelanie +8 (50)
 Stworzenie dysponuje broni¹ dystansow¹. Broñ zadaje podane Obra¿enia,a jej zasiêg w metrach podany jest w nawiasie.
 Strzelanie +7 (25)
 Stworzenie dysponuje broni¹ dystansow¹. Broñ zadaje podane Obra¿enia,a jej zasiêg w metrach podany jest w nawiasie.
+Strzelanie +9 (150)
+Stworzenie dysponuje broni¹ dystansow¹. Broñ zadaje podane Obra¿enia,a jej zasiêg w metrach podany jest w nawiasie.
 Sza³ Bojowy
 Stworzenie mo¿e wpadaæ w Sza³ Bojowy. Patrz: strona 190.
 Szybki
@@ -286,6 +310,10 @@ Uprzedzenie (Obiekt)
 Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
 Uprzedzenie (Szczup³e Osoby)
 Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
+Uprzedzenie (wybierz jedno)
+Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
+Uprzedzenie (wybierz dwa)
+Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
 Wampiryczny
 Stworzenie ¿ywi siê krwi¹ i czerpie z tego wielk¹ si³ê fizyczn¹. Za ka¿dym razem,gdy wykona udane Ugryzienie odpowiedniego przeciwnika,leczy tyle ¯ywotnoœci,ile traci jego przeciwnik. Takie picie krwi to jedyny sposób,w jaki mo¿e siê leczyæ.
 Widzenie w Ciemnoœci
@@ -299,6 +327,8 @@ Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
 Wrogoœæ (Zielonoskórzy)
 Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
 Wrogoœæ (Wszystko)
+Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
+Wrogoœæ (wybierz jedn¹)
 Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
 Wspinacz
 Stworzenie potrafi bez wysi³ku wspinaæ siê po pionowych powierzchniach,a nawet poruszaæ siê po suficie,gotowe opaœæ na niczego niespodziewaj¹c¹ siê ofiarê. Porusza siê z pe³n¹ Szybkoœci¹ po dowolnej odpowiedniej powierzchni i automatycznie przechodzi wszystkie Testy Wspinaczki.
