@@ -14,5 +14,5 @@ public interface KontrolerInterface {
 	
 	void wlaczElementyGUI();
 	
-	void zapiszPostac();
+	void zapiszPostac(String nazwaOpis);
 }

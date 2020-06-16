@@ -334,7 +334,8 @@ public class NpcModel implements NpcModelInterface{
 	}
 
 	@Override
-	public Potwory getNpc() {
+	public Potwory getNpc(String nazwaOpis) {
+		potworAktualny.setNazwa(nazwaOpis);
 		return potworAktualny;
 	}
 

@@ -182,7 +182,7 @@ public class Potwory implements RzutKoscia{
 	public String wyswietl() {
 		StringBuilder textBuild = new StringBuilder();
 		//nazwa
-		textBuild.append(this.toString()+"\nStatystyki:");
+		textBuild.append(this.toString()+"\nStatystyki: ");
 		//staty
 		for(int i = 0; i < IC; i++)
 		{

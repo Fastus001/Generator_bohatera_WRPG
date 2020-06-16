@@ -63,9 +63,9 @@ public class NpcKontroler implements KontrolerInterface{
 	}
 
 	@Override
-	public void zapiszPostac() {
+	public void zapiszPostac(String nazwaOpis) {
 		// TODO Auto-generated method stub
-		listaZapisanychProfesji.addElement(model.getNpc());
+		listaZapisanychProfesji.addElement(model.getNpc(nazwaOpis));
 		widok.dispose();
 		
 	}
