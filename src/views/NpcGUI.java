@@ -112,7 +112,7 @@ public class NpcGUI extends JFrame implements KeyListener{
 				if(!listCechy.isSelectionEmpty()) {
 					CechyPotworow cechyP = (CechyPotworow) listCechy.getModel().getElementAt(listCechy.getSelectedIndex());
 					String nowaNazwa = JOptionPane.showInputDialog("Podaj now¹ nazwê cechy lub zmieñ j¹", cechyP.toString());
-					//TODO -  zmiana nazwy cechy
+					kontroler.zmienNazweCechy(cechyP.getNazwa(), nowaNazwa);
 				}
 				
 			}
@@ -754,7 +754,6 @@ public class NpcGUI extends JFrame implements KeyListener{
 	 */
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub
 		if(e.getKeyCode() == KeyEvent.VK_ESCAPE) {
 			listCechy.clearSelection();
 			listOpcjonalne.clearSelection();

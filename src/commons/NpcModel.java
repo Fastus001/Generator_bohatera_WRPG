@@ -337,4 +337,19 @@ public class NpcModel implements NpcModelInterface{
 	public Potwory getNpc() {
 		return potworAktualny;
 	}
+
+	@Override
+	public Potwory zmienNazweCechyModel(String stara, String nowa) {
+		
+		for(int i = 0; i<potworAktualny.getCechy().size(); i++)
+		{
+			if(stara.equals(potworAktualny.getCechy().get(i).toString()))
+			{
+				potworAktualny.getCechy().get(i).setNazwa(nowa);
+				break;
+			}
+		}
+		
+		return potworAktualny;
+	}
 }

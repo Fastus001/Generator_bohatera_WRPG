@@ -137,6 +137,13 @@ public class Potwory implements RzutKoscia{
 	}
 	
 	/**
+	 * @param nazwa the nazwa to set
+	 */
+	public void setNazwa(String nazwa) {
+		this.nazwa = nazwa;
+	}
+
+	/**
 	 * @param ile wartoœæ o ile ma byæ podniesiona cecha, @param ktora - która cecha, @param plus - czy ma byæ podniesiona czy obni¿ona
 	 */
 	public void addRemoveStatyPotwora(int ile, StatyNPC ktora, boolean plus) {

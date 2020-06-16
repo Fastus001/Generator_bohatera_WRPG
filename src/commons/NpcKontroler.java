@@ -69,6 +69,12 @@ public class NpcKontroler implements KontrolerInterface{
 		widok.dispose();
 		
 	}
+
+	@Override
+	public void zmienNazweCechy(String stara, String nowa) {
+		widok.dodajPotworaDoGui(model.zmienNazweCechyModel(stara, nowa));
+		
+	}
 	
 
 
