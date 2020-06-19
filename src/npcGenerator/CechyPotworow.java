@@ -1,4 +1,4 @@
-package commons;
+package npcGenerator;
 
 public class CechyPotworow {
 	@Override

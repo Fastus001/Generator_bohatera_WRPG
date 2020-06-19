@@ -1,4 +1,4 @@
-package commons;
+package npcGenerator;
 
 import java.awt.EventQueue;
 

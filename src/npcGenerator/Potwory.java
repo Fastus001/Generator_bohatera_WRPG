@@ -1,6 +1,8 @@
-package commons;
+package npcGenerator;
 
 import java.util.ArrayList;
+
+import commons.RzutKoscia;
 /**
  * 
  * @author Tom

@@ -2,6 +2,8 @@ package commons;
 
 import java.util.*;
 
+import npcGenerator.Cechy;
+
 public class Bohater {
 
 	private String imieNazwisko;

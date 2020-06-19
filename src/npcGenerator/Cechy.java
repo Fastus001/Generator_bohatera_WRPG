@@ -1,4 +1,6 @@
-package commons;
+package npcGenerator;
+
+import commons.RzutKoscia;
 
 //generator cech postaci, 
 public class Cechy implements RzutKoscia{

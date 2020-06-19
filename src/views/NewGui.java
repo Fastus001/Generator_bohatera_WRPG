@@ -30,14 +30,13 @@ import javax.swing.border.EtchedBorder;
 
 import commons.Bohater;
 import commons.ExportToPdf;
-import commons.NpcKontroler;
-import commons.NpcModel;
-import commons.Potwory;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
 import commons.Umiejetnosc;
-
+import npcGenerator.NpcKontroler;
+import npcGenerator.NpcModel;
+import npcGenerator.Potwory;
 
 import java.awt.Rectangle;
 import javax.swing.UIManager;

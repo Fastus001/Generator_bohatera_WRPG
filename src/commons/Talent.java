@@ -1,5 +1,7 @@
 package commons;
 
+import npcGenerator.Cechy;
+
 public class Talent implements Comparable<Talent>{
 	
 	static String[] CECHYNAZWA = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","Brak", "1", "2","4"};

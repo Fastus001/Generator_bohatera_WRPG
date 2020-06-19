@@ -34,9 +34,10 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import commons.CechyPotworow;
-import commons.KontrolerInterface;
-import commons.Potwory;
+import npcGenerator.CechyPotworow;
+import npcGenerator.KontrolerInterface;
+import npcGenerator.Potwory;
+
 import java.awt.event.KeyAdapter;
 import javax.swing.border.EtchedBorder;
 import java.awt.Rectangle;

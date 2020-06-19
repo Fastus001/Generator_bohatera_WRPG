@@ -1,4 +1,4 @@
-package commons;
+package npcGenerator;
 
 public interface KontrolerInterface {
 	//PCS - Powrzechne Cechy Stworzeñ

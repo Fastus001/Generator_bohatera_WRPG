@@ -1,4 +1,4 @@
-package commons;
+package npcGenerator;
 
 import java.io.BufferedReader;
 import java.io.File;
