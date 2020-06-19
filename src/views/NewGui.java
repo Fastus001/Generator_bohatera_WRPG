@@ -165,7 +165,6 @@ public class NewGui extends JFrame {
 					btnExportToPdf.setEnabled(true);
 				}else if (obj instanceof Potwory) {
 					Potwory nowyBohater = new Potwory((Potwory) listaBohaterow.elementAt(list.getSelectedIndex()));
-					//TODO - wyœwietlenie NPCa
 					textArea.setText(nowyBohater.wyswietl());
 					btnExportToPdf.setEnabled(false);
 				}
