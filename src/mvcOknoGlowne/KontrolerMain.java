@@ -15,6 +15,7 @@ public class KontrolerMain {
 	 * @param m - model interfejs
 	 */
 	public KontrolerMain(ModulMainInterface m) {
+		this.model = m;
 		// TODO Auto-generated constructor stub
 	}
 
