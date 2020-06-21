@@ -34,6 +34,8 @@ import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
 import commons.Umiejetnosc;
+import mvcOknoGlowne.GenBohKontrolerInterface;
+import mvcOknoGlowne.GenBohModelInterface;
 import npcGenerator.NpcKontroler;
 import npcGenerator.NpcModel;
 import npcGenerator.Potwory;
@@ -68,6 +70,8 @@ public class NewGui extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	GenBohModelInterface model;
+	GenBohKontrolerInterface kontroler;
 	private String urlSavaPdf = null;
 	//Components
 	private JPanel contentPane;
@@ -76,57 +80,32 @@ public class NewGui extends JFrame {
 	private JComboBox<String> cbDoswiadczenie;
 	private JButton btnNowyBohater;
 	private JButton btnPodniesPoziomPr;
+	private JButton btsSaveHero;
+	private JButton btnExportToPdf;
+	private JButton btnNPC;
 	private JCheckBox chckbxShowTalents;
 	private JTextArea textArea;
 	private JScrollPane scrlPaneLista;
-	private JButton btsSaveHero;
+
 	private ButtonGroup buttonGroup = new ButtonGroup();
 	private JRadioButton rdbtnMen;
 	private JRadioButton rdbtnWomen;
 	private JButton btnNowaProfesja;
 	private JList<Object> list;
-	
-	
 	private DefaultListModel<Object> listaBohaterow = new DefaultListModel<Object>();
-	private Bohater nowyBohater;
-	private ArrayList<Rasa> listaRas;
-	public ArrayList<Talent> listaTalentow;	
-	private ArrayList<Profesja> listaProfesji;
-	private ArrayList<Profesja> profesjePierwszyPoziom;
-	private ArrayList<Umiejetnosc> listaUm;
-	private Profesja nowaProfesja;
-	private JButton btnExportToPdf;
-	private JButton btnNPC;
-
-	
-
 	
 	
 	/**
-	 * Launch the application.
+	 * Create the frame.
 	 */
-	public static void main(String[] args) {
+	public NewGui(GenBohKontrolerInterface kontroler, GenBohModelInterface model ) {
+		this.kontroler = kontroler;
+		this.model = model;
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					NewGui frame = new NewGui();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
-	public NewGui() {
 		initComponents();
 		createEvents();
 	}
@@ -203,7 +182,14 @@ public class NewGui extends JFrame {
 		btnNowyBohater.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				try {
+				int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
+				model.nowyBohater(opcjaDoswiadczenia);
+				//wyswietlenie nowego bohatera
+				textArea.setText(kontroler.wyswietlBohatera());
+				
+				
+				///////////////
+				/*try {
 					Rasa losowaRasa = listaRas.get(losowanieRasy());
 					Profesja losowaProfesja;
 					
@@ -228,7 +214,7 @@ public class NewGui extends JFrame {
 					
 							
 					//wyswietlenie nowego bohatera
-					textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+					
 					//System.out.println(checkBox1.isSelected());
 					//nowyBohater.closeBohater();
 					btnPodniesPoziomPr.setEnabled(true);
@@ -242,7 +228,7 @@ public class NewGui extends JFrame {
 					String sStackTrace = sw.toString(); // stack trace as a string
 					textArea.append(sStackTrace);
 				}
-
+*/
 			}
 		});
 		
@@ -461,7 +447,20 @@ public class NewGui extends JFrame {
 		});
 		
 	}
+	
+	
+	/**
+	 * @return the chckbxShowTalents czy jest zaznaczony czy nie
+	 */
+	public boolean getChckbxShowTalents() {
+		return chckbxShowTalents.isSelected();
+	}
 
+
+
+	/**
+	 * 
+	 */
 	private void initComponents() {
 		setTitle("Generator Postaci Warhammer 4ed");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource("/resources/sledgehammer.png")));
@@ -483,22 +482,15 @@ public class NewGui extends JFrame {
 		btnNowyBohater.setIcon(new ImageIcon(NewGui.class.getResource("/resources/knight (1).png")));
 		btnNowyBohater.setSelectedIcon(null);
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
-		
-		WczytajTalenty();
-		//do wczytania z pliku jar
-		//WczytajTalentyStream();
-		
-		cbRasa = new JComboBox<Object>(WczytajRasy());
 
+		cbRasa = new JComboBox<Object>();
 		cbRasa.setToolTipText("Wybierz ras\u0119, je\u017Celi nie chcesz aby by\u0142a ona losowa.");
-		
 		cbProfesja = new JComboBox<Profesja>();
 
 
 
 		cbProfesja.setToolTipText("Wybierz profesj\u0119 dla bohatera.");
-		
-		WczytajProfesje();
+
 		
 		cbDoswiadczenie = new JComboBox<String>();
 		cbDoswiadczenie.setModel(new DefaultComboBoxModel<String>(new String[] {"Brak", "Pocz\u0105tkuj\u0105ca", "\u015Arednio zaawansowana", "Do\u015Bwiadczona"}));
@@ -622,9 +614,9 @@ public class NewGui extends JFrame {
 					.addContainerGap())
 		);
 		
-		list = new JList<Object>(listaBohaterow);
-
-
+		//TODO - 2 - lista bohaterów
+		//listaBohaterow
+		list = new JList<Object>();
 
 		scrlPaneLista.setViewportView(list);
 		scrollPane.setViewportView(textArea);
@@ -633,236 +625,17 @@ public class NewGui extends JFrame {
 		
 	}
 	
-	public void WczytajTalenty(){
-		try{
-				listaTalentow = new ArrayList<Talent>();
-				File plik = new File("../GeneratorBohatera/src/resources/talenty.txt");
-				FileReader czytaj = new FileReader(plik);
-				BufferedReader czytajBuf = new BufferedReader(czytaj);
-				String wiersz = null;
-				
-				while((wiersz = czytajBuf.readLine()) !=null){
-					if(wiersz.length()==0)
-						break;
-					tworzTalent(wiersz);
-				}
-				czytajBuf.close();
-				//wyswietlTalentyWszystkie();
-		}catch(Exception ex){
-			ex.printStackTrace();
-			System.out.println("Talenty nie wczytane!!");
-		}
-}//koniec metody
-	
-	/*
-	 * wersja do wczytania z pliku .JAR
-	 */
-	public void WczytajTalentyStream(){
-		
-		try{
-				listaTalentow = new ArrayList<Talent>();
-				ClassLoader classLoader2 = getClass().getClassLoader();
-				InputStream inputStream2 = classLoader2.getResourceAsStream("resources/talenty.txt");
-				InputStreamReader strumien = new InputStreamReader(inputStream2);
-				BufferedReader czytajBuf = new BufferedReader(strumien);
-				String wiersz = null;
-				
-				while((wiersz = czytajBuf.readLine()) !=null){
-					if(wiersz.length()==0)
-						break;
-					tworzTalent(wiersz);
-				}
-				czytajBuf.close();
-				//wyswietlTalentyWszystkie();
-		}catch(Exception ex){
-			textArea.append(ex.toString());
-			ex.printStackTrace();
-			System.out.println("Talenty nie wczytane!!");
-		}
-}//koniec metody
-	
-	public Object[] WczytajRasy(){
-		
-		try{
-			listaRas = new ArrayList<Rasa>();
-			/*
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/rasy.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			/*/
-			String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
-			File plik = new File(urlRasy);
-			FileReader czytaj = new FileReader(plik);
-			
-			BufferedReader czytajBuf = new BufferedReader(czytaj);
-			String wiersz = null;
-			
-			
-			while((wiersz = czytajBuf.readLine()) !=null){
-					if(wiersz.length()==0)
-						break;
-					String nazwa = wiersz;
-					wiersz = czytajBuf.readLine();
-					String wynik1[] = wiersz.split(",");
-					wiersz = czytajBuf.readLine();
-					String wynik2[] = wiersz.split(",");
-					wiersz = czytajBuf.readLine();
-					String talenty[] = wiersz.split(",");
-					wiersz = czytajBuf.readLine();
-					//zamiana stringów na tablice intów -cechy bazowe
-					int [] tablica = new int[10];
-					for(int i = 0; i<10; i++){
-						tablica[i] = Integer.parseInt(wynik1[i]);
-					}
-					//zapisanie umiejetnosci jako obiekty
-					ArrayList<Umiejetnosc> umiej = new ArrayList<Umiejetnosc>();
-					for(String x:wynik2){
-						String[] doZapisaniaUm = x.split("/");
-						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0,false);
-						umiej.add(tempUm);
-					}
-					//konwersja talentow na obiekty
-					ArrayList<Talent> listaZnTalnetow = new ArrayList<Talent>();
-					
-					for(String x:talenty){
-						String[] doZapTalenty = x.split("/");
-						Talent tempTlnt = new Talent(doZapTalenty[0],Integer.parseInt(doZapTalenty[1]),doZapTalenty[2]);
-						//todo dodanie opisu do talentow
-						tempTlnt.setOpis(dodajOpisDoTalentu(tempTlnt));
-						listaZnTalnetow.add(tempTlnt);
-					}
-					
-					
-					Rasa rs = new Rasa(nazwa, tablica ,umiej , listaZnTalnetow, wiersz);
-					listaRas.add(rs);	
-				}	
-			czytajBuf.close();
-			//wyswietlRasyWszystkie();
-			//wczytajProfesjePrzycisk.setEnabled(true);
-		}catch(Exception ex){
-			textArea.append(ex.toString());
-			ex.printStackTrace();
-		}
-		
-		return listaRas.toArray();
-		
-}//koniec metody
-	
-	public void WczytajProfesje(){
-		
-		
-		try{
-			listaProfesji = new ArrayList<Profesja>();
-			/*
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/profesje.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			*/
-			String urlProfesja = "../GeneratorBohatera/src/resources/profesje.txt";
-			File plik = new File(urlProfesja);
-			FileReader czytaj = new FileReader(plik);
-			
-			
-			BufferedReader czytajB = new BufferedReader(czytaj);
-			
-			String wiersz = null;
-			while((wiersz = czytajB.readLine()) != null){
-				if(wiersz.length()==0)
-					break;
-				String nazwaProfesji = wiersz;
-				String sciezkaProfesji = czytajB.readLine();
-				//rasy
-				wiersz = czytajB.readLine();
-				String dostepneRasy[] = wiersz.split(",");
-				
-				//dostêpne umiejêtnoœci
-				wiersz = czytajB.readLine();
-				String dostepneUm[] = wiersz.split(",");
-				
-				ArrayList<Umiejetnosc> umiej = new ArrayList<Umiejetnosc>();
-				for(String x:dostepneUm){
-						String[] doZapisaniaUm = x.split("/");
-						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0,false);
-						umiej.add(tempUm);
-					}
-				
-				//dostêpne talenty
-				wiersz = czytajB.readLine();
-				String dostepneTlnt[] = wiersz.split(",");
-				
-				ArrayList<Talent> listaZnTalentow = new ArrayList<Talent>();
-					
-					for(String x:dostepneTlnt){
-						String[] doZapTalenty = x.split("/");
-						Talent tempTlnt = new Talent(doZapTalenty[0],Integer.parseInt(doZapTalenty[1]),doZapTalenty[2]);
-						tempTlnt.setOpis(dodajOpisDoTalentu(tempTlnt));
-						listaZnTalentow.add(tempTlnt);
-					}
-				
-				
-				//cechy rozwoju
-				wiersz = czytajB.readLine();
-				String wynik3[] = wiersz.split(",");
-				int [] cechyRozwoju = new int [wynik3.length];
-				for (int i = 0; i<wynik3.length; i++){
-					cechyRozwoju[i] = Integer.parseInt(wynik3[i]);
-				}
-				//poziom profesji
-				int poziomProfesji = Integer.parseInt(czytajB.readLine());
-				
-				Profesja prof = new Profesja(nazwaProfesji, sciezkaProfesji, poziomProfesji, umiej,listaZnTalentow,dostepneRasy,cechyRozwoju,false );
-				listaProfesji.add(prof);
 
-			}
-			czytajB.close();
-			//wyswietlProfesjeWszystkoPrzycisk();
-			btnNowyBohater.setEnabled(true);
-			
-			
-		}catch(Exception ex){
-			textArea.append(ex.toString());
-			ex.printStackTrace();
-		}
-}//koniec metody
-	
-	/////////////////////////////////////////////////////////////////////////
-	//zapisanie zaimportowanych z pliku txt opsiów w obiektach talent;
-	/////////////////////////////////////////////////////////////////////////
-	public void tworzTalent(String wierszDanych){
-		String[] wynik = wierszDanych.split("/");
-		Talent tl = new Talent(wynik[0],Integer.parseInt(wynik[1]),wynik[2], wynik[3]);
-		listaTalentow.add(tl);
-	}
-	
-	public String dodajOpisDoTalentu(Talent tal) {
-		if(listaTalentow.size()>0) {
-			for(Talent temp:listaTalentow){
-				if(temp.toString().equals(tal.toString())){
-					return temp.getOpisString();
-				}
-			}
-		}
-		return "brak opis - ups";
-	}
 	
 
-	/////////////////////////////////////////////////////////////////////////
-	//szansa wylosowanie jak w podrêczniku 4ed
-	/////////////////////////////////////////////////////////////////////////	
-	private int losowanieRasy() {
-		int rzut = (int) (Math.random()*100)+1;
-		if(rzut <91){
-			return 0;
-		}else if(rzut >90 && rzut <95){
-			return 2;
-		}else if(rzut>94 && rzut <99){
-			return 1;
-		}else if(rzut==99){
-			return 3;
-		}else{
-			return 4;
-		}
-	}
+	
+	
+	
+	
+	
+
+
+
 	
 	/*
 	 * wyszukanie profesji z konkretnym poziomem
@@ -878,22 +651,7 @@ public class NewGui extends JFrame {
 		return nowa;
 	}
 	
-	public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {
-		profesjePierwszyPoziom = new ArrayList<Profesja>();
-			
-			//sprawdzenie profesji p¹d k¹tem poziomy (lvl1) oraz tego jaka rasa w danej profesji jest dostêpna
-			int poziomPierwszy = 1;
-			for(Profesja p:listaProfesji){
-				if(p.getPoziom()==poziomPierwszy){
-					for(int i = 0; i < p.getLiczbaDostepnychRas(); i++){						
-						String nazwaP = losowaRasa.getName();
-						if(nazwaP.equals(p.dostepnaRasa[i])){
-						profesjePierwszyPoziom.add(p);							
-						}
-					}	
-				}
-			}
-	}
+
 		
 	/////////////////////////////////////////////////////////////////////////
 	//konwersja wiersza z pliku txt na umiejêtnoœci zapisywane w tablicy

@@ -7,6 +7,7 @@ package mvcOknoGlowne;
  * @author Tom
  *
  */
-public interface ModulMainInterface {
+public interface GenBohKontrolerInterface {
+	String wyswietlBohatera();
 
 }
