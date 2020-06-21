@@ -10,11 +10,15 @@ import views.NewGui;
 import views.NpcGUI;
 
 public class NpcKontroler implements KontrolerInterface{
-	NpcGUI widok;
-	NpcModelInterface model;
-	DefaultListModel<Object> listaZapisanychProfesji;
+	private NpcGUI widok;
+	private NpcModelInterface model;
+	private DefaultListModel<Object> listaZapisanychProfesji;
 
-	
+	/**
+	 * 
+	 * @param model - model interfesj klasy model
+	 * @param listaBohaterow - podstawowy model listy z g³ównego okna aplikacji potrzebne do zapisania NPCa
+	 */
 	public NpcKontroler(NpcModelInterface model,DefaultListModel<Object> listaBohaterow) {
 		try {
 			this.model = model;
