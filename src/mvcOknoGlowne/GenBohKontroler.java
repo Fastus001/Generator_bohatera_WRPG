@@ -9,6 +9,7 @@ import java.awt.EventQueue;
 
 import javax.swing.UIManager;
 
+import commons.Rasa;
 import views.NewGui;
 
 public class GenBohKontroler implements GenBohKontrolerInterface{
@@ -27,10 +28,20 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 			e.printStackTrace();
 		}
 		model.wczytajDane();
+		
 	}
 	@Override
 	public String wyswietlBohatera() {
 		return model.wyswietlNowegoBohatera(widok.getChckbxShowTalents());
 	}
+	@Override
+	public void selectRasa(Rasa rs) {
+		widok.setCbProfesja(model.getProfesjePierwszyPoziom(rs));
+	}
+	@Override
+	public void setRacaCbBox() {
+		widok.setCbRasa(model.getRasaArray());	
+	}
+
 
 }

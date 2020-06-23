@@ -57,6 +57,8 @@ import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
+import javax.swing.ComboBoxModel;
+
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.KeyEvent;
@@ -75,7 +77,7 @@ public class NewGui extends JFrame {
 	private String urlSavaPdf = null;
 	//Components
 	private JPanel contentPane;
-	private JComboBox<Profesja> cbProfesja;
+	private JComboBox<Object> cbProfesja;
 	private JComboBox<Object> cbRasa;
 	private JComboBox<String> cbDoswiadczenie;
 	private JButton btnNowyBohater;
@@ -182,35 +184,23 @@ public class NewGui extends JFrame {
 		btnNowyBohater.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
-				model.nowyBohater(opcjaDoswiadczenia);
+				int exp = cbDoswiadczenie.getSelectedIndex();
+				int rasa = cbRasa.getSelectedIndex();
+				int prof = cbProfesja.getSelectedIndex();
+				boolean plec;
+				if(rdbtnMen.isSelected())
+					plec = true;
+				else {
+					plec = false;
+				}
+				model.nowyBohater(rasa, prof,exp, plec);
 				//wyswietlenie nowego bohatera
 				textArea.setText(kontroler.wyswietlBohatera());
 				
 				
 				///////////////
 				/*try {
-					Rasa losowaRasa = listaRas.get(losowanieRasy());
-					Profesja losowaProfesja;
-					
-					if(cbRasa.getSelectedIndex()!= -1){
-						losowaRasa = (Rasa) cbRasa.getSelectedItem();
-					}
-					
-					
-					if(cbProfesja.getSelectedIndex()!= -1){
-						losowaProfesja = (Profesja) cbProfesja.getSelectedItem();
-					}else{
-						szukajProfesjiPierwszyPoziom(losowaRasa);
-						losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
-					}
-					if(rdbtnMen.isSelected())
-						nowyBohater = new Bohater(losowaRasa,losowaProfesja, true);
-					else
-						nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
-					
-					int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
-					nowyBohater.doswiadczenieBohatera(opcjaDoswiadczenia);
+
 					
 							
 					//wyswietlenie nowego bohatera
@@ -334,20 +324,19 @@ public class NewGui extends JFrame {
 		cbRasa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Rasa wybor = (Rasa) cbRasa.getSelectedItem();
-				
-				szukajProfesjiPierwszyPoziom(wybor);
-				
-				cbProfesja.removeAllItems();
-				Collections.sort(profesjePierwszyPoziom);
-				for(Profesja p:profesjePierwszyPoziom){
-					cbProfesja.addItem(p);
-				}
-				cbProfesja.setEnabled(true);
-				
-				textArea.append(wybor.toString()+"\n");
-				if(btnNowaProfesja.isEnabled()) {
-					btnNowaProfesja.setEnabled(false);
-				}
+				kontroler.selectRasa(wybor);
+
+			}
+		});
+		
+		cbRasa.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				ComboBoxModel<Object> cbModel = cbRasa.getModel();
+				if(cbModel.getSize() == 0)
+					{
+						kontroler.setRacaCbBox();
+					}
 			}
 		});
 		
@@ -393,12 +382,11 @@ public class NewGui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				//if (btnPodniesPoziomPr.isEnabled()) 
 				//{
-					
+					/*
 					if(nowyBohater!=null) 
 					{
-					/*
-					 * sprawdzamy czy combo box profesje jest wybrany, bo by³y problemy gdy postaæ by³a utworzona i zmienia³o siê rasê...
-					 */
+					//sprawdzamy czy combo box profesje jest wybrany, bo by³y problemy gdy postaæ by³a utworzona i zmienia³o siê rasê...
+					 
 					int select = cbProfesja.getSelectedIndex();
 					System.out.println("Kod selected item = " + select);
 					if(select >= 0) {
@@ -415,7 +403,7 @@ public class NewGui extends JFrame {
 					}
 						
 					}//koniec if(nowy bohater...
-					
+					*/
 				//}
 			}
 			
@@ -449,6 +437,30 @@ public class NewGui extends JFrame {
 	}
 	
 	
+	/**
+	 * @param cbRasa the cbRasa to set
+	 */
+	public void setCbRasa(Object[] cbRasa) {
+		this.cbRasa.setModel(new DefaultComboBoxModel<Object>(cbRasa));
+	}
+
+
+
+	/**
+	 * @param cbProfesja the cbProfesja to set
+	 */
+	public void setCbProfesja(Object[] cbProf) {
+		this.cbProfesja.removeAllItems();
+		this.cbProfesja.setModel(new DefaultComboBoxModel<Object>(cbProf));
+		this.cbProfesja.setEnabled(true);
+		if(btnNowaProfesja.isEnabled()) {
+			btnNowaProfesja.setEnabled(false);
+		}
+		
+	}
+
+
+
 	/**
 	 * @return the chckbxShowTalents czy jest zaznaczony czy nie
 	 */
@@ -484,8 +496,9 @@ public class NewGui extends JFrame {
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 
 		cbRasa = new JComboBox<Object>();
+
 		cbRasa.setToolTipText("Wybierz ras\u0119, je\u017Celi nie chcesz aby by\u0142a ona losowa.");
-		cbProfesja = new JComboBox<Profesja>();
+		cbProfesja = new JComboBox<Object>();
 
 
 

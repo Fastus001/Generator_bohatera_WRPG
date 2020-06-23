@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import javax.swing.plaf.ListUI;
 
@@ -218,7 +219,7 @@ public boolean WczytajRasy(){
 					}
 					
 					
-					Rasa rs = new Rasa(nazwa, tablica ,umiej , listaZnTalnetow, wiersz);
+					Rasa rs = new Rasa(nazwa, tablica ,umiej,listaZnTalnetow, wiersz);
 					listaRas.add(rs);	
 				}	
 			czytajBuf.close();
@@ -259,7 +260,7 @@ private int losowanieRasy() {
 	}
 }
 public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {
-	profesjePierwszyPoziom = new ArrayList<Profesja>();
+		profesjePierwszyPoziom.clear();
 		
 		//sprawdzenie profesji p¹d k¹tem poziomy (lvl1) oraz tego jaka rasa w danej profesji jest dostêpna
 		int poziomPierwszy = 1;
@@ -276,30 +277,31 @@ public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {
 }
 
 @Override
-public void nowyBohater(int exp) {
+public void nowyBohater(int rasa, int prof,int exp, boolean plec) {
+	System.out.println("Numer rasy " + rasa);
 	try {
-		Rasa losowaRasa = listaRas.get(losowanieRasy());
 		Profesja losowaProfesja;
-		szukajProfesjiPierwszyPoziom(losowaRasa);
-		losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
-		
-		/*if(cbRasa.getSelectedIndex()!= -1){
-			losowaRasa = (Rasa) cbRasa.getSelectedItem();
-		}*/
-		
-		/*
-		if(cbProfesja.getSelectedIndex()!= -1){
-			losowaProfesja = (Profesja) cbProfesja.getSelectedItem();
-		}else{
+		Rasa losowaRasa;
+		//sprawdzenie wybopru rasy, je¿eli brak wyboru to losowanie, inaczej wybór z listy
+		if(rasa == -1) {
+			losowaRasa = listaRas.get(losowanieRasy());
 			szukajProfesjiPierwszyPoziom(losowaRasa);
-			losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
+		}else {
+			losowaRasa = (Rasa) listaRas.get(rasa);
+			szukajProfesjiPierwszyPoziom(losowaRasa);
+			System.out.println(losowaRasa);
 		}
-		if(rdbtnMen.isSelected())
+		//sprawdzenie wyboru profesji, je¿eli brak wyboru to losowanie, inaczej wybór z listy
+		if(prof == -1) {
+			losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
+		}else {
+			losowaProfesja = (Profesja) profesjePierwszyPoziom.get(prof);
+		}
+
+		if(plec)
 			nowyBohater = new Bohater(losowaRasa,losowaProfesja, true);
 		else
 			nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
-		*/
-		nowyBohater = new Bohater(losowaRasa,losowaProfesja, true);
 		nowyBohater.doswiadczenieBohatera(exp);
 		
 				
@@ -323,6 +325,16 @@ public void nowyBohater(int exp) {
 @Override
 public String wyswietlNowegoBohatera(boolean jak) {
 	return nowyBohater.wyswietlBohatera(jak);
+}
+@Override
+public Object[] getRasaArray() {
+	return listaRas.toArray();
+}
+@Override
+public Object[] getProfesjePierwszyPoziom(Rasa rs) {
+	szukajProfesjiPierwszyPoziom(rs);
+	
+	return profesjePierwszyPoziom.toArray();
 }
 
 }
