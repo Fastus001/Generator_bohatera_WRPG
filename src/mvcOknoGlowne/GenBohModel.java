@@ -29,6 +29,7 @@ public class GenBohModel implements GenBohModelInterface{
 	private ArrayList<Umiejetnosc> listaUm;
 	private Bohater nowyBohater;
 	private Profesja nowaProfesja;
+	private ObserwatorModel obserwator;
 
 	public GenBohModel() {
 		listaRas = new ArrayList<Rasa>();
@@ -277,7 +278,7 @@ public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {
 }
 
 @Override
-public void nowyBohater(int rasa, int prof,int exp, boolean plec) {
+public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 	System.out.println("Numer rasy " + rasa);
 	try {
 		Profesja losowaProfesja;
@@ -303,7 +304,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec) {
 		else
 			nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
 		nowyBohater.doswiadczenieBohatera(exp);
-		
+		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
 				
 		//wyswietlenie nowego bohatera
 		//TODO textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
@@ -322,10 +323,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec) {
 	}
 	
 }
-@Override
-public String wyswietlNowegoBohatera(boolean jak) {
-	return nowyBohater.wyswietlBohatera(jak);
-}
+
 @Override
 public Object[] getRasaArray() {
 	return listaRas.toArray();
@@ -335,6 +333,19 @@ public Object[] getProfesjePierwszyPoziom(Rasa rs) {
 	szukajProfesjiPierwszyPoziom(rs);
 	
 	return profesjePierwszyPoziom.toArray();
+}
+@Override
+public void zarejestrujObserwatora(ObserwatorModel o) {
+	this.obserwator = o;
+	
+}
+@Override
+public void wyrejestrujObserwatora(ObserwatorModel o) {
+	this.obserwator = null;	
+}
+@Override
+public String wyswietlNowegoBohatera(boolean jak) {
+	return nowyBohater.wyswietlBohatera(jak);
 }
 
 }

@@ -36,6 +36,7 @@ import commons.Talent;
 import commons.Umiejetnosc;
 import mvcOknoGlowne.GenBohKontrolerInterface;
 import mvcOknoGlowne.GenBohModelInterface;
+import mvcOknoGlowne.ObserwatorModel;
 import npcGenerator.NpcKontroler;
 import npcGenerator.NpcModel;
 import npcGenerator.Potwory;
@@ -66,7 +67,7 @@ import javax.swing.ImageIcon;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
-public class NewGui extends JFrame {
+public class NewGui extends JFrame implements ObserwatorModel{
 
 	/**
 	 * 
@@ -103,6 +104,7 @@ public class NewGui extends JFrame {
 	public NewGui(GenBohKontrolerInterface kontroler, GenBohModelInterface model ) {
 		this.kontroler = kontroler;
 		this.model = model;
+		this.model.zarejestrujObserwatora((ObserwatorModel) this);
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Throwable e) {
@@ -193,9 +195,9 @@ public class NewGui extends JFrame {
 				else {
 					plec = false;
 				}
-				model.nowyBohater(rasa, prof,exp, plec);
+				model.nowyBohater(rasa, prof,exp, plec, chckbxShowTalents.isSelected());
 				//wyswietlenie nowego bohatera
-				textArea.setText(kontroler.wyswietlBohatera());
+				//textArea.setText(kontroler.wyswietlBohatera());
 				
 				
 				///////////////
@@ -695,5 +697,13 @@ public class NewGui extends JFrame {
 	
 	public ArrayList<Talent> getListaTalentow(){
 		return listaTalentow;
+	}
+
+
+
+	@Override
+	public void aktualizujPostac(String opis) {
+		textArea.setText(opis);
+		
 	}
 }

@@ -20,8 +20,8 @@ public class GeneratorImion {
 		
 	public String getFullName(String nazwaRasy, boolean plec) {
 		
-		String nazwa = "Kosza≈Çek Opa≈Çek";
-		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Le≈õne elfy"))
+		String nazwa = "Kosza≥ek Opa≥ek";
+		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Leúne elfy"))
 			nazwaRasy = "Elfy";
 		
 		/*
@@ -33,7 +33,7 @@ public class GeneratorImion {
 			case "Krasnoludy": nazwa = wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_MESKIE.ordinal()); 
 			nazwa += " " + wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_MESKIE.ordinal());
 			nazwa += zaimekKrasnoludy(plec); nazwa += " z klanu " + wczytajImieNazwisko(Imie.NAZWA_KLANU_KR.ordinal());break;
-			case "Nizio≈Çki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_MESKIE.ordinal());
+			case "Nizio≥ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_MESKIE.ordinal());
 			nazwa += " " + wczytajImieNazwisko(Imie.NIZIOLEK_NAZWISKO.ordinal());break;
 			case "Elfy": nazwa = wczytajImieNazwisko(Imie.PIERWSZY_CZ_ELF.ordinal())+wczytajImieNazwisko(Imie.DRUGI_CZ_ELF.ordinal());
 			nazwa +=wczytajImieNazwisko(Imie.TRZECI_CZ_ELF_MESKIE.ordinal());break;
@@ -44,7 +44,7 @@ public class GeneratorImion {
 			case "Krasnoludy": nazwa = wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_ZENSKIE.ordinal()); 
 			nazwa += " " + wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_ZENSKIE.ordinal());
 			nazwa += zaimekKrasnoludy(plec); nazwa += " z klanu " + wczytajImieNazwisko(Imie.NAZWA_KLANU_KR.ordinal());break;
-			case "NizioÔøΩki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_ZENSK.ordinal());
+			case "Nizio≥ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_ZENSK.ordinal());
 			nazwa += " " + wczytajImieNazwisko(Imie.NIZIOLEK_NAZWISKO.ordinal());break;
 			case "Elfy": nazwa = wczytajImieNazwisko(Imie.PIERWSZY_CZ_ELF.ordinal())+wczytajImieNazwisko(Imie.DRUGI_CZ_ELF.ordinal());
 			nazwa +=wczytajImieNazwisko(Imie.TRZECI_CZ_ELF_ZENSKIE.ordinal());break;

@@ -10,7 +10,6 @@ import commons.Rasa;
  *
  */
 public interface GenBohKontrolerInterface {
-	String wyswietlBohatera();
 	void selectRasa(Rasa rs);
 	void setRacaCbBox();
 
