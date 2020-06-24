@@ -31,16 +31,25 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 		
 	}
 	@Override
-	public String wyswietlBohatera() {
-		return model.wyswietlNowegoBohatera(widok.getChckbxShowTalents());
-	}
-	@Override
 	public void selectRasa(Rasa rs) {
 		widok.setCbProfesja(model.getProfesjePierwszyPoziom(rs));
 	}
 	@Override
 	public void setRacaCbBox() {
 		widok.setCbRasa(model.getRasaArray());	
+	}
+	@Override
+	public void aktywujPodniesPoziom() {
+		widok.setBtnPodniesPoziomPrEnabled(true);
+		
+	}
+	@Override
+	public void aktywujZapiszPostac() {
+		widok.setBtsSaveHeroEnabled(true);
+	}
+	@Override
+	public void aktywujNowaProfesja() {
+		widok.setBtnNowaProfesjaEnabled(true);
 	}
 
 

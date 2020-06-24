@@ -186,33 +186,17 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnNowyBohater.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				int exp = cbDoswiadczenie.getSelectedIndex();
-				int rasa = cbRasa.getSelectedIndex();
-				int prof = cbProfesja.getSelectedIndex();
+				try {
 				boolean plec;
 				if(rdbtnMen.isSelected())
 					plec = true;
 				else {
 					plec = false;
 				}
-				model.nowyBohater(rasa, prof,exp, plec, chckbxShowTalents.isSelected());
-				//wyswietlenie nowego bohatera
-				//textArea.setText(kontroler.wyswietlBohatera());
-				
-				
-				///////////////
-				/*try {
-
-					
-							
-					//wyswietlenie nowego bohatera
-					
-					//System.out.println(checkBox1.isSelected());
-					//nowyBohater.closeBohater();
-					btnPodniesPoziomPr.setEnabled(true);
-					btsSaveHero.setEnabled(true);
-					
-					btnNowaProfesja.setEnabled(false);
+				model.nowyBohater(cbRasa.getSelectedIndex(), cbProfesja.getSelectedIndex(),cbDoswiadczenie.getSelectedIndex(), plec, chckbxShowTalents.isSelected());
+				kontroler.aktywujPodniesPoziom();
+				kontroler.aktywujZapiszPostac();
+				kontroler.aktywujNowaProfesja();
 				} catch (Exception e2) {
 					StringWriter sw = new StringWriter();
 					PrintWriter pw = new PrintWriter(sw);
@@ -220,7 +204,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 					String sStackTrace = sw.toString(); // stack trace as a string
 					textArea.append(sStackTrace);
 				}
-*/
 			}
 		});
 		
@@ -459,6 +442,24 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			btnNowaProfesja.setEnabled(false);
 		}
 		
+	}
+
+
+
+	/**
+	 * @param - set enabled buttons
+	 */
+	public void setBtnPodniesPoziomPrEnabled(boolean e) {
+		this.btnPodniesPoziomPr.setEnabled(e);
+	}
+	public void setBtsSaveHeroEnabled(boolean e) {
+		this.btsSaveHero.setEnabled( e);
+	}
+	/**
+	 * @param e the btnNowaProfesja to set if is enabled or not
+	 */
+	public void setBtnNowaProfesjaEnabled(Boolean e) {
+		this.btnNowaProfesja.setEnabled(e);;
 	}
 
 
