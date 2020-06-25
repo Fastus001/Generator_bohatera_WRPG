@@ -8,6 +8,7 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import javax.swing.JOptionPane;
 import javax.swing.plaf.ListUI;
 
 import commons.Bohater;
@@ -346,6 +347,94 @@ public void wyrejestrujObserwatora(ObserwatorModel o) {
 @Override
 public String wyswietlNowegoBohatera(boolean jak) {
 	return nowyBohater.wyswietlBohatera(jak);
+}
+@Override
+public void podniesPoziom(int pr, int exp, boolean talenty) {
+	Profesja profesjaNowyPoziom = null;
+	/*
+	 * wgranie akutalnej nazwy profesji do stringa
+	 * wgranie aktualnego poziomu aktualnie wybranej klasy postaci
+	 */
+	String nazwaProfesji = nowyBohater.getProfesjaNameMain();
+	int poziomProfesji = nowyBohater.getCurrentProfPoziom()+1;
+	
+	if(poziomProfesji>4)
+	{
+		if(!nowyBohater.getProfesjaUkonczona())
+		{
+		int potwierdznie = JOptionPane.showConfirmDialog(null, "Postaæ osi¹gne³a maksymalny poziom profesji,czy chcesz aby \"ukoñczy³a\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
+			if(potwierdznie == JOptionPane.OK_OPTION)
+				{
+				nowyBohater.ukonczPoziomProfesji(5);
+				obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
+				}
+			
+		}else {
+			JOptionPane.showMessageDialog(null, "Postaæ osi¹gnê³a maksymalny poziom, wybierz inn¹ profesjê jeœli dalej chcesz rozwijaæ postaæ!", "Maksymalny poziom", JOptionPane.INFORMATION_MESSAGE);
+		}
+	}else {
+		
+				
+	/*
+	 * TODO - w tym miejsu zmieniæ automatyczne podnoszenie wczesniej wybranej profesji
+	 * i dodanie opcji, ¿e w przypadku juz posiadania rozwiniec danej profesji to podnosi o jeden
+	 * oczywiscie z uwaglêdnieniem tego ¿e maks to 4
+	 */
+	
+	//int testCbBoxa = cbProfesja.getSelectedIndex();
+	//sprawdzenie czy s¹ obiekty z CB profesje, je¿eli s¹, to idziemy dalej
+	if(pr != -1)
+	{
+		//wczytanie wybranej profesji (lvl1) do zmiennej
+		profesjaNowyPoziom = (Profesja) listaProfesji.get(pr);
+		
+
+			
+			//sprawdzenie historii bohatera czy ta profesja juz nie by³a wczesniej rozwijana
+			int sprawdzenieHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(profesjaNowyPoziom);
+			System.out.println("Sprawdzenie poziomu profesji " + sprawdzenieHistoriiProfesji );
+			if(sprawdzenieHistoriiProfesji != -1)
+			{
+				/*
+				 * jeœli nie by³a to przypisujemy nowy poziom profesji jaka ma byæ wyszukana do rozwiniecia, plus nazwa tej profesji, przy za³o¿eniu
+				 * ¿e poziom nie jest wy¿szy od 4 
+				 */
+				
+				if((sprawdzenieHistoriiProfesji+1) <5)
+				{
+					System.out.println("Sprawdzenie poziomu 2 = " + sprawdzenieHistoriiProfesji);
+					nazwaProfesji = profesjaNowyPoziom.toString();
+					poziomProfesji = sprawdzenieHistoriiProfesji+1;
+					System.out.println("Sprawdzenie poziomu 3 (nazwa profesji) = " + nazwaProfesji);
+					System.out.println("Sprawdzenie poziomu 3 (poziom profesji) = " + poziomProfesji);
+				}else {
+					JOptionPane.showMessageDialog(null, "Wybrana profesja posiada ju¿ maksymlany poziom, postaæ awansuje we wczeœniej wybranej profesji", "Maksymalny poziom wybranej profesjii!!", JOptionPane.INFORMATION_MESSAGE);
+				}								
+				System.out.println("Poziom tej samej profesji z najwy¿szym poziomem z historii to  = " + sprawdzenieHistoriiProfesji);
+				
+			}
+	}
+	
+	
+	for(Profesja p: listaProfesji)
+	{
+		if(p.toString().equals(nazwaProfesji) && (p.getPoziom() == poziomProfesji))
+		{
+			profesjaNowyPoziom = new Profesja(p);
+		}
+	}
+	
+			
+	if(profesjaNowyPoziom != null)
+	{
+	nowyBohater.nowaProfesja(profesjaNowyPoziom);
+
+	nowyBohater.doswiadczenieBohatera(exp);
+	obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));	
+	}
+	}//koniec else
+
+	
 }
 
 }

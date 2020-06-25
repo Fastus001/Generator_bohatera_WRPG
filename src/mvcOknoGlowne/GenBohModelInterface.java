@@ -20,6 +20,13 @@ public interface GenBohModelInterface {
 	 * @param opisTalentow - czy talent ma byæ wyœwietlany czy nie
 	 */
 	void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean opisTalentow);
+	/**
+	 * 
+	 * @param t - wyswietl talent
+	 * @param p - numer profesji
+	 * @param exp - opcja doœwiadczenia postaci
+	 */
+	void podniesPoziom(int p, int exp, boolean t);
 	
 	/**
 	 * @param jak - czy z talentami czy bez
