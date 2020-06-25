@@ -187,13 +187,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public void actionPerformed(ActionEvent e) 
 			{
 				try {
-				boolean plec;
-				if(rdbtnMen.isSelected())
-					plec = true;
-				else {
-					plec = false;
-				}
-				model.nowyBohater(cbRasa.getSelectedIndex(), cbProfesja.getSelectedIndex(),cbDoswiadczenie.getSelectedIndex(), plec, chckbxShowTalents.isSelected());
+				model.nowyBohater(cbRasa.getSelectedIndex(), cbProfesja.getSelectedIndex(),cbDoswiadczenie.getSelectedIndex(), rdbtnMen.isSelected(), chckbxShowTalents.isSelected());
 				kontroler.aktywujPodniesPoziom();
 				kontroler.aktywujZapiszPostac();
 				kontroler.aktywujNowaProfesja();
@@ -224,7 +218,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public void actionPerformed(ActionEvent e) {
 				Rasa wybor = (Rasa) cbRasa.getSelectedItem();
 				kontroler.selectRasa(wybor);
-
 			}
 		});
 		
@@ -247,31 +240,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnNowaProfesja.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				//pytanie czy wczesniejsza sciezka ma byæ ukoñczona
-				if(!nowyBohater.getProfesjaUkonczona())
-				{
-					int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma byæ ukoñczony przed zmian¹ profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
-					if(potwierdzenie == JOptionPane.OK_OPTION) 
-					{
-						nowyBohater.ukonczPoziomProfesji(nowyBohater.getCurrentProfPoziom()+1);
-					}
-				}
-
-				
-				int sprawdzHistorieProfesji = nowyBohater.sprawdzHistorieProfesji(nowaProfesja);
-				
-				if(sprawdzHistorieProfesji == -1) {
-					nowyBohater.nowaProfesja(nowaProfesja);
-					int opcjaDoswiadczenia = cbDoswiadczenie.getSelectedIndex();
-					nowyBohater.doswiadczenieBohatera(opcjaDoswiadczenia);
-					//wyswietlenie nowego bohatera
-					textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
-					btnNowaProfesja.setEnabled(false);
-				}
-				
-				if(!btnPodniesPoziomPr.isEnabled())
-					btnPodniesPoziomPr.setEnabled(true);
-
+				model.nowaProfesja(cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected(), btnPodniesPoziomPr.isSelected());
 			}
 		});
 		
@@ -279,6 +248,8 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		
 		cbProfesja.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				//TODO
 				//if (btnPodniesPoziomPr.isEnabled()) 
 				//{
 					/*
@@ -620,5 +591,19 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	public void aktualizujPostac(String opis) {
 		textArea.setText(opis);
 		
+	}
+
+
+
+	@Override
+	public void wylaczbtnNowaProfesja() {
+		btnNowaProfesja.setEnabled(false);
+	}
+
+
+
+	@Override
+	public void wlaczPrzyciskbtnPodniesPoziomPr() {
+		btnPodniesPoziomPr.setEnabled(true);
 	}
 }

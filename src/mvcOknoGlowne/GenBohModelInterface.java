@@ -27,6 +27,13 @@ public interface GenBohModelInterface {
 	 * @param exp - opcja doœwiadczenia postaci
 	 */
 	void podniesPoziom(int p, int exp, boolean t);
+	/**
+	 * 
+	 * @param exp - doœwiadczenie postaci
+	 * @param t - wyswietlanie talentów
+	 * @param p - czy btnPodniesPoziomPr jest w³¹czony czy nie
+	 */
+	void nowaProfesja(int exp, boolean t, boolean p);
 	
 	/**
 	 * @param jak - czy z talentami czy bez
@@ -37,5 +44,6 @@ public interface GenBohModelInterface {
 	Object [] getProfesjePierwszyPoziom(Rasa rs);
 	void zarejestrujObserwatora(ObserwatorModel o);
 	void wyrejestrujObserwatora(ObserwatorModel o);
+	
 	
 }
