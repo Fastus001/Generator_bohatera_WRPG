@@ -536,7 +536,9 @@ public class Bohater {
 	
 
 	
-	/*
+	/**
+	 * @param Profesja - nowa profesja
+	 * @return - je¿eli nie by³o jeszcze takiej profesji to zwraca -1, w innym wypadku zwraca poziom wczesniej rozwijanej 
 	 * Sprawdzenie czy dana profesja juz nie byï¿½a wczeï¿½niej rozwijana u danego bohatera
 	 * jeï¿½eli nie bï¿½dzie to zwraca -1, inaczej podaje poziom profesji
 	 */

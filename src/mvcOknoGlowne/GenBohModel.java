@@ -23,6 +23,11 @@ import commons.Umiejetnosc;
  *
  */
 public class GenBohModel implements GenBohModelInterface{
+	//rasa wybrana w comboBoxie w widoku
+	private Rasa wybranaRasa;
+	//profesja wybrana w CBoxie w widoku
+	private Profesja wybranaProfesja;
+
 	private ArrayList<Rasa> listaRas;
 	private ArrayList<Talent> listaTalentow;	
 	private ArrayList<Profesja> listaProfesji;
@@ -38,6 +43,7 @@ public class GenBohModel implements GenBohModelInterface{
 		listaProfesji = new ArrayList<Profesja>();
 		profesjePierwszyPoziom = new ArrayList<Profesja>();
 		listaUm = new ArrayList<Umiejetnosc>();
+
 	}
 	/**
 	 * wczytuje z zasobów rasy, profesje, talenty, umiejetnosci
@@ -306,7 +312,8 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 			nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
 		nowyBohater.doswiadczenieBohatera(exp);
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
-				
+		wybranaRasa = new Rasa(losowaRasa);
+		wybranaProfesja = new Profesja(losowaProfesja);
 		//wyswietlenie nowego bohatera
 		//TODO textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
 		//System.out.println(checkBox1.isSelected());
@@ -323,6 +330,30 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		//TODO textArea.append(sStackTrace);
 	}
 	
+}
+/**
+ * @return the wybranaRasa
+ */
+public Rasa getWybranaRasa() {
+	return wybranaRasa;
+}
+/**
+ * @return the wybranaProfesja
+ */
+public Profesja getWybranaProfesja() {
+	return wybranaProfesja;
+}
+/**
+ * @param wybranaRasa the wybranaRasa to set
+ */
+public void setWybranaRasa(Rasa wybranaRasa) {
+	this.wybranaRasa = wybranaRasa;
+}
+/**
+ * @param wybranaProfesja the wybranaProfesja to set
+ */
+public void setWybranaProfesja(Profesja wybranaProfesja) {
+	this.wybranaProfesja = wybranaProfesja;
 }
 
 @Override
@@ -349,7 +380,7 @@ public String wyswietlNowegoBohatera(boolean jak) {
 	return nowyBohater.wyswietlBohatera(jak);
 }
 @Override
-public void podniesPoziom(int pr, int exp, boolean talenty) {
+public void podniesPoziom(int exp, boolean talenty) {
 	Profesja profesjaNowyPoziom = null;
 	/*
 	 * wgranie akutalnej nazwy profesji do stringa
@@ -373,11 +404,8 @@ public void podniesPoziom(int pr, int exp, boolean talenty) {
 			JOptionPane.showMessageDialog(null, "Postaæ osi¹gnê³a maksymalny poziom, wybierz inn¹ profesjê jeœli dalej chcesz rozwijaæ postaæ!", "Maksymalny poziom", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}else{
-	//sprawdzenie czy s¹ obiekty z CB profesje, je¿eli s¹, to idziemy dalej
-	if(pr != -1)
-	{
 		//wczytanie wybranej profesji (lvl1) do zmiennej
-		profesjaNowyPoziom = (Profesja) listaProfesji.get(pr);
+		profesjaNowyPoziom = nowyBohater.getCurrentProfesja();
 		
 			//sprawdzenie historii bohatera czy ta profesja juz nie by³a wczesniej rozwijana
 			int sprawdzenieHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(profesjaNowyPoziom);
@@ -397,7 +425,6 @@ public void podniesPoziom(int pr, int exp, boolean talenty) {
 				}								
 				System.out.println("Poziom tej samej profesji z najwy¿szym poziomem z historii to  = " + sprawdzenieHistoriiProfesji);				
 			}
-	}
 		
 	for(Profesja p: listaProfesji)
 	{
@@ -431,10 +458,10 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	}
 
 	
-	int sprawdzHistorieProfesji = nowyBohater.sprawdzHistorieProfesji(nowaProfesja);
+	int sprawdzHistorieProfesji = nowyBohater.sprawdzHistorieProfesji(wybranaProfesja);
 	
 	if(sprawdzHistorieProfesji == -1) {
-		nowyBohater.nowaProfesja(nowaProfesja);
+		nowyBohater.nowaProfesja(wybranaProfesja);
 		nowyBohater.doswiadczenieBohatera(exp);
 		//wyswietlenie nowego bohatera
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
@@ -444,5 +471,49 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	if(!przycisk)
 		obserwator.wlaczPrzyciskbtnPodniesPoziomPr();	
 }//koniec metody nowaProfesja
+/**
+ * @return the nowyBohater
+ */
+public Bohater getNowyBohater() {
+	return nowyBohater;
+}
+@Override
+public Bohater postacBohaterModel() {
+	return this.getNowyBohater();
+}
+@Override
+public void setRasa(Rasa r) {
+	if(r.getName().equals(nowyBohater.getRasaName())) {
+		obserwator.wlaczPrzyciskbtnPodniesPoziomPr();
+	}
+	wybranaRasa = r;
+	
+}
+@Override
+public void setProfesja(Profesja p) {
+	//je¿eli rasa nie zosta³a zmieniona to mo¿emy dzia³aæ
+	if(wybranaRasa.getName().equals(nowyBohater.getRasaName()))
+	{
+		int test = nowyBohater.sprawdzHistorieProfesji(p);
+		//postaæ wczeœniej nie rozwija³a danej profesji, mo¿na w³¹czyc opcjê nowa profesja
+		if(test== -1) {
+			obserwator.wlaczbtnNowaProfesja();
+		}else {
+			obserwator.wylaczbtnNowaProfesja();
+		}
+		wybranaProfesja = p;
+	}else {
+		JOptionPane.showMessageDialog(null, "Zmieni³eœ rasê, nie mo¿esz modyfikowaæ postaci do momentu gdy wybór rasy bêdzie zgodny z aktulanie towrzon¹ postaci¹.");
+		obserwator.wylaczbtnNowaProfesja();
+		obserwator.wylaczPrzicskPodniesPoziomPr();
+	}
+
+	
+}
+@Override
+public void opisPostaciTalenty(boolean talenty) {
+	if(nowyBohater != null)
+		obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
+}
 
 }

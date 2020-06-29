@@ -3,6 +3,8 @@
  */
 package mvcOknoGlowne;
 
+import commons.Bohater;
+import commons.Profesja;
 import commons.Rasa;
 
 /**
@@ -23,10 +25,9 @@ public interface GenBohModelInterface {
 	/**
 	 * 
 	 * @param t - wyswietl talent
-	 * @param p - numer profesji
 	 * @param exp - opcja doœwiadczenia postaci
 	 */
-	void podniesPoziom(int p, int exp, boolean t);
+	void podniesPoziom(int exp, boolean t);
 	/**
 	 * 
 	 * @param exp - doœwiadczenie postaci
@@ -44,6 +45,14 @@ public interface GenBohModelInterface {
 	Object [] getProfesjePierwszyPoziom(Rasa rs);
 	void zarejestrujObserwatora(ObserwatorModel o);
 	void wyrejestrujObserwatora(ObserwatorModel o);
+	Bohater postacBohaterModel();
+	void setRasa(Rasa r);
+	void setProfesja(Profesja p);
+	/**
+	 * 
+	 * @param talenty - czy maj¹ byæ wyswietlane czy nie
+	 */
+	void opisPostaciTalenty(boolean talenty);
 	
 	
 }

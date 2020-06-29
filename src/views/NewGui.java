@@ -160,6 +160,14 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				listaBohaterow.addElement(nowy);
 			}
 		});
+		/**
+		 * w³¹czenie/wy³¹czenie pokazywania talentów
+		 */
+		chckbxShowTalents.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				model.opisPostaciTalenty(chckbxShowTalents.isSelected());
+			}
+		});
 		
 		///////////////////////////////////////////////////////////////
 		list.setCellRenderer(new DefaultListCellRenderer() {
@@ -190,7 +198,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				model.nowyBohater(cbRasa.getSelectedIndex(), cbProfesja.getSelectedIndex(),cbDoswiadczenie.getSelectedIndex(), rdbtnMen.isSelected(), chckbxShowTalents.isSelected());
 				kontroler.aktywujPodniesPoziom();
 				kontroler.aktywujZapiszPostac();
-				kontroler.aktywujNowaProfesja();
 				} catch (Exception e2) {
 					StringWriter sw = new StringWriter();
 					PrintWriter pw = new PrintWriter(sw);
@@ -207,7 +214,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnPodniesPoziomPr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				model.podniesPoziom(cbProfesja.getSelectedIndex(), cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected());
+				model.podniesPoziom(cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected());
 			}
 		});
 		
@@ -217,6 +224,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		cbRasa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Rasa wybor = (Rasa) cbRasa.getSelectedItem();
+				model.setRasa(wybor);
 				kontroler.selectRasa(wybor);
 			}
 		});
@@ -243,13 +251,28 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				model.nowaProfesja(cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected(), btnPodniesPoziomPr.isSelected());
 			}
 		});
-		
+		cbProfesja.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if(cbProfesja.getModel().getSize()== 0)
+				{
+					
+					JOptionPane.showMessageDialog(null, "Najpierw trzeba wybraæ rasê, aby mo¿na by³o wybraæ odpowiedni¹ profesjê.");
+				}
+			}
+		});
 
 		
 		cbProfesja.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				//TODO
+				if(cbProfesja.getModel().getSize()!=0)
+				{
+					Profesja prof = (Profesja) cbProfesja.getSelectedItem();
+					model.setProfesja(prof);
+				}
+
+
+				//TODO	
 				//if (btnPodniesPoziomPr.isEnabled()) 
 				//{
 					/*
@@ -390,6 +413,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 
 
+
 		cbProfesja.setToolTipText("Wybierz profesj\u0119 dla bohatera.");
 
 		
@@ -406,6 +430,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 		
 		chckbxShowTalents = new JCheckBox("Wy\u015Bwietl talenty");
+
 		chckbxShowTalents.setSelected(true);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -605,5 +630,19 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	@Override
 	public void wlaczPrzyciskbtnPodniesPoziomPr() {
 		btnPodniesPoziomPr.setEnabled(true);
+	}
+
+
+
+	@Override
+	public void wlaczbtnNowaProfesja() {
+		btnNowaProfesja.setEnabled(true);
+	}
+
+
+
+	@Override
+	public void wylaczPrzicskPodniesPoziomPr() {
+		btnPodniesPoziomPr.setEnabled(false);
 	}
 }
