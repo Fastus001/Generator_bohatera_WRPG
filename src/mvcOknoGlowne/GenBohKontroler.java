@@ -21,6 +21,7 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 	 */
 	public GenBohKontroler(GenBohModelInterface model) {
 		this.model = model;
+		
 		try {
 			widok = new NewGui(this, model);
 			widok.setVisible(true);
@@ -40,8 +41,7 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 	}
 	@Override
 	public void aktywujPodniesPoziom() {
-		widok.setBtnPodniesPoziomPrEnabled(true);
-		
+		widok.setBtnPodniesPoziomPrEnabled(true);	
 	}
 	@Override
 	public void aktywujZapiszPostac() {
@@ -50,6 +50,14 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 	@Override
 	public void aktywujNowaProfesja() {
 		widok.setBtnNowaProfesjaEnabled(true);
+	}
+	@Override
+	public void aktywujExportDoPdf() {
+		widok.setBtnExportToPdfActive();
+	}
+	@Override
+	public void wylaczExportDoPdf() {
+		widok.setBtnExportToPdfInactive();
 	}
 
 

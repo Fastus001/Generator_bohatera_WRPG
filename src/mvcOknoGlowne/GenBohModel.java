@@ -9,10 +9,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import javax.swing.DefaultListModel;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.ListUI;
 
 import commons.Bohater;
+import commons.ExportToPdf;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
@@ -28,7 +30,7 @@ public class GenBohModel implements GenBohModelInterface{
 	private Rasa wybranaRasa;
 	//profesja wybrana w CBoxie w widoku
 	private Profesja wybranaProfesja;
-
+	private String urlSavaPdf = null;
 	private ArrayList<Rasa> listaRas;
 	private ArrayList<Talent> listaTalentow;	
 	private ArrayList<Profesja> listaProfesji;
@@ -520,6 +522,25 @@ public void opisPostaciTalenty(boolean talenty) {
 public void zapiszPostac() {
 	Bohater nowy = new Bohater(nowyBohater);
 	obserwator.aktualizujListeBohaterow(nowy);
+}
+@Override
+public void exportDoPdf(Bohater nBohater) {
+	if(urlSavaPdf==null)
+	{
+		JFileChooser dialogFolder = new JFileChooser();
+		dialogFolder.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+		int returnVal = dialogFolder.showOpenDialog(null);
+		if(returnVal == JFileChooser.APPROVE_OPTION) {
+			urlSavaPdf = dialogFolder.getSelectedFile().getAbsolutePath()+"\\";
+		}
+	}
+	
+	try {
+		new ExportToPdf(nBohater,urlSavaPdf);	
+	} catch (Exception e2) {
+		// TODO: handle exception
+	}
+	
 }
 
 }

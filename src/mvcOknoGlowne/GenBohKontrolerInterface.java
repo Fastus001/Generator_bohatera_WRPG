@@ -15,5 +15,7 @@ public interface GenBohKontrolerInterface {
 	void aktywujPodniesPoziom();
 	void aktywujZapiszPostac();
 	void aktywujNowaProfesja();
+	void aktywujExportDoPdf();
+	void wylaczExportDoPdf();
 
 }

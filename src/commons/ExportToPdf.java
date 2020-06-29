@@ -266,7 +266,7 @@ public class ExportToPdf {
 				}
 			}
 		}else {
-			JOptionPane.showMessageDialog(null, "Niestety plik PDF nie posiada tyle miejsc na umiejêtnoÅ›ci zaawansowane :-(", "Zapisz postaÄ‡ do pliku Excel!!", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Niestety plik PDF nie posiada tyle miejsc na umiejêtnoœci zaawansowane :-(", "Zapisz postaæ do pliku Excel!!", JOptionPane.INFORMATION_MESSAGE);
 		}
 		
 	}
@@ -294,55 +294,55 @@ public class ExportToPdf {
 					form.getField("BB_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Dwurêczna)": {
-					form.getField("Broñ Bia³a X").setValue("(Dwurêczna)",font1, 4.5f);
+					form.getField("Broñ bia³a X").setValue("(Dwurêczna)",font1, 4.5f);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Korbacz)": {
-					form.getField("Broñ Bia³a X").setValue("(Korbacz)",font1, SZESC);
+					form.getField("Broñ bia³a X").setValue("(Korbacz)",font1, SZESC);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Bijatyka)": {
-					form.getField("Broñ Bia³a X").setValue("(Bijatyka)",font1, SZESC);
+					form.getField("Broñ bia³a X").setValue("(Bijatyka)",font1, SZESC);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Dowolna)": {
-					form.getField("Broñ Bia³a X").setValue("(Dowolna)",font1, SZESC);
+					form.getField("Broñ bia³a X").setValue("(Dowolna)",font1, SZESC);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Drzewcowa)": {
-					form.getField("Broñ Bia³a X").setValue("(Drzewcowa)",font1, 5f);
+					form.getField("Broñ bia³a X").setValue("(Drzewcowa)",font1, 5f);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Korbacz albo Dwurêczna)": {
-					form.getField("Broñ Bia³a X").setValue("(Korbacz albo Dwurêczna)",font1, 3f);
+					form.getField("Broñ bia³a X").setValue("(Korbacz albo Dwurêczna)",font1, 3f);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Kawaleryjska)": {
-					form.getField("Broñ Bia³a X").setValue("(Kawaleryjska)",font1, 4.5f);
+					form.getField("Broñ bia³a X").setValue("(Kawaleryjska)",font1, 4.5f);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Szermiercza)": {
-					form.getField("Broñ Bia³a X").setValue("(Szermiercza)",font1, SZESC);
+					form.getField("Broñ bia³a X").setValue("(Szermiercza)",font1, SZESC);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Broñ Bia³a (Paruj¹ca)": {
-					form.getField("Broñ Bia³a X").setValue("(Paruj¹ca)",font1, SZESC);
+					form.getField("Broñ bia³a X").setValue("(Paruj¹ca)",font1, SZESC);
 					form.getField("BB_X_cecha").setValue(form.getField("WW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("BB_X_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("BB_X_suma").setValue(dodajDwaStringi(form.getField("WW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
@@ -389,10 +389,10 @@ public class ExportToPdf {
 					form.getField("Nawigacja_cecha_I_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("Nawigacja_cecha_I_rozwiniecie_SUMA").setValue(dodajDwaStringi(form.getField("I_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
-				case "OdpornoÅ›Ä‡": {
-					form.getField("OdpornoÅ›Ä‡_WT_cecha").setValue(form.getField("WT_aktualna").getValueAsString(),font1, 10f);
-					form.getField("OdpornoÅ›Ä‡_WT_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
-					form.getField("OdpornoÅ›Ä‡_WT_cecha_SUMA").setValue(dodajDwaStringi(form.getField("WT_aktualna").getValueAsString(),poziomUmS),font1, 10f);
+				case "Odpornoœæ": {
+					form.getField("Odpornoœæ_WT_cecha").setValue(form.getField("WT_aktualna").getValueAsString(),font1, 10f);
+					form.getField("Odpornoœæ_WT_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
+					form.getField("Odpornoœæ_WT_cecha_SUMA").setValue(dodajDwaStringi(form.getField("WT_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Opanowanie": {
 					form.getField("Opanowanie_SW_SW_cecha").setValue(form.getField("SW_aktualna").getValueAsString(),font1, 10f);
@@ -415,9 +415,9 @@ public class ExportToPdf {
 					form.getField("PLOTKOWANIE_CECHA_OGD_SUMA").setValue(dodajDwaStringi(form.getField("OGD_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Powo¿enie": {
-					form.getField("POWOÅ»ENIE_ZW_cecha").setValue(form.getField("ZW_aktualna").getValueAsString(),font1, 10f);
-					form.getField("POWOÅ»ENIE_ZW_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
-					form.getField("POWOÅ»ENIE_ZW_cecha_SUMA").setValue(dodajDwaStringi(form.getField("ZW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
+					form.getField("POWO¯ENIE_ZW_cecha").setValue(form.getField("ZW_aktualna").getValueAsString(),font1, 10f);
+					form.getField("POWO¯ENIE_ZW_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
+					form.getField("POWO¯ENIE_ZW_cecha_SUMA").setValue(dodajDwaStringi(form.getField("ZW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "Przekupstwo": {
 					form.getField("Przekupstwo_cecha_OGD").setValue(form.getField("OGD_aktualna").getValueAsString(),font1, 10f);
@@ -442,7 +442,7 @@ public class ExportToPdf {
 					form.getField("SKRADANIE_ZW_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("SKRADANIE_ZW_cecha_suma").setValue(dodajDwaStringi(form.getField("ZW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
-				case "Skradanie (Miasto albo WieÅ›)": {
+				case "Skradanie (Miasto albo Wieœ)": {
 					form.getField("skradanie_x").setValue("(Miasto albo WieÅ›)",font1, 4f);
 					form.getField("SKRADANIE_ZW_cecha").setValue(form.getField("ZW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("SKRADANIE_ZW_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
@@ -454,7 +454,7 @@ public class ExportToPdf {
 					form.getField("SKRADANIE_ZW_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("SKRADANIE_ZW_cecha_suma").setValue(dodajDwaStringi(form.getField("ZW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
-				case "Skradanie (WieÅ›)": {
+				case "Skradanie (Wieœ)": {
 					form.getField("skradanie_x").setValue("(WieÅ›)",font1, SZESC);
 					form.getField("SKRADANIE_ZW_cecha").setValue(form.getField("ZW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("SKRADANIE_ZW_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
@@ -499,7 +499,7 @@ public class ExportToPdf {
 					form.getField("UNIK_ZW_cecha_rozwiniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("UNIK_ZW_cecha_SUMA").setValue(dodajDwaStringi(form.getField("ZW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
-				case "WioÅ›larstwo": {
+				case "Wioœlarstwo": {
 					form.getField("wioslarstwo_cecha_S_").setValue(form.getField("S_aktualna").getValueAsString(),font1, 10f);
 					form.getField("wioslarstwo_cecha_S_roziwniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("wioslarstwo_cecha_S_SUMA").setValue(dodajDwaStringi(form.getField("S_aktualna").getValueAsString(),poziomUmS),font1, 10f);

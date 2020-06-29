@@ -75,7 +75,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	private static final long serialVersionUID = 1L;
 	GenBohModelInterface model;
 	GenBohKontrolerInterface kontroler;
-	private String urlSavaPdf = null;
+
 	//Components
 	private JPanel contentPane;
 	private JComboBox<Object> cbProfesja;
@@ -141,13 +141,13 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public void mouseClicked(MouseEvent e) {
 				Object obj = listaBohaterow.elementAt(list.getSelectedIndex());
 				if(obj instanceof Bohater) {
-					nowyBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
-					textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
-					btnExportToPdf.setEnabled(true);
+					Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
+					textArea.setText(nBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+					kontroler.aktywujExportDoPdf();
 				}else if (obj instanceof Potwory) {
 					Potwory nowyBohater = new Potwory((Potwory) listaBohaterow.elementAt(list.getSelectedIndex()));
 					textArea.setText(nowyBohater.wyswietl());
-					btnExportToPdf.setEnabled(false);
+					kontroler.wylaczExportDoPdf();
 				}
 
 			}
@@ -306,23 +306,8 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		 */
 		btnExportToPdf.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(urlSavaPdf==null)
-				{
-					JFileChooser dialogFolder = new JFileChooser();
-					dialogFolder.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-					int returnVal = dialogFolder.showOpenDialog(getParent());
-					if(returnVal == JFileChooser.APPROVE_OPTION) {
-						urlSavaPdf = dialogFolder.getSelectedFile().getAbsolutePath()+"\\";
-					}
-				}
-				
-				try {
-					new ExportToPdf(nowyBohater,urlSavaPdf);	
-				} catch (Exception e2) {
-					// TODO: handle exception
-				}
-				
-				
+				Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
+				model.exportDoPdf(nBohater);
 			}
 		});
 		
@@ -369,6 +354,17 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		this.btnNowaProfesja.setEnabled(e);;
 	}
 
+
+
+	/**
+	 * 
+	 */
+	public void setBtnExportToPdfActive() {
+		this.btnExportToPdf.setEnabled(true);;
+	}
+	public void setBtnExportToPdfInactive() {
+		this.btnExportToPdf.setEnabled(false);;
+	}
 
 
 	/**

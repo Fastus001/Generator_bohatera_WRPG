@@ -57,6 +57,11 @@ public interface GenBohModelInterface {
 	 * zapisuje postaæ do listy
 	 */
 	void zapiszPostac();
+	/**
+	 * 
+	 * @param nBohater - postaæ wybra na zapisania do pliku pdf
+	 */
+	void exportDoPdf(Bohater nBohater);
 	
 	
 }
