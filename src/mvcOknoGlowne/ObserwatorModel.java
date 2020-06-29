@@ -3,6 +3,10 @@
  */
 package mvcOknoGlowne;
 
+import javax.swing.DefaultListModel;
+
+import commons.Bohater;
+
 /**
  * @author Tom
  *
@@ -13,5 +17,5 @@ public interface ObserwatorModel {
 	void wlaczbtnNowaProfesja();
 	void wlaczPrzyciskbtnPodniesPoziomPr();
 	void wylaczPrzicskPodniesPoziomPr();
-	void aktualizujListeBohaterow();
+	void aktualizujListeBohaterow(Bohater nowy);
 }

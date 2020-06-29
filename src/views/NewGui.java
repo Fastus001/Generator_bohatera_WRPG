@@ -538,7 +538,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 						.addComponent(cbDoswiadczenie, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addContainerGap())
 		);
-		list = new JList<Object>();
+		list = new JList<Object>(listaBohaterow);
 
 		scrlPaneLista.setViewportView(list);
 		scrollPane.setViewportView(textArea);
@@ -630,5 +630,10 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	@Override
 	public void wylaczPrzicskPodniesPoziomPr() {
 		btnPodniesPoziomPr.setEnabled(false);
+	}
+
+	@Override
+	public void aktualizujListeBohaterow(Bohater nowy) {
+		listaBohaterow.addElement(nowy);
 	}
 }

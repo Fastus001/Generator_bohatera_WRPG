@@ -28,7 +28,6 @@ public class GenBohModel implements GenBohModelInterface{
 	private Rasa wybranaRasa;
 	//profesja wybrana w CBoxie w widoku
 	private Profesja wybranaProfesja;
-	private DefaultListModel<Object> listaBohaterow = new DefaultListModel<Object>();
 
 	private ArrayList<Rasa> listaRas;
 	private ArrayList<Talent> listaTalentow;	
@@ -520,7 +519,7 @@ public void opisPostaciTalenty(boolean talenty) {
 @Override
 public void zapiszPostac() {
 	Bohater nowy = new Bohater(nowyBohater);
-	listaBohaterow.addElement(nowy);	
+	obserwator.aktualizujListeBohaterow(nowy);
 }
 
 }
