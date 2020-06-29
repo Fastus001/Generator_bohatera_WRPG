@@ -156,8 +156,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		
 		btsSaveHero.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Bohater nowy = new Bohater(nowyBohater);
-				listaBohaterow.addElement(nowy);
+				model.zapiszPostac();
 			}
 		});
 		/**
@@ -539,9 +538,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 						.addComponent(cbDoswiadczenie, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addContainerGap())
 		);
-		
-		//TODO - 2 - lista bohaterów
-		//listaBohaterow
 		list = new JList<Object>();
 
 		scrlPaneLista.setViewportView(list);
@@ -551,16 +547,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		
 	}
 	
-
-	
-
-	
-	
-	
-	
-	
-
-
 
 	
 	/*

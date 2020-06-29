@@ -8,6 +8,7 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.ListUI;
 
@@ -27,6 +28,7 @@ public class GenBohModel implements GenBohModelInterface{
 	private Rasa wybranaRasa;
 	//profesja wybrana w CBoxie w widoku
 	private Profesja wybranaProfesja;
+	private DefaultListModel<Object> listaBohaterow = new DefaultListModel<Object>();
 
 	private ArrayList<Rasa> listaRas;
 	private ArrayList<Talent> listaTalentow;	
@@ -514,6 +516,11 @@ public void setProfesja(Profesja p) {
 public void opisPostaciTalenty(boolean talenty) {
 	if(nowyBohater != null)
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
+}
+@Override
+public void zapiszPostac() {
+	Bohater nowy = new Bohater(nowyBohater);
+	listaBohaterow.addElement(nowy);	
 }
 
 }

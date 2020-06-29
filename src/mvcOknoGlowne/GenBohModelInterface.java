@@ -53,6 +53,10 @@ public interface GenBohModelInterface {
 	 * @param talenty - czy maj¹ byæ wyswietlane czy nie
 	 */
 	void opisPostaciTalenty(boolean talenty);
+	/**
+	 * zapisuje postaæ do listy
+	 */
+	void zapiszPostac();
 	
 	
 }
