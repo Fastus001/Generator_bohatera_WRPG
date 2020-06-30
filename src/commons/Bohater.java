@@ -110,6 +110,9 @@ public class Bohater {
 	
 		
 	public void nowaProfesja(Profesja nowaProfesja){
+		historiaProfesji.add(nowaProfesja);
+		setUmiejetnosciProfesyjne();
+		
 		if(prof.getPoziom() < nowaProfesja.getPoziom()){
 			int minPoziomUm = 5*prof.getPoziom();
 			//sprawdzenie umiejetnosci
@@ -122,7 +125,8 @@ public class Bohater {
 		if(!prof.isCzyUkonczona())
 			prof.setCzyUkonczona(true);
 		
-		historiaProfesji.add(nowaProfesja);
+		
+		
 		if(!prof.toString().equals(nowaProfesja.toString()))
 		{
 			System.out.println("Kompletnie nowa profesja, zmieniam umiejêtnoœci profesyjne");
@@ -131,6 +135,7 @@ public class Bohater {
 		}
 		prof = new Profesja(nowaProfesja);
 		dodajZnaneUmiejetnosciZProfesji();
+		setUmiejetnosciProfesyjne();
 		
 		if(prof.toString().equals("CZARODZIEJ") && prof.getPoziom()==2 ){
 			Talent nowy = prof.getLosowyTalent(0);
@@ -149,6 +154,29 @@ public class Bohater {
 		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
 	}
 	
+	private void setUmiejetnosciProfesyjne() {
+		ArrayList<Umiejetnosc> tablicaUmiejetnosci = new ArrayList<Umiejetnosc>();
+		//zapisanie ca³ej historii w tablicy
+		for(Profesja p:historiaProfesji) {
+			if(p.toString().equals(prof.toString())) {
+				for(Umiejetnosc umP: p.dostepneUmiejetnosci) {
+					tablicaUmiejetnosci.add(umP);
+				}
+			}
+		}
+
+		//ustawienie z ca³ej histrii umiejetnosci jako profesyjnych
+		for(Umiejetnosc um:tablicaUmiejetnosci) {
+			for(Umiejetnosc znaneUm:znaneUmiejetnosci) {
+				if(um.toString().equals(znaneUm.toString())) {
+					znaneUm.setCzyProfesyjna(true);
+				}
+			}
+		}
+		
+		
+	}
+
 	//sprawdzenie czy atrybuty klasowe majï¿½ odpowiedniu poziom do przejscia na nowy poziom
 	public void nowyPoziomCechyNowyLvl(int minPoz){
 		int[] klasoweAtrybuty = prof.getCechyRozwoju();
@@ -181,7 +209,7 @@ public class Bohater {
 			 * metoda podnosi o jeden umiejï¿½tnoï¿½ci ale tylko takiej, ktï¿½ra ma poziom niï¿½szy od wymaganego, czyli efektywnie nie bï¿½dzie 
 			 * podnosic poziomu ponad 20
 			 */
-			podniesUmiejRandomMinPoz(1,minPozUm);
+			podniesUmiejRandomMinPoz(3,minPozUm);
 			nowyPoziomUmiejetnosciNowyLvl(minPozUm);
 		}
 	}

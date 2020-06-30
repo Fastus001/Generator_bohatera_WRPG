@@ -407,8 +407,19 @@ public void podniesPoziom(int exp, boolean talenty) {
 			JOptionPane.showMessageDialog(null, "Postaæ osi¹gnê³a maksymalny poziom, wybierz inn¹ profesjê jeœli dalej chcesz rozwijaæ postaæ!", "Maksymalny poziom", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}else{
-		//wczytanie wybranej profesji (lvl1) do zmiennej
-		profesjaNowyPoziom = nowyBohater.getCurrentProfesja();
+		//sprawdzenie wybranej Profesji czy czasem nie jest inna ni¿ aktualnie rozwijana
+		if(wybranaProfesja!=null) {
+			int testHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(wybranaProfesja);
+			if(testHistoriiProfesji>0) {
+				profesjaNowyPoziom = wybranaProfesja;
+			}
+		}else {
+			//wczytanie wybranej profesji (lvl1) do zmiennej
+			profesjaNowyPoziom = nowyBohater.getCurrentProfesja();
+		}
+		
+		
+
 		
 			//sprawdzenie historii bohatera czy ta profesja juz nie by³a wczesniej rozwijana
 			int sprawdzenieHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(profesjaNowyPoziom);
@@ -439,11 +450,11 @@ public void podniesPoziom(int exp, boolean talenty) {
 	
 			
 	if(profesjaNowyPoziom != null)
-	{
-	nowyBohater.nowaProfesja(profesjaNowyPoziom);
-	nowyBohater.doswiadczenieBohatera(exp);
-	obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));	
-	}
+		{
+			nowyBohater.nowaProfesja(profesjaNowyPoziom);
+			nowyBohater.doswiadczenieBohatera(exp);
+			obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));	
+		}
 	}//koniec else
 }//koniec metody podnieœ poziom
 @Override
@@ -486,32 +497,36 @@ public Bohater postacBohaterModel() {
 }
 @Override
 public void setRasa(Rasa r) {
-	if(r.getName().equals(nowyBohater.getRasaName())) {
-		obserwator.wlaczPrzyciskbtnPodniesPoziomPr();
+	if(nowyBohater != null) {
+		if(r.getName().equals(nowyBohater.getRasaName())) {
+			obserwator.wlaczPrzyciskbtnPodniesPoziomPr();
+		}
 	}
+
 	wybranaRasa = r;
 	
 }
 @Override
 public void setProfesja(Profesja p) {
-	//je¿eli rasa nie zosta³a zmieniona to mo¿emy dzia³aæ
-	if(wybranaRasa.getName().equals(nowyBohater.getRasaName()))
-	{
-		int test = nowyBohater.sprawdzHistorieProfesji(p);
-		//postaæ wczeœniej nie rozwija³a danej profesji, mo¿na w³¹czyc opcjê nowa profesja
-		if(test== -1) {
-			obserwator.wlaczbtnNowaProfesja();
+	if(nowyBohater != null) {
+		//je¿eli rasa nie zosta³a zmieniona to mo¿emy dzia³aæ
+		if(wybranaRasa.getName().equals(nowyBohater.getRasaName()))
+		{
+			int test = nowyBohater.sprawdzHistorieProfesji(p);
+			//postaæ wczeœniej nie rozwija³a danej profesji, mo¿na w³¹czyc opcjê nowa profesja
+			if(test== -1) {
+				obserwator.wlaczbtnNowaProfesja();
+			}else {
+				obserwator.wylaczbtnNowaProfesja();
+			}
+			
 		}else {
+			JOptionPane.showMessageDialog(null, "Zmieni³eœ rasê, nie mo¿esz modyfikowaæ postaci do momentu gdy wybór rasy bêdzie zgodny z aktulanie towrzon¹ postaci¹.");
 			obserwator.wylaczbtnNowaProfesja();
+			obserwator.wylaczPrzicskPodniesPoziomPr();
 		}
-		wybranaProfesja = p;
-	}else {
-		JOptionPane.showMessageDialog(null, "Zmieni³eœ rasê, nie mo¿esz modyfikowaæ postaci do momentu gdy wybór rasy bêdzie zgodny z aktulanie towrzon¹ postaci¹.");
-		obserwator.wylaczbtnNowaProfesja();
-		obserwator.wylaczPrzicskPodniesPoziomPr();
 	}
-
-	
+	wybranaProfesja = p;
 }
 @Override
 public void opisPostaciTalenty(boolean talenty) {
