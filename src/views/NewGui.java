@@ -69,9 +69,6 @@ import java.awt.event.FocusEvent;
 
 public class NewGui extends JFrame implements ObserwatorModel{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	GenBohModelInterface model;
 	GenBohKontrolerInterface kontroler;
@@ -86,17 +83,16 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	private JButton btsSaveHero;
 	private JButton btnExportToPdf;
 	private JButton btnNPC;
+	private JButton btnNowaProfesja;
+	private ButtonGroup buttonGroup = new ButtonGroup();
+	private JRadioButton rdbtnMen;
+	private JRadioButton rdbtnWomen;
 	private JCheckBox chckbxShowTalents;
 	private JTextArea textArea;
 	private JScrollPane scrlPaneLista;
 
-	private ButtonGroup buttonGroup = new ButtonGroup();
-	private JRadioButton rdbtnMen;
-	private JRadioButton rdbtnWomen;
-	private JButton btnNowaProfesja;
 	private JList<Object> list;
 	private DefaultListModel<Object> listaBohaterow = new DefaultListModel<Object>();
-	
 	
 	/**
 	 * Create the frame.
@@ -243,13 +239,13 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		/*
 		 * dodanie nowej profesji do istniej¹cego bohatera, który zaczyna³ z inn¹ profesj¹
 		 */
-
 		btnNowaProfesja.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
 				model.nowaProfesja(cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected(), btnPodniesPoziomPr.isSelected());
 			}
 		});
+		
 		cbProfesja.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -260,8 +256,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				}
 			}
 		});
-
-		
+	
 		cbProfesja.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(cbProfesja.getModel().getSize()!=0)
@@ -269,36 +264,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 					Profesja prof = (Profesja) cbProfesja.getSelectedItem();
 					model.setProfesja(prof);
 				}
-
-
-				//TODO	
-				//if (btnPodniesPoziomPr.isEnabled()) 
-				//{
-					/*
-					if(nowyBohater!=null) 
-					{
-					//sprawdzamy czy combo box profesje jest wybrany, bo by³y problemy gdy postaæ by³a utworzona i zmienia³o siê rasê...
-					 
-					int select = cbProfesja.getSelectedIndex();
-					System.out.println("Kod selected item = " + select);
-					if(select >= 0) {
-						nowaProfesja = (Profesja) cbProfesja.getSelectedItem();
-
-						select = nowyBohater.sprawdzHistorieProfesji(nowaProfesja);
-						if(nowaProfesja.toString().equals(nowyBohater.getCurrentProfesjaName()) || select > 0)
-						{
-							btnNowaProfesja.setEnabled(false);
-						}
-						else {
-							btnNowaProfesja.setEnabled(true);
-							}
-					}
-						
-					}//koniec if(nowy bohater...
-					*/
-				//}
 			}
-			
 		});
 		
 		/*
@@ -310,9 +276,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				model.exportDoPdf(nBohater);
 			}
 		});
-		
 	}
-	
 	
 	/**
 	 * @param cbRasa the cbRasa to set
@@ -320,8 +284,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	public void setCbRasa(Object[] cbRasa) {
 		this.cbRasa.setModel(new DefaultComboBoxModel<Object>(cbRasa));
 	}
-
-
 
 	/**
 	 * @param cbProfesja the cbProfesja to set
@@ -332,53 +294,9 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		this.cbProfesja.setEnabled(true);
 		if(btnNowaProfesja.isEnabled()) {
 			btnNowaProfesja.setEnabled(false);
-		}
-		
+		}	
 	}
 
-
-
-	/**
-	 * @param - set enabled buttons
-	 */
-	public void setBtnPodniesPoziomPrEnabled(boolean e) {
-		this.btnPodniesPoziomPr.setEnabled(e);
-	}
-	public void setBtsSaveHeroEnabled(boolean e) {
-		this.btsSaveHero.setEnabled( e);
-	}
-	/**
-	 * @param e the btnNowaProfesja to set if is enabled or not
-	 */
-	public void setBtnNowaProfesjaEnabled(Boolean e) {
-		this.btnNowaProfesja.setEnabled(e);;
-	}
-
-
-
-	/**
-	 * 
-	 */
-	public void setBtnExportToPdfActive() {
-		this.btnExportToPdf.setEnabled(true);;
-	}
-	public void setBtnExportToPdfInactive() {
-		this.btnExportToPdf.setEnabled(false);;
-	}
-
-
-	/**
-	 * @return the chckbxShowTalents czy jest zaznaczony czy nie
-	 */
-	public boolean getChckbxShowTalents() {
-		return chckbxShowTalents.isSelected();
-	}
-
-
-
-	/**
-	 * 
-	 */
 	private void initComponents() {
 		setTitle("Generator Postaci Warhammer 4ed");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource("/resources/sledgehammer.png")));
@@ -394,28 +312,21 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		textArea.setBounds(new Rectangle(5, 5, 5, 5));
 		textArea.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		textArea.setFont(new Font("Arial", Font.PLAIN, 12));
-
-		
+	
 		btnNowyBohater = new JButton("Nowy Bohater");
 		btnNowyBohater.setIcon(new ImageIcon(NewGui.class.getResource("/resources/knight (1).png")));
 		btnNowyBohater.setSelectedIcon(null);
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 
 		cbRasa = new JComboBox<Object>();
-
 		cbRasa.setToolTipText("Wybierz ras\u0119, je\u017Celi nie chcesz aby by\u0142a ona losowa.");
+		
 		cbProfesja = new JComboBox<Object>();
-
-
-
-
 		cbProfesja.setToolTipText("Wybierz profesj\u0119 dla bohatera.");
 
-		
 		cbDoswiadczenie = new JComboBox<String>();
 		cbDoswiadczenie.setModel(new DefaultComboBoxModel<String>(new String[] {"Brak", "Pocz\u0105tkuj\u0105ca", "\u015Arednio zaawansowana", "Do\u015Bwiadczona"}));
 		cbDoswiadczenie.setToolTipText("Czy posta\u0107 posiada ju\u017C jakie\u015B rozwini\u0119cia. W zale\u017Cno\u015Bci od wybranej opcji, posta\u0107 otrzymuje  (3,5,7) rozwini\u0119\u0107 (umiej\u0119tno\u015Bci, cechy klasowe lub talent).\r\n");
-		
 		
 		btnPodniesPoziomPr = new JButton("Podnie\u015B poziom");
 		btnPodniesPoziomPr.setIcon(new ImageIcon(NewGui.class.getResource("/resources/crossbow.png")));
@@ -423,9 +334,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnPodniesPoziomPr.setToolTipText("Posta\u0107 awansuje na nast\u0119pny poziom rozwoju swojej \u015Bcie\u017Cki profesji.\r\nJe\u017Celi poziom cech lub przynajmniej o\u015Bmiu umiej\u0119tno\u015Bci jest zbyt niski, to s\u0105 one automoatyczne podnoszone do wymaganego poziomu (aby uko\u0144czy\u0107 dany poziom profesji).");
 		btnPodniesPoziomPr.setEnabled(false);
 
-		
 		chckbxShowTalents = new JCheckBox("Wy\u015Bwietl talenty");
-
 		chckbxShowTalents.setSelected(true);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -542,94 +451,50 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 		
 	}
-	
-
-	
-	/*
-	 * wyszukanie profesji z konkretnym poziomem
-	 * zabezpieczyc przed podaniemi poziomu wyzszego niz 4!
-	 */
-	public Profesja getProfesjaWybranyPoziom(String nazwaP, int poziom) {
-		Profesja nowa = new Profesja();
-		for(Profesja pr: listaProfesji) {
-			if(pr.toString().equals(nazwaP) && pr.getPoziom()==poziom) {
-				nowa = new Profesja(pr);
-			}		
-		}
-		return nowa;
-	}
-	
-
-		
-	/////////////////////////////////////////////////////////////////////////
-	//konwersja wiersza z pliku txt na umiejêtnoœci zapisywane w tablicy
-	/////////////////////////////////////////////////////////////////////////	
-	public void tworzUm(String wierszDanych){
-		String[] wynik = wierszDanych.split("/");
-		Umiejetnosc um = new Umiejetnosc(wynik[0], Integer.parseInt(wynik[1]),wynik[2],0,false);
-		listaUm.add(um);
-		}
-	
-	public void wyswietlTalentyWszystkie(){
-		for(Talent x:listaTalentow){
-			textArea.append(x.wyswietlWszystkoTalent()+"\n");
-		}
-	}
-	
-	public void wyswietlRasyWszystkie(){
-		for(Rasa x:listaRas){
-			textArea.append(x.wyswietlRasyWszystko()+"\n");
-		}
-	}
-	
-	public void wyswietlProfesjeWszystkoPrzycisk(){
-		for(Profesja p:listaProfesji){
-			textArea.append(p.wyswietlProfesje()+"\n");
-		}
-	}
-	
-	public ArrayList<Talent> getListaTalentow(){
-		return listaTalentow;
-	}
-
-
-
 	@Override
 	public void aktualizujPostac(String opis) {
-		textArea.setText(opis);
-		
+		textArea.setText(opis);		
 	}
-
-
-
 	@Override
 	public void wylaczbtnNowaProfesja() {
 		btnNowaProfesja.setEnabled(false);
 	}
-
-
-
 	@Override
 	public void wlaczPrzyciskbtnPodniesPoziomPr() {
 		btnPodniesPoziomPr.setEnabled(true);
 	}
-
-
-
 	@Override
 	public void wlaczbtnNowaProfesja() {
 		btnNowaProfesja.setEnabled(true);
 	}
-
-
-
 	@Override
 	public void wylaczPrzicskPodniesPoziomPr() {
 		btnPodniesPoziomPr.setEnabled(false);
 	}
-
 	@Override
 	public void aktualizujListeBohaterow(Bohater nowy) {
 		listaBohaterow.addElement(nowy);
+	}
+
+	public void setBtnPodniesPoziomPrEnabled(boolean e) {
+		this.btnPodniesPoziomPr.setEnabled(e);
+	}
+	public void setBtsSaveHeroEnabled(boolean e) {
+		this.btsSaveHero.setEnabled( e);
+	}
+
+	public void setBtnNowaProfesjaEnabled(Boolean e) {
+		this.btnNowaProfesja.setEnabled(e);;
+	}
+
+	public void setBtnExportToPdfActive() {
+		this.btnExportToPdf.setEnabled(true);;
+	}
+	public void setBtnExportToPdfInactive() {
+		this.btnExportToPdf.setEnabled(false);;
+	}
+
+	public boolean getChckbxShowTalents() {
+		return chckbxShowTalents.isSelected();
 	}
 }
