@@ -71,7 +71,7 @@ public class GenBohModel implements GenBohModelInterface{
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/profesje.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
 			*/
-			String urlProfesja = "../GeneratorBohatera/src/resources/profesje.txt";
+			String urlProfesja = "../GeneratorBohatera/src/resources/profesje-v2.txt";
 			File plik = new File(urlProfesja);
 			FileReader czytaj = new FileReader(plik);
 			
@@ -82,7 +82,8 @@ public class GenBohModel implements GenBohModelInterface{
 			while((wiersz = czytajB.readLine()) != null){
 				if(wiersz.length()==0)
 					break;
-				String nazwaProfesji = wiersz;
+				String klasaProfesji = wiersz;
+				String nazwaProfesji = czytajB.readLine();
 				String sciezkaProfesji = czytajB.readLine();
 				//rasy
 				wiersz = czytajB.readLine();
@@ -111,7 +112,9 @@ public class GenBohModel implements GenBohModelInterface{
 						tempTlnt.setOpis(dodajOpisDoTalentu(tempTlnt));
 						listaZnTalentow.add(tempTlnt);
 					}
-				
+				//przedmioty
+				wiersz = czytajB.readLine();
+				String [] przedmiotyProf = wiersz.split(",");
 				
 				//cechy rozwoju
 				wiersz = czytajB.readLine();
@@ -123,7 +126,7 @@ public class GenBohModel implements GenBohModelInterface{
 				//poziom profesji
 				int poziomProfesji = Integer.parseInt(czytajB.readLine());
 				
-				Profesja prof = new Profesja(nazwaProfesji, sciezkaProfesji, poziomProfesji, umiej,listaZnTalentow,dostepneRasy,cechyRozwoju,false );
+				Profesja prof = new Profesja(nazwaProfesji, sciezkaProfesji, poziomProfesji, umiej,listaZnTalentow,dostepneRasy,cechyRozwoju,false,klasaProfesji,przedmiotyProf );
 				listaProfesji.add(prof);
 
 			}

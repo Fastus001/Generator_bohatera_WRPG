@@ -10,6 +10,9 @@ public class Profesja implements Comparable<Profesja>{
 	public String [] dostepnaRasa;
 	private int [] cechyRozwoju;
 	private boolean czyUkonczona;
+	// nowe dodane do Profesjiv2
+	private String klasa;
+	private String [] przedmiotyZProfesji;
 	
 	//utworzenie obiektu profesja 
 	
@@ -19,7 +22,20 @@ public class Profesja implements Comparable<Profesja>{
 		poziom = 0;
 		czyUkonczona = false;
 	}
-	public Profesja(String n,  String sP, int p, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String[] dR, int[] cR, boolean koniec){
+	/**
+	 * 
+	 * @param n - nazwa Profesji
+	 * @param sP - nazwa œcie¿ki profesji
+	 * @param p - poziom
+	 * @param dU - dostêpne umiejetnoœci (z profesji)
+	 * @param dT - dostêpne talenty (z profesji)
+	 * @param dR - dostêpna rasa
+	 * @param cR - cechy rozwoju (statysyki)
+	 * @param koniec - czy dana profesja zosta³a ukoñczona (gdy Bohater jest ju¿ utworzony)
+	 * @param k - klasa Profesji
+	 * @param pP - przedmioty z Profesji
+	 */
+	public Profesja(String n,  String sP, int p, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String[] dR, int[] cR, boolean koniec, String k, String [] pP){
 		nazwa = new String(n);
 		sciezkaProfesji = new String(sP);
 		poziom = p;
@@ -28,6 +44,8 @@ public class Profesja implements Comparable<Profesja>{
 		dostepnaRasa = dR;
 		cechyRozwoju = cR;
 		czyUkonczona = koniec;
+		klasa = k;
+		przedmiotyZProfesji = pP;
 	}
 	
 	public Profesja(Profesja pr) {
@@ -47,9 +65,17 @@ public class Profesja implements Comparable<Profesja>{
 		dostepnaRasa = pr.dostepnaRasa;
 		cechyRozwoju = pr.cechyRozwoju;
 		this.czyUkonczona = pr.czyUkonczona;
+		this.klasa = pr.klasa;
+		this.przedmiotyZProfesji = pr.przedmiotyZProfesji;
 	}
 	
 	
+
+
+	
+	/**
+	 * Wyœwietla nazwê profesji
+	 */
 	public String toString() {
 		return nazwa;
 	}
@@ -92,6 +118,33 @@ public class Profesja implements Comparable<Profesja>{
 	
 	public String getNameProfesjaSciezka(){
 		return nazwa + "\n" +sciezkaProfesji;
+	}
+	/**
+	 * 
+	 * @param plec - czy bohater to mê¿czycna TRUE, czy kobieta FALSE
+	 * @return - zwraca strina z mêsk¹ lub ¿eñsk¹ wersj¹ nazw
+	 */
+	public String getNameProfesjaSciezka(boolean plec){
+		String [] nazwaPr = nazwa.split("/");
+		String [] sciezkaPr = sciezkaProfesji.split("/");
+		if(plec) {
+			return nazwaPr[0] + "\n" + sciezkaPr[0];
+		}else {
+			return nazwaPr[1] + "\n" + sciezkaPr[1];
+		}
+	}
+	/**
+	 * 
+	 * @param plec
+	 * @return nazwa
+	 */
+	public String getName(boolean plec){
+		String [] nazwaPr = nazwa.split("/");
+		if(plec) {
+			return nazwaPr[0];
+		}else {
+			return nazwaPr[1];
+		}
 	}
 	
 	public ArrayList<Umiejetnosc> getDostepneUmiejetnosciLista(){
@@ -138,12 +191,30 @@ public class Profesja implements Comparable<Profesja>{
 	public int[] getCechyRozwoju(){
 		return cechyRozwoju;
 	}
+	/**
+	 * @return the klasa
+	 */
+	public String getKlasa() {
+		return klasa;
+	}
 	
 	/**
 	 * @return the sciezkaProfesji
 	 */
 	public String getSciezkaProfesji() {
 		return sciezkaProfesji;
+	}
+	/**
+	 * @param plec - p³eæ bohatera
+	 * @return the sciezkaProfesji
+	 */
+	public String getSciezkaProfesji(boolean plec) {
+		String [] sciezkaPr = sciezkaProfesji.split("/");
+		if(plec) {
+			return sciezkaPr[0];
+		}else {
+			return sciezkaPr[1];
+		}
 	}
 	/**
 	 * @return the czyUkonczona
@@ -164,6 +235,9 @@ public class Profesja implements Comparable<Profesja>{
 				return true;
 		}
 		return false;
+	}
+	public String[] getPrzedmiotyZProfesji() {
+		return przedmiotyZProfesji;
 	}
 	
 }

@@ -7,12 +7,8 @@ import npcGenerator.Cechy;
 public class Bohater {
 
 	private String imieNazwisko;
-
-
 	private String plecBohatera;
 	private Wyglad wyglad;
-	
-	
 	private Rasa rasa;
 	private Profesja prof;
 	private Cechy cechy;
@@ -20,8 +16,12 @@ public class Bohater {
 	public ArrayList<Talent> znaneTalenty;
 	private ArrayList<Profesja> historiaProfesji;
 	
-
-	
+	/**
+	 * 
+	 * @param rs - rasa bohatera
+	 * @param pr - profesja
+	 * @param plec - p³eæ
+	 */
 	public Bohater(Rasa rs, Profesja pr, boolean plec) {
 		rasa = new Rasa(rs);
 		prof = new Profesja(pr);
@@ -56,9 +56,10 @@ public class Bohater {
 		historiaProfesji.add(prof);
 	}
 	
-	/*
-	 * konstruktor kopiujï¿½cy
-	 */
+/**
+ * Tworzy now¹ kopiê bohatera
+ * @param bh - bohater 
+ */
 	public Bohater(Bohater bh) {
 		this.imieNazwisko = bh.imieNazwisko;
 		this.plecBohatera = bh.plecBohatera;
@@ -82,10 +83,12 @@ public class Bohater {
 			this.historiaProfesji.add(nowaPr);
 		}
 	}
-	
+	/**
+	 * Wyœwietla imiê nazwizko, nazwê profesji oraz œcie¿kê profesji
+	 */
 	@Override
 	public String toString() {
-		return imieNazwisko + ", Profesja: " + prof.getName() + " poziom profesji: " + prof.getPoziom();
+		return imieNazwisko + ", Profesja: " + prof.getName(getPlecBohatera()) + " poziom profesji: " + prof.getPoziom();
 	}
 	
 	/*
@@ -125,8 +128,6 @@ public class Bohater {
 		if(!prof.isCzyUkonczona())
 			prof.setCzyUkonczona(true);
 		
-		
-		
 		if(!prof.toString().equals(nowaProfesja.toString()))
 		{
 			System.out.println("Kompletnie nowa profesja, zmieniam umiejêtnoœci profesyjne");
@@ -144,7 +145,6 @@ public class Bohater {
 		}else{
 			dodajZnanyTalentZProfesji();
 		}
-		
 		
 		for(Talent t:znaneTalenty){
 			sprawdzTalenty(t);
@@ -173,8 +173,6 @@ public class Bohater {
 				}
 			}
 		}
-		
-		
 	}
 
 	//sprawdzenie czy atrybuty klasowe majï¿½ odpowiedniu poziom do przejscia na nowy poziom
@@ -192,9 +190,7 @@ public class Bohater {
 	}
 	
 	//sprawdzenie znanych umiejetnosci czy jest przynajmniej osiem na minimalnym poziomie rowiniecia do przejscia na nowï¿½ profesjï¿½
-	/*
-	 * TODO - sprawdzenie umiejï¿½tnoï¿½ci pod kï¿½tem tego czy sï¿½ klasowe (profesji)
-	 */
+
 	public void nowyPoziomUmiejetnosciNowyLvl(int minPozUm) {
 		int ile = 0;
 		for(Umiejetnosc um:znaneUmiejetnosci){
@@ -218,23 +214,23 @@ public class Bohater {
 	//pewnie siï¿½ zmieni nazwe
 	public String wyswietlBohatera(boolean czyWyswietlicTalent){
 		
-		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+" " +imieNazwisko +" ("+ plecBohatera + ")\n");
+		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+"\n" +imieNazwisko +" ("+ plecBohatera + ")\n");
 		stringBuilder.append(wyglad.toString());
-		stringBuilder.append(prof.getNameProfesjaSciezka());
+		stringBuilder.append("Klasa postaci: " + prof.getKlasa()+"\n");
+		stringBuilder.append(prof.getNameProfesjaSciezka(getPlecBohatera()));
 		stringBuilder.append(" (Poziom profesji: " + prof.getPoziomUmiejetnosciString()+")\n");
 		stringBuilder.append("Historia rozwoju bohatera: ");
 		for(int i = 0; i < (historiaProfesji.size()-1); i++)
 		{
 			if(i>=0)
 			{
-				String[] nazwaSciezkiProfesji = historiaProfesji.get(i).getSciezkaProfesji().split("-");
-				stringBuilder.append("ex-"+nazwaSciezkiProfesji[0] + "" + "(" + historiaProfesji.get(i).toString()+"),");
+				String[] nazwaSciezkiProfesji = historiaProfesji.get(i).getSciezkaProfesji(getPlecBohatera()).split("-");
+				stringBuilder.append("ex-"+nazwaSciezkiProfesji[0] + "" + "(" + historiaProfesji.get(i).getName(getPlecBohatera())+"),");
 			}
 		}
 		stringBuilder.append("\n");
 		stringBuilder.append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
 		stringBuilder.append("\nZnane Umiejêtnoœci:\n");
-		
 		
 		Collections.sort(znaneUmiejetnosci);
 		for(Umiejetnosc u:znaneUmiejetnosci){
@@ -248,7 +244,16 @@ public class Bohater {
 		for(Talent t: znaneTalenty){
 			stringBuilder.append(t.getName()+", ");
 		}
-		stringBuilder.append("\n\n");
+		stringBuilder.append("\n\nPrzedmioty dostêpne z profesji:\n");
+		for(Profesja p:historiaProfesji) {
+			String [] tab = p.getPrzedmiotyZProfesji();
+			for(String s:tab) {
+				stringBuilder.append(s.toLowerCase()+", ");
+			}
+		}
+		stringBuilder.append("\n");
+		
+		
 		if(czyWyswietlicTalent){
 			for(Talent st: znaneTalenty){
 			if(st.getOpcjeWyswietlania()){
@@ -257,8 +262,6 @@ public class Bohater {
 			}
 		}
 
-		
-		
 		return stringBuilder.toString();
 	}
 	
@@ -679,6 +682,16 @@ public class Bohater {
 		return hp.toString();
 	}
 	
+	/**
+	 * @return - je¿eli mê¿czyzna to true, inacze false
+	 */
+	public boolean getPlecBohatera() {
+		if(plecBohatera.equals("Mê¿czyzna"))
+			return true;
+		else
+			return false;
+	}
+
 	public boolean czyJestCechaRozwojuProfesji(int x) {
 		return this.prof.czyJestCechaRozwoju(x);
 	}

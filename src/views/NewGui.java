@@ -164,6 +164,8 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			}
 		});
 		
+		
+		
 		///////////////////////////////////////////////////////////////
 		list.setCellRenderer(new DefaultListCellRenderer() {
 			/**
