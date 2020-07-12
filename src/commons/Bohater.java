@@ -604,8 +604,14 @@ public class Bohater {
 		return prof;
 	}
 	
+
 	public String getCurrentProfesjaName(){
-		return prof.toString();
+		String [] tablica =prof.getName().split("/");
+		if(plecBohatera == "Mê¿czyzna")
+			return tablica[0];
+		else {
+			return tablica[1];
+		}
 	}
 	
 	public int getCurrentProfPoziom() {
@@ -696,5 +702,8 @@ public class Bohater {
 		return this.prof.czyJestCechaRozwoju(x);
 	}
 	
+	public String getKlasaProfesji() {
+		return this.prof.getKlasa();
+	}
 	
 }

@@ -1060,6 +1060,7 @@ Og³uszenie/0/Broñ Bia³a gdy Og³uszasz przeciwnika,Mówca/9/brak,Przestêpca/10/bra
 skórzana kurta,3 Poborców Podatków
 0,4,8,9
 2
+POSPÓLSTWO
 ZARZ¥DCA/ZARZ¥DCA
 W³odarz – Z³oto 1/W³odarz – Z³oto 1
 Ludzie,Krasnoludy,Nizio³ki

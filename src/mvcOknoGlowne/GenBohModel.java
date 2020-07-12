@@ -1,8 +1,10 @@
 package mvcOknoGlowne;
 
+import java.awt.EventQueue;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -13,12 +15,16 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.ListUI;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import commons.Bohater;
 import commons.ExportToPdf;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
 import commons.Umiejetnosc;
+import jdk.internal.org.jline.utils.Log;
 
 /**
  * 
@@ -26,6 +32,8 @@ import commons.Umiejetnosc;
  *
  */
 public class GenBohModel implements GenBohModelInterface{
+
+	private final static Logger logger = LogManager.getLogger(ExportToPdf.class.getName());
 	//rasa wybrana w comboBoxie w widoku
 	private Rasa wybranaRasa;
 	//profesja wybrana w CBoxie w widoku
@@ -108,6 +116,7 @@ public class GenBohModel implements GenBohModelInterface{
 					
 					for(String x:dostepneTlnt){
 						String[] doZapTalenty = x.split("/");
+
 						Talent tempTlnt = new Talent(doZapTalenty[0],Integer.parseInt(doZapTalenty[1]),doZapTalenty[2]);
 						tempTlnt.setOpis(dodajOpisDoTalentu(tempTlnt));
 						listaZnTalentow.add(tempTlnt);
@@ -553,11 +562,17 @@ public void exportDoPdf(Bohater nBohater) {
 		}
 	}
 	
-	try {
-		new ExportToPdf(nBohater,urlSavaPdf);	
-	} catch (Exception e2) {
-		// TODO: handle exception
-	}
+
+		Runnable runnable = ()->{try {
+			new ExportToPdf(nBohater,urlSavaPdf);
+			
+		} catch (IOException e) {
+			logger.info("B³¹d podczas tworzenia nowego w¹tku do eksportu do PDF", e);
+			
+		}};
+		Thread t = new Thread(runnable);
+		t.start();
+
 	
 }
 

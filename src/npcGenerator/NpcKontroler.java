@@ -20,17 +20,18 @@ public class NpcKontroler implements KontrolerInterface{
 	 * @param listaBohaterow - podstawowy model listy z g³ównego okna aplikacji potrzebne do zapisania NPCa
 	 */
 	public NpcKontroler(NpcModelInterface model,DefaultListModel<Object> listaBohaterow) {
-		try {
-			this.model = model;
-			this.listaZapisanychProfesji = listaBohaterow;
-			widok = new NpcGUI(this);
-			widok.setVisible(true);
-			model.wgrajCechyPotworow();
-			widok.setComboBox(model.wgrajPotwory());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
+		this.model = model;
+		this.listaZapisanychProfesji = listaBohaterow;
+		EventQueue.invokeLater(()->{
+			try {
+				widok = new NpcGUI(this);
+				widok.setVisible(true);
+				widok.setComboBox(model.wgrajPotwory());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		});
+		model.wgrajCechyPotworow();
 	}
 	
 	public void setNpcList() {

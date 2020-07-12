@@ -5,6 +5,10 @@ import java.io.InputStream;
 
 import javax.swing.JOptionPane;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import com.itextpdf.forms.PdfAcroForm;
 import com.itextpdf.io.font.PdfEncodings;
 import com.itextpdf.kernel.font.PdfFont;
@@ -31,29 +35,33 @@ public class ExportToPdf {
 	
 	
 	public ExportToPdf(Bohater h, String des) throws IOException{
-		this.hero = h;
-		String nazwaPliku = hero.getImieNazwisko().replace(" ", "_")+"_"+ hero.getCurrentProfesjaName() + "_poz"+ hero.getCurrentProfPoziom() +".pdf";
-		/*
-		ClassLoader classLoader2 = getClass().getClassLoader();
-		InputStream inputStream2 = classLoader2.getResourceAsStream("resources/WFRP_4ed_final_edytowalna.pdf");
-		*/
-		System.out.println(nazwaPliku);
-		pdf = new PdfDocument(new PdfReader(SRC),new PdfWriter(des+nazwaPliku));
-		//czcionka i ustawienie kodowania
-		font1 = PdfFontFactory.createFont(FONT_CASLON_PL, PdfEncodings.CP1250,true);
 
-		form = PdfAcroForm.getAcroForm(pdf, true);
 			
-		opisBohateraCechy();
-		szybkosc();
-		wczytanieZywotnosci();
-		sprawdzUmiejetnosci();
-		wczytajUmiejetnosci();
-		wczytajTalenty();
-		
-		
-		//form.flattenFields();
-		pdf.close();
+			this.hero = h;
+			String nazwaPliku = hero.getImieNazwisko().replace(" ", "_")+"_"+ hero.getCurrentProfesjaName() + "_poz"+ hero.getCurrentProfPoziom() +".pdf";
+			/*
+			ClassLoader classLoader2 = getClass().getClassLoader();
+			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/WFRP_4ed_final_edytowalna.pdf");
+			*/
+			
+			pdf = new PdfDocument(new PdfReader(SRC),new PdfWriter(des+nazwaPliku));
+			//czcionka i ustawienie kodowania
+			font1 = PdfFontFactory.createFont(FONT_CASLON_PL, PdfEncodings.CP1250,true);
+
+			form = PdfAcroForm.getAcroForm(pdf, true);
+				
+			opisBohateraCechy();
+			szybkosc();
+			wczytanieZywotnosci();
+			sprawdzUmiejetnosci();
+			wczytajUmiejetnosci();
+			wczytajTalenty();
+			
+			
+			//form.flattenFields();
+			pdf.close();
+
+
 		
 	}
 
@@ -188,10 +196,9 @@ public class ExportToPdf {
 		//opis postaci
 		form.getField("Imiê").setValue(hero.getImieNazwisko(),font1, 10f);
 		form.getField("Rasa").setValue(hero.getRasaName(),font1, 10f);
-		/*
-		 * TODO
-		form.getField("Klasa").setValue("Uczony",font1, 10f);
-		*/
+
+		form.getField("Klasa").setValue(hero.getKlasaProfesji(),font1, 10f);
+		
 		form.getField("Profesja").setValue(hero.getProfesjaNameMain(),font1, 10f);
 		Integer poziom = hero.getCurrentProfPoziom();
 		zmienna = poziom.toString();
@@ -374,7 +381,7 @@ public class ExportToPdf {
 					form.getField("Jezdziectwo_ZW_cecha_suma").setValue(dodajDwaStringi(form.getField("ZW_aktualna").getValueAsString(),poziomUmS),font1, 10f);
 				}break;
 				case "JeŸdziectwo (Konie)": {
-					form.getField("jazda_x").setValue("(Konie)",font1, 4f);
+					form.getField("jazda_x").setValue("(Konie)",font1, 6f);
 					form.getField("Jezdziectwo_ZW_cecha").setValue(form.getField("ZW_aktualna").getValueAsString(),font1, 10f);
 					form.getField("Jezdziectwo_ZW_cecha_rozwieniecie").setValue(poziomUmS,font1, 10f);
 					form.getField("Jezdziectwo_ZW_cecha_suma").setValue(dodajDwaStringi(form.getField("ZW_aktualna").getValueAsString(),poziomUmS),font1, 10f);

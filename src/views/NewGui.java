@@ -274,8 +274,10 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		 */
 		btnExportToPdf.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 				Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
 				model.exportDoPdf(nBohater);
+
 			}
 		});
 	}

@@ -84,9 +84,6 @@ public class NpcGUI extends JFrame implements KeyListener{
 	 * Create the frame.
 	 */
 	public NpcGUI(KontrolerInterface kontroler) {
-
-
-
 		this.kontroler = kontroler;
 		addKeyListener(this);
 		setFocusable(true);

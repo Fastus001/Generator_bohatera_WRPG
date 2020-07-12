@@ -7,27 +7,33 @@ package mvcOknoGlowne;
 
 import java.awt.EventQueue;
 
-import javax.swing.UIManager;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
+import commons.ExportToPdf;
 import commons.Rasa;
 import views.NewGui;
 
 public class GenBohKontroler implements GenBohKontrolerInterface{
 	private NewGui widok;
 	private GenBohModelInterface model;
+	final static org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger( ExportToPdf.class );
 	/**
 	 * 
 	 * @param m - model interfejs
 	 */
 	public GenBohKontroler(GenBohModelInterface model) {
 		this.model = model;
-		
-		try {
-			widok = new NewGui(this, model);
-			widok.setVisible(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		BasicConfigurator.configure();
+		EventQueue.invokeLater(()->{
+			try {
+				widok = new NewGui(this, model);
+				widok.setVisible(true);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		});
 		model.wczytajDane();
 		
 	}
