@@ -2,11 +2,7 @@ package npcGenerator;
 
 import java.awt.EventQueue;
 
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
-import javax.swing.JList;
-
-import views.NewGui;
 import views.NpcGUI;
 
 public class NpcKontroler implements KontrolerInterface{

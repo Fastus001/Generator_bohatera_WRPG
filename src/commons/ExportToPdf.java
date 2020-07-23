@@ -1,13 +1,10 @@
 package commons;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 import javax.swing.JOptionPane;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
 
 import com.itextpdf.forms.PdfAcroForm;
 import com.itextpdf.io.font.PdfEncodings;
@@ -56,16 +53,10 @@ public class ExportToPdf {
 			sprawdzUmiejetnosci();
 			wczytajUmiejetnosci();
 			wczytajTalenty();
-			
-			
 			//form.flattenFields();
 			pdf.close();
-
-
 		
 	}
-
-
 
 	private void wczytajTalenty() {
 		if(hero.znaneTalenty.size()<17) {

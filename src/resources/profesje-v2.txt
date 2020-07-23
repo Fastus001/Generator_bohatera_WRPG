@@ -2198,7 +2198,7 @@ WOJOWNICY
 RYCERZ/RYCERZ
 Giermek – Srebro 3/Giermek – Srebro 3
 Ludzie,Leœne elfy,Wysokie elfy
-Atletyka/5/podstawowa,Broñ Bia³a (Kawaleryjska)/0/podstawowa,JeŸdziectwo (Konie)/5/podstawowa,Leczenie/7/zaawansowana,Opieka nad Zwierzêtami/7/zaawansowana Oswajanie/8/podstawowa,Rzemios³o  (Podkuwanie Koni)/6/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Atletyka/5/podstawowa,Broñ Bia³a (Kawaleryjska)/0/podstawowa,JeŸdziectwo (Konie)/5/podstawowa,Leczenie/7/zaawansowana,Opieka nad Zwierzêtami/7/zaawansowana,Oswajanie/8/podstawowa,Rzemios³o  (Podkuwanie Koni)/6/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
 Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Spo³eczna),Tragarz/2/Si³y podczas podnoszenia,Urodzony Wojownik/11/brak,Urodzony w Siodle/5/JeŸdziectwo (Konie) w walce
 kaftan kolczy,koñ wierzchowy z rzêdem,narzêdzia pracy (Podkuwanie Koni),skórzana kurta,tarcza
 2,4,5

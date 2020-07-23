@@ -3,7 +3,6 @@
  */
 package mvcOknoGlowne;
 
-import javax.swing.DefaultListModel;
 
 import commons.Bohater;
 

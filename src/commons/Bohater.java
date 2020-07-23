@@ -655,6 +655,14 @@ public class Bohater {
 		return tab;
 	}
 	
+	public int [] getCechyAktualneInt() {
+		int [] tab = new int[10];
+		for(int x =0; x<10; x++) {
+			tab[x] = this.cechy.getCecha(x);
+		}
+		return tab;
+	}
+	
 	public String [] getCechyRozwiniecia() {
 		String [] tabRozw = new String[10];
 		for(int x =0; x<10; x++) {
@@ -664,6 +672,14 @@ public class Bohater {
 			else {
 				tabRozw[x] = null;
 			}
+		}
+		return tabRozw;
+	}
+	
+	public int [] getCechyRozwinieciaInt() {
+		int [] tabRozw = new int[10];
+		for(int x =0; x<10; x++) {
+			tabRozw[x] = this.cechy.getRozwiniecia(x);
 		}
 		return tabRozw;
 	}

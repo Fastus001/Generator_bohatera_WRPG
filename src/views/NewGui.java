@@ -1,7 +1,6 @@
 package views;
 
 import java.awt.Component;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -10,30 +9,19 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import java.awt.Toolkit;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JFileChooser;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
 import commons.Bohater;
-import commons.ExportToPdf;
+import commons.ExportDoExcela;
 import commons.Profesja;
 import commons.Rasa;
-import commons.Talent;
-import commons.Umiejetnosc;
 import mvcOknoGlowne.GenBohKontrolerInterface;
 import mvcOknoGlowne.GenBohModelInterface;
 import mvcOknoGlowne.ObserwatorModel;
@@ -93,6 +81,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 	private JList<Object> list;
 	private DefaultListModel<Object> listaBohaterow = new DefaultListModel<Object>();
+	private JButton btnExportExcel;
 	
 	/**
 	 * Create the frame.
@@ -120,7 +109,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnNPC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				NpcModel npcModel = new NpcModel();
-				NpcKontroler kontroler = new NpcKontroler(npcModel, listaBohaterow);
+				new NpcKontroler(npcModel, listaBohaterow);
 			}
 		});
 		
@@ -280,7 +269,22 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 			}
 		});
+		
+		/**
+		 * eskport postaci do arkusza Excel
+		 */
+		btnExportExcel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO - do zmiany bo musi uwzglêdniac bohatera lub NPCa
+				Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
+				ExportDoExcela exp = new ExportDoExcela();
+				exp.createBohaterSheet(nBohater);
+				exp.saveWorkBook();
+			}
+		});
 	}
+	
+
 	
 	/**
 	 * @param cbRasa the cbRasa to set
@@ -378,6 +382,9 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		lblLabelProfesja.setDisplayedMnemonic(KeyEvent.VK_ENTER);
 		
 		btnNPC = new JButton("Utw\u00F3rz NPCa");
+		
+		btnExportExcel = new JButton("Zapisz do Excel");
+
 
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
@@ -388,6 +395,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 							.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 745, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
+								.addComponent(btnExportExcel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(btnNPC, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(lblLabelRasa)
 								.addComponent(cbRasa, GroupLayout.PREFERRED_SIZE, 76, GroupLayout.PREFERRED_SIZE)
@@ -437,7 +445,9 @@ public class NewGui extends JFrame implements ObserwatorModel{
 								.addComponent(btsSaveHero)
 								.addGap(12)
 								.addComponent(btnExportToPdf)
-								.addGap(389)
+								.addGap(12)
+								.addComponent(btnExportExcel)
+								.addGap(354)
 								.addComponent(btnNPC))))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)

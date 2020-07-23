@@ -1,6 +1,5 @@
 package mvcOknoGlowne;
 
-import java.awt.EventQueue;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -8,23 +7,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
-import java.util.Collections;
-
-import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.plaf.ListUI;
-
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-
 import commons.Bohater;
 import commons.ExportToPdf;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
 import commons.Umiejetnosc;
-import jdk.internal.org.jline.utils.Log;
 
 /**
  * 
@@ -33,7 +23,7 @@ import jdk.internal.org.jline.utils.Log;
  */
 public class GenBohModel implements GenBohModelInterface{
 
-	private final static Logger logger = LogManager.getLogger(ExportToPdf.class.getName());
+	
 	//rasa wybrana w comboBoxie w widoku
 	private Rasa wybranaRasa;
 	//profesja wybrana w CBoxie w widoku
@@ -43,9 +33,7 @@ public class GenBohModel implements GenBohModelInterface{
 	private ArrayList<Talent> listaTalentow;	
 	private ArrayList<Profesja> listaProfesji;
 	private ArrayList<Profesja> profesjePierwszyPoziom;
-	private ArrayList<Umiejetnosc> listaUm;
 	private Bohater nowyBohater;
-	private Profesja nowaProfesja;
 	private ObserwatorModel obserwator;
 
 	public GenBohModel() {
@@ -53,7 +41,6 @@ public class GenBohModel implements GenBohModelInterface{
 		listaTalentow = new ArrayList<Talent>();
 		listaProfesji = new ArrayList<Profesja>();
 		profesjePierwszyPoziom = new ArrayList<Profesja>();
-		listaUm = new ArrayList<Umiejetnosc>();
 
 	}
 	/**
@@ -341,8 +328,6 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
 		e2.printStackTrace(pw);
-		String sStackTrace = sw.toString(); // stack trace as a string
-		//TODO textArea.append(sStackTrace);
 	}
 	
 }
@@ -567,7 +552,7 @@ public void exportDoPdf(Bohater nBohater) {
 			new ExportToPdf(nBohater,urlSavaPdf);
 			
 		} catch (IOException e) {
-			logger.info("B³¹d podczas tworzenia nowego w¹tku do eksportu do PDF", e);
+			//TODO
 			
 		}};
 		Thread t = new Thread(runnable);

@@ -37,8 +37,6 @@ import javax.swing.event.ChangeListener;
 import npcGenerator.CechyPotworow;
 import npcGenerator.KontrolerInterface;
 import npcGenerator.Potwory;
-
-import java.awt.event.KeyAdapter;
 import javax.swing.border.EtchedBorder;
 import java.awt.Rectangle;
 

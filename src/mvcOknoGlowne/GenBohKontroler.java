@@ -7,9 +7,7 @@ package mvcOknoGlowne;
 
 import java.awt.EventQueue;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
 
 import commons.ExportToPdf;
 import commons.Rasa;
@@ -25,7 +23,6 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 	 */
 	public GenBohKontroler(GenBohModelInterface model) {
 		this.model = model;
-		BasicConfigurator.configure();
 		EventQueue.invokeLater(()->{
 			try {
 				widok = new NewGui(this, model);
