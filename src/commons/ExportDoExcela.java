@@ -26,20 +26,12 @@ public class ExportDoExcela {
 	private static final String [] STATYSTYKI = {"WW","US","S","Wt","I","Zw","Zr","Int","SW","Ogd"};
 	
 	Workbook wb;
-	Bohater bohater;
 	Potwory potwor;
-	
-	private Object [] objDoZapisania;
 
 	
 	public ExportDoExcela() {
 		setLogger();
 		wb = new HSSFWorkbook();
-
-		
-		
-		
-	
 	}
 	
 	private void setLogger() {
@@ -57,7 +49,7 @@ public class ExportDoExcela {
 		
 	}
 	
-
+	
 
 	/**
 	 * Tworzy arkusz z wszystkimi danymi bohatera
@@ -95,31 +87,32 @@ public class ExportDoExcela {
 		
 		//rasa
 		createAndSetCell(row, 3, "Rasa:", null);
-		createAndSetCell(row, 4, bh.getRasaName(), pogrubiony);
+		createAndSetCell(row, 4, bh.getRasaName(), csBoldAlign);
 		//klasa
 		row.createCell(5).setCellValue("Klasa");
-		row.createCell(6).setCellValue(bh.getKlasaProfesji());
+		createAndSetCell(row, 6, bh.getKlasaProfesji(), csBoldAlign);
+		sheet.addMergedRegion(new CellRangeAddress(0, 0, 6, 7));
 		
 		//Rz¹d 1 - Profesja / poziom profesji / œciezka profesji
 		row = sheet.createRow(1);
 		row.createCell(0).setCellValue("Profesja:");
 		row.createCell(1).setCellValue(bh.getCurrentProfesjaName());
 		row.createCell(2).setCellValue("Poziom:");
-		row.createCell(3).setCellValue(bh.getCurrentProfPoziom());
+		createAndSetCell(row, 3, bh.getCurrentProfPoziom(), justowanie);
 		row.createCell(4).setCellValue("Œcie¿ka:");
 		row.createCell(5).setCellValue(bh.getProfesjaSciezka());
 		
 		//Rz¹d -2 - wiek, wygl¹d
 		row = sheet.createRow(2);
 		row.createCell(0).setCellValue("Wiek:");
-		row.createCell(1).setCellValue(bh.getWygladWiek());
+		createAndSetCell(row, 1, bh.getWygladWiek(), justowanie);
 		row.createCell(2).setCellValue("Wzrost:");
-		row.createCell(3).setCellValue(bh.getWygladWzrost());
+		createAndSetCell(row, 3, bh.getWygladWzrost(), justowanie);
 		row.createCell(4).setCellValue("W³osy:");
-		row.createCell(5).setCellValue(bh.getWygladWlosy());
+		createAndSetCell(row, 5, bh.getWygladWlosy(), justowanie);
 		sheet.addMergedRegion(new CellRangeAddress(2, 2, 5, 6));
 		row.createCell(7).setCellValue("Oczy:");
-		row.createCell(8).setCellValue(bh.getWygladOczy());
+		createAndSetCell(row, 8, bh.getWygladOczy(), justowanie);
 		
 		//Rz¹d 3,4,5,6 - Cechy - opis
 		row = sheet.createRow(3);
@@ -129,7 +122,12 @@ public class ExportDoExcela {
 		for(int i = 1; i< 11; i++) {
 			cellB = row.createCell(i);
 			cellB.setCellStyle(pogrubionJustTlo);
-			cellB.setCellValue(STATYSTYKI[i-1]);
+			if(bh.czyJestCechaRozwojuProfesji(i-1)) {
+				cellB.setCellValue(STATYSTYKI[i-1]+"*");
+			}else {
+				cellB.setCellValue(STATYSTYKI[i-1]);
+			}
+			
 			}
 		row = sheet.createRow(4);
 		cellB = row.createCell(0);
@@ -163,16 +161,16 @@ public class ExportDoExcela {
 		//Rz¹d 7 - Szybkoœæ
 		row = sheet.createRow(7);
 		row.createCell(0).setCellValue("Szybkoœæ:");
-		row.createCell(1).setCellValue(bh.getCechySzybkosc());
+		createAndSetCell(row, 1, bh.getCechySzybkosc(), justowanie);
 		row.createCell(2).setCellValue("Chód:");
-		row.createCell(3).setCellValue(bh.getCechySzybkosc()*2);
+		createAndSetCell(row, 3, bh.getCechySzybkosc()*2, justowanie);
 		row.createCell(4).setCellValue("Bieg:");
-		row.createCell(5).setCellValue(bh.getCechySzybkosc()*4);
+		createAndSetCell(row, 5, bh.getCechySzybkosc()*4, justowanie);
 		
 		//rz¹d 8 - ¿ywotnoœæ
 		row = sheet.createRow(8);
 		row.createCell(0).setCellValue("¯ywotnoœæ:");
-		row.createCell(1).setCellValue(bh.getCechyHpString());
+		createAndSetCell(row, 1, bh.getCechyHpString(), csBoldAlign);
 		
 		//Umiejêtnoœci i talenty - rz¹d 9+
 		row = sheet.createRow(9);
@@ -190,7 +188,7 @@ public class ExportDoExcela {
 			createAndSetCell(row, 0, um.getName(), pogrubiony);
 			createAndSetCell(row, 3, STATYSTYKI[um.getPozycjaCechy()], justowanie);
 			createAndSetCell(row, 4, um.getPoziom(), justowanie);
-			createAndSetCell(row, 5, um.getPoziom()+aktualne[um.getPozycjaCechy()], pogrubiony);
+			createAndSetCell(row, 5, um.getPoziom()+aktualne[um.getPozycjaCechy()], csBoldAlign);
 			sheet.addMergedRegion(new CellRangeAddress(10+i, 10+i, 0, 2));
 		}
 		int rowCount = row.getRowNum();
@@ -290,13 +288,6 @@ public class ExportDoExcela {
 		cell.setCellValue(i);
 		if(cs != null)
 			cell.setCellStyle(cs);
-	}
-	
-	
-	private void addBorders(Sheet sh) {
-		PropertyTemplate pt = new PropertyTemplate();
-		
-		
 	}
 
 }
