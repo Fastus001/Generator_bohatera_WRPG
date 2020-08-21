@@ -3,6 +3,8 @@ package commons;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class GeneratorImion {
@@ -63,11 +65,13 @@ public class GeneratorImion {
 			ClassLoader classLoader2 = getClass().getClassLoader();
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/imiona.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			*/
+		
 		File plik = new File("../GeneratorBohatera/src/resources/imiona.txt");
 		FileReader czytaj = new FileReader(plik);
-		
-		
+		*/
+		ClassLoader classLoader = getClass().getClassLoader();
+		InputStream input = classLoader.getResourceAsStream("imiona.txt");
+		InputStreamReader czytaj = new InputStreamReader(input);
 		BufferedReader bufor = new BufferedReader(czytaj);
 		String wiersz = null;
 		while((wiersz = bufor.readLine()) != null ) {

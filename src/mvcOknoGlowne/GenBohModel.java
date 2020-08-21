@@ -4,17 +4,21 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import commons.Bohater;
+import commons.ExportDoExcela;
 import commons.ExportToPdf;
 import commons.Profesja;
 import commons.Rasa;
 import commons.Talent;
 import commons.Umiejetnosc;
+import npcGenerator.Potwory;
 
 /**
  * 
@@ -48,7 +52,6 @@ public class GenBohModel implements GenBohModelInterface{
 	 */
 	@Override
 	public boolean wczytajDane() {
-		// TODO Auto-generated method stub
 		boolean czy = true;
 		czy = WczytajTalenty();
 		czy = WczytajRasy();
@@ -65,12 +68,14 @@ public class GenBohModel implements GenBohModelInterface{
 			ClassLoader classLoader2 = getClass().getClassLoader();
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/profesje.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			*/
+			
 			String urlProfesja = "../GeneratorBohatera/src/resources/profesje-v2.txt";
 			File plik = new File(urlProfesja);
 			FileReader czytaj = new FileReader(plik);
-			
-			
+			*/
+			ClassLoader classLoader = getClass().getClassLoader();
+			InputStream input = classLoader.getResourceAsStream("profesje-v2.txt");
+			InputStreamReader czytaj = new InputStreamReader(input);
 			BufferedReader czytajB = new BufferedReader(czytaj);
 			
 			String wiersz = null;
@@ -146,9 +151,12 @@ public class GenBohModel implements GenBohModelInterface{
 				ClassLoader classLoader2 = getClass().getClassLoader();
 				InputStream inputStream2 = classLoader2.getResourceAsStream("resources/talenty.txt");
 				InputStreamReader strumien = new InputStreamReader(inputStream2);
-				*/
 				File plik = new File("../GeneratorBohatera/src/resources/talenty.txt");
-				FileReader czytaj = new FileReader(plik);
+				FileReader czytaj = new FileReader(plik);\
+				*/
+				ClassLoader classLoader = getClass().getClassLoader();
+				InputStream input = classLoader.getResourceAsStream("talenty.txt");
+				InputStreamReader czytaj = new InputStreamReader(input);
 				BufferedReader czytajBuf = new BufferedReader(czytaj);
 				String wiersz = null;
 				
@@ -186,9 +194,12 @@ public boolean WczytajRasy(){
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/rasy.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
 			/*/
-			String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
+			/*String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
 			File plik = new File(urlRasy);
-			FileReader czytaj = new FileReader(plik);
+			FileReader czytaj = new FileReader(plik);*/
+			ClassLoader classLoader = getClass().getClassLoader();
+			InputStream input = classLoader.getResourceAsStream("rasy.txt");
+			InputStreamReader czytaj = new InputStreamReader(input);
 			
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
@@ -559,6 +570,23 @@ public void exportDoPdf(Bohater nBohater) {
 		t.start();
 
 	
+}
+@Override
+public void exportDoExcel(Object[] obj) {
+	ExportDoExcela exp = new ExportDoExcela();
+	//TODO - do zmiany bo musi uwzglêdniac bohatera lub NPCa
+	for(Object obiekt:obj) {
+		if(obiekt instanceof Bohater) {
+			Bohater nBohater = new Bohater((Bohater) obiekt);
+			exp.createBohaterSheet(nBohater);
+		}
+		if(obiekt instanceof Potwory) {
+			Potwory nPotwor = new Potwory((Potwory) obiekt);
+			exp.createNPCSheet(nPotwor);
+		}
+	}
+
+	exp.saveWorkBook();	
 }
 
 }

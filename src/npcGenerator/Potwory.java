@@ -9,7 +9,9 @@ import commons.RzutKoscia;
  *klasa opisujaca potwora NPC
  */
 public class Potwory implements RzutKoscia{
-	static String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","¯yw"};
+	private static final String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","¯yw"};
+
+
 	private static final int IC = 12; //iloœæ cech
 	private String nazwa;
 	private int [] statyPotwora;
@@ -84,7 +86,6 @@ public class Potwory implements RzutKoscia{
 	 * @return the statyPotwora
 	 */
 	public int [] getStatyPotwora() {
-
 		return statyPotwora;
 	}
 	/**
@@ -113,6 +114,14 @@ public class Potwory implements RzutKoscia{
 	 */
 	public String getOpisStwora() {
 		return opisStwora;
+	}
+	
+	/**
+	 * zwraca opis STATYSTYK potwora w postaci tablicy stringów!!!
+	 * @return the cechynazwa
+	 */
+	public static String[] getCechynazwa() {
+		return CECHYNAZWA;
 	}
 	/////////////////////////////////////////////////////////
 	//setters

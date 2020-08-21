@@ -87,6 +87,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	 * Create the frame.
 	 */
 	public NewGui(GenBohKontrolerInterface kontroler, GenBohModelInterface model ) {
+		
 		this.kontroler = kontroler;
 		this.model = model;
 		this.model.zarejestrujObserwatora((ObserwatorModel) this);
@@ -109,7 +110,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnNPC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				NpcModel npcModel = new NpcModel();
-				new NpcKontroler(npcModel, listaBohaterow);
+				new NpcKontroler(npcModel, listaBohaterow, NewGui.this);
 			}
 		});
 		
@@ -266,7 +267,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				
 				Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
 				model.exportDoPdf(nBohater);
-
 			}
 		});
 		
@@ -275,11 +275,19 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		 */
 		btnExportExcel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO - do zmiany bo musi uwzglêdniac bohatera lub NPCa
-				Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
-				ExportDoExcela exp = new ExportDoExcela();
-				exp.createBohaterSheet(nBohater);
-				exp.saveWorkBook();
+				if(list.isSelectionEmpty()) {
+					int wybor = JOptionPane.showConfirmDialog(null, "Nie zaznaczy³eœ konkretnego rekordu, czy zapisaæ do arkusza Excel wszystkie utworzone postacie?","Eksport?",JOptionPane.YES_NO_OPTION);
+					if(wybor == JOptionPane.YES_OPTION) {
+						model.exportDoExcel(listaBohaterow.toArray());
+					}else {
+						
+					}
+				}else {
+					//TODO 
+					//model.exportDoExcel(listaBohaterow.elementAt(list.getSelectedIndex()));
+				}
+				
+
 			}
 		});
 	}
@@ -307,7 +315,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 	private void initComponents() {
 		setTitle("Generator Postaci Warhammer 4ed");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource("/resources/sledgehammer.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource("../items/sledgehammer.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1200, 800);
 		contentPane = new JPanel();
@@ -322,7 +330,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		textArea.setFont(new Font("Arial", Font.PLAIN, 12));
 	
 		btnNowyBohater = new JButton("Nowy Bohater");
-		btnNowyBohater.setIcon(new ImageIcon(NewGui.class.getResource("/resources/knight (1).png")));
+		btnNowyBohater.setIcon(new ImageIcon(NewGui.class.getResource("../items/knight (1).png")));
 		btnNowyBohater.setSelectedIcon(null);
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 
@@ -337,7 +345,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		cbDoswiadczenie.setToolTipText("Czy posta\u0107 posiada ju\u017C jakie\u015B rozwini\u0119cia. W zale\u017Cno\u015Bci od wybranej opcji, posta\u0107 otrzymuje  (3,5,7) rozwini\u0119\u0107 (umiej\u0119tno\u015Bci, cechy klasowe lub talent).\r\n");
 		
 		btnPodniesPoziomPr = new JButton("Podnie\u015B poziom");
-		btnPodniesPoziomPr.setIcon(new ImageIcon(NewGui.class.getResource("/resources/crossbow.png")));
+		btnPodniesPoziomPr.setIcon(new ImageIcon(NewGui.class.getResource("../items/crossbow.png")));
 
 		btnPodniesPoziomPr.setToolTipText("Posta\u0107 awansuje na nast\u0119pny poziom rozwoju swojej \u015Bcie\u017Cki profesji.\r\nJe\u017Celi poziom cech lub przynajmniej o\u015Bmiu umiej\u0119tno\u015Bci jest zbyt niski, to s\u0105 one automoatyczne podnoszone do wymaganego poziomu (aby uko\u0144czy\u0107 dany poziom profesji).");
 		btnPodniesPoziomPr.setEnabled(false);
@@ -349,7 +357,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		
 		btsSaveHero = new JButton("Zapisz posta\u0107");
-		btsSaveHero.setIcon(new ImageIcon(NewGui.class.getResource("/resources/save.png")));
+		btsSaveHero.setIcon(new ImageIcon(NewGui.class.getResource("../items/save.png")));
 		btsSaveHero.setEnabled(false);
 
 		
@@ -366,7 +374,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		buttonGroup.add(rdbtnWomen);
 		
 		btnNowaProfesja = new JButton("Nowa profesja");
-		btnNowaProfesja.setIcon(new ImageIcon(NewGui.class.getResource("/resources/wizard.png")));
+		btnNowaProfesja.setIcon(new ImageIcon(NewGui.class.getResource("../items/wizard.png")));
 		btnNowaProfesja.setToolTipText("Dodaj now\u0105 porfesj\u0119 do aktualnie tworzonego bohatera.\r\nNowa profesja zawsze zaczyna si\u0119 od pierwszego poziomu.");
 
 		btnNowaProfesja.setEnabled(false);
@@ -374,7 +382,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnExportToPdf = new JButton("Zapisz do PDF");
 		btnExportToPdf.setEnabled(false);
 
-		btnExportToPdf.setIcon(new ImageIcon(NewGui.class.getResource("/resources/document.png")));
+		btnExportToPdf.setIcon(new ImageIcon(NewGui.class.getResource("../items/document.png")));
 		
 		JLabel lblLabelRasa = new JLabel("Rasa:");
 		
@@ -384,6 +392,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnNPC = new JButton("Utw\u00F3rz NPCa");
 		
 		btnExportExcel = new JButton("Zapisz do Excel");
+		btnExportExcel.setEnabled(false);
 
 
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
@@ -488,7 +497,27 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	@Override
 	public void aktualizujListeBohaterow(Bohater nowy) {
 		listaBohaterow.addElement(nowy);
+		if(listaBohaterow.size() > 0) {
+			kontroler.aktywujExportDoExcel();
+		}
+			
 	}
+	public void addToListaBohaterow(Object nowy) {
+		listaBohaterow.addElement(nowy);
+		if(listaBohaterow.size() > 0) {
+			kontroler.aktywujExportDoExcel();
+		}
+			
+	}
+
+	/**
+	 * @param btnExportExcel the btnExportExcel to set
+	 */
+	public void setBtnExportExcelEnabled() {
+		this.btnExportExcel.setEnabled(true);
+	}
+
+
 
 	public void setBtnPodniesPoziomPrEnabled(boolean e) {
 		this.btnPodniesPoziomPr.setEnabled(e);

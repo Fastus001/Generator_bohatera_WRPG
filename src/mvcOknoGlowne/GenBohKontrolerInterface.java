@@ -17,5 +17,6 @@ public interface GenBohKontrolerInterface {
 	void aktywujNowaProfesja();
 	void aktywujExportDoPdf();
 	void wylaczExportDoPdf();
+	void aktywujExportDoExcel();
 
 }

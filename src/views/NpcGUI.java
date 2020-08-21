@@ -367,11 +367,11 @@ public class NpcGUI extends JFrame implements KeyListener{
 		
 		btnDodaj = new JButton("Dodaj");
 
-		btnDodaj.setIcon(new ImageIcon(NpcGUI.class.getResource("/resources/move.png")));
+		btnDodaj.setIcon(new ImageIcon(NpcGUI.class.getResource("/items/move.png")));
 		
 		btnUsun = new JButton("Usu\u0144");
 
-		btnUsun.setIcon(new ImageIcon(NpcGUI.class.getResource("/resources/move (1).png")));
+		btnUsun.setIcon(new ImageIcon(NpcGUI.class.getResource("/items/move (1).png")));
 		
 		JLabel lblwybierzPotwora = new JLabel("Wybierz potwora");
 		lblwybierzPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 17));

@@ -62,6 +62,11 @@ public interface GenBohModelInterface {
 	 * @param nBohater - postaæ wybra na zapisania do pliku pdf
 	 */
 	void exportDoPdf(Bohater nBohater);
+	/**
+	 * 
+	 * @param obj - tablica obiektów (bohater lub NPC do wgrania do arkusza Excel)
+	 */
+	void exportDoExcel(Object [] obj);
 	
 	
 }

@@ -3,6 +3,8 @@ package commons;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Wyglad implements RzutKoscia{
@@ -87,12 +89,13 @@ public class Wyglad implements RzutKoscia{
 			ClassLoader classLoader2 = getClass().getClassLoader();
 			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/wlosy.txt");
 			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			
-			/*/
+						
 			File file = new File("../GeneratorBohatera/src/resources/wlosy.txt");
 			FileReader czytaj = new FileReader(file);
-			
-			
+			*/
+			ClassLoader classLoader = getClass().getClassLoader();
+			InputStream input = classLoader.getResourceAsStream("wlosy.txt");
+			InputStreamReader czytaj = new InputStreamReader(input);
 			
 			BufferedReader bufor = new BufferedReader(czytaj);
 			String wiersz;
@@ -110,7 +113,7 @@ public class Wyglad implements RzutKoscia{
 	}
 
 	/**
-	 * ustalenie wieku postaci w oparciu od rasï¿½
+	 * ustalenie wieku postaci w oparciu od rasê
 	 */
 	public void setWiek(String nazwaRasy) {
 		

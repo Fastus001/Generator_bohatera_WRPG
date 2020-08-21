@@ -202,7 +202,7 @@ public class Bohater {
 		if(ile<8){
 			System.out.println("Brak wystarczaj¹cej ilosci umiejetnosci na odpowiednim poziomie, jest tylko " + ile);
 			/*
-			 * metoda podnosi o jeden umiejï¿½tnoï¿½ci ale tylko takiej, ktï¿½ra ma poziom niï¿½szy od wymaganego, czyli efektywnie nie bï¿½dzie 
+			 * metoda podnosi o jeden umiejêtnoœci ale tylko takiej, która ma poziom ni¿szy od wymaganego, czyli efektywnie nie bêdzie 
 			 * podnosic poziomu ponad 20
 			 */
 			podniesUmiejRandomMinPoz(3,minPozUm);

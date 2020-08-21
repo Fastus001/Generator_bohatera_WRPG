@@ -62,6 +62,10 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 	public void wylaczExportDoPdf() {
 		widok.setBtnExportToPdfInactive();
 	}
+	@Override
+	public void aktywujExportDoExcel() {
+		widok.setBtnExportExcelEnabled();		
+	}
 
 
 }

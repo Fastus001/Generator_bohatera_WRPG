@@ -1,11 +1,6 @@
 package npcGenerator;
 
 public class CechyPotworow {
-	@Override
-	public String toString() {
-		return nazwa;
-	}
-
 	private String nazwa;
 	private String opis;
 	
@@ -22,6 +17,11 @@ public class CechyPotworow {
 	public CechyPotworow(CechyPotworow cp) {
 		this.nazwa = cp.nazwa;
 		this.opis = cp.opis;
+	}
+	
+	@Override
+	public String toString() {
+		return nazwa;
 	}
 
 	/**

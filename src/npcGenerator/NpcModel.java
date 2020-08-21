@@ -3,6 +3,8 @@ package npcGenerator;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 /**
  * 
@@ -21,15 +23,9 @@ public class NpcModel implements NpcModelInterface{
 	
 	public void wgrajCechyPotworow() {
 		try {
-			/*
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/CECHY STWORZEN.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			/*/
-			String urlCechyStworzen = "../GeneratorBohatera/src/resources/CECHY STWORZEN.txt";
-			File plik = new File(urlCechyStworzen);
-			FileReader czytaj = new FileReader(plik);
-			
+			ClassLoader classLoader = getClass().getClassLoader();
+			InputStream input = classLoader.getResourceAsStream("CECHY STWORZEN.txt");
+			InputStreamReader czytaj = new InputStreamReader(input);
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
 			
@@ -54,16 +50,9 @@ public class NpcModel implements NpcModelInterface{
 	@Override
 	public Object[] wgrajPotwory() {
 		try {
-			/*
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/potwory.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			/*/
-			
-			String urlCechyStworzen = "../GeneratorBohatera/src/resources/potwory.txt";
-			File plik = new File(urlCechyStworzen);
-			FileReader czytaj = new FileReader(plik);
-			
+			ClassLoader classLoader = getClass().getClassLoader();
+			InputStream input = classLoader.getResourceAsStream("potwory.txt");
+			InputStreamReader czytaj = new InputStreamReader(input);
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
 			

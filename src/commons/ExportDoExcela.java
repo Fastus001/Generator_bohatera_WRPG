@@ -1,6 +1,7 @@
 package commons;
 
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
@@ -9,9 +10,9 @@ import java.util.logging.Logger;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
-import org.apache.poi.ss.util.PropertyTemplate;
 import org.apache.poi.ss.util.WorkbookUtil;
 
+import npcGenerator.CechyPotworow;
 import npcGenerator.Potwory;
 
 import org.apache.poi.ss.usermodel.*;
@@ -49,7 +50,72 @@ public class ExportDoExcela {
 		
 	}
 	
-	
+	public void createNPCSheet(Potwory pt) {
+		logger.entering("ExportDoExcela", "createNPCSheet");
+		//nazwa arkusza
+		String safeName = WorkbookUtil.createSafeSheetName(pt.getNazwa());
+		Sheet sheet = wb.createSheet(safeName);
+		
+		CellStyle csAlign = getCellStyleBold(false, true, false);
+		CellStyle csBold = getCellStyleBold(true, false, false);
+		CellStyle csBold2 = getCellStyleBold(true, false, false);
+		csBold2.setVerticalAlignment(VerticalAlignment.CENTER);
+		CellStyle csBoldAlign = getCellStyleBold(true, true, false);
+		
+		CellStyle csWrapFontSmall = getCellStyleBold(false, false, false);
+		csWrapFontSmall.setWrapText(true);
+		csWrapFontSmall.setVerticalAlignment(VerticalAlignment.TOP);
+		Font font8 = wb.createFont();
+		font8.setFontHeightInPoints((short)8);
+		csWrapFontSmall.setFont(font8);
+		
+		
+		Row row = sheet.createRow(0);
+		createAndSetCell(row, 0, pt.getNazwa(), csBoldAlign);
+		sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 11));
+		
+		//statystki
+		String [] cechy = Potwory.getCechynazwa();
+		int [] statyPotwora = pt.getStatyPotwora();
+		
+		row = sheet.createRow(1);
+		Row row2 = sheet.createRow(2);
+		for(int i = 0; i<12; i++) {
+			createAndSetCell(row, i, cechy[i], csBoldAlign);
+			createAndSetCell(row2, i, statyPotwora[i], csAlign);
+		}
+		//Cechy
+		ArrayList<CechyPotworow> cechyPotworow = pt.getCechy();
+		row = sheet.createRow(3);
+		createAndSetCell(row, 0, "Cechy (specjalne) potwora/NPCa", csBold);
+		sheet.addMergedRegion(new CellRangeAddress(3,3, 0, 11));
+		
+		for(int i = 0; i<cechyPotworow.size(); i++) {
+			row = sheet.createRow(4+i);
+			createAndSetCell(row, 0, cechyPotworow.get(i).getNazwa(), csBold2);
+			createAndSetCell(row, 3, cechyPotworow.get(i).getOpis(), csWrapFontSmall);
+			float s = cechyPotworow.get(i).getOpis().length();
+			if(s>100) {
+				//logger.info("Rozmiar = " + s);
+				s = s/100;
+				row.setHeightInPoints((s+1)*9);
+			}
+			sheet.addMergedRegion(new CellRangeAddress(4+i,4+i, 3, 11));
+			sheet.addMergedRegion(new CellRangeAddress(4+i,4+i, 0, 2));
+		}
+		row = sheet.createRow(row.getRowNum()+1);
+		createAndSetCell(row, 0, "Opis:", csBold);
+		sheet.addMergedRegion(new CellRangeAddress(row.getRowNum(),row.getRowNum(), 0, 5));
+		row = sheet.createRow(row.getRowNum()+1);
+		createAndSetCell(row, 0, pt.getOpisStwora(), csWrapFontSmall);
+		float s = pt.getOpisStwora().length();
+		if(s>120) {
+			s = s/120;
+			row.setHeightInPoints(s*11);
+		}
+		sheet.addMergedRegion(new CellRangeAddress(row.getRowNum(),row.getRowNum()+1, 0, 11));
+		logger.exiting("ExportDoExcela", "createNPCSheet");
+	}
 
 	/**
 	 * Tworzy arkusz z wszystkimi danymi bohatera
@@ -229,6 +295,7 @@ public class ExportDoExcela {
 	
 	public void saveWorkBook() {
 		logger.entering("ExportdoExela", "saveWorkBook");
+		//TODO - zapisanie w wybranym miejscu!!!
 		try {
 			FileOutputStream fileOut = new FileOutputStream("C:\\Users\\Tom\\Desktop\\workbook.xls");
 			wb.write(fileOut);
