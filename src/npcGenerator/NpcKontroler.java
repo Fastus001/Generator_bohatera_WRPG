@@ -11,7 +11,6 @@ public class NpcKontroler implements KontrolerInterface{
 	private NewGui parent;
 	private NpcGUI widok;
 	private NpcModelInterface model;
-	private DefaultListModel<Object> listaZapisanychProfesji;
 
 	/**
 	 * 
@@ -20,7 +19,6 @@ public class NpcKontroler implements KontrolerInterface{
 	 */
 	public NpcKontroler(NpcModelInterface model,DefaultListModel<Object> listaBohaterow, NewGui nG) {
 		this.model = model;
-		this.listaZapisanychProfesji = listaBohaterow;
 		EventQueue.invokeLater(()->{
 			try {
 				parent = nG;

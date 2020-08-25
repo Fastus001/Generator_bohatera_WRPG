@@ -1,8 +1,6 @@
 package commons;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -61,14 +59,7 @@ public class GeneratorImion {
 	{
 		
 		try {
-		/*	
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/imiona.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-		
-		File plik = new File("../GeneratorBohatera/src/resources/imiona.txt");
-		FileReader czytaj = new FileReader(plik);
-		*/
+
 		ClassLoader classLoader = getClass().getClassLoader();
 		InputStream input = classLoader.getResourceAsStream("imiona.txt");
 		InputStreamReader czytaj = new InputStreamReader(input);
@@ -80,7 +71,7 @@ public class GeneratorImion {
 			String[] tablica = wiersz.split(",");
 			bazaImion.add(tablica);
 		}
-		System.out.println("Zaczytany plik txt ma wierszy " +bazaImion.size());
+		//System.out.println("Zaczytany plik txt ma wierszy " +bazaImion.size());
 		bufor.close();
 		}catch(Exception e) 
 		{
@@ -99,7 +90,7 @@ public class GeneratorImion {
 	}
 	
 	/*
-	 * wygenerrowanie zaimka adekwatnego do pï¿½ci
+	 * wygenerrowanie zaimka adekwatnego do p³ci
 	 */
 	private String zaimekKrasnoludy(boolean facet) {
 		String[] tablica;

@@ -1,7 +1,7 @@
 /**
  * Rozszerzenie klasy Przedmiot opisuj¹ca rózne typy broni, bia³ej jak i dystansowej oraz amunicji
  */
-package items;
+package commons;
 
 /**
  * 

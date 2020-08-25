@@ -4,7 +4,7 @@
  * @author Tom
  *
  */
-package items;
+package commons;
 
 public class Przedmiot {
 	private String name;

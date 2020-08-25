@@ -7,6 +7,8 @@ import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.swing.JFileChooser;
+
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
@@ -296,8 +298,22 @@ public class ExportDoExcela {
 	public void saveWorkBook() {
 		logger.entering("ExportdoExela", "saveWorkBook");
 		//TODO - zapisanie w wybranym miejscu!!!
+		String urlSavaPdf = null;
 		try {
-			FileOutputStream fileOut = new FileOutputStream("C:\\Users\\Tom\\Desktop\\workbook.xls");
+			JFileChooser dialogFolder = new JFileChooser();
+			dialogFolder.setDialogTitle("Wybierz lokacjê gdzie ma byæ zapisany plik oraz wpisz jego nazwê, bez podawania rozszerzenia pliku!!");
+			//dialogFolder.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+			int returnVal = dialogFolder.showSaveDialog(null);
+			if(returnVal == JFileChooser.APPROVE_OPTION) {
+				urlSavaPdf = dialogFolder.getSelectedFile().getAbsolutePath();
+			}
+			FileOutputStream fileOut;
+			if(urlSavaPdf != null)
+				fileOut = new FileOutputStream(urlSavaPdf+".xls");
+			else {
+				fileOut = new FileOutputStream("C:\\workbook.xls");
+			}
+			
 			wb.write(fileOut);
 		} catch (Exception e) {
 			logger.log(Level.SEVERE, "Problem podczas zapisywania excela", e);

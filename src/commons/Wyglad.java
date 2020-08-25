@@ -1,8 +1,6 @@
 package commons;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -61,7 +59,7 @@ public class Wyglad implements RzutKoscia{
 		switch(nazwaRasy) {
 		case "Ludzie": this.kolorOczu = tab[0];break;
 		case "Krasnoludy":this.kolorOczu = tab[1];break;
-		case "Nizio³kiki":this.kolorOczu = tab[2];break;
+		case "Nizio³ki":this.kolorOczu = tab[2];break;
 		case "Wysokie elfy":this.kolorOczu = tab[3];break;
 		case "Leœne elfy":this.kolorOczu = tab[4];break;
 		}
@@ -85,14 +83,7 @@ public class Wyglad implements RzutKoscia{
 	private void wczytajListe() {
 		listaWlosyOczy = new ArrayList<String[]>();
 		try {
-			/*
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/wlosy.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-						
-			File file = new File("../GeneratorBohatera/src/resources/wlosy.txt");
-			FileReader czytaj = new FileReader(file);
-			*/
+
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("wlosy.txt");
 			InputStreamReader czytaj = new InputStreamReader(input);

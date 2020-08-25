@@ -19,7 +19,6 @@ import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
 import commons.Bohater;
-import commons.ExportDoExcela;
 import commons.Profesja;
 import commons.Rasa;
 import mvcOknoGlowne.GenBohKontrolerInterface;
@@ -87,6 +86,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	 * Create the frame.
 	 */
 	public NewGui(GenBohKontrolerInterface kontroler, GenBohModelInterface model ) {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource("/items/sledgehammer.png")));
 		
 		this.kontroler = kontroler;
 		this.model = model;
@@ -278,13 +278,13 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				if(list.isSelectionEmpty()) {
 					int wybor = JOptionPane.showConfirmDialog(null, "Nie zaznaczy³eœ konkretnego rekordu, czy zapisaæ do arkusza Excel wszystkie utworzone postacie?","Eksport?",JOptionPane.YES_NO_OPTION);
 					if(wybor == JOptionPane.YES_OPTION) {
-						model.exportDoExcel(listaBohaterow.toArray());
+						model.exportDoExcel(listaBohaterow.toArray(),0);
 					}else {
 						
 					}
 				}else {
-					//TODO 
-					//model.exportDoExcel(listaBohaterow.elementAt(list.getSelectedIndex()));
+					int pozycja = list.getSelectedIndex();
+					model.exportDoExcel(listaBohaterow.toArray(),pozycja);
 				}
 				
 
@@ -315,7 +315,6 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 	private void initComponents() {
 		setTitle("Generator Postaci Warhammer 4ed");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource("../items/sledgehammer.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1200, 800);
 		contentPane = new JPanel();
@@ -330,7 +329,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		textArea.setFont(new Font("Arial", Font.PLAIN, 12));
 	
 		btnNowyBohater = new JButton("Nowy Bohater");
-		btnNowyBohater.setIcon(new ImageIcon(NewGui.class.getResource("../items/knight (1).png")));
+		btnNowyBohater.setIcon(new ImageIcon(NewGui.class.getResource("/items/knight (1).png")));
 		btnNowyBohater.setSelectedIcon(null);
 		btnNowyBohater.setToolTipText("Utw\u00F3rz nowego bohatera.\r\nJe\u017Celi nie wybra\u0142e\u015B rasy ani profesji, bohater zostanie utworzony\r\nzasad z podr\u0119cznika z szans\u0105 na ras\u0119 i profesj\u0119. ");
 
@@ -345,7 +344,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		cbDoswiadczenie.setToolTipText("Czy posta\u0107 posiada ju\u017C jakie\u015B rozwini\u0119cia. W zale\u017Cno\u015Bci od wybranej opcji, posta\u0107 otrzymuje  (3,5,7) rozwini\u0119\u0107 (umiej\u0119tno\u015Bci, cechy klasowe lub talent).\r\n");
 		
 		btnPodniesPoziomPr = new JButton("Podnie\u015B poziom");
-		btnPodniesPoziomPr.setIcon(new ImageIcon(NewGui.class.getResource("../items/crossbow.png")));
+		btnPodniesPoziomPr.setIcon(new ImageIcon(NewGui.class.getResource("/items/crossbow.png")));
 
 		btnPodniesPoziomPr.setToolTipText("Posta\u0107 awansuje na nast\u0119pny poziom rozwoju swojej \u015Bcie\u017Cki profesji.\r\nJe\u017Celi poziom cech lub przynajmniej o\u015Bmiu umiej\u0119tno\u015Bci jest zbyt niski, to s\u0105 one automoatyczne podnoszone do wymaganego poziomu (aby uko\u0144czy\u0107 dany poziom profesji).");
 		btnPodniesPoziomPr.setEnabled(false);
@@ -357,7 +356,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		
 		btsSaveHero = new JButton("Zapisz posta\u0107");
-		btsSaveHero.setIcon(new ImageIcon(NewGui.class.getResource("../items/save.png")));
+		btsSaveHero.setIcon(new ImageIcon(NewGui.class.getResource("/items/save.png")));
 		btsSaveHero.setEnabled(false);
 
 		
@@ -374,7 +373,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		buttonGroup.add(rdbtnWomen);
 		
 		btnNowaProfesja = new JButton("Nowa profesja");
-		btnNowaProfesja.setIcon(new ImageIcon(NewGui.class.getResource("../items/wizard.png")));
+		btnNowaProfesja.setIcon(new ImageIcon(NewGui.class.getResource("/items/wizard.png")));
 		btnNowaProfesja.setToolTipText("Dodaj now\u0105 porfesj\u0119 do aktualnie tworzonego bohatera.\r\nNowa profesja zawsze zaczyna si\u0119 od pierwszego poziomu.");
 
 		btnNowaProfesja.setEnabled(false);
@@ -382,7 +381,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnExportToPdf = new JButton("Zapisz do PDF");
 		btnExportToPdf.setEnabled(false);
 
-		btnExportToPdf.setIcon(new ImageIcon(NewGui.class.getResource("../items/document.png")));
+		btnExportToPdf.setIcon(new ImageIcon(NewGui.class.getResource("/items/document.png")));
 		
 		JLabel lblLabelRasa = new JLabel("Rasa:");
 		
@@ -392,6 +391,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnNPC = new JButton("Utw\u00F3rz NPCa");
 		
 		btnExportExcel = new JButton("Zapisz do Excel");
+		btnExportExcel.setIcon(new ImageIcon(NewGui.class.getResource("/items/excel.png")));
 		btnExportExcel.setEnabled(false);
 
 
@@ -408,15 +408,15 @@ public class NewGui extends JFrame implements ObserwatorModel{
 								.addComponent(btnNPC, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(lblLabelRasa)
 								.addComponent(cbRasa, GroupLayout.PREFERRED_SIZE, 76, GroupLayout.PREFERRED_SIZE)
-								.addComponent(btnNowaProfesja)
 								.addComponent(btnPodniesPoziomPr, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(btnNowyBohater)
 								.addComponent(lblLabelProfesja)
 								.addComponent(cbProfesja, GroupLayout.PREFERRED_SIZE, 78, GroupLayout.PREFERRED_SIZE)
 								.addComponent(btsSaveHero, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(btnExportToPdf, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+								.addComponent(btnExportToPdf, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(btnNowyBohater, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(btnNowaProfesja, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 							.addGap(24)
-							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE))
+							.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(529)
 							.addComponent(chckbxShowTalents)
@@ -433,9 +433,9 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
+						.addComponent(scrlPaneLista, GroupLayout.DEFAULT_SIZE, 691, Short.MAX_VALUE)
 						.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-							.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
+							.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 691, Short.MAX_VALUE)
 							.addGroup(gl_contentPane.createSequentialGroup()
 								.addComponent(lblLabelRasa)
 								.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)

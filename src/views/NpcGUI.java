@@ -2,12 +2,16 @@ package views;
 
 import java.awt.Component;
 import java.awt.Font;
+import java.awt.FontFormatException;
+import java.awt.GraphicsEnvironment;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.io.InputStream;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.GroupLayout;
@@ -74,6 +78,7 @@ public class NpcGUI extends JFrame implements KeyListener{
 	Potwory potwor;
 	private JPopupMenu popupMenu;
 	private JMenuItem popMenuZmienCeche;
+	Font fontCaslon;
 
 
 		
@@ -348,7 +353,18 @@ public class NpcGUI extends JFrame implements KeyListener{
 		
 		JScrollPane scrollPaneCechy = new JScrollPane();
 		scrollPaneCechy.setEnabled(false);
-		
+		InputStream inputFont = NpcGUI.class.getClassLoader().getResourceAsStream("CaslonAntiquePolskieZnaki.ttf");
+		try {
+			fontCaslon = Font.createFont(Font.TRUETYPE_FONT, inputFont);
+			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+			ge.registerFont(fontCaslon);
+		} catch (FontFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		JLabel lblCechyPotwora = new JLabel("Cechy Potwora:");
 		lblCechyPotwora.setFont(new Font("Caslon Antique", Font.PLAIN, 15));
 		
@@ -396,33 +412,28 @@ public class NpcGUI extends JFrame implements KeyListener{
 						.addComponent(lblOpis, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
 						.addComponent(scrollPaneOpis, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 625, Short.MAX_VALUE)
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_contentPane.createSequentialGroup()
-									.addComponent(lblwybierzPotwora, GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
+									.addComponent(lblwybierzPotwora, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 									.addPreferredGap(ComponentPlacement.RELATED)
 									.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, 164, GroupLayout.PREFERRED_SIZE)
 									.addPreferredGap(ComponentPlacement.RELATED))
-								.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup()
-									.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+								.addGroup(gl_contentPane.createSequentialGroup()
+									.addComponent(scrollPaneCechy, GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
 									.addPreferredGap(ComponentPlacement.RELATED)
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
 										.addComponent(btnUsun, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 										.addComponent(btnDodaj, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-								.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup()
-									.addComponent(chckbxPowCechyStworzen)
-									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(lblCechyPotwora)))
+								.addComponent(chckbxPowCechyStworzen)
+								.addComponent(lblCechyPotwora, GroupLayout.PREFERRED_SIZE, 194, GroupLayout.PREFERRED_SIZE))
+							.addPreferredGap(ComponentPlacement.UNRELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_contentPane.createSequentialGroup()
 									.addGap(46)
-									.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE))
-								.addGroup(gl_contentPane.createSequentialGroup()
-									.addPreferredGap(ComponentPlacement.UNRELATED)
-									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-										.addComponent(panelNazwa, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE)
-										.addGroup(gl_contentPane.createSequentialGroup()
-											.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
-											.addGap(157)))))))
+									.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 184, GroupLayout.PREFERRED_SIZE))
+								.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+									.addComponent(scrollPaneOpcjonalneCechy, GroupLayout.PREFERRED_SIZE, 247, GroupLayout.PREFERRED_SIZE)
+									.addComponent(panelNazwa, GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)))))
 					.addGap(0))
 		);
 		gl_contentPane.setVerticalGroup(
@@ -430,19 +441,17 @@ public class NpcGUI extends JFrame implements KeyListener{
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_contentPane.createSequentialGroup()
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 										.addComponent(lblwybierzPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE)
 										.addComponent(cbWyborNPC, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(chckbxPowCechyStworzen)
-									.addPreferredGap(ComponentPlacement.RELATED))
-								.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup()
-									.addComponent(panelNazwa, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE)
-									.addGap(14)))
+									.addComponent(chckbxPowCechyStworzen))
+								.addComponent(panelNazwa, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE))
+							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-								.addComponent(lblCechyPotwora)
+								.addComponent(lblCechyPotwora, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
 								.addComponent(lblOpcjonalneCechyPotwora, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE))
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -467,7 +476,7 @@ public class NpcGUI extends JFrame implements KeyListener{
 		textAreaOpis.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		textAreaOpis.setWrapStyleWord(true);
 		textAreaOpis.setLineWrap(true);
-		textAreaOpis.setFont(new Font("Caslon Antique", Font.ITALIC, 17));
+		textAreaOpis.setFont(new Font("Caslon Antique", Font.PLAIN, 17));
 		scrollPaneOpis.setViewportView(textAreaOpis);
 		
 		listOpcjonalne = new JList<Object>();

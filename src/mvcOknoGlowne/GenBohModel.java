@@ -1,8 +1,6 @@
 package mvcOknoGlowne;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -64,15 +62,7 @@ public class GenBohModel implements GenBohModelInterface{
 	public boolean WczytajProfesje(){
 		try{
 			listaProfesji = new ArrayList<Profesja>();
-			/*
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/profesje.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			
-			String urlProfesja = "../GeneratorBohatera/src/resources/profesje-v2.txt";
-			File plik = new File(urlProfesja);
-			FileReader czytaj = new FileReader(plik);
-			*/
+
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("profesje-v2.txt");
 			InputStreamReader czytaj = new InputStreamReader(input);
@@ -132,12 +122,9 @@ public class GenBohModel implements GenBohModelInterface{
 
 			}
 			czytajB.close();
-			//wyswietlProfesjeWszystkoPrzycisk();
-			//TODO -1 btnNowyBohater.setEnabled(true);
-			
+		
 			
 		}catch(Exception ex){
-			//TODO - 2 textArea.append(ex.toString());
 			ex.printStackTrace();
 			return false;
 		}
@@ -147,13 +134,7 @@ public class GenBohModel implements GenBohModelInterface{
 	public boolean WczytajTalenty(){
 		try{
 				listaTalentow = new ArrayList<Talent>();
-				/*
-				ClassLoader classLoader2 = getClass().getClassLoader();
-				InputStream inputStream2 = classLoader2.getResourceAsStream("resources/talenty.txt");
-				InputStreamReader strumien = new InputStreamReader(inputStream2);
-				File plik = new File("../GeneratorBohatera/src/resources/talenty.txt");
-				FileReader czytaj = new FileReader(plik);\
-				*/
+
 				ClassLoader classLoader = getClass().getClassLoader();
 				InputStream input = classLoader.getResourceAsStream("talenty.txt");
 				InputStreamReader czytaj = new InputStreamReader(input);
@@ -189,22 +170,14 @@ public boolean WczytajRasy(){
 		
 		try{
 			listaRas = new ArrayList<Rasa>();
-			/*
-			ClassLoader classLoader2 = getClass().getClassLoader();
-			InputStream inputStream2 = classLoader2.getResourceAsStream("resources/rasy.txt");
-			InputStreamReader czytaj = new InputStreamReader(inputStream2);
-			/*/
-			/*String urlRasy = "../GeneratorBohatera/src/resources/rasy.txt";
-			File plik = new File(urlRasy);
-			FileReader czytaj = new FileReader(plik);*/
+
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("rasy.txt");
 			InputStreamReader czytaj = new InputStreamReader(input);
 			
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
-			
-			
+						
 			while((wiersz = czytajBuf.readLine()) !=null){
 					if(wiersz.length()==0)
 						break;
@@ -299,7 +272,7 @@ public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {
 
 @Override
 public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
-	System.out.println("Numer rasy " + rasa);
+	//System.out.println("Numer rasy " + rasa);
 	try {
 		Profesja losowaProfesja;
 		Rasa losowaRasa;
@@ -310,7 +283,6 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		}else {
 			losowaRasa = (Rasa) listaRas.get(rasa);
 			szukajProfesjiPierwszyPoziom(losowaRasa);
-			System.out.println(losowaRasa);
 		}
 		//sprawdzenie wyboru profesji, je¿eli brak wyboru to losowanie, inaczej wybór z listy
 		if(prof == -1) {
@@ -327,14 +299,6 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
 		wybranaRasa = new Rasa(losowaRasa);
 		wybranaProfesja = new Profesja(losowaProfesja);
-		//wyswietlenie nowego bohatera
-		//TODO textArea.setText(nowyBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
-		//System.out.println(checkBox1.isSelected());
-		//nowyBohater.closeBohater();
-		//TODO btnPodniesPoziomPr.setEnabled(true);
-		//TODO btsSaveHero.setEnabled(true);
-		
-		//TODO btnNowaProfesja.setEnabled(false);
 	} catch (Exception e2) {
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
@@ -426,12 +390,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 			profesjaNowyPoziom = nowyBohater.getCurrentProfesja();
 		}
 		
-		
-
-		
-			//sprawdzenie historii bohatera czy ta profesja juz nie by³a wczesniej rozwijana
 			int sprawdzenieHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(profesjaNowyPoziom);
-			//System.out.println("Sprawdzenie poziomu profesji " + sprawdzenieHistoriiProfesji );
 			if(sprawdzenieHistoriiProfesji != -1)
 			{
 				/*
@@ -445,7 +404,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 				}else {
 					JOptionPane.showMessageDialog(null, "Wybrana profesja posiada ju¿ maksymlany poziom, postaæ awansuje we wczeœniej wybranej profesji", "Maksymalny poziom wybranej profesjii!!", JOptionPane.INFORMATION_MESSAGE);
 				}								
-				System.out.println("Poziom tej samej profesji z najwy¿szym poziomem z historii to  = " + sprawdzenieHistoriiProfesji);				
+				//System.out.println("Poziom tej samej profesji z najwy¿szym poziomem z historii to  = " + sprawdzenieHistoriiProfesji);				
 			}
 		
 	for(Profesja p: listaProfesji)
@@ -467,7 +426,6 @@ public void podniesPoziom(int exp, boolean talenty) {
 }//koniec metody podnieœ poziom
 @Override
 public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
-	// TODO Auto-generated method stub
 	
 	//pytanie czy wczesniejsza sciezka ma byæ ukoñczona
 	if(!nowyBohater.getProfesjaUkonczona())
@@ -558,13 +516,11 @@ public void exportDoPdf(Bohater nBohater) {
 		}
 	}
 	
-
 		Runnable runnable = ()->{try {
 			new ExportToPdf(nBohater,urlSavaPdf);
 			
 		} catch (IOException e) {
-			//TODO
-			
+			e.printStackTrace();
 		}};
 		Thread t = new Thread(runnable);
 		t.start();
@@ -572,20 +528,29 @@ public void exportDoPdf(Bohater nBohater) {
 	
 }
 @Override
-public void exportDoExcel(Object[] obj) {
+public void exportDoExcel(Object[] obj,int ktora) {
 	ExportDoExcela exp = new ExportDoExcela();
-	//TODO - do zmiany bo musi uwzglêdniac bohatera lub NPCa
-	for(Object obiekt:obj) {
-		if(obiekt instanceof Bohater) {
-			Bohater nBohater = new Bohater((Bohater) obiekt);
+	if(ktora ==0) {
+		for(Object obiekt:obj) {
+			if(obiekt instanceof Bohater) {
+				Bohater nBohater = new Bohater((Bohater) obiekt);
+				exp.createBohaterSheet(nBohater);
+			}
+			if(obiekt instanceof Potwory) {
+				Potwory nPotwor = new Potwory((Potwory) obiekt);
+				exp.createNPCSheet(nPotwor);
+			}
+		}
+	}else {
+		if(obj[ktora] instanceof Bohater) {
+			Bohater nBohater = new Bohater((Bohater) obj[ktora]);
 			exp.createBohaterSheet(nBohater);
 		}
-		if(obiekt instanceof Potwory) {
-			Potwory nPotwor = new Potwory((Potwory) obiekt);
+		if(obj[ktora] instanceof Potwory) {
+			Potwory nPotwor = new Potwory((Potwory) obj[ktora]);
 			exp.createNPCSheet(nPotwor);
 		}
 	}
-
 	exp.saveWorkBook();	
 }
 

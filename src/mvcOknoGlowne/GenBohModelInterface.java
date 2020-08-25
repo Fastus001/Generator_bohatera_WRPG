@@ -65,8 +65,9 @@ public interface GenBohModelInterface {
 	/**
 	 * 
 	 * @param obj - tablica obiektów (bohater lub NPC do wgrania do arkusza Excel)
+	 * @param ktora - która pozycja, je¿eli 0 to ca³a tablica
 	 */
-	void exportDoExcel(Object [] obj);
+	void exportDoExcel(Object [] obj,int ktora);
 	
 	
 }
