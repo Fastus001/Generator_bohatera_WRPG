@@ -301,9 +301,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		this.cbRasa.setModel(new DefaultComboBoxModel<Object>(cbRasa));
 	}
 
-	/**
-	 * @param cbProfesja the cbProfesja to set
-	 */
+
 	public void setCbProfesja(Object[] cbProf) {
 		this.cbProfesja.removeAllItems();
 		this.cbProfesja.setModel(new DefaultComboBoxModel<Object>(cbProf));
@@ -507,9 +505,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			
 	}
 
-	/**
-	 * @param btnExportExcel the btnExportExcel to set
-	 */
+
 	public void setBtnExportExcelEnabled() {
 		this.btnExportExcel.setEnabled(true);
 	}
