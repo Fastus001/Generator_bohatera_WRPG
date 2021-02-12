@@ -6,6 +6,7 @@ import npcGenerator.Cechy;
 
 public class Bohater {
 
+
 	private String imieNazwisko;
 	private String plecBohatera;
 	private Wyglad wyglad;
