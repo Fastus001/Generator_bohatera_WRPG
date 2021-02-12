@@ -3,7 +3,7 @@ package commons;
 public class Umiejetnosc  implements Comparable<Umiejetnosc>{
 	 
 	String nazwa;
-	int tcecha; // numer cechy g≥Ûwnej, ktÛra jest testowana
+	int tcecha; // numer cechy g≈Ç√≥wnej, kt√≥ra jest testowana
 	String typ;  //podstawowa (false) lub zaawansowana (true)
 	int poz;
 	boolean czyProfesyjna;
@@ -34,7 +34,7 @@ public class Umiejetnosc  implements Comparable<Umiejetnosc>{
 	}
 	
 	
-	//przekazuje jako string wszystkie pozycje z klasy (oprÛcz poziomu);
+	//przekazuje jako string wszystkie pozycje z klasy (opr√≥cz poziomu);
 	public String wyswietlWszystko(){
 		
 		return nazwa + " ("+ cechyNazwa[tcecha] + ") " + 	typ;

@@ -3,6 +3,7 @@ package npcGenerator;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 /**
  * 
@@ -23,7 +24,7 @@ public class NpcModel implements NpcModelInterface{
 		try {
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("CECHY STWORZEN.txt");
-			InputStreamReader czytaj = new InputStreamReader(input);
+			InputStreamReader czytaj = new InputStreamReader( input, StandardCharsets.UTF_8);
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
 			
@@ -38,7 +39,7 @@ public class NpcModel implements NpcModelInterface{
 	
 			}
 			czytajBuf.close();	
-			System.out.println("Wszystkie cechy stworzeÒ wgrano pomyúlnie!!");
+			System.out.println("Wszystkie cechy stworze≈Ñ wgrano pomy≈õlnie!!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -50,7 +51,7 @@ public class NpcModel implements NpcModelInterface{
 		try {
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("potwory.txt");
-			InputStreamReader czytaj = new InputStreamReader(input);
+			InputStreamReader czytaj = new InputStreamReader(input,StandardCharsets.UTF_8);
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
 			
@@ -87,7 +88,7 @@ public class NpcModel implements NpcModelInterface{
 	@Override
 	public ArrayList<CechyPotworow> getCechyPotworow(String [] tab) {
 	
-		ArrayList<CechyPotworow> lista = new ArrayList<CechyPotworow>();
+		ArrayList<CechyPotworow> lista = new ArrayList<>();
 		for(int i = 0; i < tab.length; i++) 
 		{
 			//System.out.println(tab[i]);
@@ -107,7 +108,7 @@ public class NpcModel implements NpcModelInterface{
 		potworAktualny = new Potwory(potw);
 		if(czyPCS)
 		{
-			String [] powszecheCechyStworzen = {"BroÒ +X","Duøy","Elita","NienawiúÊ","Pancerz (wartoúÊ)","Przebieg≥y","Przestraszony","PrzywÛdca","Si≥acz","Sprytny","Szybki","Twardy","Twardziel","Uprzedzenie (Obiekt)","WrogoúÊ (Obiekt)"};
+			String [] powszecheCechyStworzen = {"Bro≈Ñ +X","Du≈ºy","Elita","Nienawi≈õƒá","Pancerz (warto≈õƒá)","Przebieg≈Çy","Przestraszony","Przyw√≥dca","Si≈Çacz","Sprytny","Szybki","Twardy","Twardziel","Uprzedzenie (Obiekt)","Wrogo≈õƒá (Obiekt)"};
 			for(int i = 0; i < powszecheCechyStworzen.length; i++) 
 			{
 				//System.out.println(tab[i]);
@@ -146,7 +147,7 @@ public class NpcModel implements NpcModelInterface{
 		return potworAktualny;
 	}
 	/*
-	 * Metoda sprawdza i uaktualnia hp obiektu NPC potwÛr w oparciu o statystyki, cechy i rozmiar potwora
+	 * Metoda sprawdza i uaktualnia hp obiektu NPC potw√≥r w oparciu o statystyki, cechy i rozmiar potwora
 	 */
 	public void uaktualnijHp() {
 		int hp = 0;
@@ -163,11 +164,11 @@ public class NpcModel implements NpcModelInterface{
 				rozmiar = cechyPotworow.toString();
 			}
 		}
-		// jeøeli nie ma podanej wielkoúci domyúlnie zak≥ada øe rozmiar jest úredni
+		// je≈ºeli nie ma podanej wielko≈õci domy≈õlnie zak≈Çada ≈ºe rozmiar jest ≈õredni
 		if(rozmiar.length()==0)
-			rozmiar = "Rozmiar (åredni)";
+			rozmiar = "Rozmiar (≈öredni)";
 		
-		//obliczenie øywotnoúci z rozmiaru
+		//obliczenie ≈ºywotno≈õci z rozmiaru
 		switch (rozmiar) {
 		case "Rozmiar (Drobny)": {
 			hp +=1;
@@ -177,20 +178,20 @@ public class NpcModel implements NpcModelInterface{
 			hp +=wytrzymalosc;
 			
 		}break;
-		case "Rozmiar (Ma≥y)": {
+		case "Rozmiar (Ma≈Çy)": {
 			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
 			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
 			hp +=(wytrzymalosc*2)+silaWoli;
 			
 		}break;
-		case "Rozmiar (åredni)": {
+		case "Rozmiar (≈öredni)": {
 			sila = (int)(potworAktualny.getStatyPotwora(StatyNPC.S)/10);
 			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
 			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
 			hp +=sila + (wytrzymalosc*2)+silaWoli;
 			
 		}break;
-		case "Rozmiar (Duøy)": {
+		case "Rozmiar (Du≈ºy)": {
 			sila = (int)(potworAktualny.getStatyPotwora(StatyNPC.S)/10);
 			wytrzymalosc = (int)(potworAktualny.getStatyPotwora(StatyNPC.WT)/10);
 			silaWoli = (int)(potworAktualny.getStatyPotwora(StatyNPC.SW)/10);
@@ -220,7 +221,7 @@ public class NpcModel implements NpcModelInterface{
 
 
 /**
- *metoda sprawdza aktualne cechy NPC i przernosi aktualny rozmiar do opcjonalnych, jeøeli jest. 
+ *metoda sprawdza aktualne cechy NPC i przernosi aktualny rozmiar do opcjonalnych, je≈ºeli jest. 
  */
 	private void zmianaRozmiaruNpc() {
 		for(int i = 0; i<potworAktualny.getCechy().size();i++)
@@ -265,29 +266,29 @@ public class NpcModel implements NpcModelInterface{
 	/**
 	 * 
 	 * @param nowa - nowa cecha
-	 * @param plus - czy cecha stwora jest dodawana do cech g≥ownych czy nie. False oznacza  øe usuwamy...
+	 * @param plus - czy cecha stwora jest dodawana do cech g≈Çownych czy nie. False oznacza  ≈ºe usuwamy...
 	 */
 	private void zmianaWartosciCechPotwora(CechyPotworow nowa,boolean plus) {
 		switch (nowa.toString()) {
-		case "Duøy": {
+		case "Du≈ºy": {
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.S, plus);
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.WT, plus);
 			potworAktualny.addRemoveStatyPotwora(5, StatyNPC.ZW, !plus);
 					}break;
-		case "Mutacja": //TODO - zrobiÊ mutacje ze strony 184 w podrÍczniku
+		case "Mutacja": //TODO - zrobiƒá mutacje ze strony 184 w podrƒôczniku
 					break;
-		case "Spaczenie Umys≥u": //TODO - zrobiÊ mutacje ze strony 185 w podrÍczniku
+		case "Spaczenie Umys≈Çu": //TODO - zrobiƒá mutacje ze strony 185 w podrƒôczniku
 			break;
-		case "Przebieg≥y": {
+		case "Przebieg≈Çy": {
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.INT,plus);
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.SW, plus);
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.OGD, plus);
 		}break;
-		case "PrzywÛdca": {
+		case "Przyw√≥dca": {
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.SW, plus);
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.OGD, plus);
 		}break;
-		case "Si≥acz": {
+		case "Si≈Çacz": {
 			potworAktualny.addRemoveStatyPotwora(1, StatyNPC.SZ, !plus);
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.ZW, !plus);
 			potworAktualny.addRemoveStatyPotwora(10, StatyNPC.S, plus);

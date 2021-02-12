@@ -6,7 +6,7 @@ public class Talent implements Comparable<Talent>{
 	
 	static String[] CECHYNAZWA = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","Brak", "1", "2","4"};
 	private String nazwa;
-	//maksymalny bonus jaki mo¿e mieæ dany talent, obliczenie tego bêdzie dopiero w klasie Bohater. A tutaj jest tylko podany numer cechy z której jest obliczny bonus (czyli maksimum)
+	//maksymalny bonus jaki moÅ¼e mieÄ‡ dany talent, obliczenie tego bÄ™dzie dopiero w klasie Bohater. A tutaj jest tylko podany numer cechy z ktÃ³rej jest obliczny bonus (czyli maksimum)
 	private int max;
 	private String test;
 	private String opis;

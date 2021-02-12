@@ -1,12 +1,10 @@
 /**
- * Rozszerzenie klasy Przedmiot opisuj¹ca rózne typy broni, bia³ej jak i dystansowej oraz amunicji
+ * Rozszerzenie klasy Przedmiot opisujï¿½ca rï¿½zne typy broni, biaï¿½ej jak i dystansowej oraz amunicji
  */
 package commons;
 
 /**
- * 
  * @author Tom
- *
  */
 public class Bron extends Przedmiot {
 	private String zasieg;
@@ -28,7 +26,7 @@ public class Bron extends Przedmiot {
 	 * @param n - nazwa
 	 * @param c - cena
 	 * @param o - obciazenie
-	 * @param d - dostepnoœæ
+	 * @param d - dostepnoï¿½ï¿½
 	 * @param t - typ
 	 * @param z - zasieg/dystans
 	 * @param ob - obrazenia
@@ -44,7 +42,7 @@ public class Bron extends Przedmiot {
 	}
 	/**
 	 * 
-	 * @param b - broñ
+	 * @param b - broï¿½
 	 */
 	public Bron(Bron b) {
 		super((Przedmiot) b);
@@ -82,33 +80,23 @@ public class Bron extends Przedmiot {
 	public String getObrazenia() {
 		return obrazenia;
 	}
-	/**
-	 * @param obrazenia the obrazenia to set
-	 */
+
 	public void setObrazenia(String obrazenia) {
 		this.obrazenia = obrazenia;
 	}
-	/**
-	 * @return the zaletyWady
-	 */
+
 	public String getZaletyWady() {
 		return zaletyWady;
 	}
-	/**
-	 * @param zaletyWady the zaletyWady to set
-	 */
+
 	public void setZaletyWady(String zaletyWady) {
 		this.zaletyWady = zaletyWady;
 	}
-	/**
-	 * @return the kategoria
-	 */
+
 	public String getKategoria() {
 		return kategoria;
 	}
-	/**
-	 * @param kategoria the kategoria to set
-	 */
+
 	public void setKategoria(String kategoria) {
 		this.kategoria = kategoria;
 	}

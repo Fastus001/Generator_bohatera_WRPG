@@ -12,7 +12,7 @@ public interface RzutKoscia {
 		return (int)(Math.random()*x)+1;
 	}
 	
-	//podanie typu koúci i iloúci rzutÛw
+	//podanie typu ko≈õci i ilo≈õci rzut√≥w
 	public static int rzutK(int x, int y){
 		int a = 0;
 		for(int i = 0; i < y; i++){

@@ -1,6 +1,6 @@
 /**
  * 
- * klasa opisuj¹ca podstawowy typ przedmiotów
+ * klasa opisujÄ…ca podstawowy typ przedmiotÃ³w
  * @author Tom
  *
  */

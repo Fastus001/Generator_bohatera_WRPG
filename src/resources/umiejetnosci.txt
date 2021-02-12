@@ -1,30 +1,30 @@
 Atletyka/5/podstawowa
 Badania Naukowe/7/zaawansowana
-Broñ Bia³a/0/podstawowa
-Broñ Zasiêgowa/1/zaawansowana
+BroÅ„ BiaÅ‚a/0/podstawowa
+BroÅ„ ZasiÄ™gowa/1/zaawansowana
 Charyzma/9/podstawowa
 Dowodzenie/9/podstawowa
 Hazard/7/podstawowa
-JeŸdziectwo/5/podstawowa
+JeÅºdziectwo/5/podstawowa
 Intuicja/4/podstawowa
-Jêzyk/7/zaawansowana
-Mocna G³owa/3/podstawowa
+JÄ™zyk/7/zaawansowana
+Mocna GÅ‚owa/3/podstawowa
 Kuglarstwo/5/zaawansowana
 Leczenie/7/zaawansowana
 Nawigacja/4/podstawowa
 Modlitwa/9/zaawansowana
-Odpornoœæ/3/podstawowa
+OdpornoÅ›Ä‡/3/podstawowa
 Muzyka/6/zaawansowana
 Opanowanie/8/podstawowa
-Opieka nad Zwierzêtami/7/zaawansowana
-Otwieranie Zamków/6/zaawansowana
+Opieka nad ZwierzÄ™tami/7/zaawansowana
+Otwieranie ZamkÃ³w/6/zaawansowana
 Oswajanie/8/podstawowa
 Percepcja/4/podstawowa
 Plotkowanie/9/podstawowa
-P³ywanie/2/zaawansowana
+PÅ‚ywanie/2/zaawansowana
 Przekupstwo/9/podstawowa
-Powo¿enie/5/podstawowa
-Rzemios³o/6/zaawansowana
+PowoÅ¼enie/5/podstawowa
+RzemiosÅ‚o/6/zaawansowana
 Sekretne Znaki/7/zaawansowana
 Splatanie Magii/8/zaawansowana
 Sztuka/6/podstawowa
@@ -35,11 +35,11 @@ Tresura/7/zaawansowana
 Tropienie/4/zaawansowana
 Unik/5/podstawowa
 Wiedza/7/zaawansowana
-Wystêpy/9/podstawowa
-Zastawianie Pu³apek/6/zaawansowana
-Wioœlarstwo/2/podstawowa
+WystÄ™py/9/podstawowa
+Zastawianie PuÅ‚apek/6/zaawansowana
+WioÅ›larstwo/2/podstawowa
 Wspinaczka/2/podstawowa
 Wycena/7/zaawansowana
 Zwinne Palce/6/zaawansowana
 Zastraszanie/2/podstawowa
-¯eglarstwo/5/zaawansowana
+Å»eglarstwo/5/zaawansowana

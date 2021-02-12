@@ -3,6 +3,8 @@ package commons;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class GeneratorImion {
@@ -18,12 +20,12 @@ public class GeneratorImion {
 		
 	public String getFullName(String nazwaRasy, boolean plec) {
 		
-		String nazwa = "Kosza�ek Opa�ek";
-		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Le�ne elfy"))
+		String nazwa = "Koszałek Opałek";
+		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Leśne elfy"))
 			nazwaRasy = "Elfy";
 		
 		/*
-		 * Je�eli facet
+		 * Jeďż˝eli facet
 		 */
 		if(plec) {
 			switch(nazwaRasy) {
@@ -31,7 +33,7 @@ public class GeneratorImion {
 			case "Krasnoludy": nazwa = wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_MESKIE.ordinal()); 
 			nazwa += " " + wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_MESKIE.ordinal());
 			nazwa += zaimekKrasnoludy(plec); nazwa += " z klanu " + wczytajImieNazwisko(Imie.NAZWA_KLANU_KR.ordinal());break;
-			case "Nizio�ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_MESKIE.ordinal());
+			case "Niziołki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_MESKIE.ordinal());
 			nazwa += " " + wczytajImieNazwisko(Imie.NIZIOLEK_NAZWISKO.ordinal());break;
 			case "Elfy": nazwa = wczytajImieNazwisko(Imie.PIERWSZY_CZ_ELF.ordinal())+wczytajImieNazwisko(Imie.DRUGI_CZ_ELF.ordinal());
 			nazwa +=wczytajImieNazwisko(Imie.TRZECI_CZ_ELF_MESKIE.ordinal());break;
@@ -42,7 +44,7 @@ public class GeneratorImion {
 			case "Krasnoludy": nazwa = wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_ZENSKIE.ordinal()); 
 			nazwa += " " + wczytajImieNazwisko(Imie.PIERWSZ_CZ_KR.ordinal()); nazwa += wczytajImieNazwisko(Imie.DRUGI_CZ_KR_ZENSKIE.ordinal());
 			nazwa += zaimekKrasnoludy(plec); nazwa += " z klanu " + wczytajImieNazwisko(Imie.NAZWA_KLANU_KR.ordinal());break;
-			case "Nizio�ki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_ZENSK.ordinal());
+			case "Niziołki": nazwa = wczytajImieNazwisko(Imie.NIZ_PIERWSZY_CZ.ordinal())+wczytajImieNazwisko(Imie.NIZ_DRUGI_ZENSK.ordinal());
 			nazwa += " " + wczytajImieNazwisko(Imie.NIZIOLEK_NAZWISKO.ordinal());break;
 			case "Elfy": nazwa = wczytajImieNazwisko(Imie.PIERWSZY_CZ_ELF.ordinal())+wczytajImieNazwisko(Imie.DRUGI_CZ_ELF.ordinal());
 			nazwa +=wczytajImieNazwisko(Imie.TRZECI_CZ_ELF_ZENSKIE.ordinal());break;
@@ -53,7 +55,7 @@ public class GeneratorImion {
 	
 
 	/*
-	 * zaczytanie pliku txt z wszystkimi modu�ami do genrowania imion i nazwisk dla dost�pnych ras z podstawowej wersji
+	 * zaczytanie pliku txt z wszystkimi moduďż˝ami do genrowania imion i nazwisk dla dostďż˝pnych ras z podstawowej wersji
 	 */
 	private void wczytajPlikTxt() 
 	{
@@ -62,7 +64,7 @@ public class GeneratorImion {
 
 		ClassLoader classLoader = getClass().getClassLoader();
 		InputStream input = classLoader.getResourceAsStream("imiona.txt");
-		InputStreamReader czytaj = new InputStreamReader(input);
+		InputStreamReader czytaj = new InputStreamReader( input, StandardCharsets.UTF_8 );
 		BufferedReader bufor = new BufferedReader(czytaj);
 		String wiersz = null;
 		while((wiersz = bufor.readLine()) != null ) {
@@ -90,7 +92,7 @@ public class GeneratorImion {
 	}
 	
 	/*
-	 * wygenerrowanie zaimka adekwatnego do p�ci
+	 * wygenerrowanie zaimka adekwatnego do płci
 	 */
 	private String zaimekKrasnoludy(boolean facet) {
 		String[] tablica;
@@ -114,20 +116,20 @@ public class GeneratorImion {
 //////////////////////////////////////
 ///kolejnosc w pliku txt
 ///1.meskie imperium
-///2.�e�skie imperium
+///2.ďż˝eďż˝skie imperium
 ///3.nazwiska
-///4. Pierwszy cz�on krasnoludzkie
-///5. Drugi cz�on krasnoludzkie m�skie
-///6. Drugi cz�on krasnoludzkie �e�skie
-///7. zaimki do nazwisk krasnoludzkich pierwsze dwa dla kobiet, pozostale dwa dla m�czyzn
+///4. Pierwszy czďż˝on krasnoludzkie
+///5. Drugi czďż˝on krasnoludzkie mďż˝skie
+///6. Drugi czďż˝on krasnoludzkie ďż˝eďż˝skie
+///7. zaimki do nazwisk krasnoludzkich pierwsze dwa dla kobiet, pozostale dwa dla mďż˝czyzn
 ///8. nazwa klanu krasnoludzkiego
-///9. Pierwszy cz�on imienia elfiego
-///10. Drugi cz�on imienia elfiego
-///11. Trzeci cz�on imienia elfiego - �e�ski
-///12. Tzeci cz�on imienia elfiego - m�ski
-///13. Imiona nizio�k�w pierwszy cz�on
-///14. Imie nizio�ka kobiety drugi cz�on
-///15. Imie nizio�ka faceta drugi cz�on
-///16. Nazwisko nizio�ka
-///17. przydomek elf�w
+///9. Pierwszy czďż˝on imienia elfiego
+///10. Drugi czďż˝on imienia elfiego
+///11. Trzeci czďż˝on imienia elfiego - ďż˝eďż˝ski
+///12. Tzeci czďż˝on imienia elfiego - mďż˝ski
+///13. Imiona nizioďż˝kďż˝w pierwszy czďż˝on
+///14. Imie nizioďż˝ka kobiety drugi czďż˝on
+///15. Imie nizioďż˝ka faceta drugi czďż˝on
+///16. Nazwisko nizioďż˝ka
+///17. przydomek elfďż˝w
 

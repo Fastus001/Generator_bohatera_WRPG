@@ -17,12 +17,7 @@ public class Bohater {
 	public ArrayList<Talent> znaneTalenty;
 	private ArrayList<Profesja> historiaProfesji;
 	
-	/**
-	 * 
-	 * @param rs - rasa bohatera
-	 * @param pr - profesja
-	 * @param plec - p�e�
-	 */
+
 	public Bohater(Rasa rs, Profesja pr, boolean plec) {
 		rasa = new Rasa(rs);
 		prof = new Profesja(pr);
@@ -33,7 +28,7 @@ public class Bohater {
 		wyglad = new Wyglad(rasa);
 		
 		if(plec)
-			plecBohatera = "M�czyzna";
+			plecBohatera = "Mężczyzna";
 		else
 			plecBohatera = "Kobieta";
 
@@ -58,7 +53,7 @@ public class Bohater {
 	}
 	
 /**
- * Tworzy now� kopi� bohatera
+ * Tworzy nową kopię bohatera
  * @param bh - bohater 
  */
 	public Bohater(Bohater bh) {
@@ -85,7 +80,7 @@ public class Bohater {
 		}
 	}
 	/**
-	 * Wy�wietla imi� nazwizko, nazw� profesji oraz �cie�k� profesji
+	 * Wyświetla imię nazwizko, nazwę profesji oraz ścieżkę profesji
 	 */
 	@Override
 	public String toString() {
@@ -93,7 +88,7 @@ public class Bohater {
 	}
 	
 	/*
-	 * metoda kt�ra podnosi cechy aby mo�na by�o uko�czyc dany poziom profesji (przewa�nie 4 poziom)
+	 * metoda ktďż˝ra podnosi cechy aby moďż˝na byďż˝o ukoďż˝czyc dany poziom profesji (przewaďż˝nie 4 poziom)
 	 */
 	public void ukonczPoziomProfesji(int poziom) {
 		if(prof.getPoziom() < poziom){
@@ -131,7 +126,7 @@ public class Bohater {
 		
 		if(!prof.toString().equals(nowaProfesja.toString()))
 		{
-			System.out.println("Kompletnie nowa profesja, zmieniam umiej�tno�ci profesyjne");
+			System.out.println("Kompletnie nowa profesja, zmieniam umiejętności profesyjne");
 			for(Umiejetnosc um:znaneUmiejetnosci)
 				um.setCzyProfesyjna(false);
 		}
@@ -157,7 +152,7 @@ public class Bohater {
 	
 	private void setUmiejetnosciProfesyjne() {
 		ArrayList<Umiejetnosc> tablicaUmiejetnosci = new ArrayList<Umiejetnosc>();
-		//zapisanie ca�ej historii w tablicy
+		//zapisanie całej historii w tablicy
 		for(Profesja p:historiaProfesji) {
 			if(p.toString().equals(prof.toString())) {
 				for(Umiejetnosc umP: p.dostepneUmiejetnosci) {
@@ -166,7 +161,7 @@ public class Bohater {
 			}
 		}
 
-		//ustawienie z ca�ej histrii umiejetnosci jako profesyjnych
+		//ustawienie z całej histrii umiejetnosci jako profesyjnych
 		for(Umiejetnosc um:tablicaUmiejetnosci) {
 			for(Umiejetnosc znaneUm:znaneUmiejetnosci) {
 				if(um.toString().equals(znaneUm.toString())) {
@@ -176,7 +171,7 @@ public class Bohater {
 		}
 	}
 
-	//sprawdzenie czy atrybuty klasowe maj� odpowiedniu poziom do przejscia na nowy poziom
+	//sprawdzenie czy atrybuty klasowe majďż˝ odpowiedniu poziom do przejscia na nowy poziom
 	public void nowyPoziomCechyNowyLvl(int minPoz){
 		int[] klasoweAtrybuty = prof.getCechyRozwoju();
 		for(int i = 0; i < klasoweAtrybuty.length; i++){
@@ -190,7 +185,7 @@ public class Bohater {
 		} 
 	}
 	
-	//sprawdzenie znanych umiejetnosci czy jest przynajmniej osiem na minimalnym poziomie rowiniecia do przejscia na now� profesj�
+	//sprawdzenie znanych umiejetnosci czy jest przynajmniej osiem na minimalnym poziomie rowiniecia do przejscia na nowďż˝ profesjďż˝
 
 	public void nowyPoziomUmiejetnosciNowyLvl(int minPozUm) {
 		int ile = 0;
@@ -201,9 +196,9 @@ public class Bohater {
 			}
 		}
 		if(ile<8){
-			System.out.println("Brak wystarczaj�cej ilosci umiejetnosci na odpowiednim poziomie, jest tylko " + ile);
+			System.out.println("Brak wystarczającej ilosci umiejetnosci na odpowiednim poziomie, jest tylko " + ile);
 			/*
-			 * metoda podnosi o jeden umiej�tno�ci ale tylko takiej, kt�ra ma poziom ni�szy od wymaganego, czyli efektywnie nie b�dzie 
+			 * metoda podnosi o jeden umiejętności ale tylko takiej, która ma poziom niższy od wymaganego, czyli efektywnie nie będzie 
 			 * podnosic poziomu ponad 20
 			 */
 			podniesUmiejRandomMinPoz(3,minPozUm);
@@ -212,7 +207,7 @@ public class Bohater {
 	}
 	
 		
-	//pewnie si� zmieni nazwe
+	//pewnie siďż˝ zmieni nazwe
 	public String wyswietlBohatera(boolean czyWyswietlicTalent){
 		
 		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+"\n" +imieNazwisko +" ("+ plecBohatera + ")\n");
@@ -231,7 +226,7 @@ public class Bohater {
 		}
 		stringBuilder.append("\n");
 		stringBuilder.append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
-		stringBuilder.append("\nZnane Umiej�tno�ci:\n");
+		stringBuilder.append("\nZnane Umiejętności:\n");
 		
 		Collections.sort(znaneUmiejetnosci);
 		for(Umiejetnosc u:znaneUmiejetnosci){
@@ -245,7 +240,7 @@ public class Bohater {
 		for(Talent t: znaneTalenty){
 			stringBuilder.append(t.getName()+", ");
 		}
-		stringBuilder.append("\n\nPrzedmioty dost�pne z profesji:\n");
+		stringBuilder.append("\n\nPrzedmioty dostępne z profesji:\n");
 		for(Profesja p:historiaProfesji) {
 			String [] tab = p.getPrzedmiotyZProfesji();
 			for(String s:tab) {
@@ -266,7 +261,7 @@ public class Bohater {
 		return stringBuilder.toString();
 	}
 	
-	//metoda tylko dla nowych postaci, wszelkie wy�sze poziomy musz� ju� sprawdza� profesyjne umiejetno�ci i minimum dla przejscia na nowy poziom profesji
+	//metoda tylko dla nowych postaci, wszelkie wyďż˝sze poziomy muszďż˝ juďż˝ sprawdzaďż˝ profesyjne umiejetnoďż˝ci i minimum dla przejscia na nowy poziom profesji
 	private void dodajZnaneUmiejetnosciZProfesjiLosowePoczatkowe(){
 		
 		for(int i = 0; i < 40; i++) {
@@ -280,7 +275,7 @@ public class Bohater {
 
 		for (Umiejetnosc um:prof.getDostepneUmiejetnosciLista()) {
 			for(Umiejetnosc umZnane: znaneUmiejetnosci){
-				//jezeli juz jest taka umiejetnosc to dodajemy do znanej +5, a now� ustawiamy na -10
+				//jezeli juz jest taka umiejetnosc to dodajemy do znanej +5, a nowďż˝ ustawiamy na -10
 				if(um.getName().equals(umZnane.getName())){
 					umZnane.addPoziom(um.getPoziom());
 					umZnane.setCzyProfesyjna(true);
@@ -309,7 +304,7 @@ public class Bohater {
 			}
 			//jezeli poziom umiejetnosci jest na minus, to nie dodawaj jej do znanych umiejetnosci
 			if(um.getPoziom() >= 0){
-				System.out.println("Dodajemy now� umiej�tno�� z nowej profesji " + um.toString());
+				System.out.println("Dodajemy nowś umiejętność z nowej profesji " + um.toString());
 				um.setCzyProfesyjna(true);
 				znaneUmiejetnosci.add(um);
 			}
@@ -317,13 +312,13 @@ public class Bohater {
 	}
 		
 	
-	//zaleca si� najpierw zaczytac dostepne umiejetno�ci z rasy a dopiero potem z profesji
+	//zaleca siďż˝ najpierw zaczytac dostepne umiejetnoďż˝ci z rasy a dopiero potem z profesji
 	//
 	@SuppressWarnings("unused")
 	private void dodajZnaneUmiejetnosciZProfesji(int x){
 		for (Umiejetnosc um:prof.getDostepneUmiejetnosciLista()) {
 			for(Umiejetnosc umZnane: znaneUmiejetnosci){
-				//jezeli juz jest taka umiejetnosc to dodajemy do znanej +5, a now� ustawiamy na -10
+				//jezeli juz jest taka umiejetnosc to dodajemy do znanej +5, a nowďż˝ ustawiamy na -10
 				if(um.getName().equals(umZnane.getName())){
 					umZnane.addPoziom(5*x);
 					um.addPoziom(-40);
@@ -343,7 +338,7 @@ public class Bohater {
 		
 		ArrayList<Umiejetnosc> tempRasaZnaneUmiejetnosci = new ArrayList<Umiejetnosc>();
 		
-		//skopiowanie listy dost�pnych umiejetno�ci.
+		//skopiowanie listy dostďż˝pnych umiejetnoďż˝ci.
 		for(Umiejetnosc m:rasa.getListaDostepnychUmiejetnosci()){
 			tempRasaZnaneUmiejetnosci.add(m);
 		}
@@ -363,8 +358,8 @@ public class Bohater {
 	}
 	
 	private void dodajZnaneTalentyZRasy(){
-		// ludzie wyb�r mi�dzy 0 a 1, w dost�pnych talentach
-		//krasnoludy maj� do wyboru pomi�dzy 0 a 1, oraz 2-3
+		// ludzie wybďż˝r miďż˝dzy 0 a 1, w dostďż˝pnych talentach
+		//krasnoludy majďż˝ do wyboru pomiďż˝dzy 0 a 1, oraz 2-3
 		// wysokie elfy 0 lub 1  oraz 2 lub 3
 		//lesne elfy, 0 lub 1, oraz 2 lub 3
 		if(rasa.getName().equals("Ludzie")){
@@ -381,7 +376,7 @@ public class Bohater {
 		for(Talent t:znaneTalenty){
 			t.setTalentMax(cechy);
 		}
-		//dodanie losowych talentow, + sprawdzenie czy si� nie powtarzaj�, ewentualnie zwi�kszenie o 1
+		//dodanie losowych talentow, + sprawdzenie czy siďż˝ nie powtarzajďż˝, ewentualnie zwiďż˝kszenie o 1
 		int losoweTalenty = rasa.getIloscLosowychTalentow();
 		if(losoweTalenty > 0 ) {
 			for(int i= 0; i<losoweTalenty; i++){
@@ -393,7 +388,7 @@ public class Bohater {
 					System.out.println("Nowy losowy talent z rasy= " + nowyTalent.toString() + " numer i = " + i);
 				}else{
 						if(znaneTalenty.get(test).getMaksimumValue() == znaneTalenty.get(test).getPoziomValue()){
-							System.out.println("Znany talent z rasy, kt�ry ma juz maks = " + znaneTalenty.get(test).toString()+ " numer i = " + i);
+							System.out.println("Znany talent z rasy, który ma juz maks = " + znaneTalenty.get(test).toString()+ " numer i = " + i);
 							i--;
 						}else{
 							
@@ -409,14 +404,14 @@ public class Bohater {
 		
 	}
 	//dodaje jeden losowy talent z profesjii
-	//ustalamy maksimum dla talentu oraz sprawdza wcze�niej czy juz nie jest dodany
+	//ustalamy maksimum dla talentu oraz sprawdza wczeďż˝niej czy juz nie jest dodany
 	
-	//uwaga!! - mo�e si� zdarzy� �e si� ta metoda zap�tli jak wszystkie talenty b�d� mia�y maksymalny poziom
+	//uwaga!! - moďż˝e siďż˝ zdarzyďż˝ ďż˝e siďż˝ ta metoda zapďż˝tli jak wszystkie talenty bďż˝dďż˝ miaďż˝y maksymalny poziom
 	private void dodajZnanyTalentZProfesji() {
 		int iloscTalentow = prof.getSizeOfDostepneTalenty();
 		Talent losowyTalent = prof.getLosowyTalent(randomX(iloscTalentow));
 		
-		// sprawdzanie czy talenty si� powtarzaj�
+		// sprawdzanie czy talenty siďż˝ powtarzajďż˝
 		int test = sprawdzCzyTalentJest(losowyTalent);
 		System.out.println(test);
 		if(test == -1){
@@ -425,7 +420,7 @@ public class Bohater {
 					System.out.println("Nowy losowy talent z profesji= " + losowyTalent.toString());
 				}else{
 						if(znaneTalenty.get(test).getMaksimumValue() == znaneTalenty.get(test).getPoziomValue()){
-							System.out.println("Znany talent, kt�ry ma juz maks z profesji= " + znaneTalenty.get(test).toString());
+							System.out.println("Znany talent, który ma juz maks z profesji= " + znaneTalenty.get(test).toString());
 							dodajZnanyTalentZProfesji();
 						}else{
 							znaneTalenty.get(test).addPoziom();
@@ -448,7 +443,7 @@ public class Bohater {
 		cechy.podniesCeche(5, prof.getLosowyAtrybutCechy(), true);
 	}
 	
-	//w sumie mo�na te� u�y� tej metody, do okre�lenia, robienia bardziej zaawansowanej postaci
+	//w sumie moďż˝na teďż˝ uďż˝yďż˝ tej metody, do okreďż˝lenia, robienia bardziej zaawansowanej postaci
 	public void postacLosowyBonus(int ileRazy) {
 		for(int n = 0; n < ileRazy; n++){
 			int opcja = (int) (Math.random()*10);
@@ -466,7 +461,7 @@ public class Bohater {
 			case 1: podniesUmiejRandom(6); System.out.println("losowe umiejetnosci");break;
 			case 2: dodajZnanyTalentZProfesji(); System.out.println("losowey talent");break;
 			}//koniec switch
-		}//koniec p�li fo
+		}//koniec pďż˝li fo
 	}
 	
 	//podniesienie umiejetnosci losowe
@@ -488,7 +483,7 @@ public class Bohater {
 		}
 	
 	
-	//moloch odpowiadaj�cy za dodanie lub opisanie wszystkich cech, bonus�w z talent�w
+	//moloch odpowiadajďż˝cy za dodanie lub opisanie wszystkich cech, bonusďż˝w z talentďż˝w
 	private void sprawdzTalenty(Talent talent) {
 		Umiejetnosc nowa;
 		switch(talent.toString()) {
@@ -510,11 +505,11 @@ public class Bohater {
 			case "Szybki Refleks": if(talent.getOpcjeWyswietlania()){
 			cechy.podniesCeche(5,5, false); talent.niePokazujOpisu();
 				}break;
-			case "Zr�czny": if(talent.getOpcjeWyswietlania()){
+			case "Zręczny": if(talent.getOpcjeWyswietlania()){
 			cechy.podniesCeche(5,6, false); talent.niePokazujOpisu();
 				}break;
-			case "B�yskotliwo��":  if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,7, false); talent.niePokazujOpisu(); System.out.println("B�yskotliwo��, int podniesiony!");
+			case "Błyskotliwość":  if(talent.getOpcjeWyswietlania()){
+			cechy.podniesCeche(5,7, false); talent.niePokazujOpisu(); System.out.println("Błyskotliwość, int podniesiony!");
 				}break;
 			case "Zimna krew": if(talent.getOpcjeWyswietlania()){
 			cechy.podniesCeche(5,8, false); talent.niePokazujOpisu();
@@ -526,15 +521,15 @@ public class Bohater {
 				cechy.addSzybkosc(); talent.niePokazujOpisu();
 				}break;
 
-			case "S�uch Absolutny":  nowa = new Umiejetnosc("Wyst�py (�piewanie)",9,"podstawowa",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Obie�y�wiat":  nowa = new Umiejetnosc("Wiedza (Lokalna)",7,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Czarownica!":  nowa = new Umiejetnosc("J�zyk (Magiczny)",7,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytw�rca (Dowolny)":  nowa = new Umiejetnosc("Rzemios�o (Dowolny)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytw�rca (Materia�y Wybuchowe)":  nowa = new Umiejetnosc("Rzemios�o (Materia�y Wybuchowe)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytw�rca (Zielarz)":  nowa = new Umiejetnosc("Rzemios�o (Zielarz)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytw�rca (Dowolne Rzemios�o)":  nowa = new Umiejetnosc("Rzemios�o (Dowolne Rzemios�o)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytw�rca (Szkutnik)":  nowa = new Umiejetnosc("Rzemios�o (Szkutnik)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
-			case "Wytw�rca (Aptekarz)":  nowa = new Umiejetnosc("Rzemios�o (Aptekarz)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Słuch Absolutny":  nowa = new Umiejetnosc("Występy (Śpiewanie)",9,"podstawowa",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Obieżyświat":  nowa = new Umiejetnosc("Wiedza (Lokalna)",7,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Czarownica!":  nowa = new Umiejetnosc("Język (Magiczny)",7,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Dowolny)":  nowa = new Umiejetnosc("Rzemiosło (Dowolny)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Materiały Wybuchowe)":  nowa = new Umiejetnosc("Rzemiosło (Materiały Wybuchowe)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Zielarz)":  nowa = new Umiejetnosc("Rzemiosło (Zielarz)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Dowolne Rzemiosło)":  nowa = new Umiejetnosc("Rzemiosło (Dowolne Rzemiosło)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Szkutnik)":  nowa = new Umiejetnosc("Rzemiosło (Szkutnik)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
+			case "Wytwórca (Aptekarz)":  nowa = new Umiejetnosc("Rzemiosło (Aptekarz)",6,"zaawansowana",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
 			case "Talent Artystyczny":  nowa = new Umiejetnosc("Sztuka (Dowolna)",6,"podstawowa",0,false); prof.addUmiejetnoscDoDostepneUmiejetnosci(nowa); break;
 		}
 	}
@@ -554,13 +549,13 @@ public class Bohater {
 		System.out.println(poziom); 
 		switch(opcjaDoswiadczenia){
 				case 1:postacLosowyBonus(1*poziom);
-				zmienOpisSciekiProfesji("pocz�tkuj�cy");
-				System.out.println("profesja pocz�tkuj�ca"); break;
+				zmienOpisSciekiProfesji("początkujący");
+				System.out.println("profesja początkująca"); break;
 				case 2: postacLosowyBonus(3*poziom);
-				zmienOpisSciekiProfesji("�redniozaawansowana");
-				System.out.println("profesja �redniozaawansowana"); break;
+				zmienOpisSciekiProfesji("Średniozaawansowana");
+				System.out.println("profesja Średniozaawansowana"); break;
 				case 3: postacLosowyBonus(5*poziom);
-				zmienOpisSciekiProfesji("do�wiadczona");
+				zmienOpisSciekiProfesji("doświadczona");
 				System.out.println("profesja zaawansowana"); break;
 			}
 		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
@@ -570,9 +565,9 @@ public class Bohater {
 	
 	/**
 	 * @param Profesja - nowa profesja
-	 * @return - je�eli nie by�o jeszcze takiej profesji to zwraca -1, w innym wypadku zwraca poziom wczesniej rozwijanej 
-	 * Sprawdzenie czy dana profesja juz nie by�a wcze�niej rozwijana u danego bohatera
-	 * je�eli nie b�dzie to zwraca -1, inaczej podaje poziom profesji
+	 * @return - jeżeli nie było jeszcze takiej profesji to zwraca -1, w innym wypadku zwraca poziom wczesniej rozwijanej 
+	 * Sprawdzenie czy dana profesja juz nie byďż˝a wczeďż˝niej rozwijana u danego bohatera
+	 * jeďż˝eli nie bďż˝dzie to zwraca -1, inaczej podaje poziom profesji
 	 */
 	public int sprawdzHistorieProfesji(Profesja nowaProfesja) {
 		int poziom = -1;
@@ -608,7 +603,7 @@ public class Bohater {
 
 	public String getCurrentProfesjaName(){
 		String [] tablica =prof.getName().split("/");
-		if(plecBohatera == "M�czyzna")
+		if(plecBohatera == "Mężczyzna")
 			return tablica[0];
 		else {
 			return tablica[1];
@@ -620,12 +615,12 @@ public class Bohater {
 	}
 	
 	public String getProfesjaSciezka() {
-		String [] tablica =prof.getSciezkaProfesji().split(" � "); 
+		String [] tablica =prof.getSciezkaProfesji().split(" – "); 
 		return tablica[0];
 	}
 	
 	public String getProfesjaStatus() {
-		String [] tablica =prof.getSciezkaProfesji().split(" � "); 
+		String [] tablica =prof.getSciezkaProfesji().split(" – "); 
 		return tablica[1];
 	}
 	
@@ -706,10 +701,10 @@ public class Bohater {
 	}
 	
 	/**
-	 * @return - je�eli m�czyzna to true, inacze false
+	 * @return - jeżeli mężczyzna to true, inacze false
 	 */
 	public boolean getPlecBohatera() {
-		if(plecBohatera.equals("M�czyzna"))
+		if(plecBohatera.equals("Mężczyzna"))
 			return true;
 		else
 			return false;

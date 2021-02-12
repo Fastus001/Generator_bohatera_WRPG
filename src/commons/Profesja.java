@@ -25,13 +25,13 @@ public class Profesja implements Comparable<Profesja>{
 	/**
 	 * 
 	 * @param n - nazwa Profesji
-	 * @param sP - nazwa œcie¿ki profesji
+	 * @param sP - nazwa Å›cieÅ¼ki profesji
 	 * @param p - poziom
-	 * @param dU - dostêpne umiejetnoœci (z profesji)
-	 * @param dT - dostêpne talenty (z profesji)
-	 * @param dR - dostêpna rasa
+	 * @param dU - dostÄ™pne umiejetnoÅ›ci (z profesji)
+	 * @param dT - dostÄ™pne talenty (z profesji)
+	 * @param dR - dostÄ™pna rasa
 	 * @param cR - cechy rozwoju (statysyki)
-	 * @param koniec - czy dana profesja zosta³a ukoñczona (gdy Bohater jest ju¿ utworzony)
+	 * @param koniec - czy dana profesja zostaÅ‚a ukoÅ„czona (gdy Bohater jest juÅ¼ utworzony)
 	 * @param k - klasa Profesji
 	 * @param pP - przedmioty z Profesji
 	 */
@@ -74,7 +74,7 @@ public class Profesja implements Comparable<Profesja>{
 
 	
 	/**
-	 * Wyœwietla nazwê profesji
+	 * WyÅ›wietla nazwÄ™ profesji
 	 */
 	public String toString() {
 		return nazwa;
@@ -82,12 +82,12 @@ public class Profesja implements Comparable<Profesja>{
 	
 	//wyswietlenie klasy w postaci skompresowanego stringa
 	public String wyswietlProfesje(){
-		String tekst = "Nazwa profesji: "+ nazwa + " Œcie¿ka profesji: " + sciezkaProfesji + " Poziom: " + Integer.toString(poziom) + "\nDostêpne Umiejêtnoœci: ";
+		String tekst = "Nazwa profesji: "+ nazwa + " ÅšcieÅ¼ka profesji: " + sciezkaProfesji + " Poziom: " + Integer.toString(poziom) + "\nDostÄ™pne UmiejÄ™tnoÅ›ci: ";
 		
 		for(Umiejetnosc s: dostepneUmiejetnosci){
 			tekst +=s.wyswietlWszystko() +",";
 		}
-		tekst +="\nDostêpne talenty: ";
+		tekst +="\nDostÄ™pne talenty: ";
 		for(Talent x: dostepneTalenty){
 			tekst +=x.wyswietlWszystkoTalent() +",";
 		}
@@ -121,8 +121,8 @@ public class Profesja implements Comparable<Profesja>{
 	}
 	/**
 	 * 
-	 * @param plec - czy bohater to mê¿czycna TRUE, czy kobieta FALSE
-	 * @return - zwraca strina z mêsk¹ lub ¿eñsk¹ wersj¹ nazw
+	 * @param plec - czy bohater to mÄ™Å¼czycna TRUE, czy kobieta FALSE
+	 * @return - zwraca strina z mÄ™skÄ… lub Å¼eÅ„skÄ… wersjÄ… nazw
 	 */
 	public String getNameProfesjaSciezka(boolean plec){
 		String [] nazwaPr = nazwa.split("/");
@@ -205,7 +205,7 @@ public class Profesja implements Comparable<Profesja>{
 		return sciezkaProfesji;
 	}
 	/**
-	 * @param plec - p³eæ bohatera
+	 * @param plec - pÅ‚eÄ‡ bohatera
 	 * @return the sciezkaProfesji
 	 */
 	public String getSciezkaProfesji(boolean plec) {

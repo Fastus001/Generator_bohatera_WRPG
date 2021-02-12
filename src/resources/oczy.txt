@@ -1,19 +1,19 @@
-Dowolny wybór;Czarny jak wêgiel;Jasnoszary;Czarny jak smo³a;Koloru koœci s³oniowej
-Zielony;Szary jak o³ów;Szary;Ametystowy;Antracyt
-B³êkitny;Stalowoszary;B³êkitny;Akwamaryna;Zielony jak bluszcz
+Dowolny wybÃ³r;Czarny jak wÄ™giel;Jasnoszary;Czarny jak smoÅ‚a;Koloru koÅ›ci sÅ‚oniowej
+Zielony;Szary jak oÅ‚Ã³w;Szary;Ametystowy;Antracyt
+BÅ‚Ä™kitny;Stalowoszary;BÅ‚Ä™kitny;Akwamaryna;Zielony jak bluszcz
 Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
 Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
 Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
-Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
-Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
-Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
-Blady szary;Br¹zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
-Szary;Ciemnobr¹zowy;Orzechowy;Szmaragdowy;Kasztanowy
-Szary;Ciemnobr¹zowy;Orzechowy;Szmaragdowy;Kasztanowy
-Szary;Ciemnobr¹zowy;Orzechowy;Szmaragdowy;Kasztanowy
-Br¹zowy;Orzechowy;Br¹zowy;Bursztynowy;Ciemnobr¹zowy
-Br¹zowy;Orzechowy;Br¹zowy;Bursztynowy;Ciemnobr¹zowy
-Br¹zowy;Orzechowy;Br¹zowy;Bursztynowy;Ciemnobr¹zowy
-Orzechowy;Zielony;Miedziany;Miedziany;Jasnobr¹zowy
-Ciemnobr¹zowy;Ciemny miedziany;Ciemnobr¹zowy;Cytrynowo¿ó³ty;Z³otobr¹zowy
-Czarny;Z³oty;Ciemnobr¹zowy;Z³oty;Fio³kowy
+Blady szary;BrÄ…zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;BrÄ…zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;BrÄ…zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;BrÄ…zowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Szary;CiemnobrÄ…zowy;Orzechowy;Szmaragdowy;Kasztanowy
+Szary;CiemnobrÄ…zowy;Orzechowy;Szmaragdowy;Kasztanowy
+Szary;CiemnobrÄ…zowy;Orzechowy;Szmaragdowy;Kasztanowy
+BrÄ…zowy;Orzechowy;BrÄ…zowy;Bursztynowy;CiemnobrÄ…zowy
+BrÄ…zowy;Orzechowy;BrÄ…zowy;Bursztynowy;CiemnobrÄ…zowy
+BrÄ…zowy;Orzechowy;BrÄ…zowy;Bursztynowy;CiemnobrÄ…zowy
+Orzechowy;Zielony;Miedziany;Miedziany;JasnobrÄ…zowy
+CiemnobrÄ…zowy;Ciemny miedziany;CiemnobrÄ…zowy;CytrynowoÅ¼Ã³Å‚ty;ZÅ‚otobrÄ…zowy
+Czarny;ZÅ‚oty;CiemnobrÄ…zowy;ZÅ‚oty;FioÅ‚kowy

@@ -1,10 +1,11 @@
 package commons;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.io.*;
 
-//dostêpne talenty
-//ludzie wybór miêdzy 0 a 1, w dostêpnych talentach
-//krasnoludy maj¹ do wyboru pomiêdzy 0 a 1, oraz 2-3
+//dostÄ™pne talenty
+//ludzie wybÃ³r miÄ™dzy 0 a 1, w dostÄ™pnych talentach
+//krasnoludy majÄ… do wyboru pomiÄ™dzy 0 a 1, oraz 2-3
 //wysokie elfy 0 lub 1  oraz 2 lub 3
 //lesne elfy, 0 lub 1, oraz 2 lub 3
 
@@ -14,7 +15,7 @@ public class Rasa  {
 		private ArrayList<Umiejetnosc> dostepneUmiejetnosci;
 		private ArrayList<Talent> dostepneTalenty;
 		private String iloscLosowychTalentow;
-		static public String[] LISTA_TALENTOW = {"Atrakcyjny","Silne Nogi","Bardzo Silny","S³uch Absolutny","B³êkitna Krew","Strzelec Wyborowy","B³yskotliwoœæ","Szczêœcie","Charyzmatyczny","Szósty Zmys³","Chodu!","Szybki Refleks","Czujny","Talent Artystyczny","Czysta Dusza","Tragarz","Czytanie-Pisanie","Twardziel","Geniusz Arytmetyczny","Urodzony Wojownik","Naœladowca","Widzenie w Ciemnoœci","Niezwykle Odporny","Wyczucie Kierunku","Oburêcznoœæ","Wyczulony Zmys³","Odporny na (Zagro¿enie)","Wytwórca (Dowolny)","Poliglota","Zimna krew"};
+		static public String[] LISTA_TALENTOW = {"Atrakcyjny","Silne Nogi","Bardzo Silny","SÅ‚uch Absolutny","BÅ‚Ä™kitna Krew","Strzelec Wyborowy","BÅ‚yskotliwoÅ›Ä‡","SzczÄ™Å›cie","Charyzmatyczny","SzÃ³sty ZmysÅ‚","Chodu!","Szybki Refleks","Czujny","Talent Artystyczny","Czysta Dusza","Tragarz","Czytanie-Pisanie","Twardziel","Geniusz Arytmetyczny","Urodzony Wojownik","NaÅ›ladowca","Widzenie w CiemnoÅ›ci","Niezwykle Odporny","Wyczucie Kierunku","OburÄ™cznoÅ›Ä‡","Wyczulony ZmysÅ‚","Odporny na (ZagroÅ¼enie)","WytwÃ³rca (Dowolny)","Poliglota","Zimna krew"};
 	
 		
 		public Rasa(String n, int [] cb, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String iT){
@@ -51,15 +52,15 @@ public class Rasa  {
 			for(int x: cechyBazowe){
 				doWyswietlenia += Integer.toString(x) + " ,";
 			}
-			doWyswietlenia +="\nDostêpne umiejêtnoœci: ";
+			doWyswietlenia +="\nDostÄ™pne umiejÄ™tnoÅ›ci: ";
 			for(Umiejetnosc s: dostepneUmiejetnosci){
 				doWyswietlenia +=s.wyswietlWszystko() +",";
 			}
-			doWyswietlenia +="\nDostêpne talenty: ";
+			doWyswietlenia +="\nDostÄ™pne talenty: ";
 			for(Talent x: dostepneTalenty){
 				doWyswietlenia +=x.wyswietlWszystkoTalent() +",";
 			}
-			doWyswietlenia +="\nDostêpne losowe talenty:" + iloscLosowychTalentow;
+			doWyswietlenia +="\nDostÄ™pne losowe talenty:" + iloscLosowychTalentow;
 			return doWyswietlenia;			
 		}
 		
@@ -89,7 +90,7 @@ public class Rasa  {
 				*/	
 					ClassLoader classLoader = getClass().getClassLoader();
 					InputStream input = classLoader.getResourceAsStream("talenty.txt");
-					InputStreamReader czytaj = new InputStreamReader(input);
+					InputStreamReader czytaj = new InputStreamReader( input, StandardCharsets.UTF_8);
 					BufferedReader czytajBuf = new BufferedReader(czytaj);
 					String wiersz = null;
 					
