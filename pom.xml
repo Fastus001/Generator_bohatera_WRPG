@@ -2,7 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>GeneratorBohatera</groupId>
   <artifactId>GeneratorBohatera</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>Generator</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,7 +41,6 @@
     <artifactId>poi</artifactId>
     <version>4.1.2</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
