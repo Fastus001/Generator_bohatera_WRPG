@@ -20,7 +20,7 @@ import npcGenerator.Potwory;
 import org.apache.poi.ss.usermodel.*;
 
 /**
- * klasa która eksportuje zapisanych bohaterów jak i NPC do arkusza excel, ka¿da postaæ jest zapisane do osobnej zak³adki
+ * klasa ktÃ³ra eksportuje zapisanych bohaterÃ³w jak i NPC do arkusza excel, kaÅ¼da postaÄ‡ jest zapisane do osobnej zakÅ‚adki
  * @author Tom
  *
  */
@@ -46,7 +46,7 @@ public class ExportDoExcela {
 				Logger.getLogger("").addHandler(handler);
 				
 			} catch (Exception e) {
-				logger.log(Level.SEVERE,"Nie mo¿na utworzyæ handlera pliku dziennika",e);
+				logger.log(Level.SEVERE,"Nie moÅ¼na utworzyÄ‡ handlera pliku dziennika",e);
 			}
 		}
 		
@@ -121,7 +121,7 @@ public class ExportDoExcela {
 
 	/**
 	 * Tworzy arkusz z wszystkimi danymi bohatera
-	 * @param bh - postaæ pohatera do zapisania w arkuszu
+	 * @param bh - postaÄ‡ pohatera do zapisania w arkuszu
 	 */
 	public void createBohaterSheet(Bohater bh) {
 		logger.entering("ExportdoExela", "createBohaterSheet");
@@ -161,28 +161,28 @@ public class ExportDoExcela {
 		createAndSetCell(row, 6, bh.getKlasaProfesji(), csBoldAlign);
 		sheet.addMergedRegion(new CellRangeAddress(0, 0, 6, 7));
 		
-		//Rz¹d 1 - Profesja / poziom profesji / œciezka profesji
+		//RzÄ…d 1 - Profesja / poziom profesji / Å›ciezka profesji
 		row = sheet.createRow(1);
 		row.createCell(0).setCellValue("Profesja:");
 		row.createCell(1).setCellValue(bh.getCurrentProfesjaName());
 		row.createCell(2).setCellValue("Poziom:");
 		createAndSetCell(row, 3, bh.getCurrentProfPoziom(), justowanie);
-		row.createCell(4).setCellValue("Œcie¿ka:");
+		row.createCell(4).setCellValue("ÅšcieÅ¼ka:");
 		row.createCell(5).setCellValue(bh.getProfesjaSciezka());
 		
-		//Rz¹d -2 - wiek, wygl¹d
+		//RzÄ…d -2 - wiek, wyglÄ…d
 		row = sheet.createRow(2);
 		row.createCell(0).setCellValue("Wiek:");
 		createAndSetCell(row, 1, bh.getWygladWiek(), justowanie);
 		row.createCell(2).setCellValue("Wzrost:");
 		createAndSetCell(row, 3, bh.getWygladWzrost(), justowanie);
-		row.createCell(4).setCellValue("W³osy:");
+		row.createCell(4).setCellValue("WÅ‚osy:");
 		createAndSetCell(row, 5, bh.getWygladWlosy(), justowanie);
 		sheet.addMergedRegion(new CellRangeAddress(2, 2, 5, 6));
 		row.createCell(7).setCellValue("Oczy:");
 		createAndSetCell(row, 8, bh.getWygladOczy(), justowanie);
 		
-		//Rz¹d 3,4,5,6 - Cechy - opis
+		//RzÄ…d 3,4,5,6 - Cechy - opis
 		row = sheet.createRow(3);
 		int[] aktualne = bh.getCechyAktualneInt();
 		int [] rozwiniecia = bh.getCechyRozwinieciaInt();
@@ -200,7 +200,7 @@ public class ExportDoExcela {
 		row = sheet.createRow(4);
 		cellB = row.createCell(0);
 		cellB.setCellStyle(pogrubiony);
-		cellB.setCellValue("Pocz¹tkowa:");
+		cellB.setCellValue("PoczÄ…tkowa:");
 		sheet.autoSizeColumn(0);
 		for(int i = 1; i< 11; i++) {
 			row.createCell(i).setCellValue(aktualne[i-1]-rozwiniecia[i-1]);
@@ -209,7 +209,7 @@ public class ExportDoExcela {
 			}
 		row = sheet.createRow(5);
 		cellB = row.createCell(0);
-		cellB.setCellValue("Rozwiniêcia:");
+		cellB.setCellValue("RozwiniÄ™cia:");
 		cellB.setCellStyle(pogrubiony);
 		for(int i = 1; i< 11; i++) {
 			row.createCell(i).setCellValue(rozwiniecia[i-1]);
@@ -226,26 +226,26 @@ public class ExportDoExcela {
 			cellB.setCellStyle(getCellStyleBold(true, true, false));
 			}
 		
-		//Rz¹d 7 - Szybkoœæ
+		//RzÄ…d 7 - SzybkoÅ›Ä‡
 		row = sheet.createRow(7);
-		row.createCell(0).setCellValue("Szybkoœæ:");
+		row.createCell(0).setCellValue("SzybkoÅ›Ä‡:");
 		createAndSetCell(row, 1, bh.getCechySzybkosc(), justowanie);
-		row.createCell(2).setCellValue("Chód:");
+		row.createCell(2).setCellValue("ChÃ³d:");
 		createAndSetCell(row, 3, bh.getCechySzybkosc()*2, justowanie);
 		row.createCell(4).setCellValue("Bieg:");
 		createAndSetCell(row, 5, bh.getCechySzybkosc()*4, justowanie);
 		
-		//rz¹d 8 - ¿ywotnoœæ
+		//rzÄ…d 8 - Å¼ywotnoÅ›Ä‡
 		row = sheet.createRow(8);
-		row.createCell(0).setCellValue("¯ywotnoœæ:");
+		row.createCell(0).setCellValue("Å»ywotnoÅ›Ä‡:");
 		createAndSetCell(row, 1, bh.getCechyHpString(), csBoldAlign);
 		
-		//Umiejêtnoœci i talenty - rz¹d 9+
+		//UmiejÄ™tnoÅ›ci i talenty - rzÄ…d 9+
 		row = sheet.createRow(9);
-		createAndSetCell(row, 0, "Umiejêtnoœci:", pogrubionJustTlo);
+		createAndSetCell(row, 0, "UmiejÄ™tnoÅ›ci:", pogrubionJustTlo);
 		sheet.addMergedRegion(new CellRangeAddress(9, 9, 0, 2));
 		createAndSetCell(row, 3, "Cecha:", pogrubionJustTlo);
-		createAndSetCell(row, 4, "Rozwiniêcia:", pogrubionJustTlo);
+		createAndSetCell(row, 4, "RozwiniÄ™cia:", pogrubionJustTlo);
 		sheet.autoSizeColumn(4);
 		createAndSetCell(row, 5, "Suma:", pogrubionJustTlo);
 		
@@ -265,7 +265,7 @@ public class ExportDoExcela {
 		rowCount = row.getRowNum();
 		sheet.addMergedRegion(new CellRangeAddress(rowCount, rowCount, 0, 10));
 		rowCount +=1;
-		//zawijanie w komórkach
+		//zawijanie w komÃ³rkach
 		
 		CellStyle cs = wb.createCellStyle();
 		cs.setWrapText(true);
@@ -301,7 +301,7 @@ public class ExportDoExcela {
 		String urlSavaPdf = null;
 		try {
 			JFileChooser dialogFolder = new JFileChooser();
-			dialogFolder.setDialogTitle("Wybierz lokacjê gdzie ma byæ zapisany plik oraz wpisz jego nazwê, bez podawania rozszerzenia pliku!!");
+			dialogFolder.setDialogTitle("Wybierz lokacjÄ™ gdzie ma byÄ‡ zapisany plik oraz wpisz jego nazwÄ™, bez podawania rozszerzenia pliku!!");
 			//dialogFolder.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 			int returnVal = dialogFolder.showSaveDialog(null);
 			if(returnVal == JFileChooser.APPROVE_OPTION) {
@@ -323,10 +323,10 @@ public class ExportDoExcela {
 	}
 	
 	/**
-	 * @param bold - czy ma byæ pogrubiona czcionka
-	 * @param align - czy ma byæ wyœrodkowana
-	 * @param fill - czy ma byæ t³o
-	 * @return - zwraca styl komórki
+	 * @param bold - czy ma byÄ‡ pogrubiona czcionka
+	 * @param align - czy ma byÄ‡ wyÅ›rodkowana
+	 * @param fill - czy ma byÄ‡ tÅ‚o
+	 * @return - zwraca styl komÃ³rki
 	 */
 	private CellStyle getCellStyleBold(boolean bold, boolean align, boolean fill) {
 		CellStyle styleBold = wb.createCellStyle();
@@ -347,10 +347,10 @@ public class ExportDoExcela {
 	}
 	/**
 	 * 
-	 * @param r - rz¹d
-	 * @param n - która komórka ma byæ utworzona
-	 * @param s - jakie dane maj¹ byæ zapisane w komórce (String)
-	 * @param cs -  styl komórki
+	 * @param r - rzÄ…d
+	 * @param n - ktÃ³ra komÃ³rka ma byÄ‡ utworzona
+	 * @param s - jakie dane majÄ… byÄ‡ zapisane w komÃ³rce (String)
+	 * @param cs -  styl komÃ³rki
 	 */
 	private void createAndSetCell(Row r, int n, String s,CellStyle cs) {
 		Cell cell = r.createCell(n);
@@ -361,10 +361,10 @@ public class ExportDoExcela {
 	
 	/**
 	 * 
-	 * @param r - rz¹d
-	 * @param n - która komórka ma byæ utworzona
-	 * @param i - jakie dane maj¹ byæ zapisane w komórce (int)
-	 * @param cs -  styl komórki
+	 * @param r - rzÄ…d
+	 * @param n - ktÃ³ra komÃ³rka ma byÄ‡ utworzona
+	 * @param i - jakie dane majÄ… byÄ‡ zapisane w komÃ³rce (int)
+	 * @param cs -  styl komÃ³rki
 	 */
 	private void createAndSetCell(Row r, int n, int i,CellStyle cs) {
 		Cell cell = r.createCell(n);

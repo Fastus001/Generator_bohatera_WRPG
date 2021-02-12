@@ -32,8 +32,8 @@ public class Pancerz extends Przedmiot {
 	 * 
 	 * @param n - nazwa
 	 * @param c - cena
-	 * @param o - obci¹zenie
-	 * @param d - dostêpnoœæ
+	 * @param o - obciÄ…zenie
+	 * @param d - dostÄ™pnoÅ›Ä‡
 	 * @param t - typ
 	 * @param k - kara
 	 * @param l - lokacja

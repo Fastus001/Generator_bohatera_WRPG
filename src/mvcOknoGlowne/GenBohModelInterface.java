@@ -16,23 +16,23 @@ public interface GenBohModelInterface {
 	/**
 	 * 
 	 * @param rasa - jaka rasa, -1 nie wybrana rasa
-	 * @param prof - numer profesji, -1 nie wybrana ¿adna
-	 * @param exp - poziom doœwiadczenia
+	 * @param prof - numer profesji, -1 nie wybrana Å¼adna
+	 * @param exp - poziom doÅ›wiadczenia
 	 * @param plec - facet (true)  czy kobieta (false)
-	 * @param opisTalentow - czy talent ma byæ wyœwietlany czy nie
+	 * @param opisTalentow - czy talent ma byÄ‡ wyÅ›wietlany czy nie
 	 */
 	void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean opisTalentow);
 	/**
 	 * 
 	 * @param t - wyswietl talent
-	 * @param exp - opcja doœwiadczenia postaci
+	 * @param exp - opcja doÅ›wiadczenia postaci
 	 */
 	void podniesPoziom(int exp, boolean t);
 	/**
 	 * 
-	 * @param exp - doœwiadczenie postaci
-	 * @param t - wyswietlanie talentów
-	 * @param p - czy btnPodniesPoziomPr jest w³¹czony czy nie
+	 * @param exp - doÅ›wiadczenie postaci
+	 * @param t - wyswietlanie talentÃ³w
+	 * @param p - czy btnPodniesPoziomPr jest wÅ‚Ä…czony czy nie
 	 */
 	void nowaProfesja(int exp, boolean t, boolean p);
 	
@@ -50,22 +50,22 @@ public interface GenBohModelInterface {
 	void setProfesja(Profesja p);
 	/**
 	 * 
-	 * @param talenty - czy maj¹ byæ wyswietlane czy nie
+	 * @param talenty - czy majÄ… byÄ‡ wyswietlane czy nie
 	 */
 	void opisPostaciTalenty(boolean talenty);
 	/**
-	 * zapisuje postaæ do listy
+	 * zapisuje postaÄ‡ do listy
 	 */
 	void zapiszPostac();
 	/**
 	 * 
-	 * @param nBohater - postaæ wybra na zapisania do pliku pdf
+	 * @param nBohater - postaÄ‡ wybra na zapisania do pliku pdf
 	 */
 	void exportDoPdf(Bohater nBohater);
 	/**
 	 * 
-	 * @param obj - tablica obiektów (bohater lub NPC do wgrania do arkusza Excel)
-	 * @param ktora - która pozycja, je¿eli 0 to ca³a tablica
+	 * @param obj - tablica obiektÃ³w (bohater lub NPC do wgrania do arkusza Excel)
+	 * @param ktora - ktÃ³ra pozycja, jeÅ¼eli 0 to caÅ‚a tablica
 	 */
 	void exportDoExcel(Object [] obj,int ktora);
 	

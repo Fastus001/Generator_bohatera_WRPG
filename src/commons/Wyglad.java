@@ -3,6 +3,7 @@ package commons;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class Wyglad implements RzutKoscia{
@@ -33,7 +34,7 @@ public class Wyglad implements RzutKoscia{
 	
 	
 	public String toString() {
-		String wszystko = "Wiek: " + wiek + ", Wzrost: " + wzrost + " cm, Kolor oczu: " + kolorOczu + ", Kolor w≥osÛw: " + kolorWlosow + ".\n";
+		String wszystko = "Wiek: " + wiek + ", Wzrost: " + wzrost + " cm, Kolor oczu: " + kolorOczu + ", Kolor w≈Ços√≥w: " + kolorWlosow + ".\n";
 		return wszystko;
 	}
 	
@@ -45,9 +46,9 @@ public class Wyglad implements RzutKoscia{
 		switch(nazwaRasy) {
 		case "Ludzie": this.wzrost = 150 + RzutKoscia.rzutK(4, 10);break;
 		case "Krasnoludy":this.wzrost = 130 + RzutKoscia.rzutK(2, 10);break;
-		case "Nizio≥ki":this.wzrost = 95 + RzutKoscia.rzutK(2, 10);break;
+		case "Nizio≈Çki":this.wzrost = 95 + RzutKoscia.rzutK(2, 10);break;
 		case "Wysokie elfy":this.wzrost = 180 + RzutKoscia.rzutK(3, 10);break;
-		case "Leúne elfy":this.wzrost = 180 + RzutKoscia.rzutK(3, 10);break;
+		case "Le≈õne elfy":this.wzrost = 180 + RzutKoscia.rzutK(3, 10);break;
 	}
 	}
 
@@ -59,14 +60,14 @@ public class Wyglad implements RzutKoscia{
 		switch(nazwaRasy) {
 		case "Ludzie": this.kolorOczu = tab[0];break;
 		case "Krasnoludy":this.kolorOczu = tab[1];break;
-		case "Nizio≥ki":this.kolorOczu = tab[2];break;
+		case "Nizio≈Çki":this.kolorOczu = tab[2];break;
 		case "Wysokie elfy":this.kolorOczu = tab[3];break;
-		case "Leúne elfy":this.kolorOczu = tab[4];break;
+		case "Le≈õne elfy":this.kolorOczu = tab[4];break;
 		}
 	}
 	
 	/*
-	 * w pliku txt najpierw jest 19 wierszy z kolorem wÔøΩosÔøΩw
+	 * w pliku txt najpierw jest 19 wierszy z kolorem wƒè≈ºÀùosƒè≈ºÀùw
 	 */
 	public void setKolorWlosow(String nazwaRasy) {
 		int rand = (int) (Math.random()*19);
@@ -74,9 +75,9 @@ public class Wyglad implements RzutKoscia{
 		switch(nazwaRasy) {
 		case "Ludzie": this.kolorWlosow = tab[0];break;
 		case "Krasnoludy":this.kolorWlosow = tab[1];break;
-		case "Nizio≥ki":this.kolorWlosow = tab[2];break;
+		case "Nizio≈Çki":this.kolorWlosow = tab[2];break;
 		case "Wysokie elfy":this.kolorWlosow = tab[3];break;
-		case "Leúne elfy":this.kolorWlosow = tab[4];break;
+		case "Le≈õne elfy":this.kolorWlosow = tab[4];break;
 		}
 	}
 
@@ -86,7 +87,7 @@ public class Wyglad implements RzutKoscia{
 
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("wlosy.txt");
-			InputStreamReader czytaj = new InputStreamReader(input);
+			InputStreamReader czytaj = new InputStreamReader( input, StandardCharsets.UTF_8);
 			
 			BufferedReader bufor = new BufferedReader(czytaj);
 			String wiersz;
@@ -104,29 +105,29 @@ public class Wyglad implements RzutKoscia{
 	}
 
 	/**
-	 * ustalenie wieku postaci w oparciu od rasÍ
+	 * ustalenie wieku postaci w oparciu od rasƒô
 	 */
 	public void setWiek(String nazwaRasy) {
 		
-		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Leúne elfy"))
+		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Le≈õne elfy"))
 			nazwaRasy = "Elfy";
 		
 		switch(nazwaRasy) {
 		case "Ludzie": this.wiek = 15 + RzutKoscia.rzutK(10);break;
 		case "Krasnoludy":this.wiek = 15 + RzutKoscia.rzutK(10,10);break;
-		case "Nizio≥ki":this.wiek = 15 + RzutKoscia.rzutK(10,5);break;
+		case "Nizio≈Çki":this.wiek = 15 + RzutKoscia.rzutK(10,5);break;
 		case "Elfy":this.wiek = 30 + RzutKoscia.rzutK(10,10);break;
 		}
 	}
 	
 	public void addWiekPoziomProf(String nazwaRasy) {
-		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Leúne elfy"))
+		if(nazwaRasy.equals("Wysokie elfy") || nazwaRasy.equals("Le≈õne elfy"))
 			nazwaRasy = "Elfy";
 		
 		switch(nazwaRasy) {
 		case "Ludzie": this.wiek += RzutKoscia.rzutK(6,2);break;
 		case "Krasnoludy":this.wiek += RzutKoscia.rzutK(10,4);break;
-		case "Nizio≥ki":this.wiek += RzutKoscia.rzutK(10,2);break;
+		case "Nizio≈Çki":this.wiek += RzutKoscia.rzutK(10,2);break;
 		case "Elfy":this.wiek += RzutKoscia.rzutK(10,8);break;
 		}
 	}

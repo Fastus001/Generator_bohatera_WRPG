@@ -9,10 +9,10 @@ import commons.RzutKoscia;
  *klasa opisujaca potwora NPC
  */
 public class Potwory implements RzutKoscia{
-	private static final String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","¯yw"};
+	private static final String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","Å»yw"};
 
 
-	private static final int IC = 12; //iloœæ cech
+	private static final int IC = 12; //iloÅ›Ä‡ cech
 	private String nazwa;
 	private int [] statyPotwora;
 	private ArrayList<CechyPotworow> cechy;
@@ -35,7 +35,7 @@ public class Potwory implements RzutKoscia{
 			else if(staty[i].equals("-")) {
 				staty[i] = "0";
 			}else if(i<IC-1){
-				//wprowadzenie losowoœci do statystyk potwora
+				//wprowadzenie losowoÅ›ci do statystyk potwora
 				this.statyPotwora[i] = (Integer.parseInt(staty[i]) -10)+RzutKoscia.rzutK(10, 2);
 			}else {
 				this.statyPotwora[i] = Integer.parseInt(staty[i]);
@@ -54,7 +54,7 @@ public class Potwory implements RzutKoscia{
 	}
 	
 	/*
-	 * kontruktor kopiujÄ…cy
+	 * kontruktor kopiujÃ„â€¦cy
 	 */
 	public Potwory(Potwory potwory) {
 		this.nazwa = potwory.nazwa;
@@ -90,8 +90,8 @@ public class Potwory implements RzutKoscia{
 	}
 	/**
 	 * 
-	 * @param x - enum, która pozycja cechy ma byc zwrócona 
-	 * @return - zwraca wartoœæ wybranej statystki w postaci wartoœci int
+	 * @param x - enum, ktÃ³ra pozycja cechy ma byc zwrÃ³cona 
+	 * @return - zwraca wartoÅ›Ä‡ wybranej statystki w postaci wartoÅ›ci int
 	 */
 	public int getStatyPotwora(StatyNPC x) {
 		return statyPotwora[x.ordinal()];
@@ -117,7 +117,7 @@ public class Potwory implements RzutKoscia{
 	}
 	
 	/**
-	 * zwraca opis STATYSTYK potwora w postaci tablicy stringów!!!
+	 * zwraca opis STATYSTYK potwora w postaci tablicy stringÃ³w!!!
 	 * @return the cechynazwa
 	 */
 	public static String[] getCechynazwa() {
@@ -155,7 +155,7 @@ public class Potwory implements RzutKoscia{
 	}
 
 	/**
-	 * @param ile wartoœæ o ile ma byæ podniesiona cecha, @param ktora - która cecha, @param plus - czy ma byæ podniesiona czy obni¿ona
+	 * @param ile wartoÅ›Ä‡ o ile ma byÄ‡ podniesiona cecha, @param ktora - ktÃ³ra cecha, @param plus - czy ma byÄ‡ podniesiona czy obniÅ¼ona
 	 */
 	public void addRemoveStatyPotwora(int ile, StatyNPC ktora, boolean plus) {
 		if(plus)

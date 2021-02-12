@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -46,7 +47,7 @@ public class GenBohModel implements GenBohModelInterface{
 
 	}
 	/**
-	 * wczytuje z zasobów rasy, profesje, talenty, umiejetnosci
+	 * wczytuje z zasobÃ³w rasy, profesje, talenty, umiejetnosci
 	 */
 	@Override
 	public boolean wczytajDane() {
@@ -65,7 +66,7 @@ public class GenBohModel implements GenBohModelInterface{
 
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("profesje-v2.txt");
-			InputStreamReader czytaj = new InputStreamReader(input);
+			InputStreamReader czytaj = new InputStreamReader( input, StandardCharsets.UTF_8);
 			BufferedReader czytajB = new BufferedReader(czytaj);
 			
 			String wiersz = null;
@@ -79,7 +80,7 @@ public class GenBohModel implements GenBohModelInterface{
 				wiersz = czytajB.readLine();
 				String dostepneRasy[] = wiersz.split(",");
 				
-				//dostêpne umiejêtnoœci
+				//dostÄ™pne umiejÄ™tnoÅ›ci
 				wiersz = czytajB.readLine();
 				String dostepneUm[] = wiersz.split(",");
 				
@@ -90,7 +91,7 @@ public class GenBohModel implements GenBohModelInterface{
 						umiej.add(tempUm);
 					}
 				
-				//dostêpne talenty
+				//dostÄ™pne talenty
 				wiersz = czytajB.readLine();
 				String dostepneTlnt[] = wiersz.split(",");
 				
@@ -137,7 +138,7 @@ public class GenBohModel implements GenBohModelInterface{
 
 				ClassLoader classLoader = getClass().getClassLoader();
 				InputStream input = classLoader.getResourceAsStream("talenty.txt");
-				InputStreamReader czytaj = new InputStreamReader(input);
+				InputStreamReader czytaj = new InputStreamReader(input,StandardCharsets.UTF_8);
 				BufferedReader czytajBuf = new BufferedReader(czytaj);
 				String wiersz = null;
 				
@@ -157,7 +158,7 @@ public class GenBohModel implements GenBohModelInterface{
 }//koniec metody
 	
 	/////////////////////////////////////////////////////////////////////////
-	//zapisanie zaimportowanych z pliku txt opsiów w obiektach talent;
+	//zapisanie zaimportowanych z pliku txt opsiÃ³w w obiektach talent;
 	/////////////////////////////////////////////////////////////////////////
 	private void tworzTalent(String wierszDanych){
 		String[] wynik = wierszDanych.split("/");
@@ -173,7 +174,7 @@ public boolean WczytajRasy(){
 
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("rasy.txt");
-			InputStreamReader czytaj = new InputStreamReader(input);
+			InputStreamReader czytaj = new InputStreamReader(input,StandardCharsets.UTF_8);
 			
 			BufferedReader czytajBuf = new BufferedReader(czytaj);
 			String wiersz = null;
@@ -189,7 +190,7 @@ public boolean WczytajRasy(){
 					wiersz = czytajBuf.readLine();
 					String talenty[] = wiersz.split(",");
 					wiersz = czytajBuf.readLine();
-					//zamiana stringów na tablice intów -cechy bazowe
+					//zamiana stringÃ³w na tablice intÃ³w -cechy bazowe
 					int [] tablica = new int[10];
 					for(int i = 0; i<10; i++){
 						tablica[i] = Integer.parseInt(wynik1[i]);
@@ -237,7 +238,7 @@ public String dodajOpisDoTalentu(Talent tal) {
 	return "brak opis - ups";
 }
 /////////////////////////////////////////////////////////////////////////
-//szansa wylosowanie jak w podrêczniku 4ed
+//szansa wylosowanie jak w podrÄ™czniku 4ed
 /////////////////////////////////////////////////////////////////////////	
 private int losowanieRasy() {
 	int rzut = (int) (Math.random()*100)+1;
@@ -256,7 +257,7 @@ private int losowanieRasy() {
 public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {
 		profesjePierwszyPoziom.clear();
 		
-		//sprawdzenie profesji p¹d k¹tem poziomy (lvl1) oraz tego jaka rasa w danej profesji jest dostêpna
+		//sprawdzenie profesji pÄ…d kÄ…tem poziomy (lvl1) oraz tego jaka rasa w danej profesji jest dostÄ™pna
 		int poziomPierwszy = 1;
 		for(Profesja p:listaProfesji){
 			if(p.getPoziom()==poziomPierwszy){
@@ -276,7 +277,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 	try {
 		Profesja losowaProfesja;
 		Rasa losowaRasa;
-		//sprawdzenie wybopru rasy, je¿eli brak wyboru to losowanie, inaczej wybór z listy
+		//sprawdzenie wybopru rasy, jeÅ¼eli brak wyboru to losowanie, inaczej wybÃ³r z listy
 		if(rasa == -1) {
 			losowaRasa = listaRas.get(losowanieRasy());
 			szukajProfesjiPierwszyPoziom(losowaRasa);
@@ -284,7 +285,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 			losowaRasa = (Rasa) listaRas.get(rasa);
 			szukajProfesjiPierwszyPoziom(losowaRasa);
 		}
-		//sprawdzenie wyboru profesji, je¿eli brak wyboru to losowanie, inaczej wybór z listy
+		//sprawdzenie wyboru profesji, jeÅ¼eli brak wyboru to losowanie, inaczej wybÃ³r z listy
 		if(prof == -1) {
 			losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
 		}else {
@@ -368,7 +369,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 	{
 		if(!nowyBohater.getProfesjaUkonczona())
 		{
-		int potwierdznie = JOptionPane.showConfirmDialog(null, "Postaæ osi¹gne³a maksymalny poziom profesji,czy chcesz aby \"ukoñczy³a\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
+		int potwierdznie = JOptionPane.showConfirmDialog(null, "PostaÄ‡ osiÄ…gneÅ‚a maksymalny poziom profesji,czy chcesz aby \"ukoÅ„czyÅ‚a\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
 			if(potwierdznie == JOptionPane.OK_OPTION)
 				{
 				nowyBohater.ukonczPoziomProfesji(5);
@@ -376,10 +377,10 @@ public void podniesPoziom(int exp, boolean talenty) {
 				}
 			
 		}else {
-			JOptionPane.showMessageDialog(null, "Postaæ osi¹gnê³a maksymalny poziom, wybierz inn¹ profesjê jeœli dalej chcesz rozwijaæ postaæ!", "Maksymalny poziom", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "PostaÄ‡ osiÄ…gnÄ™Å‚a maksymalny poziom, wybierz innÄ… profesjÄ™ jeÅ›li dalej chcesz rozwijaÄ‡ postaÄ‡!", "Maksymalny poziom", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}else{
-		//sprawdzenie wybranej Profesji czy czasem nie jest inna ni¿ aktualnie rozwijana
+		//sprawdzenie wybranej Profesji czy czasem nie jest inna niÅ¼ aktualnie rozwijana
 		if(wybranaProfesja!=null) {
 			int testHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(wybranaProfesja);
 			if(testHistoriiProfesji>0) {
@@ -394,17 +395,17 @@ public void podniesPoziom(int exp, boolean talenty) {
 			if(sprawdzenieHistoriiProfesji != -1)
 			{
 				/*
-				 * jeœli nie by³a to przypisujemy nowy poziom profesji jaka ma byæ wyszukana do rozwiniecia, plus nazwa tej profesji, przy za³o¿eniu
-				 * ¿e poziom nie jest wy¿szy od 4 
+				 * jeÅ›li nie byÅ‚a to przypisujemy nowy poziom profesji jaka ma byÄ‡ wyszukana do rozwiniecia, plus nazwa tej profesji, przy zaÅ‚oÅ¼eniu
+				 * Å¼e poziom nie jest wyÅ¼szy od 4 
 				 */
 				if((sprawdzenieHistoriiProfesji+1) <5)
 				{
 					nazwaProfesji = profesjaNowyPoziom.toString();
 					poziomProfesji = sprawdzenieHistoriiProfesji+1;
 				}else {
-					JOptionPane.showMessageDialog(null, "Wybrana profesja posiada ju¿ maksymlany poziom, postaæ awansuje we wczeœniej wybranej profesji", "Maksymalny poziom wybranej profesjii!!", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Wybrana profesja posiada juÅ¼ maksymlany poziom, postaÄ‡ awansuje we wczeÅ›niej wybranej profesji", "Maksymalny poziom wybranej profesjii!!", JOptionPane.INFORMATION_MESSAGE);
 				}								
-				//System.out.println("Poziom tej samej profesji z najwy¿szym poziomem z historii to  = " + sprawdzenieHistoriiProfesji);				
+				//System.out.println("Poziom tej samej profesji z najwyÅ¼szym poziomem z historii to  = " + sprawdzenieHistoriiProfesji);				
 			}
 		
 	for(Profesja p: listaProfesji)
@@ -423,14 +424,14 @@ public void podniesPoziom(int exp, boolean talenty) {
 			obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));	
 		}
 	}//koniec else
-}//koniec metody podnieœ poziom
+}//koniec metody podnieÅ› poziom
 @Override
 public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	
-	//pytanie czy wczesniejsza sciezka ma byæ ukoñczona
+	//pytanie czy wczesniejsza sciezka ma byÄ‡ ukoÅ„czona
 	if(!nowyBohater.getProfesjaUkonczona())
 	{
-		int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma byæ ukoñczony przed zmian¹ profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
+		int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma byÄ‡ ukoÅ„czony przed zmianÄ… profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
 		if(potwierdzenie == JOptionPane.OK_OPTION) 
 		{
 			nowyBohater.ukonczPoziomProfesji(nowyBohater.getCurrentProfPoziom()+1);
@@ -475,11 +476,11 @@ public void setRasa(Rasa r) {
 @Override
 public void setProfesja(Profesja p) {
 	if(nowyBohater != null) {
-		//je¿eli rasa nie zosta³a zmieniona to mo¿emy dzia³aæ
+		//jeÅ¼eli rasa nie zostaÅ‚a zmieniona to moÅ¼emy dziaÅ‚aÄ‡
 		if(wybranaRasa.getName().equals(nowyBohater.getRasaName()))
 		{
 			int test = nowyBohater.sprawdzHistorieProfesji(p);
-			//postaæ wczeœniej nie rozwija³a danej profesji, mo¿na w³¹czyc opcjê nowa profesja
+			//postaÄ‡ wczeÅ›niej nie rozwijaÅ‚a danej profesji, moÅ¼na wÅ‚Ä…czyc opcjÄ™ nowa profesja
 			if(test== -1) {
 				obserwator.wlaczbtnNowaProfesja();
 			}else {
@@ -487,7 +488,7 @@ public void setProfesja(Profesja p) {
 			}
 			
 		}else {
-			JOptionPane.showMessageDialog(null, "Zmieni³eœ rasê, nie mo¿esz modyfikowaæ postaci do momentu gdy wybór rasy bêdzie zgodny z aktulanie towrzon¹ postaci¹.");
+			JOptionPane.showMessageDialog(null, "ZmieniÅ‚eÅ› rasÄ™, nie moÅ¼esz modyfikowaÄ‡ postaci do momentu gdy wybÃ³r rasy bÄ™dzie zgodny z aktulanie towrzonÄ… postaciÄ….");
 			obserwator.wylaczbtnNowaProfesja();
 			obserwator.wylaczPrzicskPodniesPoziomPr();
 		}

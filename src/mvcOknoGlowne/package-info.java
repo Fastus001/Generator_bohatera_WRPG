@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author Tom
- *
- */
-package mvcOknoGlowne;

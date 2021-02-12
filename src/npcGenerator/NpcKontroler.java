@@ -15,7 +15,7 @@ public class NpcKontroler implements KontrolerInterface{
 	/**
 	 * 
 	 * @param model - model interfesj klasy model
-	 * @param listaBohaterow - podstawowy model listy z g≥Ûwnego okna aplikacji potrzebne do zapisania NPCa
+	 * @param listaBohaterow - podstawowy model listy z g≈Ç√≥wnego okna aplikacji potrzebne do zapisania NPCa
 	 */
 	public NpcKontroler(NpcModelInterface model,DefaultListModel<Object> listaBohaterow, NewGui nG) {
 		this.model = model;

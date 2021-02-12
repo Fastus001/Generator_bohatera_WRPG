@@ -17,10 +17,8 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 	private NewGui widok;
 	private GenBohModelInterface model;
 	final static org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger( ExportToPdf.class );
-	/**
-	 * 
-	 * @param m - model interfejs
-	 */
+
+
 	public GenBohKontroler(GenBohModelInterface model) {
 		this.model = model;
 		EventQueue.invokeLater(()->{
