@@ -60,7 +60,7 @@ public class Profesja implements Comparable<Profesja>{
 		}
 		dostepneTalenty = new ArrayList<Talent>();
 		for(Talent tempT : pr.dostepneTalenty){
-			Talent nowyTalent = new Talent(tempT);
+			Talent nowyTalent = tempT.toBuilder().build();
 			dostepneTalenty.add(nowyTalent);
 		}
 		dostepnaRasa = pr.dostepnaRasa;
@@ -90,7 +90,7 @@ public class Profesja implements Comparable<Profesja>{
 		}
 		tekst +="\nDostępne talenty: ";
 		for(Talent x: dostepneTalenty){
-			tekst +=x.wyswietlWszystkoTalent() +",";
+			tekst +=x.showAll() +",";
 		}
 		tekst += "\nDozwolone rasy: ";
 		for(String r:dostepnaRasa){

@@ -315,7 +315,7 @@ public class NpcModel implements NpcModelInterface{
 		
 		default:
 			System.out.println("Dodana cecha: " + nowa.toString());
-			//throw new IllegalArgumentException("Unexpected value: " + nowa.toString());
+			//throw new IllegalArgumentException("Unexpected value: " + nowa.getName());
 		}
 		
 	}

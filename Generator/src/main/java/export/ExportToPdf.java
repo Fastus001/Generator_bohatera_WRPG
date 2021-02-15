@@ -158,9 +158,9 @@ public class ExportToPdf {
 		String [] formTab = {"Talent","talentPoz","Opis_talentu"};
 
 			try {
-				form.getField(formTab[0]+Integer.toString(licznik)).setValue(tl.getName(),font1, SZESC);
-				form.getField(formTab[1]+Integer.toString(licznik)).setValue(Integer.toString(tl.getPoziomValue()),font1, SZESC);
-				form.getField(formTab[2]+Integer.toString(licznik)).setValue(tl.getTest(),font1, SZESC);
+				form.getField(formTab[0]+Integer.toString(licznik)).setValue( tl.showTalentNameWithLevel(), font1, SZESC);
+				form.getField(formTab[1]+Integer.toString(licznik)).setValue( Integer.toString(tl.getLevel()), font1, SZESC);
+				form.getField(formTab[2]+Integer.toString(licznik)).setValue( tl.getTest(), font1, SZESC);
 			}catch (Exception e) {
 				e.printStackTrace();
 			}		
@@ -238,7 +238,7 @@ public class ExportToPdf {
 	private void wczytajUmiejetnosci() {
 		int liczbaUmZaawansow = 0;
 		for(Skill um:hero.znaneUmiejetnosci) {
-			//System.out.println("Umiejetntosci podstawowe wszystkie" + um.getName());
+			//System.out.println("Umiejetntosci podstawowe wszystkie" + um.showTalentNameWithLevel());
 			if(um.getType().equals( "podstawowa"))
 			{
 				try {
