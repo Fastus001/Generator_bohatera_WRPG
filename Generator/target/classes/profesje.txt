@@ -1,0 +1,1795 @@
+APTEKARZ
+Uczeń Aptekarza – Brąz 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Język (Klasyczny)/7/zaawansowana,Leczenie/7/zaawansowana,Mocna Głowa/3/podstawowa,Rzemiosło (Aptekarstwo)/6/zaawansowana,Rzemiosło (Truciciel)/6/zaawansowana,Wiedza (Chemia)/7/zaawansowana,Wiedza (Medycyna)/7/zaawansowana,Wiedza (Rośliny)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Przyrządzanie Mikstur/7/Rzemiosło (Aptekarstwo),Wytwórca (Aptekarz)/6/Rzemiosło (Aptekarz)
+3,6,7
+1
+APTEKARZ
+Aptekarz – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Język (Gildii)/7/zaawansowana,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Nauka)/7/zaawansowana
+Aptekarz/7/Rzemiosło (Aptekarstwo),Etykieta (Członkowie Cechu)/9/Charyzma lub Plotkowanie (Członkowie Cechu),Przestępca/10/brak,Żyłka Handlowa/9/Targowanie
+3,6,7,9
+2
+APTEKARZ
+Mistrz Aptekarski – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Sekretne Znaki (Cechu)/7/zaawansowana
+Błyskotliwość/11/brak,Mistrz Rzemiosła (Aptekarz)/6/Pasujący Wydłużony Test tego Rzemiosła,Mól Książkowy/7/Badania Naukowe,Odporny na (Trucizny)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu
+3,4,6,7,9
+3
+APTEKARZ
+Główny Aptekarz – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Jeździectwo (Konie)/5/podstawowa,Zastraszanie/2/podstawowa
+Mistrz Rzemiosła (Truciciel)/6/Pasujący Wydłużony Test tego Rzemiosła,Wyczulony Zmysł (Smak)/4/Percepcja (z wykorzystaniem tego zmysłu),Zimna krew/11/brak,Znawca (Aptekarstwo)/7/Wiedza (wybrana dziedzina)
+3,4,6,7,8,9
+4
+CZARODZIEJ
+Uczeń Czarodzieja – Brąz 3
+Ludzie,Leśne elfy,Wysokie elfy
+Broń Biała (Podstawowa)/0/podstawowa,Broń Biała (Drzewcowa)/0/podstawowa,Intuicja/4/podstawowa,Język (Magiczny)/7/zaawansowana,Percepcja/4/podstawowa,Splatanie Magii (Dowolny Kolor)/8/zaawansowana,Unik/5/podstawowa,Wiedza (Magia)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Magia Prosta (Dowolna)/11/brak,Percepcja Magiczna/4/Każdy Test dotyczący wykrywania Wiatrów Magii,Zmysł Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+0,7,8
+1
+CZARODZIEJ
+Czarodziej – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy
+Charyzma/9/podstawowa,Język (Bitewny)/7/zaawansowana,Język (Dowolny)/7/zaawansowana,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Zastraszanie/2/podstawowa
+Magia Tajemna (Dowolna Tradycja)/11/brak,Rozpoznanie Artefaktu/4/Test Intuicji związany z wykrywaniem magicznych artefaktów,Ruchliwe dłonie/6/Zwinne Palce Broń Biała (Bijatyka) aby dotknąć przeciwnika,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł
+0,6,7,8
+2
+CZARODZIEJ
+Mistrz Magii – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy
+Jeździectwo (Konie)/5/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Wiedza (Wojna)/7/zaawansowana,Wycena/7/zaawansowana
+Dwie Bronie/5/Broń Biała lub Zasięgowa kiedy atakujesz dwoma sztukami oręża,Groźny/2/Zastraszanie,Precyzyjne Inkantowanie/4/Język (Magiczny) podczas rzucania czaru,Wykrywanie Magii/4/Intuicja by wykrywać czarodziejów
+0,5,6,7,8
+3
+CZARODZIEJ
+Arcymag – Złoto 2
+Ludzie,Leśne elfy,Wysokie elfy
+Język (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Mag Bitewny/11/brak,Straszny/2/brak,Zmysł Bitewny/4/Percepcja w trakcie walki,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,5,6,7,8,9
+4
+INŻYNIER
+Student Inżynierii – Brąz 4
+Ludzie,Krasnoludy,Niziołki
+Broń Zasięgowa (Prochowa)/1/zaawansowana,Język (Klasyczny)/7/zaawansowana,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Rzemiosło (Inżynier)/6/zaawansowana,Wiedza (Inżynier)/7/zaawansowana
+Artylerzysta/6/brak,Czytanie-Pisanie/11/brak,Talent Artystyczny/6/Sztuka (Dowolna),Złota Rączka/6/Rzemiosło  by naprawić uszkodzone przedmioty
+1,6,7
+1
+INŻYNIER
+Inżynier – Srebro 2
+Ludzie,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Broń Zasięgowa (Eksperymentalna)/1/zaawansowana,Język (Gildii)/7/zaawansowana,Nawigacja/4/podstawowa,Powożenie/5/podstawowa,Unik/5/podstawowa
+Wytwórca/6/Rzemiosło (Inżynier),Etykieta (Członkowie Gildii)/9/Charyzma lub Plotkowanie (Członkowie Gildii),Strzelec Wyborowy/11/brak,Wyczucie Kierunku/4/Nawigacja
+1,4,6,7
+2
+INŻYNIER
+Mistrz Inżynierii – Srebro 4
+Ludzie,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Jeździectwo (Konie)/5/podstawowa,Język (Khazalid)/7/zaawansowana,Sekretne Znaki (Gildii)/7/zaawansowana
+Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Geniusz Arytmetyczny/7/Wycena lub Hazard,Mistrz Rzemiosła (Inżynieria)/6/Pasujący Wydłużony Test tego Rzemiosła,Snajper/13/Broń Strzelecka (zasięg daleki lub bardzo daleki)
+1,3,4,6,7
+3
+INŻYNIER
+Inżynier Dyplomowany – Złoto 2
+Ludzie,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Arcydzieło/10/brak,Niewzruszony/8/Opanowanie przeciwko panice prochowej,Szybkie Przeładowanie/6/brak,Znawca (Inżynieria)/7/Wiedza (Inżynieria)
+1,3,4,6,7,9
+4
+KAPŁAN
+Kleryk – Brąz 2
+Ludzie
+Atletyka/5/podstawowa,Badania Naukowe/7/zaawansowana,Intuicja/4/podstawowa,Modlitwa/9/zaawansowana,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Wiedza (Teologia)/7/zaawansowana
+Błogosławieństwo (Dowolne Bóstwo)/11/brak,Charyzmatyczny/11/brak,Czytanie-Pisanie/11/brak,Święte Wizje/4/Testy Intuicji kiedy znajdujesz się na świętej ziemi
+3,5,8
+1
+KAPŁAN
+Kapłan – Srebro 1
+Ludzie
+Broń Biała (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Leczenie/7/zaawansowana,Plotkowanie/9/podstawowa,Występy (Gawędziarstwo)/9/podstawowa,Zastraszanie/2/podstawowa
+Etykieta (Kultyści)/9/Charyzma lub Plotkowanie (Kultyści),Gadanina/9/Charyzma by kogoś zagadać,Inwokacja (Dowolne Bóstwo)/11/brak,Mól Książkowy/7/Badania Naukowe
+3,5,8,9
+2
+KAPŁAN
+Arcykapłan – Złoto 1
+Ludzie
+Dowodzenie/9/podstawowa,Sztuka (Pisarstwo)/6/podstawowa,Wiedza (Heraldyka)/7/zaawansowana,Występy (Przemowy)/9/podstawowa
+Nienawiść (Dowolna)/8/Siła Woli (Opieranie się Grupie),Odporność Psychiczna/8/brak,Porywająca Gorliwość/9/Charyzmy kiedy mówisz o ważnej dla ciebie sprawie,Wyczulony Zmysł (Dowolny)/4/Percepcja (z wykorzystaniem tego zmysłu)
+3,5,7,8,9
+3
+KAPŁAN
+Lektor – Złoto 2
+Ludzie
+Język (Dowolny)/7/zaawansowana,Wiedza (Polityka)/7/zaawansowana
+Czysta Dusza/8/brak,Odporny na (Dowolne Zagrożenie)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Krasomówstwo/9/brak,Znawca (Teologia)/7/Wiedza (wybrana dziedzina)
+3,4,5,7,8,9
+4
+LEKARZ
+Uczeń Lekarza – Brąz 4
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Leczenie/7/zaawansowana,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Powożenie/5/podstawowa,Przekupstwo/9/podstawowa,Zwinne Palce/6/zaawansowana
+Czytanie-Pisanie/11/brak,Mól Książkowy/7/Badania Naukowe,Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Pierwsza Pomoc/7/Leczenie podczas Rundy walki
+6,7,8
+1
+LEKARZ
+Lekarz – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Język (Gildii)/7/zaawansowana,Rzemiosło (Cyrulik)/6/zaawansowana,Targowanie/9/podstawowa,Wiedza (Anatomia)/7/zaawansowana,Wiedza (Medycyna)/7/zaawansowana
+Chirurgia/7/Leczenie poza walką czyli kiedy możesz właściwie zająć się rannym,Etykieta (Członkowie Cechu)/9/Charyzma lub Plotkowanie (Członkowie Cechu),Przestępca/10/brak,Zimna krew/11/brak
+6,7,8,9
+2
+LEKARZ
+Doktor – Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Dowodzenie/9/podstawowa,Mocna Głowa/3/podstawowa,Zastraszanie/2/podstawowa
+Błyskotliwość/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Morderczy Atak/4/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu
+4,6,7,8,9
+3
+LEKARZ
+Nadworny Medyk – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Wiedza (Szlachta)/7/zaawansowana,Występy (Taniec)/9/podstawowa 
+Etykieta (Szlachta)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Odporność Psychiczna/8/brak,Znawca (Medycyna)/7/Wiedza (wybrana dziedzina),Zręczny/11/brak
+4,5,6,7,8,9
+4
+MNISZKA
+Nowicjuszka – Brąz 1
+Ludzie
+Leczenie/7/zaawansowana,Modlitwa/9/zaawansowana,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Sztuka (Kaligrafia)/6/podstawowa,Wiedza (Teologia)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Błogosławieństwo (Dowolne Bóstwo)/11/brak,Czytanie-Pisanie/11/brak,Naciągacz/9/Charyzma (Żebractwo),Wstrzemięźliwy/3/Odporności by wytrzymać głód
+6,7,9
+1
+MNISZKA
+Mniszka – Brąz 4
+Ludzie
+Badania Naukowe/7/zaawansowana,Broń Biała (Dowolna)/0/podstawowa,Charyzma/9/podstawowa,Rzemiosło (Browarnik)/6/zaawansowana,Rzemiosło (Winiarz)/6/zaawansowana,Rzemiosło (Zielarz)/6/zaawansowana
+Etykieta (Kultyści)/9/Charyzma lub Plotkowanie (Kultyści),Inwokacja (Dowolne Bóstwo)/11/brak,Pierwsza Pomoc/7/Leczenie podczas Rundy walki,Święte Wizje/4/Testy Intuicji kiedy znajdujesz się na świętej ziemi
+6,7,8,9
+2
+MNISZKA
+Przeorysza – Srebro 2
+Ludzie
+Dowodzenie/9/podstawowa,Percepcja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Polityka)/7/zaawansowana
+Odporny na (Dowolne Zagrożenie)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Krzepki/3/brak,Znawca (Teologia)/7/Wiedza (wybrana dziedzina),Waleczne Serce/8/Opanowanie by przełamać Stan Panika
+4,6,7,8,9
+3
+MNISZKA
+Matka Przełożona – Srebro 5
+Ludzie
+Język (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Czysta Dusza/8/brak,Odporność Psychiczna/8/brak,Władcza Postura/9/Dowodzenie,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+4,6,7,8,9
+4
+PRAWNIK
+Student Prawa – Brąz 4
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Język (Klasyczny)/7/zaawansowana,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Targowanie/9/podstawowa,Wiedza (Prawo)/7/zaawansowana,Wiedza (Teologia)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Gadanina/9/Charyzma by kogoś zagadać,Szybkie Czytanie/7/gdy ważne jest szybkie przyswajanie treści
+4,6,7
+1
+PRAWNIK
+Prawnik – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Przekupstwo/9/podstawowa,Charyzma/9/podstawowa,Plotkowanie/9/podstawowa,Intuicja/4/podstawowa,Język (Gildii)/7/zaawansowana,Sekretne Znaki (Gildii)/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Członkowie Gildii)/9/Charyzma lub Plotkowanie (Członkowie Gildii),Przekonujący/9/Charyzma gdy prowadzisz debatę lub się z kimś spierasz na argumenty,Przestępca/10/brak
+4,6,7,9
+2
+PRAWNIK
+Adwokat – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Sztuka (Pisarstwo)/6/podstawowa,Wiedza (Dowolna)/7/zaawansowana,Występy (Przemowy)/9/podstawowa,Zastraszanie/2/podstawowa
+Błyskotliwość/11/brak,Gładkie Słówka/9/Charyzma podczas kłamania,Mól Książkowy/7/Badania Naukowe,Porywająca Gorliwość/9/Charyzmy kiedy mówisz o ważnej dla ciebie sprawie
+4,6,7,8,9
+3
+PRAWNIK
+Sędzia – Złoto 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Opanowanie/8/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Majętny/10/brak,Szycha/11/brak,Władcza Postura/9/Dowodzenie,Znawca (Prawo)/7/Wiedza (wybrana dziedzina)
+3,4,6,7,8,9
+4
+UCZONY
+Student – Brąz 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Hazard/7/podstawowa,Język (Klasyczny)/7/zaawansowana,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa/9/podstawowa,Wiedza (Dowolna)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Błyskotliwość/11/brak,Czytanie-Pisanie/11/brak,Geniusz Arytmetyczny/7/Wycena lub Hazard,Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa
+3,7,8
+1
+UCZONY
+Uczony – Srebro 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Intuicja/4/podstawowa,Język (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Rzemiosło (Dowolne)/6/zaawansowana,Sztuka (Pisarstwo)/6/podstawowa,Wiedza (Dowolna)/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Uczeni)/9/Charyzma lub Plotkowanie (Uczeni),Mól Książkowy/7/Badania Naukowe,Szybkie Czytanie/7/gdy ważne jest szybkie przyswajanie treści
+3,4,7,8
+2
+UCZONY
+Wykładowca – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana,Występy (Wykłady)/9/podstawowa,Zastraszanie/2/podstawowa
+Mówca/9/brak,Poliglota/7/Języki (Wszystkie),Wieża Pamięci/7/brak,Znawca (Dowolna Dziedzina)/7/Wiedza (wybrana dziedzina)
+3,4,7,8,9
+3
+UCZONY
+Profesor – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Wiedza (Dowolna)/7/zaawansowana,Występy (Retoryka)/9/podstawowa
+Arcydzieło/10/brak,Czujny/11/brak,Krasomówstwo/9/brak,Znawca (Dowolna Dziedzina)/7/Wiedza (wybrana dziedzina)
+3,4,6,7,8,9
+4
+AGITATOR
+Pamflecista – Brąz 1
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Rzemiosło (Drukarstwo)/6/zaawansowana,Sztuka (Pisarstwo)/6/podstawowa,Targowanie/9/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Gadanina/9/Charyzma by kogoś zagadać,Naciągacz/9/Charyzma (Żebractwo),Towarzyski/9/Plotkowanie z wędrowcami
+1,7,9
+1
+AGITATOR
+Agitator – Brąz 2
+Ludzie,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Hazard/7/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Występy (Gawędziarstwo)/9/podstawowa
+Mówca/9/brak,Porywająca Gorliwość/9/Charyzmy kiedy mówisz o ważnej dla ciebie sprawie,Przekonujący/9/Charyzma gdy prowadzisz debatę lub się z kimś spierasz na argumenty,Ulicznik/4/Skradanie (Miasto)
+1,5,7,9
+2
+AGITATOR
+Podżegacz – Brąz 3
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Bijatyka)/0/podstawowa,Percepcja/4/podstawowa,Zastraszanie/2/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Gładkie Słówka/9/Charyzma podczas kłamania,Zejście z Linii/5/Unik gdy używasz tego Talentu
+0,1,5,7,9
+3
+AGITATOR
+Demagog – Brąz 5
+Ludzie,Krasnoludy,Niziołki
+Jeździectwo (Konie)/5/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Intrygant/7/Inteligencji dotyczące tego Talentu,Krasomówstwo/9/brak
+0,1,4,5,7,9
+4
+KUPIEC
+Handlarz – Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Plotkowanie/9/podstawowa,Powożenie/5/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa
+Charyzmatyczny/11/brak,Czytanie-Pisanie/11/brak,Gadanina/9/Charyzma by kogoś zagadać,Żyłka Handlowa/9/Targowanie
+5,8,9
+1
+KUPIEC
+Kupiec – Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Intuicja/4/podstawowa,Język (Dowolny)/7/zaawansowana,Język (Gildii)/7/zaawansowana,Percepcja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+Błyskotliwość/11/brak,Defraudant/7/Inteligencja (Defraudacja),Etykieta (Członkowie Gildii)/9/Charyzma lub Plotkowanie (Członkowie Gildii),Łapówkarz/9/Łapówkarstwo
+5,7,8,9
+2
+KUPIEC
+Mistrz Kupiectwa – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Język (Klasyczny)/7/zaawansowana,Opanowanie/8/podstawowa,Nawigacja/4/podstawowa,Sekretne Znaki (Gildii)/7/zaawansowana
+Czujny/11/brak,Gładkie Słówka/9/Charyzma podczas kłamania,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Numizmatyka/4/Wycena podczas ustalania wartości monet
+4,5,7,8,9
+3
+KUPIEC
+Patrycjusz – Złoto 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Wiedza (Dowolna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Intrygant/7/Inteligencji dotyczące tego Talentu,Majętny/10/brak,Szczęście/9/brak,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,4,5,7,8,9
+4
+MIESZCZKA
+Przekupka – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Powożenie/5/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Ulicznik/4/Skradanie (Miasto),Niegodny Uwagi/9/Skradanie kiedy jesteś na widoku,Etykieta (Słudzy)/9/Charyzma lub Plotkowanie (Słudzy),Krzepki/3/brak
+5,7,9
+1
+MIESZCZKA
+Mieszczka – Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Bijatyka)/0/podstawowa,Intuicja/4/podstawowa,Muzyka (Dowolna)/6/zaawansowana,Przekupstwo/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+Defraudant/7/Inteligencja (Defraudacja),Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Towarzyski/9/Plotkowanie z wędrowcami,Żyłka Handlowa/9/Targowanie
+4,5,7,9
+2
+MIESZCZKA
+Rajca Miejski – Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Łapówkarz/9/Łapówkarstwo,Mówca/9/brak,Pomocny/9/Testy społeczne by wpłynąć na stojących wyżej w hierarchii
+4,5,6,7,9
+3
+MIESZCZKA
+Burmistrz – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Wiedza (Polityka)/7/zaawansowana,Zastraszanie/2/podstawowa 
+Charyzmatyczny/11/brak,Intrygant/7/Inteligencji dotyczące tego Talentu,Krasomówstwo/9/brak,Władcza Postura/9/Dowodzenie
+4,5,6,7,8,9
+4
+RZEMIEŚLNIK
+Czeladnik – Brąz 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Opanowanie/8/podstawowa,Mocna Głowa/3/podstawowa,Unik/5/podstawowa/5/podstawowa,Odporność/3/podstawowa,Wycena/7/zaawansowana,Skradanie (Miasto)/5/podstawowa,Rzemiosło (Dowolne)/6/zaawansowana
+Bardzo Silny/11/brak,Mocne Plecy/2/Wiosłowanie lub Pływanie,Talent Artystyczny/6/Sztuka (Dowolna),Wytwórca (Dowolne Rzemiosło)/6/Rzemiosło 
+2,3,6
+1
+RZEMIEŚLNIK
+Rzemieślnik – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Język (Cechu)/7/zaawansowana,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Etykieta (Członkowie Cechu)/9/Charyzma lub Plotkowanie (Członkowie Cechu),Tragarz/2/Siły podczas podnoszenia,Zręczny/11/brak,Żyłka Handlowa/9/Targowanie
+2,3,6,9
+2
+RZEMIEŚLNIK
+Mistrz Rzemiosła – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Sekretne Znaki (Cechu)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Mistrz Rzemiosła (Dowolne)/6/Pasujący Wydłużony Test tego Rzemiosła,Wyczulony Zmysł (Smak albo Dotyk)/4/Percepcja (z wykorzystaniem tego zmysłu),Złota Rączka/6/Rzemiosło  by naprawić uszkodzone przedmioty
+2,3,6,8,9
+3
+RZEMIEŚLNIK
+Mistrz Cechu – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Arcydzieło/10/brak,Intrygant/7/Inteligencji dotyczące tego Talentu,Łapówkarz/9/Łapówkarstwo,Mówca/9/brak
+2,3,6,7,8,9
+4
+STRAŻNIK
+Rekrut Straży – Brąz 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Dowolna)/0/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Musztra/0/Broń Biała kiedy jesteś w pobliżu sojuszniczej postaci z tym Talentem,Twardziel/3/brak,Wytrwały/3/Odporność by wytrzymać trudności
+0,2,9
+1
+STRAŻNIK
+Strażnik – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Przestępca/10/brak,Szybkobiegacz/2/Atletyka podczas Biegu,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+0,2,8,9
+2
+STRAŻNIK
+Sierżant Straży – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Prawo)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Etykieta (Żołnierze)/9/Charyzma lub Plotkowanie (Żołnierze),Nieustraszony (Przestępcy)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Rozbrojenie/4/Broń Biała w sytuacjach związanych z tym Talentem
+0,2,4,8,9
+3
+STRAŻNIK
+Kapitan Straży – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Wiedza (Polityka)/7/zaawansowana,Jeździectwo (Konie)/5/podstawowa
+Krzepki/3/brak,Intrygant/7/Inteligencji dotyczące tego Talentu,Mówca/9/brak,Szycha/11/brak
+0,2,4,7,8,9
+4
+SZCZUROŁAP
+Łowca Szczurów – Brąz 3
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Tresura (Psy)/7/zaawansowana,Oswajanie/8/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Proca)/1/zaawansowana,Skradanie (Miasto albo Podziemia)/5/podstawowa
+Odporny na (Choroby)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Silny Cios/2/brak,Widzenie w Ciemności/4/Percepcja przy słabym świetle
+0,1,8
+1
+SZCZUROŁAP
+Szczurołap — Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Opieka nad Zwierzętami/7/zaawansowana Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Trucizny)/7/zaawansowana,Zastawianie Pułapek/6/zaawansowana
+Etykieta (Członkowie Cechu)/9/Charyzma lub Plotkowanie (Członkowie Cechu),Nieustraszony (Szczury)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Niezwykle Odporny/11/brak,Walka w Ciasnocie/5/Unik w ciasnej przestrzeni
+0,1,3,8
+2
+SZCZUROŁAP
+Strażnik Kanałów – Srebro 2
+Ludzie,Krasnoludy,Niziołki
+Broń Zasięgowa (Kusza Pistoletowa)/1/zaawansowana,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Silne Nogi/2/brak,Szczur Tunelowy/5/Skradanie pod ziemią,Twardziel/3/brak,Waleczne Serce/8/Opanowanie by przełamać Stan Panika
+0,1,3,4,8
+3
+SZCZUROŁAP
+Tępiciel – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Tropienie/4/zaawansowana
+Groźny/2/Zastraszanie,Krzepki/3/brak,Odporność Psychiczna/8/brak,Nieustraszony (Skaveny)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy
+0,1,2,3,4,8
+4
+ŚLEDCZY
+Szpicel – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Miasto)/5/podstawowa,Tropienie/4/zaawansowana,Wspinaczka/2/podstawowa
+Czytanie-Pisanie/11/brak,Czujny/11/brak,Niegodny Uwagi/9/Skradanie kiedy jesteś na widoku,Ulicznik/4/Skradanie (Miasto)
+4,5,7
+1
+ŚLEDCZY
+Śledczy – Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Bijatyka)/0/podstawowa,Mocna Głowa/3/podstawowa,Otwieranie Zamków/6/zaawansowana,Unik/5/podstawowa,Wiedza (Prawo)/7/zaawansowana,Zwinne Palce/6/zaawansowana
+Błyskotliwość/11/brak,Cień/5/Wszystkie związane ze śledzeniem,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Wytrwały/3/Odporność by wytrzymać trudności
+4,5,7,9
+2
+ŚLEDCZY
+Mistrz Śledczy – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Przekupstwo/9/podstawowa,Wiedza (Dowolna)/7/zaawansowana,Wycena/7/zaawansowana
+Charyzmatyczny/11/brak,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł,Mól Książkowy/7/Badania Naukowe,Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+4,5,6,7,9
+3
+ŚLEDCZY
+Detektyw – Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Wiedza (Dowolna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Szybkie Czytanie/7/gdy ważne jest szybkie przyswajanie treści,Wieża Pamięci/7/brak,Wyczulony Zmysł (Dowolny)/4/Percepcja (z wykorzystaniem tego zmysłu),Znawca (Dowolna Dziedzina)/7/Wiedza (wybrana dziedzina)
+4,5,6,7,8,9
+4
+ŻEBRAK
+Biedak – Brąz 0
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Skradanie (Miasto)/5/podstawowa,Unik/5/podstawowa
+Naciągacz/9/Charyzma (Żebractwo),Niezwykle Odporny/11/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Wstrzemięźliwy/3/Odporności by wytrzymać głód
+3,5,9
+1
+ŻEBRAK
+Żebrak – Brąz 2
+Ludzie,Krasnoludy,Niziołki
+Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Występy (Aktorstwo)/9/podstawowa,Występy (Dowolne)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Etykieta (Przestępcy)/9/Charyzma lub Plotkowanie (Przestępcy),Niegodny Uwagi/9/Skradanie kiedy jesteś na widoku,Przestępca/10/brak,Ulicznik/4/Skradanie (Miasto)
+3,5,8,9
+2
+ŻEBRAK
+Mistrz Żebraków – Brąz 4
+Ludzie,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Oswajanie/8/podstawowa,Sekretne Znaki (Włóczykijów)/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Gadanina/9/Charyzma by kogoś zagadać,Twardziel/3/brak,Zejście z Linii/5/Unik gdy używasz tego Talentu
+0,3,5,8,9
+3
+ŻEBRAK
+Król Żebraków – Srebro 2
+Ludzie,Krasnoludy,Niziołki
+Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Charyzmatyczny/11/brak,Gładkie Słówka/9/Charyzma podczas kłamania,Nieustraszony (Strażnicy)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Szycha/11/brak
+0,3,4,5,8,9
+4
+ARTYSTKA
+Uczennica Artysty – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Miasto)/5/podstawowa,Sztuka (Dowolna)/6/podstawowa,Wycena/7/zaawansowana
+Czujny/11/brak,Mocne Plecy/2/Wiosłowanie lub Pływanie,Talent Artystyczny/6/Sztuka (Dowolna),Wytrwały/3/Odporność by wytrzymać trudności
+2,4,6
+1
+ARTYSTKA
+Artystka – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Język (Klasyczny)/7/zaawansowana,Hazard/7/podstawowa,Intuicja/4/podstawowa,Targowanie/9/podstawowa,Wspinaczka/2/podstawowa,Rzemiosło (Przybory dla artystów)/6/zaawansowana
+Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa,Przestępca/10/brak,Towarzyski/9/Plotkowanie z wędrowcami,Zręczny/11/brak
+2,4,6,9
+2
+ARTYSTKA
+Mistrzyni Sztuki – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa,Wiedza (Sztuka)/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Wyczulony Zmysł (Dowolny)/4/Percepcja (z wykorzystaniem tego zmysłu),Żyłka Handlowa/9/Targowanie
+2,4,6,8,9
+3
+ARTYSTKA
+Maestro – Złoto 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Jeździectwo (Konie)/5/podstawowa
+Arcydzieło/10/brak,Czytanie-Pisanie/11/brak,Oburęczność/12/brak,Szycha/11/brak
+2,4,6,7,8,9
+4
+DORADCA
+Asystent – Srebro 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Język (Klasyczny)/7/zaawansowana,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Niegodny Uwagi/9/Skradanie kiedy jesteś na widoku,Towarzyski/9/Plotkowanie z wędrowcami
+3,4,5
+1
+DORADCA
+Doradca – Srebro 4
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Hazard/7/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Charyzma/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+Gadanina/9/Charyzma by kogoś zagadać,Intrygant/7/Inteligencji dotyczące tego Talentu,Pomocny/9/Testy społeczne by wpłynąć na stojących wyżej w hierarchii/9/Testy społeczne by wpłynąć na stojących wyżej w hierarchii,Przestępca/10/brak
+3,4,5,9
+2
+DORADCA
+Radca – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Język (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Gładkie Słówka/9/Charyzma podczas kłamania,Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa,Łapówkarz/9/Łapówkarstwo,Przekonujący/9/Charyzma gdy prowadzisz debatę lub się z kimś spierasz na argumenty
+3,4,5,7,9
+3
+DORADCA
+Kanclerz – Złoto 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Jeździectwo (Konie)/5/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+Charyzmatyczny/11/brak,Defraudant/7/Inteligencja (Defraudacja),Szycha/11/brak,Władcza Postura/9/Dowodzenie
+3,4,5,7,8,9
+4
+NAMIESTNIK
+Nadzorca – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,Mocna Głowa/3/podstawowa,Opanowanie/8/podstawowa,Odporność/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Czujny/11/brak,Groźny/2/Zastraszanie,Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Widzenie w Ciemności/4/Percepcja przy słabym świetle
+2,3,8
+1
+NAMIESTNIK
+Namiestnik – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Łuk)/1/zaawansowana,Jeździectwo (Konie)/5/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Pływanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa
+Posłuch u Zwierząt/8/Oswajanie,Etykieta (Słudzy)/9/Charyzma lub Plotkowanie (Słudzy),Doświadczony Wędrowiec (Dowolny Wybrany Teren)/5/Atletyki podczas podróży w terenie,Włóczykij/6/Skradania na wsi
+0,2,3,8
+2
+NAMIESTNIK
+Seneszal – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Dowodzenie/9/podstawowa
+Czytanie-Pisanie/11/brak,Defraudant/7/Inteligencja (Defraudacja),Numizmatyka/4/Wycena podczas ustalania wartości monet,Pomocny/9/Testy społeczne by wpłynąć na stojących wyżej w hierarchii
+0,2,3,8,9
+3
+NAMIESTNIK
+Gubernator – Złoto 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Wycena/7/zaawansowana
+Charyzmatyczny/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Władcza Postura/9/Dowodzenie,Znawca (Wiedza Lokalna)/7/Wiedza (Wiedza Lokalna)
+0,2,3,7,8,9
+4
+POSEŁ
+Herold – Srebro 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Jeździectwo (Konie)/5/podstawowa,Odporność/3/podstawowa,Powożenie/5/podstawowa,Unik/5/podstawowa,Wioślarstwo/2/podstawowa
+Charyzmatyczny/11/brak,Czytanie-Pisanie/11/brak,Etykieta (Szlachta)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Gadanina/9/Charyzma by kogoś zagadać
+3,5,9
+1
+POSEŁ
+Poseł – Srebro 4
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Sztuka (Pisarstwo)/6/podstawowa,Targowanie/9/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Gładkie Słówka/9/Charyzma podczas kłamania,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie
+3,5,7,9
+2
+POSEŁ
+Dyplomata – Złoto 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Język (Dowolny)/7/zaawansowana,Nawigacja/4/podstawowa,Zastraszanie/2/podstawowa
+Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa,Intrygant/7/Inteligencji dotyczące tego Talentu,Towarzyski/9/Plotkowanie z wędrowcami,Żyłka Handlowa/9/Targowanie
+3,4,5,7,9
+3
+POSEŁ
+Ambasador – Złoto 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Błękitna Krew/11/Wszystkie Testy na które wpływa twój Status,Błyskotliwość/11/brak,Łapówkarz/9/Łapówkarstwo,Władcza Postura/9/Dowodzenie
+3,4,5,7,8,9
+4
+SŁUŻĄCY
+Posługacz – Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Powożenie/5/podstawowa,Skradanie (Dowolne)/5/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Krzepki/3/brak,Mocne Plecy/2/Wiosłowanie lub Pływanie,Niegodny Uwagi/9/Skradanie kiedy jesteś na widoku,Odporność Psychiczna/8/brak
+2,3,5
+1
+SŁUŻĄCY
+Służący – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wycena/7/zaawansowana
+Cień/5/Wszystkie związane ze śledzeniem Dobrze Przygotowany,Etykieta (Słudzy)/9/Charyzma lub Plotkowanie (Słudzy),Wytrwały/3/Odporność by wytrzymać trudności
+2,3,4,5
+2
+SŁUŻĄCY
+Lokaj – Srebro 5
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Charyzmatyczny/11/brak,Defraudant/7/Inteligencja (Defraudacja),Odporny na (Trucizny)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Pomocny/9/Testy społeczne by wpłynąć na stojących wyżej w hierarchii
+2,3,4,5,7
+3
+SŁUŻĄCY
+Ochmistrz – Złoto 1
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Dowodzenie/9/podstawowa
+Błyskotliwość/11/brak,Czytanie-Pisanie/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Numizmatyka/4/Wycena podczas ustalania wartości monet
+2,3,4,5,7,9
+4
+SZLACHCIC
+Dziedzic – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy
+Broń Biała (Szermiercza)/0/podstawowa,Hazard/7/podstawowa,Dowodzenie/9/podstawowa,Mocna Głowa/3/podstawowa,Muzyka (Dowolna)/6/zaawansowana,Przekupstwo/9/podstawowa,Wiedza (Heraldyka)/7/zaawansowana,Zastraszanie/2/podstawowa
+Błękitna Krew/11/Wszystkie Testy na które wpływa twój Status,Czytanie-Pisanie/11/brak,Etykieta (Szlachta)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Szczęście/9/brak
+0,4,6
+1
+SZLACHCIC
+Szlachcic – Złoto 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy
+Broń Biała (Parująca)/0/podstawowa,Charyzma/9/podstawowa,Język (Klasyczny)/7/zaawansowana,Jeździectwo (Konie)/5/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Charyzmatyczny/11/brak,Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa,Łapówkarz/9/Łapówkarstwo
+0,4,6,9
+2
+SZLACHCIC
+Magnat – Złoto 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy
+Intuicja/4/podstawowa,Język (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Wiedza (Polityka)/7/zaawansowana
+Intrygant/7/Inteligencji dotyczące tego Talentu,Mówca/9/brak,Zimna krew/11/brak,Żyłka Handlowa/9/Targowanie
+0,4,6,7,9
+3
+SZLACHCIC
+Lord – Złoto 7
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy
+Tropienie/4/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Majętny/10/brak,Władcza Postura/9/Dowodzenie,Wódz/9/Dowodzenie podczas wojny,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,4,6,7,8,9
+4
+SZPIEG
+Informator – Brąz 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Skradanie (Dowolne)/5/podstawowa,Targowanie/9/podstawowa
+Cień/5/Wszystkie związane ze śledzeniem,Gadanina/9/Charyzma by kogoś zagadać,Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa,Towarzyski/9/Plotkowanie z wędrowcami
+5,8,9
+1
+SZPIEG
+Szpieg – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Intuicja/4/podstawowa,Sekretne Znaki (Dowolne)/7/zaawansowana,Wspinaczka/2/podstawowa,Występy (Aktorstwo)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Czytanie-Pisanie/11/brak,Czytanie z Ruchu Warg/4/Testy Percepcji związane z wykorzystaniem tego Talentu,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Sekretna Tożsamość/7/Występy (Aktorstwo) by uwiarygodnić swoją sekretną tożsamość
+0,5,8,9
+2
+SZPIEG
+Agent – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Język (Dowolny)/7/zaawansowana,Opieka nad Zwierzętami/7/zaawansowana Tresura (Gołąb)
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Gładkie Słówka/9/Charyzma podczas kłamania,Mistrz Charakteryzacji/9/Występy (Aktorstwo) gdy udajesz kogoś innego,Naśladowca/4/Występy (Aktorstwo) podczas których ważny jest akcent
+0,4,5,8,9
+3
+SZPIEG
+Mistrz Szpiegów – Złoto 4
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Charyzmatyczny/11/brak,Intrygant/7/Inteligencji dotyczące tego Talentu,Łapówkarz/9/Łapówkarstwo,Wieża Pamięci/7/brak
+0,4,5,7,8,9
+4
+ZWADŹCA
+Szermierz – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy
+Atletyka/5/podstawowa,Broń Biała (Dowolna)/0/podstawowa,Intuicja/4/podstawowa,Język (Klasyczny)/7/zaawansowana,Leczenie/7/zaawansowana,Odporność/3/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa
+Finta/0/Broń Biała (Szermiercza) podczas Finty,Rozproszenie Uwagi/5/brak,Zbicie Broni/0/Broń Biała by zbić broń,Zejście z Linii/5/Unik gdy używasz tego Talentu
+0,4,5
+1
+ZWADŹCA
+Zwadźca – Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy
+Broń Biała (Parująca)/0/podstawowa,Broń Zasięgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Hazard/7/podstawowa,Opanowanie/8/podstawowa,Rzemiosło (Rusznikarz)/6/zaawansowana
+Bitewny Refleks/4/brak,Błyskawiczny Strzał/5/Broń Zasięgowa gdy wykorzystujesz Talent Błyskawiczny Strzał,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Odwrócenie Szans/0/Broń Biała w obronie
+0,1,4,5
+2
+ZWADŹCA
+Mistrz Pojedynków – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy
+Broń Biała (Podstawowa)/0/podstawowa,Dowodzenie/9/podstawowa,Występy (Akrobatyka)/9/podstawowa,Zastraszanie/2/podstawowa
+Dwie Bronie/5/Broń Biała lub Zasięgowa kiedy atakujesz dwoma sztukami oręża,Oburęczność/12/brak,Riposta/5/Broń Biała w obronie,Rozbrojenie/4/Broń Biała w sytuacjach związanych z tym Talentem
+0,1,2,4,5
+3
+ZWADŹCA
+Szampierz Sądowy – Złoto 3
+Ludzie,Wysokie elfy,Krasnoludy
+Broń Biała (Dowolna)/0/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Atak Wyprzedzający/4/brak,Groźny/2/Zastraszanie,Mistrz Walki/5/brak,Morderczy Atak/4/brak
+0,1,2,4,5,8
+4
+CHŁOP
+Parobek – Brąz 2
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Bijatyka)/0/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Plotkowanie/9/podstawowa,Sztuka Przetrwania/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Mocne Plecy/2/Wiosłowanie lub Pływanie,Odporność Psychiczna/8/brak,Włóczykij/6/Skradania na wsi,Wstrzemięźliwy/3/Odporności by wytrzymać głód
+2,3,5
+1
+CHŁOP
+Chłop – Brąz 3
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Powożenie/5/podstawowa,Rzemiosło (Dowolne)/6/zaawansowana,Targowanie/9/podstawowa,Unik/5/podstawowa,Występy (Gawędziarstwo)/9/podstawowa
+Bardzo Silny/11/brak,Posłuch u Zwierząt/8/Oswajanie,Twardziel/3/brak,Wytrwały/3/Odporność by wytrzymać trudności
+0,2,3,5
+2
+CHŁOP
+Kmieć – Brąz 4
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa,Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Niezwykle Odporny/11/brak,Waleczne Serce/8/Opanowanie by przełamać Stan Panika,Wytwórca (Dowolny)/6/Rzemiosło (wybrane),Żyłka Handlowa/9/Targowanie
+0,2,3,5,9
+3
+CHŁOP
+Starszy Wioskowy – Srebro 2
+Ludzie,Krasnoludy,Niziołki
+Intuicja/4/podstawowa,Wiedza (Historia)/7/zaawansowana
+Mistrz Rzemiosła (Dowolne)/6/Pasujący Wydłużony Test tego Rzemiosła,Mówca/9/brak,Znawca (Wiedza Lokalna)/7/Wiedza (Wiedza Lokalna),Zręczny/11/brak
+0,2,3,5,7,9
+4
+GÓRNIK
+Poszukiwacz – Brąz 2
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Dwuręczna)/0/podstawowa,Intuicja/4/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Pływanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (Teren Skalisty),Tragarz/2/Siły podczas podnoszenia,Włóczykij/6/Skradania na wsi,Wytrwały/3/Odporność by wytrzymać trudności/3/Odporność by wytrzymać trudności
+2,3,8
+1
+GÓRNIK
+Górnik – Brąz 4
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Mocna Głowa/3/podstawowa,Rzemiosło (Materiały Wybuchowe)/6/zaawansowana,Sekretne Znaki (Górników)/7/zaawansowana,Wspinaczka/2/podstawowa,Wycena/7/zaawansowana
+Bardzo Silny/11/brak,Mocne Plecy/2/Wiosłowanie lub Pływanie,Silny Cios/2/brak,Widzenie w Ciemności/4/Percepcja przy słabym świetle
+0,2,3,8
+2
+GÓRNIK
+Mistrz Górniczy – Brąz 5
+Ludzie,Krasnoludy,Niziołki
+Plotkowanie/9/podstawowa,Rzemiosło (Inżynieria)/6/zaawansowana,Skradanie (Podziemia)/5/podstawowa,Wiedza (Geologia)/7/zaawansowana
+Cios Mierzony/4/brak,Szczur Tunelowy/5/Skradanie pod ziemią,Wytwórca (Materiały Wybuchowe)/6/Rzemiosło (Materiały Wybuchowe),Złota Rączka/6/Rzemiosło by naprawić uszkodzone przedmioty
+0,2,3,4,8
+3
+GÓRNIK
+Sztygar – Srebro 4
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa
+Czytanie-Pisanie/11/brak,Defraudant/7/Inteligencja (Defraudacja),Odporność Psychiczna/8/brak,Przekonujący/9/Charyzma gdy prowadzisz debatę lub się z kimś spierasz na argumenty
+0,2,3,4,8,9
+4
+GUŚLARZ
+Uczeń Guślarza – Brąz 1
+Ludzie
+Intuicja/4/podstawowa,Język (Magiczny)/7/zaawansowana,Odporność/3/podstawowa,Percepcja/4/podstawowa,Splatanie Magii/8/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Ludowa)/7/zaawansowana,Wiedza (Zioła)/7/zaawansowana
+Magia Prosta/11/brak,Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (Lasy),Ruchliwe dłonie/6/Zwinne Palce lub Broń Biała (Bijatyka) aby dotknąć przeciwnika,Włóczykij/6/Skradania na wsi
+3,4,6
+1
+GUŚLARZ
+Guślarz – Brąz 2
+Ludzie
+Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Leczenie/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana,Rzemiosło (Amulety)/6/zaawansowana,Rzemiosło (Zielarz)/6/zaawansowana
+Magia Tajemna (Guślarstwo)/11/brak,Posłuch u Zwierząt/8/Oswajanie,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł,Zmysł Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+3,4,6,7
+2
+GUŚLARZ
+Starszy Guślarzy – Brąz 3
+Ludzie
+Targowanie/9/podstawowa,Wiedza (Duchy)/7/zaawansowana,Wiedza (Genealogia)/7/zaawansowana,Wiedza (Magia)/7/zaawansowana
+Czysta Dusza/8/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Wykrywanie Magii/4/Intuicja by wykrywać czarodziejów,Wytwórca (Zielarz)/6/Rzemiosło (Zielarz)
+3,4,6,7,9
+3
+GUŚLARZ
+Wiedzący – Brąz 5
+Ludzie
+Modlitwa/9/zaawansowana,Zastraszanie/2/podstawowa
+Mistrz Rzemiosła (Zielarz)/6/Pasujący Wydłużony Test tego Rzemiosła,Odporność Psychiczna/8/brak,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Wyczulony Zmysł (Dowolny)/4/Percepcja (z wykorzystaniem tego zmysłu)
+3,4,6,7,8,9
+4
+ŁOWCA
+Traper – Brąz 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Zasięgowa (Proca)/1/zaawansowana,Odporność/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Sztuka Przetrwania/7/podstawowa,Wiedza (Zwierzęta)/7/zaawansowana,Wspinaczka/2/podstawowa,Zastawianie Pułapek/6/zaawansowana
+Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (wybranym Terenie),Traper/4/Percepcja by zauważyć pułapki lub Zastawianie Pułapek,Twardziel/3/brak,Włóczykij/6/Skradania na wsi
+2,3,6
+1
+ŁOWCA
+Łowca – Brąz 4
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Łuk)/1/zaawansowana,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Sekretne Znaki (Łowców)/7/zaawansowana,Skradanie (Wieś)/5/podstawowa
+Błyskawiczny Strzał/5/Broń Zasięgowa gdy wykorzystujesz Talent Błyskawiczny Strzał,Celny Strzał/1/brak,Oko Łowcy/4/Dowolny wiążący się z Tropieniem lub polowaniem na zwierzynę,Strzelec Wyborowy/11/brak
+1,2,3,6
+2
+ŁOWCA
+Tropiciel – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Jeździectwo (Konie)/5/podstawowa,Nawigacja/4/podstawowa,Pływanie/2/zaawansowana,Tropienie/4/zaawansowana
+Nieustraszony (Zwierzęta)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Prosto Między Oczy/11/brak,Strzał w Dziesiątkę/11/brak,Wyczulony Zmysł (Dowolny)/4/Percepcja (z wykorzystaniem tego zmysłu)
+1,2,3,4,6
+3
+ŁOWCA
+Mistrz Łowów – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Opieka nad Zwierzętami/7/zaawansowana,Tresura (Dowolna)/7/zaawansowana
+Krzepki/3/brak,Nieustraszony (Potwory)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Snajper/13/Broń Strzelecka (zasięg daleki lub bardzo daleki),Strzał Przebijający/4/brak
+1,2,3,4,6,7
+4
+MISTYK
+Wróżbiarz – Brąz 1
+Ludzie,Leśne elfy
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Występy (Wróżenie)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Charyzmatyczny/11/brak,Percepcja Magiczna/4/Każdy Test dotyczący wykrywania Wiatrów Magii,Szczęście/9/brak
+4,6,9
+1
+MISTYK
+Mistyk – Brąz 2
+Ludzie,Leśne elfy
+Opanowanie/8/podstawowa,Przekupstwo/9/podstawowa,Wiedza (Astrologia)/7/zaawansowana,Wycena/7/zaawansowana,Występy (Proroctwa)/9/podstawowa,Zastraszanie/2/podstawowa
+Dobrze Przygotowany/4/brak,Rozpoznanie Artefaktu/4/Test Intuicji związany z wykrywaniem magicznych artefaktów,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł,Święte Wizje/4/Testy Intuicji kiedy znajdujesz się na świętej ziemi
+4,6,8,9
+2
+MISTYK
+Mędrzec – Brąz 3
+Ludzie,Leśne elfy
+Język (Dowolny)/7/zaawansowana,Oswajanie/8/podstawowa,Sztuka (Pisarstwo)/6/podstawowa,Występy (Gawędziarstwo)/9/podstawowa
+Czarownica!/8/brak,Czytanie-Pisanie/11/brak,Magia Prosta/11/brak,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy
+4,5,6,8,9
+3
+MISTYK
+Prorok – Brąz 4
+Ludzie,Leśne elfy
+Splatanie Magii (Azyr)/8/zaawansowana,Wiedza (Proroctwa)/7/zaawansowana
+Groźny/2/Zastraszanie,Odporność Psychiczna/8/brak,Magia Tajemna (Niebios)/11/brak,Wykrywanie Magii/4/Intuicja by wykrywać czarodziejów
+4,5,6,7,8,9
+4
+ZARZĄDCA
+Poborca Podatków – Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+Defraudant/7/Inteligencja (Defraudacja),Mocne Plecy/2/Wiosłowanie lub Pływanie,Numizmatyka/4/Wycena podczas ustalania wartości monet,Wytrwały/3/Odporność by wytrzymać trudności/3/Odporność by wytrzymać trudności
+0,4,8
+1
+ZARZĄDCA
+Zarządca – Srebro 5
+Ludzie,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Przekupstwo/9/podstawowa,Charyzma/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana
+Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Mówca/9/brak,Przestępca/10/brak,Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+0,4,8,9
+2
+ZARZĄDCA
+Włodarz – Złoto 1
+Ludzie,Krasnoludy,Niziołki
+Jeździectwo (Konie)/5/podstawowa,Nawigacja/4/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Groźny/2/Zastraszanie,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Szycha/11/brak
+0,4,5,8,9
+3
+ZARZĄDCA
+Komornik – Złoto 3
+Ludzie,Krasnoludy,Niziołki
+Język (Klasyczny)/7/zaawansowana,Wiedza (Prawo)/7/zaawansowana
+Błyskotliwość/11/brak,Intrygant/7/Inteligencji dotyczące tego Talentu,Władcza Postura/9/Dowodzenie,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,4,5,7,8,9
+4
+ZIELARKA
+Zbieraczka Ziół – Brąz 2
+Ludzie,Leśne elfy,Wysokie elfy,Niziołki
+Odporność/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Pływanie/2/zaawansowana,Rzemiosło (Zielarz)/6/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Zioła)/7/zaawansowana,Wspinaczka/2/podstawowa
+Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (Dowolny Teren),Włóczykij/6/Skradania na wsi,Wyczucie Kierunku/4/Nawigacja,Wyczulony Zmysł (Smak)/4/Percepcja (z wykorzystaniem tego zmysłu)
+3,4,5
+1
+ZIELARKA
+Zielarka – Brąz 4
+Ludzie,Leśne elfy,Wysokie elfy,Niziołki
+Leczenie/7/zaawansowana,Mocna Głowa/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Czujny/11/brak,Tragarz/2/Siły podczas podnoszenia,Zręczny/11/brak,Żyłka Handlowa/9/Targowanie
+3,4,5,6
+2
+ZIELARKA
+Mistrzyni Ziołolecznictwa – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Niziołki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Rzemiosło (Trucizny)/6/zaawansowana,Wiedza (Medycyna)/7/zaawansowana
+Błyskotliwość/11/brak,Pierwsza Pomoc/7/Leczenie podczas Rundy walki,Twardziel/3/brak,Wytwórca (Zielarz)/6/Rzemiosło (Zielarz)
+3,4,5,6,9
+3
+ZIELARKA
+Arcyzielarka – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Niziołki
+Powożenie/5/podstawowa,Nawigacja/4/podstawowa
+Mistrz Rzemiosła (Rzemiosło)/6/Pasujący Wydłużony Test tego Rzemiosła,Odporny na (Trucizny)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Przyrządzanie Mikstur/7/Rzemiosło (Aptekarstwo),Znawca (Zioła)/7/Wiedza (wybrana dziedzina)
+3,4,5,6,7,9
+4
+ZWIADOWCA
+Przewodnik – Brąz 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Odporność/3/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Sztuka Przetrwania/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wspinaczka/2/podstawowa
+Czujny/11/brak,Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (Dowolny Teren),Włóczykij/6/Skradania na wsi,Wyczucie Kierunku/4/Nawigacja
+3,4,5
+1
+ZWIADOWCA
+Zwiadowca – Brąz 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Zasięgowa (Łuk)/1/zaawansowana,Jeździectwo (Konie)/5/podstawowa,Nawigacja/4/podstawowa,Skradanie (Wieś)/5/podstawowa,Tropienie/4/zaawansowana
+Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Zmysł Bitewny/4/Percepcja w trakcie walki
+1,3,4,5
+2
+ZWIADOWCA
+Przepatrywacz – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Opieka nad Zwierzętami/7/zaawansowana,Pływanie/2/zaawansowana,Sekretne Znaki (Łowców)/7/zaawansowana,Targowanie/9/podstawowa
+Niezwykle Odporny/11/brak,Silne Nogi/2/brak,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł,Wyczulony Zmysł (Wzrok)/4/Percepcja (z wykorzystaniem tego zmysłu)
+1,3,4,5,7
+3
+ZWIADOWCA
+Odkrywca – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Rzemiosło (Kartograf)/6/zaawansowana
+Poliglota/7/Języki (Wszystkie),Twardziel/3/brak,Wytrwały/3/Odporność by wytrzymać trudności,Znawca (Wiedza Lokalna)/7/Wiedza (Wiedza Lokalna)
+1,3,4,5,6,7
+4
+BICZOWNIK
+Gorliwiec – Brąz 0
+Ludzie
+Broń Biała (Korbacz)/0/podstawowa,Intuicja/4/podstawowa,Leczenie/7/zaawansowana,Odporność/3/podstawowa,Sztuka Przetrwania/7/podstawowa,Unik/5/podstawowa,Wiedza (Sigmar)/7/zaawansowana,Zastraszanie/2/podstawowa
+Berserkerska Szarża/2/Broń Biała w Rundzie w której Szarżowałeś,Czytanie-Pisanie/11/brak,Szał Bojowy/11/brak,Wstrzemięźliwy/3/Odporności by wytrzymać głód
+0,2,3
+1
+BICZOWNIK
+Biczownik – Brąz 0
+Ludzie
+Atletyka/5/podstawowa,Broń Zasięgowa (Proca)/1/zaawansowana,Język (Klasyczny)/7/zaawansowana,Opanowanie/8/podstawowa,Sztuka (Ikony)/6/podstawowa,Wiedza (Imperium)/7/zaawansowana
+Biczownik/3/Opieranie się Niszczycielskim Potęgom,Nienawiść (Heretycy)/8/Siła Woli (Opieranie się Grupie),Nieubłagany/3/brak,Twardziel/3/brak
+0,2,3,8
+2
+BICZOWNIK
+Pokutnik – Brąz 0
+Ludzie
+Charyzma/9/podstawowa,Język (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Wiedza (Teologia)/7/zaawansowana
+Groźny/2/Zastraszanie,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Pierwsza Pomoc/7/Leczenie podczas Rundy walki,Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków
+0,2,3,4,8
+3
+BICZOWNIK
+Piewca Zagłady – Brąz 0
+Ludzie
+Dowodzenie/9/podstawowa,Występy (Przemowy)/9/podstawowa
+Bitewna Furia/8/Broń Biała pod wpływem Szału Bojowego,Nieustraszony (Heretycy)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Porywająca Gorliwość/9/Charyzmy kiedy mówisz o ważnej dla ciebie sprawie,Straszny/2/brak
+0,2,3,4,8,9
+4
+DOMOKRĄŻCA
+Włóczykij – Brąz 1
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Intuicja/4/podstawowa,Odporność/3/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Miasto albo Wieś)/5/podstawowa,Sztuka Przetrwania/7/podstawowa,Targowanie/9/podstawowa,Występy (Gawędziarstwo)/9/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,Rybak/4/Dowolne wiążące się z rybołówstwem,Włóczykij/6/Skradania na wsi,Złota Rączka/6/Rzemiosło  by naprawić uszkodzone przedmioty
+3,6,8
+1
+DOMOKRĄŻCA
+Domokrążca – Brąz 4
+Ludzie,Krasnoludy,Niziołki
+Jeździectwo (Konie)/5/podstawowa,Mocna Głowa/3/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Oswajanie/8/podstawowa,Rzemiosło (Złota Rączka)/6/zaawansowana,Wycena/7/zaawansowana
+Mocne Plecy/2/Wiosłowanie lub Pływanie/2/zaawansowana,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Wyczucie Kierunku/4/Nawigacja,Żyłka Handlowa/9/Targowanie
+3,6,8,9
+2
+DOMOKRĄŻCA
+Mistrz Domokrążców – Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Percepcja/4/podstawowa,Powożenie/5/podstawowa,Zastraszanie/2/podstawowa
+Dobrze Przygotowany/4/brak,Niezwykle Odporny/11/brak,Numizmatyka/4/Wycena podczas ustalania wartości monet,Tragarz/2/Siły podczas podnoszenia
+3,4,6,8,9
+3
+DOMOKRĄŻCA
+Wędrowny Handlarz – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Wiedza (Geografia)/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana
+Charyzmatyczny/11/brak,Gładkie Słówka/9/Charyzma podczas kłamania,Odporność Psychiczna/8/brak,Wytrwały/3/Odporność by wytrzymać trudności
+3,4,6,7,8,9
+4
+KUGLARZ
+Grajek Uliczny – Brąz 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Charyzma/9/podstawowa,Kuglarstwo (Dowolne)/5/zaawansowana,Muzyka (Dowolna)/6/zaawansowana,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Występy (Dowolne)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Charyzmatyczny/11/brak,Naśladowca/4/Występy (Aktorstwo) podczas których ważny jest akcent,Mówca/9/brak
+5,6,9
+1
+KUGLARZ
+Kuglarz – Brąz 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Rzucana)/1/zaawansowana,Jeździectwo (Dowolne)/5/podstawowa,Kuglarstwo (Dowolne)/5/zaawansowana,Muzyka (Dowolna)/6/zaawansowana,Występy (Dowolne)/9/podstawowa
+Człowiek Guma/5/Kuglarstwo lub Testy Zwinności w sytuacji gdy przydaje się gibkość,Sprężynka/11/brak,Strzał w Dziesiątkę/11/brak,Woltyżerka/5/Unik na koniu Jeździectwo (Konie)
+0,5,6,9
+2
+KUGLARZ
+Trubadur – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Opieka nad Zwierzętami/7/zaawansowana,Sztuka (Pisarstwo)/6/podstawowa,Tresura (Dowolne)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Gadanina/9/Charyzma by kogoś zagadać,Mistrz Charakteryzacji/9/Występy (Aktorstwo) gdy udajesz kogoś innego,Słuch Absolutny/4/Występy (Śpiewanie) Języki (tonalne takie jak Eltharin Kitajski czy Magiczny)
+0,1,5,6,9
+3
+KUGLARZ
+Kierownik Trupy – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Powożenie/5/podstawowa
+Czujny/11/brak,Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Żyłka Handlowa/9/Targowanie
+0,1,3,5,6,9
+4
+ŁOWCA CZAROWNIC
+Oprawca – Srebro 1
+Ludzie
+Broń Biała (Bijatyka)/0/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Leczenie/7/zaawansowana,Mocna Głowa/3/podstawowa,Percepcja/4/podstawowa,Wiedza (Tortury)/7/zaawansowana,Zastraszanie/2/podstawowa
+Czytanie-Pisanie/11/brak,Groźny/2/Zastraszanie,Nieugięty/2/brak,Zimna krew/11/brak
+0,3,8
+1
+ŁOWCA CZAROWNIC
+Łowca Czarownic – Srebro 3
+Ludzie
+Broń Biała (Dowolna)/0/podstawowa,Broń Zasięgowa (Dowolna)/1/zaawansowana,Jeździectwo (Konie)/5/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Czarownice)/7/zaawansowana
+Cień/5/Wszystkie związane ze śledzeniem,Dwie Bronie/5/Broń Biała lub Zasięgowa kiedy atakujesz dwoma sztukami oręża,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Percepcja Magiczna/4/Każdy Test dotyczący wykrywania Wiatrów Magii,Strzelec Wyborowy/11/brak
+0,1,3,8
+2
+ŁOWCA CZAROWNIC
+Inkwizytor – Srebro 5
+Ludzie
+Dowodzenie/9/podstawowa,Odporność/3/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Prawo)/7/zaawansowana
+Odporność Psychiczna/8/brak,Nieustępliwy/5/brak,Nieustraszony (Czarownice)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy
+0,1,3,8,9
+3
+ŁOWCA CZAROWNIC
+Generał Łowców Czarownic – Złoto 1
+Ludzie
+Wiedza (Chaos)/7/zaawansowana,Wiedza (Polityka)/7/zaawansowana
+Czysta Dusza/8/brak,Straszny/2/brak,Wykrywanie Magii/4/Intuicja by wykrywać czarodziejów,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,1,3,7,8,9
+4
+ŁOWCZYNI NAGRÓD
+Pogromczyni Złodziei – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Sztuka Przetrwania/7/podstawowa,Targowanie/9/podstawowa
+Charyzmatyczny/11/brak,Cień/5/Wszystkie związane ze śledzeniem,Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+0,3,5
+1
+ŁOWCZYNI NAGRÓD
+Łowczyni Nagród – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Zasięgowa (Kusza)/1/zaawansowana,Broń Zasięgowa (Unieruchamiająca)/1/zaawansowana,Odporność/3/podstawowa,Tropienie/4/zaawansowana,Zastraszanie/2/podstawowa
+Mocne Plecy/2/Wiosłowanie lub Pływanie,Nieustępliwy/5/brak,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Strzelec Wyborowy/11/brak
+0,1,3,5
+2
+ŁOWCZYNI NAGRÓD
+Mistrzyni Łowców Nagród – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Jeździectwo (Konie)/5/podstawowa,Opieka nad Zwierzętami/7/zaawansowana Pływanie/2/zaawansowana,Wspinaczka/2/podstawowa
+Celny Strzał/1/brak,Cios Mierzony/4/brak,Dwie Bronie/5/Broń Biała lub Zasięgowa kiedy atakujesz dwoma sztukami oręża,Szybkobiegacz/2/Atletyka podczas Biegu
+0,1,2,3,5
+3
+ŁOWCZYNI NAGRÓD
+Legenda Łowców Nagród – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Powożenie/5/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Prosto Między Oczy/11/brak,Nieustraszony (Cele Łowów)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Twardziel/3/brak/3/brak,Strzał Przebijający/4/brak
+0,1,2,3,5,7
+4
+POSŁANIEC
+Goniec – Brąz 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Bijatyka)/0/podstawowa,Unik/5/podstawowa,Nawigacja/4/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Wspinaczka/2/podstawowa
+Bardzo Szybki/11/brak,Chodu!/5/Atletyka gdy Uciekasz,Szybkobiegacz/2/Atletyka podczas Biegu,Zejście z Linii/5/Unik gdy używasz tego Talentu
+3,4,5
+1
+POSŁANIEC
+Posłaniec – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Jeździectwo (Konie)/5/podstawowa,Opanowanie/8/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana
+Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Przestępca/10/brak,Wyczucie Kierunku/4/Nawigacja,Z Bata/6/Powożenie lub Jeździectwo podczas Ucieczki lub Biegu
+0,3,4,5
+2
+POSŁANIEC
+Kurier – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Mocna Głowa/3/podstawowa,Oswajanie/8/podstawowa,Przekupstwo/9/podstawowa,Sztuka Przetrwania/7/podstawowa
+Nieustępliwy/5/brak,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Woltyżerka/5/Unik na koniu Jeździectwo (Konie),Wytrwały/3/Odporność by wytrzymać trudności
+0,3,4,5,8
+3
+POSŁANIEC
+Kapitan Kurierów – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Zastraszanie/2/podstawowa
+Nienawiść (Banici)/8/Siła Woli (Opieranie się Grupie),Niezwykle Odporny/11/brak,Szycha/11/brak,Żyłka Handlowa/9/Targowanie
+0,3,4,5,8,9
+4
+STRAŻNIK DRÓG
+Mytnik – Brąz 5
+Ludzie,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Kusza)/1/zaawansowana,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa
+Defraudant/7/Inteligencja (Defraudacja),Numizmatyka/4/Wycena podczas ustalania wartości monet,Strzelec Wyborowy/11/brak,Zimna krew/11/brak
+1,3,4
+1
+STRAŻNIK DRÓG
+Strażnik Dróg – Srebro 2
+Ludzie,Niziołki
+Intuicja/4/podstawowa,Jeździectwo (Konie)/5/podstawowa,Odporność/3/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Sztuka Przetrwania/7/podstawowa,Zastraszanie/2/podstawowa
+Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Przestępca/10/brak,Urodzony w Siodle/5/Jeździectwo (Konie) w walce,Z Bata/6/Powożenie lub Jeździectwo podczas Ucieczki lub Biegu
+0,1,3,4
+2
+STRAŻNIK DRÓG
+Sierżant Strażników Dróg – Srebro 4
+Ludzie,Niziołki
+Atletyka/5/podstawowa,Broń Zasięgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Dowodzenie/9/podstawowa
+Etykieta (Żołnierze)/9/Charyzma lub Plotkowanie (Żołnierze),Nienawiść (Dowolne)/8/Siła Woli (Opieranie się Grupie),Nieustraszony (Banici)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy
+0,1,3,4,9
+3
+STRAŻNIK DRÓG
+Kapitan Strażników Dróg – Złoto 1
+Ludzie,Niziołki
+Nawigacja/4/podstawowa,Wiedza (Imperium)/7/zaawansowana
+Mówca/9/brak,Szycha/11/brak,Władcza Postura/9/Dowodzenie,Zmysł Bitewny/4/Percepcja w trakcie walki
+0,1,3,4,7,9
+4
+WOŹNICA
+Foryś – Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Broń Zasięgowa (Unieruchamiająca)/1/zaawansowana,Jeździectwo (Konie)/5/podstawowa,Odporność/3/podstawowa,Opieka nad Zwierzętami/7/zaawansowanaOswajanie/8/podstawowa,Percepcja/4/podstawowa,Powożenie/5/podstawowa,Wspinaczka/2/podstawowa
+Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Posłuch u Zwierząt/8/Oswajanie,Woltyżerka/5/Unik na koniu Jeździectwo (Konie),Wytrwały/3/Odporność by wytrzymać trudności
+1,3,8
+1
+WOŹNICA
+Woźnica – Srebro 2
+Ludzie,Krasnoludy,Niziołki
+Broń Zasięgowa (Prochowa)/1/zaawansowana,Intuicja/4/podstawowa,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Nawigacja/4/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Artylerzysta/6/brak,Odporność Psychiczna/8/brak,Z Bata/6/Powożenie lub Jeździectwo podczas Ucieczki lub Biegu,Zimna krew/11/brak
+1,3,5,8
+2
+WOŹNICA
+Mistrz Woźniców – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Język (Dowolny)/7/zaawansowana,Tresura (Konie)/7/zaawansowana,Wiedza (Szlaki)/7/zaawansowana,Zastraszanie/2/podstawowa
+Celny Strzał/1/brak,Nieustraszony (Banici)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Żyłka Handlowa/9/Targowanie
+0,1,3,5,8
+3
+WOŹNICA
+Mistrz Szlaków – Srebro 5
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Dowodzenie/9/podstawowa
+Nieustraszony (Zwierzoludzie)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Strzelec Wyborowy/11/brak,Szybkie Przeładowanie/6/brak,Wyczucie Kierunku/4/Nawigacja
+0,1,3,4,5,8
+4
+DOKER
+Pomocnik Dokera – Brąz 3
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Plotkowanie/9/podstawowa,Pływanie/2/zaawansowana,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Bardzo Silny/11/brak,Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Mocne Plecy/2/Wiosłowanie lub Pływanie/2/zaawansowana,Tragarz/2/Siły podczas podnoszenia
+0,3,4
+1
+DOKER
+Doker – Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Hazard/7/podstawowa,Percepcja/4/podstawowa,Przekupstwo/9/podstawowa,Skradanie (Miasto)/5/podstawowa,Występy (Gawędziarstwo)/9/podstawowa,Zastraszanie/2/podstawowa
+Etykieta (Członkowie Cechu)/9/Charyzma lub Plotkowanie (Członkowie Cechu),Przestępca/10/brak,Silne Nogi/2/brak,Wytrwały/3/Odporność by wytrzymać trudności
+0,2,3,4
+2
+DOKER
+Brygadzista – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Wycena/7/zaawansowana
+Defraudant/7/Inteligencja (Defraudacja),Etykieta (Przestępcy)/9/Charyzma lub Plotkowanie (Przestępcy),Mówca/9/brak,Żyłka Handlowa/9/Targowanie
+0,2,3,4,9
+3
+DOKER
+Mistrz Dokerów – Srebro 5
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Wiedza (Podatki)/7/zaawansowana
+Czytanie-Pisanie/11/brak,Groźny/2/Zastraszanie,Numizmatyka/4/Wycena podczas ustalania wartości monet,Szycha/11/brak
+0,2,3,4,7,9
+4
+FLISAK
+Rybak – Brąz 2
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Plotkowanie/9/podstawowa,Pływanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa,Unik/5/podstawowa,Wioślarstwo/2/podstawowa
+Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (Bagna),Rybak/4/Dowolne wiążące się z rybołówstwem,Świetny Pływak/2/Pływanie,Towarzyski/9/Plotkowanie z wędrowcami
+3,5,6
+1
+FLISAK
+Flisak – Brąz 3
+Ludzie,Krasnoludy,Niziołki
+Broń Zasięgowa (Rzucana)/1/zaawansowana,Broń Zasięgowa (Unieruchamiająca)/1/zaawansowana,Hazard/7/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Zastawianie Pułapek/6/zaawansowana
+Mocne Plecy/2/Wiosłowanie lub Pływanie,Włóczykij/6/Skradania na wsi,Wodniak/5/Żeglarstwo na jednostkach pływających po rzece,Wytwórca (Szkutnik)/6/Rzemiosło (Szkutnik)
+0,3,5,6
+2
+FLISAK
+Znawca Rzeki – Brąz 5
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Drzewcowa)/0/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Charyzma/9/podstawowa
+Bardzo Silny/11/brak,Waleczne Serce/8/Opanowanie by przełamać Stan Panika,Wytrwały/3/Odporność by wytrzymać trudności,Znawca (Szlaki Rzeczne)/7/Wiedza (wybrana dziedzina)
+0,3,4,5,6
+3
+FLISAK
+Starszy Rzeczny – Srebro 2
+Ludzie,Krasnoludy,Niziołki
+Wiedza (Ludowa)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Czujny/11/brak,Odporność Psychiczna/8/brak,Mistrz Rzemiosła (Szkutnictwo)/6/Pasujący Wydłużony Test tego Rzemiosła,Mówca/9/brak
+0,3,4,5,6,9
+4
+PILOT RZECZNY
+Przewodnik Rzeczny – Brąz 4
+Ludzie,Krasnoludy,Niziołki
+Intuicja/4/podstawowa,Mocna Głowa/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Pływanie/2/zaawansowana,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Wioślarstwo/2/podstawowa
+Rybak/4/Dowolne wiążące się z rybołówstwem,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Wodniak/5/Żeglarstwo/5/zaawansowana na jednostkach pływających po rzece,Wyczucie Kierunku/4/Nawigacja
+0,3,4
+1
+PILOT RZECZNY
+Pilot Rzeczny – Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Język (Dowolny)/7/zaawansowana,Nawigacja/4/podstawowa,Opanowanie/8/podstawowa,Występy (Gawędziarstwo)/9/podstawowa
+Etykieta (Cechy)/9/Charyzma lub Plotkowanie (Cechy),Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Pilot Rzeczny/4/Każdy Test Wiedzy dotyczący rzeki,Żyłka Handlowa/9/Targowanie
+0,3,4,8
+2
+PILOT RZECZNY
+Starszy Pilot – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Wraki)/7/zaawansowana,Zastraszanie/2/podstawowa
+Bardzo Silny/11/brak,Pilot/4/Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody,Urodzony Żeglarz/3/Wszystkie wykonywane by oprzeć się chorobie morskiej,Wyczulony Zmysł (Wzrok)/4/Percepcja (z wykorzystaniem tego zmysłu)
+0,3,4,7,8
+3
+PILOT RZECZNY
+Mistrz Pilotów – Srebro 5
+Ludzie,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Żeglarstwo/5/zaawansowana
+Czujny/11/brak,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł,Świetny Pływak/2/Pływanie,Wytrwały/3/Odporność by wytrzymać trudności
+0,3,4,7,8,9
+4
+PIRAT RZECZNY
+Szabrownik – Brąz 2
+Ludzie,Leśne elfy,Krasnoludy
+Broń Biała (Podstawowa)/0/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Pływanie/2/zaawansowana,Sztuka Przetrwania/7/podstawowa,Unik/5/podstawowa,Wioślarstwo/2/podstawowa,Wspinaczka/2/podstawowa
+Mocne Plecy/2/Wiosłowanie lub Pływanie,Przestępca/10/brak,Rybak/4/Dowolne wiążące się z rybołówstwem,Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+0,2,4
+1
+PIRAT RZECZNY
+Pirat Rzeczny – Brąz 3
+Ludzie,Leśne elfy,Krasnoludy
+Intuicja/4/podstawowa,Nawigacja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Przekupstwo/9/podstawowa,Zastawianie Pułapek/6/zaawansowana
+Chodu!/5/Atletyka gdy Uciekasz,Świetny Pływak/2/Pływanie,Traper/4/Percepcja by zauważyć pułapki lub Zastawianie Pułapek,Włóczykij/6/Skradania na wsi
+0,2,4,8
+2
+PIRAT RZECZNY
+Łupieżca – Brąz 5
+Ludzie,Leśne elfy,Krasnoludy
+Broń Zasięgowa (Kusza)/1/zaawansowana,Plotkowanie/9/podstawowa,Skradanie (Wieś)/5/podstawowa,Zastraszanie/2/podstawowa
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Etykieta (Przestępcy)/9/Charyzma lub Plotkowanie (Przestępcy),Groźny/2/Zastraszanie,Wodniak/5/Żeglarstwo na jednostkach pływających po rzece
+0,1,2,4,8
+3
+PIRAT RZECZNY
+Kapitan Łupieżców – Srebro 2
+Ludzie,Leśne elfy,Krasnoludy
+Dowodzenie/9/podstawowa,Wiedza (Szlaki Wodne)/7/zaawansowana
+Pilot/4/Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody,Skrócenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia,Urodzony Wojownik/11/brak,Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków
+0,1,2,4,8,9
+4
+PRZEMYTNICZKA
+Szmuglerka Rzeczna – Brąz 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Mocna Głowa/3/podstawowa,Opanowanie/8/podstawowa,Pływanie/2/zaawansowana,Przekupstwo/9/podstawowa,Skradanie (Miasto albo Wieś)/5/podstawowa,Wioślarstwo/2/podstawowa,Żeglarstwo/5/zaawansowana
+Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (Bagna),Mocne Plecy/2/Wiosłowanie lub Pływanie,Przestępca/10/brak,Rybak/4/Dowolne wiążące się z rybołówstwem
+5,6,8
+1
+PRZEMYTNICZKA
+Przemytniczka – Brąz 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Sekretne Znaki (Przemytników)/7/zaawansowana,Targowanie/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Bardzo Silny/11/brak,Etykieta (Przestępcy)/9/Charyzma lub Plotkowanie (Przestępcy),Wodniak/5/Żeglarstwo na jednostkach pływających po rzece,Żyłka Handlowa/9/Targowanie
+4,5,6,8
+2
+PRZEMYTNICZKA
+Mistrzyni Przemytników – Brąz 5
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Intuicja/4/podstawowa,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Wycena/7/zaawansowana,Zastraszanie/2/podstawowa
+Łapówkarz/9/Łapówkarstwo,Nieustraszony (Strażnicy Rzeczni)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Pilot/4/Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody,Świetny Pływak/2/Pływanie
+4,5,6,7,8
+3
+PRZEMYTNICZKA
+Królowa Przemytników – Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Język (Dowolny)/7/zaawansowana
+Błyskotliwość/11/brak,Doświadczony Wędrowiec (Wybrzeża)/5/Atletyki podczas podróży w terenie (Wybrzeża),Szycha/11/brak,Urodzony Żeglarz/3/Wszystkie wykonywane by oprzeć się chorobie morskiej
+4,5,6,7,8,9
+4
+PRZEWOŹNIK
+Chłopiec Pokładowy – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Bijatyka)/0/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Plotkowanie/9/podstawowa,Pływanie/2/zaawansowana,Unik/5/podstawowa,Wioślarstwo/2/podstawowa,Żeglarstwo/5/zaawansowana
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Mocne Plecy/2/Wiosłowanie lub Pływanie,Rybak/4/Dowolne wiążące się z rybołówstwem,Świetny Pływak/2/Pływanie
+2,3,5
+1
+PRZEWOŹNIK
+Przewoźnik – Srebro 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,Percepcja/4/podstawowa,Targowanie/9/podstawowa,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Bardzo Silny/11/brak,Etykieta (Cechy)/9/Charyzma lub Plotkowanie (Cechy),Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Wodniak/5/Żeglarstwo na jednostkach pływających po rzece
+2,3,4,5
+2
+PRZEWOŹNIK
+Sternik – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Leczenie/7/zaawansowana,Rzemiosło (Szkutnictwo)/6/zaawansowana,Wspinaczka/2/podstawowa,Występy (Śpiewanie)/9/podstawowa
+Defraudant/7/Inteligencja (Defraudacja),Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Silny Cios/2/brak,Żyłka Handlowa/9/Targowanie
+2,3,4,5,6
+3
+PRZEWOŹNIK
+Kapitan Barki – Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Nawigacja/4/podstawowa
+Groźny/2/Zastraszanie,Mówca/9/brak,Pilot/4/Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody,Wyczucie Kierunku/4/Nawigacja
+2,3,4,5,6,7
+4
+STRAŻNIK RZECZNY
+Rekrut Rzeczny – Srebro 1
+Ludzie,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Pływanie/2/zaawansowana,Unik/5/podstawowa,Wioślarstwo/2/podstawowa,Żeglarstwo/5/zaawansowana
+Bardzo Silny/11/brak,Mocne Plecy/2/Wiosłowanie lub Pływanie,Świetny Pływak/2/Pływanie,Wodniak/5/Żeglarstwo na jednostkach pływających po rzece
+1,2,9
+1
+STRAŻNIK RZECZNY
+Strażnik Rzeczny – Srebro 2
+Ludzie,Niziołki
+Broń Zasięgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Przekupstwo/9/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Szlaki Rzeczne)/7/zaawansowana,Zastraszanie/2/podstawowa
+Artylerzysta/6/brak,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Przestępca/10/brak,Rybak/4/Dowolne wiążące się z rybołówstwem
+0,1,2,9
+2
+STRAŻNIK RZECZNY
+Żołnierz Okrętowy – Srebro 4
+Ludzie,Niziołki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Wspinaczka/2/podstawowa
+Nienawiść (Dowolna)/8/Siła Woli (Opieranie się Grupie),Nieustraszony (Piraci Rzeczni)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Pilot/4/Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody,Urodzony Żeglarz/3/Wszystkie wykonywane by oprzeć się chorobie morskiej
+0,1,2,4,9
+3
+STRAŻNIK RZECZNY
+Mistrz Żołnierzy Okrętowych – Złoto 1
+Ludzie,Niziołki
+Nawigacja/4/podstawowa,Wiedza (Prawo)/7/zaawansowana
+Groźny/2/Zastraszanie,Szycha/11/brak,Władcza Postura/9/Dowodzenie,Wyczucie Kierunku/4/Nawigacja
+0,1,2,4,7,9
+4
+ŻEGLARZ
+Szczur Lądowy – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Bijatyka)/0/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Pływanie/2/zaawansowana,Wioślarstwo/2/podstawowa,Wspinaczka/2/podstawowa,Żeglarstwo/5/zaawansowana
+Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie (Wybrzeża),Mocne Plecy/2/Wiosłowanie lub Pływanie,Rybak/4/Dowolne wiążące się z rybołówstwem,Świetny Pływak/2/Pływanie
+5,6,9
+1
+ŻEGLARZ
+Żeglarz – Srebro 3
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Język (Dowolny)/7/zaawansowana,Odporność/3/podstawowa,Unik/5/podstawowa,Występy (Śpiewanie)/9/podstawowa
+Na Cztery Łapy /5/Atletyka podczas spadania,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Silne Nogi/2/brak,Urodzony Żeglarz/3/Wszystkie wykonywane by oprzeć się chorobie morskiej
+0,5,6,9
+2
+ŻEGLARZ
+Bosman – Srebro 5
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Rzemiosło (Cieśla)/6/zaawansowana
+Bardzo Silny/11/brak,Silny Cios/2/brak,Wilk Morski/5/Żeglowanie (każdy statek morski),Wytrwały/3/Odporność by wytrzymać trudności
+0,4,5,6,9
+3
+ŻEGLARZ
+Kapitan Statku – Złoto 2
+Ludzie,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Nawigacja/4/podstawowa
+Błyskotliwość/11/brak,Mówca/9/brak,Pilot/4/Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody,Wyczucie Kierunku/4/Nawigacja
+0,4,5,6,7,9
+4
+BANITA
+Zbój – Brąz 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Opanowanie/8/podstawowa,Odporność/3/podstawowa,Sztuka Przetrwania/7/podstawowa,Zastraszanie/2/podstawowa
+Zmysł Bitewny/4/Percepcja w trakcie walki,Przestępca/10/brak,Włóczykij/6/Skradania na wsi,Chodu!/5/Atletyka gdy Uciekasz
+0,2,3
+1
+BANITA
+Banita – Brąz 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Zasięgowa (Łuk)/1/zaawansowana,Leczenie/7/zaawansowana,Percepcja/4/podstawowa,Skradanie (Wieś)/5/podstawowa,Unik/5/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Strzelec Wyborowy/11/brak,Traper/4/Percepcja by zauważyć pułapki lub Zastawianie Pułapek
+0,1,2,3
+2
+BANITA
+Herszt Banitów – Brąz 4
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Jeździectwo (Konie)/5/podstawowa,Plotkowanie/9/podstawowa
+Groźny/2/Zastraszanie,Niezwykle Odporny/11/brak,Szybkie Przeładowanie/6/brak,Urodzony w Siodle/5/Jeździectwo (Konie) w walce
+0,1,2,3,4
+3
+BANITA
+Król Bandytów – Srebro 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Wiedza (Imperium)/7/zaawansowana
+Prosto Między Oczy/11/brak,Nieustraszony (Strażnicy Dróg)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu,Krzepki/3/brak
+0,1,2,3,4,9
+4
+CZAROWNICA
+Szeptucha – Brąz 1
+Ludzie
+Język (Magiczny)/7/zaawansowana,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Wieś)/5/podstawowa,Splatanie Magii/8/zaawansowana,Zastraszanie/2/podstawowa,Zwinne Palce/6/zaawansowana
+Groźny/2/Zastraszanie,Magia Prosta/11/brak,Precyzyjne Inkantowanie/4/Język (Magiczny) podczas rzucania czaru,Przestępca/10/brak
+0,3,8
+1
+CZAROWNICA
+Czarownica – Brąz 2
+Ludzie
+Broń Biała (Drzewcowa)/0/podstawowa,Intuicja/4/podstawowa,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Rzemiosło (Zielarz)/6/zaawansowana,Unik/5/podstawowa
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Czarownica!/8/brak,Magia Tajemna (Czarownic)/11/brak,Percepcja Magiczna/4/Każdy Test dotyczący wykrywania Wiatrów Magii,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł
+0,3,4,8
+2
+CZAROWNICA
+Wiedźma – Brąz 3
+Ludzie
+Charyzma/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Mroczna Magia)/7/zaawansowana
+Posłuch u Zwierząt/8/Oswajanie,Ruchliwe dłonie/6/Zwinne Palce lub Broń Biała (Bijatyka) aby dotknąć przeciwnika,Straszny/2/brak,Wykrywanie Magii/4/Intuicja by wykrywać czarodziejów
+0,3,4,8,9
+3
+CZAROWNICA
+Czarnoksiężnik – Brąz 5
+Ludzie
+Wiedza (Demonologia)/7/zaawansowana,Wiedza (Magia)/7/zaawansowana
+Niezwykle Odporny/11/brak,Odporność Psychiczna/8/brak,Szczęście/9/brak,Zmysł Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+0,3,4,7,8,9
+4
+HIENA CMENTARNA
+Porywacz Zwłok – Brąz 2
+Ludzie,Niziołki
+Intuicja/4/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Skradanie (Dowolne)/5/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,Przestępca/10/brak,Mocne Plecy/2/Wiosłowanie lub Pływanie,Ulicznik/4/Skradanie (Miasto)
+2,4,8
+1
+HIENA CMENTARNA
+Hiena Cmentarna – Brąz 3
+Ludzie,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Powożenie/5/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Medycyna)/7/zaawansowana,Wycena/7/zaawansowana
+Bardzo Silny/11/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+0,2,4,8
+2
+HIENA CMENTARNA
+Rabuś Grobowców – Srebro 1
+Ludzie,Niziołki
+Badania Naukowe/7/zaawansowana,Otwieranie Zamków/6/zaawansowana,Wiedza (Historia)/7/zaawansowana,Zastawianie Pułapek/6/zaawansowana
+Czytanie-Pisanie/11/brak,Silny Cios/2/brak,Szczur Tunelowy/5/Skradanie pod ziemią,Wytrwały/3/Odporność by wytrzymać trudności
+0,2,4,6,8
+3
+HIENA CMENTARNA
+Łowca Skarbów – Srebro 5
+Ludzie,Niziołki
+Nawigacja/4/podstawowa,Rzemiosło (Inżynier)/6/zaawansowana
+Nieustraszony (Nieumarli)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Odporność Psychiczna/8/brak,Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł,Traper/4/Percepcja by zauważyć pułapki lub Zastawianie Pułapek
+0,2,4,6,7,8
+4
+PASER
+Pośrednik – Srebro 1
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Wycena/7/zaawansowana
+Szuler/7/Hazard i Zwinne Palce w grach karcianych,Towarzyski/9/Plotkowanie z wędrowcami,Ulicznik/4/Skradanie (Miasto),Żyłka Handlowa/9/Targowanie
+4,5,9
+1
+PASER
+Paser – Srebro 2
+Ludzie,Krasnoludy,Niziołki
+Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Rzemiosło (Grawer)/6/zaawansowana,Sekretne Znaki (Złodziei)/7/zaawansowana,Zastraszanie/2/podstawowa
+Błyskotliwość/11/brak,Etykieta (Przestępcy)/9/Charyzma lub Plotkowanie (Przestępcy),Numizmatyka/4/Wycena podczas ustalania wartości monet,Przestępca/10/brak
+4,5,6,9
+2
+PASER
+Mistrz Paserów – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Przekupstwo/9/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Wiedza (Sztuka)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Charyzmatyczny/11/brak,Geniusz Arytmetyczny/7/Wycena lub Hazard,Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Szycha/11/brak
+4,5,6,7,9
+3
+PASER
+Broker Informacji – Srebro 4
+Ludzie,Krasnoludy,Niziołki
+Badania Naukowe/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Groźny/2/Zastraszanie,Łapówkarz/9/Łapówkarstwo,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+4,5,6,7,8,9
+4
+RAJFUR
+Naganiacz – Brąz 1
+Ludzie,Wysokie elfy,Niziołki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Przekupstwo/9/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Występy (Dowolne)/9/podstawowa,Zastraszanie/2/podstawowa
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Gadanina/9/Charyzma by kogoś zagadać,Towarzyski/9/Plotkowanie z wędrowcami,Ulicznik/4/Skradanie (Miasto)
+5,6,9
+1
+RAJFUR
+Rajfur – Brąz 3
+Ludzie,Wysokie elfy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Intuicja/4/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa,Wiedza (Lokalna)/7/zaawansowana
+Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa,Oburęczność/12/brak,Odporny na (Choroby)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Przestępca/10/brak
+4,5,6,9
+2
+RAJFUR
+Stręczyciel – Srebro 1
+Ludzie,Wysokie elfy,Niziołki
+Język (Dowolny)/7/zaawansowana,Opanowanie/8/podstawowa,Wiedza (Prawo)/7/zaawansowana,Wycena/7/zaawansowana
+Charyzmatyczny/11/brak,Defraudant/7/Inteligencja (Defraudacja),Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Żyłka Handlowa/9/Targowanie
+4,5,6,8,9
+3
+RAJFUR
+Herszt Rajfurów – Srebro 3
+Ludzie,Wysokie elfy,Niziołki
+Dowodzenie/9/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+Błyskotliwość/11/brak,Łapówkarz/9/Łapówkarstwo,Numizmatyka/4/Wycena podczas ustalania wartości monet,Szycha/11/brak
+4,5,6,7,8,9
+4
+REKETER
+Zbir – Brąz 3
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Bijatyka)/0/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Skradanie (Miasto)/5/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wiedza (Lokalna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Etykieta (Przestępcy)/9/Charyzma lub Plotkowanie (Przestępcy),Groźny/2/Zastraszanie,Przestępca/10/brak,Silny Cios/2/brak
+0,2,3
+1
+REKETER
+Reketer – Brąz 5
+Ludzie,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Język (Estalijski albo Tileański)/7/zaawansowana,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Wycena/7/zaawansowana
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Defraudant/7/Inteligencja (Defraudacja),Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Urodzony Wojownik/11/brak
+0,2,3,9
+2
+REKETER
+Głowa Gangu – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Intuicja/4/podstawowa,Dowodzenie/9/podstawowa,Percepcja/4/podstawowa,Broń Zasięgowa (Kusza)/1/zaawansowana
+Krzepki/3/brak,Nieustraszony (Straże)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Odporny na (Trucizny)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,2,3,8,9
+3
+REKETER
+Król Podziemia – Srebro 5
+Ludzie,Krasnoludy,Niziołki
+Wiedza (Polityka)/7/zaawansowana,Wiedza (Prawo)/7/zaawansowana
+Majętny/10/brak,Straszny/2/brak,Szycha/11/brak,Władcza Postura/9/Dowodzenie
+0,2,3,7,8,9
+4
+SZARLATAN
+Kanciarz – Brąz 3
+Ludzie,Wysokie elfy,Niziołki
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Przekupstwo/9/podstawowa,Targowanie/9/podstawowa,Występy (Gawędziarstwo)/9/podstawowa,Zwinne Palce/6/zaawansowana
+Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Szczęście/9/brak,Szuler/7/Hazard i Zwinne Palce w grach karcianych,Szuler Kościany/7/Hazard lub Zwinne Palce podczas gier kościanych
+4,6,9
+1
+SZARLATAN
+Szarlatan – Brąz 5
+Ludzie,Wysokie elfy,Niziołki
+Intuicja/4/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Unik/5/podstawowa,Wycena/7/zaawansowana,Występy (Aktorstwo)/9/podstawowa
+Gadanina/9/Charyzma by kogoś zagadać,Przestępca/10/brak,Ruchliwe dłonie/6/Zwinne Palce lub Broń Biała (Bijatyka) aby dotknąć przeciwnika,Sekretna Tożsamość/7/Występy (Aktorstwo) by uwiarygodnić swoją sekretną tożsamość
+4,6,8,9
+2
+SZARLATAN
+Oszust – Srebro 2
+Ludzie,Wysokie elfy,Niziołki
+Język (Grypsera)/7/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana,Otwieranie Zamków/6/zaawansowana,Sekretne Znaki (Złodziei)/7/zaawansowana
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz,Czytanie-Pisanie/11/brak,Gładkie Słówka/9/Charyzma podczas kłamania,Żyłka Handlowa/9/Targowanie
+4,5,6,8,9
+3
+SZARLATAN
+Łajdak – Srebro 4
+Ludzie,Wysokie elfy,Niziołki
+Badania Naukowe/7/zaawansowana,Wiedza (Genealogia)/7/zaawansowana
+Charyzmatyczny/11/brak,Mistrz Charakteryzacji/9/Występy (Aktorstwo) gdy udajesz kogoś innego,Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy,Towarzyski/9/Plotkowanie z wędrowcami
+4,5,6,7,8,9
+4
+ZŁODZIEJ
+Bandzior – Brąz 1
+Ludzie,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Intuicja/4/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Percepcja/4/podstawowa,Skradanie (Miasto)/5/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Chodu!/5/Atletyka gdy Uciekasz,Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Przestępca/10/brak,Ulicznik/4/Skradanie (Miasto)
+4,5,8
+1
+ZŁODZIEJ
+Złodziej – Brąz 3
+Ludzie,Krasnoludy,Niziołki
+Otwieranie Zamków/6/zaawansowana,Plotkowanie/9/podstawowa,Sekretne Znaki (Złodziei)/7/zaawansowana,Wiedza (Lokalna)/7/zaawansowana,Wycena/7/zaawansowana,Zwinne Palce/6/zaawansowana
+Cień/5/Wszystkie związane ze śledzeniem Etykieta (Przestępcy) lub Plotkowanie (Przestępcy),Ruchliwe dłonie/6/Zwinne Palce lub Broń Biała (Bijatyka) aby dotknąć przeciwnika,Szybki Refleks/11/brak,Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+4,5,6,8
+2
+ZŁODZIEJ
+Mistrz Złodziejski – Brąz 5
+Ludzie,Krasnoludy,Niziołki
+Broń Zasięgowa (Kusza)/1/zaawansowana,Hazard/7/podstawowa,Przekupstwo/9/podstawowa,Zastraszanie/2/podstawowa
+Traper/4/Percepcja by zauważyć pułapki lub Zastawianie Pułapek,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Zejście z Linii/5/Unik gdy używasz tego Talentu,Zręczny/11/brak
+2,4,5,6,8
+3
+ZŁODZIEJ
+Włamywacz – Srebro 3
+Ludzie,Krasnoludy,Niziołki
+Charyzma/9/podstawowa,Zastawianie Pułapek/6/zaawansowana
+Na Cztery Łapy /5/Atletyka podczas spadania,Majętny/10/brak,Silne Nogi/2/brak,Wyborny Wspinacz/2/Wspinaczka
+2,4,5,6,8,9
+4
+GLADIATOR
+Pięściarz – Brąz 4
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Bijatyka)/0/podstawowa,Broń Biała (Dowolna)/0/podstawowa,Hazard/7/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Odwrócenie Szans/0/Broń Biała w obronie,Skrócenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia,Żelazna Szczęka/3/Odporność wykonywana przeciw Oszołomieniu
+0,2,3
+1
+GLADIATOR
+Gladiator – Srebro 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Targowanie/9/podstawowa,Intuicja/4/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Broń Biała (Korbacz albo Dwuręczna)/0/podstawowa,Percepcja/4/podstawowa,Broń Zasięgowa (Unieruchamiająca)/1/zaawansowana
+Bitewny Refleks/4/brak,Dwie Bronie/5/Broń Biała lub Zasięgowa kiedy atakujesz dwoma sztukami oręża,Oburęczność/12/brak,Tarczownik/2/brak
+0,2,3,4
+2
+GLADIATOR
+Mistrz Areny – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Kuglarstwo (Walka Pokazowa)/5/zaawansowana,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Wiedza (Anatomia)/7/zaawansowana
+Groźny/2/Zastraszanie,Krzepki/3/brak,Mistrz Walki/5/brak,Rozbrojenie/4/Broń Biała w sytuacjach związanych z tym Talentem
+0,2,3,4,5
+3
+GLADIATOR
+Legenda Areny – Złoto 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Zasięgowa (Dowolna)/1/zaawansowana,Charyzma/9/podstawowa
+Atak Wyprzedzający/4/brak,Nieubłagany/3/brak,Straszny/2/brak,Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków
+0,2,3,4,5,9
+4
+KAPŁAN-WOJOWNIK
+Nowicjusz Kapłanów-wojowników – Brąz 2
+Ludzie
+Broń Biała (Dowolna)/0/podstawowa,Dowodzenie/9/podstawowa,Leczenie/7/zaawansowana,Modlitwa/9/zaawansowana,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Wiedza (Teologia)/7/zaawansowana,Unik/5/podstawowa
+Błogosławieństwo (Dowolna Tradycja)/11/brak,Czytanie-Pisanie/11/brak,Etykieta (Kultyści)/9/Charyzma lub Plotkowanie (Kultyści),Odporność Psychiczna/8/brak
+0,3,8
+1
+KAPŁAN-WOJOWNIK
+Kapłan-wojownik – Srebro 2
+Ludzie
+Broń Biała (Dowolna)/0/podstawowa,Broń Zasięgowa (Dowolna)/1/zaawansowana,Charyzma/9/podstawowa,Język (Bitewny)/7/zaawansowana,Występy (Przemawianie)/9/podstawowa,Zastraszanie/2/podstawowa
+Dwie Bronie/5/Broń Biała lub Zasięgowa kiedy atakujesz dwoma sztukami oręża,Inspirujący/9/Dowodzenie podczas wojny,Inwokacja (Dowolna Tradycja)/11/brak,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą
+0,2,3,8
+2
+KAPŁAN-WOJOWNIK
+Kapłan-sierżant – Srebro 3
+Ludzie
+Intuicja/4/podstawowa,Jeździectwo (Konie)/5/podstawowa,Percepcja/4/podstawowa,Opieka nad Zwierzętami/7/zaawansowana
+Czysta Dusza/8/brak,Święte Wizje/4/Testy Intuicji kiedy znajdujesz się na świętej ziemi,Waleczne Serce/8/Opanowanie by przełamać Stan Panika,Zmysł Bitewny/4/Percepcja w trakcie walki
+0,2,3,4,8
+3
+KAPŁAN-WOJOWNIK
+Kapłan-kapitan – Srebro 4
+Ludzie
+Mocna Głowa/3/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Nieustraszony (Dowolny)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Święta Nienawiść/9/brak,Wódz/9/Dowodzenie podczas wojny,Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków
+0,2,3,4,8,9
+4
+KAWALERZYSTA
+Jeździec – Srebro 2
+Ludzie,Leśne elfy,Wysokie elfy
+Broń Biała (Podstawowa)/0/podstawowa,Jeździectwo (Konie)/5/podstawowa,Język (Bitewny)/7/zaawansowana,Odporność/3/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Oswajanie/8/podstawowa,Percepcja/4/podstawowa,Sztuka Przetrwania/7/podstawowa
+Szybki Refleks/11/brak,Urodzony w Siodle/5/Jeździectwo (Konie) w walce,Z Bata/6/Powożenie lub Jeździectwo podczas Ucieczki lub Biegu,Zmysł Bitewny/4/Percepcja w trakcie walki
+0,2,5
+1
+KAWALERZYSTA
+Kawalerzysta – Srebro 4
+Ludzie,Leśne elfy,Wysokie elfy
+Broń Biała (Kawaleryjska)/0/podstawowa,Broń Zasięgowa (Prochowa)/1/zaawansowana,Charyzma/9/podstawowa,Mocna Głowa/3/podstawowa,Opanowanie/8/podstawowa,Plotkowanie/9/podstawowa
+Artylerzysta/6/brak,Etykieta (Żołnierze)/9/Charyzma lub Plotkowanie (Żołnierze),Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Woltyżerka/5/Unik na koniu Jeździectwo (Konie)
+0,1,2,5
+2
+KAWALERZYSTA
+Sierżant Kawalerii – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy
+Intuicja/4/podstawowa,Dowodzenie/9/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana,Zastraszanie/2/podstawowa
+Bitewny Refleks/4/brak,Błyskawiczny Strzał/5/Broń Zasięgowa gdy wykorzystujesz Talent Błyskawiczny Strzał,Nienawiść (Dowolna)/8/Siła Woli (Opieranie się Grupie),Wódz/9/Dowodzenie podczas wojny
+0,1,2,4,5
+3
+KAWALERZYSTA
+Oficer Kawalerii – Złoto 2
+Ludzie,Leśne elfy,Wysokie elfy
+Hazard/7/podstawowa,Wiedza (Heraldyka)/7/zaawansowana
+Atak Wyprzedzający/4/brak,Celny Strzał/1/brak,Inspirujący/9/Dowodzenie podczas wojny,Krzepki/3/brak
+0,1,2,4,5,9
+4
+OCHRONIARZ
+Stróż – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Podstawowa)/0/podstawowa,Hazard/7/podstawowa,Intuicja/4/podstawowa,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Percepcja/4/podstawowa,Plotkowanie/9/podstawowa,Występy (Gawędziarstwo)/9/podstawowa
+Etykieta (Słudzy)/9/Charyzma lub Plotkowanie (Słudzy),Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Szuler Kościany/7/Hazard lub Zwinne Palce podczas gier kościanych,Wytrwały/3/Odporność by wytrzymać trudności
+0,3,5
+1
+OCHRONIARZ
+Ochroniarz – Srebro 2
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Drzewcowa)/0/podstawowa,Broń Zasięgowa (Łuk)/1/zaawansowana,Opanowanie/8/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+Nieustępliwy/5/brak,Odwrócenie Szans/0/Broń Biała w obronie,Silny Cios/2/brak,Tarczownik/2/brak
+0,3,4,5
+2
+OCHRONIARZ
+Gwardzista – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Dwuręczna)/0/podstawowa,Język (Bitewny)/7/zaawansowana,Leczenie/7/zaawansowana,Wiedza (Etykieta)/7/zaawansowana
+Nieustraszony (Intruzi)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Niewzruszony/8/Opanowanie przeciwko panice prochowej,Sprężynka/11/brak,Waleczne Serce/8/Opanowanie by przełamać Stan Panika
+0,2,3,4,5
+3
+OCHRONIARZ
+Oficer Gwardii – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Krzepki/3/brak,Mistrz Walki/5/brak,Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,2,3,4,5,7
+4
+OPRYCH
+Tani Drań – Brąz 2
+Ludzie,Wysokie elfy,Krasnoludy
+Atletyka/5/podstawowa,Broń Biała (Dowolna)/0/podstawowa,Odporność/3/podstawowa,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Występy (Szydzenie)/9/podstawowa,Zastraszanie/2/podstawowa
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka),Groźny/2/Zastraszanie,Skrócenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia,Urodzony Wojownik/11/brak
+0,3,5
+1
+OPRYCH
+Oprych – Srebro 1
+Ludzie,Wysokie elfy,Krasnoludy
+Broń Biała (Podstawowa)/0/podstawowa,Charyzma/9/podstawowa,Intuicja/4/podstawowa,Jeździectwo (Konie)/5/podstawowa,Percepcja/4/podstawowa,Przekupstwo/9/podstawowa
+Bitewny Refleks/4/brak,Odwrócenie Szans/0/Broń Biała w obronie,Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika,Przestępca/10/brak
+0,3,4,5
+2
+OPRYCH
+Płatny Morderca – Srebro 4
+Ludzie,Wysokie elfy,Krasnoludy
+Broń Zasięgowa (Rzucana)/1/zaawansowana,Nawigacja/4/podstawowa,Opanowanie/8/podstawowa,Wspinaczka/2/podstawowa
+Cios Mierzony/4/brak,Nieustępliwy/5/brak,Rozbrojenie/4/Broń Biała w sytuacjach związanych z tym Talentem,Strzelec Wyborowy/11/brak
+0,1,3,4,5
+3
+OPRYCH
+Skrytobójca – Złoto 1
+Ludzie,Wysokie elfy,Krasnoludy
+Broń Zasięgowa (Kusza)/1/zaawansowana,Występy (Aktorstwo)/9/podstawowa
+Celny Strzał/1/brak,Morderczy Atak/4/brak,Oburęczność/12/brak,Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków
+0,1,3,4,5,9
+4
+RYCERZ
+Giermek – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy
+Atletyka/5/podstawowa,Broń Biała (Kawaleryjska)/0/podstawowa,Jeździectwo (Konie)/5/podstawowa,Leczenie/7/zaawansowana,Opieka nad Zwierzętami/7/zaawansowana Oswajanie/8/podstawowa,Rzemiosło  (Podkuwanie Koni)/6/zaawansowana,Wiedza (Heraldyka)/7/zaawansowana
+Etykieta (Dowolna Grupa)/9/Charyzma lub Plotkowanie (Grupa Społeczna),Tragarz/2/Siły podczas podnoszenia,Urodzony Wojownik/11/brak,Urodzony w Siodle/5/Jeździectwo (Konie) w walce
+2,4,5
+1
+RYCERZ
+Rycerz – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy
+Broń Biała (Dowolna)/0/podstawowa,Język (Bitewny)/7/zaawansowana,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Zastraszanie/2/podstawowa
+Groźny/2/Zastraszanie,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Silny Cios/2/brak,Tarczownik/2/brak
+0,2,4,5
+2
+RYCERZ
+Pierwszy Rycerz – Złoto 2
+Ludzie,Leśne elfy,Wysokie elfy
+Charyzma/9/podstawowa,Mocna Głowa/3/podstawowa,Dowodzenie/9/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Niewzruszony/8/Opanowanie przeciwko panice prochowej,Nieustraszony (Dowolny)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Waleczne Serce/8/Opanowanie by przełamać Stan Panika,Wódz/9/Dowodzenie podczas wojny
+0,2,4,5,8
+3
+RYCERZ
+Rycerz Wewnętrznego Kręgu – Złoto 4
+Ludzie,Leśne elfy,Wysokie elfy
+Sekretne Znaki (Zakonu Rycerskiego)/7/zaawansowana,Wiedza (Dowolna)/7/zaawansowana
+Inspirujący/9/Dowodzenie podczas wojny,Morderczy Atak/4/brak,Rozbrojenie/4/Broń Biała w sytuacjach związanych z tym Talentem,Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+0,2,4,5,8,9
+4
+ZABÓJCA
+Zabójca Trolli – Brąz 2
+Krasnoludy
+Broń Biała (Podstawowa)/0/podstawowa,Hazard/7/podstawowa,Leczenie/7/zaawansowana,Mocna Głowa/3/podstawowa,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wiedza (Trolle)/7/zaawansowana
+Dwie Bronie/5/Broń Biała lub Zasięgowa kiedy atakujesz dwoma sztukami oręża,Nieustraszony (Wszystko)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy,Szał Bojowy/11/brak,Zabójca/11/brak
+0,2,8
+1
+ZABÓJCA
+Zabójca Olbrzymów – Brąz 2
+Krasnoludy
+Broń Biała (Dwuręczna)/0/podstawowa,Język (Bitewny)/7/zaawansowana,Sztuka Przetrwania/7/podstawowa,Wiedza (Olbrzymy)/7/zaawansowana,Wycena/7/zaawansowana,Zastraszanie/2/podstawowa
+Groźny/2/Zastraszanie,Nieubłagany/3/brak,Odwrócenie Szans/0/Broń Biała w obronie,Twardziel/3/brak
+0,2,3,8
+2
+ZABÓJCA
+Zabójca Smoków – Brąz 2
+Krasnoludy
+Broń Zasięgowa (Rzucana)/1/zaawansowana,Percepcja/4/podstawowa,Wiedza (Smoki)/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa
+Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków,Nieustępliwy/5/brak,Krzepki/3/brak,Niezwykle Odporny/11/brak
+0,2,3,5,8
+3
+ZABÓJCA
+Zabójca Demonów – Brąz 2
+Krasnoludy
+Intuicja/4/podstawowa,Wiedza (Chaos)/7/zaawansowana
+Bardzo Silny/11/brak,Silny Cios/2/brak,Straszny/2/brak,Mistrz Walki/5/brak
+0,2,3,4,5,8
+4
+ŻOŁNIERZ
+Rekrut – Srebro 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Atletyka/5/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Język (Bitewny)/7/zaawansowana,Muzyka (Bęben albo Piszczałka)/6/zaawansowana,Odporność/3/podstawowa,Opanowanie/8/podstawowa,Unik/5/podstawowa,Wspinaczka/2/podstawowa
+Mocne Plecy/2/Wiosłowanie lub Pływanie,Strzelec Wyborowy/11/brak,Szuler Kościany/7/Hazard lub Zwinne Palce podczas gier kościanych,Urodzony Wojownik/11/brak
+0,3,8
+1
+ŻOŁNIERZ
+Żołnierz – Srebro 3
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Broń Biała (Dowolna)/0/podstawowa,Broń Zasięgowa (Dowolna)/1/zaawansowana,Hazard/7/podstawowa,Mocna Głowa/3/podstawowa,Plotkowanie/9/podstawowa,Sztuka Przetrwania/7/podstawowa
+Etykieta (Żołnierze)/9/Charyzma lub Plotkowanie (Żołnierze),Musztra/0/Broń Biała kiedy jesteś w pobliżu sojuszniczej postaci z tym Talentem,Szybkie Przeładowanie/6/brak,Tarczownik/2/brak
+0,1,3,8
+2
+ŻOŁNIERZ
+Sierżant – Srebro 5
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Dowodzenie/9/podstawowa,Intuicja/4/podstawowa,Leczenie/7/zaawansowana,Percepcja/4/podstawowa
+Niewzruszony/8/Opanowanie przeciwko panice prochowej,Walka w Ciasnocie/5/Unik w ciasnej przestrzeni,Wódz/9/Dowodzenie podczas wojny,Zmysł Bitewny/4/Percepcja w trakcie walki
+0,1,3,4,8
+3
+ŻOŁNIERZ
+Oficer – Złoto 1
+Ludzie,Leśne elfy,Wysokie elfy,Krasnoludy,Niziołki
+Nawigacja/4/podstawowa,Wiedza (Sztuka Wojenna)/7/zaawansowana
+Inspirujący/9/Dowodzenie podczas wojny,Mówca/9/brak,Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą,Waleczne Serce/8/Opanowanie by przełamać Stan Panika
+0,1,3,4,8,9
+4
+
+
+

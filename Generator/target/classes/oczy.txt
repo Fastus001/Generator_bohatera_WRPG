@@ -1,0 +1,19 @@
+Dowolny wybór;Czarny jak węgiel;Jasnoszary;Czarny jak smoła;Koloru kości słoniowej
+Zielony;Szary jak ołów;Szary;Ametystowy;Antracyt
+Błękitny;Stalowoszary;Błękitny;Akwamaryna;Zielony jak bluszcz
+Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
+Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
+Niebieski;Niebieski;Niebieski;Szafirowy;Zielony jak mech
+Blady szary;Brązowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;Brązowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;Brązowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Blady szary;Brązowy jak ziemia;Zielony;Turkusowy;Kasztanowy
+Szary;Ciemnobrązowy;Orzechowy;Szmaragdowy;Kasztanowy
+Szary;Ciemnobrązowy;Orzechowy;Szmaragdowy;Kasztanowy
+Szary;Ciemnobrązowy;Orzechowy;Szmaragdowy;Kasztanowy
+Brązowy;Orzechowy;Brązowy;Bursztynowy;Ciemnobrązowy
+Brązowy;Orzechowy;Brązowy;Bursztynowy;Ciemnobrązowy
+Brązowy;Orzechowy;Brązowy;Bursztynowy;Ciemnobrązowy
+Orzechowy;Zielony;Miedziany;Miedziany;Jasnobrązowy
+Ciemnobrązowy;Ciemny miedziany;Ciemnobrązowy;Cytrynowożółty;Złotobrązowy
+Czarny;Złoty;Ciemnobrązowy;Złoty;Fiołkowy

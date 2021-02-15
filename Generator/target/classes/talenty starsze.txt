@@ -1,0 +1,167 @@
+Aptekarz/7/Rzemiosło (Aptekarstwo)/
+Arcydzieło/10/brak
+Artylerzysta/6/brak
+Atak Wyprzedzający/4/brak
+Atrakcyjny/9/Charyzma by wpłynąć na tych którym się podobasz
+Bardzo Silny/11/brak
+Bardzo Szybki/11/brak
+Berserkerska Szarża/2/Broń Biała w Rundzie w której Szarżowałeś
+Biczownik/3/Opieranie się Niszczycielskim Potęgom
+Bitewna Furia/8/Broń Biała pod wpływem Szału Bojowego
+Bitewny Refleks/4/brak
+Błękitna Krew/11/Wszystkie Testy na które wpływa twój Status
+Błogosławieństwo (Boska Tradycja)/11/brak
+Błyskawiczny Strzał/5/Broń Zasięgowa gdy wykorzystujesz Talent Błyskawiczny Strzał
+Błyskotliwość/11/brak
+Celny Strzał/1/brak
+Charyzmatyczny/11/brak
+Chirurgia/7/Leczenie poza walką czyli kiedy możesz właściwie zająć się rannym
+Chodu!/5/Atletyka gdy Uciekasz
+Cień/5/Wszystkie związane ze śledzeniem
+Cios Mierzony/4/brak
+Cios Poniżej Pasa/0/Broń Biała (Bijatyka)
+Czarownica!/8/brak
+Człowiek Guma/5/Kuglarstwo lub Testy Zwinności w sytuacji gdy przydaje się gibkość
+Czujny/11/brak
+Czysta Dusza/8/brak
+Czytanie z Ruchu Warg/4/Testy Percepcji związane z wykorzystaniem tego Talentu.
+Czytanie-Pisanie/11/brak
+Defraudant/7/Inteligencja (Defraudacja)
+Dobrze Przygotowany/4/brak
+Doświadczony Wędrowiec (Wybrany Teren)/5/Atletyki podczas podróży w terenie
+Dwie Bronie/5/Broń Biała lub Zasięgowa, kiedy atakujesz dwoma sztukami oręża
+Etykieta (Grupa Społeczna)/9/Charyzma lub Plotkowanie (Grupa Społeczna)
+Finta/0/Broń Biała (Szermiercza) podczas Finty
+Gadanina/9/Charyzma by kogoś zagadać
+Geniusz Arytmetyczny/7/Wycena, Hazard
+Gładkie Słówka/9/Charyzma podczas kłamania
+Groźny/2/Zastraszanie
+Hulaka/3/Charyzma i Plotkowanie podczas przyjęć oraz Mocna Głowa
+Inspirujący/9/Dowodzenie podczas wojny
+Intrygant/7/Inteligencji dotyczące tego Talentu
+Inwokacja (Boska Tradycja)/11/brak
+Krasomówstwo/9/brak
+Krzepki/3/brak
+Łapówkarz/9/Łapówkarstwo
+Mag Bitewny/11/brak
+Magia Chaosu (Tradycja)/10/Liczba dostępnych czarów w wybranej tradycji magii Chaosu
+Magia Prosta/11/brak
+Magia Tajemna (Tradycja)/11/brak
+Majętny/10/brak
+Mały/11/brak
+Mistrz Charakteryzacji/9/Występy (Aktorstwo) gdy udajesz kogoś innego
+Mistrz Rzemiosła (Rzemiosło)/6/Pasujący Wydłużony Test tego Rzemiosła
+Mistrz Walki/5/brak
+Mocne Plecy/2/Wiosłowanie lub Pływanie
+Morderczy Atak/4/brak
+Mól Książkowy/7/Badania Naukowe
+Mówca/9/brak
+Musztra/0/Broń Biała kiedy jesteś w pobliżu sojuszniczej postaci z tym Talentem
+Na Cztery Łapy /5/Atletyka podczas spadania
+Naciągacz/9/Charyzma (Żebractwo)
+Naśladowca/4/Występy (Aktorstwo) podczas których ważny jest akcent
+Niegodny Uwagi/9/Skradanie kiedy jesteś na widoku
+Nienawiść (Grupa)/8/Siła Woli (Opieranie się Grupie)
+Nieubłagany/3/brak
+Nieugięty/2/brak
+Nieustępliwy/5/brak
+Nieustraszony (typ wroga)/8/Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom Strachu i Grozy
+Niewzruszony/8/Opanowanie przeciwko panice prochowej
+Niezwykle Odporny/11/brak
+Nos do Kłopotów/4/Każdy by wypatrzeć potencjalne problemy
+Numizmatyka/4/Wycena podczas ustalania wartości monet
+Obieżyświat/7/Dowolnej Wiedzy związanej z okolicą
+Oburęczność/12/brak
+Odporny na Magię/11/brak
+Odporność Psychiczna/8/brak
+Odporny na (Zagrożenie)/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu
+Odwrócenie Szans/0/Broń Biała w obronie
+Ogłuszenie/0/Broń Biała gdy Ogłuszasz przeciwnika
+Oko Łowcy/4/Dowolny wiążący się z Tropieniem lub polowaniem na zwierzynę
+Percepcja Magiczna/4/Każdy Test dotyczący wykrywania Wiatrów Magii
+Pierwsza Pomoc/7/Leczenie podczas Rundy walki
+Pilot/4/Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody
+Pilot Rzeczny/4/Każdy Test Wiedzy dotyczący rzeki
+Poliglota/7/Języki (Wszystkie)
+Pomocny/9/Testy społeczne by wpłynąć na stojących wyżej w hierarchii
+Porywająca Gorliwość/9/Charyzmy kiedy mówisz o ważnej dla ciebie sprawie
+Posłuch u Zwierząt/8/Oswajanie
+Precyzyjne Inkantowanie/4/Język (Magiczny) podczas rzucania czaru
+Prosto Między Oczy/11/brak
+Przekonujący/9/Charyzma gdy prowadzisz debatę lub się z kimś spierasz na argumenty
+Przestępca/10/brak
+Przyrządzanie Mikstur/7/Rzemiosło (Aptekarstwo)
+Riposta/5/Broń Biała w obronie
+Rozbrojenie/4/Broń Biała w sytuacjach związanych z tym Talentem
+Rozpoznanie Artefaktu/4/Test Intuicji związany z wykrywaniem magicznych artefaktów
+Rozproszenie Uwagi/5/brak
+Ruchliwe dłonie/6/Zwinne Palce Broń Biała (Bijatyka) aby dotknąć przeciwnika
+Rybak/4/Dowolne wiążące się z rybołówstwem
+Sekretna Tożsamość/7/Występy (Aktorstwo) by uwiarygodnić swoją sekretną tożsamość
+Silne Nogi/2/brak
+Silny Cios/2/brak
+Skrócenie Dystansu/6/Walka w zwarciu lub gdy wchodzisz do zwarcia
+Słuch Absolutny/4/Występy (Śpiewanie) Języki (tonalne takie jak Eltharin Kitajski czy Magiczny)
+Snajper/13/Broń Strzelecka (zasięg daleki lub bardzo daleki)
+Sprężynka/11/brak
+Straszny/2/brak
+Strzał Przebijający/4/brak
+Strzał w Dziesiątkę/11/brak
+Strzelec Wyborowy/11/brak
+Szał Bojowy/11/brak
+Szczęście/9/brak
+Szczur Tunelowy/5/Skradanie pod ziemią
+Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł
+Szuler/7/Hazard i Zwinne Palce w grach karcianych
+Szuler Kościany/7/Hazard lub Zwinne Palce podczas gier kościanych
+Szybki Refleks/11/brak
+Szybkie Czytanie/7/gdy ważne jest szybkie przyswajanie treści
+Szybkie Przeładowanie/6/brak
+Szybkobiegacz/2/Atletyka podczas Biegu
+Szycha/11/brak
+Świetny Pływak/2/Pływanie
+Święta Nienawiść/9/brak
+Święte Wizje/4/Testy Intuicji kiedy znajdujesz się na świętej ziemi
+Talent Artystyczny/6/Sztuka (Dowolna)
+Tarczownik/2/brak
+Towarzyski/9/Plotkowanie z wędrowcami
+Tragarz/2/Siły podczas podnoszenia
+Traper/4/Percepcja by zauważyć pułapki lub Zastawianie Pułapek
+Twardziel/3/brak
+Ulicznik/4/Skradanie (Miasto)
+Urodzony w Siodle/5/Jeździectwo (Konie) w walce
+Urodzony Wojownik/11/brak
+Urodzony Żeglarz/3/Wszystkie wykonywane by oprzeć się chorobie morskiej
+Waleczne Serce/8/Opanowanie by przełamać Stan Panika
+Walka w Ciasnocie/5/Unik w ciasnej przestrzeni
+Widzenie w Ciemności/4/Percepcja przy słabym świetle
+Wieża Pamięci/7/brak
+Wilk Morski/5/Żeglowanie (każdy statek morski)
+Władcza Postura/9/Dowodzenie
+Włóczykij/6/Skradania na wsi
+Wodniak/5/Żeglarstwo na jednostkach pływających po rzece
+Woltyżerka/5/Unik na koniu Jeździectwo (Konie)
+Wódz/9/Dowodzenie podczas wojny
+Wróżba Losu/11/brak
+Wstrzemięźliwy/3/Odporności by wytrzymać głód
+Wściekły Atak/5/Broń Biała podczas wykonywania dodatkowych ataków
+Wtargnięcie z Włamaniem/2/Broń Biała gdy próbujesz zniszczyć lub przesunąć przedmioty
+Wyborny Wspinacz/2/Wspinaczka
+Wyczucie Kierunku/4/Nawigacja
+Wyczulony Zmysł/4/Percepcja (z wykorzystaniem tego zmysłu)
+Wykrywanie Magii/4/Intuicja by wykrywać czarodziejów
+Wytrwały/3/Odporność by wytrzymać trudności
+Wytwórca (Dowolny)/6/Rzemiosło (Dowolne)
+Z Bata/6/Powożenie lub Jeździectwo podczas Ucieczki lub Biegu
+Zabójca/11/brak
+Zbicie Broni/0/Broń Biała by zbić broń
+Zejście z Linii/5/Unik gdy używasz tego Talentu
+Zimna krew/11/brak
+Złota Rączka/6/Rzemiosło by naprawić uszkodzone przedmioty
+Zmysł Bitewny/4/Percepcja w trakcie walki
+Zmysł Magii/4/Splatanie Magii (Dowolny Wiatr Magii)
+Znawca (Wiedza)/7/Wiedza (wybrana dziedzina)
+Zręczny/11/brak
+Żelazna Szczęka/3/Odporność wykonywana przeciw Oszołomieniu
+Żelazna Wola/8/Opanowanie przeciwstawiane Zastraszaniu
+Żyłka Handlowa/9/Targowanie

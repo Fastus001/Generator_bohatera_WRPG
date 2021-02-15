@@ -1,6 +1,8 @@
 package mvcOknoGlowne;
 
 import commons.*;
+import export.ExportDoExcela;
+import export.ExportToPdf;
 import npcGenerator.Potwory;
 
 import javax.swing.*;
@@ -517,7 +519,7 @@ public void exportDoPdf(Bohater nBohater) {
 	}
 	
 		Runnable runnable = ()->{try {
-			new ExportToPdf(nBohater,urlSavaPdf);
+			new ExportToPdf( nBohater, urlSavaPdf);
 			
 		} catch (IOException e) {
 			e.printStackTrace();

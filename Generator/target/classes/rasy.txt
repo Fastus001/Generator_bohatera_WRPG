@@ -1,0 +1,25 @@
+Ludzie
+20,20,20,20,20,20,20,20,20,20
+Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Łuk)/1/zaawansowana,Charyzma/9/podstawowa,Dowodzenie/9/podstawowa,Język (bretoński)/7/zaawansowana,Język (Jałowej Krainy)/7/zaawansowana,Opanowanie/8/podstawowa,Opieka nad Zwierzętami/7/zaawansowana,Plotkowanie/9/podstawowa,Targowanie/9/podstawowa,Wiedza (Reikland)/7/zaawansowana,Wycena/7/zaawansowana
+Błyskotliwość/11/brak,Charyzmatyczny/11/brak
+4
+Krasnoludy
+30,20,20,30,20,10,30,20,40,10
+Broń Biała (Podstawowa)/0/podstawowa,Język (Khazalid)/7/zaawansowana,Opanowanie/8/podstawowa,Mocna Głowa/3/podstawowa,Rzemiosło (Dowolne)/6/zaawansowana,Wiedza (Geologia)/7/zaawansowana,Wiedza (Krasnoludy)/7/zaawansowana,Wiedza (Metalurgia)/7/zaawansowana,Wycena/7/zaawansowana,Występy (Gawędziarstwo)/9/podstawowa,Zastraszanie/2/podstawowa
+Odporność Psychiczna/8/brak,Nieugięty/2/brak,Czytanie-Pisanie/11/brak,Nieustępliwy/5/brak,Odporny na Magię/11/brak,Tragarz/2/Siły podczas podnoszenia,Widzenie w Ciemności/4/Percepcja przy słabym świetle
+0
+Niziołki
+10,30,10,20,20,20,30,20,30,30
+Charyzma/9/podstawowa,Hazard/7/podstawowa,Intuicja/4/podstawowa,Język (Krainy Zgromadzenia)/7/zaawansowana,Mocna Głowa/3/podstawowa,Percepcja/4/podstawowa,Rzemiosło (Kucharz)/6/zaawansowana,Skradanie/5/podstawowa,Targowanie/9/podstawowa,Unik/5/podstawowa,Wiedza (Reikland)/7/zaawansowana,Zwinne Palce/6/zaawansowana
+Mały/11/brak,Odporny na Chaos/3/Wszystkie gdy opierasz się powiązanemu zagrożeniu,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Wyczulony Zmysł (Smak)/4/Percepcja (z wykorzystaniem tego zmysłu)
+2
+Wysokie elfy
+30,30,20,20,40,30,30,30,30,20
+Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Łuk)/1/zaawansowana,Dowodzenie/9/podstawowa,Język (Eltharin)/7/zaawansowana,Muzyka (Dowolny instrument)/6/zaawansowana,Nawigacja/4/podstawowa,Opanowanie/8/podstawowa,Pływanie/2/zaawansowana,Percepcja/4/podstawowa,Wycena/7/zaawansowana,Występy (Śpiewanie)/9/podstawowa,Żeglarstwo/5/zaawansowana
+Szósty Zmysł/4/Intuicji wykorzystujące twój Szósty Zmysł,Percepcja Magiczna/4/Każdy Test dotyczący wykrywania Wiatrów Magii,Błyskotliwość/11/brak,Zimna krew/11/brak,Czytanie-Pisanie/11/brak,Wyczulony Zmysł (Wzrok)/4/Percepcja (z wykorzystaniem tego zmysłu),Widzenie w Ciemności/4/Percepcja przy słabym świetle 
+0
+Leśne elfy
+30,30,20,20,40,30,30,30,30,20
+Atletyka/5/podstawowa,Broń Biała (Podstawowa)/0/podstawowa,Broń Zasięgowa (Łuk)/1/zaawansowana,Język (Eltharin)/7/zaawansowana,Odporność/3/podstawowa,Percepcja/4/podstawowa,Skradanie/5/podstawowa,Sztuka Przetrwania/7/podstawowa,Tropienie/4/zaawansowana,Wspinaczka/2/podstawowa,Występy (Śpiewanie)/9/podstawowa,Zastraszanie/2/podstawowa
+Czytanie-Pisanie/11/brak,Niezwykle Odporny/11/brak,Twardziel/3/brak,Percepcja Magiczna/4/Każdy Test dotyczący wykrywania Wiatrów Magii,Widzenie w Ciemności/4/Percepcja przy słabym świetle,Wyczulony Zmysł (Wzrok)/4/Percepcja (z wykorzystaniem tego zmysłu),Włóczykij/6/Skradania na wsi
+0
