@@ -1,7 +1,10 @@
 package commons;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
-import java.io.*;
+import java.util.ArrayList;
 
 //dostępne talenty
 //ludzie wybór między 0 a 1, w dostępnych talentach
@@ -12,13 +15,13 @@ import java.io.*;
 public class Rasa  {
 		public String nazwa;
 		public int [] cechyBazowe;
-		private ArrayList<Umiejetnosc> dostepneUmiejetnosci;
+		private ArrayList<Skill> dostepneUmiejetnosci;
 		private ArrayList<Talent> dostepneTalenty;
 		private String iloscLosowychTalentow;
 		static public String[] LISTA_TALENTOW = {"Atrakcyjny","Silne Nogi","Bardzo Silny","Słuch Absolutny","Błękitna Krew","Strzelec Wyborowy","Błyskotliwość","Szczęście","Charyzmatyczny","Szósty Zmysł","Chodu!","Szybki Refleks","Czujny","Talent Artystyczny","Czysta Dusza","Tragarz","Czytanie-Pisanie","Twardziel","Geniusz Arytmetyczny","Urodzony Wojownik","Naśladowca","Widzenie w Ciemności","Niezwykle Odporny","Wyczucie Kierunku","Oburęczność","Wyczulony Zmysł","Odporny na (Zagrożenie)","Wytwórca (Dowolny)","Poliglota","Zimna krew"};
 	
 		
-		public Rasa(String n, int [] cb, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String iT){
+		public Rasa(String n, int [] cb, ArrayList<Skill> dU, ArrayList<Talent> dT, String iT){
 			nazwa = n;
 			cechyBazowe = cb;
 			dostepneUmiejetnosci = dU;
@@ -29,9 +32,9 @@ public class Rasa  {
 		public Rasa(Rasa rs) {
 			nazwa = rs.nazwa;
 			cechyBazowe = rs.cechyBazowe;
-			dostepneUmiejetnosci = new ArrayList<Umiejetnosc>();
-			for(Umiejetnosc tempUm : rs.dostepneUmiejetnosci){
-				Umiejetnosc nowaUm = new Umiejetnosc(tempUm);
+			dostepneUmiejetnosci = new ArrayList<Skill>();
+			for(Skill tempUm : rs.dostepneUmiejetnosci){
+				Skill nowaUm = tempUm.toBuilder().build();
 				dostepneUmiejetnosci.add(nowaUm);
 			}
 			dostepneTalenty = new ArrayList<Talent>();
@@ -53,8 +56,8 @@ public class Rasa  {
 				doWyswietlenia += Integer.toString(x) + " ,";
 			}
 			doWyswietlenia +="\nDostępne umiejętności: ";
-			for(Umiejetnosc s: dostepneUmiejetnosci){
-				doWyswietlenia +=s.wyswietlWszystko() +",";
+			for(Skill s: dostepneUmiejetnosci){
+				doWyswietlenia +=s.showAll() +",";
 			}
 			doWyswietlenia +="\nDostępne talenty: ";
 			for(Talent x: dostepneTalenty){
@@ -68,7 +71,7 @@ public class Rasa  {
 			return nazwa;
 		}
 		
-		public ArrayList<Umiejetnosc> getListaDostepnychUmiejetnosci() {
+		public ArrayList<Skill> getListaDostepnychUmiejetnosci() {
 			return dostepneUmiejetnosci;
 		}
 		

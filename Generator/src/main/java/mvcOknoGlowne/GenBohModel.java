@@ -1,23 +1,12 @@
 package mvcOknoGlowne;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import commons.*;
+import npcGenerator.Potwory;
+
+import javax.swing.*;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
-import commons.Bohater;
-import commons.ExportDoExcela;
-import commons.ExportToPdf;
-import commons.Profesja;
-import commons.Rasa;
-import commons.Talent;
-import commons.Umiejetnosc;
-import npcGenerator.Potwory;
 
 /**
  * 
@@ -84,10 +73,15 @@ public class GenBohModel implements GenBohModelInterface{
 				wiersz = czytajB.readLine();
 				String dostepneUm[] = wiersz.split(",");
 				
-				ArrayList<Umiejetnosc> umiej = new ArrayList<Umiejetnosc>();
+				ArrayList<Skill> umiej = new ArrayList<Skill>();
 				for(String x:dostepneUm){
 						String[] doZapisaniaUm = x.split("/");
-						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0,false);
+						Skill tempUm = Skill.builder()
+								.name( doZapisaniaUm[0] )
+								.statNumber( Integer.parseInt( doZapisaniaUm[1]) )
+								.type( doZapisaniaUm[2] )
+								.level( 0 )
+								.isProfessional( false ).build();
 						umiej.add(tempUm);
 					}
 				
@@ -196,10 +190,15 @@ public boolean WczytajRasy(){
 						tablica[i] = Integer.parseInt(wynik1[i]);
 					}
 					//zapisanie umiejetnosci jako obiekty
-					ArrayList<Umiejetnosc> umiej = new ArrayList<Umiejetnosc>();
+					ArrayList<Skill> umiej = new ArrayList<Skill>();
 					for(String x:wynik2){
 						String[] doZapisaniaUm = x.split("/");
-						Umiejetnosc tempUm = new Umiejetnosc(doZapisaniaUm[0], Integer.parseInt(doZapisaniaUm[1]), doZapisaniaUm[2],0,false);
+						Skill tempUm = Skill.builder()
+								.name( doZapisaniaUm[0] )
+								.statNumber( Integer.parseInt( doZapisaniaUm[1]) )
+								.type( doZapisaniaUm[2] )
+								.level( 0 )
+								.isProfessional( false ).build();
 						umiej.add(tempUm);
 					}
 					//konwersja talentow na obiekty

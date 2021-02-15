@@ -1,11 +1,12 @@
 package commons;
-import java.util.*;
+
+import java.util.ArrayList;
 
 public class Profesja implements Comparable<Profesja>{
 	private String nazwa;
 	private String sciezkaProfesji;
 	private int poziom;
-	public ArrayList<Umiejetnosc> dostepneUmiejetnosci;
+	public ArrayList<Skill> dostepneUmiejetnosci;
 	public ArrayList<Talent> dostepneTalenty;
 	public String [] dostepnaRasa;
 	private int [] cechyRozwoju;
@@ -35,7 +36,7 @@ public class Profesja implements Comparable<Profesja>{
 	 * @param k - klasa Profesji
 	 * @param pP - przedmioty z Profesji
 	 */
-	public Profesja(String n,  String sP, int p, ArrayList<Umiejetnosc> dU, ArrayList<Talent> dT, String[] dR, int[] cR, boolean koniec, String k, String [] pP){
+	public Profesja(String n, String sP, int p, ArrayList<Skill> dU, ArrayList<Talent> dT, String[] dR, int[] cR, boolean koniec, String k, String [] pP){
 		nazwa = new String(n);
 		sciezkaProfesji = new String(sP);
 		poziom = p;
@@ -52,9 +53,9 @@ public class Profesja implements Comparable<Profesja>{
 		nazwa = pr.nazwa;
 		sciezkaProfesji = pr.sciezkaProfesji;
 		poziom = pr.poziom;
-		dostepneUmiejetnosci = new ArrayList<Umiejetnosc>();
-		for(Umiejetnosc temp : pr.dostepneUmiejetnosci) {
-			Umiejetnosc nowa = new Umiejetnosc(temp);
+		dostepneUmiejetnosci = new ArrayList<Skill>();
+		for(Skill temp : pr.dostepneUmiejetnosci) {
+			Skill nowa = temp.toBuilder().build();
 			dostepneUmiejetnosci.add(nowa);
 		}
 		dostepneTalenty = new ArrayList<Talent>();
@@ -84,8 +85,8 @@ public class Profesja implements Comparable<Profesja>{
 	public String wyswietlProfesje(){
 		String tekst = "Nazwa profesji: "+ nazwa + " Ścieżka profesji: " + sciezkaProfesji + " Poziom: " + Integer.toString(poziom) + "\nDostępne Umiejętności: ";
 		
-		for(Umiejetnosc s: dostepneUmiejetnosci){
-			tekst +=s.wyswietlWszystko() +",";
+		for(Skill s: dostepneUmiejetnosci){
+			tekst +=s.showAll() +",";
 		}
 		tekst +="\nDostępne talenty: ";
 		for(Talent x: dostepneTalenty){
@@ -147,11 +148,11 @@ public class Profesja implements Comparable<Profesja>{
 		}
 	}
 	
-	public ArrayList<Umiejetnosc> getDostepneUmiejetnosciLista(){
+	public ArrayList<Skill> getDostepneUmiejetnosciLista(){
 		return dostepneUmiejetnosci;
 	}
 	
-	public void addUmiejetnoscDoDostepneUmiejetnosci(Umiejetnosc um){
+	public void addUmiejetnoscDoDostepneUmiejetnosci(Skill um){
 		dostepneUmiejetnosci.add(um);
 	} 
 	

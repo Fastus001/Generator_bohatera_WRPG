@@ -1,12 +1,5 @@
 package commons;
 
-import java.io.IOException;
-import java.io.InputStream;
-
-import javax.swing.JOptionPane;
-
-
-
 import com.itextpdf.forms.PdfAcroForm;
 import com.itextpdf.io.font.PdfEncodings;
 import com.itextpdf.kernel.font.PdfFont;
@@ -14,6 +7,10 @@ import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
+
+import javax.swing.*;
+import java.io.IOException;
+import java.io.InputStream;
 
 
 public class ExportToPdf {
@@ -82,37 +79,37 @@ public class ExportToPdf {
 		int ileRazySztuka = 0;
 		int ileRazySkradanie = 0;
 		int ileRazyJazda = 0;
-		for(Umiejetnosc um:hero.znaneUmiejetnosci) {
-			if(um.getName().contains("Broń Biała"))
+		for(Skill um:hero.znaneUmiejetnosci) {
+			if(um.getName().contains( "Broń Biała"))
 				{
 				ileRazyBB++;
-				if(ileRazyBB>1 && !um.getName().equals("Broń Biała (Podstawowa)"))
-					um.setTyp("zaawansowana");
+				if(ileRazyBB>1 && !um.getName().equals( "Broń Biała (Podstawowa)"))
+					um.setType( "zaawansowana");
 				}
-			if(um.getName().contains("Występy"))
+			if(um.getName().contains( "Występy"))
 				{
 				ileRazyWystepy++;
 				if(ileRazyWystepy>1)
-					um.setTyp("zaawansowana");
+					um.setType( "zaawansowana");
 				}
-			if(um.getName().contains("Sztuka ("))
+			if(um.getName().contains( "Sztuka ("))
 					{
 						ileRazySztuka++;
 						if(ileRazySztuka>1)
-							um.setTyp("zaawansowana");
+							um.setType( "zaawansowana");
 						
 					}
-			if(um.getName().contains("Skradanie"))
+			if(um.getName().contains( "Skradanie"))
 			{
 				ileRazySkradanie++;
 				if(ileRazySkradanie>1)
-					um.setTyp("zaawansowana");
+					um.setType( "zaawansowana");
 			}
-			if(um.getName().contains("Jeździectwo"))
+			if(um.getName().contains( "Jeździectwo"))
 			{
 				ileRazyJazda++;
 				if(ileRazyJazda>1)
-					um.setTyp("zaawansowana");
+					um.setType( "zaawansowana");
 			}
 		}//koniec for
 		
@@ -166,15 +163,15 @@ public class ExportToPdf {
 			}		
 	}
 
-	private void umiejetnosciZaawansowane(Umiejetnosc um, int licznik) {
+	private void umiejetnosciZaawansowane(Skill um, int licznik) {
 		String [] formTab = {"uzaw","Cecha","rozw","suma"};
 		String [] cechyAktualneForms = {"WW_aktualna","US_aktualna","S_aktualna","WT_aktualna","I_aktualna","ZW_aktualna","ZR_aktualna","INT_aktualna","SW_aktualna","OGD_aktualna"};
 		
 		try {
-			form.getField(formTab[0]+Integer.toString(licznik)).setValue(um.getName(),font1, SZESC);
-			form.getField(formTab[1]+Integer.toString(licznik)).setValue(form.getField(cechyAktualneForms[um.tcecha]).getValueAsString(),font1, SZESC);
-			form.getField(formTab[2]+Integer.toString(licznik)).setValue(Integer.toString(um.poz),font1, SZESC);
-			form.getField(formTab[3]+Integer.toString(licznik)).setValue(dodajDwaStringi(form.getField(cechyAktualneForms[um.tcecha]).getValueAsString(), Integer.toString(um.poz)),font1, SZESC);
+			form.getField(formTab[0]+Integer.toString(licznik)).setValue( um.getName(), font1, SZESC);
+			form.getField(formTab[1]+Integer.toString(licznik)).setValue( form.getField(cechyAktualneForms[um.getStatNumber()]).getValueAsString(), font1, SZESC);
+			form.getField(formTab[2]+Integer.toString(licznik)).setValue(Integer.toString(um.getLevel()),font1, SZESC);
+			form.getField(formTab[3]+Integer.toString(licznik)).setValue( dodajDwaStringi( form.getField(cechyAktualneForms[um.getStatNumber()]).getValueAsString(), Integer.toString( um.getLevel())), font1, SZESC);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
@@ -237,9 +234,9 @@ public class ExportToPdf {
 	
 	private void wczytajUmiejetnosci() {
 		int liczbaUmZaawansow = 0;
-		for(Umiejetnosc um:hero.znaneUmiejetnosci) {
+		for(Skill um:hero.znaneUmiejetnosci) {
 			//System.out.println("Umiejetntosci podstawowe wszystkie" + um.getName());
-			if(um.getTyp().equals("podstawowa"))
+			if(um.getType().equals( "podstawowa"))
 			{
 				try {
 					umiejetnosciPodstawowe(um);
@@ -255,9 +252,9 @@ public class ExportToPdf {
 		System.out.println("Liczba umiejetnosci zaawansowanych to = " + liczbaUmZaawansow);
 		int licznik = 0;
 		if(liczbaUmZaawansow < maksymalna_liczba_um_zaaw_w_arkuszu) {
-			for(Umiejetnosc um:hero.znaneUmiejetnosci)
+			for(Skill um:hero.znaneUmiejetnosci)
 			{
-				if(um.getTyp().equals("zaawansowana"))
+				if(um.getType().equals( "zaawansowana"))
 				{
 					licznik++;
 					umiejetnosciZaawansowane(um, licznik);
@@ -274,10 +271,10 @@ public class ExportToPdf {
 	 * trzeba zwrďż˝ciďż˝ uwagďż˝ na broďż˝ biaďż˝ďż˝ innďż˝ niďż˝ podstawowa, oraz sztukďż˝
 	 * 
 	 */
-	private void umiejetnosciPodstawowe(Umiejetnosc um) {
+	private void umiejetnosciPodstawowe(Skill um) {
 		//Umiejďż˝tnoďż˝ci podstawowe i zaawansowane
 				String nazwa= um.getName();
-				int poziomUmiejetnosci = um.getPoziom();
+				int poziomUmiejetnosci = um.getLevel();
 				String poziomUmS = Integer.toString(poziomUmiejetnosci);
 				System.out.println("Nazwa umiejetności " + um.getName() + ".");
 				switch (nazwa) {

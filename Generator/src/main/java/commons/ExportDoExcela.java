@@ -1,23 +1,19 @@
 package commons;
 
+import npcGenerator.CechyPotworow;
+import npcGenerator.Potwory;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddress;
+import org.apache.poi.ss.util.WorkbookUtil;
+
+import javax.swing.*;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javax.swing.JFileChooser;
-
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.util.CellRangeAddress;
-import org.apache.poi.ss.util.WorkbookUtil;
-
-import npcGenerator.CechyPotworow;
-import npcGenerator.Potwory;
-
-import org.apache.poi.ss.usermodel.*;
 
 /**
  * klasa która eksportuje zapisanych bohaterów jak i NPC do arkusza excel, każda postać jest zapisane do osobnej zakładki
@@ -252,11 +248,11 @@ public class ExportDoExcela {
 				
 		for(int i = 0; i<bh.znaneUmiejetnosci.size();i++) {
 			row = sheet.createRow(10+i);
-			Umiejetnosc um = bh.znaneUmiejetnosci.get(i);
-			createAndSetCell(row, 0, um.getName(), pogrubiony);
-			createAndSetCell(row, 3, STATYSTYKI[um.getPozycjaCechy()], justowanie);
-			createAndSetCell(row, 4, um.getPoziom(), justowanie);
-			createAndSetCell(row, 5, um.getPoziom()+aktualne[um.getPozycjaCechy()], csBoldAlign);
+			Skill um = bh.znaneUmiejetnosci.get( i);
+			createAndSetCell( row, 0, um.getName(), pogrubiony);
+			createAndSetCell(row, 3, STATYSTYKI[um.getStatNumber()], justowanie);
+			createAndSetCell(row, 4, um.getLevel(), justowanie);
+			createAndSetCell(row, 5, um.getLevel()+aktualne[um.getStatNumber()], csBoldAlign);
 			sheet.addMergedRegion(new CellRangeAddress(10+i, 10+i, 0, 2));
 		}
 		int rowCount = row.getRowNum();
