@@ -3,6 +3,8 @@ package npcGenerator;
 import java.util.ArrayList;
 
 import commons.RzutKoscia;
+import enums.StatyNPC;
+
 /**
  * 
  * @author Tom

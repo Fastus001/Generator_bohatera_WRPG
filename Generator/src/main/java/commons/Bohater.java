@@ -1,6 +1,6 @@
 package commons;
 
-import npcGenerator.Cechy;
+import npcGenerator.Stats;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +13,7 @@ public class Bohater {
 	private Wyglad wyglad;
 	private Rasa rasa;
 	private Profesja prof;
-	private Cechy cechy;
+	private Stats stats;
 	public ArrayList <Skill> znaneUmiejetnosci;
 	public ArrayList<Talent> znaneTalenty;
 	private ArrayList<Profesja> historiaProfesji;
@@ -34,7 +34,7 @@ public class Bohater {
 			plecBohatera = "Kobieta";
 
 		
-		cechy = new Cechy(rs.cechyBazowe, rs.nazwa);
+		stats = new Stats( rs.cechyBazowe, rs.getRaceEnum());
 		znaneUmiejetnosci = new ArrayList<Skill>();
 		dodajZnaneUmiejetnosciZRasy();
 		znaneTalenty = new ArrayList<Talent>();
@@ -63,7 +63,7 @@ public class Bohater {
 		this.wyglad = new Wyglad(bh.wyglad);
 		this.rasa = new Rasa(bh.rasa);
 		this.prof = new Profesja(bh.prof);
-		this.cechy = new Cechy(bh.cechy);
+		this.stats = new Stats( bh.stats );
 		this.znaneUmiejetnosci = new ArrayList<Skill>();
 		for(Skill um:bh.znaneUmiejetnosci) {
 			Skill nowa = um.toBuilder().build();
@@ -104,7 +104,7 @@ public class Bohater {
 		}
 		
 		//uaktualnienie poziomu zycia
-		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
+		stats.updateHp(this.getCzyJestTwardziel());
 		prof.setCzyUkonczona(true);
 	}
 	
@@ -137,7 +137,7 @@ public class Bohater {
 		
 		if(prof.toString().equals("CZARODZIEJ") && prof.getPoziom()==2 ){
 			Talent nowy = prof.getLosowyTalent(0);
-			nowy.setTalentMax(cechy);
+			nowy.setTalentMax( stats );
 			znaneTalenty.add(nowy);
 		}else{
 			dodajZnanyTalentZProfesji();
@@ -148,7 +148,7 @@ public class Bohater {
 		}
 		
 		//uaktualnienie poziomu zycia
-		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
+		stats.updateHp( this.getCzyJestTwardziel());
 	}
 	
 	private void setUmiejetnosciProfesyjne() {
@@ -176,12 +176,12 @@ public class Bohater {
 	public void nowyPoziomCechyNowyLvl(int minPoz){
 		int[] klasoweAtrybuty = prof.getCechyRozwoju();
 		for(int i = 0; i < klasoweAtrybuty.length; i++){
-			int x = cechy.getRozwiniecia(klasoweAtrybuty[i]);
+			int x = stats.getAdvancesAt( klasoweAtrybuty[i]);
 				if(x < minPoz){
 				System.out.println("Roziwniecie cechy: " + x);
 				x = minPoz - x;
 				System.out.println("Roziwniecie cechy do dodania: " + x);
-				cechy.podniesCeche(x, klasoweAtrybuty[i], true);
+				stats.increaseStatAt( x, klasoweAtrybuty[i], true);
 			}
 		} 
 	}
@@ -226,13 +226,13 @@ public class Bohater {
 			}
 		}
 		stringBuilder.append("\n");
-		stringBuilder.append(cechy.wyswietlStaty(prof.getTablicaCechyRozwoju()));
+		stringBuilder.append( stats.showStats( prof.getTablicaCechyRozwoju()));
 		stringBuilder.append("\nZnane Umiejętności:\n");
 		
 		Collections.sort(znaneUmiejetnosci);
 		for(Skill u:znaneUmiejetnosci){
 			
-			int poziomTestowanejUmiejetn = cechy.getCecha(u.getStatNumber()) + u.getLevel();
+			int poziomTestowanejUmiejetn = stats.getStatAt( u.getStatNumber()) + u.getLevel();
 			stringBuilder.append(u.showSkill() + " (" + Integer.toString( poziomTestowanejUmiejetn) + "), ");
 		}
 		stringBuilder.append("\n\nZnane talenty:\n");
@@ -375,7 +375,7 @@ public class Bohater {
 			}
 		}
 		for(Talent t:znaneTalenty){
-			t.setTalentMax(cechy);
+			t.setTalentMax( stats );
 		}
 		//dodanie losowych talentow, + sprawdzenie czy siďż˝ nie powtarzajďż˝, ewentualnie zwiďż˝kszenie o 1
 		int losoweTalenty = rasa.getIloscLosowychTalentow();
@@ -384,7 +384,7 @@ public class Bohater {
 				Talent nowyTalent = rasa.getRandomTalent();
 				int test = sprawdzCzyTalentJest(nowyTalent);
 				if(test == -1){
-					nowyTalent.setTalentMax(cechy);
+					nowyTalent.setTalentMax( stats );
 					znaneTalenty.add(nowyTalent);
 					System.out.println("Nowy losowy talent z rasy= " + nowyTalent.getName() + " numer i = " + i);
 				}else{
@@ -416,7 +416,7 @@ public class Bohater {
 		int test = sprawdzCzyTalentJest(losowyTalent);
 		System.out.println(test);
 		if(test == -1){
-					losowyTalent.setTalentMax(cechy);
+					losowyTalent.setTalentMax( stats );
 					znaneTalenty.add(losowyTalent);
 					System.out.println("Nowy losowy talent z profesji= " + losowyTalent.getName());
 				}else{
@@ -441,7 +441,7 @@ public class Bohater {
 	
 	private void dodajLosowoPoczatkoweRozwiniecieCech(){
 		
-		cechy.podniesCeche(5, prof.getLosowyAtrybutCechy(), true);
+		stats.increaseStatAt( 5, prof.getLosowyAtrybutCechy(), true);
 	}
 	
 	//w sumie moďż˝na teďż˝ uďż˝yďż˝ tej metody, do okreďż˝lenia, robienia bardziej zaawansowanej postaci
@@ -457,7 +457,7 @@ public class Bohater {
 		}
 		switch(opcja){
 			case 0: for(int i = 0; i < 4; i++){
-				cechy.podniesCeche(1, prof.getLosowyAtrybutCechy(), true);
+				stats.increaseStatAt( 1, prof.getLosowyAtrybutCechy(), true);
 			};System.out.println("losowa cecha dodatkowa"); break;
 			case 1: podniesUmiejRandom(6); System.out.println("losowe umiejetnosci");break;
 			case 2: dodajZnanyTalentZProfesji(); System.out.println("losowey talent");break;
@@ -489,37 +489,37 @@ public class Bohater {
 		Skill nowa;
 		switch(talent.getName()) {
 			case "Urodzony Wojownik": if(talent.isShow()){
-				cechy.podniesCeche(5,0, false); talent.setShow(false);
+				stats.increaseStatAt( 5, 0, false); talent.setShow( false);
 				}break;
 			case "Strzelec Wyborowy": if(talent.isShow()){
-				cechy.podniesCeche(5,1, false); talent.setShow(false);
+				stats.increaseStatAt( 5, 1, false); talent.setShow( false);
 				}break;
 			case "Bardzo Silny": if(talent.isShow()){
-			cechy.podniesCeche(5,2, false);talent.setShow(false);
+			stats.increaseStatAt( 5, 2, false);talent.setShow( false);
 				}break;
 			case "Niezwykle Odporny": if(talent.isShow()){
-			cechy.podniesCeche(5,3, false); talent.setShow(false);
+			stats.increaseStatAt( 5, 3, false); talent.setShow( false);
 				}break;
 			case "Czujny": if(talent.isShow()){
-			cechy.podniesCeche(5,4, false); talent.setShow(false);
+			stats.increaseStatAt( 5, 4, false); talent.setShow( false);
 				}break;
 			case "Szybki Refleks": if(talent.isShow()){
-			cechy.podniesCeche(5,5, false); talent.setShow(false);
+			stats.increaseStatAt( 5, 5, false); talent.setShow( false);
 				}break;
 			case "Zręczny": if(talent.isShow()){
-			cechy.podniesCeche(5,6, false); talent.setShow(false);
+			stats.increaseStatAt( 5, 6, false); talent.setShow( false);
 				}break;
 			case "Błyskotliwość":  if(talent.isShow()){
-			cechy.podniesCeche(5,7, false); talent.setShow(false); System.out.println( "Błyskotliwość, int podniesiony!");
+			stats.increaseStatAt( 5, 7, false); talent.setShow( false); System.out.println( "Błyskotliwość, int podniesiony!");
 				}break;
 			case "Zimna krew": if(talent.isShow()){
-			cechy.podniesCeche(5,8, false); talent.setShow(false);
+			stats.increaseStatAt( 5, 8, false); talent.setShow( false);
 				}break;
 			case "Charyzmatyczny": if(talent.isShow()){
-				cechy.podniesCeche(5,9, false); talent.setShow(false);System.out.println( "Charyzmatyczny, ogd podniesiona!");
+				stats.increaseStatAt( 5, 9, false); talent.setShow( false);System.out.println( "Charyzmatyczny, ogd podniesiona!");
 				}break;
 			case "Bardzo Szybki": if(talent.isShow()){
-				cechy.addSzybkosc(); talent.setShow(false);
+				stats.addOneToSpeed(); talent.setShow( false);
 				}break;
 
 			case "Słuch Absolutny":  nowa = Skill.builder().name( "Występy (Śpiewanie)").statNumber(9).type( "podstawowa").level( 0).isProfessional( false ).build(); prof.addUmiejetnoscDoDostepneUmiejetnosci( nowa); break;
@@ -559,7 +559,7 @@ public class Bohater {
 				zmienOpisSciekiProfesji("doświadczona");
 				System.out.println("profesja zaawansowana"); break;
 			}
-		cechy.updateHp(rasa.nazwa, this.getCzyJestTwardziel());
+		stats.updateHp( this.getCzyJestTwardziel());
 	}
 	
 
@@ -639,7 +639,7 @@ public class Bohater {
 	public String [] getCechyAktualne() {
 		String [] tab = new String[10];
 		for(int x =0; x<10; x++) {
-			Integer aktualne = this.cechy.getCecha(x);
+			Integer aktualne = this.stats.getStatAt( x);
 			tab[x] = aktualne.toString();
 		}
 		return tab;
@@ -648,7 +648,7 @@ public class Bohater {
 	public int [] getCechyAktualneInt() {
 		int [] tab = new int[10];
 		for(int x =0; x<10; x++) {
-			tab[x] = this.cechy.getCecha(x);
+			tab[x] = this.stats.getStatAt( x);
 		}
 		return tab;
 	}
@@ -656,7 +656,7 @@ public class Bohater {
 	public String [] getCechyRozwiniecia() {
 		String [] tabRozw = new String[10];
 		for(int x =0; x<10; x++) {
-			Integer aktualne = this.cechy.getRozwiniecia(x);
+			Integer aktualne = this.stats.getAdvancesAt( x);
 			if(aktualne >0)
 				tabRozw[x] = aktualne.toString();
 			else {
@@ -669,13 +669,13 @@ public class Bohater {
 	public int [] getCechyRozwinieciaInt() {
 		int [] tabRozw = new int[10];
 		for(int x =0; x<10; x++) {
-			tabRozw[x] = this.cechy.getRozwiniecia(x);
+			tabRozw[x] = this.stats.getAdvancesAt( x);
 		}
 		return tabRozw;
 	}
 	
 	public int getCechySzybkosc() {
-		return this.cechy.getSzybkosc();
+		return this.stats.getSpeed();
 	}
 	
 	public int getCzyJestTwardziel() {
@@ -690,7 +690,7 @@ public class Bohater {
 	}
 	
 	public String getCechyHpString() {
-		Integer hp = this.cechy.getHp();
+		Integer hp = this.stats.getHp();
 		return hp.toString();
 	}
 	

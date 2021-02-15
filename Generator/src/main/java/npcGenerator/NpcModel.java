@@ -1,5 +1,7 @@
 package npcGenerator;
 
+import enums.StatyNPC;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -158,7 +160,7 @@ public class NpcModel implements NpcModelInterface{
 		//sprawdzenie czy jest twardziel
 		for (CechyPotworow cechyPotworow : potworAktualny.getCechy()) {
 			if(cechyPotworow.toString().equals("Twardziel")) {
-				hp += (int) potworAktualny.getStatyPotwora(StatyNPC.WT)/10;
+				hp += (int) potworAktualny.getStatyPotwora( StatyNPC.WT)/10;
 			}
 			if(cechyPotworow.toString().contains("Rozmiar")) {
 				rozmiar = cechyPotworow.toString();
