@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import npcGenerator.Cechy;
+import npcGenerator.Stats;
 
 @Getter
 @Setter
@@ -35,7 +35,7 @@ public class Talent implements Comparable<Talent> {
         return level > 1 ? name + " x" + level : name;
     }
 
-    public void setTalentMax(Cechy stats) {
+    public void setTalentMax(Stats stats) {
         switch (relatedStat) {
             case 10:
                 maxLevel = 10;
@@ -50,7 +50,7 @@ public class Talent implements Comparable<Talent> {
                 maxLevel = 4;
                 break;
             default:
-                maxLevel = stats.getCecha( relatedStat ) / 10;
+                maxLevel = stats.getStatAt( relatedStat ) / 10;
                 break;
         }
     }

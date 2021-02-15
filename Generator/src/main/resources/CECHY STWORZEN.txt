@@ -1,386 +1,386 @@
-Atak Jêzykiem +Obra¿enia (Zasiêg)
-Chwytny jêzyk stworzenia mo¿e owijaæ siê wokó³ ofiary,wci¹gaj¹c j¹ a¿ do makabrycznego koñca. W swojej Turze stworzenie mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê. To atak dystansowy,który zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ (zasiêg podany jest w nawiasie). Jeœli atak trafi,cel dostaje 1 Stan Pochwycenie,a jeœli ma mniejszy Rozmiar,zostaje przyci¹gniêty do stworzenia i Zwi¹zany Walk¹ wrêcz. Stworzenie mo¿e nastêpnie zdecydowaæ,czy wypuœci cel,wykonuj¹c Darmowy Atak z u¿yciem swojej cechy Broñ,czy bêdzie trzymaæ cel owiniêty jêzykiem,zapocz¹tkowuj¹c Chwyt (patrz strona 163).
-Atak Jêzykiem +5 (12)
-Chwytny jêzyk stworzenia mo¿e owijaæ siê wokó³ ofiary,wci¹gaj¹c j¹ a¿ do makabrycznego koñca. W swojej Turze stworzenie mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê. To atak dystansowy,który zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ (zasiêg podany jest w nawiasie). Jeœli atak trafi,cel dostaje 1 Stan Pochwycenie,a jeœli ma mniejszy Rozmiar,zostaje przyci¹gniêty do stworzenia i Zwi¹zany Walk¹ wrêcz. Stworzenie mo¿e nastêpnie zdecydowaæ,czy wypuœci cel,wykonuj¹c Darmowy Atak z u¿yciem swojej cechy Broñ,czy bêdzie trzymaæ cel owiniêty jêzykiem,zapocz¹tkowuj¹c Chwyt (patrz strona 163).
-Atak Ogonem +Obra¿enia
-Stworzenie potrafi zwalaæ z nóg przeciwników machniêciem ogona. W swojej Turze mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê. Ogon zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Przeciwnicy o Rozmiarze mniejszym ni¿ stworzenie,którzy odnios¹ jakiekolwiek Rany na skutek tego ataku,dostaj¹ tak¿e Stan Powalony. 
+Atak Jï¿½zykiem +Obraï¿½enia (Zasiï¿½g)
+Chwytny jï¿½zyk stworzenia moï¿½e owijaï¿½ siï¿½ wokï¿½ ofiary,wciï¿½gajï¿½c jï¿½ aï¿½ do makabrycznego koï¿½ca. W swojej Turze stworzenie moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½. To atak dystansowy,ktï¿½ry zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½ (zasiï¿½g podany jest w nawiasie). Jeï¿½li atak trafi,cel dostaje 1 Stan Pochwycenie,a jeï¿½li ma mniejszy Rozmiar,zostaje przyciï¿½gniï¿½ty do stworzenia i Zwiï¿½zany Walkï¿½ wrï¿½cz. Stworzenie moï¿½e nastï¿½pnie zdecydowaï¿½,czy wypuï¿½ci cel,wykonujï¿½c Darmowy Atak z uï¿½yciem swojej stats Broï¿½,czy bï¿½dzie trzymaï¿½ cel owiniï¿½ty jï¿½zykiem,zapoczï¿½tkowujï¿½c Chwyt (patrz strona 163).
+Atak Jï¿½zykiem +5 (12)
+Chwytny jï¿½zyk stworzenia moï¿½e owijaï¿½ siï¿½ wokï¿½ ofiary,wciï¿½gajï¿½c jï¿½ aï¿½ do makabrycznego koï¿½ca. W swojej Turze stworzenie moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½. To atak dystansowy,ktï¿½ry zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½ (zasiï¿½g podany jest w nawiasie). Jeï¿½li atak trafi,cel dostaje 1 Stan Pochwycenie,a jeï¿½li ma mniejszy Rozmiar,zostaje przyciï¿½gniï¿½ty do stworzenia i Zwiï¿½zany Walkï¿½ wrï¿½cz. Stworzenie moï¿½e nastï¿½pnie zdecydowaï¿½,czy wypuï¿½ci cel,wykonujï¿½c Darmowy Atak z uï¿½yciem swojej stats Broï¿½,czy bï¿½dzie trzymaï¿½ cel owiniï¿½ty jï¿½zykiem,zapoczï¿½tkowujï¿½c Chwyt (patrz strona 163).
+Atak Ogonem +Obraï¿½enia
+Stworzenie potrafi zwalaï¿½ z nï¿½g przeciwnikï¿½w machniï¿½ciem ogona. W swojej Turze moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½. Ogon zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Przeciwnicy o Rozmiarze mniejszym niï¿½ stworzenie,ktï¿½rzy odniosï¿½ jakiekolwiek Rany na skutek tego ataku,dostajï¿½ takï¿½e Stan Powalony. 
 Ogonem +8
-Stworzenie potrafi zwalaæ z nóg przeciwników machniêciem ogona. W swojej Turze mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê. Ogon zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Przeciwnicy o Rozmiarze mniejszym ni¿ stworzenie,którzy odnios¹ jakiekolwiek Rany na skutek tego ataku,dostaj¹ tak¿e Stan Powalony.
+Stworzenie potrafi zwalaï¿½ z nï¿½g przeciwnikï¿½w machniï¿½ciem ogona. W swojej Turze moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½. Ogon zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Przeciwnicy o Rozmiarze mniejszym niï¿½ stworzenie,ktï¿½rzy odniosï¿½ jakiekolwiek Rany na skutek tego ataku,dostajï¿½ takï¿½e Stan Powalony.
 Ogon +9
-Stworzenie potrafi zwalaæ z nóg przeciwników machniêciem ogona. W swojej Turze mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê. Ogon zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Przeciwnicy o Rozmiarze mniejszym ni¿ stworzenie,którzy odnios¹ jakiekolwiek Rany na skutek tego ataku,dostaj¹ tak¿e Stan Powalony.
-Bagno³az 
-Stworzenie na bagnie jest w swoim ¿ywiole. Nie dostaje kar do ruchu za przemieszczanie siê po bagnistym pod³o¿u. 
-B³ogos³awiony (ró¿ne) 
-Stworzenie jest b³ogos³awione i mo¿e udzielaæ B³ogos³awieñstw; odpowiednie bóstwo podano w nawiasie. 
-Broñ +X
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹).
-Broñ +0
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹).
-Broñ +3
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹).
-Broñ +4
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹).
-Broñ +5
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹). 
-Broñ +6
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹). 
-Broñ +7
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹). 
-Broñ +8
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹). 
-Broñ +9
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹). 
-Broñ +10
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹). 
-Broñ +15
-Stworzenie nosi broñ do walki wrêcz lub u¿ywa w walce zêbów,pazurów albo tym podobnych. Broñ zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ,która ju¿ zawiera Bonus z Si³y stworzenia. Zazwyczaj bêdzie to wynosi³o 4 + Bonus z Si³y (co reprezentuje broñ rêczn¹). 
+Stworzenie potrafi zwalaï¿½ z nï¿½g przeciwnikï¿½w machniï¿½ciem ogona. W swojej Turze moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½. Ogon zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Przeciwnicy o Rozmiarze mniejszym niï¿½ stworzenie,ktï¿½rzy odniosï¿½ jakiekolwiek Rany na skutek tego ataku,dostajï¿½ takï¿½e Stan Powalony.
+Bagnoï¿½az 
+Stworzenie na bagnie jest w swoim ï¿½ywiole. Nie dostaje kar do ruchu za przemieszczanie siï¿½ po bagnistym podï¿½oï¿½u. 
+Bï¿½ogosï¿½awiony (rï¿½ne) 
+Stworzenie jest bï¿½ogosï¿½awione i moï¿½e udzielaï¿½ Bï¿½ogosï¿½awieï¿½stw; odpowiednie bï¿½stwo podano w nawiasie. 
+Broï¿½ +X
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½).
+Broï¿½ +0
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½).
+Broï¿½ +3
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½).
+Broï¿½ +4
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½).
+Broï¿½ +5
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½). 
+Broï¿½ +6
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½). 
+Broï¿½ +7
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½). 
+Broï¿½ +8
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½). 
+Broï¿½ +9
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½). 
+Broï¿½ +10
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½). 
+Broï¿½ +15
+Stworzenie nosi broï¿½ do walki wrï¿½cz lub uï¿½ywa w walce zï¿½bï¿½w,pazurï¿½w albo tym podobnych. Broï¿½ zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½,ktï¿½ra juï¿½ zawiera Bonus z Siï¿½y stworzenia. Zazwyczaj bï¿½dzie to wynosiï¿½o 4 + Bonus z Siï¿½y (co reprezentuje broï¿½ rï¿½cznï¿½). 
 Choroba (typ) 
-Stworzenie przenosi wymienion¹ chorobê. Inne postacie musz¹ wykonaæ odpowiedni Test,aby unikn¹æ zaka¿enia. Patrz: strona 186. 
+Stworzenie przenosi wymienionï¿½ chorobï¿½. Inne postacie muszï¿½ wykonaï¿½ odpowiedni Test,aby uniknï¿½ï¿½ zakaï¿½enia. Patrz: strona 186. 
 Choroba (Czarna Zaraza) 
-Stworzenie przenosi wymienion¹ chorobê. Inne postacie musz¹ wykonaæ odpowiedni Test,aby unikn¹æ zaka¿enia. Patrz: strona 186. 
-Choroba (Szczurza Gor¹czka) 
-Stworzenie przenosi wymienion¹ chorobê. Inne postacie musz¹ wykonaæ odpowiedni Test,aby unikn¹æ zaka¿enia. Patrz: strona 186. 
-Choroba (Ospa Zwierzêca) 
-Stworzenie przenosi wymienion¹ chorobê. Inne postacie musz¹ wykonaæ odpowiedni Test,aby unikn¹æ zaka¿enia. Patrz: strona 186. 
-Choroba (Ospa Swêdz¹ca) 
-Stworzenie przenosi wymienion¹ chorobê. Inne postacie musz¹ wykonaæ odpowiedni Test,aby unikn¹æ zaka¿enia. Patrz: strona 186. 
-Cuda (ró¿ne) 
-Stworzenie mo¿e czyniæ Cuda; odpowiednie bóstwo podano w nawiasie. 
+Stworzenie przenosi wymienionï¿½ chorobï¿½. Inne postacie muszï¿½ wykonaï¿½ odpowiedni Test,aby uniknï¿½ï¿½ zakaï¿½enia. Patrz: strona 186. 
+Choroba (Szczurza Gorï¿½czka) 
+Stworzenie przenosi wymienionï¿½ chorobï¿½. Inne postacie muszï¿½ wykonaï¿½ odpowiedni Test,aby uniknï¿½ï¿½ zakaï¿½enia. Patrz: strona 186. 
+Choroba (Ospa Zwierzï¿½ca) 
+Stworzenie przenosi wymienionï¿½ chorobï¿½. Inne postacie muszï¿½ wykonaï¿½ odpowiedni Test,aby uniknï¿½ï¿½ zakaï¿½enia. Patrz: strona 186. 
+Choroba (Ospa Swï¿½dzï¿½ca) 
+Stworzenie przenosi wymienionï¿½ chorobï¿½. Inne postacie muszï¿½ wykonaï¿½ odpowiedni Test,aby uniknï¿½ï¿½ zakaï¿½enia. Patrz: strona 186. 
+Cuda (rï¿½ne) 
+Stworzenie moï¿½e czyniï¿½ Cuda; odpowiednie bï¿½stwo podano w nawiasie. 
 Czempion 
-Stworzenie wyj¹tkowo dobrze walczy. Jeœli wygra Test Przeciwstawny,gdy broni siê w walce w zwarciu,mo¿e zadaæ Obra¿enia,tak jakby to ono atakowa³o. 
-Dekoncentruj¹cy
-Stworzenie rozprasza lub dezorientuje wrogów,byæ mo¿e wydzielaj¹c usypiaj¹cy zapach lub powalaj¹cy smród,a mo¿e ze wzglêdu na przera¿aj¹co dziwaczny wygl¹d. Wszystkie ¿ywe cele w promieniu tylu metrów,ile wynosi jego Bonus z Wytrzyma³oœci,dostaj¹ karê -20 do wszystkich Testów. Cel mo¿e dostaæ tê karê tylko raz – bez wzglêdu na to,jak wielu jest dekoncentruj¹cych wrogów. 
-Demoniczny (Próg)
-Esencjê stworzenia stanowi surowa magia,a w tym,co uchodzi za jej ¿y³y,p³ynie paskudna posoka. Demoniczne stwory nie musz¹ zaspokajaæ normalnych potrzeb ¿yciowych. Nie potrzebuj¹ jedzenia,wody ani powietrza. Wszystkie ataki stworzenia s¹ Magiczne. Kiedy stworzenie zostanie trafione,rzuæ 1k10. Jeœli wyrzuci tyle,ile wynosi próg,lub wiêcej,cios zostaje zignorowany,nawet jeœli jest to Trafienie Krytyczne. Za to jeœli ¯ywotnoœæ stworzenia zostanie zredukowana do 0,jego dusza natychmiast powraca do Królestw Chaosu. Stworzenie zostaje usuniête z rozgrywki.
+Stworzenie wyjï¿½tkowo dobrze walczy. Jeï¿½li wygra Test Przeciwstawny,gdy broni siï¿½ w walce w zwarciu,moï¿½e zadaï¿½ Obraï¿½enia,tak jakby to ono atakowaï¿½o. 
+Dekoncentrujï¿½cy
+Stworzenie rozprasza lub dezorientuje wrogï¿½w,byï¿½ moï¿½e wydzielajï¿½c usypiajï¿½cy zapach lub powalajï¿½cy smrï¿½d,a moï¿½e ze wzglï¿½du na przeraï¿½ajï¿½co dziwaczny wyglï¿½d. Wszystkie ï¿½ywe cele w promieniu tylu metrï¿½w,ile wynosi jego Bonus z Wytrzymaï¿½oï¿½ci,dostajï¿½ karï¿½ -20 do wszystkich Testï¿½w. Cel moï¿½e dostaï¿½ tï¿½ karï¿½ tylko raz ï¿½ bez wzglï¿½du na to,jak wielu jest dekoncentrujï¿½cych wrogï¿½w. 
+Demoniczny (Prï¿½g)
+Esencjï¿½ stworzenia stanowi surowa magia,a w tym,co uchodzi za jej ï¿½yï¿½y,pï¿½ynie paskudna posoka. Demoniczne stwory nie muszï¿½ zaspokajaï¿½ normalnych potrzeb ï¿½yciowych. Nie potrzebujï¿½ jedzenia,wody ani powietrza. Wszystkie ataki stworzenia sï¿½ Magiczne. Kiedy stworzenie zostanie trafione,rzuï¿½ 1k10. Jeï¿½li wyrzuci tyle,ile wynosi prï¿½g,lub wiï¿½cej,cios zostaje zignorowany,nawet jeï¿½li jest to Trafienie Krytyczne. Za to jeï¿½li ï¿½ywotnoï¿½ï¿½ stworzenia zostanie zredukowana do 0,jego dusza natychmiast powraca do Krï¿½lestw Chaosu. Stworzenie zostaje usuniï¿½te z rozgrywki.
 Demoniczny 7+
-Esencjê stworzenia stanowi surowa magia,a w tym,co uchodzi za jej ¿y³y,p³ynie paskudna posoka. Demoniczne stwory nie musz¹ zaspokajaæ normalnych potrzeb ¿yciowych. Nie potrzebuj¹ jedzenia,wody ani powietrza. Wszystkie ataki stworzenia s¹ Magiczne. Kiedy stworzenie zostanie trafione,rzuæ 1k10. Jeœli wyrzuci tyle,ile wynosi próg,lub wiêcej,cios zostaje zignorowany,nawet jeœli jest to Trafienie Krytyczne. Za to jeœli ¯ywotnoœæ stworzenia zostanie zredukowana do 0,jego dusza natychmiast powraca do Królestw Chaosu. Stworzenie zostaje usuniête z rozgrywki.
+Esencjï¿½ stworzenia stanowi surowa magia,a w tym,co uchodzi za jej ï¿½yï¿½y,pï¿½ynie paskudna posoka. Demoniczne stwory nie muszï¿½ zaspokajaï¿½ normalnych potrzeb ï¿½yciowych. Nie potrzebujï¿½ jedzenia,wody ani powietrza. Wszystkie ataki stworzenia sï¿½ Magiczne. Kiedy stworzenie zostanie trafione,rzuï¿½ 1k10. Jeï¿½li wyrzuci tyle,ile wynosi prï¿½g,lub wiï¿½cej,cios zostaje zignorowany,nawet jeï¿½li jest to Trafienie Krytyczne. Za to jeï¿½li ï¿½ywotnoï¿½ï¿½ stworzenia zostanie zredukowana do 0,jego dusza natychmiast powraca do Krï¿½lestw Chaosu. Stworzenie zostaje usuniï¿½te z rozgrywki.
 Demoniczny 8+
-Esencjê stworzenia stanowi surowa magia,a w tym,co uchodzi za jej ¿y³y,p³ynie paskudna posoka. Demoniczne stwory nie musz¹ zaspokajaæ normalnych potrzeb ¿yciowych. Nie potrzebuj¹ jedzenia,wody ani powietrza. Wszystkie ataki stworzenia s¹ Magiczne. Kiedy stworzenie zostanie trafione,rzuæ 1k10. Jeœli wyrzuci tyle,ile wynosi próg,lub wiêcej,cios zostaje zignorowany,nawet jeœli jest to Trafienie Krytyczne. Za to jeœli ¯ywotnoœæ stworzenia zostanie zredukowana do 0,jego dusza natychmiast powraca do Królestw Chaosu. Stworzenie zostaje usuniête z rozgrywki.
-D³ugi Krok
-Stworzenie porusza siê wielkimi krokami,byæ mo¿e dlatego,¿e jest czworono¿ne lub ma szczególnie d³ugie nogi. Gdy biegnie,pomnó¿ Szybkoœæ Biegu przez 1,5.
+Esencjï¿½ stworzenia stanowi surowa magia,a w tym,co uchodzi za jej ï¿½yï¿½y,pï¿½ynie paskudna posoka. Demoniczne stwory nie muszï¿½ zaspokajaï¿½ normalnych potrzeb ï¿½yciowych. Nie potrzebujï¿½ jedzenia,wody ani powietrza. Wszystkie ataki stworzenia sï¿½ Magiczne. Kiedy stworzenie zostanie trafione,rzuï¿½ 1k10. Jeï¿½li wyrzuci tyle,ile wynosi prï¿½g,lub wiï¿½cej,cios zostaje zignorowany,nawet jeï¿½li jest to Trafienie Krytyczne. Za to jeï¿½li ï¿½ywotnoï¿½ï¿½ stworzenia zostanie zredukowana do 0,jego dusza natychmiast powraca do Krï¿½lestw Chaosu. Stworzenie zostaje usuniï¿½te z rozgrywki.
+Dï¿½ugi Krok
+Stworzenie porusza siï¿½ wielkimi krokami,byï¿½ moï¿½e dlatego,ï¿½e jest czworonoï¿½ne lub ma szczegï¿½lnie dï¿½ugie nogi. Gdy biegnie,pomnï¿½ Szybkoï¿½ï¿½ Biegu przez 1,5.
 Dusiciel
-Stworzenie potrafi œciskaæ i mia¿d¿yæ ofiary. Ka¿dy udany rzut na trafienie daje celowi Stan Pochwycenie. Je¿eli do tego dojdzie,stworzenie mo¿e wejœæ w Chwyt. Patrz: strona 163.
-Du¿y
-Stworzenie jest du¿ym okazem swojego gatunku. Dostaje +10 do Si³y i Wytrzyma³oœci oraz -5 do Zwinnoœci.
+Stworzenie potrafi ï¿½ciskaï¿½ i miaï¿½dï¿½yï¿½ ofiary. Kaï¿½dy udany rzut na trafienie daje celowi Stan Pochwycenie. Jeï¿½eli do tego dojdzie,stworzenie moï¿½e wejï¿½ï¿½ w Chwyt. Patrz: strona 163.
+Duï¿½y
+Stworzenie jest duï¿½ym okazem swojego gatunku. Dostaje +10 do Siï¿½y i Wytrzymaï¿½oï¿½ci oraz -5 do Zwinnoï¿½ci.
 Elita
-Stworzenie jest doœwiadczonym weteranem. Dostaje +20 do Walki Wrêcz,Umiejêtnoœci Strzeleckich i Si³y Woli.
+Stworzenie jest doï¿½wiadczonym weteranem. Dostaje +20 do Walki Wrï¿½cz,Umiejï¿½tnoï¿½ci Strzeleckich i Siï¿½y Woli.
 Eteryczny
-Stworzenie ma niematerialn¹ postaæ,co pozwala mu przenikaæ przez obiekty materialne. Mo¿e byæ ranione tylko na skutek ataków magicznych.
+Stworzenie ma niematerialnï¿½ postaï¿½,co pozwala mu przenikaï¿½ przez obiekty materialne. Moï¿½e byï¿½ ranione tylko na skutek atakï¿½w magicznych.
 Furia
-Stworzenie ulega czasami wszechogarniaj¹cej wœciek³oœci. Mo¿e wydaæ wszystkie Przewagi (minimalnie 1),by wzbudziæ w sobie Nienawiœæ wobec przeciwników w walce wrêcz. Je¿eli stworzenie zebra³o przynajmniej 3 Przewagi,mo¿e wydaæ wszystkie Przewagi,by wpaœæ w Sza³ Bojowy. Patrz: strona 190.
-G³upi
-Chocia¿ stworzenie nie jest ca³kiem pozbawione samoœwiadomoœci (a zatem nie ma cechy Zwierzêcy),jest g³upie. Jeœli znajduje siê w pobli¿u dowolnych sojuszników,którzy nie maj¹ cechy G³upi,stwór prowadzony jest przez sojuszników i nic siê nie dzieje. W innym przypadku stwór musi zdaæ £atwy (+40) Test Inteligencji na pocz¹tku ka¿dej Rundy,inaczej staje siê bardzo zdezorientowany. Jeœli coœ takiego nast¹pi,stwór zacznie siê œliniæ,mo¿e usi¹dzie w miejscu albo bêdzie d³uba³ w nosie. Niewiele z niego po¿ytku i w tej Turze traci Ruch oraz Akcjê. 
-Groza (wartoœæ)
-Stworzenie w sposób nadnaturalny wzbudza mro¿¹c¹ krew w ¿y³ach Grozê w innych istotach. Poziom Grozy równy jest podanej wartoœci. Patrz: strona 190.
+Stworzenie ulega czasami wszechogarniajï¿½cej wï¿½ciekï¿½oï¿½ci. Moï¿½e wydaï¿½ wszystkie Przewagi (minimalnie 1),by wzbudziï¿½ w sobie Nienawiï¿½ï¿½ wobec przeciwnikï¿½w w walce wrï¿½cz. Jeï¿½eli stworzenie zebraï¿½o przynajmniej 3 Przewagi,moï¿½e wydaï¿½ wszystkie Przewagi,by wpaï¿½ï¿½ w Szaï¿½ Bojowy. Patrz: strona 190.
+Gï¿½upi
+Chociaï¿½ stworzenie nie jest caï¿½kiem pozbawione samoï¿½wiadomoï¿½ci (a zatem nie ma stats Zwierzï¿½cy),jest gï¿½upie. Jeï¿½li znajduje siï¿½ w pobliï¿½u dowolnych sojusznikï¿½w,ktï¿½rzy nie majï¿½ stats Gï¿½upi,stwï¿½r prowadzony jest przez sojusznikï¿½w i nic siï¿½ nie dzieje. W innym przypadku stwï¿½r musi zdaï¿½ ï¿½atwy (+40) Test Inteligencji na poczï¿½tku kaï¿½dej Rundy,inaczej staje siï¿½ bardzo zdezorientowany. Jeï¿½li coï¿½ takiego nastï¿½pi,stwï¿½r zacznie siï¿½ ï¿½liniï¿½,moï¿½e usiï¿½dzie w miejscu albo bï¿½dzie dï¿½ubaï¿½ w nosie. Niewiele z niego poï¿½ytku i w tej Turze traci Ruch oraz Akcjï¿½.
+Groza (wartoï¿½ï¿½)
+Stworzenie w sposï¿½b nadnaturalny wzbudza mroï¿½ï¿½cï¿½ krew w ï¿½yï¿½ach Grozï¿½ w innych istotach. Poziom Grozy rï¿½wny jest podanej wartoï¿½ci. Patrz: strona 190.
 Groza (3)
-Stworzenie w sposób nadnaturalny wzbudza mro¿¹c¹ krew w ¿y³ach Grozê w innych istotach. Poziom Grozy równy jest podanej wartoœci. Patrz: strona 190.
+Stworzenie w sposï¿½b nadnaturalny wzbudza mroï¿½ï¿½cï¿½ krew w ï¿½yï¿½ach Grozï¿½ w innych istotach. Poziom Grozy rï¿½wny jest podanej wartoï¿½ci. Patrz: strona 190.
 Konstrukt
-Stworzenie jest konstruktem z magii,ca³kiem bezrozumnym i spajanym przez magiczne wiêzy. Nie ma Cech Inteligencja,Si³a Woli ani Og³ada i nigdy nie musi ich testowaæ. Jeœli brakuje czarodzieja,który by je kontrolowa³,albo stworzenie nie posiada cechy Terytorialny,wa³êsa siê bezmyœlnie,pod¹¿aj¹c za nurtami przenikaj¹cej otoczenie magii. Gdy trzeba obliczyæ ¯ywotnoœæ stwora i wymagane jest okreœlenie Bonusu z Si³y Woli,u¿yj jego Bonusu z Si³y. Wszystkie ataki stworzenia s¹ Magiczne.
+Stworzenie jest konstruktem z magii,caï¿½kiem bezrozumnym i spajanym przez magiczne wiï¿½zy. Nie ma Cech Inteligencja,Siï¿½a Woli ani Ogï¿½ada i nigdy nie musi ich testowaï¿½. Jeï¿½li brakuje czarodzieja,ktï¿½ry by je kontrolowaï¿½,albo stworzenie nie posiada stats Terytorialny,waï¿½ï¿½sa siï¿½ bezmyï¿½lnie,podï¿½ï¿½ajï¿½c za nurtami przenikajï¿½cej otoczenie magii. Gdy trzeba obliczyï¿½ ï¿½ywotnoï¿½ï¿½ stwora i wymagane jest okreï¿½lenie Bonusu z Siï¿½y Woli,uï¿½yj jego Bonusu z Siï¿½y. Wszystkie ataki stworzenia sï¿½ Magiczne.
 Kwasowa Krew
-Krew stworzenia jest ¿r¹ca. Za ka¿dym razem,gdy zostanie ono ranione,tryska z niego krew i wszystkie zwi¹zane z nim walk¹ cele dostaj¹ 1k10 Ran. S¹ one normalnie obni¿ane przez Bonus z Wytrzyma³oœci i Punkty Pancerza,ale wynosz¹ minimum 1.
-Jad (poziom Trudnoœci)
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
+Krew stworzenia jest ï¿½rï¿½ca. Za kaï¿½dym razem,gdy zostanie ono ranione,tryska z niego krew i wszystkie zwiï¿½zane z nim walkï¿½ cele dostajï¿½ 1k10 Ran. Sï¿½ one normalnie obniï¿½ane przez Bonus z Wytrzymaï¿½oï¿½ci i Punkty Pancerza,ale wynoszï¿½ minimum 1.
+Jad (poziom Trudnoï¿½ci)
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
 Jad
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
 Jad (0)
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
-Jad (Bardzo £atwy)
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
-Jad (Przeciêtny)
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
+Jad (Bardzo ï¿½atwy)
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
+Jad (Przeciï¿½tny)
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
 Jad (Bardzo Trudny)
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
-Jad (Wymagaj¹cy)
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
+Jad (Wymagajï¿½cy)
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
 Jad (Trudny)
-Ataki stworzenia s¹ zatrute lub jadowite. Przeciwnicy,którym zada³o ono Rany,otrzymuj¹ Stan Zatrucie. Jeœli nie jest podany poziom Trudnoœci unikniêcia efektów jadu,domyœlnie jest on Wymagaj¹cy. Patrz: strona 169.
-Latanie (wartoœæ)
-Gdy stworzenie wykonuje Ruch,mo¿e przelecieæ tyle metrów,ile wynosi podana wartoœæ. Lec¹c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaæ,czy wyl¹duje,czy bêdzie kontynuowaæ lot. Mo¿e w ramach tego ruchu wykonaæ Szar¿ê. Jeœli na pocz¹tku swojej Tury leci,musi wybraæ jako Ruch Latanie. Jeœli nie jest w stanie tego zrobiæ,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Bior¹c stworzenie na cel,zmierz odleg³oœæ horyzontaln¹ jak normalnie,a nastêpnie zwiêksz dystans o 1 poziom. Zatem strza³ na Dalekim zasiêgu stanie siê strza³em na Bardzo dalekim zasiêgu. Natomiast jeœli by³ to Bardzo daleki zasiêg,stworzenia nie mo¿na dosiêgn¹æ strza³em. Lec¹c,stworzenie dostaje karê -20 do wszystkich prób walki dystansowej,poniewa¿ nurkuje w powietrzu i zatacza krêgi.
+Ataki stworzenia sï¿½ zatrute lub jadowite. Przeciwnicy,ktï¿½rym zadaï¿½o ono Rany,otrzymujï¿½ Stan Zatrucie. Jeï¿½li nie jest podany poziom Trudnoï¿½ci unikniï¿½cia efektï¿½w jadu,domyï¿½lnie jest on Wymagajï¿½cy. Patrz: strona 169.
+Latanie (wartoï¿½ï¿½)
+Gdy stworzenie wykonuje Ruch,moï¿½e przelecieï¿½ tyle metrï¿½w,ile wynosi podana wartoï¿½ï¿½. Lecï¿½c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaï¿½,czy wylï¿½duje,czy bï¿½dzie kontynuowaï¿½ lot. Moï¿½e w ramach tego ruchu wykonaï¿½ Szarï¿½ï¿½. Jeï¿½li na poczï¿½tku swojej Tury leci,musi wybraï¿½ jako Ruch Latanie. Jeï¿½li nie jest w stanie tego zrobiï¿½,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Biorï¿½c stworzenie na cel,zmierz odlegï¿½oï¿½ï¿½ horyzontalnï¿½ jak normalnie,a nastï¿½pnie zwiï¿½ksz dystans o 1 poziom. Zatem strzaï¿½ na Dalekim zasiï¿½gu stanie siï¿½ strzaï¿½em na Bardzo dalekim zasiï¿½gu. Natomiast jeï¿½li byï¿½ to Bardzo daleki zasiï¿½g,stworzenia nie moï¿½na dosiï¿½gnï¿½ï¿½ strzaï¿½em. Lecï¿½c,stworzenie dostaje karï¿½ -20 do wszystkich prï¿½b walki dystansowej,poniewaï¿½ nurkuje w powietrzu i zatacza krï¿½gi.
 Latanie (100)
-Gdy stworzenie wykonuje Ruch,mo¿e przelecieæ tyle metrów,ile wynosi podana wartoœæ. Lec¹c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaæ,czy wyl¹duje,czy bêdzie kontynuowaæ lot. Mo¿e w ramach tego ruchu wykonaæ Szar¿ê. Jeœli na pocz¹tku swojej Tury leci,musi wybraæ jako Ruch Latanie. Jeœli nie jest w stanie tego zrobiæ,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Bior¹c stworzenie na cel,zmierz odleg³oœæ horyzontaln¹ jak normalnie,a nastêpnie zwiêksz dystans o 1 poziom. Zatem strza³ na Dalekim zasiêgu stanie siê strza³em na Bardzo dalekim zasiêgu. Natomiast jeœli by³ to Bardzo daleki zasiêg,stworzenia nie mo¿na dosiêgn¹æ strza³em. Lec¹c,stworzenie dostaje karê -20 do wszystkich prób walki dystansowej,poniewa¿ nurkuje w powietrzu i zatacza krêgi.
+Gdy stworzenie wykonuje Ruch,moï¿½e przelecieï¿½ tyle metrï¿½w,ile wynosi podana wartoï¿½ï¿½. Lecï¿½c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaï¿½,czy wylï¿½duje,czy bï¿½dzie kontynuowaï¿½ lot. Moï¿½e w ramach tego ruchu wykonaï¿½ Szarï¿½ï¿½. Jeï¿½li na poczï¿½tku swojej Tury leci,musi wybraï¿½ jako Ruch Latanie. Jeï¿½li nie jest w stanie tego zrobiï¿½,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Biorï¿½c stworzenie na cel,zmierz odlegï¿½oï¿½ï¿½ horyzontalnï¿½ jak normalnie,a nastï¿½pnie zwiï¿½ksz dystans o 1 poziom. Zatem strzaï¿½ na Dalekim zasiï¿½gu stanie siï¿½ strzaï¿½em na Bardzo dalekim zasiï¿½gu. Natomiast jeï¿½li byï¿½ to Bardzo daleki zasiï¿½g,stworzenia nie moï¿½na dosiï¿½gnï¿½ï¿½ strzaï¿½em. Lecï¿½c,stworzenie dostaje karï¿½ -20 do wszystkich prï¿½b walki dystansowej,poniewaï¿½ nurkuje w powietrzu i zatacza krï¿½gi.
 Latanie (80)
-Gdy stworzenie wykonuje Ruch,mo¿e przelecieæ tyle metrów,ile wynosi podana wartoœæ. Lec¹c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaæ,czy wyl¹duje,czy bêdzie kontynuowaæ lot. Mo¿e w ramach tego ruchu wykonaæ Szar¿ê. Jeœli na pocz¹tku swojej Tury leci,musi wybraæ jako Ruch Latanie. Jeœli nie jest w stanie tego zrobiæ,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Bior¹c stworzenie na cel,zmierz odleg³oœæ horyzontaln¹ jak normalnie,a nastêpnie zwiêksz dystans o 1 poziom. Zatem strza³ na Dalekim zasiêgu stanie siê strza³em na Bardzo dalekim zasiêgu. Natomiast jeœli by³ to Bardzo daleki zasiêg,stworzenia nie mo¿na dosiêgn¹æ strza³em. Lec¹c,stworzenie dostaje karê -20 do wszystkich prób walki dystansowej,poniewa¿ nurkuje w powietrzu i zatacza krêgi.
+Gdy stworzenie wykonuje Ruch,moï¿½e przelecieï¿½ tyle metrï¿½w,ile wynosi podana wartoï¿½ï¿½. Lecï¿½c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaï¿½,czy wylï¿½duje,czy bï¿½dzie kontynuowaï¿½ lot. Moï¿½e w ramach tego ruchu wykonaï¿½ Szarï¿½ï¿½. Jeï¿½li na poczï¿½tku swojej Tury leci,musi wybraï¿½ jako Ruch Latanie. Jeï¿½li nie jest w stanie tego zrobiï¿½,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Biorï¿½c stworzenie na cel,zmierz odlegï¿½oï¿½ï¿½ horyzontalnï¿½ jak normalnie,a nastï¿½pnie zwiï¿½ksz dystans o 1 poziom. Zatem strzaï¿½ na Dalekim zasiï¿½gu stanie siï¿½ strzaï¿½em na Bardzo dalekim zasiï¿½gu. Natomiast jeï¿½li byï¿½ to Bardzo daleki zasiï¿½g,stworzenia nie moï¿½na dosiï¿½gnï¿½ï¿½ strzaï¿½em. Lecï¿½c,stworzenie dostaje karï¿½ -20 do wszystkich prï¿½b walki dystansowej,poniewaï¿½ nurkuje w powietrzu i zatacza krï¿½gi.
 Latanie (120)
-Gdy stworzenie wykonuje Ruch,mo¿e przelecieæ tyle metrów,ile wynosi podana wartoœæ. Lec¹c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaæ,czy wyl¹duje,czy bêdzie kontynuowaæ lot. Mo¿e w ramach tego ruchu wykonaæ Szar¿ê. Jeœli na pocz¹tku swojej Tury leci,musi wybraæ jako Ruch Latanie. Jeœli nie jest w stanie tego zrobiæ,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Bior¹c stworzenie na cel,zmierz odleg³oœæ horyzontaln¹ jak normalnie,a nastêpnie zwiêksz dystans o 1 poziom. Zatem strza³ na Dalekim zasiêgu stanie siê strza³em na Bardzo dalekim zasiêgu. Natomiast jeœli by³ to Bardzo daleki zasiêg,stworzenia nie mo¿na dosiêgn¹æ strza³em. Lec¹c,stworzenie dostaje karê -20 do wszystkich prób walki dystansowej,poniewa¿ nurkuje w powietrzu i zatacza krêgi.
-Lêk (Obiekt)
+Gdy stworzenie wykonuje Ruch,moï¿½e przelecieï¿½ tyle metrï¿½w,ile wynosi podana wartoï¿½ï¿½. Lecï¿½c,ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydowaï¿½,czy wylï¿½duje,czy bï¿½dzie kontynuowaï¿½ lot. Moï¿½e w ramach tego ruchu wykonaï¿½ Szarï¿½ï¿½. Jeï¿½li na poczï¿½tku swojej Tury leci,musi wybraï¿½ jako Ruch Latanie. Jeï¿½li nie jest w stanie tego zrobiï¿½,MG decyduje,jak daleko stworzenie upadnie (patrz strona 166). Biorï¿½c stworzenie na cel,zmierz odlegï¿½oï¿½ï¿½ horyzontalnï¿½ jak normalnie,a nastï¿½pnie zwiï¿½ksz dystans o 1 poziom. Zatem strzaï¿½ na Dalekim zasiï¿½gu stanie siï¿½ strzaï¿½em na Bardzo dalekim zasiï¿½gu. Natomiast jeï¿½li byï¿½ to Bardzo daleki zasiï¿½g,stworzenia nie moï¿½na dosiï¿½gnï¿½ï¿½ strzaï¿½em. Lecï¿½c,stworzenie dostaje karï¿½ -20 do wszystkich prï¿½b walki dystansowej,poniewaï¿½ nurkuje w powietrzu i zatacza krï¿½gi.
+Lï¿½k (Obiekt)
 Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem. Patrz: zasady Strachu na stronie 190.
-Lêk (Elfy)
+Lï¿½k (Elfy)
 Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem. Patrz: zasady Strachu na stronie 190.
-Lodowaty Uœcisk
-Dotyk stworzenia mrozi dusze wrogów. Kosztem 2 Przewag i swojej Akcji stworzenie mo¿e podj¹æ Test Przeciwstawny Walka Wrêcz/ Broñ Bia³a albo Unik. Jeœli wygra,jego cel traci 1k10+PS punktów ¯ywotnoœci,których nie zmniejszaj¹ Bonus z Wytrzyma³oœci ani Punkty Pancerza. Ten atak jest Magiczny.
-Macki (wartoœæ)
-Stworzenie ma macki w liczbie #. Dostaje jeden Darmowy Atak na mackê. Atak ka¿dej macki zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ – zawiera ju¿ ona Bonus z Si³y stworzenia. Jeœli atak zada Obra¿enia,mo¿e ponadto daæ przeciwnikowi Stan Pochwycenie,co zapocz¹tkowuje Chwyt celu przez dan¹ mackê. Jeœli macka wykonuje Chwyt,aby rozstrzygn¹æ jego wynik,u¿yj Darmowego Ataku macki zamiast wykorzystywania Akcji stwora (patrz strona 338).
+Lodowaty Uï¿½cisk
+Dotyk stworzenia mrozi dusze wrogï¿½w. Kosztem 2 Przewag i swojej Akcji stworzenie moï¿½e podjï¿½ï¿½ Test Przeciwstawny Walka Wrï¿½cz/ Broï¿½ Biaï¿½a albo Unik. Jeï¿½li wygra,jego cel traci 1k10+PS punktï¿½w ï¿½ywotnoï¿½ci,ktï¿½rych nie zmniejszajï¿½ Bonus z Wytrzymaï¿½oï¿½ci ani Punkty Pancerza. Ten atak jest Magiczny.
+Macki (wartoï¿½ï¿½)
+Stworzenie ma macki w liczbie #. Dostaje jeden Darmowy Atak na mackï¿½. Atak kaï¿½dej macki zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½ ï¿½ zawiera juï¿½ ona Bonus z Siï¿½y stworzenia. Jeï¿½li atak zada Obraï¿½enia,moï¿½e ponadto daï¿½ przeciwnikowi Stan Pochwycenie,co zapoczï¿½tkowuje Chwyt celu przez danï¿½ mackï¿½. Jeï¿½li macka wykonuje Chwyt,aby rozstrzygnï¿½ï¿½ jego wynik,uï¿½yj Darmowego Ataku macki zamiast wykorzystywania Akcji stwora (patrz strona 338).
 8x Macki +9
-Stworzenie ma macki w liczbie #. Dostaje jeden Darmowy Atak na mackê. Atak ka¿dej macki zadaje tyle Obra¿eñ,ile wynosi podana wartoœæ – zawiera ju¿ ona Bonus z Si³y stworzenia. Jeœli atak zada Obra¿enia,mo¿e ponadto daæ przeciwnikowi Stan Pochwycenie,co zapocz¹tkowuje Chwyt celu przez dan¹ mackê. Jeœli macka wykonuje Chwyt,aby rozstrzygn¹æ jego wynik,u¿yj Darmowego Ataku macki zamiast wykorzystywania Akcji stwora (patrz strona 338).
+Stworzenie ma macki w liczbie #. Dostaje jeden Darmowy Atak na mackï¿½. Atak kaï¿½dej macki zadaje tyle Obraï¿½eï¿½,ile wynosi podana wartoï¿½ï¿½ ï¿½ zawiera juï¿½ ona Bonus z Siï¿½y stworzenia. Jeï¿½li atak zada Obraï¿½enia,moï¿½e ponadto daï¿½ przeciwnikowi Stan Pochwycenie,co zapoczï¿½tkowuje Chwyt celu przez danï¿½ mackï¿½. Jeï¿½li macka wykonuje Chwyt,aby rozstrzygnï¿½ï¿½ jego wynik,uï¿½yj Darmowego Ataku macki zamiast wykorzystywania Akcji stwora (patrz strona 338).
 Magiczny
-Stworzenie spowite jest magi¹. Wszystkie jego ataki licz¹ siê jako Magiczne,co oznacza,¿e mo¿e raniæ istoty wra¿liwe tylko na ataki magiczne.
+Stworzenie spowite jest magiï¿½. Wszystkie jego ataki liczï¿½ siï¿½ jako Magiczne,co oznacza,ï¿½e moï¿½e raniï¿½ istoty wraï¿½liwe tylko na ataki magiczne.
 Mieszkaniec Lasu
-Stworzenie jest w swoim ¿ywiole w lesie. W zalesionym terenie dodaje Bonus ze Zwinnoœci do PS wszystkich Testów Wspinaczki i Skradania.
+Stworzenie jest w swoim ï¿½ywiole w lesie. W zalesionym terenie dodaje Bonus ze Zwinnoï¿½ci do PS wszystkich Testï¿½w Wspinaczki i Skradania.
 Mutacja
-Stworzenie zosta³o „pob³ogos³awione” mutacj¹. Wykonaj dla niego rzut w Tabeli Spaczenia Fizycznego na stronie 184.
-Nie Czuje Bólu
-Stworzenie nie odczuwa bólu i mo¿e nie zwracaæ na niego uwagi. Wszelkie kary z Ran Krytycznych s¹ ignorowane,o ile nie s¹ Amputacjami. Stworzenie wci¹¿ dostaje odpowiednie Stany jak normalnie.
+Stworzenie zostaï¿½o ï¿½pobï¿½ogosï¿½awioneï¿½ mutacjï¿½. Wykonaj dla niego rzut w Tabeli Spaczenia Fizycznego na stronie 184.
+Nie Czuje Bï¿½lu
+Stworzenie nie odczuwa bï¿½lu i moï¿½e nie zwracaï¿½ na niego uwagi. Wszelkie kary z Ran Krytycznych sï¿½ ignorowane,o ile nie sï¿½ Amputacjami. Stworzenie wciï¿½ï¿½ dostaje odpowiednie Stany jak normalnie.
 Nie do Zdarcia
-Bez wzglêdu na to,jak mocno obrywa stworzenie,wci¹¿ siê podnosi. Wszystkie Rany Krytyczne,których wynikiem nie jest œmieræ,mog¹ zostaæ wyleczone; wystarczy po³¹czyæ potrzebne czêœci cia³a w odpowiednich miejscach,mo¿e unieruchamiaj¹c je klamrami lub du¿ymi ko³kami,a stwór zaraz bêdzie gotowy funkcjonowaæ dalej. Nawet „œmieræ” mo¿na „wyleczyæ”,jeœli do cia³a zostan¹ przymocowane odpowiednie czêœci takie jak stracona g³owa. Jeœli nast¹pi zgon,a wszystkie czêœci cia³a bêd¹ na swoim miejscu,stworzenie mo¿e wykonywaæ po swojej œmierci Wymagaj¹cy (+0) Test Odpornoœci z PS wynosz¹cym 6 na pocz¹tku ka¿dej Rundy (przez tyle Rund,ile wynosi jego Bonus z Wytrzyma³oœci). Jeœli Test jest udany,stworzenie z charkotem budzi siê do ¿ycia z 1 punktem ¯ywotnoœci.
-Nienawiœæ (Obiekt)
-Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
-Nienawiœæ (Zielonoskórzy)
-Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
-Nienawiœæ (Drapie¿niki)
-Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
-Nienawiœæ (¯ywe Istoty)
-Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
-Nienawiœæ (Wszystko)
-Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
-Nienawiœæ (Krasnoludy)
-Stworzenie naprawdê nienawidzi Obiektu. Patrz: zasady Nienawiœci na stronie 190.
+Bez wzglï¿½du na to,jak mocno obrywa stworzenie,wciï¿½ï¿½ siï¿½ podnosi. Wszystkie Rany Krytyczne,ktï¿½rych wynikiem nie jest ï¿½mierï¿½,mogï¿½ zostaï¿½ wyleczone; wystarczy poï¿½ï¿½czyï¿½ potrzebne czï¿½ci ciaï¿½a w odpowiednich miejscach,moï¿½e unieruchamiajï¿½c je klamrami lub duï¿½ymi koï¿½kami,a stwï¿½r zaraz bï¿½dzie gotowy funkcjonowaï¿½ dalej. Nawet ï¿½ï¿½mierï¿½ moï¿½na ï¿½wyleczyï¿½,jeï¿½li do ciaï¿½a zostanï¿½ przymocowane odpowiednie czï¿½ci takie jak stracona gï¿½owa. Jeï¿½li nastï¿½pi zgon,a wszystkie czï¿½ci ciaï¿½a bï¿½dï¿½ na swoim miejscu,stworzenie moï¿½e wykonywaï¿½ po swojej ï¿½mierci Wymagajï¿½cy (+0) Test Odpornoï¿½ci z PS wynoszï¿½cym 6 na poczï¿½tku kaï¿½dej Rundy (przez tyle Rund,ile wynosi jego Bonus z Wytrzymaï¿½oï¿½ci). Jeï¿½li Test jest udany,stworzenie z charkotem budzi siï¿½ do ï¿½ycia z 1 punktem ï¿½ywotnoï¿½ci.
+Nienawiï¿½ï¿½ (Obiekt)
+Stworzenie naprawdï¿½ nienawidzi Obiektu. Patrz: zasady Nienawiï¿½ci na stronie 190.
+Nienawiï¿½ï¿½ (Zielonoskï¿½rzy)
+Stworzenie naprawdï¿½ nienawidzi Obiektu. Patrz: zasady Nienawiï¿½ci na stronie 190.
+Nienawiï¿½ï¿½ (Drapieï¿½niki)
+Stworzenie naprawdï¿½ nienawidzi Obiektu. Patrz: zasady Nienawiï¿½ci na stronie 190.
+Nienawiï¿½ï¿½ (ï¿½ywe Istoty)
+Stworzenie naprawdï¿½ nienawidzi Obiektu. Patrz: zasady Nienawiï¿½ci na stronie 190.
+Nienawiï¿½ï¿½ (Wszystko)
+Stworzenie naprawdï¿½ nienawidzi Obiektu. Patrz: zasady Nienawiï¿½ci na stronie 190.
+Nienawiï¿½ï¿½ (Krasnoludy)
+Stworzenie naprawdï¿½ nienawidzi Obiektu. Patrz: zasady Nienawiï¿½ci na stronie 190.
 Niestabilny
-Cia³o stworzenia spaja plugawa magia,która staje siê niestabilna w œwiecie materialnym. Gdy stworzenie koñczy Rundê zwi¹zane walk¹ z przeciwnikiem o wy¿szej Przewadze,zostaje odepchniête,a wi¹¿¹ca go magia s³abnie. Otrzymuje tyle Ran,ile wynosi ró¿nica Przewag. Zatem jeœli stworzenie mia³o 1 Przewagê,a jego przeciwnik 3,stworzenie otrzyma 2 Rany. Jeœli stworzenie kiedykolwiek osi¹gnie 0 Ran,spajaj¹ca je magia rozprasza siê i stwór „umiera”.
-Niewra¿liwoœæ (rodzaj)
-Stworzenie jest ca³kowicie niewra¿liwe na okreœlonego rodzaju Obra¿enia,takie jak od trucizny,magii lub elektrycznoœci. Wszelkie Obra¿enia tego rodzaju,w³¹cznie z Ranami Krytycznymi,s¹ ignorowane.
-Niewra¿liwoœæ (wybierz jedn¹)
-Stworzenie jest ca³kowicie niewra¿liwe na okreœlonego rodzaju Obra¿enia,takie jak od trucizny,magii lub elektrycznoœci. Wszelkie Obra¿enia tego rodzaju,w³¹cznie z Ranami Krytycznymi,s¹ ignorowane.
-Niewra¿liwoœæ (Trucizna)
-Stworzenie jest ca³kowicie niewra¿liwe na okreœlonego rodzaju Obra¿enia,takie jak od trucizny,magii lub elektrycznoœci. Wszelkie Obra¿enia tego rodzaju,w³¹cznie z Ranami Krytycznymi,s¹ ignorowane.
-Niewra¿liwoœæ na Psychologiê
-Stworzenie jest odwa¿ne,nadzwyczajnie g³upie albo po prostu da³o siê ponieœæ chwili. Dziêki temu zupe³nie siê nie boi. Ignoruje zasady Psychologii. Patrz: strona 190.
-Ochrona (wartoœæ)
-Stworzenie jest magiczne,nosi specjalny talizman albo ma szczêœcie – niektóre ciosy po prostu go nie trafiaj¹. Rzuæ 1k10 po ka¿dym otrzymanym ciosie. Jeœli stworzenie wyrzuci tyle,ile wynosi podana wartoœæ,lub wiêcej,cios zostaje zignorowany,nawet jeœli jest to Trafienie Krytyczne.
-Odpornoœæ na Magiê (wartoœæ)
-Efekt wywierany przez magiê na stworzenie jest ograniczony. PS dowolnego wp³ywaj¹cego na stworzenie czaru zmniejszany jest o podan¹ wartoœæ. Zatem Odpornoœæ na Magiê 2 zmniejsza PS o 2.
-Odpornoœæ na Magiê (1)
-Efekt wywierany przez magiê na stworzenie jest ograniczony. PS dowolnego wp³ywaj¹cego na stworzenie czaru zmniejszany jest o podan¹ wartoœæ. Zatem Odpornoœæ na Magiê 2 zmniejsza PS o 2.
-O¿ywieniec
-O¿ywieñcy nie s¹ ani ¿ywi,ani martwi,co oznacza,¿e nie potrzebuj¹ powietrza,jedzenia,wody... Ta cecha u¿ywana jest najczêœciej wtedy,gdy czary,cuda i inne zdolnoœci obejmuj¹ tylko O¿ywieñców.
-Pancerz (wartoœæ)
-Stworzenie chronione jest przez pancerz lub grub¹ skórê. Ma tyle Punktów Pancerza,ile wynosi wartoœæ,na wszystkich Miejscach Trafieñ.
+Ciaï¿½o stworzenia spaja plugawa magia,ktï¿½ra staje siï¿½ niestabilna w ï¿½wiecie materialnym. Gdy stworzenie koï¿½czy Rundï¿½ zwiï¿½zane walkï¿½ z przeciwnikiem o wyï¿½szej Przewadze,zostaje odepchniï¿½te,a wiï¿½ï¿½ï¿½ca go magia sï¿½abnie. Otrzymuje tyle Ran,ile wynosi rï¿½nica Przewag. Zatem jeï¿½li stworzenie miaï¿½o 1 Przewagï¿½,a jego przeciwnik 3,stworzenie otrzyma 2 Rany. Jeï¿½li stworzenie kiedykolwiek osiï¿½gnie 0 Ran,spajajï¿½ca je magia rozprasza siï¿½ i stwï¿½r ï¿½umieraï¿½.
+Niewraï¿½liwoï¿½ï¿½ (rodzaj)
+Stworzenie jest caï¿½kowicie niewraï¿½liwe na okreï¿½lonego rodzaju Obraï¿½enia,takie jak od trucizny,magii lub elektrycznoï¿½ci. Wszelkie Obraï¿½enia tego rodzaju,wï¿½ï¿½cznie z Ranami Krytycznymi,sï¿½ ignorowane.
+Niewraï¿½liwoï¿½ï¿½ (wybierz jednï¿½)
+Stworzenie jest caï¿½kowicie niewraï¿½liwe na okreï¿½lonego rodzaju Obraï¿½enia,takie jak od trucizny,magii lub elektrycznoï¿½ci. Wszelkie Obraï¿½enia tego rodzaju,wï¿½ï¿½cznie z Ranami Krytycznymi,sï¿½ ignorowane.
+Niewraï¿½liwoï¿½ï¿½ (Trucizna)
+Stworzenie jest caï¿½kowicie niewraï¿½liwe na okreï¿½lonego rodzaju Obraï¿½enia,takie jak od trucizny,magii lub elektrycznoï¿½ci. Wszelkie Obraï¿½enia tego rodzaju,wï¿½ï¿½cznie z Ranami Krytycznymi,sï¿½ ignorowane.
+Niewraï¿½liwoï¿½ï¿½ na Psychologiï¿½
+Stworzenie jest odwaï¿½ne,nadzwyczajnie gï¿½upie albo po prostu daï¿½o siï¿½ ponieï¿½ï¿½ chwili. Dziï¿½ki temu zupeï¿½nie siï¿½ nie boi. Ignoruje zasady Psychologii. Patrz: strona 190.
+Ochrona (wartoï¿½ï¿½)
+Stworzenie jest magiczne,nosi specjalny talizman albo ma szczï¿½cie ï¿½ niektï¿½re ciosy po prostu go nie trafiajï¿½. Rzuï¿½ 1k10 po kaï¿½dym otrzymanym ciosie. Jeï¿½li stworzenie wyrzuci tyle,ile wynosi podana wartoï¿½ï¿½,lub wiï¿½cej,cios zostaje zignorowany,nawet jeï¿½li jest to Trafienie Krytyczne.
+Odpornoï¿½ï¿½ na Magiï¿½ (wartoï¿½ï¿½)
+Efekt wywierany przez magiï¿½ na stworzenie jest ograniczony. PS dowolnego wpï¿½ywajï¿½cego na stworzenie czaru zmniejszany jest o podanï¿½ wartoï¿½ï¿½. Zatem Odpornoï¿½ï¿½ na Magiï¿½ 2 zmniejsza PS o 2.
+Odpornoï¿½ï¿½ na Magiï¿½ (1)
+Efekt wywierany przez magiï¿½ na stworzenie jest ograniczony. PS dowolnego wpï¿½ywajï¿½cego na stworzenie czaru zmniejszany jest o podanï¿½ wartoï¿½ï¿½. Zatem Odpornoï¿½ï¿½ na Magiï¿½ 2 zmniejsza PS o 2.
+Oï¿½ywieniec
+Oï¿½ywieï¿½cy nie sï¿½ ani ï¿½ywi,ani martwi,co oznacza,ï¿½e nie potrzebujï¿½ powietrza,jedzenia,wody... Ta cecha uï¿½ywana jest najczï¿½ciej wtedy,gdy czary,cuda i inne zdolnoï¿½ci obejmujï¿½ tylko Oï¿½ywieï¿½cï¿½w.
+Pancerz (wartoï¿½ï¿½)
+Stworzenie chronione jest przez pancerz lub grubï¿½ skï¿½rï¿½. Ma tyle Punktï¿½w Pancerza,ile wynosi wartoï¿½ï¿½,na wszystkich Miejscach Trafieï¿½.
 Pancerz (1)
-Stworzenie chronione jest przez pancerz lub grub¹ skórê. Ma tyle Punktów Pancerza,ile wynosi wartoœæ,na wszystkich Miejscach Trafieñ.
-Pancerz (1,Skóra),
-Stworzenie chronione jest przez pancerz lub grub¹ skórê. Ma tyle Punktów Pancerza,ile wynosi wartoœæ,na wszystkich Miejscach Trafieñ.
+Stworzenie chronione jest przez pancerz lub grubï¿½ skï¿½rï¿½. Ma tyle Punktï¿½w Pancerza,ile wynosi wartoï¿½ï¿½,na wszystkich Miejscach Trafieï¿½.
+Pancerz (1,Skï¿½ra),
+Stworzenie chronione jest przez pancerz lub grubï¿½ skï¿½rï¿½. Ma tyle Punktï¿½w Pancerza,ile wynosi wartoï¿½ï¿½,na wszystkich Miejscach Trafieï¿½.
 Pancerz (2)
-Stworzenie chronione jest przez pancerz lub grub¹ skórê. Ma tyle Punktów Pancerza,ile wynosi wartoœæ,na wszystkich Miejscach Trafieñ.
+Stworzenie chronione jest przez pancerz lub grubï¿½ skï¿½rï¿½. Ma tyle Punktï¿½w Pancerza,ile wynosi wartoï¿½ï¿½,na wszystkich Miejscach Trafieï¿½.
 Pancerz (3)
-Stworzenie chronione jest przez pancerz lub grub¹ skórê. Ma tyle Punktów Pancerza,ile wynosi wartoœæ,na wszystkich Miejscach Trafieñ.
+Stworzenie chronione jest przez pancerz lub grubï¿½ skï¿½rï¿½. Ma tyle Punktï¿½w Pancerza,ile wynosi wartoï¿½ï¿½,na wszystkich Miejscach Trafieï¿½.
 Pancerz (4)
-Stworzenie chronione jest przez pancerz lub grub¹ skórê. Ma tyle Punktów Pancerza,ile wynosi wartoœæ,na wszystkich Miejscach Trafieñ.
+Stworzenie chronione jest przez pancerz lub grubï¿½ skï¿½rï¿½. Ma tyle Punktï¿½w Pancerza,ile wynosi wartoï¿½ï¿½,na wszystkich Miejscach Trafieï¿½.
 Pancerz (5)
-Stworzenie chronione jest przez pancerz lub grub¹ skórê. Ma tyle Punktów Pancerza,ile wynosi wartoœæ,na wszystkich Miejscach Trafieñ.
-Petryfikuj¹ce Spojrzenie
-Spojrzenie stworzenia potrafi zamieniæ cia³o w kamieñ. W ramach swojej Akcji stworzenie mo¿e wydaæ wszystkie Przewagi,by u¿yæ spojrzenia (minimalnie 1). Stworzenie wykonuje Test Przeciwstawny Umiejêtnoœci Strzeleckie/Inicjatywa,dodaj¹c 1 PS za ka¿d¹ wydan¹ Przewagê. Przeciwnik dostaje 1 Stan Oszo³omienie za ka¿de 2 PS,o które wygra³o stworzenie. Jeœli stworzenie wygra co najmniej o 6 PS,jego cel zostaje nieodwracalnie zamieniony w kamieñ. Jeœli cel potrafi rzucaæ czary,mo¿na wykonaæ Test Przeciwstawny z Umiejêtnoœci¹ Jêzyk (Magiczny) zamiast Inicjatywy,co reprezentuje rzucanie przez cel kontr zaklêcia.
-P³ochliwy
-Stworzenie ³atwo p³oszy siê z powodu magii lub donoœnych odg³osów – dostaje wtedy +3 Stany Panika.
-Przebieg³y
-Stworzenie jest wyj¹tkowo przebieg³e. Dostaje +10 do Og³ady,Inteligencji i Inicjatywy.
-Przywódca
-Stworzenie jest doœwiadczonym przywódc¹. Dostaje premiê +10 do Og³ady i Si³y Woli. Uwaga: tej cechy nie mog¹ wybieraæ stworzenia posiadaj¹ce cechê Zwierzêcy.
+Stworzenie chronione jest przez pancerz lub grubï¿½ skï¿½rï¿½. Ma tyle Punktï¿½w Pancerza,ile wynosi wartoï¿½ï¿½,na wszystkich Miejscach Trafieï¿½.
+Petryfikujï¿½ce Spojrzenie
+Spojrzenie stworzenia potrafi zamieniï¿½ ciaï¿½o w kamieï¿½. W ramach swojej Akcji stworzenie moï¿½e wydaï¿½ wszystkie Przewagi,by uï¿½yï¿½ spojrzenia (minimalnie 1). Stworzenie wykonuje Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Inicjatywa,dodajï¿½c 1 PS za kaï¿½dï¿½ wydanï¿½ Przewagï¿½. Przeciwnik dostaje 1 Stan Oszoï¿½omienie za kaï¿½de 2 PS,o ktï¿½re wygraï¿½o stworzenie. Jeï¿½li stworzenie wygra co najmniej o 6 PS,jego cel zostaje nieodwracalnie zamieniony w kamieï¿½. Jeï¿½li cel potrafi rzucaï¿½ czary,moï¿½na wykonaï¿½ Test Przeciwstawny z Umiejï¿½tnoï¿½ciï¿½ Jï¿½zyk (Magiczny) zamiast Inicjatywy,co reprezentuje rzucanie przez cel kontr zaklï¿½cia.
+Pï¿½ochliwy
+Stworzenie ï¿½atwo pï¿½oszy siï¿½ z powodu magii lub donoï¿½nych odgï¿½osï¿½w ï¿½ dostaje wtedy +3 Stany Panika.
+Przebiegï¿½y
+Stworzenie jest wyjï¿½tkowo przebiegï¿½e. Dostaje +10 do Ogï¿½ady,Inteligencji i Inicjatywy.
+Przywï¿½dca
+Stworzenie jest doï¿½wiadczonym przywï¿½dcï¿½. Dostaje premiï¿½ +10 do Ogï¿½ady i Siï¿½y Woli. Uwaga: tej stats nie mogï¿½ wybieraï¿½ stworzenia posiadajï¿½ce cechï¿½ Zwierzï¿½cy.
 Regeneracja
-Stworzenie leczy siê w niezwyk³ym tempie. Nawet jego odciête czêœci cia³a mog¹ odrastaæ. Na pocz¹tku ka¿dej Rundy,o ile pozosta³o mu ponad 0 ¯ywotnoœci,stworzenie automatycznie regeneruje 1k10 punktów ¯ywotnoœci. Jeœli pozosta³o mu 0 ¯ywotnoœci,regeneruje jedn¹ Ranê po wyrzuceniu 8+ na 1k10. Jeœli kiedykolwiek podczas regeneracji wyrzuci 10,mo¿e w pe³ni zregenerowaæ tak¿e Ranê Krytyczn¹,anuluj¹c w ten sposób wszelkie powi¹zane z ni¹ kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogieñ nie mog¹ byæ regenerowane i powinny byæ zapisywane oddzielnie.
-Rogi +Obra¿enia (typ)
-Stworzenie ma rogi lub inne ostre wyrostki (jeœli jego Cecha Stworzenia Rogi reprezentuje coœ innego,bêdzie to okreœlone w nawiasie). Gdy stworzenie zyskuje Przewagê na skutek Szar¿owania,mo¿e wykonaæ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podan¹ wartoœæ Obra¿eñ (Bonus z Si³y stworzenia jest ju¿ wliczony).
+Stworzenie leczy siï¿½ w niezwykï¿½ym tempie. Nawet jego odciï¿½te czï¿½ci ciaï¿½a mogï¿½ odrastaï¿½. Na poczï¿½tku kaï¿½dej Rundy,o ile pozostaï¿½o mu ponad 0 ï¿½ywotnoï¿½ci,stworzenie automatycznie regeneruje 1k10 punktï¿½w ï¿½ywotnoï¿½ci. Jeï¿½li pozostaï¿½o mu 0 ï¿½ywotnoï¿½ci,regeneruje jednï¿½ Ranï¿½ po wyrzuceniu 8+ na 1k10. Jeï¿½li kiedykolwiek podczas regeneracji wyrzuci 10,moï¿½e w peï¿½ni zregenerowaï¿½ takï¿½e Ranï¿½ Krytycznï¿½,anulujï¿½c w ten sposï¿½b wszelkie powiï¿½zane z niï¿½ kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogieï¿½ nie mogï¿½ byï¿½ regenerowane i powinny byï¿½ zapisywane oddzielnie.
+Rogi +Obraï¿½enia (typ)
+Stworzenie ma rogi lub inne ostre wyrostki (jeï¿½li jego Cecha Stworzenia Rogi reprezentuje coï¿½ innego,bï¿½dzie to okreï¿½lone w nawiasie). Gdy stworzenie zyskuje Przewagï¿½ na skutek Szarï¿½owania,moï¿½e wykonaï¿½ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½ (Bonus z Siï¿½y stworzenia jest juï¿½ wliczony).
 Rogi +6
-Stworzenie ma rogi lub inne ostre wyrostki (jeœli jego Cecha Stworzenia Rogi reprezentuje coœ innego,bêdzie to okreœlone w nawiasie). Gdy stworzenie zyskuje Przewagê na skutek Szar¿owania,mo¿e wykonaæ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podan¹ wartoœæ Obra¿eñ (Bonus z Si³y stworzenia jest ju¿ wliczony).
+Stworzenie ma rogi lub inne ostre wyrostki (jeï¿½li jego Cecha Stworzenia Rogi reprezentuje coï¿½ innego,bï¿½dzie to okreï¿½lone w nawiasie). Gdy stworzenie zyskuje Przewagï¿½ na skutek Szarï¿½owania,moï¿½e wykonaï¿½ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½ (Bonus z Siï¿½y stworzenia jest juï¿½ wliczony).
 Rogi +8
-Stworzenie ma rogi lub inne ostre wyrostki (jeœli jego Cecha Stworzenia Rogi reprezentuje coœ innego,bêdzie to okreœlone w nawiasie). Gdy stworzenie zyskuje Przewagê na skutek Szar¿owania,mo¿e wykonaæ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podan¹ wartoœæ Obra¿eñ (Bonus z Si³y stworzenia jest ju¿ wliczony).
+Stworzenie ma rogi lub inne ostre wyrostki (jeï¿½li jego Cecha Stworzenia Rogi reprezentuje coï¿½ innego,bï¿½dzie to okreï¿½lone w nawiasie). Gdy stworzenie zyskuje Przewagï¿½ na skutek Szarï¿½owania,moï¿½e wykonaï¿½ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½ (Bonus z Siï¿½y stworzenia jest juï¿½ wliczony).
 Rogi +9
-Stworzenie ma rogi lub inne ostre wyrostki (jeœli jego Cecha Stworzenia Rogi reprezentuje coœ innego,bêdzie to okreœlone w nawiasie). Gdy stworzenie zyskuje Przewagê na skutek Szar¿owania,mo¿e wykonaæ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podan¹ wartoœæ Obra¿eñ (Bonus z Si³y stworzenia jest ju¿ wliczony).
+Stworzenie ma rogi lub inne ostre wyrostki (jeï¿½li jego Cecha Stworzenia Rogi reprezentuje coï¿½ innego,bï¿½dzie to okreï¿½lone w nawiasie). Gdy stworzenie zyskuje Przewagï¿½ na skutek Szarï¿½owania,moï¿½e wykonaï¿½ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½ (Bonus z Siï¿½y stworzenia jest juï¿½ wliczony).
 Rogi +14
-Stworzenie ma rogi lub inne ostre wyrostki (jeœli jego Cecha Stworzenia Rogi reprezentuje coœ innego,bêdzie to okreœlone w nawiasie). Gdy stworzenie zyskuje Przewagê na skutek Szar¿owania,mo¿e wykonaæ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podan¹ wartoœæ Obra¿eñ (Bonus z Si³y stworzenia jest ju¿ wliczony).
-Rogi (K³y)
-Stworzenie ma rogi lub inne ostre wyrostki (jeœli jego Cecha Stworzenia Rogi reprezentuje coœ innego,bêdzie to okreœlone w nawiasie). Gdy stworzenie zyskuje Przewagê na skutek Szar¿owania,mo¿e wykonaæ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podan¹ wartoœæ Obra¿eñ (Bonus z Si³y stworzenia jest ju¿ wliczony).
-Rozmiar (ró¿ne)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
+Stworzenie ma rogi lub inne ostre wyrostki (jeï¿½li jego Cecha Stworzenia Rogi reprezentuje coï¿½ innego,bï¿½dzie to okreï¿½lone w nawiasie). Gdy stworzenie zyskuje Przewagï¿½ na skutek Szarï¿½owania,moï¿½e wykonaï¿½ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½ (Bonus z Siï¿½y stworzenia jest juï¿½ wliczony).
+Rogi (Kï¿½y)
+Stworzenie ma rogi lub inne ostre wyrostki (jeï¿½li jego Cecha Stworzenia Rogi reprezentuje coï¿½ innego,bï¿½dzie to okreï¿½lone w nawiasie). Gdy stworzenie zyskuje Przewagï¿½ na skutek Szarï¿½owania,moï¿½e wykonaï¿½ Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½ (Bonus z Siï¿½y stworzenia jest juï¿½ wliczony).
+Rozmiar (rï¿½ne)
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
 Rozmiar (Drobny)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
-Rozmiar (Ma³y)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
+Rozmiar (Maï¿½y)
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
 Rozmiar (Niewielki)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
-Rozmiar (Œredni)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
-Rozmiar (Du¿y)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
+Rozmiar (ï¿½redni)
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
+Rozmiar (Duï¿½y)
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
 Rozmiar (Wielki)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
 Rozmiar (Monstrualny)
-Ta cecha reprezentuje stworzenia,których rozmiar ró¿ni siê od standardowego w grze (czyli mniej wiêcej wielkoœci cz³owieka). Jest siedem poziomów Rozmiaru – od drobnego po monstrualny.
-Rój
-Roje to wielkie iloœci tych samych stworów dzia³aj¹cych jak jeden. Rój liczy siê jako jeden stwór,który ignoruje zasady efektów psychologicznych (patrz strona 190) i mo¿e ignorowaæ zasady Zwi¹zania walk¹,gdy wykonuje Ruch. Jeœli rój trafi przeciwnika,aktywuje zasadê Œmiertelny cios (nawet jeœli nie zabi³ przeciwnika – patrz strona 160). Wszyscy przeciwnicy Zwi¹zani walk¹ z rojem automatycznie otrzymuj¹ 1 Ranê pod koniec ka¿dej Rundy,gdy rój opada na wszystko w pobli¿u. Rój ma piêæ razy wiêcej ¯ywotnoœci ni¿ normalny okaz danego stworzenia i dostaje +10 do Walki Wrêcz. Wszelkie próby strzelania do roju maj¹ premiê +40 do trafienia. Rój ignoruje wszelkie zasady Rozmiaru stworzeñ.
-Rzucanie Czarów (ró¿ne)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Dowolne)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Magia Prosta)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Metalu)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Niebios)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Ognia)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Œwiat³a)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (¯ycia)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Chaos)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Demonologia)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Nekromancja)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Œmieræ)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Zwierz¹t)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Cienia)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Nurgle)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Slaanesh)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Tzeentch)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Guœlarstwo)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Rzucanie Czarów (Czarownictwo)
-Stworzenie potrafi rzucaæ wszystkie lub wybrane zaklêcia Tradycji Magii podanej w nawiasie.
-Sieæ (wartoœæ)
-Stworzenie mo¿e tworzyæ sieci s³u¿¹ce do ³apania niebacznych wrogów. Za ka¿dym razem,gdy stwór trafia przeciwników,dostaj¹ oni 1 Stan Pochwycenie o Sile równej podanej wartoœci. Patrz: strona 168.
-Sieæ (40)
-Stworzenie mo¿e tworzyæ sieci s³u¿¹ce do ³apania niebacznych wrogów. Za ka¿dym razem,gdy stwór trafia przeciwników,dostaj¹ oni 1 Stan Pochwycenie o Sile równej podanej wartoœci. Patrz: strona 168.
-Si³acz
-Stworzenie jest ciê¿kie i brutalne. Dostaje -1 do Szybkoœci,-10 do Zwinnoœci oraz +10 do Si³y i Wytrzyma³oœci.
+Ta cecha reprezentuje stworzenia,ktï¿½rych rozmiar rï¿½ni siï¿½ od standardowego w grze (czyli mniej wiï¿½cej wielkoï¿½ci czï¿½owieka). Jest siedem poziomï¿½w Rozmiaru ï¿½ od drobnego po monstrualny.
+Rï¿½j
+Roje to wielkie iloï¿½ci tych samych stworï¿½w dziaï¿½ajï¿½cych jak jeden. Rï¿½j liczy siï¿½ jako jeden stwï¿½r,ktï¿½ry ignoruje zasady efektï¿½w psychologicznych (patrz strona 190) i moï¿½e ignorowaï¿½ zasady Zwiï¿½zania walkï¿½,gdy wykonuje Ruch. Jeï¿½li rï¿½j trafi przeciwnika,aktywuje zasadï¿½ ï¿½miertelny cios (nawet jeï¿½li nie zabiï¿½ przeciwnika ï¿½ patrz strona 160). Wszyscy przeciwnicy Zwiï¿½zani walkï¿½ z rojem automatycznie otrzymujï¿½ 1 Ranï¿½ pod koniec kaï¿½dej Rundy,gdy rï¿½j opada na wszystko w pobliï¿½u. Rï¿½j ma piï¿½ï¿½ razy wiï¿½cej ï¿½ywotnoï¿½ci niï¿½ normalny okaz danego stworzenia i dostaje +10 do Walki Wrï¿½cz. Wszelkie prï¿½by strzelania do roju majï¿½ premiï¿½ +40 do trafienia. Rï¿½j ignoruje wszelkie zasady Rozmiaru stworzeï¿½.
+Rzucanie Czarï¿½w (rï¿½ne)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Dowolne)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Magia Prosta)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Metalu)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Niebios)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Ognia)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (ï¿½wiatï¿½a)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (ï¿½ycia)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Chaos)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Demonologia)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Nekromancja)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (ï¿½mierï¿½)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Zwierzï¿½t)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Cienia)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Nurgle)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Slaanesh)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Tzeentch)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Guï¿½larstwo)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Rzucanie Czarï¿½w (Czarownictwo)
+Stworzenie potrafi rzucaï¿½ wszystkie lub wybrane zaklï¿½cia Tradycji Magii podanej w nawiasie.
+Sieï¿½ (wartoï¿½ï¿½)
+Stworzenie moï¿½e tworzyï¿½ sieci sï¿½uï¿½ï¿½ce do ï¿½apania niebacznych wrogï¿½w. Za kaï¿½dym razem,gdy stwï¿½r trafia przeciwnikï¿½w,dostajï¿½ oni 1 Stan Pochwycenie o Sile rï¿½wnej podanej wartoï¿½ci. Patrz: strona 168.
+Sieï¿½ (40)
+Stworzenie moï¿½e tworzyï¿½ sieci sï¿½uï¿½ï¿½ce do ï¿½apania niebacznych wrogï¿½w. Za kaï¿½dym razem,gdy stwï¿½r trafia przeciwnikï¿½w,dostajï¿½ oni 1 Stan Pochwycenie o Sile rï¿½wnej podanej wartoï¿½ci. Patrz: strona 168.
+Siï¿½acz
+Stworzenie jest ciï¿½kie i brutalne. Dostaje -1 do Szybkoï¿½ci,-10 do Zwinnoï¿½ci oraz +10 do Siï¿½y i Wytrzymaï¿½oï¿½ci.
 Skoczny
-Stworzenie potrafi wysoko podskakiwaæ dziêki silnym koñczynom,magii albo szcz¹tkowym skrzyd³om. Gdy Szar¿uje lub Biegnie,podwaja swoj¹ Szybkoœæ i mo¿e ignorowaæ wszelkie przeszkody terenowe oraz postacie,przeskakuj¹c nad nimi.
+Stworzenie potrafi wysoko podskakiwaï¿½ dziï¿½ki silnym koï¿½czynom,magii albo szczï¿½tkowym skrzydï¿½om. Gdy Szarï¿½uje lub Biegnie,podwaja swojï¿½ Szybkoï¿½ï¿½ i moï¿½e ignorowaï¿½ wszelkie przeszkody terenowe oraz postacie,przeskakujï¿½c nad nimi.
 Skryty
-Stworzenie jest wyj¹tkowo skryte. Dodaje wartoœæ swojego Bonusu ze Zwinnoœci do PS wszystkich Testów Skradania.
-Spaczenie Umys³u
-Umys³ stworzenia przepe³nia Chaos. Wykonaj dla niego rzut w Tabeli Zepsucia Psychicznego na stronie 185.
-Spaczenie (si³a)
-Stworzenie jest napiêtnowane przez Chaos lub przepe³nione mroczn¹ magi¹. Si³a spaczenia podana jest w nawiasie. Patrz: str. 182.
+Stworzenie jest wyjï¿½tkowo skryte. Dodaje wartoï¿½ï¿½ swojego Bonusu ze Zwinnoï¿½ci do PS wszystkich Testï¿½w Skradania.
+Spaczenie Umysï¿½u
+Umysï¿½ stworzenia przepeï¿½nia Chaos. Wykonaj dla niego rzut w Tabeli Zepsucia Psychicznego na stronie 185.
+Spaczenie (siï¿½a)
+Stworzenie jest napiï¿½tnowane przez Chaos lub przepeï¿½nione mrocznï¿½ magiï¿½. Siï¿½a spaczenia podana jest w nawiasie. Patrz: str. 182.
 Spaczenie (Pomniejsze)
-Stworzenie jest napiêtnowane przez Chaos lub przepe³nione mroczn¹ magi¹. Si³a spaczenia podana jest w nawiasie. Patrz: str. 182.
-Spaczenie (Œrednie)
-Stworzenie jest napiêtnowane przez Chaos lub przepe³nione mroczn¹ magi¹. Si³a spaczenia podana jest w nawiasie. Patrz: str. 182.
-Spaczenie (Wiêksze)
-Stworzenie jest napiêtnowane przez Chaos lub przepe³nione mroczn¹ magi¹. Si³a spaczenia podana jest w nawiasie. Patrz: str. 182.
+Stworzenie jest napiï¿½tnowane przez Chaos lub przepeï¿½nione mrocznï¿½ magiï¿½. Siï¿½a spaczenia podana jest w nawiasie. Patrz: str. 182.
+Spaczenie (ï¿½rednie)
+Stworzenie jest napiï¿½tnowane przez Chaos lub przepeï¿½nione mrocznï¿½ magiï¿½. Siï¿½a spaczenia podana jest w nawiasie. Patrz: str. 182.
+Spaczenie (Wiï¿½ksze)
+Stworzenie jest napiï¿½tnowane przez Chaos lub przepeï¿½nione mrocznï¿½ magiï¿½. Siï¿½a spaczenia podana jest w nawiasie. Patrz: str. 182.
 Sprytny
-Stworzenie jest wyj¹tkowo bystre. Dostaje +20 do Inteligencji i +10 do Inicjatywy.
-Staje Dêba
-W ramach swojego Ruchu stworzenie mo¿e wykonaæ atak Tupniêciem,jeœli jest wiêksze od przeciwnika (patrz Rozmiar).
-Strach (wartoœæ)
-Stworzenie wywo³uje nienaturalny Strach w innych istotach. Poziom Strachu równy jest podanej wartoœci. Patrz: strona 190.
+Stworzenie jest wyjï¿½tkowo bystre. Dostaje +20 do Inteligencji i +10 do Inicjatywy.
+Staje Dï¿½ba
+W ramach swojego Ruchu stworzenie moï¿½e wykonaï¿½ atak Tupniï¿½ciem,jeï¿½li jest wiï¿½ksze od przeciwnika (patrz Rozmiar).
+Strach (wartoï¿½ï¿½)
+Stworzenie wywoï¿½uje nienaturalny Strach w innych istotach. Poziom Strachu rï¿½wny jest podanej wartoï¿½ci. Patrz: strona 190.
 Strach (2)
-Stworzenie wywo³uje nienaturalny Strach w innych istotach. Poziom Strachu równy jest podanej wartoœci. Patrz: strona 190.
+Stworzenie wywoï¿½uje nienaturalny Strach w innych istotach. Poziom Strachu rï¿½wny jest podanej wartoï¿½ci. Patrz: strona 190.
 Strach (4)
-Stworzenie wywo³uje nienaturalny Strach w innych istotach. Poziom Strachu równy jest podanej wartoœci. Patrz: strona 190.
-Strzelanie +Obra¿enia (Zasiêg)
-Stworzenie dysponuje broni¹ dystansow¹. Broñ zadaje podane Obra¿enia,a jej zasiêg w metrach podany jest w nawiasie.
+Stworzenie wywoï¿½uje nienaturalny Strach w innych istotach. Poziom Strachu rï¿½wny jest podanej wartoï¿½ci. Patrz: strona 190.
+Strzelanie +Obraï¿½enia (Zasiï¿½g)
+Stworzenie dysponuje broniï¿½ dystansowï¿½. Broï¿½ zadaje podane Obraï¿½enia,a jej zasiï¿½g w metrach podany jest w nawiasie.
 Strzelanie +8 (50)
-Stworzenie dysponuje broni¹ dystansow¹. Broñ zadaje podane Obra¿enia,a jej zasiêg w metrach podany jest w nawiasie.
+Stworzenie dysponuje broniï¿½ dystansowï¿½. Broï¿½ zadaje podane Obraï¿½enia,a jej zasiï¿½g w metrach podany jest w nawiasie.
 Strzelanie +7 (25)
-Stworzenie dysponuje broni¹ dystansow¹. Broñ zadaje podane Obra¿enia,a jej zasiêg w metrach podany jest w nawiasie.
+Stworzenie dysponuje broniï¿½ dystansowï¿½. Broï¿½ zadaje podane Obraï¿½enia,a jej zasiï¿½g w metrach podany jest w nawiasie.
 Strzelanie +9 (150)
-Stworzenie dysponuje broni¹ dystansow¹. Broñ zadaje podane Obra¿enia,a jej zasiêg w metrach podany jest w nawiasie.
-Sza³ Bojowy
-Stworzenie mo¿e wpadaæ w Sza³ Bojowy. Patrz: strona 190.
+Stworzenie dysponuje broniï¿½ dystansowï¿½. Broï¿½ zadaje podane Obraï¿½enia,a jej zasiï¿½g w metrach podany jest w nawiasie.
+Szaï¿½ Bojowy
+Stworzenie moï¿½e wpadaï¿½ w Szaï¿½ Bojowy. Patrz: strona 190.
 Szybki
-Stworzenie porusza siê niespodziewanie szybko. Dostaje +1 do Szybkoœci i +10 do Zwinnoœci.
+Stworzenie porusza siï¿½ niespodziewanie szybko. Dostaje +1 do Szybkoï¿½ci i +10 do Zwinnoï¿½ci.
 Terytorialny
-To stworzenie strze¿e okreœlonego obszaru lub miejsca. Bêdzie walczy³o do œmierci w jego obronie i normalnie nie bêdzie œciga³o wrogów,jeœli uciekn¹ z tego obszaru.
+To stworzenie strzeï¿½e okreï¿½lonego obszaru lub miejsca. Bï¿½dzie walczyï¿½o do ï¿½mierci w jego obronie i normalnie nie bï¿½dzie ï¿½cigaï¿½o wrogï¿½w,jeï¿½li ucieknï¿½ z tego obszaru.
 Tropiciel
-Tropiciele skutecznie œledz¹ swoje ofiary,zazwyczaj za pomoc¹ wêchu lub s³uchu. Do wszystkich Testów Tropienia dodaj¹ PS równe swojemu Bonusowi z Inicjatywy.
+Tropiciele skutecznie ï¿½ledzï¿½ swoje ofiary,zazwyczaj za pomocï¿½ wï¿½chu lub sï¿½uchu. Do wszystkich Testï¿½w Tropienia dodajï¿½ PS rï¿½wne swojemu Bonusowi z Inicjatywy.
 Twardy
-Stworzenie jest odporniejsze na obra¿enia ni¿ normalnie i nie odpuszcza. Dostaje +10 do Wytrzyma³oœci i Si³y Woli.
+Stworzenie jest odporniejsze na obraï¿½enia niï¿½ normalnie i nie odpuszcza. Dostaje +10 do Wytrzymaï¿½oï¿½ci i Siï¿½y Woli.
 Twardziel
-Stworzenie jest w stanie przyj¹æ wiêcej obra¿eñ ni¿ wiêkszoœæ innych istot. Zwiêksz ¯ywotnoœæ stworzenia o wartoœæ równ¹ jego Bonusowi z Wytrzyma³oœci (zastosuj to przed wszelkimi modyfikatorami Rozmiaru).
-Ugryzienie +Obra¿enia
-W swojej Turze stworzenie mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê,z Obra¿eniami o podanej wartoœci (zawieraj¹ ju¿ one Bonus z Si³y).
+Stworzenie jest w stanie przyjï¿½ï¿½ wiï¿½cej obraï¿½eï¿½ niï¿½ wiï¿½kszoï¿½ï¿½ innych istot. Zwiï¿½ksz ï¿½ywotnoï¿½ï¿½ stworzenia o wartoï¿½ï¿½ rï¿½wnï¿½ jego Bonusowi z Wytrzymaï¿½oï¿½ci (zastosuj to przed wszelkimi modyfikatorami Rozmiaru).
+Ugryzienie +Obraï¿½enia
+W swojej Turze stworzenie moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½,z Obraï¿½eniami o podanej wartoï¿½ci (zawierajï¿½ juï¿½ one Bonus z Siï¿½y).
 Ugryzienie +5
-W swojej Turze stworzenie mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê,z Obra¿eniami o podanej wartoœci (zawieraj¹ ju¿ one Bonus z Si³y).
+W swojej Turze stworzenie moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½,z Obraï¿½eniami o podanej wartoï¿½ci (zawierajï¿½ juï¿½ one Bonus z Siï¿½y).
 Ugryzienie +8
-W swojej Turze stworzenie mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê,z Obra¿eniami o podanej wartoœci (zawieraj¹ ju¿ one Bonus z Si³y).
+W swojej Turze stworzenie moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½,z Obraï¿½eniami o podanej wartoï¿½ci (zawierajï¿½ juï¿½ one Bonus z Siï¿½y).
 Ugryzienie +9
-W swojej Turze stworzenie mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê,z Obra¿eniami o podanej wartoœci (zawieraj¹ ju¿ one Bonus z Si³y).
+W swojej Turze stworzenie moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½,z Obraï¿½eniami o podanej wartoï¿½ci (zawierajï¿½ juï¿½ one Bonus z Siï¿½y).
 Ugryzienie +10
-W swojej Turze stworzenie mo¿e wykonaæ Darmowy Atak,wydaj¹c 1 Przewagê,z Obra¿eniami o podanej wartoœci (zawieraj¹ ju¿ one Bonus z Si³y).
+W swojej Turze stworzenie moï¿½e wykonaï¿½ Darmowy Atak,wydajï¿½c 1 Przewagï¿½,z Obraï¿½eniami o podanej wartoï¿½ci (zawierajï¿½ juï¿½ one Bonus z Siï¿½y).
 Upiorne Wycie
-Stworzenie potrafi wydawaæ mro¿¹ce krew w ¿y³ach wycie,zabójcze dla tych,którzy je us³ysz¹. W swojej Turze stworzenie mo¿e zu¿yæ wszystkie Przewagi (minimalnie 2),aby wydaæ z siebie koszmarny wrzask. Jest to Darmowy Atak. Wszystkie ¿ywe cele w promieniu tylu metrów,ile wynosi Inicjatywa stwora,natychmiast dostaj¹ 3 Stany Og³uszenie i odnosz¹ 1k10 Ran ignoruj¹cych Bonus z Wytrzyma³oœci i Punkty Pancerza. Ponadto objête tym efektem postacie musz¹ zdaæ Przeciêtny (+20) Test Odpornoœci,inaczej dostaj¹ Stan Panika.
+Stworzenie potrafi wydawaï¿½ mroï¿½ï¿½ce krew w ï¿½yï¿½ach wycie,zabï¿½jcze dla tych,ktï¿½rzy je usï¿½yszï¿½. W swojej Turze stworzenie moï¿½e zuï¿½yï¿½ wszystkie Przewagi (minimalnie 2),aby wydaï¿½ z siebie koszmarny wrzask. Jest to Darmowy Atak. Wszystkie ï¿½ywe cele w promieniu tylu metrï¿½w,ile wynosi Inicjatywa stwora,natychmiast dostajï¿½ 3 Stany Ogï¿½uszenie i odnoszï¿½ 1k10 Ran ignorujï¿½cych Bonus z Wytrzymaï¿½oï¿½ci i Punkty Pancerza. Ponadto objï¿½te tym efektem postacie muszï¿½ zdaï¿½ Przeciï¿½tny (+20) Test Odpornoï¿½ci,inaczej dostajï¿½ Stan Panika.
 Uprzedzenie (Obiekt)
 Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
-Uprzedzenie (Szczup³e Osoby)
+Uprzedzenie (Szczupï¿½e Osoby)
 Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
 Uprzedzenie (wybierz jedno)
 Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
 Uprzedzenie (wybierz dwa)
 Stworzenie po prostu nie lubi Obiektu. Patrz: zasady Uprzedzenia na stronie 190.
 Wampiryczny
-Stworzenie ¿ywi siê krwi¹ i czerpie z tego wielk¹ si³ê fizyczn¹. Za ka¿dym razem,gdy wykona udane Ugryzienie odpowiedniego przeciwnika,leczy tyle ¯ywotnoœci,ile traci jego przeciwnik. Takie picie krwi to jedyny sposób,w jaki mo¿e siê leczyæ.
-Widzenie w Ciemnoœci
-Stworzenie ma Talent Widzenie w Ciemnoœci. Patrz: strona 145.
+Stworzenie ï¿½ywi siï¿½ krwiï¿½ i czerpie z tego wielkï¿½ siï¿½ï¿½ fizycznï¿½. Za kaï¿½dym razem,gdy wykona udane Ugryzienie odpowiedniego przeciwnika,leczy tyle ï¿½ywotnoï¿½ci,ile traci jego przeciwnik. Takie picie krwi to jedyny sposï¿½b,w jaki moï¿½e siï¿½ leczyï¿½.
+Widzenie w Ciemnoï¿½ci
+Stworzenie ma Talent Widzenie w Ciemnoï¿½ci. Patrz: strona 145.
 Widzenie w Mroku
-Stworzenie potrafi widzieæ w ciemnoœci jak w œwietle dziennym.
+Stworzenie potrafi widzieï¿½ w ciemnoï¿½ci jak w ï¿½wietle dziennym.
 Wojowniczy
-Stworzenie uwielbia zwyciê¿aæ w walce. Dopóki ma wiêcej Przewag ni¿ przeciwnik,jest niewra¿liwe na efekty psychologiczne.
-Wrogoœæ (Obiekt)
-Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
-Wrogoœæ (Zielonoskórzy)
-Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
-Wrogoœæ (Wszystko)
-Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
-Wrogoœæ (wybierz jedn¹)
-Stworzenie naprawdê nie lubi Obiektu. Patrz: zasady Wrogoœci na stronie 191.
+Stworzenie uwielbia zwyciï¿½aï¿½ w walce. Dopï¿½ki ma wiï¿½cej Przewag niï¿½ przeciwnik,jest niewraï¿½liwe na efekty psychologiczne.
+Wrogoï¿½ï¿½ (Obiekt)
+Stworzenie naprawdï¿½ nie lubi Obiektu. Patrz: zasady Wrogoï¿½ci na stronie 191.
+Wrogoï¿½ï¿½ (Zielonoskï¿½rzy)
+Stworzenie naprawdï¿½ nie lubi Obiektu. Patrz: zasady Wrogoï¿½ci na stronie 191.
+Wrogoï¿½ï¿½ (Wszystko)
+Stworzenie naprawdï¿½ nie lubi Obiektu. Patrz: zasady Wrogoï¿½ci na stronie 191.
+Wrogoï¿½ï¿½ (wybierz jednï¿½)
+Stworzenie naprawdï¿½ nie lubi Obiektu. Patrz: zasady Wrogoï¿½ci na stronie 191.
 Wspinacz
-Stworzenie potrafi bez wysi³ku wspinaæ siê po pionowych powierzchniach,a nawet poruszaæ siê po suficie,gotowe opaœæ na niczego niespodziewaj¹c¹ siê ofiarê. Porusza siê z pe³n¹ Szybkoœci¹ po dowolnej odpowiedniej powierzchni i automatycznie przechodzi wszystkie Testy Wspinaczki.
+Stworzenie potrafi bez wysiï¿½ku wspinaï¿½ siï¿½ po pionowych powierzchniach,a nawet poruszaï¿½ siï¿½ po suficie,gotowe opaï¿½ï¿½ na niczego niespodziewajï¿½cï¿½ siï¿½ ofiarï¿½. Porusza siï¿½ z peï¿½nï¿½ Szybkoï¿½ciï¿½ po dowolnej odpowiedniej powierzchni i automatycznie przechodzi wszystkie Testy Wspinaczki.
 Wymiot
-Stworzenie potrafi wyrzucaæ z siebie strumieñ ¿r¹cych wymiocin,pokrywaj¹c przeciwników cuchn¹cym,na wpó³ strawionym œluzem. W swojej Turze,wydaj¹c 3 Przewagi,stworzenie mo¿e wykonaæ Wymiot jako Darmowy Atak. Stworzenie wybiera 1 cel,który widzi w promieniu tylu metrów,ile wynosi jego Bonus z Wytrzyma³oœci,i wymiotuje. Trafione zostaj¹ tak¿e wszystkie cele w promieniu dwóch metrów od tego celu. Stworzenie przeprowadza Test Przeciwstawny Umiejêtnoœci Strzeleckie/ Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Test jest zazwyczaj £atwy (+40) dla wymiotuj¹cego stwora ze wzglêdu na bliski dystans oraz Wymagaj¹cy (+0) dla przeciwników. Wszystkie cele,które przegra³y,otrzymuj¹ trafienie z Obra¿eniami równymi tyle,ile wynosi Bonus z Wytrzyma³oœci +4 stwora,oraz dostaj¹ Stan Oszo³omiony. Noszony przez objête efektem postaci pancerze oraz wszelka broñ dostaj¹ 1 punkt Uszkodzeñ od kwasowych wymiocin.
-Wyszkolony (wyuczone umiejêtnoœci)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Umiejêtnoœci znane zwierzêciu podane s¹ w nawiasie. Mo¿esz tworzyæ w³asne wyszkolone umiejêtnoœci. Aportuj¹cy: Zwierzê zosta³o nauczone aportowania. Normalnie jest to zarezerwowane dla psów i podobnych stworzeñ. Bojowy: Zwierzê zosta³o przyuczone do udzia³u w walce i dostaje +10 do Walki Wrêcz. Ponadto mo¿e ignorowaæ Cechê Stworzenia P³ochliwy w odniesieniu do g³oœnych dŸwiêków. Maskotka: Zwierzê zosta³o nauczone zabawiania innych. Dostaje premiê +10 do odpowiednich Testów Muzyki,Sztuki lub Wystêpów. Magiczny: Zwierzê zosta³o nauczone ignorowania cechy P³ochliwy w odniesieniu do magii. To cecha wymagana przez czarodziejów,którzy chc¹ kupiæ konia. Poci¹gowy: Zwierzê zosta³o nauczone ci¹gn¹æ karetê,wóz,p³ug i tym podobne. Powracaj¹cy: Zwierzê zosta³o nauczone powracania do domu,gdy zostanie wypuszczone lub zgubione. Stró¿uj¹cy: Zwierzê zosta³o nauczone pozostawania w miejscu lub patrolowania okolicy jako stra¿nik. Uzyskuje Cechê Stworzenia Terytorialny. Ujarzmiony: Zwierzê zosta³o nauczone ignorowania swojej cechy Zwierzêcy. Dostaje 2k10 Og³ady. Wierzchowiec: Zwierzê pozwala siê dosiadaæ. Niektóre stworzenia s¹ wyj¹tkowo wojownicze i nie zaakceptuj¹ jeŸdŸca,który nie posiada odpowiedniej Umiejêtnoœci. Zatem jeœli chcesz dosiadaæ gryfa,musisz mieæ Umiejêtnoœæ JeŸdziectwo (Gryfy).
+Stworzenie potrafi wyrzucaï¿½ z siebie strumieï¿½ ï¿½rï¿½cych wymiocin,pokrywajï¿½c przeciwnikï¿½w cuchnï¿½cym,na wpï¿½ strawionym ï¿½luzem. W swojej Turze,wydajï¿½c 3 Przewagi,stworzenie moï¿½e wykonaï¿½ Wymiot jako Darmowy Atak. Stworzenie wybiera 1 cel,ktï¿½ry widzi w promieniu tylu metrï¿½w,ile wynosi jego Bonus z Wytrzymaï¿½oï¿½ci,i wymiotuje. Trafione zostajï¿½ takï¿½e wszystkie cele w promieniu dwï¿½ch metrï¿½w od tego celu. Stworzenie przeprowadza Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/ Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Test jest zazwyczaj ï¿½atwy (+40) dla wymiotujï¿½cego stwora ze wzglï¿½du na bliski dystans oraz Wymagajï¿½cy (+0) dla przeciwnikï¿½w. Wszystkie cele,ktï¿½re przegraï¿½y,otrzymujï¿½ trafienie z Obraï¿½eniami rï¿½wnymi tyle,ile wynosi Bonus z Wytrzymaï¿½oï¿½ci +4 stwora,oraz dostajï¿½ Stan Oszoï¿½omiony. Noszony przez objï¿½te efektem postaci pancerze oraz wszelka broï¿½ dostajï¿½ 1 punkt Uszkodzeï¿½ od kwasowych wymiocin.
+Wyszkolony (wyuczone umiejï¿½tnoï¿½ci)
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Umiejï¿½tnoï¿½ci znane zwierzï¿½ciu podane sï¿½ w nawiasie. Moï¿½esz tworzyï¿½ wï¿½asne wyszkolone umiejï¿½tnoï¿½ci. Aportujï¿½cy: Zwierzï¿½ zostaï¿½o nauczone aportowania. Normalnie jest to zarezerwowane dla psï¿½w i podobnych stworzeï¿½. Bojowy: Zwierzï¿½ zostaï¿½o przyuczone do udziaï¿½u w walce i dostaje +10 do Walki Wrï¿½cz. Ponadto moï¿½e ignorowaï¿½ Cechï¿½ Stworzenia Pï¿½ochliwy w odniesieniu do gï¿½oï¿½nych dï¿½wiï¿½kï¿½w. Maskotka: Zwierzï¿½ zostaï¿½o nauczone zabawiania innych. Dostaje premiï¿½ +10 do odpowiednich Testï¿½w Muzyki,Sztuki lub Wystï¿½pï¿½w. Magiczny: Zwierzï¿½ zostaï¿½o nauczone ignorowania stats Pï¿½ochliwy w odniesieniu do magii. To cecha wymagana przez czarodziejï¿½w,ktï¿½rzy chcï¿½ kupiï¿½ konia. Pociï¿½gowy: Zwierzï¿½ zostaï¿½o nauczone ciï¿½gnï¿½ï¿½ karetï¿½,wï¿½z,pï¿½ug i tym podobne. Powracajï¿½cy: Zwierzï¿½ zostaï¿½o nauczone powracania do domu,gdy zostanie wypuszczone lub zgubione. Strï¿½ujï¿½cy: Zwierzï¿½ zostaï¿½o nauczone pozostawania w miejscu lub patrolowania okolicy jako straï¿½nik. Uzyskuje Cechï¿½ Stworzenia Terytorialny. Ujarzmiony: Zwierzï¿½ zostaï¿½o nauczone ignorowania swojej stats Zwierzï¿½cy. Dostaje 2k10 Ogï¿½ady. Wierzchowiec: Zwierzï¿½ pozwala siï¿½ dosiadaï¿½. Niektï¿½re stworzenia sï¿½ wyjï¿½tkowo wojownicze i nie zaakceptujï¿½ jeï¿½dï¿½ca,ktï¿½ry nie posiada odpowiedniej Umiejï¿½tnoï¿½ci. Zatem jeï¿½li chcesz dosiadaï¿½ gryfa,musisz mieï¿½ Umiejï¿½tnoï¿½ï¿½ Jeï¿½dziectwo (Gryfy).
 Wyszkolony (Bojowy)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Bojowy: Zwierzê zosta³o przyuczone do udzia³u w walce i dostaje +10 do Walki Wrêcz. Ponadto mo¿e ignorowaæ Cechê Stworzenia P³ochliwy w odniesieniu do g³oœnych dŸwiêków. 
-Wyszkolony (Powracaj¹cy)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Powracaj¹cy: Zwierzê zosta³o nauczone powracania do domu,gdy zostanie wypuszczone lub zgubione. 
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Bojowy: Zwierzï¿½ zostaï¿½o przyuczone do udziaï¿½u w walce i dostaje +10 do Walki Wrï¿½cz. Ponadto moï¿½e ignorowaï¿½ Cechï¿½ Stworzenia Pï¿½ochliwy w odniesieniu do gï¿½oï¿½nych dï¿½wiï¿½kï¿½w. 
+Wyszkolony (Powracajï¿½cy)
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Powracajï¿½cy: Zwierzï¿½ zostaï¿½o nauczone powracania do domu,gdy zostanie wypuszczone lub zgubione. 
 Wyszkolony (Ujarzmiony)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Ujarzmiony: Zwierzê zosta³o nauczone ignorowania swojej cechy Zwierzêcy. Dostaje 2k10 Og³ady. 
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Ujarzmiony: Zwierzï¿½ zostaï¿½o nauczone ignorowania swojej stats Zwierzï¿½cy. Dostaje 2k10 Ogï¿½ady.
 Wyszkolony (Wierzchowiec)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Wierzchowiec: Zwierzê pozwala siê dosiadaæ. Niektóre stworzenia s¹ wyj¹tkowo wojownicze i nie zaakceptuj¹ jeŸdŸca,który nie posiada odpowiedniej Umiejêtnoœci. Zatem jeœli chcesz dosiadaæ gryfa,musisz mieæ Umiejêtnoœæ JeŸdziectwo (Gryfy).
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Wierzchowiec: Zwierzï¿½ pozwala siï¿½ dosiadaï¿½. Niektï¿½re stworzenia sï¿½ wyjï¿½tkowo wojownicze i nie zaakceptujï¿½ jeï¿½dï¿½ca,ktï¿½ry nie posiada odpowiedniej Umiejï¿½tnoï¿½ci. Zatem jeï¿½li chcesz dosiadaï¿½ gryfa,musisz mieï¿½ Umiejï¿½tnoï¿½ï¿½ Jeï¿½dziectwo (Gryfy).
 Wyszkolony (Maskotka)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Maskotka: Zwierzê zosta³o nauczone zabawiania innych. Dostaje premiê +10 do odpowiednich Testów Muzyki,Sztuki lub Wystêpów. 
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Maskotka: Zwierzï¿½ zostaï¿½o nauczone zabawiania innych. Dostaje premiï¿½ +10 do odpowiednich Testï¿½w Muzyki,Sztuki lub Wystï¿½pï¿½w. 
 Wyszkolony (Magiczny)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Magiczny: Zwierzê zosta³o nauczone ignorowania cechy P³ochliwy w odniesieniu do magii. To cecha wymagana przez czarodziejów,którzy chc¹ kupiæ konia. 
-Wyszkolony (Aportuj¹cy)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Aportuj¹cy: Zwierzê zosta³o nauczone aportowania. Normalnie jest to zarezerwowane dla psów i podobnych stworzeñ. 
-Wyszkolony (Stró¿uj¹cy)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Stró¿uj¹cy: Zwierzê zosta³o nauczone pozostawania w miejscu lub patrolowania okolicy jako stra¿nik. Uzyskuje Cechê Stworzenia Terytorialny. 
-Wyszkolony (Poci¹gowy)
-Ta cecha reprezentuje zwierzêta,które zosta³y wyszkolone z u¿yciem Umiejêtnoœci Tresura. Poci¹gowy: Zwierzê zosta³o nauczone ci¹gn¹æ karetê,wóz,p³ug i tym podobne. 
-Zaka¿ony
-Skóra stworzenia jest pe³na gryz¹cych pche³ lub czegoœ podobnego. Wszyscy przeciwnicy dostaj¹ karê -10 do trafienia w walce w zwarciu,poniewa¿ paso¿yty rozpraszaj¹ ich i irytuj¹.
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Magiczny: Zwierzï¿½ zostaï¿½o nauczone ignorowania stats Pï¿½ochliwy w odniesieniu do magii. To cecha wymagana przez czarodziejï¿½w,ktï¿½rzy chcï¿½ kupiï¿½ konia.
+Wyszkolony (Aportujï¿½cy)
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Aportujï¿½cy: Zwierzï¿½ zostaï¿½o nauczone aportowania. Normalnie jest to zarezerwowane dla psï¿½w i podobnych stworzeï¿½. 
+Wyszkolony (Strï¿½ujï¿½cy)
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Strï¿½ujï¿½cy: Zwierzï¿½ zostaï¿½o nauczone pozostawania w miejscu lub patrolowania okolicy jako straï¿½nik. Uzyskuje Cechï¿½ Stworzenia Terytorialny. 
+Wyszkolony (Pociï¿½gowy)
+Ta cecha reprezentuje zwierzï¿½ta,ktï¿½re zostaï¿½y wyszkolone z uï¿½yciem Umiejï¿½tnoï¿½ci Tresura. Pociï¿½gowy: Zwierzï¿½ zostaï¿½o nauczone ciï¿½gnï¿½ï¿½ karetï¿½,wï¿½z,pï¿½ug i tym podobne. 
+Zakaï¿½ony
+Skï¿½ra stworzenia jest peï¿½na gryzï¿½cych pcheï¿½ lub czegoï¿½ podobnego. Wszyscy przeciwnicy dostajï¿½ karï¿½ -10 do trafienia w walce w zwarciu,poniewaï¿½ pasoï¿½yty rozpraszajï¿½ ich i irytujï¿½.
 Zaraza
-Stworzenie (albo jego broñ) przenosi paskudn¹ infekcjê. Jeœli spowoduje utratê ¯ywotnoœci ¿yj¹cego przeciwnika,musi on zdaæ £atwy (+40) Test Odpornoœci,inaczej nabawi siê Ropiej¹cej Rany (patrz strona 187).
+Stworzenie (albo jego broï¿½) przenosi paskudnï¿½ infekcjï¿½. Jeï¿½li spowoduje utratï¿½ ï¿½ywotnoï¿½ci ï¿½yjï¿½cego przeciwnika,musi on zdaï¿½ ï¿½atwy (+40) Test Odpornoï¿½ci,inaczej nabawi siï¿½ Ropiejï¿½cej Rany (patrz strona 187).
 Ziemnowodny
-Stworzenie jest w swoim ¿ywiole w wodzie. Mo¿e dodaæ swój Bonus ze Zwinnoœci do PS wszystkich testów P³ywania i poruszaæ siê w wodzie z pe³n¹ Szybkoœci¹.
+Stworzenie jest w swoim ï¿½ywiole w wodzie. Moï¿½e dodaï¿½ swï¿½j Bonus ze Zwinnoï¿½ci do PS wszystkich testï¿½w Pï¿½ywania i poruszaï¿½ siï¿½ w wodzie z peï¿½nï¿½ Szybkoï¿½ciï¿½.
 Zimnokrwisty
-Stworzenie jest zimnokrwiste i nie dzia³a pochopnie. Mo¿e odwróciæ wszystkie nieudane Testy Si³y Woli.
-Zioniêcie +Obra¿enia (typ)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. Co wiêcej,jeœli przy Cesze Stworzenia wymieniony jest jeden z opisanych ni¿ej typów zioniêcia,zastosuj wskazane zasady. • Dym: Obszar wype³nia siê dymem,który zas³ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzyma³oœci. • Elektrycznoœæ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Oszo³omienie. • Kwas: Noszony przez objête efektem postaci pancerze oraz wszelka broñ dostaj¹ 1 punkt Uszkodzeñ. • Ogieñ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Podpalenie. • Trucizna: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Zatrucie. • Zimno: Cele dostaj¹ jeden Stan Oszo³omiony za ka¿de pe³ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zioniêcie +10 (Ogieñ)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. Co wiêcej,jeœli przy Cesze Stworzenia wymieniony jest jeden z opisanych ni¿ej typów zioniêcia,zastosuj wskazane zasady. Ogieñ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Podpalenie. Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zioniêcie (Jad)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. • Trucizna: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Zatrucie. Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zioniêcie (Pijackie Rzygniêcie)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. Co wiêcej,jeœli przy Cesze Stworzenia wymieniony jest jeden z opisanych ni¿ej typów zioniêcia,zastosuj wskazane zasady. • Dym: Obszar wype³nia siê dymem,który zas³ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzyma³oœci. • Elektrycznoœæ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Oszo³omienie. • Kwas: Noszony przez objête efektem postaci pancerze oraz wszelka broñ dostaj¹ 1 punkt Uszkodzeñ. • Ogieñ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Podpalenie. • Trucizna: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Zatrucie. • Zimno: Cele dostaj¹ jeden Stan Oszo³omiony za ka¿de pe³ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zioniêcie (Gaz)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. Co wiêcej,jeœli przy Cesze Stworzenia wymieniony jest jeden z opisanych ni¿ej typów zioniêcia,zastosuj wskazane zasady. • Dym: Obszar wype³nia siê dymem,który zas³ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzyma³oœci. • Elektrycznoœæ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Oszo³omienie. • Kwas: Noszony przez objête efektem postaci pancerze oraz wszelka broñ dostaj¹ 1 punkt Uszkodzeñ. • Ogieñ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Podpalenie. • Trucizna: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Zatrucie. • Zimno: Cele dostaj¹ jeden Stan Oszo³omiony za ka¿de pe³ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zioniêcie +15 (ró¿ne)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. Co wiêcej,jeœli przy Cesze Stworzenia wymieniony jest jeden z opisanych ni¿ej typów zioniêcia,zastosuj wskazane zasady. • Dym: Obszar wype³nia siê dymem,który zas³ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzyma³oœci. • Elektrycznoœæ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Oszo³omienie. • Kwas: Noszony przez objête efektem postaci pancerze oraz wszelka broñ dostaj¹ 1 punkt Uszkodzeñ. • Ogieñ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Podpalenie. • Trucizna: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Zatrucie. • Zimno: Cele dostaj¹ jeden Stan Oszo³omiony za ka¿de pe³ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zioniêcie (Kwas)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. Co wiêcej,jeœli przy Cesze Stworzenia wymieniony jest jeden z opisanych ni¿ej typów zioniêcia,zastosuj wskazane zasady. • Dym: Obszar wype³nia siê dymem,który zas³ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzyma³oœci. • Elektrycznoœæ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Oszo³omienie. • Kwas: Noszony przez objête efektem postaci pancerze oraz wszelka broñ dostaj¹ 1 punkt Uszkodzeñ. • Ogieñ: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Podpalenie. • Trucizna: Obra¿enia ignoruj¹ Punkty Pancerza. Cele otrzymuj¹ Stan Zatrucie. • Zimno: Cele dostaj¹ jeden Stan Oszo³omiony za ka¿de pe³ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zioniêcie +12 (Kwas)
-Stworzenie pos³uguje siê zioniêciem jako potê¿n¹ broni¹. W swojej Turze,kosztem 2 Przewag,mo¿e aktywowaæ Zioniêcie jako Darmowy Atak. Wybierz 1 cel,który stworzenie widzi w promieniu 20 + Bonus z Wytrzyma³oœci metrów. Trafione zostaj¹ wszystkie postacie wokó³ tego celu w promieniu tylu metrów,ile wynosi Bonus z Si³y,podobnie jak wszystkie postacie znajduj¹ce siê miêdzy stworzeniem a celem. PrzeprowadŸ Test Przeciwstawny Umiejêtnoœci Strzeleckie/Unik przeciwko wszystkim objêtym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Ka¿dy cel,który przegra³ Test,otrzymuje trafienie zadaj¹ce wskazan¹ wartoœæ Obra¿eñ. Kwas: Noszony przez objête efektem postaci pancerze oraz wszelka broñ dostaj¹ 1 punkt Uszkodzeñ. Stworzenie jest odporne na w³asne Zioniêcie. Ten atak jest Magiczny.
-Zwierzêcy
-Stworzenie jest nierozumne albo nie potrafi pos³ugiwaæ siê mow¹. Unika ognia i dostaje Stan Panika,jeœli zetknie siê z ogniem. W obronie u¿ywa wy³¹cznie Umiejêtnoœci Unik. Jeœli straci ponad po³owê ¯ywotnoœci,spróbuje uciec,o ile nie chroni swoich m³odych,nie jest osaczone lub nie ma Cechy Stworzenia Terytorialny. W takim przypadku wpada w Sza³ Bojowy (patrz strona 190). Zwierzêce stworzenia nie maj¹ Cechy Og³ada.
-¯ar³oczny
-Stworzenie nieustannie ³aknie œwie¿ego miêsa. Jeœli zabije lub unieruchomi ¿ywego przeciwnika (albo natknie siê na œwie¿e cia³o),musi zdaæ Przeciêtny (+20) Test Si³y Woli,inaczej zaczyna ucztowaæ,trac¹c nastêpn¹ Akcjê i Ruch.
-Wszystkie Cechy Stworzeñ
+Stworzenie jest zimnokrwiste i nie dziaï¿½a pochopnie. Moï¿½e odwrï¿½ciï¿½ wszystkie nieudane Testy Siï¿½y Woli.
+Zioniï¿½cie +Obraï¿½enia (typ)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. Co wiï¿½cej,jeï¿½li przy Cesze Stworzenia wymieniony jest jeden z opisanych niï¿½ej typï¿½w zioniï¿½cia,zastosuj wskazane zasady. ï¿½ Dym: Obszar wypeï¿½nia siï¿½ dymem,ktï¿½ry zasï¿½ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzymaï¿½oï¿½ci. ï¿½ Elektrycznoï¿½ï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Oszoï¿½omienie. ï¿½ Kwas: Noszony przez objï¿½te efektem postaci pancerze oraz wszelka broï¿½ dostajï¿½ 1 punkt Uszkodzeï¿½. ï¿½ Ogieï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Podpalenie. ï¿½ Trucizna: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Zatrucie. ï¿½ Zimno: Cele dostajï¿½ jeden Stan Oszoï¿½omiony za kaï¿½de peï¿½ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zioniï¿½cie +10 (Ogieï¿½)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. Co wiï¿½cej,jeï¿½li przy Cesze Stworzenia wymieniony jest jeden z opisanych niï¿½ej typï¿½w zioniï¿½cia,zastosuj wskazane zasady. Ogieï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Podpalenie. Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zioniï¿½cie (Jad)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. ï¿½ Trucizna: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Zatrucie. Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zioniï¿½cie (Pijackie Rzygniï¿½cie)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. Co wiï¿½cej,jeï¿½li przy Cesze Stworzenia wymieniony jest jeden z opisanych niï¿½ej typï¿½w zioniï¿½cia,zastosuj wskazane zasady. ï¿½ Dym: Obszar wypeï¿½nia siï¿½ dymem,ktï¿½ry zasï¿½ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzymaï¿½oï¿½ci. ï¿½ Elektrycznoï¿½ï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Oszoï¿½omienie. ï¿½ Kwas: Noszony przez objï¿½te efektem postaci pancerze oraz wszelka broï¿½ dostajï¿½ 1 punkt Uszkodzeï¿½. ï¿½ Ogieï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Podpalenie. ï¿½ Trucizna: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Zatrucie. ï¿½ Zimno: Cele dostajï¿½ jeden Stan Oszoï¿½omiony za kaï¿½de peï¿½ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zioniï¿½cie (Gaz)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. Co wiï¿½cej,jeï¿½li przy Cesze Stworzenia wymieniony jest jeden z opisanych niï¿½ej typï¿½w zioniï¿½cia,zastosuj wskazane zasady. ï¿½ Dym: Obszar wypeï¿½nia siï¿½ dymem,ktï¿½ry zasï¿½ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzymaï¿½oï¿½ci. ï¿½ Elektrycznoï¿½ï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Oszoï¿½omienie. ï¿½ Kwas: Noszony przez objï¿½te efektem postaci pancerze oraz wszelka broï¿½ dostajï¿½ 1 punkt Uszkodzeï¿½. ï¿½ Ogieï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Podpalenie. ï¿½ Trucizna: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Zatrucie. ï¿½ Zimno: Cele dostajï¿½ jeden Stan Oszoï¿½omiony za kaï¿½de peï¿½ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zioniï¿½cie +15 (rï¿½ne)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. Co wiï¿½cej,jeï¿½li przy Cesze Stworzenia wymieniony jest jeden z opisanych niï¿½ej typï¿½w zioniï¿½cia,zastosuj wskazane zasady. ï¿½ Dym: Obszar wypeï¿½nia siï¿½ dymem,ktï¿½ry zasï¿½ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzymaï¿½oï¿½ci. ï¿½ Elektrycznoï¿½ï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Oszoï¿½omienie. ï¿½ Kwas: Noszony przez objï¿½te efektem postaci pancerze oraz wszelka broï¿½ dostajï¿½ 1 punkt Uszkodzeï¿½. ï¿½ Ogieï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Podpalenie. ï¿½ Trucizna: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Zatrucie. ï¿½ Zimno: Cele dostajï¿½ jeden Stan Oszoï¿½omiony za kaï¿½de peï¿½ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zioniï¿½cie (Kwas)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. Co wiï¿½cej,jeï¿½li przy Cesze Stworzenia wymieniony jest jeden z opisanych niï¿½ej typï¿½w zioniï¿½cia,zastosuj wskazane zasady. ï¿½ Dym: Obszar wypeï¿½nia siï¿½ dymem,ktï¿½ry zasï¿½ania pole widzenia na tyle Rund,ile wynosi Bonus z Wytrzymaï¿½oï¿½ci. ï¿½ Elektrycznoï¿½ï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Oszoï¿½omienie. ï¿½ Kwas: Noszony przez objï¿½te efektem postaci pancerze oraz wszelka broï¿½ dostajï¿½ 1 punkt Uszkodzeï¿½. ï¿½ Ogieï¿½: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Podpalenie. ï¿½ Trucizna: Obraï¿½enia ignorujï¿½ Punkty Pancerza. Cele otrzymujï¿½ Stan Zatrucie. ï¿½ Zimno: Cele dostajï¿½ jeden Stan Oszoï¿½omiony za kaï¿½de peï¿½ne 5 odniesionych Ran (minimalnie 1). Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zioniï¿½cie +12 (Kwas)
+Stworzenie posï¿½uguje siï¿½ zioniï¿½ciem jako potï¿½nï¿½ broniï¿½. W swojej Turze,kosztem 2 Przewag,moï¿½e aktywowaï¿½ Zioniï¿½cie jako Darmowy Atak. Wybierz 1 cel,ktï¿½ry stworzenie widzi w promieniu 20 + Bonus z Wytrzymaï¿½oï¿½ci metrï¿½w. Trafione zostajï¿½ wszystkie postacie wokï¿½ tego celu w promieniu tylu metrï¿½w,ile wynosi Bonus z Siï¿½y,podobnie jak wszystkie postacie znajdujï¿½ce siï¿½ miï¿½dzy stworzeniem a celem. Przeprowadï¿½ Test Przeciwstawny Umiejï¿½tnoï¿½ci Strzeleckie/Unik przeciwko wszystkim objï¿½tym efektem celom (jeden rzut stwora przeciwko wszystkim poszczegï¿½lnym celom). Kaï¿½dy cel,ktï¿½ry przegraï¿½ Test,otrzymuje trafienie zadajï¿½ce wskazanï¿½ wartoï¿½ï¿½ Obraï¿½eï¿½. Kwas: Noszony przez objï¿½te efektem postaci pancerze oraz wszelka broï¿½ dostajï¿½ 1 punkt Uszkodzeï¿½. Stworzenie jest odporne na wï¿½asne Zioniï¿½cie. Ten atak jest Magiczny.
+Zwierzï¿½cy
+Stworzenie jest nierozumne albo nie potrafi posï¿½ugiwaï¿½ siï¿½ mowï¿½. Unika ognia i dostaje Stan Panika,jeï¿½li zetknie siï¿½ z ogniem. W obronie uï¿½ywa wyï¿½ï¿½cznie Umiejï¿½tnoï¿½ci Unik. Jeï¿½li straci ponad poï¿½owï¿½ ï¿½ywotnoï¿½ci,sprï¿½buje uciec,o ile nie chroni swoich mï¿½odych,nie jest osaczone lub nie ma Cechy Stworzenia Terytorialny. W takim przypadku wpada w Szaï¿½ Bojowy (patrz strona 190). Zwierzï¿½ce stworzenia nie majï¿½ Cechy Ogï¿½ada.
+ï¿½arï¿½oczny
+Stworzenie nieustannie ï¿½aknie ï¿½wieï¿½ego miï¿½sa. Jeï¿½li zabije lub unieruchomi ï¿½ywego przeciwnika (albo natknie siï¿½ na ï¿½wieï¿½e ciaï¿½o),musi zdaï¿½ Przeciï¿½tny (+20) Test Siï¿½y Woli,inaczej zaczyna ucztowaï¿½,tracï¿½c nastï¿½pnï¿½ Akcjï¿½ i Ruch.
+Wszystkie Cechy Stworzeï¿½
 Wybierz co chcesz. 

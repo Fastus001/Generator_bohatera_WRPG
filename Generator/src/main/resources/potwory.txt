@@ -142,7 +142,7 @@ Troll
 6,30,15,55,45,10,15,15,10,20,5,30
 Broń +9,Głupi,Nie do Zdarcia,Pancerz (2),Regeneracja,Rozmiar (Duży),Twardy,Ugryzienie +8,Wymiot,Zaraza
 Bagnołaz,Mutacja,Nie Czuje Bólu,Odporność na Magię,Skryty,Szał Bojowy,Widzenie w Ciemności,Zakażony,Ziemnowodny,Zwierzęcy,Żarłoczny
-Trolle to brudne,wstrętne stwory,które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia,ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli,wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie,co oznacza,że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować,co sprawia,że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek,wymiotując żrącą żółcią na szokująco dużą odległość – chociaż nie cierpią tego robić,ponieważ są potem straszliwie głodne. 
+Trolle to brudne,wstrętne stwory,które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia,ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli,wszystkie mają pewne wspólne stats: zazwyczaj są niezwykle głupie,co oznacza,że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować,co sprawia,że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek,wymiotując żrącą żółcią na szokująco dużą odległość – chociaż nie cierpią tego robić,ponieważ są potem straszliwie głodne.
 Wywerna
 4,55,-,60,55,15,45,-,10,50,-,84
 Broń +10,Jad (Trudny),Latanie (90),Pancerz (2),Rozmiar (Wielki),Zwierzęcy
@@ -212,7 +212,7 @@ Gor
 4,45,30,35,45,30,35,25,25,30,25,14
 Broń +7,Furia,Mieszkaniec Lasu,Pancerz (1),Rogi +6,Widzenie w Ciemności
 Choroba (Ospa Zwierzęca),Mutacja,Pancerz (2),Rozmiar (Duży),Rzucanie Czarów (Zwierząt),Spaczenie (Pomniejsze),Zakażony,Zaraza
-Gory,najpowszechniejsze ze zwierzoludzi,są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem,ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą,którą posiadają wszystkie gory,jest para wielkich rogów – im większe,tym lepiej. Rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha,która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów. 
+Gory,najpowszechniejsze ze zwierzoludzi,są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem,ale wszystkie łączą stats zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą,którą posiadają wszystkie gory,jest para wielkich rogów – im większe,tym lepiej. Rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha,która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów.
 Ungor
 4,35,30,30,35,30,35,25,25,35,25,12
 Broń +6,Mieszkaniec Lasu,Widzenie w Ciemności
