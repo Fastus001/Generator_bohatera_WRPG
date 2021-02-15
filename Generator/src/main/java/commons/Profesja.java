@@ -86,7 +86,6 @@ public class Profesja implements Comparable<Profesja>{
 		String tekst = "Nazwa profesji: "+ nazwa + " Ścieżka profesji: " + sciezkaProfesji + " Poziom: " + Integer.toString(poziom) + "\nDostępne Umiejętności: ";
 		
 		for(Skill s: dostepneUmiejetnosci){
-			tekst +=s.showAll() +",";
 		}
 		tekst +="\nDostępne talenty: ";
 		for(Talent x: dostepneTalenty){

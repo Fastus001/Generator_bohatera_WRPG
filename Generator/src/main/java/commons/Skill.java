@@ -9,34 +9,26 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class Skill implements Comparable<Skill>{
-	private static final String[] STAT_NAMES = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd"};
+public class Skill implements Comparable<Skill> {
+    private static final String[] STAT_NAMES = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd"};
 
-	private String name;
-	private String type;
-	private int statNumber;
-	private int level;
-	private boolean isProfessional;
+    private String name;
+    private String type;
+    private int statNumber;
+    private int level;
+    private boolean isProfessional;
 
-	public void addToSkillLevel(int toAdd) {
-		level+=toAdd;
-	}
+    public void addToSkillLevel(int toAdd) {
+        level += toAdd;
+    }
 
-	public String showAll(){
-		return name + " ("+ STAT_NAMES[statNumber] + ") " + type;
-	}
+    public String showSkill() {
+        String temp = name + " +" + level;
+        return isProfessional ? temp + "*" : temp;
+    }
 
-	@Override
-	public String toString(){
-		if(isProfessional ){
-			return name +" +"+  level +"*";
-		}else{
-			return name +" +"+ level;
-		}
-	}
-
-	public int compareTo(Skill skill){
-		return name.compareTo( skill.getName());
-	}
+    public int compareTo(Skill skill) {
+        return name.compareTo( skill.getName() );
+    }
 }
 

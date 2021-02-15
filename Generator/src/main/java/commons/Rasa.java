@@ -59,7 +59,6 @@ public class Rasa  {
 			}
 			doWyswietlenia +="\nDostępne umiejętności: ";
 			for(Skill s: dostepneUmiejetnosci){
-				doWyswietlenia +=s.showAll() +",";
 			}
 			doWyswietlenia +="\nDostępne talenty: ";
 			for(Talent x: dostepneTalenty){

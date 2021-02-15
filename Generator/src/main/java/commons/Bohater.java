@@ -165,7 +165,7 @@ public class Bohater {
 		//ustawienie z całej histrii umiejetnosci jako profesyjnych
 		for(Skill um:tablicaUmiejetnosci) {
 			for(Skill znaneUm:znaneUmiejetnosci) {
-				if(um.toString().equals(znaneUm.toString())) {
+				if(um.showSkill().equals( znaneUm.showSkill())) {
 					znaneUm.setProfessional( true);
 				}
 			}
@@ -233,7 +233,7 @@ public class Bohater {
 		for(Skill u:znaneUmiejetnosci){
 			
 			int poziomTestowanejUmiejetn = cechy.getCecha(u.getStatNumber()) + u.getLevel();
-			stringBuilder.append(u.toString() + " (" + Integer.toString(poziomTestowanejUmiejetn) + "), ");
+			stringBuilder.append(u.showSkill() + " (" + Integer.toString( poziomTestowanejUmiejetn) + "), ");
 		}
 		stringBuilder.append("\n\nZnane talenty:\n");
 		
@@ -305,7 +305,7 @@ public class Bohater {
 			}
 			//jezeli poziom umiejetnosci jest na minus, to nie dodawaj jej do znanych umiejetnosci
 			if(um.getLevel() >= 0){
-				System.out.println("Dodajemy nowś umiejętność z nowej profesji " + um.toString());
+				System.out.println("Dodajemy nowś umiejętność z nowej profesji " + um.showSkill());
 				um.setProfessional( true);
 				znaneUmiejetnosci.add(um);
 			}
