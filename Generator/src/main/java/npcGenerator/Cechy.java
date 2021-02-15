@@ -45,20 +45,6 @@ public class Cechy implements RzutKoscia{
 			this.hp = stary.hp;
 			this.szybkosc = stary.szybkosc;
 		}
-		/*
-		public Cechy(Rasa rs){
-			stat = new int[IC]; //HP traktowane jako dodatkowa osobna cecha
-			rozwiniecia = new int[IC];
-			for (int i = 0; i < IC; i++){
-				stat[i] = rs.cechyBazowe[i]+ RzutKoscia.rzutK(10,2);
-				rozwiniecia[i] = 0;
-			}
-			//ustelenie iloďż˝ci HP 
-			hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 ďż˝ TB)+WPB - iloďż˝ďż˝ ďż˝ycia w odniesieniu do statystyk
-			
-		}
-				
-		*/
 		
 		public String wyswietlStaty(int [] tablica){
 			String tekst = "";
@@ -95,9 +81,6 @@ public class Cechy implements RzutKoscia{
 			return stat[x];
 		}
 
-
-
-
 		//podniesc cechďż˝, boolean jest w zaleďż˝noďż˝ci czy dodatkowa cecha ma siďż˝ wliczaďż˝ do rozwinieďż˝ aktualnych
 		public void podniesCeche(int oIle, int ktoraCecha, boolean or) {
 			stat[ktoraCecha] +=oIle;
@@ -105,10 +88,6 @@ public class Cechy implements RzutKoscia{
 				rozwiniecia[ktoraCecha] +=oIle;
 			}
 			
-		}
-		//metoda dla talentu twardziel
-		public void podniesZywotnosc(){
-			hp += (int) stat[3]/10;
 		}
 		
 		public void addSzybkosc(){

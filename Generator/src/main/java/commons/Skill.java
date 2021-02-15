@@ -10,7 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder(toBuilder = true)
 public class Skill implements Comparable<Skill> {
-    private static final String[] STAT_NAMES = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd"};
 
     private String name;
     private String type;
