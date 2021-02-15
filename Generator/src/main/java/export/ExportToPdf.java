@@ -1,4 +1,4 @@
-package commons;
+package export;
 
 import com.itextpdf.forms.PdfAcroForm;
 import com.itextpdf.io.font.PdfEncodings;
@@ -7,6 +7,9 @@ import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
+import commons.Bohater;
+import commons.Skill;
+import commons.Talent;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -59,7 +62,7 @@ public class ExportToPdf {
 		if(hero.znaneTalenty.size()<17) {
 			for(int i = 0; i<hero.znaneTalenty.size();i++)
 			{
-				Talent tl = hero.znaneTalenty.get(i);
+				Talent tl = hero.znaneTalenty.get( i);
 				talenty(tl, i+1);
 			}	
 		}else {

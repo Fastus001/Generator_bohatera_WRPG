@@ -1,5 +1,8 @@
-package commons;
+package export;
 
+import commons.Bohater;
+import commons.Skill;
+import commons.Talent;
 import npcGenerator.CechyPotworow;
 import npcGenerator.Potwory;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -25,9 +28,7 @@ public class ExportDoExcela {
 	private static final String [] STATYSTYKI = {"WW","US","S","Wt","I","Zw","Zr","Int","SW","Ogd"};
 	
 	Workbook wb;
-	Potwory potwor;
 
-	
 	public ExportDoExcela() {
 		setLogger();
 		wb = new HSSFWorkbook();
@@ -271,7 +272,7 @@ public class ExportDoExcela {
 		
 		for(int i = 0; i<bh.znaneTalenty.size();i++) {
 			row = sheet.createRow(rowCount+i);
-			Talent tl = bh.znaneTalenty.get(i);
+			Talent tl = bh.znaneTalenty.get( i);
 			createAndSetCell(row, 0, tl.getName(), csBoldAlign);
 			createAndSetCell(row, 3, tl.getPoziomValue(), justowanie);
 			createAndSetCell(row, 4, tl.getTest(), justAlign);

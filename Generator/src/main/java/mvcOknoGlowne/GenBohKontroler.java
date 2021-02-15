@@ -5,13 +5,11 @@ package mvcOknoGlowne;
  *
  */
 
-import java.awt.EventQueue;
-
-
-
-import commons.ExportToPdf;
 import commons.Rasa;
+import export.ExportToPdf;
 import views.NewGui;
+
+import java.awt.*;
 
 public class GenBohKontroler implements GenBohKontrolerInterface{
 	private NewGui widok;
