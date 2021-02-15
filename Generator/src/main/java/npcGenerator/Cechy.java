@@ -79,7 +79,7 @@ public class Cechy implements RzutKoscia{
 		public void updateHp(String nazwaRasy, int twardziel){
 			
 			//ustelenie iloďż˝ci HP 
-			if(nazwaRasy == "Niziołki")
+			if(nazwaRasy.equals( "Niziołki"))
 				hp = 2*((int)(stat[3]/10))+(int)(stat[8]/10); //(2 ďż˝ TB)+WPB
 			else {
 				hp = (int)(stat[2]/10)+2*((int)(stat[3]/10))+(int)(stat[8]/10); //SB+(2 ďż˝ TB)+WPB - iloďż˝ďż˝ ďż˝ycia w odniesieniu do statystyk
