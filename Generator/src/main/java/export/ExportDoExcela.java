@@ -273,16 +273,16 @@ public class ExportDoExcela {
 		for(int i = 0; i<bh.znaneTalenty.size();i++) {
 			row = sheet.createRow(rowCount+i);
 			Talent tl = bh.znaneTalenty.get( i);
-			createAndSetCell(row, 0, tl.getName(), csBoldAlign);
-			createAndSetCell(row, 3, tl.getPoziomValue(), justowanie);
-			createAndSetCell(row, 4, tl.getTest(), justAlign);
+			createAndSetCell( row, 0, tl.showTalentNameWithLevel(), csBoldAlign);
+			createAndSetCell( row, 3, tl.getLevel(), justowanie);
+			createAndSetCell( row, 4, tl.getTest(), justAlign);
 			Cell cell = row.createCell(5);
-			int x = tl.getOpisString().length();
+			int x = tl.getDescription().length();
 			if(x>50) {
 				x = x/50;
 				row.setHeightInPoints((float)(11*x));
 			}
-			cell.setCellValue(tl.getOpisString());
+			cell.setCellValue(tl.getDescription());
 
 			sheet.addMergedRegion(new CellRangeAddress(rowCount+i, rowCount+i, 0, 2));
 			sheet.addMergedRegion(new CellRangeAddress(rowCount+i, rowCount+i, 5, 10));

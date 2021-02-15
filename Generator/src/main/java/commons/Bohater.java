@@ -71,7 +71,7 @@ public class Bohater {
 		}
 		this.znaneTalenty = new ArrayList<Talent>();
 		for(Talent tl:bh.znaneTalenty) {
-			Talent nowyTl = new Talent(tl);
+			Talent nowyTl = tl.toBuilder().build();
 			this.znaneTalenty.add(nowyTl);
 		}
 		this.historiaProfesji = new ArrayList<Profesja>();
@@ -239,7 +239,7 @@ public class Bohater {
 		
 		Collections.sort(znaneTalenty);
 		for(Talent t: znaneTalenty){
-			stringBuilder.append(t.getName()+", ");
+			stringBuilder.append(t.showTalentNameWithLevel()+", ");
 		}
 		stringBuilder.append("\n\nPrzedmioty dostępne z profesji:\n");
 		for(Profesja p:historiaProfesji) {
@@ -253,8 +253,8 @@ public class Bohater {
 		
 		if(czyWyswietlicTalent){
 			for(Talent st: znaneTalenty){
-			if(st.getOpcjeWyswietlania()){
-				stringBuilder.append(st.toString() + " - " +st.getOpisString() +"\nTesty: " + st.getTest() +"\nMaksymalny poziom Talentu " + st.getMaksimumValue() + "\n\n");
+			if(st.isShow()){
+				stringBuilder.append(st.getName() + " - " +st.getDescription() +"\nTesty: " + st.getTest() +"\nMaksymalny poziom Talentu " + st.getMaxLevel() + "\n\n");
 				}		
 			}
 		}
@@ -386,15 +386,15 @@ public class Bohater {
 				if(test == -1){
 					nowyTalent.setTalentMax(cechy);
 					znaneTalenty.add(nowyTalent);
-					System.out.println("Nowy losowy talent z rasy= " + nowyTalent.toString() + " numer i = " + i);
+					System.out.println("Nowy losowy talent z rasy= " + nowyTalent.getName() + " numer i = " + i);
 				}else{
-						if(znaneTalenty.get(test).getMaksimumValue() == znaneTalenty.get(test).getPoziomValue()){
-							System.out.println("Znany talent z rasy, który ma juz maks = " + znaneTalenty.get(test).toString()+ " numer i = " + i);
+						if(znaneTalenty.get(test).getMaxLevel() == znaneTalenty.get( test).getLevel()){
+							System.out.println("Znany talent z rasy, który ma juz maks = " + znaneTalenty.get(test).getName()+ " numer i = " + i);
 							i--;
 						}else{
 							
-							znaneTalenty.get(test).addPoziom();
-							System.out.println("Znany talent z rasy, podniesienie poziomu o 1 = " + znaneTalenty.get(test).toString()+ " numer i = " + i);
+							znaneTalenty.get(test).addOneToLevel();
+							System.out.println("Znany talent z rasy, podniesienie poziomu o 1 = " + znaneTalenty.get(test).getName()+ " numer i = " + i);
 						}
 						
 				}
@@ -418,21 +418,21 @@ public class Bohater {
 		if(test == -1){
 					losowyTalent.setTalentMax(cechy);
 					znaneTalenty.add(losowyTalent);
-					System.out.println("Nowy losowy talent z profesji= " + losowyTalent.toString());
+					System.out.println("Nowy losowy talent z profesji= " + losowyTalent.getName());
 				}else{
-						if(znaneTalenty.get(test).getMaksimumValue() == znaneTalenty.get(test).getPoziomValue()){
-							System.out.println("Znany talent, który ma juz maks z profesji= " + znaneTalenty.get(test).toString());
+						if(znaneTalenty.get(test).getMaxLevel() == znaneTalenty.get( test).getLevel()){
+							System.out.println("Znany talent, który ma juz maks z profesji= " + znaneTalenty.get(test).getName());
 							dodajZnanyTalentZProfesji();
 						}else{
-							znaneTalenty.get(test).addPoziom();
-							System.out.println("Znany talent, podniesienie poziomu o 1 = " + znaneTalenty.get(test).toString());
+							znaneTalenty.get(test).addOneToLevel();
+							System.out.println("Znany talent, podniesienie poziomu o 1 = " + znaneTalenty.get(test).getName());
 						}	
 				}	
 	}
 	
 	private int sprawdzCzyTalentJest(Talent nowyTalent){
 		for(Talent t : znaneTalenty){
-			if(t.toString().equals(nowyTalent.toString())){
+			if(t.getName().equals( nowyTalent.getName())){
 				return znaneTalenty.indexOf(t);
 			}
 		}
@@ -487,39 +487,39 @@ public class Bohater {
 	//moloch odpowiadajďż˝cy za dodanie lub opisanie wszystkich cech, bonusďż˝w z talentďż˝w
 	private void sprawdzTalenty(Talent talent) {
 		Skill nowa;
-		switch(talent.toString()) {
-			case "Urodzony Wojownik": if(talent.getOpcjeWyswietlania()){
-				cechy.podniesCeche(5,0, false); talent.niePokazujOpisu();
+		switch(talent.getName()) {
+			case "Urodzony Wojownik": if(talent.isShow()){
+				cechy.podniesCeche(5,0, false); talent.setShow(false);
 				}break;
-			case "Strzelec Wyborowy": if(talent.getOpcjeWyswietlania()){
-				cechy.podniesCeche(5,1, false); talent.niePokazujOpisu();
+			case "Strzelec Wyborowy": if(talent.isShow()){
+				cechy.podniesCeche(5,1, false); talent.setShow(false);
 				}break;
-			case "Bardzo Silny": if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,2, false);talent.niePokazujOpisu();
+			case "Bardzo Silny": if(talent.isShow()){
+			cechy.podniesCeche(5,2, false);talent.setShow(false);
 				}break;
-			case "Niezwykle Odporny": if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,3, false); talent.niePokazujOpisu();
+			case "Niezwykle Odporny": if(talent.isShow()){
+			cechy.podniesCeche(5,3, false); talent.setShow(false);
 				}break;
-			case "Czujny": if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,4, false); talent.niePokazujOpisu();
+			case "Czujny": if(talent.isShow()){
+			cechy.podniesCeche(5,4, false); talent.setShow(false);
 				}break;
-			case "Szybki Refleks": if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,5, false); talent.niePokazujOpisu();
+			case "Szybki Refleks": if(talent.isShow()){
+			cechy.podniesCeche(5,5, false); talent.setShow(false);
 				}break;
-			case "Zręczny": if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,6, false); talent.niePokazujOpisu();
+			case "Zręczny": if(talent.isShow()){
+			cechy.podniesCeche(5,6, false); talent.setShow(false);
 				}break;
-			case "Błyskotliwość":  if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,7, false); talent.niePokazujOpisu(); System.out.println("Błyskotliwość, int podniesiony!");
+			case "Błyskotliwość":  if(talent.isShow()){
+			cechy.podniesCeche(5,7, false); talent.setShow(false); System.out.println( "Błyskotliwość, int podniesiony!");
 				}break;
-			case "Zimna krew": if(talent.getOpcjeWyswietlania()){
-			cechy.podniesCeche(5,8, false); talent.niePokazujOpisu();
+			case "Zimna krew": if(talent.isShow()){
+			cechy.podniesCeche(5,8, false); talent.setShow(false);
 				}break;
-			case "Charyzmatyczny": if(talent.getOpcjeWyswietlania()){
-				cechy.podniesCeche(5,9, false); talent.niePokazujOpisu();System.out.println("Charyzmatyczny, ogd podniesiona!");
+			case "Charyzmatyczny": if(talent.isShow()){
+				cechy.podniesCeche(5,9, false); talent.setShow(false);System.out.println( "Charyzmatyczny, ogd podniesiona!");
 				}break;
-			case "Bardzo Szybki": if(talent.getOpcjeWyswietlania()){
-				cechy.addSzybkosc(); talent.niePokazujOpisu();
+			case "Bardzo Szybki": if(talent.isShow()){
+				cechy.addSzybkosc(); talent.setShow(false);
 				}break;
 
 			case "Słuch Absolutny":  nowa = Skill.builder().name( "Występy (Śpiewanie)").statNumber(9).type( "podstawowa").level( 0).isProfessional( false ).build(); prof.addUmiejetnoscDoDostepneUmiejetnosci( nowa); break;
@@ -681,9 +681,9 @@ public class Bohater {
 	public int getCzyJestTwardziel() {
 		int liczba = 0;
 		for(Talent tl:znaneTalenty) {
-			if(tl.nazwaTalentu().equals("Twardziel"))
+			if(tl.getName().equals("Twardziel"))
 			{
-				liczba = tl.getPoziomValue();
+				liczba = tl.getLevel();
 			}
 		}
 		return liczba;

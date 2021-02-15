@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
+import static java.lang.Integer.parseInt;
+
 //dostępne talenty
 //ludzie wybór między 0 a 1, w dostępnych talentach
 //krasnoludy mają do wyboru pomiędzy 0 a 1, oraz 2-3
@@ -39,7 +41,7 @@ public class Rasa  {
 			}
 			dostepneTalenty = new ArrayList<Talent>();
 			for(Talent tempTl : rs.dostepneTalenty){
-				Talent nowyTl = new Talent(tempTl);
+				Talent nowyTl = tempTl.toBuilder().build();
 				dostepneTalenty.add(nowyTl);
 			}
 			iloscLosowychTalentow = rs.iloscLosowychTalentow;
@@ -61,7 +63,7 @@ public class Rasa  {
 			}
 			doWyswietlenia +="\nDostępne talenty: ";
 			for(Talent x: dostepneTalenty){
-				doWyswietlenia +=x.wyswietlWszystkoTalent() +",";
+				doWyswietlenia +=x.showAll() +",";
 			}
 			doWyswietlenia +="\nDostępne losowe talenty:" + iloscLosowychTalentow;
 			return doWyswietlenia;			
@@ -101,7 +103,11 @@ public class Rasa  {
 						if(wiersz.length()==0)
 							break;
 						String[] wynik = wiersz.split("/");
-						Talent tl = new Talent(wynik[0],Integer.parseInt(wynik[1]),wynik[2], wynik[3]);
+						Talent tl = Talent.builder()
+								.name(wynik[0])
+								.relatedStat(parseInt( wynik[1] ))
+								.test( wynik[2])
+								.description(wynik[3] ).build();
 						listaTalentow2.add(tl);
 					}
 					czytajBuf.close();
@@ -111,7 +117,7 @@ public class Rasa  {
 			//wyszukanie i skopiowanie losowych talentow
 			for(String x:LISTA_TALENTOW){
 				for(Talent talent:listaTalentow2){	
-					if(x.equals(talent.toString())){
+					if(x.equals(talent.getName())){
 						listaLosowychTalentow.add(talent);
 						break;
 					}
@@ -122,7 +128,7 @@ public class Rasa  {
 		}
 		
 		public int getIloscLosowychTalentow(){
-			return Integer.parseInt(iloscLosowychTalentow);
+			return parseInt(iloscLosowychTalentow);
 		}
 		
 		public int getIloscDostepnychTalentow(){

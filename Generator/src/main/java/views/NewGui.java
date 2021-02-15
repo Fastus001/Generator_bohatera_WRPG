@@ -146,7 +146,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			}
 		});
 		/**
-		 * w³¹czenie/wy³¹czenie pokazywania talentów
+		 * wÅ‚Ä…czenie/wyÅ‚Ä…czenie pokazywania talentÃ³w
 		 */
 		chckbxShowTalents.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -196,7 +196,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		});
 		
 		/////////////////////////////////////////////////////////////////////////
-		//podniesienie poziomu we wczeœniej wygenerowanym bohaterze
+		//podniesienie poziomu we wczeÅ›niej wygenerowanym bohaterze
 		/////////////////////////////////////////////////////////////////////////				
 		btnPodniesPoziomPr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
@@ -206,7 +206,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		});
 		
 		/////////////////////////////////////////////////////////////////////////
-		//je¿eli zostanie wybrana konkretna Rasa, to mo¿liwe jest wyszukanie profesji dostêpnej dla danej rasy
+		//jeÅ¼eli zostanie wybrana konkretna Rasa, to moÅ¼liwe jest wyszukanie profesji dostÄ™pnej dla danej rasy
 		/////////////////////////////////////////////////////////////////////////
 		cbRasa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -229,7 +229,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		
 
 		/*
-		 * dodanie nowej profesji do istniej¹cego bohatera, który zaczyna³ z inn¹ profesj¹
+		 * dodanie nowej profesji do istniejÄ…cego bohatera, ktÃ³ry zaczynaÅ‚ z innÄ… profesjÄ…
 		 */
 		btnNowaProfesja.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
@@ -244,7 +244,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				if(cbProfesja.getModel().getSize()== 0)
 				{
 					
-					JOptionPane.showMessageDialog(null, "Najpierw trzeba wybraæ rasê, aby mo¿na by³o wybraæ odpowiedni¹ profesjê.");
+					JOptionPane.showMessageDialog(null, "Najpierw trzeba wybraÄ‡ rasÄ™, aby moÅ¼na byÅ‚o wybraÄ‡ odpowiedniÄ… profesjÄ™.");
 				}
 			}
 		});
@@ -276,7 +276,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnExportExcel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(list.isSelectionEmpty()) {
-					int wybor = JOptionPane.showConfirmDialog(null, "Nie zaznaczy³eœ konkretnego rekordu, czy zapisaæ do arkusza Excel wszystkie utworzone postacie?","Eksport?",JOptionPane.YES_NO_OPTION);
+					int wybor = JOptionPane.showConfirmDialog(null, "Nie zaznaczyÅ‚eÅ› konkretnego rekordu, czy zapisaÄ‡ do arkusza Excel wszystkie utworzone postacie?","Eksport?",JOptionPane.YES_NO_OPTION);
 					if(wybor == JOptionPane.YES_OPTION) {
 						model.exportDoExcel(listaBohaterow.toArray(),0);
 					}else {

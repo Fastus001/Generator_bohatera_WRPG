@@ -10,6 +10,8 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
+import static java.lang.Integer.parseInt;
+
 /**
  * 
  * @author Tom
@@ -96,8 +98,12 @@ public class GenBohModel implements GenBohModelInterface{
 					for(String x:dostepneTlnt){
 						String[] doZapTalenty = x.split("/");
 
-						Talent tempTlnt = new Talent(doZapTalenty[0],Integer.parseInt(doZapTalenty[1]),doZapTalenty[2]);
-						tempTlnt.setOpis(dodajOpisDoTalentu(tempTlnt));
+//						Talent tempTlnt = new Talent(doZapTalenty[0],Integer.parseInt(doZapTalenty[1]),doZapTalenty[2]);
+						Talent tempTlnt = Talent.builder()
+								.name(doZapTalenty[0])
+								.relatedStat( parseInt(doZapTalenty[1]))
+								.test( doZapTalenty[2]).build();
+						tempTlnt.setDescription( dodajOpisDoTalentu( tempTlnt));
 						listaZnTalentow.add(tempTlnt);
 					}
 				//przedmioty
@@ -158,7 +164,11 @@ public class GenBohModel implements GenBohModelInterface{
 	/////////////////////////////////////////////////////////////////////////
 	private void tworzTalent(String wierszDanych){
 		String[] wynik = wierszDanych.split("/");
-		Talent tl = new Talent(wynik[0],Integer.parseInt(wynik[1]),wynik[2], wynik[3]);
+		Talent tl = Talent.builder()
+				.name(wynik[0])
+				.relatedStat(parseInt( wynik[1] ))
+				.test( wynik[2])
+				.description(wynik[3] ).build();
 		listaTalentow.add(tl);
 	}
 	
@@ -208,9 +218,12 @@ public boolean WczytajRasy(){
 					
 					for(String x:talenty){
 						String[] doZapTalenty = x.split("/");
-						Talent tempTlnt = new Talent(doZapTalenty[0],Integer.parseInt(doZapTalenty[1]),doZapTalenty[2]);
+						Talent tempTlnt = Talent.builder()
+								.name(doZapTalenty[0])
+								.relatedStat( parseInt(doZapTalenty[1]))
+								.test( doZapTalenty[2]).build();
 						//todo dodanie opisu do talentow
-						tempTlnt.setOpis(dodajOpisDoTalentu(tempTlnt));
+						tempTlnt.setDescription( dodajOpisDoTalentu( tempTlnt));
 						listaZnTalnetow.add(tempTlnt);
 					}
 					
@@ -231,8 +244,8 @@ public boolean WczytajRasy(){
 public String dodajOpisDoTalentu(Talent tal) {
 	if(listaTalentow.size()>0) {
 		for(Talent temp:listaTalentow){
-			if(temp.toString().equals(tal.toString())){
-				return temp.getOpisString();
+			if(temp.getName().equals( tal.getName())){
+				return temp.getDescription();
 			}
 		}
 	}

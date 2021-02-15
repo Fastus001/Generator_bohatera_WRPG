@@ -1,133 +1,62 @@
 package commons;
 
+import lombok.*;
 import npcGenerator.Cechy;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@RequiredArgsConstructor()
+@Builder(toBuilder = true)
 public class Talent implements Comparable<Talent>{
-	
-	static String[] CECHYNAZWA = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","Brak", "1", "2","4"};
-	private String nazwa;
-	//maksymalny bonus jaki może mieć dany talent, obliczenie tego będzie dopiero w klasie Bohater. A tutaj jest tylko podany numer cechy z której jest obliczny bonus (czyli maksimum)
-	private int max;
-	private String test;
-	private String opis;
-	private int maksimum;
-	private int poziom;
-	private boolean pokaz;
-	
-	public Talent(String n, int m, String t, String op){
-		nazwa = n;
-		max = m;
-		test = t;
-		opis = op;
-		maksimum = 0;
-		poziom = 1;
-		pokaz =  true;
+	private static final String[] STAT_NAMES = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","Brak", "1", "2","4"};
+
+	private final String name;
+	private final int relatedStat;
+	private final String test;
+	private String description;
+
+	@Builder.Default
+	private int maxLevel = 0;
+
+	@Builder.Default
+	private int level = 1;
+
+	@Builder.Default
+	private boolean show = true;
+
+	public String showAll(){
+		return name + " Max: "+ STAT_NAMES[relatedStat] + " Test: "+ test + "\nOpis:\n" + description +"\n";
 	}
-	
-	
-	public Talent(String n, int m, String t){
-		nazwa = n;
-		max = m;
-		test = t;
-		opis = "";
-		maksimum = 0;
-		poziom = 1;
-		pokaz = true;
-	}
-	
-	public Talent(Talent talent) {
-		nazwa = talent.nazwa;
-		max = talent.max;
-		test = talent.test;
-		opis = talent.opis;
-		maksimum = talent.maksimum;
-		poziom = talent.poziom;
-		pokaz = talent.pokaz;
-	}
-	
-	public String wyswietlWszystkoTalent(){
-		return nazwa + " Max: "+CECHYNAZWA[max] + " Test: "+ test + "\nOpis:\n" + opis +"\n";
-	}
-	
-	public String nazwaTalentu(){
-		return nazwa;
-	}
-	
-	public String getName() {
-		//opcja z wyswietlenie nazwy, maksa oraz poziomu talentu (testowe)
-		//return nazwa + " Max: " + Integer.toString(maksimum) + "  Poziom talentu:" + Integer.toString(poziom);
-		if(poziom>1){
-			return nazwa + " x" + Integer.toString(poziom);
+
+	public String showTalentNameWithLevel() {
+		if( level >1){
+			return name + " x" + level;
 		}else{
-			return nazwa;
+			return name;
 		}
-			
 	}
 	
-	public String toString() {
-		return nazwa;
-	}
-	
-	public void setTalentMax(Cechy cechyPostaci) {
-			
-		int maxt = max;
-		if(maxt <10){
-			maxt = 1;
+	public void setTalentMax(Cechy stats) {
+		switch(relatedStat){
+			case 10: maxLevel = 10;	break;
+			case 11: maxLevel = 1;
+				break;
+			case 12: maxLevel = 2;
+				break;
+			case 13: maxLevel = 4;
+				break;
+			default: maxLevel = stats.getCecha( relatedStat ) / 10;
+				break;
 		}
-		switch(maxt){
-			case  1:
-				maksimum = cechyPostaci.getCecha(max) / 10;
-				break;
-			case 10:
-				maksimum = 10;
-				break;
-			case 11:
-				maksimum = 1;
-				break;
-			case 12:
-				maksimum = 2;
-				break;
-			case 13:
-				maksimum = 4;
-				break;
-				
-		}//koniec switch
 	}
-	
-	public int getMaksimumValue() {
-		return maksimum;
+
+	public int compareTo(Talent talent){
+		return name.compareTo( talent.getName());
 	}
-	
-	public int getPoziomValue(){
-		return poziom;
+
+	public void addOneToLevel(){
+		level +=1;
 	}
-	
-	public String getTest() {
-		return test;
-	}
-	
-	public void addPoziom(){
-		poziom +=1;
-	}
-	
-	public String getOpisString(){
-		return opis;
-	}
-	
-	public void setOpis(String op) {
-		opis = op;
-	}
-	
-	public void niePokazujOpisu(){
-		pokaz = false;
-	}
-	
-	public boolean getOpcjeWyswietlania(){
-		return pokaz;
-	}
-	
-	public int compareTo(Talent tl){
-		return nazwa.compareTo(tl.toString());
-	}
-	
+
 }
