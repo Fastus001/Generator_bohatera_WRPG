@@ -1,7 +1,6 @@
 package commons;
 
-import enums.RaceEnum;
-import npcGenerator.Stats;
+import enums.RaceType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -31,7 +30,7 @@ class TalentTest {
 
     @Test
     void setTalentMax() {
-        talent.setTalentMax( new Stats( stats, RaceEnum.HALFLING ) );
+        talent.setTalentMax( new Stats( stats, RaceType.HALFLING ) );
 
         assertEquals( 4, talent.getMaxLevel() );
     }
@@ -40,7 +39,7 @@ class TalentTest {
     void setTalentMaxRelatedStatTen() {
         Talent talent1 = Talent.builder().relatedStat( 10 ).build();
 
-        talent1.setTalentMax( new Stats( stats, RaceEnum.HALFLING ) ) ;
+        talent1.setTalentMax( new Stats( stats, RaceType.HALFLING ) ) ;
 
         assertEquals( 10, talent1.getMaxLevel() );
     }
@@ -48,7 +47,7 @@ class TalentTest {
     @Test
     void setTalentMaxRelatedStatBelowTen() {
         Talent talent1 = Talent.builder().relatedStat( 9 ).build();
-        Stats stats = new Stats( this.stats, RaceEnum.HALFLING ) ;
+        Stats stats = new Stats( this.stats, RaceType.HALFLING ) ;
 
         talent1.setTalentMax( stats );
         int max = stats.getStatAt( 9 ) / 10;

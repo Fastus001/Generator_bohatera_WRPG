@@ -1,6 +1,6 @@
 package commons;
 
-import enums.RaceEnum;
+import enums.RaceType;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -136,8 +136,8 @@ public class Rasa  {
 			return dostepneTalenty.size();
 		}
 
-		public RaceEnum getRaceEnum(){
-			return RaceEnum.getRaceEnumByName( nazwa );
+		public RaceType getRaceEnum(){
+			return RaceType.getRaceEnumByName( nazwa );
 		}
 		
 	}

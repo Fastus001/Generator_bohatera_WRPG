@@ -1,7 +1,5 @@
 package commons;
 
-import npcGenerator.Stats;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
