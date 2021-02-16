@@ -2,9 +2,10 @@ package commons;
 
 import enums.RaceType;
 import lombok.Getter;
+import utilities.DiceRoll;
 
 @Getter
-public class Stats implements RzutKoscia{
+public class Stats{
 	private static final String[] STATS_NAME = {"WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd"};
 	private static final int NO_OF_STATS = 10;
 
@@ -20,7 +21,7 @@ public class Stats implements RzutKoscia{
 		advances = new int[NO_OF_STATS];
 
 		for (int i = 0; i < NO_OF_STATS; i++){
-				stats[i] = baseStats[i]+ RzutKoscia.rzutK( 10, 2);
+				stats[i] = baseStats[i]+ DiceRoll.one( 10, 2);
 				advances[i] = 0;
 		}
 		updateHp(0);

@@ -1,5 +1,8 @@
 package commons;
 
+import appearance.Appearance;
+import appearance.AppearanceFactory;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -8,7 +11,7 @@ public class Bohater {
 
 	private String imieNazwisko;
 	private String plecBohatera;
-	private Wyglad wyglad;
+	private Appearance appearance;
 	private Rasa rasa;
 	private Profesja prof;
 	private Stats stats;
@@ -24,7 +27,7 @@ public class Bohater {
 		GeneratorImion genImion = new GeneratorImion();
 		imieNazwisko = genImion.getFullName(rasa.getName(), plec);
 		
-		wyglad = new Wyglad(rasa);
+		appearance = AppearanceFactory.create( rasa.getRaceEnum());
 		
 		if(plec)
 			plecBohatera = "Mężczyzna";
@@ -58,7 +61,7 @@ public class Bohater {
 	public Bohater(Bohater bh) {
 		this.imieNazwisko = bh.imieNazwisko;
 		this.plecBohatera = bh.plecBohatera;
-		this.wyglad = new Wyglad(bh.wyglad);
+		this.appearance = bh.appearance;
 		this.rasa = new Rasa(bh.rasa);
 		this.prof = new Profesja(bh.prof);
 		this.stats = new Stats( bh.stats );
@@ -118,7 +121,7 @@ public class Bohater {
 			//sprawdzenie cech
 			nowyPoziomCechyNowyLvl(minPoziomUm);
 		}
-		wyglad.addWiekPoziomProf(rasa.nazwa);
+		appearance.addAge();
 		
 		if(!prof.isCzyUkonczona())
 			prof.setCzyUkonczona(true);
@@ -210,7 +213,7 @@ public class Bohater {
 	public String wyswietlBohatera(boolean czyWyswietlicTalent){
 		
 		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+"\n" +imieNazwisko +" ("+ plecBohatera + ")\n");
-		stringBuilder.append(wyglad.toString());
+		stringBuilder.append( appearance.showAll());
 		stringBuilder.append("Klasa postaci: " + prof.getKlasa()+"\n");
 		stringBuilder.append(prof.getNameProfesjaSciezka(getPlecBohatera()));
 		stringBuilder.append(" (Poziom profesji: " + prof.getPoziomUmiejetnosciString()+")\n");
@@ -617,21 +620,21 @@ public class Bohater {
 	}
 	
 	public String getWygladWiek() {
-		Integer wiek = this.wyglad.getWiek();
+		Integer wiek = this.appearance.getAge();
 		return wiek.toString();
 	}
 	
 	public String getWygladWzrost() {
-		Integer wzrost = this.wyglad.getWzrost();
+		Integer wzrost = this.appearance.getHeight();
 		return wzrost.toString();
 	}
 	
 	public String getWygladWlosy() {
-		return this.wyglad.getKolorWlosow();
+		return this.appearance.getHairColor();
 	}
 	
 	public String getWygladOczy() {
-		return this.wyglad.getKolorOczu();
+		return this.appearance.getEyesColor();
 	}
 	
 	public String [] getCechyAktualne() {

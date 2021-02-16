@@ -2,7 +2,7 @@ package npcGenerator;
 
 import java.util.ArrayList;
 
-import commons.RzutKoscia;
+import utilities.DiceRoll;
 import enums.StatyNPC;
 
 /**
@@ -10,7 +10,7 @@ import enums.StatyNPC;
  * @author Tom
  *klasa opisujaca potwora NPC
  */
-public class Potwory implements RzutKoscia{
+public class Potwory{
 	private static final String[] CECHYNAZWA = {"Sz","WW", "US", "S", "Wt", "I", "Zw", "Zr", "Int", "SW", "Ogd","Żyw"};
 
 
@@ -38,7 +38,7 @@ public class Potwory implements RzutKoscia{
 				staty[i] = "0";
 			}else if(i<IC-1){
 				//wprowadzenie losowości do statystyk potwora
-				this.statyPotwora[i] = (Integer.parseInt(staty[i]) -10)+RzutKoscia.rzutK(10, 2);
+				this.statyPotwora[i] = (Integer.parseInt(staty[i]) -10)+ DiceRoll.one( 10, 2);
 			}else {
 				this.statyPotwora[i] = Integer.parseInt(staty[i]);
 			}
