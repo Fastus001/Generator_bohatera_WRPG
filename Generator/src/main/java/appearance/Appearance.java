@@ -8,6 +8,8 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public abstract class Appearance {
+    public static final String FILE_NAME = "hair_color_eyes_color.txt";
+
     protected int age;
     private int height;
     private String eyesColor;
