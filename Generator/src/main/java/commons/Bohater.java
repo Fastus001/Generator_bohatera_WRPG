@@ -2,6 +2,7 @@ package commons;
 
 import appearance.Appearance;
 import appearance.AppearanceFactory;
+import utilities.NameGenerator;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,8 +25,8 @@ public class Bohater {
 		rasa = new Rasa(rs);
 		prof = new Profesja(pr);
 		
-		GeneratorImion genImion = new GeneratorImion();
-		imieNazwisko = genImion.getFullName(rasa.getName(), plec);
+		NameGenerator genImion = new NameGenerator();
+		imieNazwisko = genImion.generateFullName( rasa.getRaceEnum(), plec);
 		
 		appearance = AppearanceFactory.create( rasa.getRaceEnum());
 		

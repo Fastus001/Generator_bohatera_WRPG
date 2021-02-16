@@ -10,11 +10,11 @@ import java.util.List;
 
 public class Reader {
 
-    public static List<String []> getHairAndEyes(){
+    public static List<String []> getListOfArraysFrom(String fileName){
         List<String[]> hairAndEyes = new ArrayList<>();
         try {
             InputStream input = Reader.class.getClassLoader()
-                    .getResourceAsStream( "hair_color_eyes_color.txt" );
+                    .getResourceAsStream( fileName );
             assert input != null;
             InputStreamReader reader = new InputStreamReader( input, StandardCharsets.UTF_8);
 

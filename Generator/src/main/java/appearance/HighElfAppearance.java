@@ -14,7 +14,7 @@ public class HighElfAppearance extends Appearance {
     }
 
     private void setHairAndEyes() {
-        List<String[]> hairAndEyes = Reader.getHairAndEyes();
+        List<String[]> hairAndEyes = Reader.getListOfArraysFrom(FILE_NAME);
         assert hairAndEyes != null;
 
         int randEyes = 18 + ((int) (Math.random()*19));
