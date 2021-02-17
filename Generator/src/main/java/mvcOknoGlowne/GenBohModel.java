@@ -23,20 +23,20 @@ public class GenBohModel implements GenBohModelInterface{
 	//rasa wybrana w comboBoxie w widoku
 	private Race wybranaRasa;
 	//profesja wybrana w CBoxie w widoku
-	private Profesja wybranaProfesja;
+	private Profession wybranaProfesja;
 	private String urlSavaPdf = null;
 	private ArrayList<Race> listaRas;
 	private ArrayList<Talent> listaTalentow;	
-	private ArrayList<Profesja> listaProfesji;
-	private ArrayList<Profesja> profesjePierwszyPoziom;
+	private ArrayList<Profession> listaProfesji;
+	private ArrayList<Profession> profesjePierwszyPoziom;
 	private Bohater nowyBohater;
 	private ObserwatorModel obserwator;
 
 	public GenBohModel() {
 		listaRas = new ArrayList<Race>();
 		listaTalentow = new ArrayList<Talent>();
-		listaProfesji = new ArrayList<Profesja>();
-		profesjePierwszyPoziom = new ArrayList<Profesja>();
+		listaProfesji = new ArrayList<Profession>();
+		profesjePierwszyPoziom = new ArrayList<Profession>();
 
 	}
 	/**
@@ -55,7 +55,7 @@ public class GenBohModel implements GenBohModelInterface{
 	
 	public boolean WczytajProfesje(){
 		try{
-			listaProfesji = new ArrayList<Profesja>();
+			listaProfesji = new ArrayList<Profession>();
 
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("profesje-v2.txt");
@@ -120,7 +120,7 @@ public class GenBohModel implements GenBohModelInterface{
 				//poziom profesji
 				int poziomProfesji = Integer.parseInt(czytajB.readLine());
 				
-				Profesja prof = new Profesja(nazwaProfesji, sciezkaProfesji, poziomProfesji, umiej,listaZnTalentow,dostepneRasy,cechyRozwoju,false,klasaProfesji,przedmiotyProf );
+				Profession prof = new Profession( nazwaProfesji, sciezkaProfesji, poziomProfesji, umiej, listaZnTalentow, dostepneRasy, cechyRozwoju, false, klasaProfesji, przedmiotyProf );
 				listaProfesji.add(prof);
 
 			}
@@ -273,11 +273,11 @@ public void szukajProfesjiPierwszyPoziom(Race losowaRasa) {
 		
 		//sprawdzenie profesji pąd kątem poziomy (lvl1) oraz tego jaka rasa w danej profesji jest dostępna
 		int poziomPierwszy = 1;
-		for(Profesja p:listaProfesji){
-			if(p.getPoziom()==poziomPierwszy){
-				for(int i = 0; i < p.getLiczbaDostepnychRas(); i++){						
+		for(Profession p:listaProfesji){
+			if(p.getLevel()==poziomPierwszy){
+				for(int i = 0; i < p.getRacesSize(); i++){
 					String nazwaP = losowaRasa.getName();
-					if(nazwaP.equals(p.dostepnaRasa[i])){
+					if(nazwaP.equals(p.races[i])){
 					profesjePierwszyPoziom.add(p);							
 					}
 				}	
@@ -289,7 +289,7 @@ public void szukajProfesjiPierwszyPoziom(Race losowaRasa) {
 public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 	//System.out.println("Numer rasy " + rasa);
 	try {
-		Profesja losowaProfesja;
+		Profession losowaProfesja;
 		Race losowaRasa;
 		//sprawdzenie wybopru rasy, jeżeli brak wyboru to losowanie, inaczej wybór z listy
 		if(rasa == -1) {
@@ -303,7 +303,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		if(prof == -1) {
 			losowaProfesja = profesjePierwszyPoziom.get( (int)(Math.random()*profesjePierwszyPoziom.size() )) ;
 		}else {
-			losowaProfesja = (Profesja) profesjePierwszyPoziom.get(prof);
+			losowaProfesja = ( Profession ) profesjePierwszyPoziom.get( prof);
 		}
 
 		if(plec)
@@ -313,7 +313,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		nowyBohater.doswiadczenieBohatera(exp);
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
 		wybranaRasa = losowaRasa.toBuilder().build();
-		wybranaProfesja = new Profesja(losowaProfesja);
+		wybranaProfesja = new Profession( losowaProfesja);
 	} catch (Exception e2) {
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
@@ -330,7 +330,7 @@ public Race getWybranaRasa() {
 /**
  * @return the wybranaProfesja
  */
-public Profesja getWybranaProfesja() {
+public Profession getWybranaProfesja() {
 	return wybranaProfesja;
 }
 /**
@@ -342,7 +342,7 @@ public void setWybranaRasa(Race wybranaRasa) {
 /**
  * @param wybranaProfesja the wybranaProfesja to set
  */
-public void setWybranaProfesja(Profesja wybranaProfesja) {
+public void setWybranaProfesja(Profession wybranaProfesja) {
 	this.wybranaProfesja = wybranaProfesja;
 }
 
@@ -371,7 +371,7 @@ public String wyswietlNowegoBohatera(boolean jak) {
 }
 @Override
 public void podniesPoziom(int exp, boolean talenty) {
-	Profesja profesjaNowyPoziom = null;
+	Profession profesjaNowyPoziom = null;
 	/*
 	 * wgranie akutalnej nazwy profesji do stringa
 	 * wgranie aktualnego poziomu aktualnie wybranej klasy postaci
@@ -422,11 +422,11 @@ public void podniesPoziom(int exp, boolean talenty) {
 				//System.out.println("Poziom tej samej profesji z najwyższym poziomem z historii to  = " + sprawdzenieHistoriiProfesji);				
 			}
 		
-	for(Profesja p: listaProfesji)
+	for(Profession p: listaProfesji)
 	{
-		if(p.toString().equals(nazwaProfesji) && (p.getPoziom() == poziomProfesji))
+		if(p.toString().equals(nazwaProfesji) && (p.getLevel() == poziomProfesji))
 		{
-			profesjaNowyPoziom = new Profesja(p);
+			profesjaNowyPoziom = new Profession( p);
 		}
 	}
 	
@@ -488,7 +488,7 @@ public void setRasa(Race r) {
 	
 }
 @Override
-public void setProfesja(Profesja p) {
+public void setProfesja(Profession p) {
 	if(nowyBohater != null) {
 		//jeżeli rasa nie została zmieniona to możemy działać
 		if(wybranaRasa.getName().equals(nowyBohater.getRasaName()))

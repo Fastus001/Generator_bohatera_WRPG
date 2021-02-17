@@ -4,7 +4,7 @@
 package mvcOknoGlowne;
 
 import commons.Bohater;
-import commons.Profesja;
+import commons.Profession;
 import commons.Race;
 
 /**
@@ -47,7 +47,7 @@ public interface GenBohModelInterface {
 	void wyrejestrujObserwatora(ObserwatorModel o);
 	Bohater postacBohaterModel();
 	void setRasa(Race r);
-	void setProfesja(Profesja p);
+	void setProfesja(Profession p);
 	/**
 	 * 
 	 * @param talenty - czy mają być wyswietlane czy nie

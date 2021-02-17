@@ -19,7 +19,7 @@ import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
 import commons.Bohater;
-import commons.Profesja;
+import commons.Profession;
 import commons.Race;
 import mvcOknoGlowne.GenBohKontrolerInterface;
 import mvcOknoGlowne.GenBohModelInterface;
@@ -253,7 +253,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public void actionPerformed(ActionEvent e) {
 				if(cbProfesja.getModel().getSize()!=0)
 				{
-					Profesja prof = (Profesja) cbProfesja.getSelectedItem();
+					Profession prof = ( Profession ) cbProfesja.getSelectedItem();
 					model.setProfesja(prof);
 				}
 			}
