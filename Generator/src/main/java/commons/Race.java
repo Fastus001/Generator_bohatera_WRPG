@@ -26,6 +26,9 @@ public class Race {
 		return RaceType.getRaceEnumByName( name );
 	}
 
+	/*
+	needed for the JComboBox<Object> proper name in GUI
+	 */
 	@Override
 	public String toString() {
 		return name;
