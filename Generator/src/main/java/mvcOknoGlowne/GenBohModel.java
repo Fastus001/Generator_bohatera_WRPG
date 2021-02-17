@@ -163,7 +163,7 @@ public class GenBohModel implements GenBohModelInterface{
 	//zapisanie zaimportowanych z pliku txt opsiów w obiektach talent;
 	/////////////////////////////////////////////////////////////////////////
 	private void tworzTalent(String wierszDanych){
-		String[] wynik = wierszDanych.split("/");
+		String[] wynik = wierszDanych.split(";");
 		Talent tl = Talent.builder()
 				.name(wynik[0])
 				.relatedStat(parseInt( wynik[1] ))
@@ -228,7 +228,7 @@ public boolean WczytajRasy(){
 					}
 					
 					
-					Race rs = new Race( nazwa, tablica , umiej, listaZnTalnetow, wiersz);
+					Race rs = new Race( nazwa, tablica , umiej, listaZnTalnetow, Integer.parseInt( wiersz));
 					listaRas.add(rs);	
 				}	
 			czytajBuf.close();
@@ -312,7 +312,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 			nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
 		nowyBohater.doswiadczenieBohatera(exp);
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
-		wybranaRasa = new Race( losowaRasa);
+		wybranaRasa = losowaRasa.toBuilder().build();
 		wybranaProfesja = new Profesja(losowaProfesja);
 	} catch (Exception e2) {
 		StringWriter sw = new StringWriter();

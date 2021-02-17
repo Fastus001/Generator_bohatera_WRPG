@@ -3,6 +3,7 @@ package commons;
 import appearance.Appearance;
 import appearance.AppearanceFactory;
 import utilities.NameGenerator;
+import utilities.RandomTalent;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,7 +23,7 @@ public class Bohater {
 	
 
 	public Bohater(Race rs, Profesja pr, boolean plec) {
-		race = new Race( rs);
+		race = rs.toBuilder().build();
 		prof = new Profesja(pr);
 		
 		NameGenerator genImion = new NameGenerator();
@@ -63,7 +64,7 @@ public class Bohater {
 		this.imieNazwisko = bh.imieNazwisko;
 		this.plecBohatera = bh.plecBohatera;
 		this.appearance = bh.appearance;
-		this.race = new Race( bh.race );
+		this.race = bh.race.toBuilder().build();
 		this.prof = new Profesja(bh.prof);
 		this.stats = new Stats( bh.stats );
 		this.znaneUmiejetnosci = new ArrayList<Skill>();
@@ -342,7 +343,7 @@ public class Bohater {
 		ArrayList<Skill> tempRasaZnaneUmiejetnosci = new ArrayList<Skill>();
 		
 		//skopiowanie listy dostďż˝pnych umiejetnoďż˝ci.
-		for(Skill m: race.getAvailableSkills()){
+		for(Skill m: race.getSkills()){
 			tempRasaZnaneUmiejetnosci.add(m);
 		}
 		
@@ -366,13 +367,13 @@ public class Bohater {
 		// wysokie elfy 0 lub 1  oraz 2 lub 3
 		//lesne elfy, 0 lub 1, oraz 2 lub 3
 		if( race.getName().equals( "Ludzie")){
-			znaneTalenty.add( race.getAvailableTalents( randomX( 2)));
+			znaneTalenty.add( race.getTalents().get( randomX( 2)));
 		}else{
-			znaneTalenty.add( race.getAvailableTalents( randomX( 2)));
-			znaneTalenty.add( race.getAvailableTalents( randomX( 2)+2));
+			znaneTalenty.add( race.getTalents().get( randomX( 2)));
+			znaneTalenty.add( race.getTalents().get( randomX( 2)+2));
 			if( race.getSizeOfAvailableTalents() >3){
 				for(int i = 4; i< race.getSizeOfAvailableTalents(); i++){
-					znaneTalenty.add( race.getAvailableTalents( i));
+					znaneTalenty.add( race.getTalents().get( i));
 				}
 			}
 		}
@@ -380,10 +381,11 @@ public class Bohater {
 			t.setTalentMax( stats );
 		}
 		//dodanie losowych talentow, + sprawdzenie czy siďż˝ nie powtarzajďż˝, ewentualnie zwiďż˝kszenie o 1
-		int losoweTalenty = race.getNumberOfRandomTalents();
+		int losoweTalenty = race.getRandomTalents();
 		if(losoweTalenty > 0 ) {
 			for(int i= 0; i<losoweTalenty; i++){
-				Talent nowyTalent = race.getRandomTalent();
+//				Talent nowyTalent = race.getRandomTalent();
+				Talent nowyTalent = RandomTalent.getInstance().getTalent();
 				int test = sprawdzCzyTalentJest(nowyTalent);
 				if(test == -1){
 					nowyTalent.setTalentMax( stats );
