@@ -24,7 +24,7 @@ public class Bohater {
 
 	public Bohater(Race rs, Profession pr, boolean plec) {
 		race = rs.toBuilder().build();
-		prof = new Profession( pr);
+		prof = pr.toBuilder().build();
 		
 		NameGenerator genImion = new NameGenerator();
 		imieNazwisko = genImion.generateFullName( race.getRaceEnum(), plec);
@@ -65,7 +65,7 @@ public class Bohater {
 		this.plecBohatera = bh.plecBohatera;
 		this.appearance = bh.appearance;
 		this.race = bh.race.toBuilder().build();
-		this.prof = new Profession( bh.prof);
+		this.prof = bh.prof.toBuilder().build();
 		this.stats = new Stats( bh.stats );
 		this.znaneUmiejetnosci = new ArrayList<Skill>();
 		for(Skill um:bh.znaneUmiejetnosci) {
@@ -79,7 +79,7 @@ public class Bohater {
 		}
 		this.historiaProfesji = new ArrayList<Profession>();
 		for(Profession pr:bh.historiaProfesji) {
-			Profession nowaPr = new Profession( pr);
+			Profession nowaPr = pr.toBuilder().build();
 			this.historiaProfesji.add(nowaPr);
 		}
 	}
@@ -134,7 +134,7 @@ public class Bohater {
 			for(Skill um:znaneUmiejetnosci)
 				um.setProfessional( false);
 		}
-		prof = new Profession( nowaProfesja);
+		prof = nowaProfesja.toBuilder().build();
 		dodajZnaneUmiejetnosciZProfesji();
 		setUmiejetnosciProfesyjne();
 		
@@ -709,7 +709,7 @@ public class Bohater {
 	}
 
 	public boolean czyJestCechaRozwojuProfesji(int x) {
-		return this.prof.czyJestCechaRozwoju(x);
+		return this.prof.isProfessionStat( x);
 	}
 	
 	public String getKlasaProfesji() {

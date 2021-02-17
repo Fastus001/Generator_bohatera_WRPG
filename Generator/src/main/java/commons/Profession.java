@@ -12,6 +12,8 @@ import java.util.ArrayList;
 @Builder(toBuilder = true)
 @AllArgsConstructor
 public class Profession implements Comparable<Profession> {
+    private static final String SPLIT = "/";
+    
     private String name;
     private String professionPath;
     private int level;
@@ -22,28 +24,6 @@ public class Profession implements Comparable<Profession> {
     private boolean finished;
     private String career;
     private String[] items;
-
-
-    public Profession(Profession pr) {
-        name = pr.name;
-        professionPath = pr.professionPath;
-        level = pr.level;
-        skills = new ArrayList<>();
-        for (Skill temp : pr.skills) {
-            Skill nowa = temp.toBuilder().build();
-            skills.add( nowa );
-        }
-        talents = new ArrayList<>();
-        for (Talent tempT : pr.talents) {
-            Talent nowyTalent = tempT.toBuilder().build();
-            talents.add( nowyTalent );
-        }
-        races = pr.races;
-        professionStats = pr.professionStats;
-        this.finished = pr.finished;
-        this.career = pr.career;
-        this.items = pr.items;
-    }
 
     /*
     needed for the JComboBox<Object> proper name in GUI
@@ -57,13 +37,13 @@ public class Profession implements Comparable<Profession> {
     }
 
     public String getName(boolean male) {
-        String[] split = name.split( "/" );
+        String[] split = name.split( SPLIT );
 
         return male ? split[0] : split [1];
     }
 
     public String getProfessionPath(boolean male) {
-        String[] split = professionPath.split( "/" );
+        String[] split = professionPath.split( SPLIT );
 
         return male ? split[0] : split [1];
     }
@@ -75,10 +55,6 @@ public class Profession implements Comparable<Profession> {
         return getName( false ) + "\n" + getProfessionPath( false );
     }
 
-    public int getRacesSize() {
-        return races.length;
-    }
-
     public Talent getTalentAt(int index) {
         return talents.get( index );
     }
@@ -88,9 +64,9 @@ public class Profession implements Comparable<Profession> {
         return professionStats[random];
     }
 
-    public boolean czyJestCechaRozwoju(int x) {
+    public boolean isProfessionStat(int statToCheck) {
         for (int stat : this.professionStats) {
-            if ( stat == x )
+            if ( stat == statToCheck )
                 return true;
         }
         return false;

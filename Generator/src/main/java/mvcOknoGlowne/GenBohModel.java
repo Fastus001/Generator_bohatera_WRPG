@@ -275,7 +275,7 @@ public void szukajProfesjiPierwszyPoziom(Race losowaRasa) {
 		int poziomPierwszy = 1;
 		for(Profession p:listaProfesji){
 			if(p.getLevel()==poziomPierwszy){
-				for(int i = 0; i < p.getRacesSize(); i++){
+				for(int i = 0; i < p.getRaces().length; i++){
 					String nazwaP = losowaRasa.getName();
 					if(nazwaP.equals(p.races[i])){
 					profesjePierwszyPoziom.add(p);							
@@ -313,7 +313,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		nowyBohater.doswiadczenieBohatera(exp);
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
 		wybranaRasa = losowaRasa.toBuilder().build();
-		wybranaProfesja = new Profession( losowaProfesja);
+		wybranaProfesja = losowaProfesja.toBuilder().build();
 	} catch (Exception e2) {
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
@@ -426,7 +426,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 	{
 		if(p.toString().equals(nazwaProfesji) && (p.getLevel() == poziomProfesji))
 		{
-			profesjaNowyPoziom = new Profession( p);
+			profesjaNowyPoziom = p.toBuilder().build();
 		}
 	}
 	
