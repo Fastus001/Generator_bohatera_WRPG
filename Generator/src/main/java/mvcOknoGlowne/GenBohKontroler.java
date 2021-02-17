@@ -5,7 +5,7 @@ package mvcOknoGlowne;
  *
  */
 
-import commons.Rasa;
+import commons.Race;
 import export.ExportToPdf;
 import views.NewGui;
 
@@ -31,7 +31,7 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 		
 	}
 	@Override
-	public void selectRasa(Rasa rs) {
+	public void selectRasa(Race rs) {
 		widok.setCbProfesja(model.getProfesjePierwszyPoziom(rs));
 	}
 	@Override

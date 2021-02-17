@@ -21,11 +21,11 @@ public class GenBohModel implements GenBohModelInterface{
 
 	
 	//rasa wybrana w comboBoxie w widoku
-	private Rasa wybranaRasa;
+	private Race wybranaRasa;
 	//profesja wybrana w CBoxie w widoku
 	private Profesja wybranaProfesja;
 	private String urlSavaPdf = null;
-	private ArrayList<Rasa> listaRas;
+	private ArrayList<Race> listaRas;
 	private ArrayList<Talent> listaTalentow;	
 	private ArrayList<Profesja> listaProfesji;
 	private ArrayList<Profesja> profesjePierwszyPoziom;
@@ -33,7 +33,7 @@ public class GenBohModel implements GenBohModelInterface{
 	private ObserwatorModel obserwator;
 
 	public GenBohModel() {
-		listaRas = new ArrayList<Rasa>();
+		listaRas = new ArrayList<Race>();
 		listaTalentow = new ArrayList<Talent>();
 		listaProfesji = new ArrayList<Profesja>();
 		profesjePierwszyPoziom = new ArrayList<Profesja>();
@@ -176,7 +176,7 @@ public class GenBohModel implements GenBohModelInterface{
 public boolean WczytajRasy(){
 		
 		try{
-			listaRas = new ArrayList<Rasa>();
+			listaRas = new ArrayList<Race>();
 
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream input = classLoader.getResourceAsStream("rasy.txt");
@@ -228,7 +228,7 @@ public boolean WczytajRasy(){
 					}
 					
 					
-					Rasa rs = new Rasa(nazwa, tablica ,umiej,listaZnTalnetow, wiersz);
+					Race rs = new Race( nazwa, tablica , umiej, listaZnTalnetow, wiersz);
 					listaRas.add(rs);	
 				}	
 			czytajBuf.close();
@@ -268,7 +268,7 @@ private int losowanieRasy() {
 		return 4;
 	}
 }
-public void szukajProfesjiPierwszyPoziom(Rasa losowaRasa) {
+public void szukajProfesjiPierwszyPoziom(Race losowaRasa) {
 		profesjePierwszyPoziom.clear();
 		
 		//sprawdzenie profesji pąd kątem poziomy (lvl1) oraz tego jaka rasa w danej profesji jest dostępna
@@ -290,13 +290,13 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 	//System.out.println("Numer rasy " + rasa);
 	try {
 		Profesja losowaProfesja;
-		Rasa losowaRasa;
+		Race losowaRasa;
 		//sprawdzenie wybopru rasy, jeżeli brak wyboru to losowanie, inaczej wybór z listy
 		if(rasa == -1) {
 			losowaRasa = listaRas.get(losowanieRasy());
 			szukajProfesjiPierwszyPoziom(losowaRasa);
 		}else {
-			losowaRasa = (Rasa) listaRas.get(rasa);
+			losowaRasa = ( Race ) listaRas.get( rasa);
 			szukajProfesjiPierwszyPoziom(losowaRasa);
 		}
 		//sprawdzenie wyboru profesji, jeżeli brak wyboru to losowanie, inaczej wybór z listy
@@ -312,7 +312,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 			nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
 		nowyBohater.doswiadczenieBohatera(exp);
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
-		wybranaRasa = new Rasa(losowaRasa);
+		wybranaRasa = new Race( losowaRasa);
 		wybranaProfesja = new Profesja(losowaProfesja);
 	} catch (Exception e2) {
 		StringWriter sw = new StringWriter();
@@ -324,7 +324,7 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 /**
  * @return the wybranaRasa
  */
-public Rasa getWybranaRasa() {
+public Race getWybranaRasa() {
 	return wybranaRasa;
 }
 /**
@@ -336,7 +336,7 @@ public Profesja getWybranaProfesja() {
 /**
  * @param wybranaRasa the wybranaRasa to set
  */
-public void setWybranaRasa(Rasa wybranaRasa) {
+public void setWybranaRasa(Race wybranaRasa) {
 	this.wybranaRasa = wybranaRasa;
 }
 /**
@@ -351,7 +351,7 @@ public Object[] getRasaArray() {
 	return listaRas.toArray();
 }
 @Override
-public Object[] getProfesjePierwszyPoziom(Rasa rs) {
+public Object[] getProfesjePierwszyPoziom(Race rs) {
 	szukajProfesjiPierwszyPoziom(rs);
 	
 	return profesjePierwszyPoziom.toArray();
@@ -477,7 +477,7 @@ public Bohater postacBohaterModel() {
 	return this.getNowyBohater();
 }
 @Override
-public void setRasa(Rasa r) {
+public void setRasa(Race r) {
 	if(nowyBohater != null) {
 		if(r.getName().equals(nowyBohater.getRasaName())) {
 			obserwator.wlaczPrzyciskbtnPodniesPoziomPr();

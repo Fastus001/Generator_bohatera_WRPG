@@ -5,7 +5,7 @@ package mvcOknoGlowne;
 
 import commons.Bohater;
 import commons.Profesja;
-import commons.Rasa;
+import commons.Race;
 
 /**
  * @author Tom
@@ -42,11 +42,11 @@ public interface GenBohModelInterface {
 	 */
 	String wyswietlNowegoBohatera(boolean jak);
 	Object [] getRasaArray();
-	Object [] getProfesjePierwszyPoziom(Rasa rs);
+	Object [] getProfesjePierwszyPoziom(Race rs);
 	void zarejestrujObserwatora(ObserwatorModel o);
 	void wyrejestrujObserwatora(ObserwatorModel o);
 	Bohater postacBohaterModel();
-	void setRasa(Rasa r);
+	void setRasa(Race r);
 	void setProfesja(Profesja p);
 	/**
 	 * 

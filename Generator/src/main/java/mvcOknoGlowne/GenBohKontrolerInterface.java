@@ -3,14 +3,14 @@
  */
 package mvcOknoGlowne;
 
-import commons.Rasa;
+import commons.Race;
 
 /**
  * @author Tom
  *
  */
 public interface GenBohKontrolerInterface {
-	void selectRasa(Rasa rs);
+	void selectRasa(Race rs);
 	void setRacaCbBox();
 	void aktywujPodniesPoziom();
 	void aktywujZapiszPostac();

@@ -20,7 +20,7 @@ import javax.swing.border.EtchedBorder;
 
 import commons.Bohater;
 import commons.Profesja;
-import commons.Rasa;
+import commons.Race;
 import mvcOknoGlowne.GenBohKontrolerInterface;
 import mvcOknoGlowne.GenBohModelInterface;
 import mvcOknoGlowne.ObserwatorModel;
@@ -210,7 +210,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		/////////////////////////////////////////////////////////////////////////
 		cbRasa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Rasa wybor = (Rasa) cbRasa.getSelectedItem();
+				Race wybor = ( Race ) cbRasa.getSelectedItem();
 				model.setRasa(wybor);
 				kontroler.selectRasa(wybor);
 			}

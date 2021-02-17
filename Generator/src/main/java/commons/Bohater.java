@@ -13,7 +13,7 @@ public class Bohater {
 	private String imieNazwisko;
 	private String plecBohatera;
 	private Appearance appearance;
-	private Rasa rasa;
+	private Race race;
 	private Profesja prof;
 	private Stats stats;
 	public ArrayList <Skill> znaneUmiejetnosci;
@@ -21,14 +21,14 @@ public class Bohater {
 	private ArrayList<Profesja> historiaProfesji;
 	
 
-	public Bohater(Rasa rs, Profesja pr, boolean plec) {
-		rasa = new Rasa(rs);
+	public Bohater(Race rs, Profesja pr, boolean plec) {
+		race = new Race( rs);
 		prof = new Profesja(pr);
 		
 		NameGenerator genImion = new NameGenerator();
-		imieNazwisko = genImion.generateFullName( rasa.getRaceEnum(), plec);
+		imieNazwisko = genImion.generateFullName( race.getRaceEnum(), plec);
 		
-		appearance = AppearanceFactory.create( rasa.getRaceEnum());
+		appearance = AppearanceFactory.create( race.getRaceEnum());
 		
 		if(plec)
 			plecBohatera = "Mężczyzna";
@@ -36,7 +36,7 @@ public class Bohater {
 			plecBohatera = "Kobieta";
 
 		
-		stats = new Stats( rs.cechyBazowe, rs.getRaceEnum());
+		stats = new Stats( rs.baseStats, rs.getRaceEnum());
 		znaneUmiejetnosci = new ArrayList<Skill>();
 		dodajZnaneUmiejetnosciZRasy();
 		znaneTalenty = new ArrayList<Talent>();
@@ -63,7 +63,7 @@ public class Bohater {
 		this.imieNazwisko = bh.imieNazwisko;
 		this.plecBohatera = bh.plecBohatera;
 		this.appearance = bh.appearance;
-		this.rasa = new Rasa(bh.rasa);
+		this.race = new Race( bh.race );
 		this.prof = new Profesja(bh.prof);
 		this.stats = new Stats( bh.stats );
 		this.znaneUmiejetnosci = new ArrayList<Skill>();
@@ -213,7 +213,7 @@ public class Bohater {
 	//pewnie siďż˝ zmieni nazwe
 	public String wyswietlBohatera(boolean czyWyswietlicTalent){
 		
-		StringBuilder stringBuilder = new StringBuilder(rasa.getName()+"\n" +imieNazwisko +" ("+ plecBohatera + ")\n");
+		StringBuilder stringBuilder = new StringBuilder( race.getName()+"\n" +imieNazwisko +" ("+ plecBohatera + ")\n");
 		stringBuilder.append( appearance.showAll());
 		stringBuilder.append("Klasa postaci: " + prof.getKlasa()+"\n");
 		stringBuilder.append(prof.getNameProfesjaSciezka(getPlecBohatera()));
@@ -342,7 +342,7 @@ public class Bohater {
 		ArrayList<Skill> tempRasaZnaneUmiejetnosci = new ArrayList<Skill>();
 		
 		//skopiowanie listy dostďż˝pnych umiejetnoďż˝ci.
-		for(Skill m:rasa.getListaDostepnychUmiejetnosci()){
+		for(Skill m: race.getAvailableSkills()){
 			tempRasaZnaneUmiejetnosci.add(m);
 		}
 		
@@ -365,14 +365,14 @@ public class Bohater {
 		//krasnoludy majďż˝ do wyboru pomiďż˝dzy 0 a 1, oraz 2-3
 		// wysokie elfy 0 lub 1  oraz 2 lub 3
 		//lesne elfy, 0 lub 1, oraz 2 lub 3
-		if(rasa.getName().equals("Ludzie")){
-			znaneTalenty.add(rasa.getTalentDostepne(randomX(2)));	
+		if( race.getName().equals( "Ludzie")){
+			znaneTalenty.add( race.getAvailableTalents( randomX( 2)));
 		}else{
-			znaneTalenty.add(rasa.getTalentDostepne(randomX(2)));
-			znaneTalenty.add(rasa.getTalentDostepne(randomX(2)+2));
-			if(rasa.getIloscDostepnychTalentow() >3){
-				for(int i = 4; i<rasa.getIloscDostepnychTalentow(); i++){
-					znaneTalenty.add(rasa.getTalentDostepne(i));
+			znaneTalenty.add( race.getAvailableTalents( randomX( 2)));
+			znaneTalenty.add( race.getAvailableTalents( randomX( 2)+2));
+			if( race.getSizeOfAvailableTalents() >3){
+				for(int i = 4; i< race.getSizeOfAvailableTalents(); i++){
+					znaneTalenty.add( race.getAvailableTalents( i));
 				}
 			}
 		}
@@ -380,10 +380,10 @@ public class Bohater {
 			t.setTalentMax( stats );
 		}
 		//dodanie losowych talentow, + sprawdzenie czy siďż˝ nie powtarzajďż˝, ewentualnie zwiďż˝kszenie o 1
-		int losoweTalenty = rasa.getIloscLosowychTalentow();
+		int losoweTalenty = race.getNumberOfRandomTalents();
 		if(losoweTalenty > 0 ) {
 			for(int i= 0; i<losoweTalenty; i++){
-				Talent nowyTalent = rasa.getRandomTalent();
+				Talent nowyTalent = race.getRandomTalent();
 				int test = sprawdzCzyTalentJest(nowyTalent);
 				if(test == -1){
 					nowyTalent.setTalentMax( stats );
@@ -585,7 +585,7 @@ public class Bohater {
 		return imieNazwisko;
 	}
 	public String getRasaName() {
-		return rasa.getName();
+		return race.getName();
 	}
 	
 	public String getProfesjaNameMain() {

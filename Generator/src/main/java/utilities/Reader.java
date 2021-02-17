@@ -17,7 +17,6 @@ public class Reader {
                     .getResourceAsStream( fileName );
             assert input != null;
             InputStreamReader reader = new InputStreamReader( input, StandardCharsets.UTF_8);
-
             BufferedReader bufferedReader = new BufferedReader( reader);
             String line;
             while ((line = bufferedReader.readLine())!= null) {
@@ -32,4 +31,5 @@ public class Reader {
         }
         return null;
     }
+
 }
