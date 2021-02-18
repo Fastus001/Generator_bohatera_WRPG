@@ -25,17 +25,6 @@ public class Profession implements Comparable<Profession> {
     private String career;
     private String[] items;
 
-    /*
-    needed for the JComboBox<Object> proper name in GUI
-     */
-    public String toString() {
-        return name;
-    }
-
-    public int compareTo(Profession pr) {
-        return name.compareTo( pr.toString() );
-    }
-
     public String getName(boolean male) {
         String[] split = name.split( SPLIT );
 
@@ -55,10 +44,6 @@ public class Profession implements Comparable<Profession> {
         return getName( false ) + "\n" + getProfessionPath( false );
     }
 
-    public Talent getTalentAt(int index) {
-        return talents.get( index );
-    }
-
     public int getRandomProfessionStat() {
         int random = ( int ) (Math.random() * professionStats.length);
         return professionStats[random];
@@ -72,4 +57,14 @@ public class Profession implements Comparable<Profession> {
         return false;
     }
 
+    public int compareTo(Profession profession) {
+        return name.compareTo( profession.toString() );
+    }
+
+    /*
+    needed for the JComboBox<Object> proper name in GUI
+     */
+    public String toString() {
+        return name;
+    }
 }

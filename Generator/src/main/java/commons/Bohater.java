@@ -139,7 +139,7 @@ public class Bohater {
 		setUmiejetnosciProfesyjne();
 		
 		if(prof.toString().equals("CZARODZIEJ") && prof.getLevel()==2 ){
-			Talent nowy = prof.getTalentAt( 0);
+			Talent nowy = prof.getTalents().get( 0 );
 			nowy.setTalentMax( stats );
 			znaneTalenty.add(nowy);
 		}else{
@@ -414,7 +414,7 @@ public class Bohater {
 	//uwaga!! - moďż˝e siďż˝ zdarzyďż˝ ďż˝e siďż˝ ta metoda zapďż˝tli jak wszystkie talenty bďż˝dďż˝ miaďż˝y maksymalny poziom
 	private void dodajZnanyTalentZProfesji() {
 		int iloscTalentow = prof.getTalents().size();
-		Talent losowyTalent = prof.getTalentAt( randomX( iloscTalentow));
+		Talent losowyTalent = prof.getTalents().get( randomX( iloscTalentow));
 		
 		// sprawdzanie czy talenty siďż˝ powtarzajďż˝
 		int test = sprawdzCzyTalentJest(losowyTalent);
