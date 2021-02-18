@@ -1,5 +1,6 @@
 package commons;
 
+import enums.Gender;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -27,21 +28,21 @@ class ProfessionTest {
 
     @Test
     void getName() {
-        String name = profession.getName( false );
+        String name = profession.getName( Gender.FEMALE );
 
         assertEquals( PROF_NAME_FEMALE,name );
     }
 
     @Test
     void getProfessionPath() {
-        String professionPath = profession.getProfessionPath( false );
+        String professionPath = profession.getProfessionPath( Gender.FEMALE );
 
         assertEquals( PROF_PATH_NAME_FEMALE,professionPath );
     }
 
     @Test
     void getNameAndProfessionPath() {
-        String nameAndProfessionPath = profession.getNameAndProfessionPath( false );
+        String nameAndProfessionPath = profession.getNameAndProfessionPath( Gender.FEMALE );
 
         assertEquals( PROF_NAME_FEMALE+"\n"+PROF_PATH_NAME_FEMALE,
                       nameAndProfessionPath );

@@ -1,8 +1,11 @@
 package mvcOknoGlowne;
 
 import commons.*;
+import enums.Gender;
 import export.ExportDoExcela;
 import export.ExportToPdf;
+import commons.Hero;
+import hero.HeroDisplay;
 import npcGenerator.Potwory;
 
 import javax.swing.*;
@@ -29,7 +32,7 @@ public class GenBohModel implements GenBohModelInterface{
 	private ArrayList<Talent> listaTalentow;	
 	private ArrayList<Profession> listaProfesji;
 	private ArrayList<Profession> profesjePierwszyPoziom;
-	private Bohater nowyBohater;
+	private Hero nowyBohater;
 	private ObserwatorModel obserwator;
 
 	public GenBohModel() {
@@ -108,7 +111,7 @@ public class GenBohModel implements GenBohModelInterface{
 					}
 				//przedmioty
 				wiersz = czytajB.readLine();
-				String [] przedmiotyProf = wiersz.split(",");
+				String przedmiotyProf = wiersz;
 				
 				//cechy rozwoju
 				wiersz = czytajB.readLine();
@@ -307,9 +310,9 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		}
 
 		if(plec)
-			nowyBohater = new Bohater(losowaRasa,losowaProfesja, true);
+			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.MALE);
 		else
-			nowyBohater = new Bohater(losowaRasa,losowaProfesja, false);
+			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.FEMALE);
 		nowyBohater.doswiadczenieBohatera(exp);
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
 		wybranaRasa = losowaRasa.toBuilder().build();
@@ -367,7 +370,8 @@ public void wyrejestrujObserwatora(ObserwatorModel o) {
 }
 @Override
 public String wyswietlNowegoBohatera(boolean jak) {
-	return nowyBohater.wyswietlBohatera(jak);
+	HeroDisplay heroDisplay = new HeroDisplay( nowyBohater );
+	return heroDisplay.showHero(jak);
 }
 @Override
 public void podniesPoziom(int exp, boolean talenty) {
@@ -386,7 +390,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 		int potwierdznie = JOptionPane.showConfirmDialog(null, "Postać osiągneła maksymalny poziom profesji,czy chcesz aby \"ukończyła\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
 			if(potwierdznie == JOptionPane.OK_OPTION)
 				{
-				nowyBohater.ukonczPoziomProfesji(5);
+				nowyBohater.finishProfession( 5);
 				obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
 				}
 			
@@ -402,7 +406,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 			}
 		}else {
 			//wczytanie wybranej profesji (lvl1) do zmiennej
-			profesjaNowyPoziom = nowyBohater.getCurrentProfesja();
+			profesjaNowyPoziom = nowyBohater.getProfession();
 		}
 		
 			int sprawdzenieHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(profesjaNowyPoziom);
@@ -448,7 +452,7 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 		int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma być ukończony przed zmianą profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
 		if(potwierdzenie == JOptionPane.OK_OPTION) 
 		{
-			nowyBohater.ukonczPoziomProfesji(nowyBohater.getCurrentProfPoziom()+1);
+			nowyBohater.finishProfession( nowyBohater.getCurrentProfPoziom()+1);
 		}
 	}
 
@@ -469,11 +473,11 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 /**
  * @return the nowyBohater
  */
-public Bohater getNowyBohater() {
+public Hero getNowyBohater() {
 	return nowyBohater;
 }
 @Override
-public Bohater postacBohaterModel() {
+public Hero postacBohaterModel() {
 	return this.getNowyBohater();
 }
 @Override
@@ -516,11 +520,11 @@ public void opisPostaciTalenty(boolean talenty) {
 }
 @Override
 public void zapiszPostac() {
-	Bohater nowy = new Bohater(nowyBohater);
+	Hero nowy = new Hero( nowyBohater);
 	obserwator.aktualizujListeBohaterow(nowy);
 }
 @Override
-public void exportDoPdf(Bohater nBohater) {
+public void exportDoPdf(Hero nBohater) {
 	if(urlSavaPdf==null)
 	{
 		JFileChooser dialogFolder = new JFileChooser();
@@ -547,8 +551,8 @@ public void exportDoExcel(Object[] obj,int ktora) {
 	ExportDoExcela exp = new ExportDoExcela();
 	if(ktora ==0) {
 		for(Object obiekt:obj) {
-			if(obiekt instanceof Bohater) {
-				Bohater nBohater = new Bohater((Bohater) obiekt);
+			if(obiekt instanceof Hero ) {
+				Hero nBohater = new Hero( ( Hero ) obiekt);
 				exp.createBohaterSheet(nBohater);
 			}
 			if(obiekt instanceof Potwory) {
@@ -557,8 +561,8 @@ public void exportDoExcel(Object[] obj,int ktora) {
 			}
 		}
 	}else {
-		if(obj[ktora] instanceof Bohater) {
-			Bohater nBohater = new Bohater((Bohater) obj[ktora]);
+		if(obj[ktora] instanceof Hero ) {
+			Hero nBohater = new Hero( ( Hero ) obj[ktora]);
 			exp.createBohaterSheet(nBohater);
 		}
 		if(obj[ktora] instanceof Potwory) {

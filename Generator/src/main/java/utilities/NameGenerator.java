@@ -1,22 +1,30 @@
 package utilities;
 
+import enums.Gender;
 import enums.RaceType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import utilities.Reader;
 
 import java.util.List;
 
 public class NameGenerator {
+	private static NameGenerator instance;
     private static final String NAMES = "names.txt";
     private final List<String[]> namesList;
 
-    public NameGenerator() {
+    private NameGenerator() {
         namesList = Reader.getListOfArraysFrom( NAMES );
     }
 
-    public String generateFullName(RaceType raceType, boolean male) {
-        return male ? maleFullName( raceType ):femaleFullName( raceType );
+    public static NameGenerator getInstance(){
+    	if(instance == null){
+    		instance = new NameGenerator();
+		}
+    	return instance;
+	}
+
+    public String generateFullName(RaceType raceType, Gender gender) {
+        return gender.equals( Gender.MALE ) ? maleFullName( raceType ):femaleFullName( raceType );
     }
 
 	private String maleFullName(RaceType raceType) {

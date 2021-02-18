@@ -1,6 +1,6 @@
 package export;
 
-import commons.Bohater;
+import commons.Hero;
 import commons.Skill;
 import commons.Talent;
 import npcGenerator.CechyPotworow;
@@ -13,6 +13,7 @@ import org.apache.poi.ss.util.WorkbookUtil;
 import javax.swing.*;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
@@ -120,10 +121,10 @@ public class ExportDoExcela {
 	 * Tworzy arkusz z wszystkimi danymi bohatera
 	 * @param bh - postać pohatera do zapisania w arkuszu
 	 */
-	public void createBohaterSheet(Bohater bh) {
+	public void createBohaterSheet(Hero bh) {
 		logger.entering("ExportdoExela", "createBohaterSheet");
 		//nazwa arkusza
-		String safeName = WorkbookUtil.createSafeSheetName(bh.getImieNazwisko());
+		String safeName = WorkbookUtil.createSafeSheetName(bh.getName());
 		Sheet sheet = wb.createSheet(safeName);
 		
 		CellStyle justowanie = getCellStyleBold(false, true, false);
@@ -147,7 +148,7 @@ public class ExportDoExcela {
 		Cell cellB = row.createCell(0);
 		CellStyle temp = getCellStyleBold(true, true, false);;
 		temp.setFont(font12);
-		createAndSetCell(row, 0, bh.getImieNazwisko(), temp);
+		createAndSetCell( row, 0, bh.getName(), temp);
 		sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 2));
 		
 		//rasa
@@ -245,11 +246,12 @@ public class ExportDoExcela {
 		createAndSetCell(row, 4, "Rozwinięcia:", pogrubionJustTlo);
 		sheet.autoSizeColumn(4);
 		createAndSetCell(row, 5, "Suma:", pogrubionJustTlo);
-		
-				
-		for(int i = 0; i<bh.znaneUmiejetnosci.size();i++) {
+
+		Iterator<Skill> skillIterator = bh.knownSkills.iterator();
+		for(int i = 0; i<bh.knownSkills.size(); i++) {
 			row = sheet.createRow(10+i);
-			Skill um = bh.znaneUmiejetnosci.get( i);
+//			Skill um = bh.knownSkills.get( i);
+			Skill um = skillIterator.next();
 			createAndSetCell( row, 0, um.getName(), pogrubiony);
 			createAndSetCell(row, 3, STATYSTYKI[um.getStatNumber()], justowanie);
 			createAndSetCell(row, 4, um.getLevel(), justowanie);
@@ -269,10 +271,12 @@ public class ExportDoExcela {
 		cs.setFont(font8);
 		cs.setAlignment(HorizontalAlignment.JUSTIFY);
 		cs.setVerticalAlignment(VerticalAlignment.TOP);
-		
-		for(int i = 0; i<bh.znaneTalenty.size();i++) {
+
+		Iterator<Talent> talentIterator = bh.knownTalents.iterator();
+		for(int i = 0; i<bh.knownTalents.size(); i++) {
 			row = sheet.createRow(rowCount+i);
-			Talent tl = bh.znaneTalenty.get( i);
+//			Talent tl = bh.knownTalents.get( i);
+			Talent tl = talentIterator.next();
 			createAndSetCell( row, 0, tl.showTalentNameWithLevel(), csBoldAlign);
 			createAndSetCell( row, 3, tl.getLevel(), justowanie);
 			createAndSetCell( row, 4, tl.getTest(), justAlign);

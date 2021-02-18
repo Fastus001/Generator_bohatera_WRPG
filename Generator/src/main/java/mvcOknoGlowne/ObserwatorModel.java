@@ -4,7 +4,7 @@
 package mvcOknoGlowne;
 
 
-import commons.Bohater;
+import commons.Hero;
 
 /**
  * @author Tom
@@ -16,5 +16,5 @@ public interface ObserwatorModel {
 	void wlaczbtnNowaProfesja();
 	void wlaczPrzyciskbtnPodniesPoziomPr();
 	void wylaczPrzicskPodniesPoziomPr();
-	void aktualizujListeBohaterow(Bohater nowy);
+	void aktualizujListeBohaterow(Hero nowy);
 }

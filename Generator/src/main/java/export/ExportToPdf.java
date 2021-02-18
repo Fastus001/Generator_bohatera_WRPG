@@ -7,13 +7,14 @@ import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
-import commons.Bohater;
+import commons.Hero;
 import commons.Skill;
 import commons.Talent;
 
 import javax.swing.*;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Iterator;
 
 
 public class ExportToPdf {
@@ -28,14 +29,14 @@ public class ExportToPdf {
 	private PdfFont font1;
 
 	private PdfAcroForm form;
-	private Bohater hero;
+	private Hero hero;
 	
 	
-	public ExportToPdf(Bohater h, String des) throws IOException{
+	public ExportToPdf(Hero h, String des) throws IOException{
 
 			
 			this.hero = h;
-			String nazwaPliku = hero.getImieNazwisko().replace(" ", "_")+"_"+ hero.getCurrentProfesjaName() + "_poz"+ hero.getCurrentProfPoziom() +".pdf";
+			String nazwaPliku = hero.getName().replace( " ", "_")+"_"+ hero.getCurrentProfesjaName() + "_poz"+ hero.getCurrentProfPoziom() +".pdf";
 			
 			ClassLoader classLoader = getClass().getClassLoader();
 			InputStream inputStream = classLoader.getResourceAsStream("WFRP_4ed_final_edytowalna.pdf");
@@ -59,10 +60,12 @@ public class ExportToPdf {
 	}
 
 	private void wczytajTalenty() {
-		if(hero.znaneTalenty.size()<17) {
-			for(int i = 0; i<hero.znaneTalenty.size();i++)
+		Iterator<Talent> talentIterator = hero.knownTalents.iterator();
+		if(hero.knownTalents.size()<17) {
+			for(int i = 0; i<hero.knownTalents.size(); i++)
 			{
-				Talent tl = hero.znaneTalenty.get( i);
+//				Talent tl = hero.knownTalents.get( i);
+				Talent tl = talentIterator.next();
 				talenty(tl, i+1);
 			}	
 		}else {
@@ -82,7 +85,7 @@ public class ExportToPdf {
 		int ileRazySztuka = 0;
 		int ileRazySkradanie = 0;
 		int ileRazyJazda = 0;
-		for(Skill um:hero.znaneUmiejetnosci) {
+		for(Skill um:hero.knownSkills) {
 			if(um.getName().contains( "Broń Biała"))
 				{
 				ileRazyBB++;
@@ -142,7 +145,7 @@ public class ExportToPdf {
 		
 		form.getField("BWtx2").setValue(getBonusCechy(3, 2),font1, TEN);
 		form.getField("BSW").setValue(getBonusCechy(8, 1),font1, TEN);
-		int twardziel = hero.getCzyJestTwardziel(); 
+		int twardziel = hero.getHardyLevel();
 		System.out.println("to PDF Twardziel razy - " + twardziel);
 		if(twardziel>0) {
 			form.getField("Twardziel").setValue(getBonusCechy(3, twardziel),font1, TEN);
@@ -185,7 +188,7 @@ public class ExportToPdf {
 		String zmienna = "";
 		form.setGenerateAppearance(true);
 		//opis postaci
-		form.getField("Imię").setValue(hero.getImieNazwisko(),font1, 10f);
+		form.getField("Imię").setValue( hero.getName(), font1, 10f);
 		form.getField("Rasa").setValue(hero.getRasaName(),font1, 10f);
 
 		form.getField("Klasa").setValue(hero.getKlasaProfesji(),font1, 10f);
@@ -237,7 +240,7 @@ public class ExportToPdf {
 	
 	private void wczytajUmiejetnosci() {
 		int liczbaUmZaawansow = 0;
-		for(Skill um:hero.znaneUmiejetnosci) {
+		for(Skill um:hero.knownSkills) {
 			//System.out.println("Umiejetntosci podstawowe wszystkie" + um.showTalentNameWithLevel());
 			if(um.getType().equals( "podstawowa"))
 			{
@@ -255,7 +258,7 @@ public class ExportToPdf {
 		System.out.println("Liczba umiejetnosci zaawansowanych to = " + liczbaUmZaawansow);
 		int licznik = 0;
 		if(liczbaUmZaawansow < maksymalna_liczba_um_zaaw_w_arkuszu) {
-			for(Skill um:hero.znaneUmiejetnosci)
+			for(Skill um:hero.knownSkills)
 			{
 				if(um.getType().equals( "zaawansowana"))
 				{

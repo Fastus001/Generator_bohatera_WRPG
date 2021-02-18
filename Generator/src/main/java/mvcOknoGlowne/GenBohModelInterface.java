@@ -3,7 +3,7 @@
  */
 package mvcOknoGlowne;
 
-import commons.Bohater;
+import commons.Hero;
 import commons.Profession;
 import commons.Race;
 
@@ -45,7 +45,7 @@ public interface GenBohModelInterface {
 	Object [] getProfesjePierwszyPoziom(Race rs);
 	void zarejestrujObserwatora(ObserwatorModel o);
 	void wyrejestrujObserwatora(ObserwatorModel o);
-	Bohater postacBohaterModel();
+	Hero postacBohaterModel();
 	void setRasa(Race r);
 	void setProfesja(Profession p);
 	/**
@@ -61,7 +61,7 @@ public interface GenBohModelInterface {
 	 * 
 	 * @param nBohater - postać wybra na zapisania do pliku pdf
 	 */
-	void exportDoPdf(Bohater nBohater);
+	void exportDoPdf(Hero nBohater);
 	/**
 	 * 
 	 * @param obj - tablica obiektów (bohater lub NPC do wgrania do arkusza Excel)

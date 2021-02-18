@@ -18,9 +18,10 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
-import commons.Bohater;
+import commons.Hero;
 import commons.Profession;
 import commons.Race;
+import hero.HeroDisplay;
 import mvcOknoGlowne.GenBohKontrolerInterface;
 import mvcOknoGlowne.GenBohModelInterface;
 import mvcOknoGlowne.ObserwatorModel;
@@ -126,9 +127,10 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Object obj = listaBohaterow.elementAt(list.getSelectedIndex());
-				if(obj instanceof Bohater) {
-					Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
-					textArea.setText(nBohater.wyswietlBohatera(chckbxShowTalents.isSelected()));
+				if(obj instanceof Hero ) {
+					Hero nBohater = new Hero( ( Hero ) listaBohaterow.elementAt( list.getSelectedIndex()));
+					HeroDisplay heroDisplay = new HeroDisplay( nBohater );
+					textArea.setText( heroDisplay.showHero(chckbxShowTalents.isSelected()));
 					kontroler.aktywujExportDoPdf();
 				}else if (obj instanceof Potwory) {
 					Potwory nowyBohater = new Potwory((Potwory) listaBohaterow.elementAt(list.getSelectedIndex()));
@@ -167,9 +169,9 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus)
 			{
 				Component renderer = super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
-		                if (renderer instanceof JLabel && value instanceof Bohater)
+		                if (renderer instanceof JLabel && value instanceof Hero )
 			{
-		                  ((JLabel) renderer).setText(((Bohater) value).toString());
+		                  ((JLabel) renderer).setText((( Hero ) value).toString());
 		                }
 		                return renderer;
 		        }
@@ -265,7 +267,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnExportToPdf.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Bohater nBohater = new Bohater((Bohater) listaBohaterow.elementAt(list.getSelectedIndex()));
+				Hero nBohater = new Hero( ( Hero ) listaBohaterow.elementAt( list.getSelectedIndex()));
 				model.exportDoPdf(nBohater);
 			}
 		});
@@ -490,7 +492,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnPodniesPoziomPr.setEnabled(false);
 	}
 	@Override
-	public void aktualizujListeBohaterow(Bohater nowy) {
+	public void aktualizujListeBohaterow(Hero nowy) {
 		listaBohaterow.addElement(nowy);
 		if(listaBohaterow.size() > 0) {
 			kontroler.aktywujExportDoExcel();

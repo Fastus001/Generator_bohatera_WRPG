@@ -1,5 +1,6 @@
 package commons;
 
+import enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -23,25 +24,22 @@ public class Profession implements Comparable<Profession> {
     private int[] professionStats;
     private boolean finished;
     private String career;
-    private String[] items;
+    private String items;
 
-    public String getName(boolean male) {
+    public String getName(Gender gender) {
         String[] split = name.split( SPLIT );
 
-        return male ? split[0] : split [1];
+        return gender.equals( Gender.MALE ) ? split[0] : split [1];
     }
 
-    public String getProfessionPath(boolean male) {
+    public String getProfessionPath(Gender gender) {
         String[] split = professionPath.split( SPLIT );
 
-        return male ? split[0] : split [1];
+        return gender.equals( Gender.MALE ) ? split[0] : split [1];
     }
 
-    public String getNameAndProfessionPath(boolean male) {
-        if ( male ) {
-            return getName(true) + "\n" + getProfessionPath(true);
-        }
-        return getName( false ) + "\n" + getProfessionPath( false );
+    public String getNameAndProfessionPath(Gender gender) {
+            return getName(gender) + "\n" + getProfessionPath(gender);
     }
 
     public int getRandomProfessionStat() {
