@@ -1,7 +1,9 @@
 package export;
 
+import appearance.Appearance;
 import commons.Hero;
 import commons.Skill;
+import commons.Stats;
 import commons.Talent;
 import npcGenerator.CechyPotworow;
 import npcGenerator.Potwory;
@@ -153,7 +155,7 @@ public class ExportDoExcela {
 		
 		//rasa
 		createAndSetCell(row, 3, "Rasa:", null);
-		createAndSetCell(row, 4, bh.getRasaName(), csBoldAlign);
+		createAndSetCell(row, 4, bh.getRace().getName(), csBoldAlign);
 		//klasa
 		row.createCell(5).setCellValue("Klasa");
 		createAndSetCell(row, 6, bh.getKlasaProfesji(), csBoldAlign);
@@ -171,19 +173,20 @@ public class ExportDoExcela {
 		//Rząd -2 - wiek, wygląd
 		row = sheet.createRow(2);
 		row.createCell(0).setCellValue("Wiek:");
-		createAndSetCell(row, 1, bh.getWygladWiek(), justowanie);
+		Appearance appearance = bh.getAppearance();
+		createAndSetCell(row, 1, appearance.getAge(), justowanie);
 		row.createCell(2).setCellValue("Wzrost:");
-		createAndSetCell(row, 3, bh.getWygladWzrost(), justowanie);
+		createAndSetCell(row, 3, appearance.getHeight(), justowanie);
 		row.createCell(4).setCellValue("Włosy:");
-		createAndSetCell(row, 5, bh.getWygladWlosy(), justowanie);
+		createAndSetCell(row, 5, appearance.getHairColor(), justowanie);
 		sheet.addMergedRegion(new CellRangeAddress(2, 2, 5, 6));
 		row.createCell(7).setCellValue("Oczy:");
-		createAndSetCell(row, 8, bh.getWygladOczy(), justowanie);
+		createAndSetCell(row, 8, appearance.getEyesColor(), justowanie);
 		
 		//Rząd 3,4,5,6 - Cechy - opis
 		row = sheet.createRow(3);
-		int[] aktualne = bh.getCechyAktualneInt();
-		int [] rozwiniecia = bh.getCechyRozwinieciaInt();
+		int[] aktualne = bh.getStatsCurrent();
+		int [] rozwiniecia = bh.getStatsAdvances();
 		createAndSetCell(row, 0, "", pogrubionJustTlo);
 		for(int i = 1; i< 11; i++) {
 			cellB = row.createCell(i);
@@ -227,11 +230,13 @@ public class ExportDoExcela {
 		//Rząd 7 - Szybkość
 		row = sheet.createRow(7);
 		row.createCell(0).setCellValue("Szybkość:");
-		createAndSetCell(row, 1, bh.getCechySzybkosc(), justowanie);
+		Stats stats = bh.getStats();
+		int speed = stats.getSpeed();
+		createAndSetCell(row, 1, speed, justowanie);
 		row.createCell(2).setCellValue("Chód:");
-		createAndSetCell(row, 3, bh.getCechySzybkosc()*2, justowanie);
+		createAndSetCell(row, 3, speed*2, justowanie);
 		row.createCell(4).setCellValue("Bieg:");
-		createAndSetCell(row, 5, bh.getCechySzybkosc()*4, justowanie);
+		createAndSetCell(row, 5, speed*4, justowanie);
 		
 		//rząd 8 - żywotność
 		row = sheet.createRow(8);

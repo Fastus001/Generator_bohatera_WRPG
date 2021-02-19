@@ -483,11 +483,10 @@ public Hero postacBohaterModel() {
 @Override
 public void setRasa(Race r) {
 	if(nowyBohater != null) {
-		if(r.getName().equals(nowyBohater.getRasaName())) {
+		if(r.getName().equals(nowyBohater.getRace().getName())) {
 			obserwator.wlaczPrzyciskbtnPodniesPoziomPr();
 		}
 	}
-
 	wybranaRasa = r;
 	
 }
@@ -495,7 +494,7 @@ public void setRasa(Race r) {
 public void setProfesja(Profession p) {
 	if(nowyBohater != null) {
 		//jeżeli rasa nie została zmieniona to możemy działać
-		if(wybranaRasa.getName().equals(nowyBohater.getRasaName()))
+		if(wybranaRasa.getName().equals(nowyBohater.getRace().getName()))
 		{
 			int test = nowyBohater.sprawdzHistorieProfesji(p);
 			//postać wcześniej nie rozwijała danej profesji, można włączyc opcję nowa profesja

@@ -1,5 +1,6 @@
 package export;
 
+import appearance.Appearance;
 import com.itextpdf.forms.PdfAcroForm;
 import com.itextpdf.io.font.PdfEncodings;
 import com.itextpdf.kernel.font.PdfFont;
@@ -15,6 +16,8 @@ import javax.swing.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
+
+import static java.lang.String.*;
 
 
 public class ExportToPdf {
@@ -122,25 +125,25 @@ public class ExportToPdf {
 	}
 
 	private void szybkosc() {
-		Integer szybkosc = hero.getCechySzybkosc();
-		form.getField("Szybkość").setValue(szybkosc.toString(),font1, TEN);
-		szybkosc = szybkosc*2;
-		form.getField("Chód").setValue(szybkosc.toString(),font1, TEN);
-		szybkosc = szybkosc*2;
-		form.getField("Bieg").setValue(szybkosc.toString(),font1, OSIEM);
+		int speed = hero.getStats().getSpeed();
+		form.getField("Szybkość").setValue( valueOf( speed ), font1, TEN);
+		speed = speed*2;
+		form.getField("Chód").setValue( valueOf( speed ), font1, TEN);
+		speed = speed*2;
+		form.getField("Bieg").setValue( valueOf( speed ), font1, OSIEM);
 		
 	}
 	
-	private String getBonusCechy(int x, int ileRazy) {
-		String [] cechyAktualne = hero.getCechyAktualne();
-		int bonusSily = Integer.parseInt(cechyAktualne[x]);
+	private String getBonusCechy(int index, int ileRazy) {
+		int [] cechyAktualne = hero.getStatsCurrent();
+		int bonusSily = cechyAktualne[index];
 		bonusSily = ileRazy*((int) (bonusSily/10));
 		Integer bs = bonusSily;
 		return bs.toString();
 	}
 
 	private void wczytanieZywotnosci() {
-		if(hero.getRasaName() != "Niziołki")
+		if(hero.getRace().getName().equals( "Niziołki"))
 			form.getField("BS").setValue(getBonusCechy(2, 1),font1, TEN);
 		
 		form.getField("BWtx2").setValue(getBonusCechy(3, 2),font1, TEN);
@@ -189,7 +192,7 @@ public class ExportToPdf {
 		form.setGenerateAppearance(true);
 		//opis postaci
 		form.getField("Imię").setValue( hero.getName(), font1, 10f);
-		form.getField("Rasa").setValue(hero.getRasaName(),font1, 10f);
+		form.getField("Rasa").setValue(hero.getRace().getName(),font1, 10f);
 
 		form.getField("Klasa").setValue(hero.getKlasaProfesji(),font1, 10f);
 		
@@ -200,37 +203,36 @@ public class ExportToPdf {
 		form.getField("Poziom Profesji").setValue(zmienna,font1, OSIEM);
 		form.getField("Ścieżka Profesji").setValue(hero.getProfesjaSciezka(),font1, OSIEM);
 		form.getField("Status").setValue(hero.getProfesjaStatus(),font1, OSIEM);
-		form.getField("Wiek").setValue(hero.getWygladWiek(),font1, OSIEM);
-		form.getField("Wzrost").setValue(hero.getWygladWzrost(),font1, OSIEM);
-		form.getField("fill_118").setValue(hero.getWygladWlosy(),font1, OSIEM);
-		form.getField("Oczy").setValue(hero.getWygladOczy(),font1, OSIEM);
+		Appearance appearance = hero.getAppearance();
+		form.getField("Wiek").setValue( valueOf( appearance.getAge() ), font1, OSIEM);
+		form.getField("Wzrost").setValue( valueOf( appearance.getHeight() ), font1, OSIEM);
+		form.getField("fill_118").setValue( appearance.getHairColor(),font1, OSIEM);
+		form.getField("Oczy").setValue( appearance.getEyesColor(),font1, OSIEM);
 		
 		/*
 		 * opisanie poziom aktualnych cech bohatera
 		 */
 		
 		String [] cechyAktualneForms = {"WW_aktualna","US_aktualna","S_aktualna","WT_aktualna","I_aktualna","ZW_aktualna","ZR_aktualna","INT_aktualna","SW_aktualna","OGD_aktualna"};
-		String [] cechyAktualne = hero.getCechyAktualne();
 		String [] cechyRozwinieciaForms = {"WW_rozwieniecie","US_rozwienicie","S_rozwienicie","WT_rozwienicie","I_rozwienicie","ZW_rozwienicie","ZR_rozwienicie","INT_rozwienicie","SW_rozwienicie","OGD_rozwienicie"};
-		String [] cechyRozwiniecia = hero.getCechyRozwiniecia();
+		int[] statsCurrent = hero.getStatsCurrent();
+		int[] statsAdvances = hero.getStatsAdvances();
 		String [] cechyBazoweForms = {"WW_poczatkowa","US_poczatkowa","S_poczatkowa","Wt_poczatkowa","I_poczatkowa","ZW_poczatkowa","ZR_poczatkowa","INT_poczatkowa","SW_poczatkowa","OGD_poczatkowa"};
 		
 
-		for(int x = 0; x < cechyAktualne.length; x++) {
-			form.getField(cechyAktualneForms[x]).setValue(cechyAktualne[x],font1, 10f);
-			if(cechyRozwiniecia[x]!=null) {
-				form.getField(cechyRozwinieciaForms[x]).setValue(cechyRozwiniecia[x],font1, 10f);
-				Integer wartosc = Integer.parseInt(cechyAktualne[x]) - Integer.parseInt(cechyRozwiniecia[x]);
+		for(int x = 0; x < statsCurrent.length; x++) {
+			form.getField(cechyAktualneForms[x]).setValue( valueOf( statsCurrent[x] ), font1, 10f);
+			if(statsAdvances[x] != 0) {
+				form.getField(cechyRozwinieciaForms[x]).setValue( valueOf( statsAdvances[x] ), font1, 10f);
+				int wartosc = statsCurrent[x] - statsAdvances[x];
 				if(hero.czyJestCechaRozwojuProfesji(x)) {
-					form.getField(cechyBazoweForms[x]).setValue(wartosc.toString()+"*",font1, 10f);
+					form.getField(cechyBazoweForms[x]).setValue(wartosc+"*",font1, 10f);
 				}else {
-					form.getField(cechyBazoweForms[x]).setValue(wartosc.toString(),font1, 10f);
+					form.getField(cechyBazoweForms[x]).setValue( valueOf( wartosc ), font1, 10f);
 				}
-				
-				
 			}	
 			else {
-				form.getField(cechyBazoweForms[x]).setValue(cechyAktualne[x],font1, 10f);
+				form.getField(cechyBazoweForms[x]).setValue( valueOf( statsCurrent[x] ), font1, 10f);
 			}
 			
 		}//koniec for..
