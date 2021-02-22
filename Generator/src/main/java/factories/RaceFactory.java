@@ -44,25 +44,25 @@ public class RaceFactory {
     }
 
 
-    private Race mapRace(String[] line){
+    private Race mapRace(String[] rawRaceToBuild){
         return Race.builder()
-                .name( line[0] )
-                .skills( createSkills( line[1] ) )
-                .talents( createTalents( line[2] ) )
-                .availableRandomTalents( parseInt( line[3]) )
+                .name( rawRaceToBuild[0] )
+                .skills( createSkills( rawRaceToBuild[1] ) )
+                .talents( createTalents( rawRaceToBuild[2] ) )
+                .availableRandomTalents( parseInt( rawRaceToBuild[3]) )
                 .build();
+    }
+
+    private List<Skill> createSkills(String names) {
+        return Arrays.stream( names.split( ":" ) )
+                .map( s-> SkillFactory.getInstance().createSkill( s ) )
+                .collect( Collectors.toList());
     }
 
     private List<Talent> createTalents(String s1) {
         return Arrays.stream( s1.split( ":" ) )
                 .map( s-> TalentFactory.getInstance().createTalent( s ) )
                 .collect( Collectors.toList());
-    }
-
-    private List<Skill> createSkills(String names) {
-        return Arrays.stream( names.split( ":" ) )
-                         .map( s-> SkillFactory.getInstance().createSkill( s ) )
-                         .collect( Collectors.toList());
     }
 
 

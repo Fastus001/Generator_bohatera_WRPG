@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -18,8 +19,8 @@ public class Profession implements Comparable<Profession> {
     private String name;
     private String professionPath;
     private int level;
-    public ArrayList<Skill> skills;
-    public ArrayList<Talent> talents;
+    public List<Skill> skills;
+    public List<Talent> talents;
     public String[] races;
     private int[] professionStats;
     private boolean finished;

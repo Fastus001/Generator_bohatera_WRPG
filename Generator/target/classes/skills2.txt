@@ -1,27 +1,56 @@
 Atletyka;5;podstawowa
 Badania Naukowe;7;zaawansowana
 Broń Biała;0;podstawowa
+Broń Biała (Bijatyka);0;podstawowa
+Broń Biała (Dowolna);0;podstawowa
+Broń Biała (Drzewcowa);0;podstawowa
+Broń Biała (Dwuręczna);0;podstawowa
+Broń Biała (Kawaleryjska);0;podstawowa
+Broń Biała (Korbacz);0;podstawowa
+Broń Biała (Korbacz albo Dwuręczna);0;podstawowa
+Broń Biała (Szermiercza);0;podstawowa
+Broń Biała (Parująca);0;podstawowa
 Broń Biała (Podstawowa);0;podstawowa
 Broń Zasięgowa;1;zaawansowana
+Broń Zasięgowa (Eksperymentalna);1;zaawansowana
+Broń Zasięgowa (Kusza);1;zaawansowana
+Broń Zasięgowa (Kusza Pistoletowa);1;zaawansowana
 Broń Zasięgowa (Łuk);1;zaawansowana
+Broń Zasięgowa (Proca);1;zaawansowana
+Broń Zasięgowa (Rzucana);1;zaawansowana
+Broń Zasięgowa (Prochowa);1;zaawansowana
+Broń Zasięgowa (Unieruchamiająca);1;zaawansowana
 Charyzma;9;podstawowa
 Dowodzenie;9;podstawowa
 Hazard;7;podstawowa
 Jeździectwo;5;podstawowa
+Jeździectwo (Konie);5;podstawowa
 Intuicja;4;podstawowa
 Język;7;zaawansowana
+Język (Bitewny);7;zaawansowana
+Język (bretoński);7;zaawansowana
+Język (Cechu);7;zaawansowana
+Język (Dowolny);7;zaawansowana
 Język (Eltharin);7;zaawansowana
+Język (Estalijski albo Tileański);7;zaawansowana
+Język (Gildii);7;zaawansowana
+Język (Grypsera);7;zaawansowana
+Język (Magiczny);7;zaawansowana
+Język (Klasyczny);7;zaawansowana
 Język (Krainy Zgromadzenia);7;zaawansowana
 Język (Khazalid);7;zaawansowana
 Język (Jałowej Krainy);7;zaawansowana
-Język (bretoński);7;zaawansowana
 Mocna Głowa;3;podstawowa
 Kuglarstwo;5;zaawansowana
+Kuglarstwo (Dowolne);5;zaawansowana
+Kuglarstwo (Walka Pokazowa);5;zaawansowana
 Leczenie;7;zaawansowana
 Nawigacja;4;podstawowa
 Modlitwa;9;zaawansowana
 Odporność;3;podstawowa
 Muzyka;6;zaawansowana
+Muzyka (Bęben albo Piszczałka);6;zaawansowana
+Muzyka (Dowolna);6;zaawansowana
 Muzyka (Dowolny instrument);6;zaawansowana
 Opanowanie;8;podstawowa
 Opieka nad Zwierzętami;7;zaawansowana
@@ -33,25 +62,116 @@ Pływanie;2;zaawansowana
 Przekupstwo;9;podstawowa
 Powożenie;5;podstawowa
 Rzemiosło;6;zaawansowana
-Rzemiosło (Kucharz);6;zaawansowana
+Rzemiosło (Amulety);6;zaawansowana
+Rzemiosło (Aptekarstwo);6;zaawansowana
+Rzemiosło (Browarnik);6;zaawansowana
+Rzemiosło (Cieśla);6;zaawansowana
+Rzemiosło (Cyrulik);6;zaawansowana
 Rzemiosło (Dowolne);6;zaawansowana
+Rzemiosło (Drukarstwo);6;zaawansowana
+Rzemiosło (Grawer);6;zaawansowana
+Rzemiosło (Inżynier);6;zaawansowana
+Rzemiosło (Inżynieria);6;zaawansowana
+Rzemiosło (Kartograf);6;zaawansowana
+Rzemiosło (Materiały Wybuchowe);6;zaawansowana
+Rzemiosło (Podkuwanie Koni);6;zaawansowana
+Rzemiosło (Przybory dla artystów);6;zaawansowana
+Rzemiosło (Rusznikarz);6;zaawansowana
+Rzemiosło (Szkutnictwo);6;zaawansowana
+Rzemiosło (Truciciel);6;zaawansowana
+Rzemiosło (Kucharz);6;zaawansowana
+Rzemiosło (Winiarz);6;zaawansowana
+Rzemiosło (Zielarz);6;zaawansowana
+Rzemiosło (Złota Rączka);6;zaawansowana
 Sekretne Znaki;7;zaawansowana
+Sekretne Znaki (Łowców);7;zaawansowana
+Sekretne Znaki (Dowolne);7;zaawansowana
+Sekretne Znaki (Cechu);7;zaawansowana
+Sekretne Znaki (Gildii);7;zaawansowana
+Sekretne Znaki (Górników);7;zaawansowana
+Sekretne Znaki (Przemytników);7;zaawansowana
+Sekretne Znaki (Włóczykijów);7;zaawansowana
+Sekretne Znaki (Zakonu Rycerskiego);7;zaawansowana
+Sekretne Znaki (Złodziei);7;zaawansowana
 Splatanie Magii;8;zaawansowana
+Splatanie Magii (Azyr);8;zaawansowana
+Splatanie Magii (Dowolny Kolor);8;zaawansowana
 Sztuka;6;podstawowa
+Sztuka (Dowolna);6;podstawowa
+Sztuka (Kaligrafia);6;podstawowa
+Sztuka (Pisarstwo);6;podstawowa
 Skradanie;5;podstawowa
+Skradanie (Dowolne);5;podstawowa
+Skradanie (Miasto albo Podziemia);5;podstawowa
+Skradanie (Miasto);5;podstawowa
+Skradanie (Podziemia);5;podstawowa
+Skradanie (Wieś);5;podstawowa
 Sztuka Przetrwania;7;podstawowa
 Targowanie;9;podstawowa
 Tresura;7;zaawansowana
+Tresura (Dowolna);7;zaawansowana
+Tresura (Gołąb);7;zaawansowana
+Tresura (Konie);7;zaawansowana
+Tresura (Psy);7;zaawansowana
 Tropienie;4;zaawansowana
 Unik;5;podstawowa
 Wiedza;7;zaawansowana
-Wiedza (Metalurgia);7;zaawansowana
-Wiedza (Krasnoludy);7;zaawansowana
+Wiedza (Anatomia);7;zaawansowana
+Wiedza (Astrologia);7;zaawansowana
+Wiedza (Chaos);7;zaawansowana
+Wiedza (Chemia);7;zaawansowana
+Wiedza (Czarownice);7;zaawansowana
+Wiedza (Demonologia);7;zaawansowana
+Wiedza (Dowolna);7;zaawansowana
+Wiedza (Duchy);7;zaawansowana
+Wiedza (Geografia);7;zaawansowana
 Wiedza (Geologia);7;zaawansowana
+Wiedza (Genealogia);7;zaawansowana
+Wiedza (Heraldyka);7;zaawansowana
+Wiedza (Historia);7;zaawansowana
+Wiedza (Imperium);7;zaawansowana
+Wiedza (Inżynier);7;zaawansowana
+Wiedza (Krasnoludy);7;zaawansowana
+Wiedza (Lokalna);7;zaawansowana
+Wiedza (Ludowa);7;zaawansowana
+Wiedza (Magia);7;zaawansowana
+Wiedza (Medycyna);7;zaawansowana
+Wiedza (Metalurgia);7;zaawansowana
+Wiedza (Mroczna Magia);7;zaawansowana
+Wiedza (Nauka);7;zaawansowana
+Wiedza (Olbrzymy);7;zaawansowana
+Wiedza (Podatki);7;zaawansowana
+Wiedza (Polityka);7;zaawansowana
+Wiedza (Prawo);7;zaawansowana
+Wiedza (Proroctwa);7;zaawansowana
+Wiedza (Sigmar);7;zaawansowana
+Wiedza (Smoki);7;zaawansowana
+Wiedza (Szlachta);7;zaawansowana
+Wiedza (Szlaki);7;zaawansowana
+Wiedza (Szlaki Rzeczne);7;zaawansowana
+Wiedza (Szlaki Wodne);7;zaawansowana
+Wiedza (Sztuka Wojenna);7;zaawansowana
+Wiedza (Teologia);7;zaawansowana
+Wiedza (Tortury);7;zaawansowana
+Wiedza (Trucizny);7;zaawansowana
+Wiedza (Trolle);7;zaawansowana
 Wiedza (Reikland);7;zaawansowana
+Wiedza (Wojna);7;zaawansowana
+Wiedza (Wraki);7;zaawansowana
+Wiedza (Zioła);7;zaawansowana
 Występy;9;podstawowa
-Występy (Śpiewanie);9;podstawowa
+Występy (Akrobatyka);9;podstawowa
+Występy (Aktorstwo);9;podstawowa
+Występy (Dowolne);9;podstawowa
 Występy (Gawędziarstwo);9;podstawowa
+Występy (Proroctwa);9;podstawowa
+Występy (Przemowy);9;podstawowa
+Występy (Przemawianie);9;podstawowa
+Występy (Retoryka);9;podstawowa
+Występy (Śpiewanie);9;podstawowa
+Występy (Taniec);9;podstawowa
+Występy (Wróżenie);9;podstawowa
+Występy (Wykłady);9;podstawowa
 Zastawianie Pułapek;6;zaawansowana
 Wioślarstwo;2;podstawowa
 Wspinaczka;2;podstawowa
