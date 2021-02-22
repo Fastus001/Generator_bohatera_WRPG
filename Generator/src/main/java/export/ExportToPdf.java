@@ -10,6 +10,7 @@ import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import commons.Hero;
 import commons.Skill;
+import commons.Stats;
 import commons.Talent;
 
 import javax.swing.*;
@@ -135,7 +136,7 @@ public class ExportToPdf {
 	}
 	
 	private String getBonusCechy(int index, int ileRazy) {
-		int [] cechyAktualne = hero.getStatsCurrent();
+		int [] cechyAktualne = hero.getStats().getStats();
 		int bonusSily = cechyAktualne[index];
 		bonusSily = ileRazy*((int) (bonusSily/10));
 		Integer bs = bonusSily;
@@ -215,8 +216,9 @@ public class ExportToPdf {
 		
 		String [] cechyAktualneForms = {"WW_aktualna","US_aktualna","S_aktualna","WT_aktualna","I_aktualna","ZW_aktualna","ZR_aktualna","INT_aktualna","SW_aktualna","OGD_aktualna"};
 		String [] cechyRozwinieciaForms = {"WW_rozwieniecie","US_rozwienicie","S_rozwienicie","WT_rozwienicie","I_rozwienicie","ZW_rozwienicie","ZR_rozwienicie","INT_rozwienicie","SW_rozwienicie","OGD_rozwienicie"};
-		int[] statsCurrent = hero.getStatsCurrent();
-		int[] statsAdvances = hero.getStatsAdvances();
+		Stats stats = hero.getStats();
+		int[] statsCurrent = stats.getStats();
+		int[] statsAdvances = stats.getAdvances();
 		String [] cechyBazoweForms = {"WW_poczatkowa","US_poczatkowa","S_poczatkowa","Wt_poczatkowa","I_poczatkowa","ZW_poczatkowa","ZR_poczatkowa","INT_poczatkowa","SW_poczatkowa","OGD_poczatkowa"};
 		
 

@@ -400,7 +400,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 	}else{
 		//sprawdzenie wybranej Profesji czy czasem nie jest inna niż aktualnie rozwijana
 		if(wybranaProfesja!=null) {
-			int testHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(wybranaProfesja);
+			int testHistoriiProfesji = nowyBohater.checkProfessionHistory( wybranaProfesja);
 			if(testHistoriiProfesji>0) {
 				profesjaNowyPoziom = wybranaProfesja;
 			}
@@ -409,7 +409,7 @@ public void podniesPoziom(int exp, boolean talenty) {
 			profesjaNowyPoziom = nowyBohater.getProfession();
 		}
 		
-			int sprawdzenieHistoriiProfesji = nowyBohater.sprawdzHistorieProfesji(profesjaNowyPoziom);
+			int sprawdzenieHistoriiProfesji = nowyBohater.checkProfessionHistory( profesjaNowyPoziom);
 			if(sprawdzenieHistoriiProfesji != -1)
 			{
 				/*
@@ -457,7 +457,7 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	}
 
 	
-	int sprawdzHistorieProfesji = nowyBohater.sprawdzHistorieProfesji(wybranaProfesja);
+	int sprawdzHistorieProfesji = nowyBohater.checkProfessionHistory( wybranaProfesja);
 	
 	if(sprawdzHistorieProfesji == -1) {
 		nowyBohater.nowaProfesja(wybranaProfesja);
@@ -496,7 +496,7 @@ public void setProfesja(Profession p) {
 		//jeżeli rasa nie została zmieniona to możemy działać
 		if(wybranaRasa.getName().equals(nowyBohater.getRace().getName()))
 		{
-			int test = nowyBohater.sprawdzHistorieProfesji(p);
+			int test = nowyBohater.checkProfessionHistory( p);
 			//postać wcześniej nie rozwijała danej profesji, można włączyc opcję nowa profesja
 			if(test== -1) {
 				obserwator.wlaczbtnNowaProfesja();

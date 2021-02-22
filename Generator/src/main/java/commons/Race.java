@@ -4,10 +4,12 @@ import enums.RaceType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
 @Getter
+@Setter
 @AllArgsConstructor
 @Builder(toBuilder = true)
 public class Race {
@@ -16,7 +18,7 @@ public class Race {
 	public int [] baseStats;
 	private final List<Skill> skills;
 	private final List<Talent> talents;
-	private final int randomTalents;
+	private final int availableRandomTalents;
 
 	public int getSizeOfAvailableTalents(){
 			return talents.size();

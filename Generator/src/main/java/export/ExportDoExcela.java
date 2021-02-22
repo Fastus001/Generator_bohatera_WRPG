@@ -185,8 +185,8 @@ public class ExportDoExcela {
 		
 		//Rząd 3,4,5,6 - Cechy - opis
 		row = sheet.createRow(3);
-		int[] aktualne = bh.getStatsCurrent();
-		int [] rozwiniecia = bh.getStatsAdvances();
+		int[] aktualne = bh.getStats().getStats();
+		int [] rozwiniecia = bh.getStats().getAdvances();
 		createAndSetCell(row, 0, "", pogrubionJustTlo);
 		for(int i = 1; i< 11; i++) {
 			cellB = row.createCell(i);
