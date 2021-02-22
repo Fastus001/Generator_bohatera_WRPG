@@ -1,0 +1,45 @@
+Atletyka;5;podstawowa
+Badania Naukowe;7;zaawansowana
+Broń Biała;0;podstawowa
+Broń Zasięgowa;1;zaawansowana
+Charyzma;9;podstawowa
+Dowodzenie;9;podstawowa
+Hazard;7;podstawowa
+Jeździectwo;5;podstawowa
+Intuicja;4;podstawowa
+Język;7;zaawansowana
+Mocna Głowa;3;podstawowa
+Kuglarstwo;5;zaawansowana
+Leczenie;7;zaawansowana
+Nawigacja;4;podstawowa
+Modlitwa;9;zaawansowana
+Odporność;3;podstawowa
+Muzyka;6;zaawansowana
+Opanowanie;8;podstawowa
+Opieka nad Zwierzętami;7;zaawansowana
+Otwieranie Zamków;6;zaawansowana
+Oswajanie;8;podstawowa
+Percepcja;4;podstawowa
+Plotkowanie;9;podstawowa
+Pływanie;2;zaawansowana
+Przekupstwo;9;podstawowa
+Powożenie;5;podstawowa
+Rzemiosło;6;zaawansowana
+Sekretne Znaki;7;zaawansowana
+Splatanie Magii;8;zaawansowana
+Sztuka;6;podstawowa
+Skradanie;5;podstawowa
+Sztuka Przetrwania;7;podstawowa
+Targowanie;9;podstawowa
+Tresura;7;zaawansowana
+Tropienie;4;zaawansowana
+Unik;5;podstawowa
+Wiedza;7;zaawansowana
+Występy;9;podstawowa
+Zastawianie Pułapek;6;zaawansowana
+Wioślarstwo;2;podstawowa
+Wspinaczka;2;podstawowa
+Wycena;7;zaawansowana
+Zwinne Palce;6;zaawansowana
+Zastraszanie;2;podstawowa
+Żeglarstwo;5;zaawansowana
