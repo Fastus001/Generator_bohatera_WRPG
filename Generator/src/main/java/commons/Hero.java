@@ -4,6 +4,7 @@ import appearance.Appearance;
 import appearance.AppearanceFactory;
 import enums.Gender;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import utilities.NameGenerator;
 import utilities.RandomTalent;
@@ -25,6 +26,7 @@ public class Hero {
 	private final List<Profession> history;
 	
 
+	@Builder
 	public Hero(Race race, Profession profession, Gender gender) {
 		this.race = race.toBuilder().build();
 		this.profession = profession.toBuilder().build();
