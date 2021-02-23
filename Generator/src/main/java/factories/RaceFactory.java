@@ -38,8 +38,6 @@ public class RaceFactory {
                 .map( this::mapRace )
                 .findFirst()
                 .orElseThrow();
-
-        race.setBaseStats( raceType.getBaseStats());
         return race;
     }
 
@@ -49,7 +47,6 @@ public class RaceFactory {
                 .name( rawRaceToBuild[0] )
                 .skills( createSkills( rawRaceToBuild[1] ) )
                 .talents( createTalents( rawRaceToBuild[2] ) )
-                .availableRandomTalents( parseInt( rawRaceToBuild[3]) )
                 .build();
     }
 

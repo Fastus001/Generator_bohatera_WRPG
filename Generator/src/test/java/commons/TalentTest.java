@@ -30,7 +30,7 @@ class TalentTest {
 
     @Test
     void setTalentMax() {
-        talent.setTalentMax( new Stats( stats, RaceType.HALFLING ) );
+        talent.setTalentMax( new Stats( RaceType.HALFLING ) );
 
         assertEquals( 4, talent.getMaxLevel() );
     }
@@ -39,7 +39,7 @@ class TalentTest {
     void setTalentMaxRelatedStatTen() {
         Talent talent1 = Talent.builder().relatedStat( 10 ).build();
 
-        talent1.setTalentMax( new Stats( stats, RaceType.HALFLING ) ) ;
+        talent1.setTalentMax( new Stats( RaceType.HALFLING ) ) ;
 
         assertEquals( 10, talent1.getMaxLevel() );
     }
@@ -47,7 +47,7 @@ class TalentTest {
     @Test
     void setTalentMaxRelatedStatBelowTen() {
         Talent talent1 = Talent.builder().relatedStat( 9 ).build();
-        Stats stats = new Stats( this.stats, RaceType.HALFLING ) ;
+        Stats stats = new Stats( RaceType.HALFLING ) ;
 
         talent1.setTalentMax( stats );
         int max = stats.getStatAt( 9 ) / 10;
@@ -70,5 +70,12 @@ class TalentTest {
         assertEquals( "sample Max: 4 Test: test\n" +
                               "Opis:\n" +
                               "description\n",s );
+    }
+
+    @Test
+    void isUpgradable() {
+        Talent talent = Talent.builder().relatedStat( 12 ).build();
+
+        assertTrue( talent.isUpgradable() );
     }
 }

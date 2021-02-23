@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Getter
 @Setter
@@ -46,6 +47,11 @@ public class Profession implements Comparable<Profession> {
     public int getRandomProfessionStat() {
         int random = ( int ) (Math.random() * professionStats.length);
         return professionStats[random];
+    }
+
+    public Talent randomTalent(){
+        Random random = new Random();
+        return talents.get( random.nextInt(talents.size()) );
     }
 
     public boolean isProfessionStat(int statToCheck) {

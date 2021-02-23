@@ -26,39 +26,34 @@ class RaceFactoryTest {
     void createRaceDwarf() {
         Race race = factory.createRace( RaceType.DWARF );
 
-        assertAll( ()->assertEquals( "Krasnoludy",race.getName() ),
-                   ()->assertEquals( 0,race.getAvailableRandomTalents() ));
+        assertEquals( "Krasnoludy",race.getName() );
     }
 
     @Test
     void createRaceHuman() {
         Race race = factory.createRace( RaceType.HUMAN );
 
-        assertAll( ()->assertEquals( "Ludzie",race.getName() ),
-                   ()->assertEquals( 4,race.getAvailableRandomTalents() ));
+        assertEquals( "Ludzie",race.getName() );
     }
 
     @Test
     void createRaceHalfling() {
         Race race = factory.createRace( RaceType.HALFLING );
 
-        assertAll( ()->assertEquals( "Niziołki",race.getName() ),
-                   ()->assertEquals( 2,race.getAvailableRandomTalents() ));
+       assertEquals( "Niziołki",race.getName() );
     }
 
     @Test
     void createRaceHighElf() {
         Race race = factory.createRace( RaceType.HIGH_ELF );
 
-        assertAll( ()->assertEquals( "Wysokie elfy",race.getName() ),
-                   ()->assertEquals( 0,race.getAvailableRandomTalents() ));
+        assertEquals( "Wysokie elfy",race.getName() );
     }
 
     @Test
     void createRaceWoodElf() {
         Race race = factory.createRace( RaceType.WOOD_ELF );
 
-        assertAll( ()->assertEquals( "Leśne elfy",race.getName() ),
-                   ()->assertEquals( 0,race.getAvailableRandomTalents() ));
+        assertEquals( "Leśne elfy",race.getName() );
     }
 }

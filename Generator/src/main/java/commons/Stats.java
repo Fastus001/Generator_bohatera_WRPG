@@ -15,8 +15,9 @@ public class Stats{
 	private int hp;
 	private int speed;
 
-	public Stats(int [] baseStats, RaceType race){
+	public Stats(RaceType race){
 		this.race = race;
+		int [] baseStats = race.getBaseStats();
 		stats = new int[NO_OF_STATS];
 		advances = new int[NO_OF_STATS];
 

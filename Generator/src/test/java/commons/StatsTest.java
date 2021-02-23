@@ -18,7 +18,7 @@ class StatsTest {
 
     @BeforeEach
     void setUp() {
-        stats = new Stats( baseStats, RaceType.HUMAN );
+        stats = new Stats( RaceType.HUMAN );
         BONUS_S = stats.getStatAt( 2 ) / 10;
         BONUS_T = stats.getStatAt( 3 ) / 10;
         BONUS_WP = stats.getStatAt( 8 ) / 10;
@@ -45,7 +45,7 @@ class StatsTest {
 
     @Test
     void updateHpWithHardAndHalfling() {
-        Stats halflingStats = new Stats( baseStats,RaceType.HALFLING );
+        Stats halflingStats = new Stats( RaceType.HALFLING );
         int bonusT = halflingStats.getStatAt( 3 ) / 10;
         int bonusWP = halflingStats.getStatAt( 8 ) / 10;
         int hardy = 1;
