@@ -29,5 +29,16 @@ public class Skill implements Comparable<Skill> {
     public int compareTo(Skill skill) {
         return name.compareTo( skill.getName() );
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if ( this == o ) return true;
+        if ( o == null || getClass() != o.getClass() ) return false;
+
+        Skill skill = ( Skill ) o;
+
+        return name != null ? name.equals( skill.name ) : skill.name == null;
+    }
+
 }
 

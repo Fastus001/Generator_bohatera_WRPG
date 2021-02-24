@@ -20,9 +20,9 @@ public class Profession implements Comparable<Profession> {
     private String name;
     private String professionPath;
     private int level;
-    public List<Skill> skills;
-    public List<Talent> talents;
-    public String[] races;
+    private List<Skill> skills;
+    private List<Talent> talents;
+    private String[] races;
     private int[] professionStats;
     private boolean finished;
     private String career;
@@ -44,7 +44,7 @@ public class Profession implements Comparable<Profession> {
             return getName(gender) + "\n" + getProfessionPath(gender);
     }
 
-    public int getRandomProfessionStat() {
+    public int randomProfessionStat() {
         int random = ( int ) (Math.random() * professionStats.length);
         return professionStats[random];
     }
@@ -60,6 +60,10 @@ public class Profession implements Comparable<Profession> {
                 return true;
         }
         return false;
+    }
+
+    public boolean isNotFinished(){
+        return !isFinished();
     }
 
     public int compareTo(Profession profession) {

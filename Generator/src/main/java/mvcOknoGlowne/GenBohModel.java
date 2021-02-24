@@ -8,6 +8,7 @@ import export.ExportToPdf;
 import commons.Hero;
 import hero.HeroDisplay;
 import factories.HeroFactory;
+import hero.HeroProgress;
 import npcGenerator.Potwory;
 
 import javax.swing.*;
@@ -34,7 +35,7 @@ public class GenBohModel implements GenBohModelInterface{
 	private ArrayList<Talent> listaTalentow;	
 	private ArrayList<Profession> listaProfesji;
 	private ArrayList<Profession> profesjePierwszyPoziom;
-	private Hero nowyBohater;
+	private HeroProgress heroProgress;
 	private ObserwatorModel obserwator;
 
 	public GenBohModel() {
@@ -283,7 +284,7 @@ public void szukajProfesjiPierwszyPoziom(Race losowaRasa) {
 			if(p.getLevel()==poziomPierwszy){
 				for(int i = 0; i < p.getRaces().length; i++){
 					String nazwaP = losowaRasa.getName();
-					if(nazwaP.equals(p.races[i])){
+					if(nazwaP.equals(p.getRaces()[i])){
 					profesjePierwszyPoziom.add(p);							
 					}
 				}	
@@ -314,9 +315,9 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		RaceType randomRace = RaceType.getRaceEnumByName( losowaRasa.getName() );
 		if(plec){
 //			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.MALE);
-			nowyBohater = HeroFactory.getInstance().create( randomRace, losowaProfesja.getName(), Gender.MALE);
+			heroProgress = new HeroProgress( HeroFactory.getInstance().create( randomRace, losowaProfesja.getName(), Gender.MALE));
 		}else{
-			nowyBohater = HeroFactory.getInstance().create( randomRace, losowaProfesja.getName(), Gender.MALE);
+			heroProgress = new HeroProgress( HeroFactory.getInstance().create( randomRace, losowaProfesja.getName(), Gender.MALE));
 //			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.FEMALE);
 		}
 //		nowyBohater.experienceLevel(exp);
@@ -376,7 +377,7 @@ public void wyrejestrujObserwatora(ObserwatorModel o) {
 }
 @Override
 public String wyswietlNowegoBohatera(boolean jak) {
-	HeroDisplay heroDisplay = new HeroDisplay( nowyBohater );
+	HeroDisplay heroDisplay = new HeroDisplay( heroProgress.getHero() );
 	return heroDisplay.showHero(jak);
 }
 @Override
@@ -386,17 +387,17 @@ public void podniesPoziom(int exp, boolean talenty) {
 	 * wgranie akutalnej nazwy profesji do stringa
 	 * wgranie aktualnego poziomu aktualnie wybranej klasy postaci
 	 */
-	String nazwaProfesji = nowyBohater.getProfession().toString();
-	int poziomProfesji = nowyBohater.getProfession().getLevel()+1;
+	String nazwaProfesji = heroProgress.getHero().getProfession().toString();
+	int poziomProfesji = heroProgress.getHero().getProfession().getLevel()+1;
 	
 	if(poziomProfesji>4)
 	{
-		if(!nowyBohater.getProfession().isFinished())
+		if(!heroProgress.getHero().getProfession().isFinished())
 		{
 		int potwierdznie = JOptionPane.showConfirmDialog(null, "Postać osiągneła maksymalny poziom profesji,czy chcesz aby \"ukończyła\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
 			if(potwierdznie == JOptionPane.OK_OPTION)
 				{
-				nowyBohater.finishProfession( 5);
+				heroProgress.finishProfession( 5);
 				obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
 				}
 			
@@ -406,16 +407,16 @@ public void podniesPoziom(int exp, boolean talenty) {
 	}else{
 		//sprawdzenie wybranej Profesji czy czasem nie jest inna niż aktualnie rozwijana
 		if(wybranaProfesja!=null) {
-			int testHistoriiProfesji = nowyBohater.checkProfessionHistory( wybranaProfesja);
+			int testHistoriiProfesji = heroProgress.checkProfessionHistory( wybranaProfesja);
 			if(testHistoriiProfesji>0) {
 				profesjaNowyPoziom = wybranaProfesja;
 			}
 		}else {
 			//wczytanie wybranej profesji (lvl1) do zmiennej
-			profesjaNowyPoziom = nowyBohater.getProfession();
+			profesjaNowyPoziom = heroProgress.getHero().getProfession();
 		}
 		
-			int sprawdzenieHistoriiProfesji = nowyBohater.checkProfessionHistory( profesjaNowyPoziom);
+			int sprawdzenieHistoriiProfesji = heroProgress.checkProfessionHistory( profesjaNowyPoziom);
 			if(sprawdzenieHistoriiProfesji != -1)
 			{
 				/*
@@ -443,8 +444,8 @@ public void podniesPoziom(int exp, boolean talenty) {
 			
 	if(profesjaNowyPoziom != null)
 		{
-			nowyBohater.newProfession( profesjaNowyPoziom);
-			nowyBohater.experienceLevel( exp);
+			heroProgress.newProfession( profesjaNowyPoziom);
+			heroProgress.experienceLevel( exp);
 			obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));	
 		}
 	}//koniec else
@@ -453,21 +454,21 @@ public void podniesPoziom(int exp, boolean talenty) {
 public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	
 	//pytanie czy wczesniejsza sciezka ma być ukończona
-	if(!nowyBohater.getProfession().isFinished())
+	if(!heroProgress.getHero().getProfession().isFinished())
 	{
 		int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma być ukończony przed zmianą profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
 		if(potwierdzenie == JOptionPane.OK_OPTION) 
 		{
-			nowyBohater.finishProfession( nowyBohater.getProfession().getLevel()+1);
+			heroProgress.finishProfession( heroProgress.getHero().getProfession().getLevel()+1);
 		}
 	}
 
 	
-	int sprawdzHistorieProfesji = nowyBohater.checkProfessionHistory( wybranaProfesja);
+	int sprawdzHistorieProfesji = heroProgress.checkProfessionHistory( wybranaProfesja);
 	
 	if(sprawdzHistorieProfesji == -1) {
-		nowyBohater.newProfession( wybranaProfesja);
-		nowyBohater.experienceLevel( exp);
+		heroProgress.newProfession( wybranaProfesja);
+		heroProgress.experienceLevel( exp);
 		//wyswietlenie nowego bohatera
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
 		obserwator.wylaczbtnNowaProfesja();
@@ -479,17 +480,17 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 /**
  * @return the nowyBohater
  */
-public Hero getNowyBohater() {
-	return nowyBohater;
+public Hero getHeroProgress() {
+	return heroProgress.getHero();
 }
 @Override
 public Hero postacBohaterModel() {
-	return this.getNowyBohater();
+	return this.getHeroProgress();
 }
 @Override
 public void setRasa(Race r) {
-	if(nowyBohater != null) {
-		if(r.getName().equals(nowyBohater.getRace().getName())) {
+	if( heroProgress != null) {
+		if(r.getName().equals( heroProgress.getHero().getRace().getName())) {
 			obserwator.wlaczPrzyciskbtnPodniesPoziomPr();
 		}
 	}
@@ -498,11 +499,11 @@ public void setRasa(Race r) {
 }
 @Override
 public void setProfesja(Profession p) {
-	if(nowyBohater != null) {
+	if( heroProgress != null) {
 		//jeżeli rasa nie została zmieniona to możemy działać
-		if(wybranaRasa.getName().equals(nowyBohater.getRace().getName()))
+		if(wybranaRasa.getName().equals( heroProgress.getHero().getRace().getName()))
 		{
-			int test = nowyBohater.checkProfessionHistory( p);
+			int test = heroProgress.checkProfessionHistory( p);
 			//postać wcześniej nie rozwijała danej profesji, można włączyc opcję nowa profesja
 			if(test== -1) {
 				obserwator.wlaczbtnNowaProfesja();
@@ -520,12 +521,12 @@ public void setProfesja(Profession p) {
 }
 @Override
 public void opisPostaciTalenty(boolean talenty) {
-	if(nowyBohater != null)
+	if( heroProgress != null)
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
 }
 @Override
 public void zapiszPostac() {
-	Hero nowy = nowyBohater.toBuilder().build();
+	Hero nowy = heroProgress.getHero().toBuilder().build();
 	obserwator.aktualizujListeBohaterow(nowy);
 }
 @Override

@@ -10,7 +10,6 @@ import utilities.NameGenerator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
 
 public class HeroFactory {
     private static HeroFactory instance;
@@ -42,7 +41,7 @@ public class HeroFactory {
                 .history( new ArrayList<>() )
                 .build();
 
-        addKnownTalentFromProfession( hero);
+        hero.addTalentFromProfession();
         getStartingSkillsFromProfession( professionToAdd.getSkills() ).forEach( hero::addSkill );
         addRandomStatistic( hero );
         randomBonus( hero,1 );
@@ -51,24 +50,6 @@ public class HeroFactory {
         return hero;
     }
 
-    private void addKnownTalentFromProfession(Hero build) {
-        Talent randomTalent = build.getProfession().randomTalent();
-        Set<Talent> knownTalents = build.getKnownTalents();
-        if(!knownTalents.contains( randomTalent )){
-            knownTalents.add( randomTalent );
-        }else{
-            Talent talent = knownTalents.stream()
-                    .filter( t -> t.equals( randomTalent ) )
-                    .findFirst()
-                    .orElseThrow();
-
-            if(talent.isUpgradable()){
-                talent.addOneToLevel();
-            }else{
-                addKnownTalentFromProfession( build );
-            }
-        }
-    }
 
     private List<Skill> getStartingSkillsFromProfession(List<Skill> skills){
 
@@ -85,7 +66,7 @@ public class HeroFactory {
     }
 
     private void addRandomStatistic(Hero hero){
-        hero.getStats().increaseStatAt( 5, hero.getProfession().getRandomProfessionStat(), true);
+        hero.getStats().increaseStatAt( 5, hero.getProfession().randomProfessionStat(), true);
     }
 
     public void randomBonus(Hero hero,int times) {
@@ -95,11 +76,11 @@ public class HeroFactory {
                 case 0:
                 case 1:
                 case 2: for(int i = 0; i < 4; i++){
-                    hero.getStats().increaseStatAt( 1, hero.getProfession().getRandomProfessionStat(), true);
+                    hero.getStats().increaseStatAt( 1, hero.getProfession().randomProfessionStat(), true);
                 } break;
                 case 3:
                 case 4: hero.increaseRandomSkill( 6); break;
-                case 5: addKnownTalentFromProfession( hero); break;
+                case 5: hero.addTalentFromProfession(); break;
             }
         }
     }

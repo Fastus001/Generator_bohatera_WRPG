@@ -4,8 +4,6 @@ import enums.Gender;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProfessionTest {
@@ -50,7 +48,7 @@ class ProfessionTest {
 
     @Test
     void getRandomProfessionStat() {
-        int random = profession.getRandomProfessionStat();
+        int random = profession.randomProfessionStat();
 
         assertTrue(random == 3 || random==6 || random ==7);
     }
