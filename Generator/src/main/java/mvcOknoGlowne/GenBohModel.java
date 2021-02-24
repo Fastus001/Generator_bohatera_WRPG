@@ -2,10 +2,12 @@ package mvcOknoGlowne;
 
 import commons.*;
 import enums.Gender;
+import enums.RaceType;
 import export.ExportDoExcela;
 import export.ExportToPdf;
 import commons.Hero;
 import hero.HeroDisplay;
+import factories.HeroFactory;
 import npcGenerator.Potwory;
 
 import javax.swing.*;
@@ -231,8 +233,9 @@ public boolean WczytajRasy(){
 					}
 					
 					
-					Race rs = new Race( nazwa, tablica , umiej, listaZnTalnetow, Integer.parseInt( wiersz));
-					listaRas.add(rs);	
+//					Race rs = new Race( nazwa, tablica , umiej, listaZnTalnetow, Integer.parseInt( wiersz));
+					Race rs = Race.builder().name( nazwa ).skills( umiej ).talents( listaZnTalnetow ).build();
+					listaRas.add(rs);
 				}	
 			czytajBuf.close();
 		}catch(Exception ex){
@@ -308,12 +311,15 @@ public void nowyBohater(int rasa, int prof,int exp, boolean plec, boolean oT) {
 		}else {
 			losowaProfesja = ( Profession ) profesjePierwszyPoziom.get( prof);
 		}
-
-		if(plec)
-			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.MALE);
-		else
-			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.FEMALE);
-		nowyBohater.doswiadczenieBohatera(exp);
+		RaceType randomRace = RaceType.getRaceEnumByName( losowaRasa.getName() );
+		if(plec){
+//			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.MALE);
+			nowyBohater = HeroFactory.getInstance().create( randomRace, losowaProfesja.getName(), Gender.MALE);
+		}else{
+			nowyBohater = HeroFactory.getInstance().create( randomRace, losowaProfesja.getName(), Gender.MALE);
+//			nowyBohater = new Hero( losowaRasa, losowaProfesja, Gender.FEMALE);
+		}
+//		nowyBohater.experienceLevel(exp);
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(oT));
 		wybranaRasa = losowaRasa.toBuilder().build();
 		wybranaProfesja = losowaProfesja.toBuilder().build();
@@ -380,12 +386,12 @@ public void podniesPoziom(int exp, boolean talenty) {
 	 * wgranie akutalnej nazwy profesji do stringa
 	 * wgranie aktualnego poziomu aktualnie wybranej klasy postaci
 	 */
-	String nazwaProfesji = nowyBohater.getProfesjaNameMain();
-	int poziomProfesji = nowyBohater.getCurrentProfPoziom()+1;
+	String nazwaProfesji = nowyBohater.getProfession().toString();
+	int poziomProfesji = nowyBohater.getProfession().getLevel()+1;
 	
 	if(poziomProfesji>4)
 	{
-		if(!nowyBohater.getProfesjaUkonczona())
+		if(!nowyBohater.getProfession().isFinished())
 		{
 		int potwierdznie = JOptionPane.showConfirmDialog(null, "Postać osiągneła maksymalny poziom profesji,czy chcesz aby \"ukończyła\" ten poziom?", "Koks", JOptionPane.YES_NO_OPTION);
 			if(potwierdznie == JOptionPane.OK_OPTION)
@@ -437,8 +443,8 @@ public void podniesPoziom(int exp, boolean talenty) {
 			
 	if(profesjaNowyPoziom != null)
 		{
-			nowyBohater.nowaProfesja(profesjaNowyPoziom);
-			nowyBohater.doswiadczenieBohatera(exp);
+			nowyBohater.newProfession( profesjaNowyPoziom);
+			nowyBohater.experienceLevel( exp);
 			obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));	
 		}
 	}//koniec else
@@ -447,12 +453,12 @@ public void podniesPoziom(int exp, boolean talenty) {
 public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	
 	//pytanie czy wczesniejsza sciezka ma być ukończona
-	if(!nowyBohater.getProfesjaUkonczona())
+	if(!nowyBohater.getProfession().isFinished())
 	{
 		int potwierdzenie = JOptionPane.showConfirmDialog(null, "Czy aktualny poziom profesji ma być ukończony przed zmianą profesji?", "Zmiana profesji!", JOptionPane.YES_NO_OPTION);
 		if(potwierdzenie == JOptionPane.OK_OPTION) 
 		{
-			nowyBohater.finishProfession( nowyBohater.getCurrentProfPoziom()+1);
+			nowyBohater.finishProfession( nowyBohater.getProfession().getLevel()+1);
 		}
 	}
 
@@ -460,8 +466,8 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	int sprawdzHistorieProfesji = nowyBohater.checkProfessionHistory( wybranaProfesja);
 	
 	if(sprawdzHistorieProfesji == -1) {
-		nowyBohater.nowaProfesja(wybranaProfesja);
-		nowyBohater.doswiadczenieBohatera(exp);
+		nowyBohater.newProfession( wybranaProfesja);
+		nowyBohater.experienceLevel( exp);
 		//wyswietlenie nowego bohatera
 		obserwator.aktualizujPostac(wyswietlNowegoBohatera(talenty));
 		obserwator.wylaczbtnNowaProfesja();
@@ -469,7 +475,7 @@ public void nowaProfesja(int exp, boolean talenty, boolean przycisk) {
 	
 	if(!przycisk)
 		obserwator.wlaczPrzyciskbtnPodniesPoziomPr();	
-}//koniec metody nowaProfesja
+}//koniec metody newProfession
 /**
  * @return the nowyBohater
  */
@@ -519,7 +525,7 @@ public void opisPostaciTalenty(boolean talenty) {
 }
 @Override
 public void zapiszPostac() {
-	Hero nowy = new Hero( nowyBohater);
+	Hero nowy = nowyBohater.toBuilder().build();
 	obserwator.aktualizujListeBohaterow(nowy);
 }
 @Override
@@ -551,7 +557,7 @@ public void exportDoExcel(Object[] obj,int ktora) {
 	if(ktora ==0) {
 		for(Object obiekt:obj) {
 			if(obiekt instanceof Hero ) {
-				Hero nBohater = new Hero( ( Hero ) obiekt);
+				Hero nBohater = (( Hero ) obiekt).toBuilder().build();
 				exp.createBohaterSheet(nBohater);
 			}
 			if(obiekt instanceof Potwory) {
@@ -561,7 +567,7 @@ public void exportDoExcel(Object[] obj,int ktora) {
 		}
 	}else {
 		if(obj[ktora] instanceof Hero ) {
-			Hero nBohater = new Hero( ( Hero ) obj[ktora]);
+			Hero nBohater = ( ( Hero ) obj[ktora]).toBuilder().build();
 			exp.createBohaterSheet(nBohater);
 		}
 		if(obj[ktora] instanceof Potwory) {

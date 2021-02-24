@@ -1,82 +1,50 @@
 package commons;
 
 import appearance.Appearance;
-import appearance.AppearanceFactory;
 import enums.Gender;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import utilities.NameGenerator;
-import utilities.RandomTalent;
+import enums.RaceType;
+import lombok.*;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
 
+@Slf4j
+@Setter
 @Getter
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder(toBuilder = true)
 public class Hero {
+	public static final Random RANDOM = new Random();
 
-	private final String name;
-	private final Gender gender;
-	private final Appearance appearance;
-	private final Race race;
+	private String name;
+	private Gender gender;
+	private Appearance appearance;
+	private RaceType race;
 	private Profession profession;
-	private final Stats stats;
-	public Set<Skill> knownSkills;
-	public Set<Talent> knownTalents;
-	private final List<Profession> history;
-	
+	private Stats stats;
+	private Set<Skill> knownSkills = new TreeSet<>();
+	private Set<Talent> knownTalents = new TreeSet<>();
+	private List<Profession> history;
 
-	@Builder
-	public Hero(Race race, Profession profession, Gender gender) {
-		this.race = race.toBuilder().build();
-		this.profession = profession.toBuilder().build();
-		name = NameGenerator.getInstance().generateFullName( this.race.getRaceEnum(), gender);
-		this.gender = gender;
-		appearance = AppearanceFactory.create( this.race.getRaceEnum());
-		stats = new Stats( race.baseStats, race.getRaceEnum());
-		knownSkills = new TreeSet<>();
-		knownTalents = new TreeSet<>();
-		//todo - move race to HeroFactory and these two methods
-		getKnownSkillsFromRace();
-		addKnownTalentsFromRace();
-		dodajZnanyTalentZProfesji();
-		dodajZnaneUmiejetnosciZProfesjiLosowePoczatkowe();
-		dodajLosowoPoczatkoweRozwiniecieCech();
-		randomBonus( 1);
-		
-		history = new ArrayList<>();
-		history.add( this.profession );
-	}
-
-	public Hero(Hero bh) {
-		this.name = bh.name;
-		this.gender = bh.gender;
-		this.appearance = bh.appearance;
-		this.race = bh.race.toBuilder().build();
-		this.profession = bh.profession.toBuilder().build();
-		this.stats = new Stats( bh.stats );
-		this.knownSkills = new TreeSet<>();
-		for(Skill um:bh.knownSkills) {
-			Skill nowa = um.toBuilder().build();
-			this.knownSkills.add( nowa);
-		}
-		this.knownTalents = new TreeSet<>();
-		for(Talent tl:bh.knownTalents) {
-			Talent nowyTl = tl.toBuilder().build();
-			this.knownTalents.add( nowyTl);
-		}
-		this.history = new ArrayList<>();
-		for(Profession pr:bh.history) {
-			Profession nowaPr = pr.toBuilder().build();
-			this.history.add( nowaPr);
+	public void addSkill(Skill skill){
+		if(knownSkills.contains( skill )){
+			for (Skill s : knownSkills) {
+				if(s.getName().equals( skill.getName() )){
+					s.addToSkillLevel( skill.getLevel() );
+					s.setProfessional( skill.isProfessional() );
+				}
+			}
+		}else {
+			knownSkills.add( skill );
 		}
 	}
 
 	public void addTalent(Talent talent){
 		if(knownTalents.add( talent )){
-			Skill newSkill = TalentValidator.validate( talent, stats );
-			if(newSkill!=null){
-				knownSkills.add( newSkill );
+			Skill newTalent = TalentValidator.validate( talent, stats );
+			if(newTalent!=null){
+				knownSkills.add( newTalent );
 			}
 		}
 	}
@@ -92,252 +60,150 @@ public class Hero {
 	public void finishProfession(int level) {
 		if( profession.getLevel() < level){
 			int minPoziomUm = 5* profession.getLevel();
-			nowyPoziomUmiejetnosciNowyLvl(minPoziomUm);
-			nowyPoziomCechyNowyLvl(minPoziomUm);
+			setSkillsLevelOnNewProfessionLevel( minPoziomUm);
+			setStatsDueToNewLevel( minPoziomUm);
 		}
 		stats.updateHp(getHardyLevel());
 		profession.setFinished( true);
 	}
 	
 
-	public void nowaProfesja(Profession nowaProfesja){
-		history.add( nowaProfesja);
-		setUmiejetnosciProfesyjne();
+	public void newProfession(Profession profession){
+		history.add( profession);
+		setProfessionSkills();
 		
-		if( profession.getLevel() < nowaProfesja.getLevel()){
-			int minPoziomUm = 5* profession.getLevel();
-			nowyPoziomUmiejetnosciNowyLvl(minPoziomUm);
-			nowyPoziomCechyNowyLvl(minPoziomUm);
+		if( this.profession.getLevel() < profession.getLevel()){
+			int minPoziomUm = 5* this.profession.getLevel();
+			setSkillsLevelOnNewProfessionLevel( minPoziomUm);
+			setStatsDueToNewLevel( minPoziomUm);
 		}
 		appearance.addAge();
 		
-		if(!profession.isFinished())
-			profession.setFinished( true);
+		if(!this.profession.isFinished())
+			this.profession.setFinished( true);
 		
-		if(!profession.toString().equals( nowaProfesja.toString()))
+		if(!this.profession.toString().equals( profession.toString()))
 		{
 			for(Skill um: knownSkills)
 				um.setProfessional( false);
 		}
-		profession = nowaProfesja.toBuilder().build();
+		this.profession = profession.toBuilder().build();
 		getKnownSkillsFromProfession();
-		setUmiejetnosciProfesyjne();
+		setProfessionSkills();
 		
-		if( profession.toString().equals( "CZARODZIEJ") && profession.getLevel()==2 ){
-			Talent nowy = profession.getTalents().get( 0 );
+		if( this.profession.toString().equals( "CZARODZIEJ") && this.profession.getLevel()==2 ){
+			Talent nowy = this.profession.getTalents().get( 0 );
 			nowy.setTalentMax( stats );
 			addTalent( nowy );
 		}else{
-			dodajZnanyTalentZProfesji();
+			getTalentFromProfession();
 		}
 		stats.updateHp( this.getHardyLevel());
 	}
 	
-	private void setUmiejetnosciProfesyjne() {
-		List<Skill> tablicaUmiejetnosci = new ArrayList<>();
+	private void setProfessionSkills() {
+		List<Skill> skills = new ArrayList<>();
 		for(Profession p: history) {
 			if(p.toString().equals( profession.toString())) {
-				tablicaUmiejetnosci.addAll( p.skills );
+				skills.addAll( p.skills );
 			}
 		}
 
-		for(Skill um:tablicaUmiejetnosci) {
-			for(Skill znaneUm: knownSkills) {
-				if(um.showSkill().equals( znaneUm.showSkill())) {
-					znaneUm.setProfessional( true);
+		for(Skill skill:skills) {
+			for(Skill knownSkill: knownSkills) {
+				if(skill.showSkill().equals( knownSkill.showSkill())) {
+					knownSkill.setProfessional( true);
 				}
 			}
 		}
 	}
 
-	public void nowyPoziomCechyNowyLvl(int minPoz){
-		int[] klasoweAtrybuty = profession.getProfessionStats();
-		for (int j : klasoweAtrybuty) {
-			int advances = stats.getAdvancesAt( j );
-			if ( advances < minPoz ) {
-				System.out.println( "Roziwniecie cechy: " + advances );
-				advances = minPoz - advances;
-				System.out.println( "Roziwniecie cechy do dodania: " + advances );
-				stats.increaseStatAt( advances, j, true );
+	public void setStatsDueToNewLevel(int minLevel){
+		int[] professionStats = profession.getProfessionStats();
+		for (int stat : professionStats) {
+			int advances = stats.getAdvancesAt( stat );
+			if ( advances < minLevel ) {
+				advances = minLevel - advances;
+				stats.increaseStatAt( advances, stat, true );
 			}
 		} 
 	}
 	
 	//sprawdzenie znanych umiejetnosci czy jest przynajmniej osiem na minimalnym poziomie rowiniecia do przejscia na nowďż˝ profesjďż˝
 
-	public void nowyPoziomUmiejetnosciNowyLvl(int minPozUm) {
-		int ile = 0;
-		for(Skill um: knownSkills){
-			if(um.isProfessional() && um.getLevel() >= minPozUm)
-			{
-				ile++;
+	public void setSkillsLevelOnNewProfessionLevel(int minStatLevel) {
+		int numberOfSkills = 0;
+		for(Skill skill: knownSkills){
+			if(skill.isProfessional() && skill.getLevel() >= minStatLevel) {
+				numberOfSkills++;
 			}
 		}
-		if(ile<8){
-			System.out.println("Brak wystarczającej ilosci umiejetnosci na odpowiednim poziomie, jest tylko " + ile);
-			increaseRandomSkillWithMinLevel( 3, minPozUm);
-			nowyPoziomUmiejetnosciNowyLvl(minPozUm);
+		if(numberOfSkills<8){
+			log.debug( "not enough skills to get eight to correct level!"  + numberOfSkills);
+			increaseRandomSkillWithMinLevel( 3, minStatLevel);
+			setSkillsLevelOnNewProfessionLevel( minStatLevel);
 		}
 	}
 
-	//metoda tylko dla nowych postaci, wszelkie wyďż˝sze poziomy muszďż˝ juďż˝ sprawdzaďż˝ profesyjne umiejetnoďż˝ci i minimum dla przejscia na nowy poziom profesji
-	private void dodajZnaneUmiejetnosciZProfesjiLosowePoczatkowe(){
-		
-		for(int i = 0; i < 40; i++) {
-			int random = (int) (Math.random()* profession.getSkills().size());
-			if( profession.skills.get( random).getLevel()<11){
-				profession.skills.get( random).addToSkillLevel( 1);
-			}else{
-				i--;
-			}
-		}
-
-		for (Skill um: profession.getSkills()) {
-			for(Skill umZnane: knownSkills){
-				//jezeli juz jest taka umiejetnosc to dodajemy do znanej +5, a nowďż˝ ustawiamy na -10
-				if(um.getName().equals( umZnane.getName())){
-					umZnane.addToSkillLevel( um.getLevel());
-					umZnane.setProfessional( true);
-					um.addToSkillLevel( -40);
-					break;
-				}	
-			}
-			if(um.getLevel() >= 0){
-				um.setProfessional( true);
-				knownSkills.add( um);
-			}
-		}
-	}
-	
 	private void getKnownSkillsFromProfession(){
-		for (Skill um: profession.getSkills()) {
-			for(Skill umZnane: knownSkills){
-				//jezeli juz jest taka umiejetnosc to ignorujemy
-				if(um.getName().equals( umZnane.getName())){
-					//umZnane.addToSkillLevel(um.getPoziom());
-					umZnane.setProfessional( true);
-					um.addToSkillLevel( -40);
+		for (Skill professionSkill: profession.getSkills()) {
+			for(Skill knownSkill: knownSkills){
+				if(professionSkill.getName().equals( knownSkill.getName())){
+					knownSkill.setProfessional( true);
+					professionSkill.addToSkillLevel( -40);
 					break;
 				}	
 			}
 			//jezeli poziom umiejetnosci jest na minus, to nie dodawaj jej do znanych umiejetnosci
-			if(um.getLevel() >= 0){
-				System.out.println("Dodajemy nowś umiejętność z nowej profesji " + um.showSkill());
-				um.setProfessional( true);
-				knownSkills.add( um);
+			if(professionSkill.getLevel() >= 0){
+				professionSkill.setProfessional( true);
+				knownSkills.add( professionSkill);
 			}
 		}
 	}
 
-	
-	private void getKnownSkillsFromRace() {
-		List<Skill> temp = new ArrayList<>( race.getSkills() );
-		
-		for(int i = 0; i < 6; i++){	
-			int index = (int) (Math.random()*temp.size());
-			Skill newSkill = temp.get( index);
-			if(i<3){
-				newSkill.setLevel(5);
-			}else{
-				newSkill.setLevel(3);
-			}
-			knownSkills.add( newSkill);
-			temp.remove(index);
-		}
-	}
-	
-	private void addKnownTalentsFromRace(){
-		// ludzie wybďż˝r miďż˝dzy 0 a 1, w dostďż˝pnych talentach
-		//krasnoludy majďż˝ do wyboru pomiďż˝dzy 0 a 1, oraz 2-3
-		// wysokie elfy 0 lub 1  oraz 2 lub 3
-		//lesne elfy, 0 lub 1, oraz 2 lub 3
-		List<Talent> talents = race.getTalents();
-
-		if( race.getName().equals( "Ludzie")){
-			addTalent( talents.get( randomX( 2)) );
-		}else{
-			addTalent( talents.get( randomX( 2)) );
-			addTalent( talents.get( randomX( 2)+2) );
-			if( race.getSizeOfAvailableTalents() >3){
-				for(int i = 4; i< race.getSizeOfAvailableTalents(); i++){
-					addTalent( talents.get( i));
-				}
-			}
-		}
-		for(Talent t: knownTalents){
-			t.setTalentMax( stats );
-		}
-		//dodanie losowych talentow, + sprawdzenie czy siďż˝ nie powtarzajďż˝, ewentualnie zwiďż˝kszenie o 1
-		int noOfRandomTalents = race.getAvailableRandomTalents();
-		if(noOfRandomTalents > 0 ) {
-			for(int i= 0; i<noOfRandomTalents; i++){
-				Talent newTalent = RandomTalent.getInstance().getTalent();
-				Talent talent = findTalent( newTalent );
-				if(talent == null){
-					newTalent.setTalentMax( stats );
-					addTalent( newTalent);
-				}else{
-						if( talent.getMaxLevel() == talent.getLevel()){
-							i--;
-						}else{
-							talent.addOneToLevel();
-						}
-				}
-			}
-		}
-	}
-
-	private Talent findTalent(Talent talent){
+	public Talent findTalent(Talent talent){
 		return knownTalents.stream()
 				.filter( t -> t.getName().equals( talent.getName() ) )
 				.findFirst()
 				.orElse( null );
 	}
 
-	private void dodajZnanyTalentZProfesji() {
-		int iloscTalentow = profession.getTalents().size();
-		Talent losowyTalent = profession.getTalents().get( randomX( iloscTalentow));
-		Talent talent = findTalent( losowyTalent );
+	private void getTalentFromProfession() {
+		int size = profession.getTalents().size();
+		Talent randomTalent = profession.getTalents().get( RANDOM.nextInt( size));
+		Talent talent = findTalent( randomTalent );
 		if(talent == null){
-					losowyTalent.setTalentMax( stats );
-					addTalent( losowyTalent);
+					randomTalent.setTalentMax( stats );
+					addTalent( randomTalent);
 		}else{
 			if( talent.getMaxLevel() == talent.getLevel()){
-				dodajZnanyTalentZProfesji();
+				getTalentFromProfession();
 			}else{
 				talent.addOneToLevel();
 			}
 		}
 	}
 
-	private void dodajLosowoPoczatkoweRozwiniecieCech(){
-		stats.increaseStatAt( 5, profession.getRandomProfessionStat(), true);
-	}
-	
-	//w sumie moďż˝na teďż˝ uďż˝yďż˝ tej metody, do okreďż˝lenia, robienia bardziej zaawansowanej postaci
 	public void randomBonus(int times) {
 		for(int n = 0; n < times; n++){
-			int opcja = (int) (Math.random()*10);
-		if(opcja <3){
-			opcja = 0;
-		}else if( opcja < 7 ){
-			opcja = 1;
-		}else {
-			opcja = 2;
-		}
-		switch(opcja){
-			case 0: for(int i = 0; i < 4; i++){
-				stats.increaseStatAt( 1, profession.getRandomProfessionStat(), true);
-			} break;
-			case 1: increaseRandomSkill( 6); ;break;
-			case 2: dodajZnanyTalentZProfesji(); ;break;
+			int random = (int) (Math.random()*5);
+			switch(random){
+				case 0:
+				case 1:
+				case 2: for(int i = 0; i < 4; i++){
+					stats.increaseStatAt( 1, profession.getRandomProfessionStat(), true);
+				} break;
+				case 3:
+				case 4: increaseRandomSkill( 6); break;
+				case 5: getTalentFromProfession(); break;
 			}
 		}
 	}
 	
-	public void increaseRandomSkill(int ileRazy) {
+	public void increaseRandomSkill(int times) {
 		List<Skill> temp = new ArrayList<>( knownSkills );
-			for(int i = 0; i < ileRazy; i++){
+			for(int i = 0; i < times; i++){
 				int index = (int) (Math.random()* knownSkills.size());
 				temp.get( index ).addToSkillLevel( 1 );
 			}
@@ -353,27 +219,21 @@ public class Hero {
 			}
 		}
 	}
-	
-	
-	private int randomX(int x){
-		return (int) (Math.random() * x);
+
+	public void changeProfessionPathDescription(String text) {
+		profession.setProfessionPath( "("+text+")");
 	}
 	
-	
-	public void zmienOpisSciekiProfesji(String tekst) {
-		profession.setProfessionPath( "("+tekst+")");
-	}
-	
-	public void doswiadczenieBohatera(int experienceLevel) {
+	public void experienceLevel(int experienceLevel) {
 		int poziom = profession.getLevel();
 		switch(experienceLevel){
 				case 1:
 					randomBonus( 1*poziom);
-				zmienOpisSciekiProfesji("początkujący"); break;
+				changeProfessionPathDescription( "początkujący"); break;
 				case 2: randomBonus( 3*poziom);
-				zmienOpisSciekiProfesji("Średniozaawansowana"); break;
+				changeProfessionPathDescription( "Średniozaawansowana"); break;
 				case 3: randomBonus( 5*poziom);
-				zmienOpisSciekiProfesji("doświadczona"); break;
+				changeProfessionPathDescription( "doświadczona"); break;
 			}
 		stats.updateHp( getHardyLevel());
 	}
@@ -387,35 +247,22 @@ public class Hero {
 		}
 		return poziom;
 	}
-	
-	public boolean getProfesjaUkonczona() {
-		return profession.isFinished();
-	}
 
-	public String getProfesjaNameMain() {
-		return this.profession.toString();
-	}
-
-
-	public String getCurrentProfesjaName(){
-		String [] tablica = profession.getNameAndProfessionPath( gender).split( "/");
+	public String getCurrentProfessionName(){
+		String [] split = profession.getNameAndProfessionPath( gender).split( "/");
 		if( gender.equals( Gender.MALE ))
-			return tablica[0];
+			return split[0];
 		else {
-			return tablica[1];
+			return split[1];
 		}
 	}
-	
-	public int getCurrentProfPoziom() {
-		return profession.getLevel();
-	}
-	
-	public String getProfesjaSciezka() {
+
+	public String professionPathName() {
 		String [] tablica = profession.getProfessionPath().split( " – ");
 		return tablica[0];
 	}
 	
-	public String getProfesjaStatus() {
+	public String professionStatusName() {
 		String [] tablica = profession.getProfessionPath().split( " – ");
 		return tablica[1];
 	}
@@ -427,17 +274,5 @@ public class Hero {
 				.findFirst()
 				.orElse( 0 );
 	}
-	
-	public String getCechyHpString() {
-		return Integer.toString( stats.getHp() );
-	}
 
-	public boolean czyJestCechaRozwojuProfesji(int x) {
-		return this.profession.isProfessionStat( x);
-	}
-	
-	public String getKlasaProfesji() {
-		return this.profession.getCareer();
-	}
-	
 }

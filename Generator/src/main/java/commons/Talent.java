@@ -1,12 +1,8 @@
 package commons;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @Builder(toBuilder = true)
 public class Talent implements Comparable<Talent> {
@@ -52,6 +48,10 @@ public class Talent implements Comparable<Talent> {
                 maxLevel = stats.getStatAt( relatedStat ) / 10;
                 break;
         }
+    }
+
+    public boolean isUpgradable() {
+        return level < (relatedStat % 10);
     }
 
     public int compareTo(Talent talent) {

@@ -128,7 +128,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public void mouseClicked(MouseEvent e) {
 				Object obj = listaBohaterow.elementAt(list.getSelectedIndex());
 				if(obj instanceof Hero ) {
-					Hero nBohater = new Hero( ( Hero ) listaBohaterow.elementAt( list.getSelectedIndex()));
+					Hero nBohater = ( ( Hero ) listaBohaterow.elementAt( list.getSelectedIndex())).toBuilder().build();
 					HeroDisplay heroDisplay = new HeroDisplay( nBohater );
 					textArea.setText( heroDisplay.showHero(chckbxShowTalents.isSelected()));
 					kontroler.aktywujExportDoPdf();
@@ -267,7 +267,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnExportToPdf.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Hero nBohater = new Hero( ( Hero ) listaBohaterow.elementAt( list.getSelectedIndex()));
+				Hero nBohater = ( ( Hero ) listaBohaterow.elementAt( list.getSelectedIndex())).toBuilder().build();
 				model.exportDoPdf(nBohater);
 			}
 		});
