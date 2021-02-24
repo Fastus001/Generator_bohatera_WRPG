@@ -1,17 +1,16 @@
-package hero;
+package factories;
 
 
 import appearance.AppearanceFactory;
 import commons.*;
 import enums.Gender;
 import enums.RaceType;
-import factories.ProfessionFactory;
-import factories.RaceFactory;
 import utilities.NameGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 public class HeroFactory {
     private static HeroFactory instance;
@@ -54,10 +53,11 @@ public class HeroFactory {
 
     private void addKnownTalentFromProfession(Hero build) {
         Talent randomTalent = build.getProfession().randomTalent();
-        if(!build.knownTalents.contains( randomTalent )){
-            build.knownTalents.add( randomTalent );
+        Set<Talent> knownTalents = build.getKnownTalents();
+        if(!knownTalents.contains( randomTalent )){
+            knownTalents.add( randomTalent );
         }else{
-            Talent talent = build.knownTalents.stream()
+            Talent talent = knownTalents.stream()
                     .filter( t -> t.equals( randomTalent ) )
                     .findFirst()
                     .orElseThrow();

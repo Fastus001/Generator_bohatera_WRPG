@@ -1,10 +1,7 @@
 package export;
 
 import appearance.Appearance;
-import commons.Hero;
-import commons.Skill;
-import commons.Stats;
-import commons.Talent;
+import commons.*;
 import npcGenerator.CechyPotworow;
 import npcGenerator.Potwory;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -157,18 +154,19 @@ public class ExportDoExcela {
 		createAndSetCell(row, 3, "Rasa:", null);
 		createAndSetCell(row, 4, bh.getRace().getName(), csBoldAlign);
 		//klasa
+		Profession profession = bh.getProfession();
 		row.createCell(5).setCellValue("Klasa");
-		createAndSetCell(row, 6, bh.getKlasaProfesji(), csBoldAlign);
+		createAndSetCell(row, 6, profession.getCareer(),  csBoldAlign);
 		sheet.addMergedRegion(new CellRangeAddress(0, 0, 6, 7));
 		
 		//Rząd 1 - Profesja / poziom profesji / ściezka profesji
 		row = sheet.createRow(1);
 		row.createCell(0).setCellValue("Profesja:");
-		row.createCell(1).setCellValue(bh.getCurrentProfesjaName());
+		row.createCell(1).setCellValue(bh.getCurrentProfessionName());
 		row.createCell(2).setCellValue("Poziom:");
-		createAndSetCell(row, 3, bh.getCurrentProfPoziom(), justowanie);
+		createAndSetCell(row, 3, profession.getLevel(), justowanie);
 		row.createCell(4).setCellValue("Ścieżka:");
-		row.createCell(5).setCellValue(bh.getProfesjaSciezka());
+		row.createCell(5).setCellValue(bh.professionPathName());
 		
 		//Rząd -2 - wiek, wygląd
 		row = sheet.createRow(2);
@@ -191,7 +189,7 @@ public class ExportDoExcela {
 		for(int i = 1; i< 11; i++) {
 			cellB = row.createCell(i);
 			cellB.setCellStyle(pogrubionJustTlo);
-			if(bh.czyJestCechaRozwojuProfesji(i-1)) {
+			if(bh.getProfession().isProfessionStat( i-1)) {
 				cellB.setCellValue(STATYSTYKI[i-1]+"*");
 			}else {
 				cellB.setCellValue(STATYSTYKI[i-1]);
@@ -241,7 +239,7 @@ public class ExportDoExcela {
 		//rząd 8 - żywotność
 		row = sheet.createRow(8);
 		row.createCell(0).setCellValue("Żywotność:");
-		createAndSetCell(row, 1, bh.getCechyHpString(), csBoldAlign);
+		createAndSetCell(row, 1, bh.getStats().getHp(), csBoldAlign);
 		
 		//Umiejętności i talenty - rząd 9+
 		row = sheet.createRow(9);
@@ -252,8 +250,8 @@ public class ExportDoExcela {
 		sheet.autoSizeColumn(4);
 		createAndSetCell(row, 5, "Suma:", pogrubionJustTlo);
 
-		Iterator<Skill> skillIterator = bh.knownSkills.iterator();
-		for(int i = 0; i<bh.knownSkills.size(); i++) {
+		Iterator<Skill> skillIterator = bh.getKnownSkills().iterator();
+		for(int i = 0; i<bh.getKnownSkills().size(); i++) {
 			row = sheet.createRow(10+i);
 //			Skill um = bh.knownSkills.get( i);
 			Skill um = skillIterator.next();
@@ -277,8 +275,8 @@ public class ExportDoExcela {
 		cs.setAlignment(HorizontalAlignment.JUSTIFY);
 		cs.setVerticalAlignment(VerticalAlignment.TOP);
 
-		Iterator<Talent> talentIterator = bh.knownTalents.iterator();
-		for(int i = 0; i<bh.knownTalents.size(); i++) {
+		Iterator<Talent> talentIterator = bh.getKnownTalents().iterator();
+		for(int i = 0; i<bh.getKnownTalents().size(); i++) {
 			row = sheet.createRow(rowCount+i);
 //			Talent tl = bh.knownTalents.get( i);
 			Talent tl = talentIterator.next();

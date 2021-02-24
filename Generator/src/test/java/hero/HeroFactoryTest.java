@@ -3,6 +3,7 @@ package hero;
 import commons.Hero;
 import enums.Gender;
 import enums.RaceType;
+import factories.HeroFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

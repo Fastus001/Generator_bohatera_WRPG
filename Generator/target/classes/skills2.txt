@@ -101,6 +101,7 @@ Sztuka (Dowolna);6;podstawowa
 Sztuka (Kaligrafia);6;podstawowa
 Sztuka (Pisarstwo);6;podstawowa
 Skradanie;5;podstawowa
+Skradanie (Miasto albo Wieś);5;podstawowa
 Skradanie (Dowolne);5;podstawowa
 Skradanie (Miasto albo Podziemia);5;podstawowa
 Skradanie (Miasto);5;podstawowa
@@ -144,6 +145,7 @@ Wiedza (Podatki);7;zaawansowana
 Wiedza (Polityka);7;zaawansowana
 Wiedza (Prawo);7;zaawansowana
 Wiedza (Proroctwa);7;zaawansowana
+Wiedza (Rośliny);7;zaawansowana
 Wiedza (Sigmar);7;zaawansowana
 Wiedza (Smoki);7;zaawansowana
 Wiedza (Szlachta);7;zaawansowana
@@ -159,6 +161,7 @@ Wiedza (Reikland);7;zaawansowana
 Wiedza (Wojna);7;zaawansowana
 Wiedza (Wraki);7;zaawansowana
 Wiedza (Zioła);7;zaawansowana
+Wiedza (Zwierzęta);7;zaawansowana
 Występy;9;podstawowa
 Występy (Akrobatyka);9;podstawowa
 Występy (Aktorstwo);9;podstawowa
@@ -169,6 +172,7 @@ Występy (Przemowy);9;podstawowa
 Występy (Przemawianie);9;podstawowa
 Występy (Retoryka);9;podstawowa
 Występy (Śpiewanie);9;podstawowa
+Występy (Szydzenie);9;podstawowa
 Występy (Taniec);9;podstawowa
 Występy (Wróżenie);9;podstawowa
 Występy (Wykłady);9;podstawowa
