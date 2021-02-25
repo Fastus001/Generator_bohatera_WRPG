@@ -39,16 +39,16 @@ public class TalentValidator {
                 stats.addOneToSpeed(); talent.setShow( false);
             }break;
 
-            case "Słuch Absolutny":  skill = Skill.builder().name( "Występy (Śpiewanie)").statNumber(9).type( "podstawowa").level( 0).isProfessional( false ).build();  break;
-            case "Obieżyświat":  skill = Skill.builder().name( "Wiedza (Lokalna)").statNumber(7).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Czarownica!":  skill = Skill.builder().name( "Język (Magiczny)").statNumber(7).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Wytwórca (Dowolny)":  skill = Skill.builder().name("Rzemiosło (Dowolny)").statNumber(6).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Wytwórca (Materiały Wybuchowe)":  skill = Skill.builder().name( "Rzemiosło (Materiały Wybuchowe)").statNumber(6).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Wytwórca (Zielarz)":  skill = Skill.builder().name( "Rzemiosło (Zielarz)").statNumber(6).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Wytwórca (Dowolne Rzemiosło)":  skill = Skill.builder().name( "Rzemiosło (Dowolne Rzemiosło)").statNumber(6).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Wytwórca (Szkutnik)":  skill = Skill.builder().name( "Rzemiosło (Szkutnik)").statNumber(6).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Wytwórca (Aptekarz)":  skill = Skill.builder().name( "Rzemiosło (Aptekarz)").statNumber(6).type("zaawansowana").level(0).isProfessional(false).build();  break;
-            case "Talent Artystyczny":  skill = Skill.builder().name( "Sztuka (Dowolna)").statNumber(6).type("podstawowa").level(0).isProfessional(false).build(); break;
+            case "Słuch Absolutny":  skill = Skill.builder().name( "Występy (Śpiewanie)").statNumber(9).type( "podstawowa").level( 0).isProfession( false ).build();  break;
+            case "Obieżyświat":  skill = Skill.builder().name( "Wiedza (Lokalna)").statNumber(7).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Czarownica!":  skill = Skill.builder().name( "Język (Magiczny)").statNumber(7).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Wytwórca (Dowolny)":  skill = Skill.builder().name("Rzemiosło (Dowolny)").statNumber(6).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Wytwórca (Materiały Wybuchowe)":  skill = Skill.builder().name( "Rzemiosło (Materiały Wybuchowe)").statNumber(6).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Wytwórca (Zielarz)":  skill = Skill.builder().name( "Rzemiosło (Zielarz)").statNumber(6).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Wytwórca (Dowolne Rzemiosło)":  skill = Skill.builder().name( "Rzemiosło (Dowolne Rzemiosło)").statNumber(6).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Wytwórca (Szkutnik)":  skill = Skill.builder().name( "Rzemiosło (Szkutnik)").statNumber(6).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Wytwórca (Aptekarz)":  skill = Skill.builder().name( "Rzemiosło (Aptekarz)").statNumber(6).type("zaawansowana").level(0).isProfession( false).build();  break;
+            case "Talent Artystyczny":  skill = Skill.builder().name( "Sztuka (Dowolna)").statNumber(6).type("podstawowa").level(0).isProfession( false).build(); break;
         }
         return skill;
     }

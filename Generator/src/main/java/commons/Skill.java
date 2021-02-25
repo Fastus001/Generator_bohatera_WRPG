@@ -15,7 +15,7 @@ public class Skill implements Comparable<Skill> {
     private String type;
     private int statNumber;
     private int level;
-    private boolean isProfessional;
+    private boolean isProfession;
 
     public void addToSkillLevel(int toAdd) {
         level += toAdd;
@@ -23,7 +23,7 @@ public class Skill implements Comparable<Skill> {
 
     public String showSkill() {
         String temp = name + " +" + level;
-        return isProfessional ? temp + "*" : temp;
+        return isProfession ? temp + "*" : temp;
     }
 
     public int compareTo(Skill skill) {

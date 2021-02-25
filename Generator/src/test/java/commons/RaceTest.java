@@ -40,8 +40,11 @@ class RaceTest {
     @Test
     void addKnownTalentsFromRaceHalfling() {
         Set<Talent> talents = race.addKnownTalentsFromRace( RaceType.HALFLING );
+        long sumOfLevels = talents.stream()
+                .mapToInt( Talent::getLevel )
+                .count();
 
-        assertEquals( 6, talents.size() );
+        assertEquals( 6, sumOfLevels );
     }
 
     @Test

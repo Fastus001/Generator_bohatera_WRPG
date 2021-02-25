@@ -5,6 +5,7 @@ import appearance.AppearanceFactory;
 import commons.*;
 import enums.Gender;
 import enums.RaceType;
+import hero.HeroProgress;
 import utilities.NameGenerator;
 
 import java.util.ArrayList;
@@ -12,8 +13,10 @@ import java.util.List;
 import java.util.Random;
 
 public class HeroFactory {
+    public static final int MAX_SKILL_ADVANCES = 40;
+    public static final int MAX_SKILL_LEVEL = 10;
     private static HeroFactory instance;
-    private static Random RANDOM = new Random();
+    private static final Random RANDOM = new Random();
 
     private HeroFactory() {
     }
@@ -25,65 +28,41 @@ public class HeroFactory {
         return instance;
     }
 
-    public Hero create(RaceType raceType, String profession, Gender gender){
+    public Hero create(RaceType raceType, String professionName, Gender gender){
         Race race = RaceFactory.getInstance().createRace( raceType );
-        Profession professionToAdd = ProfessionFactory.getInstance().create( profession, 1 );
+        Profession profession = ProfessionFactory.getInstance().create( professionName, 1 );
 
         Hero hero = Hero.builder()
                 .name( NameGenerator.getInstance().generateFullName( raceType, gender ) )
                 .gender( gender )
                 .appearance( AppearanceFactory.create( raceType ) )
                 .race( raceType )
-                .profession( professionToAdd )
+                .profession( profession )
                 .stats( new Stats( raceType ) )
                 .knownSkills( race.getSkillsFromRace() )
                 .knownTalents( race.addKnownTalentsFromRace( raceType ) )
                 .history( new ArrayList<>() )
                 .build();
+        hero.getHistory().add( profession );
+        HeroProgress heroProgress = new HeroProgress( hero );
+        heroProgress.randomBonus( 1 );
+        heroProgress.addTalentFromProfession( profession );
+        getStartingSkillsFromProfession( profession.getSkills() ).forEach( hero::addSkill );
 
-        hero.addTalentFromProfession();
-        getStartingSkillsFromProfession( professionToAdd.getSkills() ).forEach( hero::addSkill );
-        addRandomStatistic( hero );
-        randomBonus( hero,1 );
-        hero.getHistory().add( professionToAdd );
-
-        return hero;
+        return heroProgress.getHero();
     }
-
 
     private List<Skill> getStartingSkillsFromProfession(List<Skill> skills){
 
-        for(int i = 0; i < 40; i++) {
+        for(int i = 0; i < MAX_SKILL_ADVANCES; i++) {
             int random = RANDOM.nextInt( skills.size() );
-            if( skills.get( random).getLevel()<11){
+            if( skills.get( random).getLevel()<= MAX_SKILL_LEVEL ){
                 skills.get( random).addToSkillLevel( 1);
             }else{
                 i--;
             }
         }
-        skills.forEach( skill -> skill.setProfessional( true ) );
+        skills.forEach( skill -> skill.setProfession( true ) );
         return skills;
     }
-
-    private void addRandomStatistic(Hero hero){
-        hero.getStats().increaseStatAt( 5, hero.getProfession().randomProfessionStat(), true);
-    }
-
-    public void randomBonus(Hero hero,int times) {
-        for(int n = 0; n < times; n++){
-            int random = (int) (Math.random()*5);
-            switch(random){
-                case 0:
-                case 1:
-                case 2: for(int i = 0; i < 4; i++){
-                    hero.getStats().increaseStatAt( 1, hero.getProfession().randomProfessionStat(), true);
-                } break;
-                case 3:
-                case 4: hero.increaseRandomSkill( 6); break;
-                case 5: hero.addTalentFromProfession(); break;
-            }
-        }
-    }
-
-
 }

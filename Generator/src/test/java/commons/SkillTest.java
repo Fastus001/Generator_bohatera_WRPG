@@ -18,7 +18,7 @@ class SkillTest {
                 .statNumber( 2 )
                 .level( 0 )
                 .type( "zaawansowana" )
-                .isProfessional( true ).build();
+                .isProfession( true ).build();
     }
 
     @Test

@@ -6,13 +6,15 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 @Slf4j
 @Getter
 public class HeroProgress {
-    private Hero hero;
+    private static final Random RANDOM = new Random();
+    private final Hero hero;
 
     public HeroProgress(Hero hero) {
         this.hero = hero;
@@ -23,8 +25,8 @@ public class HeroProgress {
         setProfessionSkills();
 
         Profession currentProfession = hero.getProfession();
-
         updateStatsForNewProfessionLevel( profession.getLevel(), currentProfession );
+
         hero.getAppearance().addAge();
 
         if ( currentProfession.isNotFinished() ){
@@ -33,11 +35,11 @@ public class HeroProgress {
 
         if ( !currentProfession.toString().equals( profession.toString() ) ) {
             hero.getKnownSkills()
-                    .forEach( skill -> skill.setProfessional( false ) );
+                    .forEach( skill -> skill.setProfession( false ) );
         }
 
-        hero.setProfession( profession.toBuilder().build());
-        getKnownSkillsFromProfession(currentProfession);
+        getKnownSkillsFromProfession(profession);
+        hero.setProfession( profession);
         setProfessionSkills();
 
         if ( currentProfession.toString().equals( "CZARODZIEJ" ) && currentProfession.getLevel() == 2 ) {
@@ -51,39 +53,43 @@ public class HeroProgress {
         hero.getStats().updateHp( hero.getHardyLevel() );
     }
 
-    private void getKnownSkillsFromProfession(Profession profession) {
-        Set<Skill> knownSkills = hero.getKnownSkills();
-
-        Set<Skill> newProfSkills = profession.getSkills().stream()
-                .filter( skill -> !knownSkills.contains( skill ) )
-                .collect( Collectors.toSet() );
-
-        knownSkills.addAll( newProfSkills );
+    public void getKnownSkillsFromProfession(Profession profession) {
+        hero.getKnownSkills().addAll( profession.getSkills() );
     }
 
-    private void setProfessionSkills() {
+    public void addTalentFromProfession(Profession profession) {
+        Talent randomTalent = profession.randomTalent();
+        Talent talent = hero.findTalent( randomTalent );
+        if(talent == null){
+            randomTalent.setTalentMax( hero.getStats() );
+            hero.addTalent( randomTalent);
+        }else{
+            if( talent.isUpgradable()){
+                talent.addOneToLevel();
+            }else{
+                addTalentFromProfession(profession);
+            }
+        }
+    }
+
+    public void setProfessionSkills() {
         List<Skill> skills = new ArrayList<>();
-        for (Profession p : hero.getHistory()) {
+            for (Profession p : hero.getHistory()) {
             if ( p.toString().equals( hero.getProfession().toString() ) ) {
                 skills.addAll( p.getSkills() );
             }
         }
-
-        for (Skill skill : skills) {
-            for (Skill knownSkill : hero.getKnownSkills()) {
-                if ( skill.showSkill().equals( knownSkill.showSkill() ) ) {
-                    knownSkill.setProfessional( true );
-                }
-            }
-        }
+        hero.getKnownSkills()
+                .stream()
+                .filter( skills::contains )
+                .forEach( skill -> skill.setProfession( true ) );
     }
 
     public void finishProfession(int level) {
-        Profession currentProfession = hero.getProfession();
-        updateStatsForNewProfessionLevel( level, currentProfession );
+        updateStatsForNewProfessionLevel( level, hero.getProfession() );
 
         hero.getStats().updateHp( hero.getHardyLevel() );
-        currentProfession.setFinished( true );
+        hero.getProfession().setFinished( true );
     }
 
     private void updateStatsForNewProfessionLevel(int level, Profession currentProfession) {
@@ -97,7 +103,7 @@ public class HeroProgress {
     public void setSkillsLevelOnNewProfessionLevel(int minStatLevel) {
         long numberOfSkills = hero.getKnownSkills()
                 .stream()
-                .filter( skill ->  skill.isProfessional() && skill.getLevel() >= minStatLevel)
+                .filter( skill ->  skill.isProfession() && skill.getLevel() >= minStatLevel)
                 .count();
 
         if ( numberOfSkills < 8 ) {
@@ -110,7 +116,7 @@ public class HeroProgress {
     public void increaseRandomSkillWithMinLevel(int times, int level) {
         List<Skill> temp = new ArrayList<>( hero.getKnownSkills() );
         for (int i = 0; i < times; i++) {
-            int index = ( int ) (Math.random() * hero.getKnownSkills().size());
+            int index = RANDOM.nextInt(hero.getKnownSkills().size());
             Skill skill = temp.get( index );
             if ( skill.getLevel() < level ) {
                 skill.addToSkillLevel( 1 );
@@ -140,19 +146,16 @@ public class HeroProgress {
     }
 
     public void experienceLevel(int experienceLevel) {
-        int poziom = hero.getProfession().getLevel();
+        int level = hero.getProfession().getLevel();
         switch (experienceLevel) {
             case 1:
-                randomBonus( 1 * poziom );
-                hero.changeProfessionPathDescription( "początkujący" );
+                randomBonus( level );
                 break;
             case 2:
-                randomBonus( 3 * poziom );
-                hero.changeProfessionPathDescription( "Średniozaawansowana" );
+                randomBonus( 3 * level );
                 break;
             case 3:
-                randomBonus( 5 * poziom );
-                hero.changeProfessionPathDescription( "doświadczona" );
+                randomBonus( 5 * level );
                 break;
         }
         hero.getStats().updateHp( hero.getHardyLevel() );
@@ -187,5 +190,4 @@ public class HeroProgress {
             temp.get( index ).addToSkillLevel( 1 );
         }
     }
-
 }

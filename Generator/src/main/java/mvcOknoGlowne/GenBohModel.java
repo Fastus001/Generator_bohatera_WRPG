@@ -91,7 +91,7 @@ public class GenBohModel implements GenBohModelInterface{
 								.statNumber( Integer.parseInt( doZapisaniaUm[1]) )
 								.type( doZapisaniaUm[2] )
 								.level( 0 )
-								.isProfessional( false ).build();
+								.isProfession( false ).build();
 						umiej.add(tempUm);
 					}
 				
@@ -216,7 +216,7 @@ public boolean WczytajRasy(){
 								.statNumber( Integer.parseInt( doZapisaniaUm[1]) )
 								.type( doZapisaniaUm[2] )
 								.level( 0 )
-								.isProfessional( false ).build();
+								.isProfession( false ).build();
 						umiej.add(tempUm);
 					}
 					//konwersja talentow na obiekty
