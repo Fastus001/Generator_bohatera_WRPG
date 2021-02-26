@@ -33,7 +33,10 @@ public class Hero {
         if ( knownSkills.contains( skill ) ) {
             knownSkills.stream()
                     .filter( s -> s.equals( skill ) )
-                    .forEach( s -> s.addToSkillLevel( skill.getLevel() ) );
+                    .forEach( s -> {
+                        s.addToSkillLevel( skill.getLevel() );
+                        s.setProfession( true );
+                    } );
         }
         knownSkills.add( skill );
     }
