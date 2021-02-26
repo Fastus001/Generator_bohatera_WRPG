@@ -3,7 +3,6 @@ package mvcOknoGlowne;
 import domain.Hero;
 import domain.Profession;
 import domain.Race;
-import domain.Talent;
 import enums.Gender;
 import enums.RaceType;
 import export.ExportDoExcela;
@@ -11,7 +10,6 @@ import export.ExportToPdf;
 import factories.HeroFactory;
 import factories.ProfessionFactory;
 import factories.RaceFactory;
-import factories.TalentFactory;
 import hero.HeroDisplay;
 import hero.HeroProgress;
 import npcGenerator.Potwory;
@@ -36,7 +34,8 @@ public class HeroServiceImpl implements HeroService {
     private final List<Profession> professions = new ArrayList<>();
     private List<Profession> professionsFirstLevel = new ArrayList<>();
     private HeroProgress heroProgress;
-    private ObserwatorModel observer;
+
+    private MainGuiObserver observer;
 
     @Override
     public void loadData() {
@@ -54,7 +53,7 @@ public class HeroServiceImpl implements HeroService {
         createHeroProgress( profession, randomRace, gender );
 
         heroProgress.experienceLevel( experience );
-        observer.aktualizujPostac( showNewHero( showTalentDescription ) );
+        observer.updateHero( showNewHero( showTalentDescription ) );
         chosenRace = race.toBuilder().build();
         chosenProfession = profession.getName();
     }
@@ -105,7 +104,7 @@ public class HeroServiceImpl implements HeroService {
     }
 
     @Override
-    public void subscribeObserver(ObserwatorModel observer) {
+    public void subscribeObserver(MainGuiObserver observer) {
         this.observer = observer;
     }
 
@@ -140,7 +139,7 @@ public class HeroServiceImpl implements HeroService {
             if(profession !=null){
                 heroProgress.newProfession( profession );
                 heroProgress.experienceLevel( experience );
-                observer.aktualizujPostac( showNewHero( showTalentDescription ) );
+                observer.updateHero( showNewHero( showTalentDescription ) );
             }
         }
     }
@@ -151,7 +150,7 @@ public class HeroServiceImpl implements HeroService {
                                                           JOptionPane.YES_NO_OPTION );
         if ( confirmation == JOptionPane.OK_OPTION ) {
             heroProgress.finishProfession( 5 );
-            observer.aktualizujPostac( showNewHero( showTalentDescription ) );
+            observer.updateHero( showNewHero( showTalentDescription ) );
         }
     }
 
@@ -178,12 +177,12 @@ public class HeroServiceImpl implements HeroService {
             heroProgress.newProfession( ProfessionFactory.getInstance().create( chosenProfession, 1 ) );
             heroProgress.experienceLevel( experience );
             //wyswietlenie nowego bohatera
-            observer.aktualizujPostac( showNewHero( showTalentDescription ) );
-            observer.wylaczbtnNowaProfesja();
+            observer.updateHero( showNewHero( showTalentDescription ) );
+            observer.activateButtonNewHero();
         }
 
         if ( !btnPodniesPoziomWlaczony )
-            observer.wlaczPrzyciskbtnPodniesPoziomPr();
+            observer.activateNewLevelButton();
     }
 
 
@@ -191,7 +190,7 @@ public class HeroServiceImpl implements HeroService {
     public void setRace(String race) {
         if ( heroProgress != null ) {
             if ( race.equals( heroProgress.getHero().getRace().getName() ) ) {
-                observer.wlaczPrzyciskbtnPodniesPoziomPr();
+                observer.activateNewLevelButton();
             }
         }
         chosenRace = RaceFactory.getInstance().createRace( RaceType.getRaceEnumByName( race ) );
@@ -205,15 +204,15 @@ public class HeroServiceImpl implements HeroService {
                 int test = heroProgress.checkProfessionHistory( profession );
                 //postać wcześniej nie rozwijała danej profesji, można włączyc opcję nowa profesja
                 if ( test == -1 ) {
-                    observer.wlaczbtnNowaProfesja();
+                    observer.activateNewProfessionButton();
                 }else {
-                    observer.wylaczbtnNowaProfesja();
+                    observer.activateButtonNewHero();
                 }
             }
             else {
                 JOptionPane.showMessageDialog( null, "Zmieniłeś rasę, nie możesz modyfikować postaci do momentu gdy wybór rasy będzie zgodny z aktulanie towrzoną postacią." );
-                observer.wylaczbtnNowaProfesja();
-                observer.wylaczPrzicskPodniesPoziomPr();
+                observer.activateButtonNewHero();
+                observer.deactivateNewLevelButton();
             }
         }
         chosenProfession = profession;
@@ -222,13 +221,13 @@ public class HeroServiceImpl implements HeroService {
     @Override
     public void showHeroTalents(boolean showTalentDescription) {
         if ( heroProgress != null ) {
-            observer.aktualizujPostac( showNewHero( showTalentDescription ) );
+            observer.updateHero( showNewHero( showTalentDescription ) );
         }
     }
 
     @Override
     public void saveHeroToList() {
-        observer.aktualizujListeBohaterow( heroProgress.getHero()
+        observer.updateListModelWithNewHero( heroProgress.getHero()
                                                    .toBuilder()
                                                    .build() );
     }

@@ -22,7 +22,7 @@ import domain.Hero;
 import hero.HeroDisplay;
 import mvcOknoGlowne.HeroService;
 import mvcOknoGlowne.MainGuiController;
-import mvcOknoGlowne.ObserwatorModel;
+import mvcOknoGlowne.MainGuiObserver;
 import npcGenerator.NpcKontroler;
 import npcGenerator.NpcModel;
 import npcGenerator.Potwory;
@@ -55,7 +55,7 @@ import java.awt.event.FocusEvent;
 import java.util.List;
 import java.util.Vector;
 
-public class NewGui extends JFrame implements ObserwatorModel{
+public class NewGui extends JFrame implements MainGuiObserver {
 
 	private static final long serialVersionUID = 1L;
 	HeroService model;
@@ -467,28 +467,28 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		
 	}
 	@Override
-	public void aktualizujPostac(String opis) {
-		textArea.setText(opis);		
+	public void updateHero(String description) {
+		textArea.setText( description );
 	}
 	@Override
-	public void wylaczbtnNowaProfesja() {
+	public void activateButtonNewHero() {
 		btnNowaProfesja.setEnabled(false);
 	}
 	@Override
-	public void wlaczPrzyciskbtnPodniesPoziomPr() {
+	public void activateNewLevelButton() {
 		btnPodniesPoziomPr.setEnabled(true);
 	}
 	@Override
-	public void wlaczbtnNowaProfesja() {
+	public void activateNewProfessionButton() {
 		btnNowaProfesja.setEnabled(true);
 	}
 	@Override
-	public void wylaczPrzicskPodniesPoziomPr() {
+	public void deactivateNewLevelButton() {
 		btnPodniesPoziomPr.setEnabled(false);
 	}
 	@Override
-	public void aktualizujListeBohaterow(Hero nowy) {
-		listaBohaterow.addElement(nowy);
+	public void updateListModelWithNewHero(Hero hero) {
+		listaBohaterow.addElement( hero );
 		if(listaBohaterow.size() > 0) {
 			controller.activateExportDoExcel();
 		}

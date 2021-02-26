@@ -4,7 +4,6 @@
 package mvcOknoGlowne;
 
 import domain.Hero;
-import domain.Profession;
 
 import java.util.List;
 
@@ -28,7 +27,7 @@ public interface HeroService {
 
 	List<String> getProfessionsFirstLevel(String rs);
 
-	void subscribeObserver(ObserwatorModel observer);
+	void subscribeObserver(MainGuiObserver observer);
 
 	void setRace(String race);
 
