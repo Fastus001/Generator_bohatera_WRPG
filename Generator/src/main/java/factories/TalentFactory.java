@@ -1,6 +1,6 @@
 package factories;
 
-import commons.Talent;
+import domain.Talent;
 import utilities.Reader;
 
 import java.util.List;

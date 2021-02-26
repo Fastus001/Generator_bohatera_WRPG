@@ -8,7 +8,7 @@ import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
-import commons.*;
+import domain.*;
 
 import javax.swing.*;
 import java.io.IOException;

@@ -1,7 +1,7 @@
 package export;
 
 import appearance.Appearance;
-import commons.*;
+import domain.*;
 import npcGenerator.CechyPotworow;
 import npcGenerator.Potwory;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;

@@ -1,4 +1,4 @@
-package commons;
+package domain;
 
 import enums.RaceType;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package commons;
+package domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

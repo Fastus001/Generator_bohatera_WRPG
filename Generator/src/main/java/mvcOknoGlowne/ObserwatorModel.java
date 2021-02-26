@@ -4,7 +4,7 @@
 package mvcOknoGlowne;
 
 
-import commons.Hero;
+import domain.Hero;
 
 /**
  * @author Tom

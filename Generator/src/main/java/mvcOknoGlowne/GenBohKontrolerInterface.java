@@ -3,7 +3,7 @@
  */
 package mvcOknoGlowne;
 
-import commons.Race;
+import domain.Race;
 
 /**
  * @author Tom

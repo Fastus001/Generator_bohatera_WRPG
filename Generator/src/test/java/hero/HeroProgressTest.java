@@ -1,8 +1,8 @@
 package hero;
 
-import commons.Hero;
-import commons.Profession;
-import commons.Skill;
+import domain.Hero;
+import domain.Profession;
+import domain.Skill;
 import enums.Gender;
 import enums.RaceType;
 import factories.HeroFactory;
@@ -10,14 +10,8 @@ import factories.ProfessionFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Matchers.anyInt;
-import static org.mockito.Mockito.*;
 
 class HeroProgressTest {
 

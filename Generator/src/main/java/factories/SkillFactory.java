@@ -1,6 +1,6 @@
 package factories;
 
-import commons.Skill;
+import domain.Skill;
 import utilities.Reader;
 
 import java.util.List;

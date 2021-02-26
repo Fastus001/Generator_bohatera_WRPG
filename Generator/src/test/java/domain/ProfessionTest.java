@@ -1,4 +1,4 @@
-package commons;
+package domain;
 
 import enums.Gender;
 import org.junit.jupiter.api.BeforeEach;

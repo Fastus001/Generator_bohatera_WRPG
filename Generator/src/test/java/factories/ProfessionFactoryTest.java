@@ -1,7 +1,6 @@
 package factories;
 
-import commons.Profession;
-import enums.Gender;
+import domain.Profession;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

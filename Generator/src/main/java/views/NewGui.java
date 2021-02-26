@@ -18,12 +18,12 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
-import commons.Hero;
-import commons.Profession;
-import commons.Race;
+import domain.Hero;
+import domain.Profession;
+import domain.Race;
 import hero.HeroDisplay;
 import mvcOknoGlowne.GenBohKontrolerInterface;
-import mvcOknoGlowne.GenBohModelInterface;
+import mvcOknoGlowne.HeroService;
 import mvcOknoGlowne.ObserwatorModel;
 import npcGenerator.NpcKontroler;
 import npcGenerator.NpcModel;
@@ -58,7 +58,7 @@ import java.awt.event.FocusEvent;
 public class NewGui extends JFrame implements ObserwatorModel{
 
 	private static final long serialVersionUID = 1L;
-	GenBohModelInterface model;
+	HeroService model;
 	GenBohKontrolerInterface kontroler;
 
 	//Components
@@ -86,12 +86,12 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	/**
 	 * Create the frame.
 	 */
-	public NewGui(GenBohKontrolerInterface kontroler, GenBohModelInterface model ) {
+	public NewGui(GenBohKontrolerInterface kontroler, HeroService model ) {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource( "/items/sledgehammer.png" )));
 		
 		this.kontroler = kontroler;
 		this.model = model;
-		this.model.zarejestrujObserwatora((ObserwatorModel) this);
+		this.model.subscribeObserver( (ObserwatorModel) this);
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Throwable e) {
@@ -144,7 +144,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		
 		btsSaveHero.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				model.zapiszPostac();
+				model.saveHeroToList();
 			}
 		});
 		/**
@@ -152,7 +152,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		 */
 		chckbxShowTalents.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				model.opisPostaciTalenty(chckbxShowTalents.isSelected());
+				model.showHeroTalents( chckbxShowTalents.isSelected());
 			}
 		});
 		
@@ -184,7 +184,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public void actionPerformed(ActionEvent e) 
 			{
 				try {
-				model.nowyBohater(cbRasa.getSelectedIndex(), cbProfesja.getSelectedIndex(),cbDoswiadczenie.getSelectedIndex(), rdbtnMen.isSelected(), chckbxShowTalents.isSelected());
+				model.newHero( cbRasa.getSelectedIndex(), cbProfesja.getSelectedIndex(), cbDoswiadczenie.getSelectedIndex(), rdbtnMen.isSelected(), chckbxShowTalents.isSelected());
 				kontroler.aktywujPodniesPoziom();
 				kontroler.aktywujZapiszPostac();
 				} catch (Exception e2) {
@@ -203,7 +203,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnPodniesPoziomPr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				model.podniesPoziom(cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected());
+				model.levelUp( cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected());
 			}
 		});
 		
@@ -213,7 +213,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		cbRasa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Race wybor = ( Race ) cbRasa.getSelectedItem();
-				model.setRasa(wybor);
+				model.setRace( wybor);
 				kontroler.selectRasa(wybor);
 			}
 		});
@@ -236,7 +236,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 		btnNowaProfesja.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				model.nowaProfesja(cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected(), btnPodniesPoziomPr.isSelected());
+				model.newProfession( cbDoswiadczenie.getSelectedIndex(), chckbxShowTalents.isSelected(), btnPodniesPoziomPr.isSelected());
 			}
 		});
 		
@@ -256,7 +256,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				if(cbProfesja.getModel().getSize()!=0)
 				{
 					Profession prof = ( Profession ) cbProfesja.getSelectedItem();
-					model.setProfesja(prof);
+					model.setProfession( prof);
 				}
 			}
 		});

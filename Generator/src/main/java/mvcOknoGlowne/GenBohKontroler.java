@@ -5,7 +5,7 @@ package mvcOknoGlowne;
  *
  */
 
-import commons.Race;
+import domain.Race;
 import export.ExportToPdf;
 import views.NewGui;
 
@@ -13,11 +13,11 @@ import java.awt.*;
 
 public class GenBohKontroler implements GenBohKontrolerInterface{
 	private NewGui widok;
-	private GenBohModelInterface model;
+	private HeroService model;
 	final static org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger( ExportToPdf.class );
 
 
-	public GenBohKontroler(GenBohModelInterface model) {
+	public GenBohKontroler(HeroService model) {
 		this.model = model;
 		EventQueue.invokeLater(()->{
 			try {
@@ -27,12 +27,12 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 				e.printStackTrace();
 			}
 		});
-		model.wczytajDane();
+		model.loadData();
 		
 	}
 	@Override
 	public void selectRasa(Race rs) {
-		widok.setCbProfesja(model.getProfesjePierwszyPoziom(rs));
+		widok.setCbProfesja(model.getProfessionsFirstLevel( rs));
 	}
 	@Override
 	public void setRacaCbBox() {

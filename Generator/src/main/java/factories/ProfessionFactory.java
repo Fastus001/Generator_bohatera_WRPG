@@ -1,9 +1,8 @@
 package factories;
 
-import commons.Profession;
-import commons.Skill;
-import commons.Talent;
-import enums.Gender;
+import domain.Profession;
+import domain.Skill;
+import domain.Talent;
 import utilities.Reader;
 
 import java.util.Arrays;

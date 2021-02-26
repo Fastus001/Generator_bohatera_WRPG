@@ -1,6 +1,6 @@
 package factories;
 
-import commons.Race;
+import domain.Race;
 import enums.RaceType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

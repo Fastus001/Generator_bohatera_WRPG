@@ -1,6 +1,6 @@
 package hero;
 
-import commons.Hero;
+import domain.Hero;
 import enums.Gender;
 import enums.RaceType;
 import factories.HeroFactory;

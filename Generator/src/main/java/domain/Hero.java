@@ -1,4 +1,4 @@
-package commons;
+package domain;
 
 import appearance.Appearance;
 import enums.Gender;

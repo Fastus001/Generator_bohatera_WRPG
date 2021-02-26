@@ -1,8 +1,8 @@
 package factories;
 
-import commons.Race;
-import commons.Skill;
-import commons.Talent;
+import domain.Race;
+import domain.Skill;
+import domain.Talent;
 import enums.RaceType;
 import utilities.Reader;
 

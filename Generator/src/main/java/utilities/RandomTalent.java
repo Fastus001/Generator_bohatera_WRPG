@@ -1,6 +1,6 @@
 package utilities;
 
-import commons.Talent;
+import domain.Talent;
 
 import java.util.List;
 import java.util.Map;

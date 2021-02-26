@@ -2,7 +2,7 @@ package factories;
 
 
 import appearance.AppearanceFactory;
-import commons.*;
+import domain.*;
 import enums.Gender;
 import enums.RaceType;
 import hero.HeroProgress;

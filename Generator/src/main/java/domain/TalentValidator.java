@@ -1,4 +1,4 @@
-package commons;
+package domain;
 
 public class TalentValidator {
 

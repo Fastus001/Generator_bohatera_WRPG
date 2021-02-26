@@ -1,6 +1,6 @@
 package factories;
 
-import commons.Talent;
+import domain.Talent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
