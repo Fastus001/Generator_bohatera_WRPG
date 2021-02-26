@@ -5,6 +5,8 @@ import enums.RaceType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class RaceFactoryTest {
@@ -55,5 +57,12 @@ class RaceFactoryTest {
         Race race = factory.createRace( RaceType.WOOD_ELF );
 
         assertEquals( "Leśne elfy",race.getName() );
+    }
+
+    @Test
+    void createAll() {
+        List<Race> all = factory.createAll();
+
+        assertEquals( 5, all.size() );
     }
 }

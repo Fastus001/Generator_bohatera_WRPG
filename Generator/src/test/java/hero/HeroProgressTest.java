@@ -69,8 +69,7 @@ class HeroProgressTest {
                                         .create("SZARLATAN/SZARLATANKA",1) );
         progress.newProfession( ProfessionFactory.getInstance().create("SZARLATAN/SZARLATANKA",2) );
 
-        int level = progress.checkProfessionHistory(
-                ProfessionFactory.getInstance().create( GLADIATOR_GLADIATORKA, 2 ) );
+        int level = progress.checkProfessionHistory( GLADIATOR_GLADIATORKA ) ;
 
         assertEquals( 1,level );
     }

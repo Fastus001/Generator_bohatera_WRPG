@@ -41,6 +41,12 @@ public class RaceFactory {
         return race;
     }
 
+    public List<Race> createAll(){
+        return rawRaces.stream()
+                .map( this::mapRace )
+                .collect( Collectors.toList());
+    }
+
 
     private Race mapRace(String[] rawRaceToBuild){
         return Race.builder()

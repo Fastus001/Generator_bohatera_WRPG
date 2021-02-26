@@ -5,11 +5,11 @@ package mvcOknoGlowne;
  *
  */
 
-import domain.Race;
 import export.ExportToPdf;
 import views.NewGui;
 
 import java.awt.*;
+
 
 public class GenBohKontroler implements GenBohKontrolerInterface{
 	private NewGui widok;
@@ -31,12 +31,12 @@ public class GenBohKontroler implements GenBohKontrolerInterface{
 		
 	}
 	@Override
-	public void selectRasa(Race rs) {
+	public void selectRasa(String rs) {
 		widok.setCbProfesja(model.getProfessionsFirstLevel( rs));
 	}
 	@Override
 	public void setRacaCbBox() {
-		widok.setCbRasa(model.getRasaArray());	
+		widok.setCbRasa(model.raceNames());
 	}
 	@Override
 	public void aktywujPodniesPoziom() {

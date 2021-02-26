@@ -20,6 +20,7 @@ public class HeroProgress {
 
     public void newProfession(Profession profession) {
         hero.getHistory().add( profession );
+        setProfessionSkills();
 
         Profession currentProfession = hero.getProfession();
         updateStatsForNewProfessionLevel( profession.getLevel(), currentProfession );
@@ -70,7 +71,7 @@ public class HeroProgress {
 
     public void setProfessionSkills() {
         List<Skill> skills = hero.getHistory().stream()
-                .filter( p->p.getName().equals( hero.getProfession().getName() ) )
+                .filter( p->p.toString().equals( hero.getProfession().toString() ) )
                 .flatMap( p->p.getSkills().stream() )
                 .collect( Collectors.toList());
 
@@ -120,9 +121,9 @@ public class HeroProgress {
         }
     }
 
-    public int checkProfessionHistory(Profession newProfession) {
+    public int checkProfessionHistory(String newProfession) {
         return hero.getHistory().stream()
-                .filter( p->p.getName().equals( newProfession.getName() ) )
+                .filter( p->p.getName().equals( newProfession ) )
                 .mapToInt( Profession::getLevel )
                 .max()
                 .orElse( -1 );

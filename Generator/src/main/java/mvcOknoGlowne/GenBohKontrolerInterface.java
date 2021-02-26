@@ -10,7 +10,7 @@ import domain.Race;
  *
  */
 public interface GenBohKontrolerInterface {
-	void selectRasa(Race rs);
+	void selectRasa(String rs);
 	void setRacaCbBox();
 	void aktywujPodniesPoziom();
 	void aktywujZapiszPostac();

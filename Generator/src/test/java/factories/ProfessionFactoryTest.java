@@ -4,9 +4,12 @@ import domain.Profession;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProfessionFactoryTest {
+    private static final int LEVEL_ONE = 1;
     ProfessionFactory factory;
 
     @BeforeEach
@@ -31,4 +34,11 @@ class ProfessionFactoryTest {
                    ()->assertEquals( 4,riverGuard.getTalents().size() ));
     }
 
+    @Test
+    void createAll() {
+        List<Profession> allFistLevel = factory.createAll( );
+
+
+        assertEquals( 256,allFistLevel.size() );
+    }
 }

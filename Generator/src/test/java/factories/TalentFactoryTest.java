@@ -4,6 +4,8 @@ import domain.Talent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class TalentFactoryTest {
@@ -28,5 +30,12 @@ class TalentFactoryTest {
         assertAll( ()->assertEquals( "Wytwórca",createdTalent.getName() ),
                    ()->assertEquals( 6,createdTalent.getRelatedStat()),
                    ()->assertEquals( "Rzemiosło (Dowolne)",createdTalent.getTest()));
+    }
+
+    @Test
+    void createAll() {
+        List<Talent> all = talentFactory.createAll();
+
+        assertEquals( 240,all.size() );
     }
 }

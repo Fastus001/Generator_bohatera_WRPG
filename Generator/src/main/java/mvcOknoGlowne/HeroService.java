@@ -5,7 +5,8 @@ package mvcOknoGlowne;
 
 import domain.Hero;
 import domain.Profession;
-import domain.Race;
+
+import java.util.List;
 
 /**
  * @author Tom
@@ -23,15 +24,15 @@ public interface HeroService {
 
 	String showNewHero(boolean showTalentDescription);
 
-	Object [] getRasaArray();
+	List<String> raceNames();
 
-	Object [] getProfessionsFirstLevel(Race rs);
+	List<String> getProfessionsFirstLevel(String rs);
 
 	void subscribeObserver(ObserwatorModel observer);
 
-	void setRace(Race race);
+	void setRace(String race);
 
-	void setProfession(Profession profession);
+	void setProfession(String profession);
 
 	void showHeroTalents(boolean showTalentDescription);
 

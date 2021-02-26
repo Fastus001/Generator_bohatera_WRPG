@@ -4,6 +4,7 @@ import domain.Talent;
 import utilities.Reader;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
 
@@ -28,6 +29,12 @@ public class TalentFactory {
                 .findFirst()
                 .map( this::mapTalent )
                 .orElseThrow();
+    }
+
+    public List<Talent> createAll(){
+        return rawTalents.stream()
+                .map( this::mapTalent )
+                .collect( Collectors.toList());
     }
 
     private Talent mapTalent(String[] o) {

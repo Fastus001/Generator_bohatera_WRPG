@@ -21,7 +21,7 @@ public class Profession implements Comparable<Profession> {
     private int level;
     private List<Skill> skills;
     private List<Talent> talents;
-    private String[] races;
+    private List<String> races;
     private int[] professionStats;
     private boolean finished;
     private String career;

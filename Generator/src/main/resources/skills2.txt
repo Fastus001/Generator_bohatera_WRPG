@@ -12,6 +12,7 @@ Broń Biała (Szermiercza);0;podstawowa
 Broń Biała (Parująca);0;podstawowa
 Broń Biała (Podstawowa);0;podstawowa
 Broń Zasięgowa;1;zaawansowana
+Broń Zasięgowa (Dowolna);1;zaawansowana
 Broń Zasięgowa (Eksperymentalna);1;zaawansowana
 Broń Zasięgowa (Kusza);1;zaawansowana
 Broń Zasięgowa (Kusza Pistoletowa);1;zaawansowana
@@ -24,6 +25,7 @@ Charyzma;9;podstawowa
 Dowodzenie;9;podstawowa
 Hazard;7;podstawowa
 Jeździectwo;5;podstawowa
+Jeździectwo (Dowolne);5;podstawowa
 Jeździectwo (Konie);5;podstawowa
 Intuicja;4;podstawowa
 Język;7;zaawansowana
@@ -79,6 +81,7 @@ Rzemiosło (Przybory dla artystów);6;zaawansowana
 Rzemiosło (Rusznikarz);6;zaawansowana
 Rzemiosło (Szkutnictwo);6;zaawansowana
 Rzemiosło (Truciciel);6;zaawansowana
+Rzemiosło (Trucizny);6;zaawansowana
 Rzemiosło (Kucharz);6;zaawansowana
 Rzemiosło (Winiarz);6;zaawansowana
 Rzemiosło (Zielarz);6;zaawansowana
@@ -98,6 +101,7 @@ Splatanie Magii (Azyr);8;zaawansowana
 Splatanie Magii (Dowolny Kolor);8;zaawansowana
 Sztuka;6;podstawowa
 Sztuka (Dowolna);6;podstawowa
+Sztuka (Ikony);6;podstawowa
 Sztuka (Kaligrafia);6;podstawowa
 Sztuka (Pisarstwo);6;podstawowa
 Skradanie;5;podstawowa
@@ -110,6 +114,7 @@ Skradanie (Wieś);5;podstawowa
 Sztuka Przetrwania;7;podstawowa
 Targowanie;9;podstawowa
 Tresura;7;zaawansowana
+Tresura (Dowolne);7;zaawansowana
 Tresura (Dowolna);7;zaawansowana
 Tresura (Gołąb);7;zaawansowana
 Tresura (Konie);7;zaawansowana
@@ -125,6 +130,7 @@ Wiedza (Czarownice);7;zaawansowana
 Wiedza (Demonologia);7;zaawansowana
 Wiedza (Dowolna);7;zaawansowana
 Wiedza (Duchy);7;zaawansowana
+Wiedza (Etykieta);7;zaawansowana
 Wiedza (Geografia);7;zaawansowana
 Wiedza (Geologia);7;zaawansowana
 Wiedza (Genealogia);7;zaawansowana
@@ -152,6 +158,7 @@ Wiedza (Szlachta);7;zaawansowana
 Wiedza (Szlaki);7;zaawansowana
 Wiedza (Szlaki Rzeczne);7;zaawansowana
 Wiedza (Szlaki Wodne);7;zaawansowana
+Wiedza (Sztuka);7;zaawansowana
 Wiedza (Sztuka Wojenna);7;zaawansowana
 Wiedza (Teologia);7;zaawansowana
 Wiedza (Tortury);7;zaawansowana
