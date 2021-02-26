@@ -19,11 +19,9 @@ import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
 import domain.Hero;
-import domain.Profession;
-import domain.Race;
 import hero.HeroDisplay;
-import mvcOknoGlowne.GenBohKontrolerInterface;
 import mvcOknoGlowne.HeroService;
+import mvcOknoGlowne.MainGuiController;
 import mvcOknoGlowne.ObserwatorModel;
 import npcGenerator.NpcKontroler;
 import npcGenerator.NpcModel;
@@ -61,7 +59,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 
 	private static final long serialVersionUID = 1L;
 	HeroService model;
-	GenBohKontrolerInterface kontroler;
+	MainGuiController controller;
 
 	//Components
 	private JPanel contentPane;
@@ -88,12 +86,12 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	/**
 	 * Create the frame.
 	 */
-	public NewGui(GenBohKontrolerInterface kontroler, HeroService model ) {
+	public NewGui(MainGuiController controller, HeroService model ) {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NewGui.class.getResource( "/items/sledgehammer.png" )));
 		
-		this.kontroler = kontroler;
+		this.controller = controller;
 		this.model = model;
-		this.model.subscribeObserver( (ObserwatorModel) this);
+		this.model.subscribeObserver( this);
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Throwable e) {
@@ -133,11 +131,11 @@ public class NewGui extends JFrame implements ObserwatorModel{
 					Hero nBohater = ( ( Hero ) listaBohaterow.elementAt( list.getSelectedIndex())).toBuilder().build();
 					HeroDisplay heroDisplay = new HeroDisplay( nBohater );
 					textArea.setText( heroDisplay.showHero(chckbxShowTalents.isSelected()));
-					kontroler.aktywujExportDoPdf();
+					controller.activateExportDoPdf();
 				}else if (obj instanceof Potwory) {
 					Potwory nowyBohater = new Potwory((Potwory) listaBohaterow.elementAt(list.getSelectedIndex()));
 					textArea.setText(nowyBohater.wyswietl());
-					kontroler.wylaczExportDoPdf();
+					controller.deactivateExportDoPdf();
 				}
 
 			}
@@ -187,8 +185,8 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			{
 				try {
 				model.newHero( cbRasa.getSelectedIndex(), cbProfesja.getSelectedIndex(), cbDoswiadczenie.getSelectedIndex(), rdbtnMen.isSelected(), chckbxShowTalents.isSelected());
-				kontroler.aktywujPodniesPoziom();
-				kontroler.aktywujZapiszPostac();
+				controller.activateLevelUpButton();
+				controller.activateSaveHeroButton();
 				} catch (Exception e2) {
 					StringWriter sw = new StringWriter();
 					PrintWriter pw = new PrintWriter(sw);
@@ -216,7 +214,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 			public void actionPerformed(ActionEvent e) {
 				String wybor = (String ) cbRasa.getSelectedItem();
 				model.setRace( wybor);
-				kontroler.selectRasa(wybor);
+				controller.selectRace( wybor);
 			}
 		});
 		
@@ -226,7 +224,7 @@ public class NewGui extends JFrame implements ObserwatorModel{
 				ComboBoxModel<String> cbModel = cbRasa.getModel();
 				if(cbModel.getSize() == 0)
 					{
-						kontroler.setRacaCbBox();
+						controller.setRaceComboBox();
 					}
 			}
 		});
@@ -492,14 +490,14 @@ public class NewGui extends JFrame implements ObserwatorModel{
 	public void aktualizujListeBohaterow(Hero nowy) {
 		listaBohaterow.addElement(nowy);
 		if(listaBohaterow.size() > 0) {
-			kontroler.aktywujExportDoExcel();
+			controller.activateExportDoExcel();
 		}
 			
 	}
 	public void addToListaBohaterow(Object nowy) {
 		listaBohaterow.addElement(nowy);
 		if(listaBohaterow.size() > 0) {
-			kontroler.aktywujExportDoExcel();
+			controller.activateExportDoExcel();
 		}
 			
 	}
