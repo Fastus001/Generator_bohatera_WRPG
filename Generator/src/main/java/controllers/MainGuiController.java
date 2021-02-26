@@ -1,24 +1,25 @@
-package mvcOknoGlowne;
+package controllers;
 /**
  * 
  * @author Tom
  *
  */
 
-import views.NewGui;
+import services.HeroService;
+import views.MainGui;
 
 import java.awt.*;
 
 
 public class MainGuiController {
-	private NewGui view;
+	private MainGui view;
 	private HeroService model;
 
 	public MainGuiController(HeroService model) {
 		this.model = model;
 		EventQueue.invokeLater(()->{
 			try {
-				view = new NewGui( this, model);
+				view = new MainGui( this, model);
 				view.setVisible( true);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -27,32 +28,32 @@ public class MainGuiController {
 		model.loadData();
 	}
 
-	public void selectRace(String rs) {
-		view.setCbProfesja( model.getProfessionsFirstLevel( rs));
+	public void selectRace(String race) {
+		view.setComboBoxProfession( model.getProfessionsFirstLevel( race));
 	}
 
 	public void setRaceComboBox() {
-		view.setCbRasa( model.raceNames());
+		view.setComboBoxRace( model.raceNames());
 	}
 
 	public void activateLevelUpButton() {
-		view.setBtnPodniesPoziomPrEnabled( true);
+		view.setButtonIncreaseLevelEnabled( true);
 	}
 
 	public void activateSaveHeroButton() {
-		view.setBtsSaveHeroEnabled( true);
+		view.setButtonSaveHeroEnabled( true);
 	}
 
 	public void activateExportDoPdf() {
-		view.setBtnExportToPdfActive();
+		view.setButtonExportToPdfActive();
 	}
 
 	public void deactivateExportDoPdf() {
-		view.setBtnExportToPdfInactive();
+		view.setButtonExportToPdfInactive();
 	}
 
 	public void activateExportDoExcel() {
-		view.setBtnExportExcelEnabled();
+		view.setButtonExportExcelEnabled();
 	}
 
 

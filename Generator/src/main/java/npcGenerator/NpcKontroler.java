@@ -2,13 +2,13 @@ package npcGenerator;
 
 import java.awt.EventQueue;
 
-import javax.swing.DefaultListModel;
+import javax.swing.*;
 
-import views.NewGui;
+import views.MainGui;
 import views.NpcGUI;
 
 public class NpcKontroler implements KontrolerInterface{
-	private NewGui parent;
+	private MainGui parent;
 	private NpcGUI widok;
 	private NpcModelInterface model;
 
@@ -17,7 +17,7 @@ public class NpcKontroler implements KontrolerInterface{
 	 * @param model - model interfesj klasy model
 	 * @param listaBohaterow - podstawowy model listy z głównego okna aplikacji potrzebne do zapisania NPCa
 	 */
-	public NpcKontroler(NpcModelInterface model,DefaultListModel<Object> listaBohaterow, NewGui nG) {
+	public NpcKontroler(NpcModelInterface model, ListModel<Object> listaBohaterow, MainGui nG) {
 		this.model = model;
 		EventQueue.invokeLater(()->{
 			try {
@@ -67,7 +67,7 @@ public class NpcKontroler implements KontrolerInterface{
 
 	@Override
 	public void zapiszPostac(String nazwaOpis) {
-		parent.addToListaBohaterow(model.getNpc(nazwaOpis));
+		parent.addToModelList( model.getNpc( nazwaOpis));
 		widok.dispose();
 		
 	}

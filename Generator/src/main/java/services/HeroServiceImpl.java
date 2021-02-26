@@ -1,4 +1,4 @@
-package mvcOknoGlowne;
+package services;
 
 import domain.Hero;
 import domain.Profession;
@@ -12,6 +12,7 @@ import factories.ProfessionFactory;
 import factories.RaceFactory;
 import hero.HeroDisplay;
 import hero.HeroProgress;
+import observers.MainGuiObserver;
 import npcGenerator.Potwory;
 import utilities.DiceRoll;
 
@@ -129,8 +130,8 @@ public class HeroServiceImpl implements HeroService {
                     level = levelHistory + 1;
                 }
                 else {
-                    maxLevelReachedMessage( "Wybrana profesja posiada już maksymlany poziom, postać awansuje we wcześniej wybranej profesji",
-                                            "Maksymalny poziom wybranej profesjii!!" );
+                    maxLevelReachedMessage(
+                    );
                 }
             }
             profession = ProfessionFactory.getInstance()
@@ -154,12 +155,14 @@ public class HeroServiceImpl implements HeroService {
         }
     }
 
-    private void maxLevelReachedMessage(String message, String title) {
-        JOptionPane.showMessageDialog( null,message,title, JOptionPane.INFORMATION_MESSAGE );
+    private void maxLevelReachedMessage() {
+        JOptionPane.showMessageDialog( null,
+                                       "Wybrana profesja posiada już maksymlany poziom, postać awansuje we wcześniej wybranej profesji",
+                                       "Maksymalny poziom wybranej profesjii!!", JOptionPane.INFORMATION_MESSAGE );
     }
 
     @Override
-    public void newProfession(int experience, boolean showTalentDescription, boolean btnPodniesPoziomWlaczony) {
+    public void newProfession(int experience, boolean showTalentDescription, boolean isAddLevelButtonActivated) {
 
         if ( heroProgress.getHero().getProfession().isNotFinished() ) {
             int confirmDialog = JOptionPane.showConfirmDialog( null,
@@ -181,7 +184,7 @@ public class HeroServiceImpl implements HeroService {
             observer.activateButtonNewHero();
         }
 
-        if ( !btnPodniesPoziomWlaczony )
+        if ( !isAddLevelButtonActivated )
             observer.activateNewLevelButton();
     }
 

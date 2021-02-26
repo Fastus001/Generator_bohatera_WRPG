@@ -1,9 +1,10 @@
 /**
  * 
  */
-package mvcOknoGlowne;
+package services;
 
 import domain.Hero;
+import observers.MainGuiObserver;
 
 import java.util.List;
 
@@ -19,7 +20,7 @@ public interface HeroService {
 
 	void levelUp(int experience, boolean showTalentDescription);
 
-	void newProfession(int experience, boolean showTalentDescription, boolean btnPodniesPoziomWlaczony);
+	void newProfession(int experience, boolean showTalentDescription, boolean isAddLevelButtonActivated);
 
 	String showNewHero(boolean showTalentDescription);
 

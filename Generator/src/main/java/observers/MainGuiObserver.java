@@ -1,4 +1,4 @@
-package mvcOknoGlowne;
+package observers;
 
 
 import domain.Hero;
